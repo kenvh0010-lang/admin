@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hành Trình Xin Việc</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <header>
+    <h1>💼 Hành Trình Xin Việc</h1>
+    <p class="sub">Bạn có 30 ngày để tìm được công việc mơ ước trước khi hết tiền.</p>
+  </header>
+
+  <!-- Màn hình bắt đầu -->
+  <section id="screen-start" class="screen">
+    <div class="card">
+      <label>Tên của bạn
+        <input id="inp-name" maxlength="20" placeholder="VD: Minh Anh">
+      </label>
+      <p class="label">Chọn ngành nghề</p>
+      <div id="field-list" class="grid3"></div>
+      <button id="btn-start" class="primary" disabled>Bắt đầu hành trình</button>
+    </div>
+  </section>
+
+  <!-- Màn hình chính -->
+  <section id="screen-game" class="screen hidden">
+    <div id="stats" class="stats"></div>
+    <div class="cols">
+      <div class="card">
+        <h2>Hôm nay làm gì?</h2>
+        <div id="actions" class="actions"></div>
+        <h2>Nhật ký</h2>
+        <ul id="log" class="log"></ul>
+      </div>
+      <div class="card">
+        <h2>Bảng tin tuyển dụng</h2>
+        <ul id="jobs" class="jobs"></ul>
+        <h2>Đơn đã nộp</h2>
+        <ul id="apps" class="apps"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phỏng vấn -->
+  <section id="screen-interview" class="screen hidden">
+    <div class="card">
+      <h2 id="iv-title"></h2>
+      <p id="iv-progress" class="muted"></p>
+      <p id="iv-question" class="question"></p>
+      <div id="iv-answers" class="answers"></div>
+      <p id="iv-feedback" class="feedback"></p>
+    </div>
+  </section>
+
+  <!-- Kết thúc -->
+  <section id="screen-end" class="screen hidden">
+    <div class="card center">
+      <div id="end-emoji" class="big"></div>
+      <h2 id="end-title"></h2>
+      <p id="end-text"></p>
+      <button class="primary" onclick="location.reload()">Chơi lại</button>
+    </div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
