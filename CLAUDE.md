@@ -5,12 +5,12 @@ This file defines the unified engineering, editorial, and QA workflow for **Clau
 ---
 
 ## 1. Project Overview & Live Architecture
-- **Channel**: `Mind & Margin` (`@MindAndMargin`) — English behavioral economics, decision science, non-fiction book breakdowns, and solo AI leverage (`$15–$48` CPM).
-- **Content Vault (`content/`)**: **96 complete storyboards** (Half-Year / 24 Weeks / 180 Days: `short_01`..`short_72` + `long_01`..`long_24`) mapped across **7 high-RPM trend clusters** in `yt_studio/trend_radar.py`.
+- **Channel**: `Mind & Margin` (`@MindAndMargin`) — English behavioral economics, decision science, archival corporate case studies, non-fiction book breakdowns, and solo AI leverage (`$15–$48` CPM).
+- **Content Vault (`content/`)**: **112 complete storyboards** (28 Weeks / 196 Days: `short_01`..`short_84` + `long_01`..`long_28`) mapped across **8 high-RPM trend clusters** in `yt_studio/trend_radar.py`, backed by primary archival citations in `products/real_world_events_dossier.md`.
 - **Official Amazon Associates Tag**: **`mindandmarg06-20`** (wired as `DEFAULT_AMAZON_TAG` in `yt_studio/site_builder.py` and `.github/workflows/video_factory.yml`).
-- **Live Public Website (96 SEO Articles)**: https://kenvh0010-lang.github.io/admin/
+- **Live Public Website (112 SEO Articles)**: https://kenvh0010-lang.github.io/admin/
 - **Day-1 Bio Funnel**: https://kenvh0010-lang.github.io/admin/bio/
-- **Cloud Neural Video Releases (24 Weekly `.zip` Packs)**: https://github.com/kenvh0010-lang/admin/releases
+- **Cloud Neural Video Releases (28 Weekly `.zip` Packs)**: https://github.com/kenvh0010-lang/admin/releases
 
 ---
 
@@ -42,10 +42,10 @@ Whenever you add or edit any storyboard JSON (`content/*.json`), title, or rende
    ```
    *(And regenerate `output/<slug>/youtube_upload_pack.md`, `<slug>.srt`, and `<slug>_thumbnail.png` for any edited storyboards).*
 3. **Keep Cloud Encoding Fast & Safe**:
-   - In `yt_studio/video_renderer.py` (`_render_motion_clip`), keep `-preset veryfast` so 96-video GitHub Actions batch builds finish well inside runner limits.
+   - In `yt_studio/video_renderer.py` (`_render_motion_clip`), keep `-preset veryfast` so 112-video GitHub Actions batch builds finish well inside runner limits.
    - Do NOT commit `.mp4` files or `release_bundles/` to Git (they belong on GitHub Releases via `.github/workflows/video_factory.yml`).
 4. **Run the Full Automated QA Suite (Must Pass 100%)**:
    ```bash
    python3 -m unittest discover -s tests -v
    ```
-   This verifies all 96 JSON schemas, research `source` presence, zero forbidden glyphs, zero PIL `textbbox` card/source clipping across all 96 scripts, 7 Trend Radar clusters, Amazon tag sync, and 100% calendar title matching.
+   This verifies all 112 JSON schemas, research `source` presence, zero forbidden glyphs, zero PIL `textbbox` card/source clipping across all 112 scripts, 8 Trend Radar clusters, Amazon tag sync, and 100% calendar title matching.

@@ -1,0 +1,118 @@
+{
+  "title": "Why Buffett and Munger's Third Partner Vanished from the Billionaire List",
+  "alt_title_1": "Rick Guerin's $40 Berkshire Margin Call in the 1973-1974 Crash",
+  "alt_title_2": "Being Smart and In a Hurry: Warren Buffett's Ultimate Leverage Warning",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Warren Buffett and Charlie Munger originally invested alongside a brilliant third partner named Rick Guerin. During the 1973-1974 market crash (~70% drop), Guerin was leveraged on margin loans and forced to sell his Berkshire Hathaway shares to Buffett for under $40 apiece.",
+  "tags": [
+    "rick guerin",
+    "warren buffett",
+    "charlie munger",
+    "berkshire hathaway",
+    "margin calls",
+    "mohnish pabrai",
+    "long term compounding"
+  ],
+  "thumbnail": {
+    "hook_text": "THE 3RD PARTNER",
+    "badge": "1974 MARGIN CALL",
+    "stat": "<$40/SH"
+  },
+  "affiliate_cta": {
+    "offer_name": "Unleveraged Staying-Power Tracker + Buffett & Munger Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Could your current portfolio survive a two-year 70% market slump without selling a single share? Grab our Unleveraged Staying-Power Tracker: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Buffett and Munger Originally Had a Third Partner",
+      "visual_type": "stat_callout",
+      "stat_value": "<$40/Share",
+      "stat_label": "PRICE RICK GUERIN SOLD BERKSHIRE STOCK IN 1974",
+      "bullets": [
+        "Invested side by side with Buffett & Munger in the 1960s-70s",
+        "Forced out just before decades of historic compounding"
+      ],
+      "highlight_words": [
+        "buffett",
+        "munger",
+        "guerin",
+        "forty"
+      ],
+      "narration": "Everyone studies Warren Buffett and Charlie Munger, yet almost nobody remembers their brilliant third investing partner, Rick Guerin, who sold his Berkshire Hathaway shares for under forty dollars apiece.",
+      "source": "Warren Buffett interview recounted by Mohnish Pabrai (2013)"
+    },
+    {
+      "tag": "THE CASE",
+      "headline": "Margin Loans Met the 1973-1974 70% Bear Crash",
+      "visual_type": "stat_callout",
+      "stat_value": "-70% Crash",
+      "stat_label": "1973-1974 SLUMP TRIGGERED FORCED MARGIN LIQUIDATION",
+      "bullets": [
+        "Guerin borrowed margin debt to accelerate his returns",
+        "Lenders forced him to sell Berkshire shares to Buffett under $40"
+      ],
+      "highlight_words": [
+        "1973",
+        "1974",
+        "seventy",
+        "margin"
+      ],
+      "narration": "During the brutal 1973 and 1974 market crash, when stocks plunged roughly seventy percent, Guerin held margin loans and got hit with margin calls, forcing him to sell his Berkshire stock to Buffett under forty dollars.",
+      "source": "Warren Buffett interview recounted by Mohnish Pabrai (2013)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Equally Smart, Only Impatient With Borrowed Debt",
+      "visual_type": "comparison_split",
+      "left_title": "SMART + IN A HURRY",
+      "left_body": "Margin debt + 1974 slump -> forced exit at <$40/share",
+      "right_title": "SMART + UNLEVERAGED",
+      "right_body": "Zero margin calls -> held through storm -> $600,000+/share",
+      "highlight_words": [
+        "pabrai",
+        "billionaire",
+        "wealthy",
+        "hurry"
+      ],
+      "narration": "Years later, Buffett told investor Mohnish Pabrai why Rick disappeared from the billionaire ranks: Charlie and Warren knew they would grow wealthy eventually, whereas equally smart Rick was in a hurry.",
+      "source": "Warren Buffett interview recounted by Mohnish Pabrai (2013)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Never Carry Callable Debt Into a Multi-Year Slump",
+      "visual_type": "compounding_curve",
+      "stat_label": "UNINTERRUPTED STAYING POWER BEATS LEVERAGED SPEED",
+      "stat_subtext": "0% brokerage margin + 12-month cash buffer -> zero forced sales",
+      "highlight_words": [
+        "callable",
+        "twelve",
+        "crash",
+        "compounding"
+      ],
+      "narration": "Ban callable margin debt from your core portfolio and hold twelve months of living cash in reserve, ensuring no bear market ever forces you to liquidate decades of future compounding.",
+      "source": "Mind & Margin protocol (advice, not a study)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "You Only Need to Get Rich Once",
+      "visual_type": "stat_callout",
+      "stat_value": "Zero Margin",
+      "stat_label": "NEVER RISK PERMANENT CAPITAL TO ARRIVE TWO YEARS EARLY",
+      "bullets": [
+        "Patience survives every 50% to 70% historical drawdown",
+        "Leverage hands strangers the right to sell your bottom"
+      ],
+      "highlight_words": [
+        "rich",
+        "permanent",
+        "survival",
+        "early"
+      ],
+      "narration": "You only have to get rich once, so never gamble permanent survival just to cross the finish line two years early.",
+      "source": "Mind & Margin rule based on Buffett & Pabrai (2013)"
+    }
+  ]
+}

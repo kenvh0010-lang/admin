@@ -1,0 +1,118 @@
+{
+  "title": "The Late Berkeley Grad Student Who Solved Two 'Impossible' Theorems",
+  "alt_title_1": "George Dantzig's 1939 Chalkboard Mistake: How Labels Limit Effort",
+  "alt_title_2": "Why Calling a Problem 'Unsolved' Stops Smart People From Trying",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1939, UC Berkeley doctoral student George Dantzig arrived late to Professor Jerzy Neyman's statistics class, copied two famous unsolved open theorems off the chalkboard assuming they were homework, and solved both within weeks.",
+  "tags": [
+    "george dantzig",
+    "jerzy neyman",
+    "problem solving",
+    "mental models",
+    "limiting beliefs",
+    "berkeley 1939",
+    "deep work"
+  ],
+  "thumbnail": {
+    "hook_text": "UNSOLVED HOMEWORK",
+    "badge": "BERKELEY 1939",
+    "stat": "2 PROOFS"
+  },
+  "affiliate_cta": {
+    "offer_name": "First-Principles Problem Framing Sheet + Quantitative Thinking Books",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What goal or technical problem have you avoided starting only because industry consensus labeled it 'too hard'? Grab our First-Principles Framing Sheet: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "He Arrived Late and Solved Two Unsolved Theorems",
+      "visual_type": "stat_callout",
+      "stat_value": "2 Theorems",
+      "stat_label": "GEORGE DANTZIG • UC BERKELEY STATISTICS (1939)",
+      "bullets": [
+        "Walked late into Prof. Jerzy Neyman's 1939 lecture",
+        "Copied two open problems off the board as routine homework"
+      ],
+      "highlight_words": [
+        "1939",
+        "dantzig",
+        "unsolved",
+        "homework"
+      ],
+      "narration": "In 1939, UC Berkeley graduate student George Dantzig walked late into Professor Jerzy Neyman's statistics class, copied two famous unsolved theorems off the chalkboard thinking they were homework, and solved both.",
+      "source": "George B. Dantzig interview, College Mathematics Journal 17(4) (1986)"
+    },
+    {
+      "tag": "THE RECORD",
+      "headline": "'A Little Harder Than Usual' Became His PhD Thesis",
+      "visual_type": "stat_callout",
+      "stat_value": "1939 Thesis",
+      "stat_label": "BOTH PROOFS BOUND DIRECTLY AS DANTZIG'S DISSERTATION",
+      "bullets": [
+        "Apologized to Neyman for taking a few extra days to finish",
+        "Six weeks later Neyman submitted one for publication & thesis"
+      ],
+      "highlight_words": [
+        "proofs",
+        "neyman",
+        "harder",
+        "thesis"
+      ],
+      "narration": "Days later, Dantzig left the proofs on Neyman's desk and apologized because they seemed slightly harder than usual. Six weeks later, an excited Neyman announced those solutions formed Dantzig's doctoral thesis.",
+      "source": "George B. Dantzig interview, College Mathematics Journal 17(4) (1986)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Consensus Labels Shut Down Persistence Early",
+      "visual_type": "comparison_split",
+      "left_title": "'UNSOLVED' LABEL",
+      "left_body": "Hears 'nobody can crack this' -> quits at first mental wall",
+      "right_title": "HOMEWORK FRAMING",
+      "right_body": "Assumes an answer exists -> pushes past friction until solved",
+      "highlight_words": [
+        "arrived",
+        "open",
+        "discouragement",
+        "quit"
+      ],
+      "narration": "Dantzig later explained that had he arrived on time and heard Neyman introduce those equations as famous unsolved problems, discouragement would have made him quit after the first frustrating afternoon.",
+      "source": "George B. Dantzig interview, College Mathematics Journal 17(4) (1986)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Reframe Scary Bottlenecks as Routine Assignments",
+      "visual_type": "compounding_curve",
+      "stat_label": "FIRST-PRINCIPLES FOCUS COMPOUNDS BREAKTHROUGHS",
+      "stat_subtext": "Mute industry pessimism • 90-min deep block • Assume a clean path exists",
+      "highlight_words": [
+        "labels",
+        "bottleneck",
+        "ninety",
+        "solution"
+      ],
+      "narration": "Strip intimidating prestige labels off your hardest engineering or distribution bottleneck, block ninety quiet morning minutes with pen and paper, and work the problem assuming a clean, practical solution is waiting.",
+      "source": "Mind & Margin protocol (advice, not a study)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Stop Mistaking Industry Rumors for Physical Laws",
+      "visual_type": "stat_callout",
+      "stat_value": "Drop Labels",
+      "stat_label": "IGNORANCE OF 'IMPOSSIBLE' IS OFTEN AN EDGE",
+      "bullets": [
+        "Test first principles on paper before reading forum cynicism",
+        "Treat hard problems like standard Tuesday coursework"
+      ],
+      "highlight_words": [
+        "quit",
+        "borrowed",
+        "rumors",
+        "laws"
+      ],
+      "narration": "Most capable builders quit before writing line one simply because they treat borrowed industry rumors of impossibility as verified physical laws.",
+      "source": "Mind & Margin rule based on Dantzig, CMJ 17(4) (1986)"
+    }
+  ]
+}

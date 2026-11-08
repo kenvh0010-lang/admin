@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:00,836
+On August 1,
+
+2
+00:00:00,836 --> 00:00:01,184
+2012,
+
+3
+00:00:01,184 --> 00:00:03,761
+major Wall Street market maker Knight
+
+4
+00:00:03,761 --> 00:00:06,617
+Capital opened for trading at nine-thirty
+
+5
+00:00:06,617 --> 00:00:08,636
+AM and lost over four hundred
+
+6
+00:00:08,636 --> 00:00:11,353
+and forty million dollars in forty-five
+
+7
+00:00:11,353 --> 00:00:11,910
+minutes.
+
+8
+00:00:11,910 --> 00:00:12,801
+Days earlier,
+
+9
+00:00:12,801 --> 00:00:15,473
+a technician manually copied new retail
+
+10
+00:00:15,473 --> 00:00:17,939
+routing software onto seven of eight
+
+11
+00:00:17,939 --> 00:00:18,487
+servers.
+
+12
+00:00:18,487 --> 00:00:19,515
+At market open,
+
+13
+00:00:19,515 --> 00:00:21,844
+the eighth server activated a dead
+
+14
+00:00:21,844 --> 00:00:24,242
+2003 test routine called Power Peg,
+
+15
+00:00:24,242 --> 00:00:26,640
+firing four million erratic orders.
+
+16
+00:00:26,640 --> 00:00:28,986
+Knight stacked three fatal flaws together:
+
+17
+00:00:28,986 --> 00:00:31,835
+leaving nine-year-old zombie code on live machines,
+
+18
+00:00:31,835 --> 00:00:34,684
+relying on manual file copies without verification,
+
+19
+00:00:34,684 --> 00:00:37,087
+and running high-speed execution without an
+
+20
+00:00:37,087 --> 00:00:38,930
+automated dollar circuit breaker.
+
+21
+00:00:38,930 --> 00:00:40,865
+Whenever you automate trading,
+
+22
+00:00:40,865 --> 00:00:41,575
+cloud APIs,
+
+23
+00:00:41,575 --> 00:00:42,929
+or paid ad campaigns,
+
+24
+00:00:42,929 --> 00:00:44,929
+delete retired code completely,
+
+25
+00:00:44,929 --> 00:00:47,768
+enforce scripted all-or-nothing deployments,
+
+26
+00:00:47,768 --> 00:00:49,509
+and wire a hard dollar kill
+
+27
+00:00:49,509 --> 00:00:51,380
+switch outside the main loop.
+
+28
+00:00:51,380 --> 00:00:54,559
+Software compounds human errors at machine speed,
+
+29
+00:00:54,559 --> 00:00:56,765
+so never hand any automated script
+
+30
+00:00:56,765 --> 00:00:59,296
+your wallet without an independent hard
+
+31
+00:00:59,296 --> 00:00:59,620
+stop.

@@ -1,0 +1,118 @@
+{
+  "title": "Why Apple's Third Co-Founder Sold 10% for $800 After 12 Days",
+  "alt_title_1": "Ronald Wayne's 1976 Exit: Uncapped Downside Kills Big Upside",
+  "alt_title_2": "How Personal Liability Forced Ronald Wayne Out of Apple",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "On April 1, 1976, Ronald Wayne typed Apple Computer's original partnership agreement for a 10% stake alongside Steve Jobs and Steve Wozniak. Twelve days later, fearing unlimited partnership debt liability, he sold his 10% for $800.",
+  "tags": [
+    "ronald wayne",
+    "apple history",
+    "downside risk",
+    "limited liability",
+    "asymmetric bets",
+    "position sizing",
+    "wealth protection"
+  ],
+  "thumbnail": {
+    "hook_text": "THE $800 EXIT",
+    "badge": "APPLE APRIL 1976",
+    "stat": "12 DAYS"
+  },
+  "affiliate_cta": {
+    "offer_name": "Asymmetric Risk-Capping Checklist + Founder Strategy Books",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Have you ever sold a great investment or quit a promising project early because the downside wasn't ring-fenced? Grab our Asymmetric Risk-Capping Checklist here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Apple's Third Co-Founder Cashed Out for $800",
+      "visual_type": "stat_callout",
+      "stat_value": "$800 Exit",
+      "stat_label": "SOLD 10% OF APPLE AFTER JUST 12 DAYS (APRIL 1976)",
+      "bullets": [
+        "Typed Apple's April 1, 1976 contract for a 10% stake",
+        "Withdrew April 12 for $800, plus $1,500 later that year"
+      ],
+      "highlight_words": [
+        "1976",
+        "wayne",
+        "apple",
+        "twelve"
+      ],
+      "narration": "On April 1, 1976, forty-one-year-old draftsman Ronald Wayne typed Apple Computer's partnership contract for a ten percent stake, then sold his entire share twelve days later for eight hundred dollars, plus fifteen hundred later.",
+      "source": "Apple Computer Partnership Withdrawal (Apr 12, 1976); Ronald Wayne (2011)"
+    },
+    {
+      "tag": "THE RECORD",
+      "headline": "Why Unlimited Liability Scared Only One Partner",
+      "visual_type": "comparison_split",
+      "left_title": "JOBS & WOZNIAK (45% EACH)",
+      "left_body": "Early twenties with near-zero assets for creditors to seize",
+      "right_title": "RONALD WAYNE (10% STAKE)",
+      "right_body": "Personal savings + failed slot-machine debt scars + full liability",
+      "highlight_words": [
+        "partnership",
+        "liability",
+        "creditors",
+        "slot-machine"
+      ],
+      "narration": "Early Apple was a general partnership carrying unlimited personal liability. Young Steve Jobs and Steve Wozniak owned almost nothing creditors could seize, whereas Wayne held personal assets and remembered paying off debts from a failed slot-machine venture.",
+      "source": "Apple Computer Partnership Withdrawal (Apr 12, 1976); Ronald Wayne (2011)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Unshielded Downside Forces Early Exits",
+      "visual_type": "stat_callout",
+      "stat_value": "12 Days",
+      "stat_label": "HOW FAST PERSONAL RUIN KILLS PATIENCE",
+      "bullets": [
+        "Jobs took credit parts orders that exposed Wayne's savings",
+        "Uncapped downside forces smart operators out of big upside"
+      ],
+      "highlight_words": [
+        "credit",
+        "savings",
+        "unshielded",
+        "upside"
+      ],
+      "narration": "Once Jobs ordered parts on credit, Wayne knew unpaid supplier bills could legally drain his personal savings. Unshielded downside risk forces rational people out of generational upside.",
+      "source": "Apple Computer Partnership Withdrawal (Apr 12, 1976); Ronald Wayne (2011)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Ring-Fence Liability So You Can Stay in the Game",
+      "visual_type": "compounding_curve",
+      "stat_label": "CAPPED DOWNSIDE ENABLES MULTI-DECADE HOLDING POWER",
+      "stat_subtext": "LLC shield + zero personal debt + surplus cash -> calm patience",
+      "highlight_words": [
+        "ring-fence",
+        "liability",
+        "guarantees",
+        "surplus"
+      ],
+      "narration": "Ring-fence every asymmetric venture inside capped legal liability, refuse personal debt guarantees, and fund high-upside bets strictly with surplus cash your household bills never require.",
+      "source": "Mind & Margin rule based on Apple Partnership Withdrawal (1976)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Cap Your Ruin Before Chasing Asymmetric Returns",
+      "visual_type": "stat_callout",
+      "stat_value": "Cap Ruin",
+      "stat_label": "PATIENCE IS BUILT ON LEGAL AND FINANCIAL SHIELDS",
+      "bullets": [
+        "Separate business risk from family housing and cash reserves",
+        "Size volatile bets so a zero never changes your lifestyle"
+      ],
+      "highlight_words": [
+        "cap",
+        "ruin",
+        "compounders",
+        "survival"
+      ],
+      "narration": "Cap your personal ruin upfront, because you can only hold ten-year compounders when worst-case losses cannot touch your survival.",
+      "source": "Mind & Margin rule based on Apple Partnership Withdrawal (1976)"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""2026–2027 High-RPM YouTube Trend Intelligence & Live Autocomplete Keyword Miner (Q1 + Q2: 96 Scripts)."""
+"""2026–2027 High-RPM YouTube Trend Intelligence & Live Autocomplete Keyword Miner (Weeks 1–28: 112 Scripts)."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 
-# Curated high-RPM 2026–2027 Trend Clusters for Mind & Margin ($14–$48 CPM across Q1 & Q2 — 96 Scripts)
+# Curated high-RPM 2026–2027 Trend Clusters for Mind & Margin ($14–$48 CPM across Weeks 1–28 — 112 Scripts)
 TREND_CLUSTERS_2026: List[Dict[str, Any]] = [
     {
         "id": "behavioral_money_traps",
@@ -316,6 +316,54 @@ TREND_CLUSTERS_2026: List[Dict[str, Any]] = [
             "long_20_second_order_thinking_guide",
         ],
     },
+    {
+        "id": "documented_historical_disasters",
+        "cluster_name": "Documented Corporate Disasters, Archival Audits & Real-World Wealth Case Studies",
+        "vi_name": "Hồ Sơ Thảm Họa Tài Chính, Sai Số Kỹ Thuật & Điển Tình Tích Sản Có Chứng Cứ Lưu Trữ Gốc",
+        "cpm_range_usd": "$24 – $48",
+        "rpm_estimate_usd": "$15 – $28",
+        "demand_velocity": "Breakout Documentary (+215% YoY)",
+        "competition": "Low",
+        "why_trending_2026": (
+            "Viewers tired of generic AI advice crave forensic, primary-source true stories: SEC Release 34-70694 on "
+            "Knight Capital's $440M 45-minute glitch, LTCM's $4.6B Nobel collapse, SVB's $42B 24-hour bank run, "
+            "Barings account 88888, NASA's $327.6M unit error, Isaac Newton's 1720 bubble loss, Ronald Wayne's $800 "
+            "Apple exit, and Grace Groner's $180-to-$7M 75-year compounding record."
+        ),
+        "monetization_fit": "Pre-Flight Risk & Margin Checklist ($19 OS) + Financial History Classics on Amazon/Audible (`mindandmarg06-20`)",
+        "viral_title_templates": [
+            "How One Unchecked Server Cost Knight Capital $440M in 45 Minutes (SEC Filing)",
+            "Why Nobel Prize Genius Plus Leverage Equals Zero: The $4.6B LTCM Collapse",
+            "How Secretary Grace Groner Turned $180 Into $7 Million Without Trading Once",
+            "Why Apple's Third Founder Sold 10% for $800 After Just 12 Days",
+        ],
+        "seed_keywords": [
+            "knight capital 440 million glitch",
+            "long term capital management collapse",
+            "isaac newton south sea bubble",
+            "grace groner 180 to 7 million",
+            "barings bank nick leeson 88888",
+            "ronald wayne apple 800 dollars",
+        ],
+        "mapped_scripts": [
+            "short_73_knight_capital_glitch",
+            "short_74_isaac_newton_bubble",
+            "short_75_mars_orbiter_units",
+            "short_76_rick_guerin_margin_call",
+            "short_77_kodak_digital_paradox",
+            "short_78_dantzig_unsolved_homework",
+            "short_79_barings_account_88888",
+            "short_80_ronald_wayne_apple_exit",
+            "short_81_icu_five_step_checklist",
+            "short_82_grace_groner_three_shares",
+            "short_83_toyota_andon_cord_rule",
+            "short_84_asch_one_dissenter_rule",
+            "long_25_ltcm_genius_leverage_trap",
+            "long_26_svb_barings_hidden_risk",
+            "long_27_grace_groner_wayne_patience",
+            "long_28_knight_nasa_checklist_systems",
+        ],
+    },
 ]
 
 OUTLIER_HOOK_FORMULAS: List[Dict[str, str]] = [
@@ -338,6 +386,11 @@ OUTLIER_HOOK_FORMULAS: List[Dict[str, str]] = [
         "name": "The Invisible Neuro-Tax",
         "pattern": "Every time you [Common Daily Habit], your brain pays a hidden [Minutes/Dollars] tax.",
         "example": "One 30-minute afternoon meeting splits a Maker's half-day block into two fragments too short for deep craft.",
+    },
+    {
+        "name": "The Archival Post-Mortem Shock",
+        "pattern": "On [Exact Date], [Institution/Founder] lost [$ Amount] in [Minutes/Hours] because of one [Tiny Blindspot].",
+        "example": "On August 1, 2012, one un-updated server cost Knight Capital $440 million in 45 minutes.",
     },
 ]
 
@@ -366,6 +419,7 @@ def score_topic_opportunity(keyword: str) -> Dict[str, Any]:
     high_cpm_terms = {
         "money", "wealth", "finance", "income", "tax", "invest", "million", "salary",
         "paycheck", "spend", "asset", "debt", "kelly", "ergodicity", "loss", "inflation",
+        "bank", "collapse", "crash", "margin", "leverage", "bubble", "billion", "sec",
     }
     ai_saas_terms = {
         "ai", "agent", "automate", "automation", "workflow", "solo", "business",
@@ -373,7 +427,7 @@ def score_topic_opportunity(keyword: str) -> Dict[str, Any]:
     }
     book_model_terms = {
         "book", "summary", "rule", "law", "model", "bias", "fallacy", "psychology",
-        "focus", "habit", "productivity", "paradox", "effect",
+        "focus", "habit", "productivity", "paradox", "effect", "checklist", "audit",
     }
 
     fin_hits = sum(1 for t in high_cpm_terms if t in kw)
@@ -430,7 +484,7 @@ def build_trend_intelligence_report(live_query: Optional[str] = None) -> Dict[st
     total_mapped = sum(len(c["mapped_scripts"]) for c in TREND_CLUSTERS_2026)
     return {
         "channel": "Mind & Margin (@MindAndMargin)",
-        "updated_for": "2026–2027 High-RPM Faceless YouTube (Q1 + Q2: 180 Days / 96 Scripts)",
+        "updated_for": "2026–2027 High-RPM Faceless YouTube (Weeks 1–28: 196 Days / 112 Scripts)",
         "cluster_count": len(TREND_CLUSTERS_2026),
         "total_mapped_scripts": total_mapped,
         "clusters": TREND_CLUSTERS_2026,
@@ -441,14 +495,14 @@ def build_trend_intelligence_report(live_query: Optional[str] = None) -> Dict[st
 
 
 def export_trend_report_markdown(output_md: Path) -> Path:
-    """Export a comprehensive bilingual 180-Day Trend & Script Matrix guide into `products/`."""
+    """Export a comprehensive bilingual 28-Week Trend & Script Matrix guide into `products/`."""
     report = build_trend_intelligence_report()
     lines = [
-        "# 🔥 Báo Cáo Xu Hướng YouTube RPM Cao 2026–2027 & Ngân Hàng 96 Kịch Bản (Quý 1 & Quý 2 — 180 Ngày)",
+        "# 🔥 Báo Cáo Xu Hướng YouTube RPM Cao 2026–2027 & Ngân Hàng 112 Kịch Bản (Tuần 1–28 / 196 Ngày)",
         "",
-        "> **Kênh**: Mind & Margin (`@MindAndMargin`) — Hệ thống nghiên cứu 7 cụm xu hướng ngách CPM `$15–$48` kết hợp kiếm tiền Ngày 1 qua Amazon Associates (`mindandmarg06-20`), SaaS Affiliate & Sản phẩm số `\\$19`.",
+        "> **Kênh**: Mind & Margin (`@MindAndMargin`) — Hệ thống nghiên cứu 8 cụm xu hướng ngách CPM `$15–$48` kết hợp kiếm tiền Ngày 1 qua Amazon Associates (`mindandmarg06-20`), SaaS Affiliate & Sản phẩm số `\\$19`.",
         "",
-        f"## 1. {report['cluster_count']} Cụm Xu Hướng (Trend Clusters) Trọng Điểm Quý 1 & Quý 2 ({report['total_mapped_scripts']} Kịch Bản)",
+        f"## 1. {report['cluster_count']} Cụm Xu Hướng (Trend Clusters) Trọng Điểm Tuần 1–28 ({report['total_mapped_scripts']} Kịch Bản)",
         "",
     ]
     for idx, c in enumerate(report["clusters"], start=1):

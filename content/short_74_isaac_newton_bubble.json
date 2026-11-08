@@ -1,0 +1,118 @@
+{
+  "title": "How FOMO Cost Sir Isaac Newton a Fortune in the 1720 South Sea Bubble",
+  "alt_title_1": "Why High IQ Fails Against Crowd Envy: Newton's 1720 Market Mistake",
+  "alt_title_2": "Isaac Newton Cashed Out Early, Then Bought Back Near the 1720 Peak",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1720, Sir Isaac Newton booked roughly a 20,000-pound profit in South Sea Company shares, then watched friends grow rich, re-entered near summer highs above 900 pounds per share, and converted safe annuities into stock, losing 10,000 to 20,000 pounds.",
+  "tags": [
+    "isaac newton",
+    "south sea bubble",
+    "fomo investing",
+    "behavioral finance",
+    "market bubbles",
+    "investor psychology",
+    "financial history"
+  ],
+  "thumbnail": {
+    "hook_text": "NEWTON'S FOMO LOSS",
+    "badge": "SOUTH SEA 1720",
+    "stat": "-54%"
+  },
+  "affiliate_cta": {
+    "offer_name": "Anti-FOMO Exit & Re-Entry Policy + Behavioral Finance Classics",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Have you ever sold a winner cleanly, then chased it back higher after watching others celebrate? Grab our Anti-FOMO Exit & Re-Entry Policy here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Newton Booked 20,000 Pounds, Then Chased the Top",
+      "visual_type": "stat_callout",
+      "stat_value": "1720 Mania",
+      "stat_label": "SIR ISAAC NEWTON IN THE SOUTH SEA BUBBLE",
+      "bullets": [
+        "Cashed out early in spring 1720 for ~20,000-pound gain",
+        "Re-entered near summer peaks above 900 pounds per share"
+      ],
+      "highlight_words": [
+        "1720",
+        "newton",
+        "twenty-thousand-pound",
+        "fortune"
+      ],
+      "narration": "In spring 1720, Sir Isaac Newton cashed out of South Sea Company stock early with roughly a twenty-thousand-pound profit, then lost a fortune chasing his friends back near the top.",
+      "source": "Andrew Odlyzko, Notes and Records of the Royal Society (2018)"
+    },
+    {
+      "tag": "THE RECORD",
+      "headline": "Swapped Safe Annuities Near 900 Pounds a Share",
+      "visual_type": "stat_callout",
+      "stat_value": "-54% Wealth",
+      "stat_label": "LOSS ON SWAPPED ANNUITIES AFTER AUTUMN CRASH",
+      "bullets": [
+        "Watched wealthy peers multiply paper fortunes all summer",
+        "Lost 10,000 to 20,000 pounds when shares collapsed"
+      ],
+      "highlight_words": [
+        "odlyzko",
+        "nine",
+        "annuities",
+        "fifty-four"
+      ],
+      "narration": "Archival research by historian Andrew Odlyzko shows Newton watched acquaintances get rich all summer, bought back near peaks above nine hundred pounds, and swapped safe annuities, finishing fifty-four percent worse off on those annuities.",
+      "source": "Andrew Odlyzko, Notes and Records of the Royal Society (2018)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Calculus Genius Cannot Outrun Social Comparison",
+      "visual_type": "comparison_split",
+      "left_title": "CROWD ENVY MODE",
+      "left_body": "Peers bragging at dinner -> abandons discipline -> buys mania peak",
+      "right_title": "TEMPERAMENT MOAT",
+      "right_body": "Accepts missed tail froth -> keeps realized 20,000-pound gain",
+      "highlight_words": [
+        "calculus",
+        "comparison",
+        "analytical",
+        "neighbors"
+      ],
+      "narration": "The physicist who invented calculus and mapped planetary motion still cracked under social comparison, proving that raw analytical IQ offers zero protection once watching neighbors get rich hijacks your discipline.",
+      "source": "Mind & Margin rule based on Odlyzko, Royal Society (2018)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Enforce a 90-Day No-Chase Lockout After Selling",
+      "visual_type": "compounding_curve",
+      "stat_label": "WRITTEN RE-ENTRY RULES PRESERVE REALIZED GAINS",
+      "stat_subtext": "Take profit -> park in T-bills -> 90-day ban on buying back higher",
+      "highlight_words": [
+        "cool-down",
+        "overheated",
+        "forbid",
+        "ninety"
+      ],
+      "narration": "Defend your portfolio with a written cool-down rule: whenever you sell an overheated asset at your target valuation, forbid yourself from buying that ticker back at a higher price for ninety days.",
+      "source": "Mind & Margin protocol (advice, not a study)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Temperament Protects What Intellect Builds",
+      "visual_type": "stat_callout",
+      "stat_value": "90-Day Ban",
+      "stat_label": "NEVER LET A NEIGHBOR'S GAIN REWRITE YOUR PLAN",
+      "bullets": [
+        "Missing the final 50% of a bubble costs zero real cash",
+        "Chasing back in at the top wipes out years of savings"
+      ],
+      "highlight_words": [
+        "manias",
+        "envy",
+        "written",
+        "crowd"
+      ],
+      "narration": "Market manias punish envy far harder than ignorance, so let written exit rules guard your capital when the crowd loses its head.",
+      "source": "Mind & Margin rule based on Odlyzko, Royal Society (2018)"
+    }
+  ]
+}

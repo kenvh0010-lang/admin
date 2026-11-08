@@ -1,0 +1,142 @@
+{
+  "title": "The Architecture of 75-Year Patience: Grace Groner vs. Ronald Wayne",
+  "alt_title_1": "From $180 to $7 Million: Why Downside Shields Decide Who Holds",
+  "alt_title_2": "Grace Groner, Ronald Wayne & Samuelson's Bet: How to Hold Compounders",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "In 1935, secretary Grace Groner bought three $60 shares of Abbott Laboratories for $180 and held for 75 years, leaving over $7 million to Lake Forest College in 2010. In 1976, Apple co-founder Ronald Wayne sold his 10% stake for $800 in 12 days because unlimited partnership debt threatened his savings. Patience is built on legal shields and observation cadence.",
+  "tags": [
+    "grace groner",
+    "ronald wayne",
+    "paul samuelson",
+    "myopic loss aversion",
+    "dividend reinvestment",
+    "long term compounding",
+    "downside protection",
+    "behavioral finance"
+  ],
+  "thumbnail": {
+    "hook_text": "$180 TO $7M",
+    "badge": "75-YEAR PATIENCE",
+    "stat": "75 YRS"
+  },
+  "affiliate_cta": {
+    "offer_name": "75-Year Ring-Fenced Portfolio Blueprint + Behavioral Finance Books",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "How often do you check your long-term investments: daily, monthly, or quarterly? Grab our Ring-Fenced Portfolio Blueprint + reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • THE $180 FORTUNE IN LAKE FOREST",
+      "headline": "How Three $60 Shares Quietly Grew Past $7 Million",
+      "visual_type": "stat_callout",
+      "stat_value": "$180 -> $7M",
+      "stat_label": "GRACE GRONER'S 75-YEAR ABBOTT HOLD (1935-2010)",
+      "bullets": [
+        "1935: 25-year-old secretary bought three $60 Abbott shares ($180)",
+        "Lived in a tiny Lake Forest cottage; never used margin or options",
+        "Reinvested every dividend for 75 years -> $7M+ college gift in 2010"
+      ],
+      "highlight_words": [
+        "1935",
+        "groner",
+        "abbott",
+        "seventy-five"
+      ],
+      "narration": "In 1935, in the depths of the Great Depression, a twenty-five-year-old secretary named Grace Groner went to work at Abbott Laboratories in North Chicago and bought three specially issued shares of company stock at sixty dollars apiece. Her entire capital outlay was one hundred eighty dollars. Over the next seven and a half decades, Groner worked forty-three years as an Abbott secretary, never bought another share, never traded an option, and never borrowed a dollar on margin. She lived happily in a tiny one-bedroom cottage in Lake Forest, Illinois, shopped rummage sales, walked instead of owning a car, and reinvested every dividend across stock splits. When she died in January 2010 at age one hundred, her three shares exceeded seven million dollars, funding student fellowships at Lake Forest College.",
+      "source": "Lake Forest College Bequest & Chicago Tribune (Mar 6, 2010)"
+    },
+    {
+      "tag": "CHAPTER 2 • RONALD WAYNE'S TWELVE-DAY EXIT",
+      "headline": "Why Apple's Third Co-Founder Took $800 and Walked Away",
+      "visual_type": "comparison_split",
+      "left_title": "RONALD WAYNE (APRIL 1976)",
+      "left_body": "General partnership -> unlimited personal debt risk -> sold 10% in 12 days",
+      "right_title": "GRACE GRONER (1935-2010)",
+      "right_body": "Capped $180 common stock + zero debt -> held undisturbed for 75 years",
+      "highlight_words": [
+        "1976",
+        "wayne",
+        "partnership",
+        "liability"
+      ],
+      "narration": "Contrast Grace Groner's seventy-five-year hold with the most expensive twelve-day exit in Silicon Valley history. On April 1, 1976, forty-one-year-old draftsman Ronald Wayne sat at his typewriter and drafted Apple Computer's original three-page partnership contract, taking a ten percent stake alongside Steve Jobs and Steve Wozniak at forty-five percent each. Twelve days later, on April 12, Wayne sold his entire ten percent back for eight hundred dollars, accepting fifteen hundred more later that year to waive all future claims. Commentators mock Wayne for impatience, yet the legal record shows cold logic: early Apple was a general partnership carrying unlimited personal liability. When Jobs took credit obligations to fill a fifty-computer Byte Shop order, broke twenty-somethings Jobs and Wozniak had nothing creditors could seize, whereas Wayne owned personal savings and carried painful memories of paying off partner debts from a failed 1971 slot-machine venture.",
+      "source": "Apple Partnership Agreement & Addendum (Apr 1 & Apr 12, 1976)"
+    },
+    {
+      "tag": "CHAPTER 3 • BALANCE SHEETS CREATE TEMPERAMENT",
+      "headline": "Patience Fails Whenever Volatility Threatens Survival",
+      "visual_type": "stat_callout",
+      "stat_value": "$180 Max",
+      "stat_label": "CAPPED WORST-CASE LOSS PREVENTED PANIC ACROSS 13 RECESSIONS",
+      "bullets": [
+        "Groner's maximum legal loss was strictly capped at $180 from day one",
+        "Low fixed living expenses meant recessions never touched grocery cash",
+        "Uncapped leverage or personal guarantees turn normal dips into forced sales"
+      ],
+      "highlight_words": [
+        "structure",
+        "capped",
+        "recessions",
+        "margin"
+      ],
+      "narration": "Putting Groner and Wayne side by side exposes a rule financial media routinely misses: investing temperament is downstream of legal and cash-flow structure. Grace Groner did not possess superhuman nerve; she possessed a bulletproof balance sheet. Corporate limited liability capped her worst conceivable loss at one hundred eighty dollars, and her frugal Lake Forest budget never depended on selling shares to pay property taxes or utility bills across thirteen American recessions. Whenever a solo founder signs personal debt guarantees, or an investor buys equities on margin or with next year's tuition cash, ordinary thirty-percent drawdowns turn into existential emergencies, forcing rational people out of great assets right before the power law bends upward.",
+      "source": "Apple Partnership Addendum (1976); Lake Forest College Archive (2010)"
+    },
+    {
+      "tag": "CHAPTER 4 • SAMUELSON'S 1963 MIT LUNCHROOM BET",
+      "headline": "Why Checking Quotes Daily Breaks Long-Term Math",
+      "visual_type": "stat_callout",
+      "stat_value": "1 vs 100",
+      "stat_label": "SAMUELSON'S COIN TOSS & MYOPIC LOSS AVERSION",
+      "bullets": [
+        "1963 MIT lunch: colleague refused one +$200 / -$100 coin flip",
+        "Same economist eagerly offered to play 100 flips in a row",
+        "Benartzi & Thaler (1995): checking stocks daily triggers narrow loss pain"
+      ],
+      "highlight_words": [
+        "samuelson",
+        "1963",
+        "myopic",
+        "thaler"
+      ],
+      "narration": "Even after you cap legal downside, a second psychological trap sabotages multi-decade holds. In 1963, MIT economist Paul Samuelson offered a lunch colleague a clean wager: flip a fair coin, win two hundred dollars on heads, or lose one hundred dollars on tails. His colleague turned down a single toss because losing one hundred dollars stung harder than winning two hundred felt good, yet offered to play if Samuelson promised one hundred flips! In 1995, behavioral economists Shlomo Benartzi and Richard Thaler named this mechanism Myopic Loss Aversion. Checking a brokerage app every afternoon slices a winning thirty-year marathon into thousands of coin tosses, flooding your nervous system with loss pain until you capitulate into cash.",
+      "source": "Paul A. Samuelson, Scientia 98:108-113 (1963); Benartzi & Thaler, QJE (1995)"
+    },
+    {
+      "tag": "CHAPTER 5 • AUTOMATIC REINVESTMENT IN SILENCE",
+      "headline": "Turning Market Panics Into Share-Count Accelerators",
+      "visual_type": "compounding_curve",
+      "stat_label": "INFREQUENT OBSERVATION + DIVIDEND REINVESTMENT -> 75-YEAR TAIL",
+      "stat_subtext": "Zero leverage + automatic reinvestment -> bear markets buy cheap shares",
+      "highlight_words": [
+        "reinvestment",
+        "panics",
+        "cheaper",
+        "uninterrupted"
+      ],
+      "narration": "Watch how removing leverage and silencing daily quotes changed Grace Groner's relationship with bear markets. Because she never stared at flashing tickers and never faced a margin clerk, market crashes in 1937, 1974, 1987, and 2008 required zero decisions from her cottage kitchen. Every time panic pushed Abbott's share price down, her reinvested quarterly dividends automatically purchased more fractional shares at depressed valuations. Over seventy-five years, splits and reinvested payouts turned three initial certificates into more than one hundred thousand shares. She outperformed frantic professionals not by predicting macro cycles, but by designing a quiet life where uninterrupted time did ninety-nine percent of the heavy lifting.",
+      "source": "Benartzi & Thaler, 'Myopic Loss Aversion', QJE 110:73-92 (1995)"
+    },
+    {
+      "tag": "CHAPTER 6 • THE RING-FENCED COMPOUNDING PROTOCOL",
+      "headline": "Three Structural Shields That Let You Hold for Decades",
+      "visual_type": "stat_callout",
+      "stat_value": "3 Shields",
+      "stat_label": "LIABILITY FIREWALL • CASH MOAT • QUARTERLY CHECKS",
+      "bullets": [
+        "1. Incorporate ventures (LLC/Corp) and hold 0% margin debt on equities",
+        "2. Keep 12-24 months of lean living bills in safe, separate T-bills",
+        "3. Automate dividend reinvestment and audit holdings only 4x per year"
+      ],
+      "highlight_words": [
+        "firewall",
+        "margin",
+        "reserves",
+        "quarterly"
+      ],
+      "narration": "Build Grace Groner's staying power into your finances and solo business this week with three structural shields. First, install a hard liability firewall: house every business experiment inside a limited-liability entity, avoid personal debt guarantees, and run zero margin loans in your investment account so nobody can force a twelve-day Ronald Wayne exit. Second, maintain twelve to twenty-four months of lean household bills in safe Treasury reserves completely separate from your equity portfolio. Third, turn on automatic dividend reinvestment, strip live stock widgets off your phone screen, and inspect long-term holdings on a calm written schedule just four times a year.",
+      "source": "Mind & Margin protocol based on Samuelson (1963) & Benartzi-Thaler (1995)"
+    }
+  ]
+}

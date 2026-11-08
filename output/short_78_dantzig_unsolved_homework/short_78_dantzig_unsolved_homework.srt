@@ -1,0 +1,119 @@
+1
+00:00:00,000 --> 00:00:00,497
+In 1939,
+
+2
+00:00:00,497 --> 00:00:03,168
+UC Berkeley graduate student George Dantzig
+
+3
+00:00:03,168 --> 00:00:05,716
+walked late into Professor Jerzy Neyman's
+
+4
+00:00:05,716 --> 00:00:06,772
+statistics class,
+
+5
+00:00:06,772 --> 00:00:09,195
+copied two famous unsolved theorems off
+
+6
+00:00:09,195 --> 00:00:11,866
+the chalkboard thinking they were homework,
+
+7
+00:00:11,866 --> 00:00:12,860
+and solved both.
+
+8
+00:00:12,860 --> 00:00:13,561
+Days later,
+
+9
+00:00:13,561 --> 00:00:15,791
+Dantzig left the proofs on Neyman's
+
+10
+00:00:15,791 --> 00:00:18,277
+desk and apologized because they seemed
+
+11
+00:00:18,277 --> 00:00:19,997
+slightly harder than usual.
+
+12
+00:00:19,997 --> 00:00:21,017
+Six weeks later,
+
+13
+00:00:21,017 --> 00:00:23,757
+an excited Neyman announced those solutions
+
+14
+00:00:23,757 --> 00:00:25,860
+formed Dantzig's doctoral thesis.
+
+15
+00:00:25,860 --> 00:00:28,012
+Dantzig later explained that had he
+
+16
+00:00:28,012 --> 00:00:29,979
+arrived on time and heard Neyman
+
+17
+00:00:29,979 --> 00:00:32,683
+introduce those equations as famous unsolved
+
+18
+00:00:32,683 --> 00:00:33,237
+problems,
+
+19
+00:00:33,237 --> 00:00:35,634
+discouragement would have made him quit
+
+20
+00:00:35,634 --> 00:00:37,970
+after the first frustrating afternoon.
+
+21
+00:00:37,970 --> 00:00:40,591
+Strip intimidating prestige labels off your
+
+22
+00:00:40,591 --> 00:00:43,455
+hardest engineering or distribution bottleneck,
+
+23
+00:00:43,455 --> 00:00:45,832
+block ninety quiet morning minutes with
+
+24
+00:00:45,832 --> 00:00:46,686
+pen and paper,
+
+25
+00:00:46,686 --> 00:00:49,002
+and work the problem assuming a clean,
+
+26
+00:00:49,002 --> 00:00:50,830
+practical solution is waiting.
+
+27
+00:00:50,830 --> 00:00:53,270
+Most capable builders quit before writing
+
+28
+00:00:53,270 --> 00:00:55,293
+line one simply because they treat
+
+29
+00:00:55,293 --> 00:00:57,911
+borrowed industry rumors of impossibility as
+
+30
+00:00:57,911 --> 00:00:59,280
+verified physical laws.

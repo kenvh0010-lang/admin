@@ -1,0 +1,142 @@
+{
+  "title": "When Genius Meets Leverage: Inside the $4.6B LTCM & $20B Archegos Collapses",
+  "alt_title_1": "Why High IQ Multiplied by Margin Debt Always Ends in Ruin",
+  "alt_title_2": "LTCM (1998), Rick Guerin (1974) & Archegos (2021): The Mathematics of Zero",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "In 1998, Long-Term Capital Management lost $4.6 billion despite Nobel laureates Myron Scholes and Robert C. Merton on the partner roster, forcing a $3.625 billion 14-bank rescue. Paired with Rick Guerin's 1974 margin call and Archegos Capital's $20 billion 48-hour wipeout in 2021, history proves why high IQ multiplied by debt equals ruin.",
+  "tags": [
+    "long term capital management",
+    "ltcm collapse",
+    "archegos capital",
+    "rick guerin",
+    "financial leverage",
+    "margin calls",
+    "when genius failed",
+    "risk of ruin"
+  ],
+  "thumbnail": {
+    "hook_text": "IQ X LEVERAGE = 0",
+    "badge": "LTCM 1998 ARCHIVE",
+    "stat": "$4.6B"
+  },
+  "affiliate_cta": {
+    "offer_name": "Zero-Ruin Capital Allocation Protocol + Financial History Library",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Are you building asymmetric upside with zero-liquidation code and content, or borrowing fragile margin with a trigger price? Grab our Zero-Ruin Capital Protocol here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "Greenwich 1998: Two Nobel Laureates and a $4.6B Crater",
+      "visual_type": "stat_callout",
+      "stat_value": "$4.6B Wipe",
+      "stat_label": "LTCM COLLAPSE • 14-BANK $3.625B RESCUE (SEPT 23, 1998)",
+      "bullets": [
+        "Partners included Nobel economists Myron Scholes & Robert C. Merton",
+        "Lost $4.6B in months during 1998 sovereign liquidity freeze",
+        "NY Fed coordinated 14 banks to inject $3.625B to stop market panic"
+      ],
+      "highlight_words": [
+        "1998",
+        "scholes",
+        "merton",
+        "rescue"
+      ],
+      "narration": "In spring 1998, Long-Term Capital Management in Greenwich, Connecticut boasted the highest concentration of financial pedigree ever assembled under one roof. Founded by Salomon Brothers bond pioneer John Meriwether, its partner roster featured former Federal Reserve Vice Chairman David Mullins alongside Nobel Prize-winning economists Myron Scholes and Robert C. Merton, co-architects of modern option-pricing theory. Wall Street banks fought merely for the privilege of lending them capital without seeing their full positions. For four straight years, their quantitative models compounded money effortlessly, posting net returns above forty percent in both 1995 and 1996. Then, between May and September 1998, that unmatched brain trust lost four point six billion dollars, nearly froze global credit markets, and forced the Federal Reserve Bank of New York on September 23, 1998 to coordinate a three-point-six-two-five-billion-dollar rescue across fourteen major banks.",
+      "source": "President's Working Group on Financial Markets, LTCM Report (Apr 1999)"
+    },
+    {
+      "tag": "CHAPTER 2 • THE 25-TO-1 ILLUSION",
+      "headline": "Stretching $4.7B of Equity Into Over $120B of Assets",
+      "visual_type": "stat_callout",
+      "stat_value": "25:1 Debt",
+      "stat_label": "$4.7B EQUITY SUPPORTING >$120B ASSETS + $1T+ DERIVATIVES",
+      "bullets": [
+        "Arbitrage spreads paid pennies, so LTCM borrowed 25x to juice ROE",
+        "Aug 17, 1998 Russian default triggered a global rush to liquidity",
+        "Every spread widened at once outside Gaussian bell-curve models"
+      ],
+      "highlight_words": [
+        "twenty-five-to-one",
+        "twenty",
+        "russia",
+        "gaussian"
+      ],
+      "narration": "How did brilliant mathematicians vaporize over ninety percent of their equity in weeks? Because LTCM's core bond-convergence trades captured tiny fractions of a percentage point between closely related government securities. Turning basis-point nickels into forty percent equity returns required towering borrowed debt. Entering 1998, LTCM stretched roughly four point seven billion dollars of investor equity into more than one hundred and twenty billion dollars of balance-sheet assets, a twenty-five-to-one leverage ratio, plus over one trillion dollars in notional derivatives. Their Gaussian bell-curve equations assumed historical correlations held firm under stress. On August 17, 1998, Russia defaulted on domestic ruble debt. Panicked institutions worldwide dumped every illiquid holding simultaneously and stampeded into benchmark U.S. Treasuries, blowing out every correlation model across every continent at once.",
+      "source": "Roger Lowenstein, When Genius Failed (2000)"
+    },
+    {
+      "tag": "CHAPTER 3 • RICK GUERIN'S $40 MARGIN CALL",
+      "headline": "Why Buffett and Munger's Third Partner Got Forced Out",
+      "visual_type": "comparison_split",
+      "left_title": "RICK GUERIN (1973-1974)",
+      "left_body": "Smart + margin debt -> forced to sell Berkshire under $40/share",
+      "right_title": "BUFFETT & MUNGER",
+      "right_body": "Smart + unleveraged -> rode out -70% slump -> $600k+/share",
+      "highlight_words": [
+        "guerin",
+        "1973",
+        "1974",
+        "forty"
+      ],
+      "narration": "Twenty-four years before LTCM, a quieter episode proved the exact same arithmetic on an individual fortune. Most people picture Warren Buffett and Charlie Munger as a lifelong duo, yet in the late 1960s and early 1970s they bought businesses alongside a razor-sharp third partner named Rick Guerin. Decades later, when investor Mohnish Pabrai asked what happened to him, Buffett explained the tragedy in plain English. During the severe 1973 to 1974 bear market, when American stocks plunged roughly seventy percent, Guerin carried brokerage margin loans. Hit with relentless margin calls at the bottom, Guerin was forced to sell his Berkshire Hathaway stock to Buffett for under forty dollars a share. Rick was every bit as smart as Warren and Charlie; he was simply leveraged and in a hurry.",
+      "source": "Warren Buffett interview recounted by Mohnish Pabrai (2013)"
+    },
+    {
+      "tag": "CHAPTER 4 • ARCHEGOS & THE $20B 48-HOUR WIPEOUT",
+      "headline": "March 2021: Hidden Swaps Repeat 1998 in Fast-Forward",
+      "visual_type": "stat_callout",
+      "stat_value": "$20B / 48h",
+      "stat_label": "BILL HWANG'S ARCHEGOS CAPITAL • MARCH 2021 LIQUIDATION",
+      "bullets": [
+        "Stacked concentrated equity bets via opaque total-return swaps",
+        "Multiple prime brokers lent blindly against identical tickers",
+        "$20B personal fortune erased in 48 hours; >$10B bank losses"
+      ],
+      "highlight_words": [
+        "2021",
+        "archegos",
+        "swaps",
+        "forty-eight"
+      ],
+      "narration": "Modern Wall Street still repeated that 1998 script almost line for line. By March 2021, Bill Hwang's family office, Archegos Capital Management, had quietly parlayed roughly twenty billion dollars of personal capital into more than one hundred billion dollars of concentrated exposure across a small basket of media and technology stocks. Instead of transparent exchange filings or standard margin, Archegos used synthetic total-return swaps spread across competing prime brokers so no single bank saw the full pyramid. When ViacomCBS announced a routine secondary stock offering in late March 2021 and dipped sharply, collateral demands hit every desk overnight. Prime brokers raced each other into forced block liquidations, erasing Hwang's entire twenty-billion-dollar fortune inside forty-eight hours and leaving global banks with over ten billion dollars in losses.",
+      "source": "Paul, Weiss Special Committee Report on Archegos (July 29, 2021)"
+    },
+    {
+      "tag": "CHAPTER 5 • ERGODICITY & MULTIPLYING BY ZERO",
+      "headline": "Why Software Leverage Beats Borrowed Financial Debt",
+      "visual_type": "compounding_curve",
+      "stat_label": "PERMISSIONLESS CODE & MEDIA SCALE WITH ZERO LIQUIDATION PRICE",
+      "stat_subtext": "10 years of +30% x one -100% margin call = $0 • Survival comes first",
+      "highlight_words": [
+        "multiplicative",
+        "zero",
+        "liquidation",
+        "software"
+      ],
+      "narration": "Across 1974, 1998, and 2021, one unforgiving mathematical law governs every leveraged collapse: in a sequential compounding game, fifty brilliant decisions multiplied by a single zero still equals zero. Callable financial debt installs an absorbing barrier on your net worth, handing a nervous lender the legal right to liquidate your finest assets at bottom-tick panic prices before an inevitable recovery arrives. Contrast fragile financial debt with permissionless operational leverage. When a solo builder ships deterministic software, automated digital tools, or evergreen educational media, upside scales to thousands of buyers with zero liquidation price. No prime broker ever calls at six AM during a bear market demanding that you auction off your codebase or subscriber library for pennies on the dollar.",
+      "source": "Mind & Margin synthesis: LTCM (1999) & Archegos (2021) reports"
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "Install the 3-Rule Zero-Ruin Balance Sheet Protocol",
+      "visual_type": "stat_callout",
+      "stat_value": "0% Margin",
+      "stat_label": "BAN CALLABLE DEBT • HOLD 12M CASH • SCALE WITH CODE",
+      "bullets": [
+        "1. Disable brokerage margin & skip 2x-3x leveraged daily ETFs",
+        "2. Park 12 months of living + tax cash in short-term T-bills",
+        "3. Channel aggressive ambition into zero-recourse code & media"
+      ],
+      "highlight_words": [
+        "disable",
+        "twelve",
+        "treasury",
+        "asymmetric"
+      ],
+      "narration": "Hardwire the archival lessons of LTCM, Rick Guerin, and Archegos into your personal operating system through three permanent guardrails. First, enforce Zero Callable Debt: switch off margin borrowing inside every brokerage account tonight, skip leveraged daily funds, and never pledge volatile shares as collateral for tax bills or property loans. Second, fund a Twelve-Month Treasury Buffer: hold one full year of baseline household bills and business overhead inside short-term Treasury bills so a seventy percent equity slump never forces you into a distressed sale under forty dollars. Third, channel your ambition for speed exclusively into asymmetric operational leverage, building code, templates, and cited public research whose downside is capped at focused weekend hours while your compounding stays uninterrupted for decades.",
+      "source": "Mind & Margin protocol based on LTCM (1999) & Buffett/Pabrai (2013)"
+    }
+  ]
+}

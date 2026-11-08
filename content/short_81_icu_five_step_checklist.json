@@ -1,0 +1,118 @@
+{
+  "title": "How a 5-Step Checklist Cut Hospital ICU Infections by 66%",
+  "alt_title_1": "Peter Pronovost's 2006 Study: Why Experts Still Need Checklists",
+  "alt_title_2": "Stop Trusting Memory Under Stress: The Michigan ICU Rule",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 2006, Johns Hopkins physician Peter Pronovost tested a five-step central-line hygiene checklist across 103 Michigan ICUs and empowered nurses to stop doctors who skipped a step, cutting bloodstream infections by up to 66%.",
+  "tags": [
+    "peter pronovost",
+    "checklist manifesto",
+    "error prevention",
+    "systems thinking",
+    "standard operating procedures",
+    "solo business systems",
+    "decision science"
+  ],
+  "thumbnail": {
+    "hook_text": "5-STEP CHECKLIST",
+    "badge": "NEJM 2006 STUDY",
+    "stat": "-66%"
+  },
+  "affiliate_cta": {
+    "offer_name": "Solo Pre-Flight Checklist Pack + Systems Engineering Book List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Which recurring task in your business or investing still relies on raw memory instead of a 5-line checklist? Grab our Solo Pre-Flight Checklist Pack here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Five Plain Checkboxes Beat Expensive Medical Tech",
+      "visual_type": "stat_callout",
+      "stat_value": "66% Drop",
+      "stat_label": "MICHIGAN ICU INFECTION DROP OVER 18 MONTHS (2006)",
+      "bullets": [
+        "Tested by Johns Hopkins physician Peter Pronovost",
+        "Zero new drugs or hardware: just a 5-step sterile checklist"
+      ],
+      "highlight_words": [
+        "2006",
+        "pronovost",
+        "sixty-six",
+        "michigan"
+      ],
+      "narration": "In 2006, Johns Hopkins physician Peter Pronovost cut deadly intensive-care bloodstream infections by up to sixty-six percent across Michigan without inventing a single new drug or surgical device.",
+      "source": "Peter Pronovost et al., New England Journal of Medicine 355:2725 (2006)"
+    },
+    {
+      "tag": "THE RECORD",
+      "headline": "103 ICUs Hit a Median Infection Rate of Zero",
+      "visual_type": "stat_callout",
+      "stat_value": "0 Median",
+      "stat_label": "REACHED WITHIN 3 MONTHS ACROSS 1,981 ICU-MONTHS",
+      "bullets": [
+        "5 basic steps: handwash, drapes, skin prep, vein site, removal",
+        "Nurses got explicit authority to stop doctors who skipped one"
+      ],
+      "highlight_words": [
+        "103",
+        "nurses",
+        "authority",
+        "zero"
+      ],
+      "narration": "Tracking 103 Michigan ICUs across 1,981 ICU-months, Pronovost introduced five basic central-line steps and gave nurses full authority to stop any doctor who skipped one. Within three months, the median infection rate dropped to zero.",
+      "source": "Peter Pronovost et al., New England Journal of Medicine 355:2725 (2006)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Urgency Makes Even Elite Experts Skip Steps",
+      "visual_type": "comparison_split",
+      "left_title": "MEMORY UNDER RUSH",
+      "left_body": "High IQ + time pressure -> silent skipped steps & costly bugs",
+      "right_title": "5-LINE GATE",
+      "right_body": "Written pre-flight check -> catches dumb mistakes in 30 seconds",
+      "highlight_words": [
+        "physicians",
+        "urgency",
+        "memory",
+        "deployments"
+      ],
+      "narration": "Experienced physicians already knew all five sterile rules by heart, yet urgency and fatigue caused silent skips. Solo operators fail the exact same way when rushing code deployments, tax filings, or portfolio trades from memory.",
+      "source": "Peter Pronovost et al., New England Journal of Medicine 355:2725 (2006)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Gate Every Irreversible Action With 5 Written Lines",
+      "visual_type": "compounding_curve",
+      "stat_label": "PREVENTING UNFORCED ERRORS COMPOUNDS RELIABILITY",
+      "stat_subtext": "30-second written gate -> zero avoidable blowups",
+      "highlight_words": [
+        "mandatory",
+        "five-line",
+        "irreversible",
+        "deploy"
+      ],
+      "narration": "Write a mandatory five-line pre-flight checklist for every irreversible workflow in your calendar, and refuse to wire funds, ship code, or place orders until all five boxes pass.",
+      "source": "Mind & Margin rule based on Peter Pronovost et al., NEJM (2006)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Checkboxes Beat Raw Willpower Under Pressure",
+      "visual_type": "stat_callout",
+      "stat_value": "5 Checks",
+      "stat_label": "EXTERNALIZE CRITICAL STEPS OUT OF WORKING MEMORY",
+      "bullets": [
+        "Keep checklists short: 5 killer items on a single index card",
+        "Give your checklist hard authority to halt any rushed launch"
+      ],
+      "highlight_words": [
+        "memory",
+        "pressure",
+        "checkboxes",
+        "brilliance"
+      ],
+      "narration": "Stop trusting raw memory under stress, because five boring checkboxes outperform hurried brilliance every single week.",
+      "source": "Mind & Margin rule based on Peter Pronovost et al., NEJM (2006)"
+    }
+  ]
+}

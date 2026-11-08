@@ -76,7 +76,7 @@ jobs:
         run: |
           python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
 
-      - name: Parallel Batch Render All 24 Weeks / 96 Videos (on code/script push or full rebuild)
+      - name: Parallel Batch Render All 28 Weeks / 112 Videos (on code/script push or full rebuild)
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         run: |
           python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4
@@ -116,15 +116,15 @@ jobs:
           if [ -f content/published_ledger.json ]; then git add content/published_ledger.json; fi
           git diff --cached --quiet || (git pull --rebase origin main && git commit -m "chore(autopilot): sync SEO site, upload packs & YouTube ledger [skip ci]" && git push)
 
-      - name: Publish 24-Week / 180-Day Neural-Voiced MP4 Packs to GitHub Releases
+      - name: Publish 28-Week / 196-Day Neural-Voiced MP4 Packs to GitHub Releases
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: q1-90day-neural-videos
-          name: "🎬 Complete Half-Year Video Vault (96 Neural-Voiced MP4s — Weeks 1–24 / Q1 & Q2)"
+          name: "🎬 Complete 28-Week Video Vault (112 Neural-Voiced MP4s — Weeks 1–28)"
           body: |
-            ### 100% Automated Cloud Render — Full 180-Day / 24-Week Library (96 Fact-Checked Videos)!
-            Download any weekly `.zip` bundle (`month1_week01` through `month6_week24`) containing ready-to-upload **1080x1920 Shorts (72)** & **1920x1080 Long-form Visual Essays (24)** with natural American English neural voiceover (`en-US-ChristopherNeural`), Ken Burns motion transitions, academic source citations, 100% copyright-free ambient music, `.srt` subtitles, high-CTR thumbnails, and copy-paste YouTube SEO descriptions (`mindandmarg06-20`).
+            ### 100% Automated Cloud Render — Full 196-Day / 28-Week Library (112 Fact-Checked Videos)!
+            Download any weekly `.zip` bundle (`month1_week01` through `month7_week28`) containing ready-to-upload **1080x1920 Shorts (84)** & **1920x1080 Long-form Visual Essays (28)** with natural American English neural voiceover (`en-US-ChristopherNeural`), Ken Burns motion transitions, primary archival & academic citations, 100% copyright-free ambient music, `.srt` subtitles, high-CTR thumbnails, and copy-paste YouTube SEO descriptions (`mindandmarg06-20`).
           files: |
             release_bundles/*.zip
         env:

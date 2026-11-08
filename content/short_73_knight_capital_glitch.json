@@ -1,0 +1,118 @@
+{
+  "title": "How One Unchecked Server Cost Knight Capital $440 Million in 45 Minutes",
+  "alt_title_1": "The 2012 Power Peg Bug: Why Manual Deployments Destroy Leverage",
+  "alt_title_2": "7 of 8 Servers Updated: Inside Wall Street's Fastest Software Disaster",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "On August 1, 2012, Knight Capital Group deployed updated trading software to 7 of 8 servers. The untouched 8th server triggered a dead 2003 test flag called Power Peg, firing over 4 million orders in 45 minutes and causing a pre-tax loss above $440 million.",
+  "tags": [
+    "knight capital",
+    "software engineering",
+    "risk management",
+    "deployment automation",
+    "kill switch",
+    "financial history",
+    "systems thinking"
+  ],
+  "thumbnail": {
+    "hook_text": "45-MIN $440M BUG",
+    "badge": "KNIGHT AUG 2012",
+    "stat": "$440M"
+  },
+  "affiliate_cta": {
+    "offer_name": "Solo Systems Kill-Switch Checklist + Engineering Resilience Books",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Do your automated scripts, cloud servers, and ad accounts all have an independent hard dollar cap right now? Grab our Solo Systems Kill-Switch Checklist: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "$440 Million Gone in 45 Trading Minutes",
+      "visual_type": "stat_callout",
+      "stat_value": "$440M Loss",
+      "stat_label": "KNIGHT CAPITAL GROUP • AUGUST 1, 2012",
+      "bullets": [
+        "9:30 AM market open turned into an instant software firestorm",
+        "4 million unintended orders flooded 154 stocks in 45 minutes"
+      ],
+      "highlight_words": [
+        "2012",
+        "knight",
+        "forty-five",
+        "million"
+      ],
+      "narration": "On August 1, 2012, major Wall Street market maker Knight Capital opened for trading at nine-thirty AM and lost over four hundred and forty million dollars in forty-five minutes.",
+      "source": "U.S. SEC Order Release No. 34-70694, Knight Capital (Oct 16, 2013)"
+    },
+    {
+      "tag": "THE RECORD",
+      "headline": "7 of 8 Servers Updated; Dormant 2003 Code Woke Up",
+      "visual_type": "stat_callout",
+      "stat_value": "7 of 8 Srvs",
+      "stat_label": "UNTOUCHED 8TH SERVER FIRED DEAD 'POWER PEG' FLAG",
+      "bullets": [
+        "Technician manually copied new router code to only 7 servers",
+        "Server 8 read a reused flag and ran retired 2003 test logic"
+      ],
+      "highlight_words": [
+        "seven",
+        "eighth",
+        "2003",
+        "four"
+      ],
+      "narration": "Days earlier, a technician manually copied new retail routing software onto seven of eight servers. At market open, the eighth server activated a dead 2003 test routine called Power Peg, firing four million erratic orders.",
+      "source": "U.S. SEC Order Release No. 34-70694, Knight Capital (Oct 16, 2013)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Manual Deploys + Dead Code + Zero Circuit Breakers",
+      "visual_type": "comparison_split",
+      "left_title": "KNIGHT'S FRAGILE STACK",
+      "left_body": "Zombie 2003 code + manual copy + no cumulative dollar stop",
+      "right_title": "RESILIENT AUTOMATION",
+      "right_body": "Purged dead flags + scripted deploy + hard external kill switch",
+      "highlight_words": [
+        "dead",
+        "manual",
+        "execution",
+        "breaker"
+      ],
+      "narration": "Knight stacked three fatal flaws together: leaving nine-year-old zombie code on live machines, relying on manual file copies without verification, and running high-speed execution without an automated dollar circuit breaker.",
+      "source": "Mind & Margin rule based on SEC Release 34-70694 (2013)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Delete Zombie Code and Wire Hard Spending Caps",
+      "visual_type": "compounding_curve",
+      "stat_label": "SAFE AUTOMATION SCALES OUTPUT WITHOUT TAIL RUIN",
+      "stat_subtext": "Delete dead flags • Scripted deploys • Hard external billing caps",
+      "highlight_words": [
+        "delete",
+        "scripted",
+        "kill",
+        "loop"
+      ],
+      "narration": "Whenever you automate trading, cloud APIs, or paid ad campaigns, delete retired code completely, enforce scripted all-or-nothing deployments, and wire a hard dollar kill switch outside the main loop.",
+      "source": "Mind & Margin protocol (advice, not a study)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Never Give Code Your Wallet Without a Hard Stop",
+      "visual_type": "stat_callout",
+      "stat_value": "Kill Switch",
+      "stat_label": "CODE SCALES ERRORS AT THE EXACT SAME SPEED AS PROFITS",
+      "bullets": [
+        "Set hard daily billing limits on every cloud & API key",
+        "Verify 100% of production nodes automatically before go-live"
+      ],
+      "highlight_words": [
+        "software",
+        "speed",
+        "wallet",
+        "independent"
+      ],
+      "narration": "Software compounds human errors at machine speed, so never hand any automated script your wallet without an independent hard stop.",
+      "source": "Mind & Margin rule based on SEC Release 34-70694 (2013)"
+    }
+  ]
+}

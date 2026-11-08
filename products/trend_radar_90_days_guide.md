@@ -1,8 +1,8 @@
-# 🔥 Báo Cáo Xu Hướng YouTube RPM Cao 2026–2027 & Ngân Hàng 96 Kịch Bản (Quý 1 & Quý 2 — 180 Ngày)
+# 🔥 Báo Cáo Xu Hướng YouTube RPM Cao 2026–2027 & Ngân Hàng 112 Kịch Bản (Tuần 1–28 / 196 Ngày)
 
-> **Kênh**: Mind & Margin (`@MindAndMargin`) — Hệ thống nghiên cứu 7 cụm xu hướng ngách CPM `$15–$48` kết hợp kiếm tiền Ngày 1 qua Amazon Associates (`mindandmarg06-20`), SaaS Affiliate & Sản phẩm số `\$19`.
+> **Kênh**: Mind & Margin (`@MindAndMargin`) — Hệ thống nghiên cứu 8 cụm xu hướng ngách CPM `$15–$48` kết hợp kiếm tiền Ngày 1 qua Amazon Associates (`mindandmarg06-20`), SaaS Affiliate & Sản phẩm số `\$19`.
 
-## 1. 7 Cụm Xu Hướng (Trend Clusters) Trọng Điểm Quý 1 & Quý 2 (96 Kịch Bản)
+## 1. 8 Cụm Xu Hướng (Trend Clusters) Trọng Điểm Tuần 1–28 (112 Kịch Bản)
 
 ### Cụm #1: Bẫy Tâm Lý Tiền Bạc & Thất Thoát Vô Hình (*Behavioral Money Traps & Invisible Spending Biases*)
 - **CPM Quảng cáo**: `$22 – $45` | **RPM Ước tính**: `$14 – $24` | **Tốc độ tăng trưởng**: `Exploding (+140% YoY)` | **Cạnh tranh**: `Medium`
@@ -53,6 +53,13 @@
 - **Từ khóa gốc (Seed Keywords)**: `survivorship bias abraham wald`, `chestertons fence mental model`, `second order thinking howard marks`, `satisficing vs maximizing herbert simon`, `planning fallacy reference class forecasting`
 - **Số kịch bản đã sản xuất sẵn trong kho**: `17` kịch bản (`short_06_pareto_one_percent`, `short_12_regret_minimization`, `short_18_munger_inversion`, `short_23_ten_x_easier_two_x`, `short_24_barbell_strategy`, `short_27_goodharts_law`, `short_30_thinking_in_bets`, `short_42_survivorship_bias_bombers`, `short_44_satisficing_vs_maximizing`, `short_50_planning_fallacy_buffers`, `short_53_ikea_effect_builders`, `short_58_chestertons_fence_rules`, `short_66_einstellung_effect_blindspot`, `long_02_naval_mental_models`, `long_03_silent_tax_indecision`, `long_09_asymmetric_barbell_life`, `long_20_second_order_thinking_guide`)
 
+### Cụm #8: Hồ Sơ Thảm Họa Tài Chính, Sai Số Kỹ Thuật & Điển Tình Tích Sản Có Chứng Cứ Lưu Trữ Gốc (*Documented Corporate Disasters, Archival Audits & Real-World Wealth Case Studies*)
+- **CPM Quảng cáo**: `$24 – $48` | **RPM Ước tính**: `$15 – $28` | **Tốc độ tăng trưởng**: `Breakout Documentary (+215% YoY)` | **Cạnh tranh**: `Low`
+- **Lý do bùng nổ 2026–2027**: Viewers tired of generic AI advice crave forensic, primary-source true stories: SEC Release 34-70694 on Knight Capital's $440M 45-minute glitch, LTCM's $4.6B Nobel collapse, SVB's $42B 24-hour bank run, Barings account 88888, NASA's $327.6M unit error, Isaac Newton's 1720 bubble loss, Ronald Wayne's $800 Apple exit, and Grace Groner's $180-to-$7M 75-year compounding record.
+- **Phễu kiếm tiền Ngày 1**: Pre-Flight Risk & Margin Checklist ($19 OS) + Financial History Classics on Amazon/Audible (`mindandmarg06-20`)
+- **Từ khóa gốc (Seed Keywords)**: `knight capital 440 million glitch`, `long term capital management collapse`, `isaac newton south sea bubble`, `grace groner 180 to 7 million`, `barings bank nick leeson 88888`, `ronald wayne apple 800 dollars`
+- **Số kịch bản đã sản xuất sẵn trong kho**: `16` kịch bản (`short_73_knight_capital_glitch`, `short_74_isaac_newton_bubble`, `short_75_mars_orbiter_units`, `short_76_rick_guerin_margin_call`, `short_77_kodak_digital_paradox`, `short_78_dantzig_unsolved_homework`, `short_79_barings_account_88888`, `short_80_ronald_wayne_apple_exit`, `short_81_icu_five_step_checklist`, `short_82_grace_groner_three_shares`, `short_83_toyota_andon_cord_rule`, `short_84_asch_one_dissenter_rule`, `long_25_ltcm_genius_leverage_trap`, `long_26_svb_barings_hidden_risk`, `long_27_grace_groner_wayne_patience`, `long_28_knight_nasa_checklist_systems`)
+
 ## 2. 4 Công Thức Đặt Tiêu Đề & Hook Giữ Chân 3 Giây Đầu (Outlier Formulas)
 
 - **The Counter-Intuitive Stat Shock**: `[Surprising %] of [High-Status Group] still fail at [Goal], and a [Year] study explains why.`
@@ -63,3 +70,5 @@
   - *Ví dụ*: "In a 2021 Nature study, participants missed obvious subtraction fixes even when removing parts worked faster."
 - **The Invisible Neuro-Tax**: `Every time you [Common Daily Habit], your brain pays a hidden [Minutes/Dollars] tax.`
   - *Ví dụ*: "One 30-minute afternoon meeting splits a Maker's half-day block into two fragments too short for deep craft."
+- **The Archival Post-Mortem Shock**: `On [Exact Date], [Institution/Founder] lost [$ Amount] in [Minutes/Hours] because of one [Tiny Blindspot].`
+  - *Ví dụ*: "On August 1, 2012, one un-updated server cost Knight Capital $440 million in 45 minutes."

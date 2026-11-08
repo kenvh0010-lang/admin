@@ -1,0 +1,483 @@
+1
+00:00:00,000 --> 00:00:00,781
+At 9:30 a.m.
+
+2
+00:00:00,781 --> 00:00:01,627
+on Wednesday,
+
+3
+00:00:01,627 --> 00:00:02,213
+August 1,
+
+4
+00:00:02,213 --> 00:00:02,539
+2012,
+
+5
+00:00:02,539 --> 00:00:03,905
+Knight Capital Group,
+
+6
+00:00:03,905 --> 00:00:07,746
+one of Wall Street's premier market makers handling roughly
+
+7
+00:00:07,746 --> 00:00:10,154
+ten percent of American stock volume,
+
+8
+00:00:10,154 --> 00:00:13,474
+switched on updated retail routing code for the New
+
+9
+00:00:13,474 --> 00:00:14,776
+York Stock Exchange.
+
+10
+00:00:14,776 --> 00:00:15,622
+Days earlier,
+
+11
+00:00:15,622 --> 00:00:19,462
+a technician manually copying the new software across eight
+
+12
+00:00:19,462 --> 00:00:23,628
+production servers had accidentally skipped server number eight.
+
+13
+00:00:23,628 --> 00:00:24,018
+Worse,
+
+14
+00:00:24,018 --> 00:00:27,989
+the update repurposed an old configuration flag that awakened
+
+15
+00:00:27,989 --> 00:00:31,048
+dormant 2003 test code called Power Peg on that
+
+16
+00:00:31,048 --> 00:00:32,220
+unpatched machine.
+
+17
+00:00:32,220 --> 00:00:34,498
+Within seconds of the opening bell,
+
+18
+00:00:34,498 --> 00:00:38,468
+server eight sprayed millions of unintended orders across one
+
+19
+00:00:38,468 --> 00:00:40,161
+hundred fifty-four stocks,
+
+20
+00:00:40,161 --> 00:00:42,764
+buying at the ask and selling at the bid
+
+21
+00:00:42,764 --> 00:00:44,717
+thousands of times per minute.
+
+22
+00:00:44,717 --> 00:00:47,776
+Panicking without a written rollback checklist,
+
+23
+00:00:47,776 --> 00:00:51,812
+engineers removed the new code from the seven working servers,
+
+24
+00:00:51,812 --> 00:00:56,043
+accidentally activating Power Peg across all eight machines until
+
+25
+00:00:56,043 --> 00:00:59,688
+Knight lost more than four hundred forty million dollars
+
+26
+00:00:59,688 --> 00:01:01,120
+in forty-five minutes.
+
+27
+00:01:01,120 --> 00:01:03,150
+Thirteen years before Knight Capital,
+
+28
+00:01:03,150 --> 00:01:07,539
+aerospace PhDs suffered an equally humbling failure across interplanetary space.
+
+29
+00:01:07,539 --> 00:01:08,417
+On September 23,
+
+30
+00:01:08,417 --> 00:01:08,691
+1999,
+
+31
+00:01:08,691 --> 00:01:10,117
+after a nine-month voyage,
+
+32
+00:01:10,117 --> 00:01:15,659
+NASA's three-hundred-twenty-seven-point-six-million-dollar Mars Climate Orbiter fired its main engine
+
+33
+00:01:15,659 --> 00:01:18,566
+to enter Martian orbit and vanished behind the planet
+
+34
+00:01:18,566 --> 00:01:19,005
+forever.
+
+35
+00:01:19,005 --> 00:01:23,175
+NASA's Mishap Investigation Board uncovered a stunningly mundane root cause.
+
+36
+00:01:23,175 --> 00:01:27,070
+Ground software built by contractor Lockheed Martin calculated thruster
+
+37
+00:01:27,070 --> 00:01:29,209
+impulse in English pound-force seconds,
+
+38
+00:01:29,209 --> 00:01:33,160
+whereas navigation software at NASA's Jet Propulsion Laboratory expected
+
+39
+00:01:33,160 --> 00:01:34,367
+metric newton-seconds,
+
+40
+00:01:34,367 --> 00:01:38,591
+introducing a silent four-point-four-five-times error on every momentum dump.
+
+41
+00:01:38,591 --> 00:01:41,938
+Two navigators noticed small trajectory drifts during cruise,
+
+42
+00:01:41,938 --> 00:01:45,339
+yet concerns were never logged in the formal anomaly database,
+
+43
+00:01:45,339 --> 00:01:48,686
+steering the probe down to fifty-seven kilometers above Mars,
+
+44
+00:01:48,686 --> 00:01:50,661
+over one hundred kilometers too low,
+
+45
+00:01:50,661 --> 00:01:52,910
+where atmospheric friction tore it apart.
+
+46
+00:01:52,910 --> 00:01:56,291
+Notice what connects Wall Street's fastest trading desk and
+
+47
+00:01:56,291 --> 00:01:58,756
+Pasadena's sharpest orbital mechanics team.
+
+48
+00:01:58,756 --> 00:02:02,366
+Neither disaster happened because operators lacked credentials,
+
+49
+00:02:02,366 --> 00:02:02,997
+work ethic,
+
+50
+00:02:02,997 --> 00:02:04,315
+or mathematical talent.
+
+51
+00:02:04,315 --> 00:02:08,269
+Both blew up because brilliant specialists relied on informal memory,
+
+52
+00:02:08,269 --> 00:02:09,645
+manual deployment steps,
+
+53
+00:02:09,645 --> 00:02:13,599
+and unverified interface assumptions inside tightly coupled machines.
+
+54
+00:02:13,599 --> 00:02:16,408
+Modern solo operators now wield comparable speed:
+
+55
+00:02:16,408 --> 00:02:18,471
+one person armed with cloud scripts,
+
+56
+00:02:18,471 --> 00:02:19,789
+automated AI workflows,
+
+57
+00:02:19,789 --> 00:02:21,394
+paid advertising dashboards,
+
+58
+00:02:21,394 --> 00:02:25,062
+and instant brokerage execution can trigger ten thousand actions
+
+59
+00:02:25,062 --> 00:02:26,323
+an hour from a laptop.
+
+60
+00:02:26,323 --> 00:02:30,048
+When software and financial leverage multiply execution velocity,
+
+61
+00:02:30,048 --> 00:02:33,544
+relying on willpower or 'being extra careful' guarantees that
+
+62
+00:02:33,544 --> 00:02:37,097
+one tired Friday afternoon oversight eventually hits your bank
+
+63
+00:02:37,097 --> 00:02:38,530
+account at machine speed.
+
+64
+00:02:38,530 --> 00:02:41,993
+Critical-care medicine proved the exact antidote in 2006.
+
+65
+00:02:41,993 --> 00:02:45,335
+Johns Hopkins physician Peter Pronovost set out to stop
+
+66
+00:02:45,335 --> 00:02:50,013
+lethal central-line bloodstream infections across one hundred three intensive
+
+67
+00:02:50,013 --> 00:02:51,411
+care units in Michigan.
+
+68
+00:02:51,411 --> 00:02:55,178
+Rather than buying costly new equipment or lecturing exhausted
+
+69
+00:02:55,178 --> 00:02:57,001
+doctors to concentrate harder,
+
+70
+00:02:57,001 --> 00:03:00,950
+Pronovost handed teams a five-step paper checklist covering basic
+
+71
+00:03:00,950 --> 00:03:03,927
+sterile habits every physician already knew cold:
+
+72
+00:03:03,927 --> 00:03:05,386
+washing hands with soap,
+
+73
+00:03:05,386 --> 00:03:08,241
+cleaning the patient's skin with chlorhexidine,
+
+74
+00:03:08,241 --> 00:03:10,611
+putting on full sterile barrier drapes,
+
+75
+00:03:10,611 --> 00:03:13,406
+avoiding the femoral groin vein when possible,
+
+76
+00:03:13,406 --> 00:03:15,897
+and removing unnecessary catheters daily.
+
+77
+00:03:15,897 --> 00:03:16,504
+Crucially,
+
+78
+00:03:16,504 --> 00:03:20,271
+hospital executives gave ICU nurses explicit authority to stop
+
+79
+00:03:20,271 --> 00:03:22,094
+any doctor who skipped a step.
+
+80
+00:03:22,094 --> 00:03:25,740
+Across 1,981 ICU-months published in the New England Journal
+
+81
+00:03:25,740 --> 00:03:26,469
+of Medicine,
+
+82
+00:03:26,469 --> 00:03:29,568
+median infection rates fell from 2.7 to zero within
+
+83
+00:03:29,568 --> 00:03:32,788
+three months and dropped up to sixty-six percent over
+
+84
+00:03:32,788 --> 00:03:33,760
+eighteen months.
+
+85
+00:03:33,760 --> 00:03:38,382
+Pronovost's checklist catches human slips before an irreversible action starts;
+
+86
+00:03:38,382 --> 00:03:41,893
+Taiichi Ohno's Andon cord catches whatever slips through the
+
+87
+00:03:41,893 --> 00:03:43,648
+instant live execution begins.
+
+88
+00:03:43,648 --> 00:03:46,983
+Designing the post-war Toyota Production System in Japan,
+
+89
+00:03:46,983 --> 00:03:50,669
+Ohno hung a physical overhead pull-cord above assembly stations
+
+90
+00:03:50,669 --> 00:03:53,771
+so any frontline worker spotting one stripped bolt or
+
+91
+00:03:53,771 --> 00:03:56,872
+misaligned seal could freeze the conveyor belt on the
+
+92
+00:03:56,872 --> 00:03:57,164
+spot.
+
+93
+00:03:57,164 --> 00:04:00,324
+Stopping an entire factory line for two minutes looked
+
+94
+00:04:00,324 --> 00:04:02,664
+wasteful to traditional volume managers,
+
+95
+00:04:02,664 --> 00:04:05,590
+yet it prevented Knight Capital's exact nightmare:
+
+96
+00:04:05,590 --> 00:04:08,691
+pumping millions of dollars of defective work down an
+
+97
+00:04:08,691 --> 00:04:09,685
+unstoppable line.
+
+98
+00:04:09,685 --> 00:04:14,308
+When you pair pre-flight checklists with automatic mid-flight circuit breakers,
+
+99
+00:04:14,308 --> 00:04:17,877
+inevitable human errors stay tiny two-minute fixes instead of
+
+100
+00:04:17,877 --> 00:04:18,930
+terminal wipeouts.
+
+101
+00:04:18,930 --> 00:04:22,548
+Protect your solo business and investment capital this week
+
+102
+00:04:22,548 --> 00:04:25,492
+by installing three permanent engineering gates.
+
+103
+00:04:25,492 --> 00:04:25,860
+First,
+
+104
+00:04:25,860 --> 00:04:29,601
+tape a written Pronovost five-box pre-flight card beside your
+
+105
+00:04:29,601 --> 00:04:33,281
+monitor for high-stakes actions like production deployments,
+
+106
+00:04:33,281 --> 00:04:34,324
+client contracts,
+
+107
+00:04:34,324 --> 00:04:34,937
+tax wires,
+
+108
+00:04:34,937 --> 00:04:36,470
+and portfolio rebalances,
+
+109
+00:04:36,470 --> 00:04:39,537
+and refuse to execute from raw memory when rushed.
+
+110
+00:04:39,537 --> 00:04:39,966
+Second,
+
+111
+00:04:39,966 --> 00:04:43,523
+eliminate Mars Orbiter mismatches by coding explicit unit,
+
+112
+00:04:43,523 --> 00:04:44,075
+currency,
+
+113
+00:04:44,075 --> 00:04:48,123
+and range assertions into your spreadsheets and automation scripts
+
+114
+00:04:48,123 --> 00:04:51,128
+so a bad decimal crashes loudly in testing before
+
+115
+00:04:51,128 --> 00:04:52,477
+touching real dollars.
+
+116
+00:04:52,477 --> 00:04:52,845
+Third,
+
+117
+00:04:52,845 --> 00:04:56,279
+wire Toyota Andon kill-switches into every live account:
+
+118
+00:04:56,279 --> 00:04:59,223
+lock strict daily billing caps on cloud APIs and
+
+119
+00:04:59,223 --> 00:05:00,020
+ad platforms,
+
+120
+00:05:00,020 --> 00:05:03,026
+plus maximum order-size limits at your brokerage,
+
+121
+00:05:03,026 --> 00:05:05,540
+baking survival directly into your tools.

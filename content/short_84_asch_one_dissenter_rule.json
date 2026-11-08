@@ -1,0 +1,118 @@
+{
+  "title": "Solomon Asch's 1951 Experiment: How One Dissenter Breaks Herd Madness",
+  "alt_title_1": "Why 75% Cave to Group Lies (And How One Honest Voice Stops It)",
+  "alt_title_2": "The 80% Conformity Drop: Protect Your Money From Consensus Bubbles",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In Solomon Asch's 1951 Swarthmore College line-length experiments, roughly 75% of participants agreed with a unanimous group's obviously wrong answer at least once. Planting just one honest dissenter slashed conformity by roughly 80%, down near 5%.",
+  "tags": [
+    "solomon asch",
+    "conformity experiment",
+    "herd mentality",
+    "contrarian thinking",
+    "market bubbles",
+    "behavioral economics",
+    "decision making"
+  ],
+  "thumbnail": {
+    "hook_text": "ONE DISSENTER",
+    "badge": "ASCH 1951 STUDY",
+    "stat": "-80%"
+  },
+  "affiliate_cta": {
+    "offer_name": "Pre-Mortem Dissent Worksheet + Behavioral Psychology Books",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "How do you force yourself to hear the bear case when everyone on your feed agrees on a 'sure thing' trade? Grab our Pre-Mortem Dissent Worksheet here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "3 Out of 4 People Denied Their Own Eyes",
+      "visual_type": "stat_callout",
+      "stat_value": "75% Cave",
+      "stat_label": "SOLOMON ASCH'S 1951 SWARTHMORE LINE EXPERIMENT",
+      "bullets": [
+        "Subjects matched simple line lengths inside a rigged room",
+        "75% echoed the group's obviously wrong answer at least once"
+      ],
+      "highlight_words": [
+        "1951",
+        "asch",
+        "seventy-five",
+        "unanimous"
+      ],
+      "narration": "In 1951 at Swarthmore College, psychologist Solomon Asch proved that roughly seventy-five percent of ordinary people will deny their own eyes just to agree with a unanimous crowd.",
+      "source": "Solomon E. Asch, Swarthmore Conformity Experiments (1951; Psych. Monogr. 1956)"
+    },
+    {
+      "tag": "THE RECORD",
+      "headline": "One Truthful Partner Cut Conformity by 80%",
+      "visual_type": "stat_callout",
+      "stat_value": "80% Drop",
+      "stat_label": "ERROR RATE PLUNGED NEAR 5% WITH ONE ALLY",
+      "bullets": [
+        "Unanimous actors pushed error rates up near 37% overall",
+        "Adding just 1 honest dissenter cut conformity down near 5%"
+      ],
+      "highlight_words": [
+        "planted",
+        "one",
+        "eighty",
+        "five"
+      ],
+      "narration": "Trained actors announced visibly wrong line lengths aloud, pressuring three-quarters of participants into caving at least once. Yet when Asch planted just one partner who spoke the truth, conformity plunged by roughly eighty percent, down near five percent.",
+      "source": "Solomon E. Asch, Swarthmore Conformity Experiments (1951; Psych. Monogr. 1956)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Echo Chambers Manufacture Expensive Bubbles",
+      "visual_type": "comparison_split",
+      "left_title": "UNANIMOUS FEED",
+      "left_body": "100% bullish hype -> silences basic math -> buys market tops",
+      "right_title": "FORCED DISSENT",
+      "right_body": "1 sharp bear teardown -> breaks herd spell -> protects principal",
+      "highlight_words": [
+        "bubbles",
+        "unanimity",
+        "feeds",
+        "valuation"
+      ],
+      "narration": "Market manias and bad business pivots run on fake unanimity. Spending hours inside unanimous bullish social feeds tricks smart investors into doubting basic cash-flow valuation math right at cycle peaks.",
+      "source": "Solomon E. Asch, Swarthmore Conformity Experiments (1951; Psych. Monogr. 1956)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Require One Bear Case Before Committing Capital",
+      "visual_type": "compounding_curve",
+      "stat_label": "DODGING CONSENSUS MANIAS PRESERVES COMPOUNDING BASE",
+      "stat_subtext": "Mandatory 3-line bear memo -> breaks social proof pressure",
+      "highlight_words": [
+        "consensus",
+        "bear-case",
+        "three",
+        "fail"
+      ],
+      "narration": "Shatter consensus spells on purpose: before wiring serious capital or launching a pivot, read one rigorous bear-case critique and write down three specific reasons your thesis could fail cold.",
+      "source": "Mind & Margin rule based on Solomon E. Asch (1951, 1956)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "One Honest Counter-Argument Restores Clear Sight",
+      "visual_type": "stat_callout",
+      "stat_value": "1 Voice",
+      "stat_label": "NEVER INVEST INSIDE AN UNCHALLENGED ROOM",
+      "bullets": [
+        "Reward the friend or checklist that pokes holes in hype",
+        "Protect independent math when every headline agrees"
+      ],
+      "highlight_words": [
+        "dissenting",
+        "eighty",
+        "capital",
+        "crowds"
+      ],
+      "narration": "One honest dissenting voice cuts herd pressure by eighty percent, keeping your judgment sharp when unanimous crowds go blind.",
+      "source": "Mind & Margin rule based on Solomon E. Asch (1951, 1956)"
+    }
+  ]
+}

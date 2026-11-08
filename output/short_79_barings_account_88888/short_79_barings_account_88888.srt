@@ -1,0 +1,127 @@
+1
+00:00:00,000 --> 00:00:01,020
+In February 1995,
+
+2
+00:00:01,020 --> 00:00:04,260
+a twenty-eight-year-old trader in Singapore bankrupted
+
+3
+00:00:04,260 --> 00:00:05,040
+Barings Bank,
+
+4
+00:00:05,040 --> 00:00:07,860
+Britain's oldest merchant bank founded in 1762,
+
+5
+00:00:07,860 --> 00:00:10,200
+using one hidden error account numbered
+
+6
+00:00:10,200 --> 00:00:10,920
+five eights.
+
+7
+00:00:10,920 --> 00:00:13,172
+London executives let Nick Leeson run
+
+8
+00:00:13,172 --> 00:00:15,484
+both the trading floor and back-office
+
+9
+00:00:15,484 --> 00:00:16,154
+settlement,
+
+10
+00:00:16,154 --> 00:00:18,771
+allowing him to conceal unauthorized Nikkei
+
+11
+00:00:18,771 --> 00:00:21,266
+futures losses inside account 88888 until
+
+12
+00:00:21,266 --> 00:00:23,640
+the January 1995 Kobe earthquake pushed
+
+13
+00:00:23,640 --> 00:00:26,317
+losses to eight hundred twenty-seven million
+
+14
+00:00:26,317 --> 00:00:26,743
+pounds,
+
+15
+00:00:26,743 --> 00:00:28,630
+and Barings sold for one pound.
+
+16
+00:00:28,630 --> 00:00:31,272
+Solo investors and founders recreate that
+
+17
+00:00:31,272 --> 00:00:33,786
+fatal structural flaw whenever the same
+
+18
+00:00:33,786 --> 00:00:35,848
+excited brain placing a bet also
+
+19
+00:00:35,848 --> 00:00:37,202
+grades the scorecard,
+
+20
+00:00:37,202 --> 00:00:39,973
+moving goalposts and averaging down instead
+
+21
+00:00:39,973 --> 00:00:41,520
+of booking a small loss.
+
+22
+00:00:41,520 --> 00:00:43,771
+Separate execution from accounting:
+
+23
+00:00:43,771 --> 00:00:45,507
+lock in hard position caps,
+
+24
+00:00:45,507 --> 00:00:46,858
+automated stop rules,
+
+25
+00:00:46,858 --> 00:00:49,687
+and read-only spending limits before capital
+
+26
+00:00:49,687 --> 00:00:50,330
+goes live,
+
+27
+00:00:50,330 --> 00:00:52,452
+then review every number during a
+
+28
+00:00:52,452 --> 00:00:53,610
+cold Friday audit.
+
+29
+00:00:53,610 --> 00:00:55,740
+Never let your inner promoter audit
+
+30
+00:00:55,740 --> 00:00:56,653
+its own trades,
+
+31
+00:00:56,653 --> 00:00:59,269
+because two centuries of compounding vanish
+
+32
+00:00:59,269 --> 00:01:01,460
+fast without independent guardrails.

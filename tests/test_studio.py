@@ -19,13 +19,13 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertTrue(Path(resolve_font_path(bold=True)).is_file())
         self.assertTrue(Path(resolve_font_path(bold=False)).is_file())
 
-    def test_all_96_h1_storyboards_valid_cited_and_glyph_safe(self) -> None:
+    def test_all_112_storyboards_valid_cited_and_glyph_safe(self) -> None:
         storyboards = sorted(
             p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"
         )
         self.assertEqual(
-            len(storyboards), 96,
-            "Expected all 96 Half-Year storyboards (72 Shorts + 24 Longs across Q1 & Q2) in content/",
+            len(storyboards), 112,
+            "Expected all 112 storyboards (84 Shorts + 28 Longs across Weeks 1-28) in content/",
         )
         required_keys = {"title", "format", "scenes", "tags", "thumbnail", "affiliate_cta"}
         forbidden_glyphs = {"✕", "✓", "▸", "→", "—"}
@@ -40,14 +40,14 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
                 for bad in forbidden_glyphs:
                     self.assertNotIn(bad, card_blob, f"Forbidden glyph {bad!r} found in {sb.name}")
 
-    def test_trend_radar_intelligence_96_scripts(self) -> None:
+    def test_trend_radar_intelligence_112_scripts(self) -> None:
         from yt_studio.trend_radar import build_trend_intelligence_report, score_topic_opportunity
 
         report = build_trend_intelligence_report(live_query="kelly criterion wealth")
-        self.assertEqual(report["cluster_count"], 7)
-        self.assertEqual(report["total_mapped_scripts"], 96)
+        self.assertEqual(report["cluster_count"], 8)
+        self.assertEqual(report["total_mapped_scripts"], 112)
         mapped_flat = [s for c in report["clusters"] for s in c["mapped_scripts"]]
-        self.assertEqual(len(set(mapped_flat)), 96, "Duplicate or missing mapped script in trend_radar.py")
+        self.assertEqual(len(set(mapped_flat)), 112, "Duplicate or missing mapped script in trend_radar.py")
         scored = score_topic_opportunity("coase solo ai business wealth")
         self.assertGreaterEqual(scored["opportunity_score"], 85)
         self.assertIn("$", scored["estimated_rpm_usd"])
@@ -57,6 +57,7 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertTrue((PROJECT_ROOT / "products" / "bio_funnel_page" / "index.html").is_file())
         self.assertTrue((PROJECT_ROOT / "products" / "free_lead_magnet" / "Wealth_and_Leverage_Playbook.md").is_file())
         self.assertTrue((PROJECT_ROOT / "products" / "youtube_autopilot_guide.md").is_file())
+        self.assertTrue((PROJECT_ROOT / "products" / "real_world_events_dossier.md").is_file())
         self.assertTrue((PROJECT_ROOT / "web_studio" / "index.html").is_file())
         self.assertTrue((PROJECT_ROOT / "studio_server.py").is_file())
 
@@ -111,7 +112,7 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
             self.assertGreater(thumb.stat().st_size, 5_000)
             self.assertGreater(ambient.stat().st_size, 20_000)
 
-    def test_no_visual_card_or_source_clipping_across_96_storyboards(self) -> None:
+    def test_no_visual_card_or_source_clipping_across_112_storyboards(self) -> None:
         from PIL import Image, ImageDraw
         from yt_studio.visual_composer import _load_font, _wrap_text
 
@@ -167,7 +168,7 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         }
         for csv_name in ("calendar_30_days.csv", "calendar_90_days.csv", "calendar_180_days.csv"):
             rows = list(csv.DictReader((CONTENT_DIR / csv_name).read_text(encoding="utf-8").splitlines()))
-            self.assertEqual(len(rows), 96, f"Expected 96 rows in {csv_name}")
+            self.assertEqual(len(rows), 112, f"Expected 112 rows in {csv_name}")
             for row in rows:
                 title = row["Video Title (English - High RPM)"]
                 self.assertIn(title, sb_titles, f"Unmatched calendar title {title!r} in {csv_name}")
