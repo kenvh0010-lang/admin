@@ -32,9 +32,9 @@
       "evidence_image": "assets/evidence/anthropic/authors_guild.png",
       "evidence_crop": [
         30,
-        240,
+        330,
         885,
-        1020
+        490
       ],
       "highlight_words": [
         "1.5",
@@ -95,7 +95,7 @@
         "77",
         "largest"
       ],
-      "narration": "Across 77 tracked AI data disputes, that 1.5 billion dollar fund remains the largest copyright payout on record.",
+      "narration": "Out of 77 AI training-data cases one tracker has logged, this 1.5 billion dollar settlement is still the largest payout.",
       "source": "AITraining.jobs Litigation Tracker (through Oct 29, 2026)"
     },
     {

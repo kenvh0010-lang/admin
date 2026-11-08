@@ -60,7 +60,7 @@
         "FRONT",
         "FUND"
       ],
-      "narration": "Here is Exhibit Figure 1 from court. Three reviewers checked PRINCIPAL, but missed that FRONT and FUND also had to be checked to stop the wire.",
+      "narration": "Here is Figure 1 from the court opinion. Staff ticked PRINCIPAL and three people approved it, but FRONT and FUND also needed ticks to stop the wire.",
       "source": "In re Citibank, No. 20-cv-6539, Opinion Figure 1, p. 13 (S.D.N.Y.)"
     },
     {
@@ -87,8 +87,8 @@
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/citibank/thomson_reuters_clauses.png",
       "evidence_crop": [
-        75,
-        200,
+        170,
+        630,
         770,
         960
       ],

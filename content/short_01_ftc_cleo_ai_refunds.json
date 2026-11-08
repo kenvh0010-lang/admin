@@ -1,5 +1,5 @@
 {
-  "title": "2.1 Million Users Are Getting PayPal Refunds From Cleo AI",
+  "title": "2.1 Million Cleo AI Users Are Getting FTC Refunds via PayPal",
   "alt_title_1": "Why the FTC Is Sending $15.8 Million Back to Cleo AI Users",
   "alt_title_2": "Inside the $17 Million FTC Case Against Cash App Cleo AI",
   "format": "short",
@@ -32,9 +32,9 @@
       "evidence_image": "assets/evidence/cleo/cleo_refunds_oct2026.png",
       "evidence_crop": [
         15,
-        340,
+        470,
         895,
-        980
+        660
       ],
       "highlight_words": [
         "2.1",
@@ -59,7 +59,7 @@
         "250",
         "today"
       ],
-      "narration": "Cleo AI ran ads promising up to 250 or 500 dollars today if users bought a monthly subscription.",
+      "narration": "The FTC says Cleo's ads promised up to 250 or 500 dollars today, if users paid for a monthly subscription.",
       "source": "FTC v. Cleo AI, No. 1:25-cv-02594, Complaint p. 5 (S.D.N.Y.)"
     },
     {
@@ -78,7 +78,7 @@
         "percent",
         "fees"
       ],
-      "narration": "The FTC sued, alleging fewer than 0.3 percent of Plus borrowers ever got 250 dollars, and extra express fees still took a full day.",
+      "narration": "The FTC alleged only 0.3 percent of Plus borrowers got the full 250 dollars, and paid express transfers could still arrive the next day.",
       "source": "FTC v. Cleo AI, Complaint (S.D.N.Y. filed Mar/May 2025)"
     },
     {
@@ -97,7 +97,7 @@
         "17",
         "million"
       ],
-      "narration": "Users with an unpaid advance were also blocked from canceling monthly fees. Cleo settled for 17 million dollars without admitting fault.",
+      "narration": "It also alleged users with an unpaid advance could not cancel. Cleo settled for 17 million dollars, and no court ruled on the claims.",
       "source": "FTC Complaint p. 15; Stipulated Order (2025)"
     },
     {
