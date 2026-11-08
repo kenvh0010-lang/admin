@@ -27,7 +27,7 @@
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "Same $1,000 - Two Opposite Behaviors",
+      "headline": "Same $1,000, Two Opposite Behaviors",
       "visual_type": "stat_callout",
       "stat_value": "$1,000",
       "stat_label": "PAYCHECK GUARDED VS REFUND BLOWN",
@@ -77,7 +77,7 @@
         "house",
         "friction"
       ],
-      "narration": "Salary dollars feel heavy because you traded forty hours of stress to earn them. Refund or bonus dollars feel weightless - like house money - so spending friction disappears."
+      "narration": "Salary dollars feel heavy because you traded forty hours of stress to earn them. Refund or bonus dollars feel weightless, like house money, so spending friction disappears."
     },
     {
       "tag": "THE RULE",
@@ -109,7 +109,7 @@
         "windfall",
         "compounding"
       ],
-      "narration": "Once you strip the fake label off your cash, every windfall starts compounding like real wealth. Because without that reset...",
+      "narration": "Once you strip the fake label off your cash, every windfall starts compounding like real wealth.",
       "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]

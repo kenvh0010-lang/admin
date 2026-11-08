@@ -46,7 +46,7 @@
     },
     {
       "tag": "THE STORY",
-      "headline": "Nassim Taleb's Antifragile Architecture",
+      "headline": "Nassim Taleb's Antifragile System",
       "visual_type": "stat_callout",
       "stat_value": "0 Ruin",
       "stat_label": "SKIP FRAGILE 'MODERATE RISK' IN THE MIDDLE",
@@ -60,7 +60,7 @@
         "barbell",
         "extremes"
       ],
-      "narration": "Risk scholar Nassim Taleb outlined a smarter third architecture in Antifragile called the Barbell Strategy. Skip fragile moderate risk in the middle, and deliberately weight the two extremes.",
+      "narration": "Risk scholar Nassim Taleb outlined a smarter third system in Antifragile called the Barbell Strategy. Skip fragile moderate risk in the middle, and deliberately weight the two extremes.",
       "source": "Nassim Nicholas Taleb, Antifragile (2012)"
     },
     {
@@ -77,7 +77,7 @@
         "ten",
         "uncapped"
       ],
-      "narration": "Put ninety percent of your foundation on ironclad defense: steady career cashflow, low fixed overhead, and liquid reserves. Put ten percent - five focused hours a week - into uncapped digital bets.",
+      "narration": "Put ninety percent of your foundation on ironclad defense: steady career cashflow, low fixed overhead, and liquid reserves. Put ten percent, five focused hours a week, into uncapped digital bets.",
       "source": "Nassim Nicholas Taleb, Antifragile (2012); 90/10 split and hours are a Mind & Margin rule of thumb"
     },
     {
@@ -110,7 +110,7 @@
         "asymmetric",
         "inevitable"
       ],
-      "narration": "When your downside is protected, patience turns asymmetric bets into inevitable wins. That is why builders reject how...",
+      "narration": "When your downside is protected, patience turns asymmetric bets into inevitable wins.",
       "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]

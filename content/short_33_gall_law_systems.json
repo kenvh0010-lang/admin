@@ -4,7 +4,7 @@
   "alt_title_2": "The 1975 Systems Law Every Solo Builder Needs",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "In 1975, systems theorist John Gall explained why complex systems designed from scratch always collapse - and why starting with a stupidly simple Version 1.0 is the only path to durable daily output.",
+  "description_hook": "In 1975, systems theorist John Gall explained why complex systems designed from scratch always collapse, and why starting with a stupidly simple Version 1.0 is the only path to lasting daily output.",
   "tags": [
     "galls law",
     "productivity systems",
@@ -100,7 +100,7 @@
       "stat_value": "30 Days",
       "stat_label": "PROVE VERSION 1.0 BEFORE ADDING TOOLS",
       "bullets": [
-        "Consistency beats clever architecture every week",
+        "Consistency beats clever system every week",
         "Add automation only when manual reps work smoothly"
       ],
       "highlight_words": [
@@ -109,7 +109,7 @@
         "simple",
         "surprised"
       ],
-      "narration": "Earn the right to add complexity only after thirty days of simple wins - otherwise, do not be surprised...",
+      "narration": "Earn the right to add complexity only after thirty days of simple wins, otherwise.",
       "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]

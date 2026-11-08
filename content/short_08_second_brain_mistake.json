@@ -96,7 +96,7 @@
     },
     {
       "tag": "LOOP",
-      "headline": "Delete Fancy Tags - Ship Real Work",
+      "headline": "Delete Fancy Tags, Ship Real Work",
       "visual_type": "stat_callout",
       "stat_value": "3 -> 1",
       "stat_label": "MAXIMUM INPUTS BEFORE MANDATORY OUTPUT",
@@ -110,7 +110,7 @@
         "simplicity",
         "otherwise"
       ],
-      "narration": "Judge your system by what you ship on Friday, never by how pretty your dashboard looks on Monday. Because otherwise...",
+      "narration": "Judge your system by what you ship on Friday, never by how pretty your dashboard looks on Monday.",
       "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]

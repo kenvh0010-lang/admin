@@ -4,7 +4,7 @@
   "alt_title_2": "Why Fighting for Rank Keeps Smart People Broke",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Angel investor Naval Ravikant explains the hidden war between ancient zero-sum status hierarchies and modern positive-sum asset creation - and why trading public clout for quiet ownership changes everything.",
+  "description_hook": "Angel investor Naval Ravikant explains the hidden war between ancient zero-sum status hierarchies and modern positive-sum asset creation, and why trading public clout for quiet ownership changes everything.",
   "tags": [
     "naval ravikant",
     "status vs wealth",
@@ -35,8 +35,14 @@
         "Looking important feels rewarding in the moment",
         "Owning scalable systems actually buys your calendar"
       ],
-      "highlight_words": ["fighting", "important", "stolen", "free"],
-      "narration": "Every hour you spend fighting to look important online is an hour stolen from building quiet assets that make you free."
+      "highlight_words": [
+        "fighting",
+        "important",
+        "stolen",
+        "free"
+      ],
+      "narration": "Every hour you spend fighting to look important online is an hour stolen from building quiet assets that make you free.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "THE STORY",
@@ -46,7 +52,12 @@
       "left_body": "Fixed pecking order, politics, tearing rivals down",
       "right_title": "WEALTH GAMES (POSITIVE-SUM)",
       "right_body": "Building code, media, and tools where buyer & maker win",
-      "highlight_words": ["naval", "status", "wealth", "scale"],
+      "highlight_words": [
+        "naval",
+        "status",
+        "wealth",
+        "scale"
+      ],
       "narration": "Investor Naval Ravikant points out that humans play two completely different games. Status games rank people on a ladder, while wealth games create useful products, software, and media that scale."
     },
     {
@@ -59,7 +70,12 @@
         "Hunter-gatherer brains evolved to guard tribe rank",
         "Modern feeds monetize that ancient status anxiety"
       ],
-      "highlight_words": ["zero-sum", "one", "politics", "outrage"],
+      "highlight_words": [
+        "zero-sum",
+        "one",
+        "politics",
+        "outrage"
+      ],
       "narration": "Status is strictly zero-sum: for you to climb to number one, someone else must be pushed down to number two. That breeds constant politics, envy, and outrage."
     },
     {
@@ -68,7 +84,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "USEFUL ASSETS MULTIPLY WITHOUT NEEDING A LOSER",
       "stat_subtext": "Solve real problems once -> compound trust & equity",
-      "highlight_words": ["positive-sum", "helpful", "equity", "lose"],
+      "highlight_words": [
+        "positive-sum",
+        "helpful",
+        "equity",
+        "lose"
+      ],
       "narration": "Wealth creation is positive-sum. When you ship a helpful tool or educational guide, your audience wins time and you earn compounding equity without needing anyone to lose."
     },
     {
@@ -81,8 +102,13 @@
         "Skip status debates that pay zero margin",
         "Measure weekly shipped assets, never social rank"
       ],
-      "highlight_words": ["leaderboards", "mornings", "creation", "notice"],
-      "narration": "Step off zero-sum leaderboards and pour your best mornings into positive-sum creation, especially once you notice that..."
+      "highlight_words": [
+        "leaderboards",
+        "mornings",
+        "creation",
+        "notice"
+      ],
+      "narration": "Step off zero-sum leaderboards and pour your best mornings into positive-sum creation."
     }
   ]
 }

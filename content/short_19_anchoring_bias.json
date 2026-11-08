@@ -4,7 +4,7 @@
   "alt_title_2": "How Price Anchoring Hijacks Your Brain at Checkout",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "That overpriced $149 top tier on software and subscription pages is rarely meant to be bought - it is an anchor planted to make $79 feel cheap. Here is MIT economist Dan Ariely's Decoy Effect study and the Blank-Sheet Rule.",
+  "description_hook": "That overpriced $149 top tier on software and subscription pages is rarely meant to be bought, it is an anchor planted to make $79 feel cheap. Here is MIT economist Dan Ariely's Decoy Effect study and the Blank-Sheet Rule.",
   "tags": [
     "anchoring bias",
     "decoy effect",
@@ -41,7 +41,7 @@
         "measure",
         "against"
       ],
-      "narration": "Have you ever noticed a pricing page with an overpriced hundred-forty-nine-dollar tier that almost nobody needs? You are not meant to buy it - you are meant to measure against it.",
+      "narration": "Have you ever noticed a pricing page with an overpriced hundred-forty-nine-dollar tier that almost nobody needs? You are not meant to buy it, you are meant to measure against it.",
       "source": "Illustration (example prices)"
     },
     {
@@ -109,7 +109,7 @@
         "anchor",
         "leak"
       ],
-      "narration": "A steep discount off a fake anchor is still a real leak. Keep that in mind, because...",
+      "narration": "A steep discount off a fake anchor is still a real leak.",
       "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]

@@ -4,7 +4,7 @@
   "alt_title_2": "How Behavioral Defaults Automate Wealth and Focus",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "In 2003, behavioral scientists Eric Johnson and Dan Goldstein uncovered why neighboring European nations had 12% vs 99% organ donor consent: a single default checkbox. Here is how to make saving and deep work automatic defaults.",
+  "description_hook": "In 2003, behavioral scientists Eric Johnson and Dan Goldstein uncovered why neighboring European nations had 12% vs 99% organ donor consent: a single default checkbox. This video shows how to make saving and deep work automatic defaults.",
   "tags": [
     "default effect",
     "choice architecture",
@@ -65,7 +65,7 @@
     },
     {
       "tag": "THE TRAP",
-      "headline": "Willpower Collapses; Architecture Doesn't",
+      "headline": "Willpower Collapses; System Doesn't",
       "visual_type": "comparison_split",
       "left_title": "OPT-IN HABITS (12%)",
       "left_body": "Saving whatever cash is left on Friday night",
@@ -77,7 +77,7 @@
         "willpower",
         "leftover"
       ],
-      "narration": "Most people run their finances and focus backward as opt-in habits - hoping willpower survives at eight PM on Friday to save leftover cash or study."
+      "narration": "Most people run their finances and focus backward as opt-in habits, hoping willpower survives at eight PM on Friday to save leftover cash or study."
     },
     {
       "tag": "THE RULE",
@@ -109,7 +109,7 @@
         "defaults",
         "question"
       ],
-      "narration": "Stop relying on fragile daily motivation and engineer automatic opt-out defaults instead, because human psychology already answered the question...",
+      "narration": "Stop relying on fragile daily motivation and engineer automatic opt-out defaults instead.",
       "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]

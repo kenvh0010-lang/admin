@@ -4,7 +4,7 @@
   "alt_title_2": "The 180-Year-Old Math Rule Charlie Munger Used for Every Decision",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Instead of asking how to get rich or productive, billionaire thinker Charlie Munger flipped every hard problem backwards using mathematician Carl Jacobi's Inversion Principle. Here is the 5-Trap Inversion filter.",
+  "description_hook": "Instead of asking how to get rich or productive, billionaire thinker Charlie Munger flipped every hard problem backwards using mathematician Carl Jacobi's Inversion Principle. This video covers the 5-Trap Inversion filter.",
   "tags": [
     "charlie munger",
     "inversion mental model",
@@ -27,7 +27,7 @@
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "Stop Chasing Genius - Subtract Stupidity",
+      "headline": "Stop Chasing Genius, Subtract Stupidity",
       "visual_type": "stat_callout",
       "stat_value": "60 Yrs",
       "stat_label": "MUNGER'S UNDEFEATED DECISION FILTER",
@@ -35,8 +35,14 @@
         "Most people fail trying to pull off brilliant shortcuts",
         "Consistent winners simply remove obvious self-sabotage"
       ],
-      "highlight_words": ["munger", "sixty", "brilliant", "stupidity"],
-      "narration": "Billionaire thinker Charlie Munger spent sixty years repeating one counterintuitive secret: stop straining to be brilliant, and focus relentlessly on avoiding stupidity."
+      "highlight_words": [
+        "munger",
+        "sixty",
+        "brilliant",
+        "stupidity"
+      ],
+      "narration": "Charlie Munger kept repeating one counterintuitive idea: stop straining to be brilliant, and work hard at not being stupid.",
+      "source": "Charlie Munger, Poor Charlie's Almanack (2005)"
     },
     {
       "tag": "THE STORY",
@@ -48,8 +54,14 @@
         "German mathematician Carl Jacobi solved impossible proofs backwards",
         "Define the exact opposite of what you want, then avoid it"
       ],
-      "highlight_words": ["jacobi", "three", "invert", "upside"],
-      "narration": "Munger borrowed this mental model from nineteenth-century mathematician Carl Jacobi, who solved complex equations with three famous words: invert, always invert. Turn every hard problem upside down."
+      "highlight_words": [
+        "jacobi",
+        "three",
+        "invert",
+        "upside"
+      ],
+      "narration": "Munger borrowed this mental model from nineteenth-century mathematician Carl Jacobi, who solved complex equations with three famous words: invert, always invert. Turn every hard problem upside down.",
+      "source": "Charlie Munger, Poor Charlie's Almanack (2005), citing Carl Jacobi"
     },
     {
       "tag": "THE SHIFT",
@@ -59,7 +71,12 @@
       "left_body": "'How do I build wealth fast?' -> noisy, vague, high risk",
       "right_title": "INVERTED FILTER",
       "right_body": "'What guarantees staying broke?' -> debt, ego upgrades, panic",
-      "highlight_words": ["vague", "ruin", "debt", "panic"],
+      "highlight_words": [
+        "vague",
+        "ruin",
+        "debt",
+        "panic"
+      ],
       "narration": "Asking how to build extraordinary wealth produces vague guesses. Asking what guarantees financial ruin gives unmistakable answers: high-interest debt, status upgrades, zero skill margin, and emotional panic."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "ELIMINATING DOWNSIDE COMPOUNDS UPSIDE",
       "stat_subtext": "Block top 5 failure habits -> progress becomes automatic",
-      "highlight_words": ["five-trap", "inversion", "wreck", "guardrails"],
+      "highlight_words": [
+        "five-trap",
+        "inversion",
+        "wreck",
+        "guardrails"
+      ],
       "narration": "Run a Five-Trap Inversion today: write down your top goal for the year, list the five daily behaviors guaranteed to wreck it, and build physical guardrails to eliminate them first."
     },
     {
@@ -81,8 +103,14 @@
         "List the 5 guaranteed failure modes for health, money, and work",
         "Remove friction from good habits and lock out the traps"
       ],
-      "highlight_words": ["compounding", "miracle", "unforced", "errors"],
-      "narration": "In compounding games, winners rarely need miracle breakthroughs - they simply commit zero unforced errors. Which is exactly why..."
+      "highlight_words": [
+        "compounding",
+        "miracle",
+        "unforced",
+        "errors"
+      ],
+      "narration": "In compounding games, winners rarely need miracle breakthroughs, they simply commit zero unforced errors.",
+      "source": "Charlie Munger, Poor Charlie's Almanack (2005)"
     }
   ]
 }

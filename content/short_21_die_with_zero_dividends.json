@@ -35,8 +35,14 @@
         "Millions defer every meaningful trip to an abstract future",
         "Money compounds forever, but physical energy has seasons"
       ],
-      "highlight_words": ["seventy-five", "skipped", "decade", "energy"],
-      "narration": "What is the point of reaching your highest net worth at age seventy-five if you skipped every decade your body had the energy to enjoy it?"
+      "highlight_words": [
+        "seventy-five",
+        "skipped",
+        "decade",
+        "energy"
+      ],
+      "narration": "What is the point of reaching your highest net worth at age seventy-five if you skipped every decade your body had the energy to enjoy it?",
+      "source": "Bill Perkins, Die With Zero (2020)"
     },
     {
       "tag": "THE STORY",
@@ -48,8 +54,14 @@
         "Financial assets pay cash dividends into your account",
         "Great experiences pay memory dividends every year you live"
       ],
-      "highlight_words": ["perkins", "memory", "dividends", "revisit"],
-      "narration": "In his book Die With Zero, Bill Perkins introduces a mental model called Memory Dividends. Just as index funds pay cash dividends, meaningful experiences pay emotional dividends every time you revisit them."
+      "highlight_words": [
+        "perkins",
+        "memory",
+        "dividends",
+        "revisit"
+      ],
+      "narration": "In his book Die With Zero, Bill Perkins introduces a mental model called Memory Dividends. Just as index funds pay cash dividends, meaningful experiences pay emotional dividends every time you revisit them.",
+      "source": "Bill Perkins, Die With Zero (2020)"
     },
     {
       "tag": "THE TRAP",
@@ -59,7 +71,12 @@
       "left_body": "Postpone life to 70 -> high capital, low physical stamina",
       "right_title": "TIME BUCKETING",
       "right_body": "Automate base wealth first -> fund decade-specific memories",
-      "highlight_words": ["hoarding", "biological", "windows", "expiration"],
+      "highlight_words": [
+        "hoarding",
+        "biological",
+        "windows",
+        "expiration"
+      ],
       "narration": "Over-hoarding past your automated investing target ignores biological windows. Taking a demanding mountain hike at thirty or traveling with aging parents carries an expiration date money cannot reopen."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "COMPOUNDING MEMORY + CAPITAL IN PARALLEL",
       "stat_subtext": "Lock automated wealth floor -> invest surplus in peak decades",
-      "highlight_words": ["time-bucket", "automate", "baseline", "three"],
+      "highlight_words": [
+        "time-bucket",
+        "automate",
+        "baseline",
+        "three"
+      ],
       "narration": "Apply the Time-Bucket Rule: automate your baseline wealth investments on payday first, then intentionally fund three experiences over the next five years that belong to your current health window."
     },
     {
@@ -81,8 +103,14 @@
         "Never raid your automated compounding base",
         "Never let fear make you miss non-renewable life seasons"
       ],
-      "highlight_words": ["fulfillment", "decades", "final", "balance"],
-      "narration": "Smart wealth planning optimizes fulfillment across decades, not just a final bank balance. Otherwise, stop and ask..."
+      "highlight_words": [
+        "fulfillment",
+        "decades",
+        "final",
+        "balance"
+      ],
+      "narration": "Smart wealth planning optimizes fulfillment across decades, not just a final bank balance.",
+      "source": "Bill Perkins, Die With Zero (2020)"
     }
   ]
 }

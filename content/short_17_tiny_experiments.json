@@ -35,8 +35,14 @@
         "Predicting life 60 months ahead locks in outdated guesses",
         "High stakes trigger perfectionism before you even start"
       ],
-      "highlight_words": ["stall", "momentum", "rigid", "five-year"],
-      "narration": "The fastest way to stall your momentum in a fast-changing world is locking yourself into a rigid five-year life plan."
+      "highlight_words": [
+        "stall",
+        "momentum",
+        "rigid",
+        "five-year"
+      ],
+      "narration": "The fastest way to stall your momentum in a fast-changing world is locking yourself into a rigid five-year life plan.",
+      "source": "Anne-Laure Le Cunff, Tiny Experiments (2025)"
     },
     {
       "tag": "THE STUDY",
@@ -48,8 +54,14 @@
         "Ambitious brains burn out chasing static linear ladders",
         "Short experimental cycles turn anxiety into curiosity"
       ],
-      "highlight_words": ["neuroscientist", "tiny", "experiments", "feedback"],
-      "narration": "Neuroscientist Anne-Laure Le Cunff studied why ambitious planners burn out chasing fixed ladders. In her book Tiny Experiments, she shows that human brains thrive on rapid feedback loops, not distant finish lines."
+      "highlight_words": [
+        "neuroscientist",
+        "tiny",
+        "experiments",
+        "feedback"
+      ],
+      "narration": "Neuroscientist Anne-Laure Le Cunff wrote about why ambitious planners burn out chasing fixed ladders. In her book Tiny Experiments, she argues that we learn faster from short feedback loops than from distant finish lines.",
+      "source": "Anne-Laure Le Cunff, Tiny Experiments (2025)"
     },
     {
       "tag": "THE SHIFT",
@@ -59,7 +71,12 @@
       "left_body": "Every detour feels like failure -> heavy procrastination",
       "right_title": "TINY EXPERIMENT",
       "right_body": "14-day field test -> zero failure, pure signal",
-      "highlight_words": ["failure", "laboratory", "data", "two"],
+      "highlight_words": [
+        "failure",
+        "laboratory",
+        "data",
+        "two"
+      ],
       "narration": "A massive five-year goal frames every detour as personal failure. A tiny experiment frames every result as clean laboratory data. You stop asking if something works forever and test what happens over two weeks."
     },
     {
@@ -68,8 +85,13 @@
       "visual_type": "compounding_curve",
       "stat_label": "26 ITERATIONS PER YEAR COMPOUND FAST",
       "stat_subtext": "'I will [action] for [14 days]' -> Keep, Pivot, or Drop",
-      "highlight_words": ["pact", "fourteen", "publish", "inspect"],
-      "narration": "Use the Curiosity Pact: write down 'I will perform one specific action for fourteen days.' Publish ten short notes, test one workflow, or wake thirty minutes early - then inspect the data."
+      "highlight_words": [
+        "pact",
+        "fourteen",
+        "publish",
+        "inspect"
+      ],
+      "narration": "Use the Curiosity Pact: write down 'I will perform one specific action for fourteen days.' Publish ten short notes, test one workflow, or wake thirty minutes early, then inspect the data."
     },
     {
       "tag": "LOOP",
@@ -81,8 +103,14 @@
         "Replace 'What is my passion?' with 'What is my next 14-day test?'",
         "Keep what energizes you and drop what drains you guilt-free"
       ],
-      "highlight_words": ["twenty-six", "asymmetric", "spreadsheet", "trap"],
-      "narration": "Twenty-six small experiments in a year uncover asymmetric paths no spreadsheet could ever predict. Because the hidden trap for high achievers is that..."
+      "highlight_words": [
+        "twenty-six",
+        "asymmetric",
+        "spreadsheet",
+        "trap"
+      ],
+      "narration": "Twenty-six two-week experiments in a year can show you paths no spreadsheet would predict.",
+      "source": "Calculation: 52 weeks / 2 = 26 experiments"
     }
   ]
 }

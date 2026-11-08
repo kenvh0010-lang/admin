@@ -4,7 +4,7 @@
   "alt_title_2": "How 20 Seconds of Friction Saves $3,600 a Year",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "In 1957, Charles Ferster and B.F. Skinner showed that unpredictable rewards keep behavior going longer than predictable ones. Here is how shopping apps use the same trick on your wallet, and how to add friction back.",
+  "description_hook": "In 1957, Charles Ferster and B.F. Skinner showed that unpredictable rewards keep behavior going longer than predictable ones. This video shows how shopping apps use the same trick on your wallet, and how to add friction back.",
   "tags": [
     "variable rewards psychology",
     "b f skinner",
@@ -97,7 +97,7 @@
     },
     {
       "tag": "LOOP",
-      "headline": "Your Willpower Isn't Broken - Add Friction",
+      "headline": "Your Willpower Isn't Broken, Add Friction",
       "visual_type": "stat_callout",
       "stat_value": "0 Clicks",
       "stat_label": "UNLINK SAVED CARDS FROM RETAIL APPS",
@@ -111,7 +111,7 @@
         "billion",
         "because"
       ],
-      "narration": "Stop blaming willpower when billion-dollar apps engineer urgency against you; build friction around your wallet instead. Because think about this...",
+      "narration": "Stop blaming willpower when billion-dollar apps engineer urgency against you; build friction around your wallet instead.",
       "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]

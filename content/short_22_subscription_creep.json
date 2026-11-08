@@ -4,7 +4,7 @@
   "alt_title_2": "Consumers Underestimate Recurring Bills by 2.5x (MIT & CMU Study)",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Neuroeconomics fMRI scans at MIT and Carnegie Mellon show physical cash activates the brain's pain center (the insula), while auto-renewing subscriptions numb it - causing a 2.5x recurring spend blind spot.",
+  "description_hook": "Neuroeconomics fMRI scans at MIT and Carnegie Mellon show physical cash activates the brain's pain center (the insula), while auto-renewing subscriptions numb it, causing a 2.5x recurring spend blind spot.",
   "tags": [
     "subscription creep",
     "pain of paying",
@@ -27,7 +27,7 @@
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "Guessed $86 - Actually Paying $273",
+      "headline": "Guessed $86, Actually Paying $273",
       "visual_type": "stat_callout",
       "stat_value": "$273/mo",
       "stat_label": "REAL RECURRING SPEND VS $86 MEMORY GUESS",
@@ -35,8 +35,14 @@
         "Most households guess they spend under $100 on subscriptions",
         "Bank audits reveal the real average sits above $270 a month"
       ],
-      "highlight_words": ["estimate", "eighty-six", "two", "seventy-three"],
-      "narration": "When researchers asked consumers to estimate their monthly subscription bill, the average guess was eighty-six dollars. Their real bank statements showed two hundred seventy-three."
+      "highlight_words": [
+        "estimate",
+        "eighty-six",
+        "two",
+        "seventy-three"
+      ],
+      "narration": "Guess what you pay for subscriptions every month. Now open your bank statement and add them up. For most people, the real number is higher than the guess.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "THE STUDY",
@@ -48,8 +54,13 @@
         "Counting physical bills triggers natural neural braking",
         "Auto-billing hides the transaction until memory forgets it"
       ],
-      "highlight_words": ["carnegie", "insula", "pain", "numb"],
-      "narration": "Brain-imaging researchers at MIT and Carnegie Mellon discovered why. Handing over physical cash activates the insula - the brain center that registers pain. Frictionless auto-renewals numb that natural alarm completely."
+      "highlight_words": [
+        "carnegie",
+        "insula",
+        "pain",
+        "numb"
+      ],
+      "narration": "Brain-imaging researchers at MIT and Carnegie Mellon discovered why. Handing over physical cash activates the insula, the brain center that registers pain. Frictionless auto-renewals numb that natural alarm completely."
     },
     {
       "tag": "THE TRAP",
@@ -59,8 +70,14 @@
       "left_body": "5 cards + app stores -> $273/mo invisible post-tax drain",
       "right_title": "SINGLE AUDIT CARD",
       "right_body": "1 dedicated virtual card -> 90-day zero-base review",
-      "highlight_words": ["underestimate", "quietly", "drains", "three"],
-      "narration": "Consumers underestimate recurring charges by two and a half times. Nine dollars here and nineteen dollars there quietly drains over three thousand post-tax dollars every single year."
+      "highlight_words": [
+        "underestimate",
+        "quietly",
+        "drains",
+        "three"
+      ],
+      "narration": "Nine dollars here and nineteen dollars there adds up. Ten subscriptions at fifteen dollars each is one hundred fifty dollars a month, or eighteen hundred dollars a year.",
+      "source": "Calculation: 10 x $15 = $150/month; x 12 = $1,800/year"
     },
     {
       "tag": "THE RULE",
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "REDIRECTING $200/MO LEAKS INTO ASSETS",
       "stat_subtext": "Plug silent recurring bleed -> instant tax-free cashflow",
-      "highlight_words": ["quarterly", "dedicated", "ninety", "cancel"],
+      "highlight_words": [
+        "quarterly",
+        "dedicated",
+        "ninety",
+        "cancel"
+      ],
       "narration": "Run the Quarterly Cancel Audit: move every recurring bill onto one dedicated card, review that single statement every ninety days, and cancel anything you would not re-buy today."
     },
     {
@@ -81,8 +103,14 @@
         "Never scatter subscriptions across checking, cards, and phones",
         "Re-earn every recurring dollar from zero once a quarter"
       ],
-      "highlight_words": ["invisible", "leaks", "instant", "audit"],
-      "narration": "Cutting invisible leaks hands you an instant raise with zero extra work. Audit your statement tonight, because..."
+      "highlight_words": [
+        "invisible",
+        "leaks",
+        "instant",
+        "audit"
+      ],
+      "narration": "Cutting invisible leaks hands you an instant raise with zero extra work. Audit your statement tonight.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

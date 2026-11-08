@@ -35,8 +35,14 @@
         "Visible busyness feels safe in the moment",
         "Yet frantic motion starves long-term career assets"
       ],
-      "highlight_words": ["thirty", "newport", "motion", "destroying"],
-      "narration": "Answering Slack messages in thirty seconds feels productive, yet computer scientist Cal Newport warns this habit of constant motion is silently destroying your best career output."
+      "highlight_words": [
+        "thirty",
+        "newport",
+        "motion",
+        "destroying"
+      ],
+      "narration": "Answering Slack messages in thirty seconds feels productive. Computer scientist Cal Newport argues this habit of constant motion crowds out your best work.",
+      "source": "Cal Newport, Slow Productivity (2024)"
     },
     {
       "tag": "THE STUDY",
@@ -48,8 +54,14 @@
         "Knowledge work lacks a visible factory conveyor belt",
         "Offices mistook inbox speed and meetings for real value"
       ],
-      "highlight_words": ["pseudo-productivity", "busyness", "calendars", "results"],
-      "narration": "In his book Slow Productivity, Newport diagnoses modern knowledge work with pseudo-productivity: using visible busyness, packed calendars, and instant replies as a stand-in for useful results."
+      "highlight_words": [
+        "pseudo-productivity",
+        "busyness",
+        "calendars",
+        "results"
+      ],
+      "narration": "In his book Slow Productivity, Newport diagnoses modern knowledge work with pseudo-productivity: using visible busyness, packed calendars, and instant replies as a stand-in for useful results.",
+      "source": "Cal Newport, Slow Productivity (2024)"
     },
     {
       "tag": "THE TRAP",
@@ -59,7 +71,12 @@
       "left_body": "7 active projects + nonstop pings -> chronic burnout",
       "right_title": "SLOW PRODUCTIVITY",
       "right_body": "2 capped priorities + quiet blocks -> flagship mastery",
-      "highlight_words": ["seven", "threads", "context-switching", "finish"],
+      "highlight_words": [
+        "seven",
+        "threads",
+        "context-switching",
+        "finish"
+      ],
       "narration": "Every time you juggle seven active projects and thirty chat threads, context-switching taxes your brain until nothing meaningful ever crosses the finish line."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "FEWER PROJECTS -> EXPONENTIAL CRAFT QUALITY",
       "stat_subtext": "Do fewer things • Work at a natural pace • Obsess over quality",
-      "highlight_words": ["three", "two", "sustainable", "quality"],
+      "highlight_words": [
+        "three",
+        "two",
+        "sustainable",
+        "quality"
+      ],
       "narration": "Newport's cure has three rules: cap major active projects at two, work at a sustainable seasonal pace, and obsess over undeniable craft quality."
     },
     {
@@ -81,8 +103,14 @@
         "Batch messages twice daily instead of reacting all day",
         "Judge weeks by finished craft, never hours online"
       ],
-      "highlight_words": ["inbox", "flagship", "finished", "why"],
-      "narration": "Five years from now, nobody will remember how quickly you cleared your inbox - they will only remember the flagship assets you actually finished. That is why..."
+      "highlight_words": [
+        "inbox",
+        "flagship",
+        "finished",
+        "why"
+      ],
+      "narration": "Five years from now, nobody will remember how quickly you cleared your inbox, they will only remember the flagship assets you actually finished.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

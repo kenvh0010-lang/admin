@@ -4,7 +4,7 @@
   "alt_title_2": "The 90-Minute Media System Behind One-Person Businesses",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Burnout happens when solo creators try to invent a brand-new topic every single day. Learn the 1-to-5 Content Waterfall to turn one deep weekly research session into five compounding media assets.",
+  "description_hook": "Burnout happens when solo creators try to invent a brand-new topic every day. Learn the 1-to-5 Content Waterfall to turn one deep weekly research session into five compounding media assets.",
   "tags": [
     "one person media business",
     "content repurposing system",
@@ -46,7 +46,7 @@
     },
     {
       "tag": "THE WATERFALL",
-      "headline": "Treadmill Posting vs Upstream Architecture",
+      "headline": "Treadmill Posting vs Upstream System",
       "visual_type": "comparison_split",
       "left_title": "CONTENT TREADMILL",
       "left_body": "Random daily posts -> shallow hooks -> vanishes in 24 hours",
@@ -58,7 +58,8 @@
         "script",
         "newsletter"
       ],
-      "narration": "Instead of waking up asking what to post today, build an upstream waterfall: write one thousand-word flagship script on Saturday morning as your master source code."
+      "narration": "Instead of waking up asking what to post today, build an upstream waterfall: write one thousand-word flagship script on Saturday morning as your master source code.",
+      "source": "Mind & Margin content workflow (advice)"
     },
     {
       "tag": "THE SLICING",
@@ -67,7 +68,7 @@
       "stat_value": "90 mins",
       "stat_label": "SATURDAY WRITING SESSION -> FULL WEEK OUTPUT",
       "bullets": [
-        "Asset 1: Evergreen YouTube visual essay for search",
+        "Asset 1: Long-Lasting YouTube visual essay for search",
         "Assets 2-4: Three 50-second Shorts from top case studies",
         "Asset 5: Weekly email newsletter issue you actually own"
       ],
@@ -82,7 +83,7 @@
     },
     {
       "tag": "OWNED EQUITY",
-      "headline": "Rent Discovery - Own the Email Relationship",
+      "headline": "Rent Discovery, Own the Email Relationship",
       "visual_type": "compounding_curve",
       "stat_label": "SHORTS ATTRACT -> LONG VIDEO BUILDS TRUST -> EMAIL OWNS",
       "stat_subtext": "Algorithm reach fluctuates; direct subscriber lists compound for years",
@@ -110,7 +111,7 @@
         "hundred",
         "why"
       ],
-      "narration": "Fifty-two weekly theses turn into two hundred sixty published assets a year without researching five separate topics. Which is the exact reason why...",
+      "narration": "Fifty-two weekly theses turn into two hundred sixty published assets a year without researching five separate topics.",
       "source": "Calculation: 52 weeks x 5 assets = 260"
     }
   ]

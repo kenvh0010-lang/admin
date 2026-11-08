@@ -4,7 +4,7 @@
   "alt_title_2": "How One Person Outproduces a 20-Person Team",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Naval Ravikant famously identified four types of leverage: Labor, Capital, Code, and Media. Here is why permissionless leverage lets solo builders earn full-time margins in under 5 hours a week.",
+  "description_hook": "Naval Ravikant famously identified four types of leverage: Labor, Capital, Code, and Media. This video explains why self-published leverage lets solo builders earn full-time margins in under 5 hours a week.",
   "tags": [
     "naval ravikant",
     "ai leverage",
@@ -21,7 +21,7 @@
   "affiliate_cta": {
     "offer_name": "Free 5-Hour Asset Builder OS + reading list",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
-    "pinned_comment": "Which leverage are you building right now—Code, Media, or both? 👇 Full list of free AI tools & 'Almanack of Naval' summary linked here: https://kenvh0010-lang.github.io/admin/bio/"
+    "pinned_comment": "Which leverage are you building right now, Code, Media, or both? 👇 Full list of free AI tools & 'Almanack of Naval' summary linked here: https://kenvh0010-lang.github.io/admin/bio/"
   },
   "scenes": [
     {
@@ -39,7 +39,8 @@
         "leverage",
         "burnout"
       ],
-      "narration": "You cannot out-work someone who has better leverage than you. Working twice as long only doubles your output—until you hit burnout."
+      "narration": "You cannot out-work someone who has better leverage than you. Working twice as long only doubles your output, until you hit burnout.",
+      "source": "Naval Ravikant, 'How to Get Rich' (2018)"
     },
     {
       "tag": "OLD LEVERAGE",
@@ -88,7 +89,8 @@
         "assets",
         "renting"
       ],
-      "narration": "Stop selling every waking hour and save five hours a week to build digital assets you actually own. Because in the modern economy..."
+      "narration": "Stop selling every waking hour and save five hours a week to build digital assets you actually own.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }
