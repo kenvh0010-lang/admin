@@ -1,0 +1,116 @@
+{
+  "title": "Why Paying by Card Doubles What You Spend (MIT Study)",
+  "alt_title_1": "The MIT Basketball Ticket Test Every Spender Should Know",
+  "alt_title_2": "How Tap-to-Pay Tricks Your Brain Into Paying Twice as Much",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 2001, MIT professors Drazen Prelec and Duncan Simester auctioned real sold-out Boston Celtics tickets to MBA students. Students paying by credit card bid $60.64 on average, while cash bidders stopped at $28.51. Source: Marketing Letters, Vol. 12, No. 1 (2001).",
+  "tags": [
+    "psychology of money",
+    "pain of paying",
+    "mit credit card study",
+    "spending habits",
+    "behavioral economics",
+    "personal finance"
+  ],
+  "thumbnail": {
+    "hook_text": "THE CARD TRAP",
+    "badge": "MIT EXPERIMENT",
+    "stat": "2.1X"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free 5-Hour Asset Builder OS and Anti-Leak Checklist",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Do you spend less when you carry physical cash, or do you use another rule before tapping your phone? Get the free 1-page Spending Audit and 5-Hour Asset Builder OS here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "The MIT Sold-Out NBA Ticket Experiment",
+      "visual_type": "stat_callout",
+      "stat_value": "2.1x",
+      "stat_label": "HIGHER BIDS FOR THE EXACT SAME SEATS",
+      "bullets": [
+        "Real sealed-bid auction for sold-out Celtics tickets",
+        "Only one rule changed between the two student groups"
+      ],
+      "highlight_words": [
+        "sold-out",
+        "celtics",
+        "twice",
+        "rule"
+      ],
+      "narration": "In 2001, two MIT professors auctioned sold-out Boston Celtics tickets to MBA students, and one rule made half the room bid twice as much.",
+      "source": "Drazen Prelec & Duncan Simester, Marketing Letters (2001)"
+    },
+    {
+      "tag": "THE AUCTION",
+      "headline": "Cash Within 24 Hours vs Credit Card",
+      "visual_type": "comparison_split",
+      "left_title": "CASH GROUP",
+      "left_body": "Average bid: $28.51 paid in physical bills",
+      "right_title": "CREDIT CARD GROUP",
+      "right_body": "Average bid: $60.64 for identical seats",
+      "highlight_words": [
+        "cash",
+        "28",
+        "60",
+        "card"
+      ],
+      "narration": "Students paying cash within twenty-four hours bid an average of twenty-eight dollars and fifty-one cents. Students paying by credit card bid sixty dollars and sixty-four cents.",
+      "source": "Prelec & Simester, MIT Sloan Auction Data (2001)"
+    },
+    {
+      "tag": "THE MECHANISM",
+      "headline": "Why Tap-to-Pay Numbs the Pain Center",
+      "visual_type": "stat_callout",
+      "stat_value": "$32",
+      "stat_label": "SILENT MARKUP FROM PAYMENT FRICTION LOSS",
+      "bullets": [
+        "Handing over bills triggers immediate loss awareness",
+        "Tapping a phone delays the mental cost by 30 days"
+      ],
+      "highlight_words": [
+        "pain",
+        "paying",
+        "reward",
+        "bill"
+      ],
+      "narration": "Economists call this the pain of paying. Cash makes your brain feel the loss right now. A card delivers the reward today and hides the bill next month.",
+      "source": "Prelec & Loewenstein, Marketing Science (1998)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Convert Price Tags Into Net Work Hours",
+      "visual_type": "compounding_curve",
+      "stat_label": "THE REAL-WAGE CONVERSION FILTER",
+      "stat_subtext": "$90 Impulse Buy at $22.50/hr Net = 4 Hours of Life",
+      "highlight_words": [
+        "hours",
+        "ninety",
+        "four",
+        "tap"
+      ],
+      "narration": "Before tapping for any non-essential item, divide its price by your net hourly pay. At twenty-two fifty an hour, a ninety-dollar impulse buy costs four desk hours."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Put Friction Back Before You Tap",
+      "visual_type": "stat_callout",
+      "stat_value": "24h",
+      "stat_label": "WAIT RULE FOR ANY PURCHASE OVER 2 WORK HOURS",
+      "bullets": [
+        "Wait 24 hours whenever an item costs over 2 work hours",
+        "Keep the cash gap working in your own account"
+      ],
+      "highlight_words": [
+        "24",
+        "hours",
+        "twice",
+        "room"
+      ],
+      "narration": "Wait twenty-four hours on anything above two work hours, and you stop overpaying like the credit card half of that MIT room.",
+      "source": "Mind & Margin Behavioral Spending Filter"
+    }
+  ]
+}
