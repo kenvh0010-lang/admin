@@ -712,7 +712,7 @@
         <div class="affiliate-stack-list" id="affiliate-stack-list">
           <!-- Card 1: Audible Free 30-Day Trial -->
           <a
-            href="https://www.audible.com/ep/freetrial?tag=YOUR_AMAZON_ASSOC_TAG-20"
+            href="https://www.audible.com/ep/freetrial"
             target="_blank"
             rel="noopener noreferrer sponsored"
             class="affiliate-card affiliate-tracked-link"
@@ -737,7 +737,7 @@
 
           <!-- Card 2: Notion Plus & AI -->
           <a
-            href="https://affiliate.notion.so/YOUR_NOTION_PARTNER_ID"
+            href="https://www.notion.so/product/ai"
             target="_blank"
             rel="noopener noreferrer sponsored"
             class="affiliate-card affiliate-tracked-link"
@@ -762,7 +762,7 @@
 
           <!-- Card 3: Make.com Visual Automation -->
           <a
-            href="https://www.make.com/en/register?pc=YOUR_MAKE_AFFILIATE_CODE"
+            href="https://www.make.com/en/register"
             target="_blank"
             rel="noopener noreferrer sponsored"
             class="affiliate-card affiliate-tracked-link"
@@ -787,7 +787,7 @@
 
           <!-- Card 4: Beehiiv Newsletter Platform -->
           <a
-            href="https://www.beehiiv.com?via=YOUR_BEEHIIV_PARTNER_ID"
+            href="https://www.beehiiv.com"
             target="_blank"
             rel="noopener noreferrer sponsored"
             class="affiliate-card affiliate-tracked-link"
@@ -817,10 +817,10 @@
     <footer class="bio-footer">
       <div class="disclosure-box">
         <strong style="color: var(--text-secondary);">Transparency &amp; Affiliate Disclosure:</strong>
-        Some links on this page are partner links (including Amazon/Audible Associates and software partners). As an Amazon Associate and software partner, Mind &amp; Margin may earn a commission from qualifying trials or purchases at <strong>zero extra cost to you</strong>. We only recommend books and leverage systems we genuinely study and use.
+        As an Amazon Associate I earn from qualifying purchases. Some links on this page are partner links (including Amazon/Audible Associates and software partners) that may earn a commission at <strong>zero extra cost to you</strong>. We only recommend books and leverage systems we genuinely study and use. <a href="../privacy.html" style="color: var(--accent-cyan);">Privacy Policy</a> • <a href="../index.html" style="color: var(--accent-cyan);">All Essays</a>
       </div>
       <div>
-        © <span id="footer-year">2026</span> <strong>Mind &amp; Margin (`@MindAndMargin`)</strong> • Quiet Compounding Over Loud Status.
+        © <span id="footer-year">2026</span> <strong>Mind &amp; Margin (@MindAndMargin)</strong> • Quiet Compounding Over Loud Status.
       </div>
     </footer>
   </div>
@@ -831,24 +831,18 @@
 
       /* =====================================================================
          30-SECOND OWNER CONFIGURATION BLOCK
-         Swap placeholder URLs below with your live tracking links!
+         Swap URLs below with your live tracking links (e.g., ?tag=mindandmargin-20)!
          Every element with matching [data-affiliate-id] updates automatically.
          ===================================================================== */
       const FUNNEL_CONFIG = {
-        // Optional webhook URL (Make.com / Zapier / Formspree) to receive email leads remotely.
-        // Leave empty ("") to operate 100% static/offline with instant Playbook unlock.
         leadWebhookUrl: '',
-
-        // Playbook relative path
         playbookPath: '../free_lead_magnet/Wealth_and_Leverage_Playbook.md',
-
-        // Central Affiliate & Checkout Tracking URLs mapped by data-affiliate-id
         affiliateLinks: {
-          'mind-margin-5hr-os-checkout': 'https://mindandmargin.gumroad.com/l/5-hour-asset-os',
-          'audible-free-30d-trial': 'https://www.audible.com/ep/freetrial?tag=YOUR_AMAZON_ASSOC_TAG-20',
-          'notion-plus-ai': 'https://affiliate.notion.so/YOUR_NOTION_PARTNER_ID',
-          'make-automation': 'https://www.make.com/en/register?pc=YOUR_MAKE_AFFILIATE_CODE',
-          'beehiiv-newsletter': 'https://www.beehiiv.com?via=YOUR_BEEHIIV_PARTNER_ID'
+          'mind-margin-5hr-os-checkout': '../5_hour_asset_builder_os/index.html',
+          'audible-free-30d-trial': 'https://www.audible.com/ep/freetrial',
+          'notion-plus-ai': 'https://www.notion.so/product/ai',
+          'make-automation': 'https://www.make.com/en/register',
+          'beehiiv-newsletter': 'https://www.beehiiv.com'
         }
       };
 
