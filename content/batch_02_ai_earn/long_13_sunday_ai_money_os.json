@@ -1,0 +1,135 @@
+{
+  "title": "The 30-Minute Sunday Money & Time Audit (Privacy-Safe AI)",
+  "alt_title_1": "How to Audit Your Spending and Calendar in 30 Minutes Every Sunday",
+  "alt_title_2": "Build a Personal AI Finance Review Without Sharing Bank Passwords",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "Thirty-seven percent of U.S. adults cannot cover a $400 emergency with cash alone, according to the Federal Reserve SHED survey. Here is a calm 30-minute Sunday routine that uses local CSV files and AI to stop spending leaks, protect deep work blocks, and automate payday transfers without sharing bank passwords.",
+  "tags": [
+    "weekly money review",
+    "personal finance system",
+    "ai budget workflow",
+    "time management",
+    "maker schedule",
+    "conscious spending",
+    "mind and margin"
+  ],
+  "thumbnail": {
+    "hook_text": "30-MIN SUNDAY OS",
+    "badge": "MONEY & TIME",
+    "stat": "$400"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free 5-Hour Asset Builder OS and Sunday Audit Checklist",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Which part leaks faster for you right now: small recurring charges or fragmented afternoon hours? Grab the free 30-Minute Sunday Audit Checklist and 5-Hour Asset Builder OS here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "Why Money and Hours Leak Between Paychecks",
+      "visual_type": "stat_callout",
+      "stat_value": "37%",
+      "stat_label": "LACK $400 EMERGENCY CASH EQUIVALENT (FED SHED)",
+      "bullets": [
+        "Federal Reserve survey: 37% would borrow, sell, or come up short",
+        "Peter Drucker (1967): memory always lies about where time goes"
+      ],
+      "highlight_words": [
+        "37%",
+        "400",
+        "drucker",
+        "sunday"
+      ],
+      "narration": "According to the Federal Reserve's Survey of Household Economics and Decisionmaking, thirty-seven percent of American adults could not cover an unexpected four-hundred-dollar expense using cash or its equivalent alone. In 1967, management writer Peter Drucker noticed the exact same blind spot with time: when executives guessed how they spent their week, their memory was wrong every single time. Most people lose both money and focus in tiny unrecorded leaks. You can fix both in thirty minutes every Sunday afternoon.",
+      "source": "Federal Reserve SHED Report; Peter Drucker, The Effective Executive (1967)"
+    },
+    {
+      "tag": "CHAPTER 2 • PRIVACY TRAP",
+      "headline": "Why Spreadsheets Quit and Bank Bots Risk Data",
+      "visual_type": "comparison_split",
+      "left_title": "MANUAL OR RISKY TOOLS",
+      "left_body": "Typing every $4 receipt by hand or giving apps bank logins",
+      "right_title": "ANONYMIZED CSV AUDIT",
+      "right_body": "Strip name + account digits locally, then classify in 60 seconds",
+      "highlight_words": [
+        "three",
+        "weeks",
+        "passwords",
+        "csv"
+      ],
+      "narration": "Traditional budgeting fails for a simple reason: logging every four-dollar coffee by hand drains willpower, so most people quit inside three weeks. Yet the modern shortcut of handing live bank usernames and passwords to unverified third-party apps creates an unnecessary security exposure. A safer alternative uses the plain CSV statement your bank already lets you download, with zero live account connection.",
+      "source": "Privacy-First Personal Finance Workflow"
+    },
+    {
+      "tag": "CHAPTER 3 • MINUTE 0-10",
+      "headline": "The 3-Bucket AI Statement Sort",
+      "visual_type": "stat_callout",
+      "stat_value": "3 Buckets",
+      "stat_label": "FIXED BILLS • GENUINE VALUE • FORGOTTEN LEAKS",
+      "bullets": [
+        "Delete name and account columns from your CSV in 30 seconds",
+        "Ask AI to flag duplicate renewals, fee hikes, and unused trials"
+      ],
+      "highlight_words": [
+        "ten",
+        "minutes",
+        "buckets",
+        "trials"
+      ],
+      "narration": "Spend the first ten minutes on cash clarity. Open your recent card CSV, delete the column with your name or card digits, and paste only dates, merchant names, and dollar amounts into your AI workspace. Ask it to group every line into three buckets: essential fixed bills, purchases you genuinely valued, and forgotten recurring charges or price creeps. Cancel one unused renewal on the spot.",
+      "source": "10-Minute Anonymized Statement Audit"
+    },
+    {
+      "tag": "CHAPTER 4 • MINUTE 10-20",
+      "headline": "Paul Graham's Maker vs Manager Calendar Audit",
+      "visual_type": "comparison_split",
+      "left_title": "FRAGMENTED AFTERNOON",
+      "left_body": "One 2:00 PM call splits 4 hours into two shallow halves",
+      "right_title": "PROTECTED MAKER BLOCKS",
+      "right_body": "Lock two 90-minute focus blocks before Monday starts",
+      "highlight_words": [
+        "graham",
+        "meeting",
+        "ninety",
+        "blocks"
+      ],
+      "narration": "Spend minutes ten through twenty on your calendar. In his 2009 essay Maker's Schedule, Manager's Schedule, programmer Paul Graham explained how a single thirty-minute meeting in the middle of an afternoon breaks four open hours into two fragments too short for serious creation. Look at the coming week right now, cluster routine errands onto one afternoon, and lock two uninterrupted ninety-minute blocks for skill or asset building.",
+      "source": "Paul Graham, 'Maker's Schedule, Manager's Schedule' (July 2009)"
+    },
+    {
+      "tag": "CHAPTER 5 • MINUTE 20-30",
+      "headline": "Automate Payday Routing Before Willpower Fades",
+      "visual_type": "stat_callout",
+      "stat_value": "Day 1",
+      "stat_label": "ROUTE SAVINGS & ASSETS BEFORE SPENDING STARTS",
+      "bullets": [
+        "Schedule automatic transfers for the day after payday",
+        "Spend whatever remains guilt-free without daily tracking"
+      ],
+      "highlight_words": [
+        "sethi",
+        "payday",
+        "automatic",
+        "guilt-free"
+      ],
+      "narration": "Use the final ten minutes to verify your upcoming automatic transfers. Author Ramit Sethi popularized a straightforward rule in I Will Teach You To Be Rich: decide your savings and investment percentages once, schedule those transfers for the day right after your paycheck lands, and spend the remaining checking balance without guilt. When money moves automatically on day one, impulse moods on Friday night cannot touch your future margin.",
+      "source": "Ramit Sethi, I Will Teach You To Be Rich (2nd ed., 2019)"
+    },
+    {
+      "tag": "CHAPTER 6 • 52 SUNDAYS",
+      "headline": "Twenty-Six Calm Hours Reshape an Entire Year",
+      "visual_type": "compounding_curve",
+      "stat_label": "52 SUNDAYS X 30 MINUTES = 26 HOURS PER YEAR",
+      "stat_subtext": "1 Cancelled Leak/Month + 156 Protected Maker Hours/Year",
+      "highlight_words": [
+        "twenty-six",
+        "fifty-two",
+        "checklist",
+        "sunday"
+      ],
+      "narration": "Thirty minutes every Sunday adds up to just twenty-six hours across an entire year. Yet those fifty-two small checkpoints catch silent fee increases early and guard over one hundred and fifty hours of focused creative work. Start this Sunday with one CSV export and two calendar blocks, and grab the free one-page Sunday Audit Checklist linked in the description.",
+      "source": "Mind & Margin Weekly Operating Cadence"
+    }
+  ]
+}
