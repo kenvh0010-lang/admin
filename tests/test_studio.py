@@ -33,10 +33,22 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         ordered = [p.name for p in sorted(sample, key=natural_sort_key)]
         self.assertEqual(ordered, ["short_00.json", "short_2.json", "short_10.json", "short_100.json"])
 
+    def test_drafts_folder_never_enters_publish_queue(self) -> None:
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "drafts").mkdir()
+            (root / "drafts" / "draft_x.json").write_text("{}", encoding="utf-8")
+            (root / "sub").mkdir()
+            (root / "sub" / "short_09.json").write_text("{}", encoding="utf-8")
+            (root / "short_01.json").write_text("{}", encoding="utf-8")
+            self.assertEqual([p.name for p in discover_storyboards(root)], ["short_01.json", "short_09.json"])
+
     def test_all_evidence_storyboards_valid_cited_and_glyph_safe(self) -> None:
         storyboards = discover_storyboards(CONTENT_DIR)
-        # 08/11/2026: 5 root shorts + 2 merged claude-sync scripts in content/batch_02_ai_earn/ = 7 active videos.
-        self.assertGreaterEqual(len(storyboards), 7, "Expected at least 7 evidence-based storyboards in content/**")
+        # 09/11/2026: batch_02_ai_earn moved to archive/ (off-format), 5 news shorts remain in the queue.
+        self.assertGreaterEqual(len(storyboards), 5, "Expected at least 5 evidence-based storyboards in content/**")
         self.assertEqual(
             len({p.stem for p in storyboards}),
             len(storyboards),
@@ -132,17 +144,15 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         docs_dir = build_public_site(amazon_tag=DEFAULT_AMAZON_TAG)
         self.assertTrue((docs_dir / "dossier.html").is_file())
         self.assertTrue((docs_dir / "assets" / "evidence" / "citibank" / "sdny_flexcube_p13.png").is_file())
-        self.assertTrue((docs_dir / "articles" / "short_37_tap_to_pay_experiment.html").is_file())
-        self.assertTrue((docs_dir / "articles" / "long_13_sunday_ai_money_os.html").is_file())
+        self.assertTrue((docs_dir / "articles" / "short_00_suno_ai_lawsuit.html").is_file())
         citi_article = (docs_dir / "articles" / "short_03_citibank_900m_wire_blunder.html").read_text(encoding="utf-8")
         self.assertIn("Verified Primary Sources", citi_article)
         self.assertIn("sdny_flexcube_p13.png", citi_article)
         self.assertIn("As an Amazon Associate I earn from qualifying purchases.", citi_article)
 
         dash = studio_server.build_dashboard_payload()
-        self.assertGreaterEqual(dash["stats"]["total_scripts"], 7)
-        self.assertGreaterEqual(dash["stats"]["short_count"], 6)
-        self.assertGreaterEqual(dash["stats"]["long_count"], 1)
+        self.assertGreaterEqual(dash["stats"]["total_scripts"], 5)
+        self.assertGreaterEqual(dash["stats"]["short_count"], 5)
 
         next_sb = pick_next_unpublished_storyboard()
         self.assertIsNotNone(next_sb)

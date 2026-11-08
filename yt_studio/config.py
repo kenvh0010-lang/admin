@@ -32,6 +32,8 @@ def discover_storyboards(root: Path = CONTENT_DIR) -> List[Path]:
             if p.is_file()
             and p.name != "published_ledger.json"
             and not any(part.startswith(".") for part in p.relative_to(root).parts)
+            # content/drafts/ holds unreviewed AI drafts; a human moves them out before they may be published
+            and "drafts" not in p.relative_to(root).parts[:-1]
         ),
         key=natural_sort_key,
     )
