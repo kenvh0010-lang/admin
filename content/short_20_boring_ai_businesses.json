@@ -4,7 +4,7 @@
   "alt_title_2": "Stop Chasing Flashy Startup Ideas - Solve Boring Friction",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Flashy startups attract 10,000 competitors and high monthly burn. Quiet solo operators solving unglamorous workflow headaches run at 90% net margins with zero staff. Here is the Boring Bottleneck Filter.",
+  "description_hook": "Flashy startups attract crowds of competitors and high monthly burn. Quiet solo operators solving unglamorous workflow headaches keep costs close to zero with no staff. Here is the Boring Bottleneck Filter.",
   "tags": [
     "one person business",
     "solo founder",
@@ -17,7 +17,7 @@
   "thumbnail": {
     "hook_text": "BORING BEATS FLASHY",
     "badge": "AI LEVERAGE",
-    "stat": "90%"
+    "stat": "0 STAFF"
   },
   "affiliate_cta": {
     "offer_name": "Paul Jarvis's 'Company of One' on Audible + 5-Hour Solo Asset OS",
@@ -27,16 +27,22 @@
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "Prestige Burns Cash - Utility Keeps 90%",
+      "headline": "Prestige Burns Cash, Utility Keeps Margin",
       "visual_type": "stat_callout",
-      "stat_value": "90%",
+      "stat_value": "Low Cost",
       "stat_label": "NET MARGIN OF BORING SOLO MICRO-ASSETS",
       "bullets": [
         "Flashy startup ideas optimize for status and headlines",
         "Quiet solo systems optimize for cashflow and autonomy"
       ],
-      "highlight_words": ["flashy", "quiet", "ninety", "dollar"],
-      "narration": "Everyone dreams of launching a flashy startup. Meanwhile, quiet solo operators solving unglamorous workflow bottlenecks keep ninety cents of every dollar they earn."
+      "highlight_words": [
+        "flashy",
+        "quiet",
+        "ninety",
+        "dollar"
+      ],
+      "narration": "Everyone dreams of launching a flashy startup. Meanwhile, quiet solo operators solving unglamorous workflow problems keep most of what they earn, because their costs stay low.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "THE STORY",
@@ -45,11 +51,17 @@
       "stat_value": "0 Staff",
       "stat_label": "SOLVING SPECIFIC MONDAY HEADACHES",
       "bullets": [
-        "No venture debt, office leases, or bloated engineering teams",
-        "Simple templates, calculators, and guides saving 5 hours a week"
+        "No venture debt, office leases, or big engineering teams",
+        "Simple templates, calculators, and guides that save hours"
       ],
-      "highlight_words": ["one-person", "checklists", "calculators", "five"],
-      "narration": "Look inside profitable one-person digital businesses. Instead of chasing venture funding or viral hype, they package niche checklists, calculators, and evergreen guides that save busy professionals five hours every week."
+      "highlight_words": [
+        "one-person",
+        "checklists",
+        "calculators",
+        "five"
+      ],
+      "narration": "Look inside small one-person digital businesses. Instead of chasing venture funding or viral hype, they package niche checklists, calculators, and evergreen guides that save busy professionals real hours every week.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "THE SHIFT",
@@ -59,7 +71,12 @@
       "left_body": "10,000 copycats • heavy ad burn • razor-thin margin",
       "right_title": "BORING MICRO-ASSET",
       "right_body": "1 painful bottleneck -> repeatable digital kit -> 90% net",
-      "highlight_words": ["copycats", "burn", "boring", "years"],
+      "highlight_words": [
+        "copycats",
+        "burn",
+        "boring",
+        "years"
+      ],
       "narration": "Flashy ideas attract ten thousand copycats overnight and burn cash on overhead. Boring operational headaches - like client onboarding trackers or audit templates - stay wide open for years."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "STACKING EVERGREEN MICRO-ASSETS",
       "stat_subtext": "1 boring bottleneck solved -> years of compounding demand",
-      "highlight_words": ["bottleneck", "impressive", "three", "monday"],
+      "highlight_words": [
+        "bottleneck",
+        "impressive",
+        "three",
+        "monday"
+      ],
       "narration": "Use the Boring Bottleneck Filter: stop asking what sounds impressive at dinner parties, and list three tedious spreadsheets or workflows people in your industry complain about every Monday."
     },
     {
@@ -81,8 +103,14 @@
         "Find one recurring 5-hour headache you already solved",
         "Document the system cleanly once and distribute forever"
       ],
-      "highlight_words": ["vanity", "ego", "utility", "freedom"],
-      "narration": "Vanity projects feed your ego, while boring utility funds your freedom. Yet beginners miss this every year because..."
+      "highlight_words": [
+        "vanity",
+        "ego",
+        "utility",
+        "freedom"
+      ],
+      "narration": "Vanity projects feed your ego, while boring utility funds your freedom. Yet beginners miss this every year because...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

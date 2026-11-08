@@ -17,7 +17,7 @@
   "thumbnail": {
     "hook_text": "STOP JUST PROMPTING",
     "badge": "AI LEVERAGE",
-    "stat": "95%"
+    "stat": "1 -> 100"
   },
   "affiliate_cta": {
     "offer_name": "The 5-Hour Solo Asset Builder OS + Curated Systems Reading List",
@@ -29,14 +29,20 @@
       "tag": "HOOK",
       "headline": "Faster Typing Is Still Zero Leverage",
       "visual_type": "stat_callout",
-      "stat_value": "95%",
+      "stat_value": "1 Prompt",
       "stat_label": "USERS TRAPPED IN CHAT-WINDOW BUSYWORK",
       "bullets": [
         "Most people treat AI like a slightly faster typewriter",
         "Manual prompting all day still chains output to your hours"
       ],
-      "highlight_words": ["ninety-five", "typewriter", "manual", "prompting"],
-      "narration": "Ninety-five percent of people use AI like a faster typewriter. They sit inside a chat window all afternoon trading manual typing for manual prompting."
+      "highlight_words": [
+        "ninety-five",
+        "typewriter",
+        "manual",
+        "prompting"
+      ],
+      "narration": "Most people use AI like a faster typewriter. They sit inside a chat window all afternoon trading manual typing for manual prompting.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "THE STORY",
@@ -48,8 +54,14 @@
         "Ford did not just hand mechanics faster wrenches",
         "He sequenced every step into a deterministic system"
       ],
-      "highlight_words": ["1913", "wrenches", "repeatable", "assembly"],
-      "narration": "In 1913, Henry Ford did not hand mechanics faster wrenches - he engineered a repeatable assembly line. Today, solo operators face that exact same divide with digital work."
+      "highlight_words": [
+        "1913",
+        "wrenches",
+        "repeatable",
+        "assembly"
+      ],
+      "narration": "In 1913, Henry Ford did not hand mechanics faster wrenches - he engineered a repeatable assembly line. Today, solo operators face that exact same divide with digital work.",
+      "source": "Ford Motor Company, moving assembly line at Highland Park (1913)"
     },
     {
       "tag": "THE SHIFT",
@@ -59,7 +71,12 @@
       "left_body": "Blank chat box -> re-explain rules daily -> inconsistent",
       "right_title": "SOP PIPELINE",
       "right_body": "Fixed Input -> Quality Checklist -> Locked Output",
-      "highlight_words": ["bottleneck", "workflow", "pipeline", "inputs"],
+      "highlight_words": [
+        "bottleneck",
+        "workflow",
+        "pipeline",
+        "inputs"
+      ],
       "narration": "Chatting one prompt at a time keeps you trapped as the bottleneck. Building a workflow turns one documented standard operating procedure into a pipeline that runs on raw inputs."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "COMPOUNDING OUTPUT PER DOCUMENTED SOP",
       "stat_subtext": "Repeat 3x -> Lock Input, Rules & Output Template",
-      "highlight_words": ["three", "fixed", "checklist", "template"],
+      "highlight_words": [
+        "three",
+        "fixed",
+        "checklist",
+        "template"
+      ],
       "narration": "Apply the Three-Block Rule: whenever you repeat a digital task three times, stop chatting and write a fixed spec - exact input format, strict quality checklist, and a locked output template."
     },
     {
@@ -81,8 +103,14 @@
         "Stop improvising prompts from scratch every morning",
         "Build modular Input -> Process -> Output assets"
       ],
-      "highlight_words": ["amateurs", "owners", "pipelines", "shift"],
-      "narration": "Amateurs write clever prompts from scratch; owners design pipelines once and feed them raw ideas. And until you make that shift..."
+      "highlight_words": [
+        "amateurs",
+        "owners",
+        "pipelines",
+        "shift"
+      ],
+      "narration": "Amateurs write clever prompts from scratch; owners design pipelines once and feed them raw ideas. And until you make that shift...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

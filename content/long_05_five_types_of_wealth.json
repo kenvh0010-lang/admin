@@ -37,8 +37,14 @@
         "Winning one scoreboard while losing four others still feels like poverty",
         "True wealth balances Time, Social, Mental, Physical, and Financial margin"
       ],
-      "highlight_words": ["scoreboard", "seven", "figures", "five"],
-      "narration": "From your very first paycheck, modern culture hands you a remarkably narrow scoreboard: one single number inside a bank account. That single-metric obsession explains one of the strangest paradoxes of modern success - how someone can hit seven figures on paper yet wake up exhausted, isolated, and chained to a calendar they secretly resent. As writer Sahil Bloom highlights in The 5 Types of Wealth, a genuinely rich life actually runs on five distinct currencies: Time Wealth, Social Wealth, Mental Wealth, Physical Wealth, and Financial Wealth."
+      "highlight_words": [
+        "scoreboard",
+        "seven",
+        "figures",
+        "five"
+      ],
+      "narration": "From your very first paycheck, modern culture hands you a remarkably narrow scoreboard: one single number inside a bank account. That single-metric obsession explains one of the strangest paradoxes of modern success - how someone can hit seven figures on paper yet wake up exhausted, isolated, and chained to a calendar they secretly resent. As writer Sahil Bloom highlights in The 5 Types of Wealth, a genuinely rich life actually runs on five distinct currencies: Time Wealth, Social Wealth, Mental Wealth, Physical Wealth, and Financial Wealth.",
+      "source": "Sahil Bloom, The 5 Types of Wealth (2025)"
     },
     {
       "tag": "CHAPTER 2 • TIME & SOCIAL WEALTH",
@@ -48,8 +54,14 @@
       "left_body": "High income • zero control of Tuesdays • fading friendships",
       "right_title": "TIME + SOCIAL WEALTH",
       "right_body": "Daily autonomy over hours + deep multi-decade relationships",
-      "highlight_words": ["autonomy", "eighteen", "harvard", "eighty"],
-      "narration": "Start with Time Wealth and Social Wealth. Time Wealth is not merely retiring at sixty-five; it is daily autonomy over what you work on, where you sit, and whom you build alongside. Time data makes this sobering: roughly ninety percent of total in-person hours with children happen before they turn eighteen, and visits with aging parents are often measured in dozens, not decades. Meanwhile, the eighty-five-year Harvard Study of Adult Development proved Social Wealth is biological armor - relationship depth at age fifty predicted health and satisfaction at eighty better than fame, IQ, or cholesterol."
+      "highlight_words": [
+        "autonomy",
+        "eighteen",
+        "harvard",
+        "eighty"
+      ],
+      "narration": "Start with Time Wealth and Social Wealth. Time Wealth is not merely retiring at sixty-five; it is daily autonomy over what you work on, where you sit, and whom you build alongside. Writer Tim Urban ran the numbers: by the time a child turns eighteen, most of the in-person time a parent will ever spend with them has already happened. Meanwhile, the Harvard Study of Adult Development, running since 1938, found that how satisfied people were with their relationships at fifty predicted their health at eighty better than their cholesterol levels did.",
+      "source": "Tim Urban, 'The Tail End', Wait But Why (2015); Robert Waldinger & Marc Schulz, The Good Life (2023)"
     },
     {
       "tag": "CHAPTER 3 • MENTAL & PHYSICAL WEALTH",
@@ -62,8 +74,14 @@
         "Physical Wealth: sleep, strength, stamina, and mobility at 70",
         "Erase the leading '1' and six financial zeros collapse to zero"
       ],
-      "highlight_words": ["curiosity", "silent", "leading", "zeros"],
-      "narration": "Next come Mental Wealth and Physical Wealth. Mental Wealth combines curiosity, purpose, and inner peace - the rare capacity to sit in a silent room for thirty minutes without drowning in status anxiety or reaching for a glowing screen. Physical Wealth is daily vitality, restorative sleep, strength, and mobility across decades. Think of Physical and Mental Wealth as the leading digit 'one' standing in front of every financial zero you accumulate. Stack six zeros behind a healthy one and you hold a million; erase that leading one and every zero behind it collapses to nothing."
+      "highlight_words": [
+        "curiosity",
+        "silent",
+        "leading",
+        "zeros"
+      ],
+      "narration": "Next come Mental Wealth and Physical Wealth. Mental Wealth combines curiosity, purpose, and inner peace - the rare capacity to sit in a silent room for thirty minutes without drowning in status anxiety or reaching for a glowing screen. Physical Wealth is daily vitality, restorative sleep, strength, and mobility across decades. Think of Physical and Mental Wealth as the leading digit 'one' standing in front of every financial zero you accumulate. Stack six zeros behind a healthy one and you hold a million; erase that leading one and every zero behind it collapses to nothing.",
+      "source": "Sahil Bloom, The 5 Types of Wealth (2025)"
     },
     {
       "tag": "CHAPTER 4 • THE GREAT TRADE-OFF TRAP",
@@ -71,7 +89,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "COMPOUND NEGLECT VS BALANCED DEPOSITS",
       "stat_subtext": "Burning health & bonds at 30 cannot be repurchased cheaply at 60",
-      "highlight_words": ["liquidate", "repurchase", "neglect", "irreversible"],
+      "highlight_words": [
+        "liquidate",
+        "repurchase",
+        "neglect",
+        "irreversible"
+      ],
       "narration": "Here is where smart, hard-working people get ambushed. Between ages twenty-five and fifty, millions play what psychologists call the Deferred Life Strategy: aggressively liquidating Time, Social, Mental, and Physical wealth to stockpile Financial wealth, assuming they can simply repurchase the first four at sixty. Unfortunately, compound interest works in reverse on neglect. Neglected friendships quietly dissolve, missed childhood summers never replay, and twenty years of chronic stress and five-hour sleep nights carry biological interest rates money can rarely reverse."
     },
     {
@@ -82,8 +105,14 @@
       "left_body": "Every raise triggers higher overhead -> zero new freedom",
       "right_title": "DEFINED SUFFICIENCY",
       "right_body": "Set clear 'Enough' floor -> surplus buys back your calendar",
-      "highlight_words": ["vonnegut", "heller", "enough", "goalpost"],
-      "narration": "Financial Wealth only shines when it serves as a freedom engine rather than an infinite status tournament. Author Kurt Vonnegut once teased fellow novelist Joseph Heller at a billionaire hedge-fund host's party, pointing out that their host earned more in a single day than Heller's classic novel Catch-22 earned in history. Heller smiled and replied that he owned one thing the billionaire never would: the knowledge that he had enough. Without a written definition of enough, every income jump simply pushes the goalpost ten yards further away."
+      "highlight_words": [
+        "vonnegut",
+        "heller",
+        "enough",
+        "goalpost"
+      ],
+      "narration": "Financial Wealth works best as a freedom engine, not an endless status contest. Kurt Vonnegut once told Joseph Heller, at a party thrown by a billionaire, that their host had made more money in a single day than Catch-22 had earned in its entire history. Heller replied that he had something the billionaire could never have: enough. Without a written definition of enough, every income jump simply pushes the goalpost further away.",
+      "source": "Kurt Vonnegut, 'Joe Heller', The New Yorker (2005)"
     },
     {
       "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
@@ -91,7 +120,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "WEEKLY 5-PILLAR REBALANCING SYSTEM",
       "stat_subtext": "10m Sunday check-in + 1 anti-goal per bucket -> rich decades",
-      "highlight_words": ["sunday", "anti-goal", "lowest", "rebalance"],
+      "highlight_words": [
+        "sunday",
+        "anti-goal",
+        "lowest",
+        "rebalance"
+      ],
       "narration": "Put this framework into practice this Sunday with a ten-minute Life Portfolio Audit. First, score all five buckets - Time, Social, Mental, Physical, and Financial - honestly from one to ten. Second, write one strict Anti-Goal for each pillar: non-negotiable boundaries you refuse to cross during busy seasons, such as never missing three family dinners in a row or never trading a morning walk for low-priority email. Finally, put one concrete thirty-minute deposit on Monday's calendar for whichever pillar scored lowest, so your life rebalances long before crisis forces it."
     }
   ]

@@ -35,21 +35,33 @@
         "Good odds never guarantee a win on try number one",
         "Quitting after one loss destroys long-term edge"
       ],
-      "highlight_words": ["eighty-percent-smart", "fail", "ruin", "strategy"],
-      "narration": "You can make an eighty-percent-smart decision today, watch it fail tomorrow morning, and ruin your future by assuming your strategy was wrong."
+      "highlight_words": [
+        "eighty-percent-smart",
+        "fail",
+        "ruin",
+        "strategy"
+      ],
+      "narration": "You can make an eighty-percent-smart decision today, watch it fail tomorrow morning, and ruin your future by assuming your strategy was wrong.",
+      "source": "Math: an 80% bet still loses 1 time in 5"
     },
     {
       "tag": "THE STORY",
       "headline": "Annie Duke & The 'Resulting' Bias",
       "visual_type": "stat_callout",
-      "stat_value": "$4M+",
+      "stat_value": "Resulting",
       "stat_label": "HIGH-STAKES POKER LAB BEHIND 'THINKING IN BETS'",
       "bullets": [
         "Poker pros separate decision quality from lucky cards",
         "Amateurs equate every bad outcome with a bad plan"
       ],
-      "highlight_words": ["poker", "duke", "resulting", "outcome"],
-      "narration": "In Thinking in Bets, World Series of Poker champion Annie Duke warns against a mental trap called Resulting: judging the quality of a decision purely by its short-term outcome."
+      "highlight_words": [
+        "poker",
+        "duke",
+        "resulting",
+        "outcome"
+      ],
+      "narration": "In Thinking in Bets, poker player and World Series of Poker bracelet winner Annie Duke warns against a mental trap called resulting: judging the quality of a decision purely by its short-term outcome.",
+      "source": "Annie Duke, Thinking in Bets (2018)"
     },
     {
       "tag": "THE TRAP",
@@ -59,7 +71,12 @@
       "left_body": "Ran red light safely -> 'great move' • 1 flop -> quit",
       "right_title": "EXPECTED VALUE",
       "right_body": "Judge logic before outcome • Repeat smart bets 50x",
-      "highlight_words": ["blindfolded", "terrible", "flops", "winning"],
+      "highlight_words": [
+        "blindfolded",
+        "terrible",
+        "flops",
+        "winning"
+      ],
       "narration": "Running a red light blindfolded and arriving home unharmed is still a terrible decision. Likewise, shipping a smart project that flops once can still be a winning bet."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "POSITIVE-EXPECTANCY HABITS WIN OVER 50+ REPS",
       "stat_subtext": "Short-term variance fades as smart process compounds",
-      "highlight_words": ["poker", "chess", "reasoning", "fifty"],
+      "highlight_words": [
+        "poker",
+        "chess",
+        "reasoning",
+        "fifty"
+      ],
       "narration": "Life is poker, not chess, because luck and hidden information sit at every table. Write down your reasoning beforehand and test positive-odds habits across fifty reps."
     },
     {
@@ -81,8 +103,14 @@
         "Log your thesis before seeing the market's reaction",
         "Protect high-upside habits from short-term noise"
       ],
-      "highlight_words": ["process", "noisy", "math", "favors"],
-      "narration": "Separate your daily process from single noisy outcomes, because in the real world, even when the math favors you..."
+      "highlight_words": [
+        "process",
+        "noisy",
+        "math",
+        "favors"
+      ],
+      "narration": "Separate your daily process from single noisy outcomes, because in the real world, even when the math favors you...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

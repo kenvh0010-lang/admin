@@ -4,7 +4,7 @@
   "alt_title_2": "Why Behavior Beats IQ in Wealth (Ronald Read's Secret)",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "In 2014, 92-year-old Brattleboro janitor Ronald Read passed away leaving an $8 million portfolio - the same era Harvard-trained finance executives went bankrupt in giant mansions. Here is the behavioral lesson from Morgan Housel's 'The Psychology of Money'.",
+  "description_hook": "In 2014, Brattleboro, Vermont janitor Ronald Read died at 92 and left an estate worth about $8 million, while Harvard-educated executive Richard Fuscone went bankrupt. Here is the lesson from Morgan Housel's 'The Psychology of Money'.",
   "tags": [
     "ronald read",
     "psychology of money",
@@ -32,11 +32,17 @@
       "stat_value": "$8M",
       "stat_label": "SECRET ESTATE LEFT BY RONALD READ (2014)",
       "bullets": [
-        "Fixed cars for 25 years and swept floors for 17 years",
-        "Even his own family had no idea he was a multimillionaire"
+        "Worked at a gas station for 25 years and swept floors for 17",
+        "Even people close to him had no idea he was a multimillionaire"
       ],
-      "highlight_words": ["2014", "janitor", "eight-million-dollar", "shocked"],
-      "narration": "In 2014, a ninety-two-year-old janitor from Brattleboro, Vermont passed away and shocked his entire town with an eight-million-dollar fortune."
+      "highlight_words": [
+        "2014",
+        "janitor",
+        "eight-million-dollar",
+        "shocked"
+      ],
+      "narration": "In 2014, a ninety-two-year-old janitor from Brattleboro, Vermont died and surprised his town with an estate worth about eight million dollars.",
+      "source": "Morgan Housel, The Psychology of Money (2020), chapter 1"
     },
     {
       "tag": "THE STORY",
@@ -46,7 +52,12 @@
       "left_body": "18,000-sq-ft mansion + heavy debt -> personal bankruptcy",
       "right_title": "RONALD READ (JANITOR)",
       "right_body": "42 years of modest living + reinvested dividends -> $8M",
-      "highlight_words": ["forty-two", "harvard-educated", "mansion", "bankruptcy"],
+      "highlight_words": [
+        "forty-two",
+        "harvard-educated",
+        "mansion",
+        "bankruptcy"
+      ],
       "narration": "Ronald Read fixed cars at a gas station and swept department-store floors for forty-two years. Meanwhile, Harvard-educated executive Richard Fuscone retired early into an eighteen-thousand-square-foot mansion and declared bankruptcy after the two thousand eight crash."
     },
     {
@@ -59,8 +70,14 @@
         "Genius paired with lifestyle burn breaks in a downturn",
         "Finance rewards calm endurance over credentials"
       ],
-      "highlight_words": ["psychology", "behavior", "iq", "debt"],
-      "narration": "In Morgan Housel's The Psychology of Money, the contrast proves a brutal truth: finance is the one arena where calm behavior beats raw IQ buried under debt."
+      "highlight_words": [
+        "psychology",
+        "behavior",
+        "iq",
+        "debt"
+      ],
+      "narration": "In Morgan Housel's The Psychology of Money, the contrast proves a brutal truth: finance is the one arena where calm behavior beats raw IQ buried under debt.",
+      "source": "Morgan Housel, The Psychology of Money (2020), chapter 1"
     },
     {
       "tag": "THE RULE",
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "40+ YEARS UNINTERRUPTED > LEVERAGED BRILLIANCE",
       "stat_subtext": "Small steady margins + decades of patience -> outlier wealth",
-      "highlight_words": ["leverage", "margins", "uninterrupted", "decades"],
+      "highlight_words": [
+        "leverage",
+        "margins",
+        "uninterrupted",
+        "decades"
+      ],
       "narration": "Read never earned a huge salary or used risky leverage. He simply saved small margins consistently and let uninterrupted compounding run for over four decades."
     },
     {
@@ -81,8 +103,14 @@
         "Keep fixed bills low so downturns never force panic",
         "Let decades do the heavy lifting ego cannot"
       ],
-      "highlight_words": ["survival", "patience", "brilliance", "how"],
-      "narration": "Protect a survival margin you never have to sell, because ordinary patience beats reckless brilliance every single time - which is exactly how..."
+      "highlight_words": [
+        "survival",
+        "patience",
+        "brilliance",
+        "how"
+      ],
+      "narration": "Protect a survival margin you never have to sell, because ordinary patience beats reckless brilliance every single time - which is exactly how...",
+      "source": "Morgan Housel, The Psychology of Money (2020), chapter 1"
     }
   ]
 }

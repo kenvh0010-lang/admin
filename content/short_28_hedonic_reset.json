@@ -1,10 +1,10 @@
 {
-  "title": "Why Every Luxury Feels Normal After 90 Days (Hedonic Adaptation)",
+  "title": "Why Every Luxury Soon Feels Normal (Hedonic Adaptation)",
   "alt_title_1": "The 90-Day Brain Glitch Behind Lifestyle Creep",
   "alt_title_2": "How to Escape the Hedonic Treadmill Without Deprivation",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Psychologists Philip Brickman and Donald Campbell discovered why big material upgrades fade into invisible baseline within 90 days while the monthly bills last for years. Here is the Intentional Contrast protocol to beat Hedonic Adaptation.",
+  "description_hook": "In 1971, psychologists Philip Brickman and Donald Campbell described why big material upgrades fade into the background while the monthly bills last for years. Here is the Intentional Contrast protocol to beat hedonic adaptation.",
   "tags": [
     "hedonic adaptation",
     "hedonic treadmill",
@@ -17,7 +17,7 @@
   "thumbnail": {
     "hook_text": "THE 90-DAY FADE",
     "badge": "WEALTH PSYCHOLOGY",
-    "stat": "90d"
+    "stat": "1971"
   },
   "affiliate_cta": {
     "offer_name": "Anti-Creep Margin Tracker + Behavioral Wealth Reading List",
@@ -29,14 +29,20 @@
       "tag": "HOOK",
       "headline": "When Luxury Turns Into Wallpaper",
       "visual_type": "stat_callout",
-      "stat_value": "90 Days",
+      "stat_value": "New -> Normal",
       "stat_label": "UNTIL MAJOR UPGRADES FEEL COMPLETELY ORDINARY",
       "bullets": [
-        "Day 1 brings a surge of novelty dopamine",
-        "Day 90 resets your emotional baseline back to neutral"
+        "Day one brings a rush of novelty",
+        "Weeks later, it feels normal again"
       ],
-      "highlight_words": ["luxury", "invisible", "wallpaper", "ninety"],
-      "narration": "Nearly every expensive luxury upgrade you crave right now will feel like invisible background wallpaper within ninety days."
+      "highlight_words": [
+        "luxury",
+        "invisible",
+        "wallpaper",
+        "ninety"
+      ],
+      "narration": "Nearly every expensive upgrade you crave right now will start to feel like background wallpaper surprisingly fast.",
+      "source": "Brickman & Campbell, 'Hedonic relativism and planning the good society' (1971)"
     },
     {
       "tag": "THE STUDY",
@@ -48,8 +54,14 @@
         "Human nervous systems detect changes, not static comfort",
         "Even major windfalls snap back toward baseline mood"
       ],
-      "highlight_words": ["1971", "treadmill", "adapt", "baseline"],
-      "narration": "In 1971, psychologists Philip Brickman and Donald Campbell discovered the Hedonic Treadmill: human brains rapidly adapt to nicer apartments, newer cars, and bigger screens, snapping right back to baseline happiness."
+      "highlight_words": [
+        "1971",
+        "treadmill",
+        "adapt",
+        "baseline"
+      ],
+      "narration": "In 1971, psychologists Philip Brickman and Donald Campbell described the hedonic treadmill: people adapt to nicer apartments, newer cars, and bigger screens, and their happiness drifts back toward where it started.",
+      "source": "Brickman & Campbell (1971); Brickman, Coates & Janoff-Bulman, lottery winners study (1978)"
     },
     {
       "tag": "THE TRAP",
@@ -59,7 +71,12 @@
       "left_body": "60-month luxury lease -> novelty gone by Month 3",
       "right_title": "INTENTIONAL CONTRAST",
       "right_body": "Lean monthly overhead + rare debt-free treats that stay vivid",
-      "highlight_words": ["asymmetric", "dopamine", "three", "five"],
+      "highlight_words": [
+        "asymmetric",
+        "dopamine",
+        "three",
+        "five"
+      ],
       "narration": "The financial trap is asymmetric. The dopamine rush of a luxury lease evaporates in three months, while the fixed monthly bill stays locked in for five years."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "LEAN BASELINE + RARE TREATS = HIGH MARGIN",
       "stat_subtext": "Scarcity preserves joy while surplus cash compounds",
-      "highlight_words": ["contrast", "baseline", "debt-free", "rare"],
+      "highlight_words": [
+        "contrast",
+        "baseline",
+        "debt-free",
+        "rare"
+      ],
       "narration": "To escape without feeling deprived, practice Intentional Contrast: keep your monthly baseline lean, then enjoy occasional debt-free experiences that stay special because they are rare."
     },
     {
@@ -81,8 +103,14 @@
         "Pause non-essential spending for 1 week per quarter",
         "Bank the margin and restore sensitivity to simple wins"
       ],
-      "highlight_words": ["seven-day", "reset", "compound", "realize"],
-      "narration": "Run a seven-day simplicity reset every quarter so ordinary comforts feel rich again and your savings compound untouched, especially once you realize..."
+      "highlight_words": [
+        "seven-day",
+        "reset",
+        "compound",
+        "realize"
+      ],
+      "narration": "Run a seven-day simplicity reset every quarter so ordinary comforts feel rich again and your savings compound untouched, especially once you realize...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

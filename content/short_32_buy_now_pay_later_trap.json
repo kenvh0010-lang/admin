@@ -1,10 +1,10 @@
 {
-  "title": "How '4 Easy Payments of $19' Hacks Your Brain's Pain Center",
+  "title": "How '4 Easy Payments of $19' Dulls the Pain of Paying",
   "alt_title_1": "The Neuroscience Trick Behind Buy Now, Pay Later",
   "alt_title_2": "Why Splitting Payments Increases Impulse Spending by 38%",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Stanford neuroeconomics research explains why '4 interest-free payments of $19' sedates the insula - your brain's natural spending brake - triggering up to 38% higher impulse spend. Here is the Full-Price Cash Rule to fight back.",
+  "description_hook": "Splitting a price into '4 interest-free payments of $19' makes each number look small, which softens what psychologists call the pain of paying. Here is the Full-Price Cash Rule to fight back.",
   "tags": [
     "buy now pay later",
     "behavioral economics",
@@ -17,7 +17,7 @@
   "thumbnail": {
     "hook_text": "THE $19 CHECKOUT TRAP",
     "badge": "NEUROECONOMICS",
-    "stat": "+38%"
+    "stat": "4 x $19"
   },
   "affiliate_cta": {
     "offer_name": "72-Hour Impulse Filter & Cashflow Margin Sheet",
@@ -35,8 +35,14 @@
         "Zero-interest split buttons look mathematically free",
         "Psychologically they rewire how you judge cost"
       ],
-      "highlight_words": ["seventy-six-dollar", "nineteen", "sedates", "alarm"],
-      "narration": "Splitting a seventy-six-dollar checkout into four easy payments of nineteen dollars looks harmless - until you see how it sedates your brain's alarm system."
+      "highlight_words": [
+        "seventy-six-dollar",
+        "nineteen",
+        "sedates",
+        "alarm"
+      ],
+      "narration": "Splitting a seventy-six-dollar checkout into four easy payments of nineteen dollars looks harmless, until you see how it softens your brain's alarm about spending.",
+      "source": "Illustration: 4 x $19 = $76"
     },
     {
       "tag": "THE STUDY",
@@ -48,7 +54,12 @@
         "Upfront cash prices trigger healthy neural friction",
         "That discomfort evolved to stop bad impulse trades"
       ],
-      "highlight_words": ["stanford", "insula", "pain", "brake"],
+      "highlight_words": [
+        "stanford",
+        "insula",
+        "pain",
+        "brake"
+      ],
       "narration": "Stanford brain-imaging studies found that seeing a full price tag activates the insula, the exact neural region that processes physical pain, acting as a natural brake on impulse buying."
     },
     {
@@ -59,8 +70,14 @@
       "left_body": "Reward today, fragmented pain later -> +38% spend",
       "right_title": "UPFRONT FULL PRICE",
       "right_body": "Honest price signal today -> clean future paycheck",
-      "highlight_words": ["decoupling", "numb", "thirty-eight", "more"],
-      "narration": "Buy-now-pay-later buttons exploit payment decoupling. By shrinking seventy-six dollars into nineteen today, checkout screens numb that pain signal and push shoppers to spend up to thirty-eight percent more."
+      "highlight_words": [
+        "decoupling",
+        "numb",
+        "thirty-eight",
+        "more"
+      ],
+      "narration": "Buy-now-pay-later buttons use what researchers call payment decoupling: the cost feels separate from the purchase. Shrinking seventy-six dollars into nineteen today makes the price feel smaller than it is.",
+      "source": "Drazen Prelec & George Loewenstein, 'The Red and the Black', Marketing Science (1998)"
     },
     {
       "tag": "THE RULE",
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "HEALTHY CHECKOUT FRICTION -> COMPOUNDING MARGIN",
       "stat_subtext": "Pay 100% upfront for non-essentials or close the tab",
-      "highlight_words": ["full-price", "installments", "stings", "close"],
+      "highlight_words": [
+        "full-price",
+        "installments",
+        "stings",
+        "close"
+      ],
       "narration": "Protect your margin with the Full-Price Cash Rule: never split a non-essential purchase into installments. If paying the full amount stings today, close the tab."
     },
     {
@@ -78,11 +100,17 @@
       "stat_value": "100% Now",
       "stat_label": "KEEP YOUR NATURAL SPENDING ALARM INTACT",
       "bullets": [
-        "Five tiny $19 plans quietly stack into $380/month drag",
+        "Five $19 plans quietly add up to $95 a month",
         "Keep every future paycheck 100% unpledged"
       ],
-      "highlight_words": ["friction", "phantom", "paycheck", "proves"],
-      "narration": "Keep checkout friction high so phantom micro-bills never eat next month's paycheck, because behavioral science proves that..."
+      "highlight_words": [
+        "friction",
+        "phantom",
+        "paycheck",
+        "proves"
+      ],
+      "narration": "Keep checkout friction high so small installment bills never eat next month's paycheck, because...",
+      "source": "Calculation: 5 x $19 = $95; rule is Mind & Margin advice"
     }
   ]
 }

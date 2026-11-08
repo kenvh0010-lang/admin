@@ -1,10 +1,10 @@
 {
-  "title": "The Lindy Effect: Skills AI Still Won't Replace in 2035",
+  "title": "The Lindy Effect: Skills That Outlast Every AI Tool",
   "alt_title_1": "Stop Chasing 6-Month Tech Trends (Use the Lindy Filter)",
   "alt_title_2": "The 2,000-Year Rule for Choosing Future-Proof Skills",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Software frameworks expire every 24 months, while certain human capabilities become more valuable every century. Here is how Benoit Mandelbrot and Nassim Taleb's Lindy Effect reveals the 4 skills to master alongside AI.",
+  "description_hook": "Software tools change every couple of years, while some human skills have been valued for centuries. Here is how the Lindy Effect, formalized by Benoit Mandelbrot and popularized by Nassim Taleb, points to 4 skills to build alongside AI.",
   "tags": [
     "lindy effect",
     "nassim taleb",
@@ -17,7 +17,7 @@
   "thumbnail": {
     "hook_text": "THE LINDY FILTER",
     "badge": "CAREER STRATEGY",
-    "stat": "2035"
+    "stat": "LINDY"
   },
   "affiliate_cta": {
     "offer_name": "Lindy Skill-Stack Audit + Antifragile Reading List",
@@ -27,16 +27,22 @@
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "Why Half of Today's Tech Tutorials Expire Fast",
+      "headline": "Why So Many Tech Tutorials Expire Fast",
       "visual_type": "stat_callout",
-      "stat_value": "24 Mos",
+      "stat_value": "Old > New",
       "stat_label": "TYPICAL HALF-LIFE OF TRENDY SOFTWARE TACTICS",
       "bullets": [
-        "App interfaces and prompt hacks rot every 2 years",
-        "Four ancient human skills will pay more in 2035"
+        "App interfaces and prompt tricks change constantly",
+        "Some old human skills keep their value for centuries"
       ],
-      "highlight_words": ["tutorials", "obsolete", "twenty-four", "ancient"],
-      "narration": "Half the software tutorials trending this month will be obsolete within twenty-four months - yet four ancient human skills will pay even more in twenty thirty-five."
+      "highlight_words": [
+        "tutorials",
+        "obsolete",
+        "twenty-four",
+        "ancient"
+      ],
+      "narration": "Many of the software tutorials trending this month will be out of date within a couple of years, yet some very old human skills keep getting more valuable.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "THE STUDY",
@@ -48,8 +54,14 @@
         "Non-perishable ideas age in reverse: survival predicts longevity",
         "Every century a skill endures proves permanent demand"
       ],
-      "highlight_words": ["mandelbrot", "taleb", "lindy", "centuries"],
-      "narration": "Mathematician Benoit Mandelbrot and author Nassim Taleb call this the Lindy Effect: for non-perishable ideas, future lifespan is proportional to current age. What survived centuries will survive decades more."
+      "highlight_words": [
+        "mandelbrot",
+        "taleb",
+        "lindy",
+        "centuries"
+      ],
+      "narration": "Mathematician Benoit Mandelbrot formalized it and author Nassim Taleb popularized it as the Lindy Effect: for non-perishable things like ideas and skills, the longer something has lasted, the longer it is likely to last.",
+      "source": "Nassim Nicholas Taleb, Antifragile (2012), the Lindy Effect"
     },
     {
       "tag": "THE SHIFT",
@@ -59,7 +71,12 @@
       "left_body": "Memorizing app buttons and fleeting platform hacks",
       "right_title": "LINDY FOUNDATIONS (80%)",
       "right_body": "Clear writing, persuasion, systems design, capital allocation",
-      "highlight_words": ["treadmill", "writing", "persuasion", "compounds"],
+      "highlight_words": [
+        "treadmill",
+        "writing",
+        "persuasion",
+        "compounds"
+      ],
       "narration": "Chasing shiny app workflows puts you on a treadmill that resets every two years. Mastering clear writing, behavioral persuasion, systems design, and capital allocation compounds for life."
     },
     {
@@ -68,8 +85,14 @@
       "visual_type": "compounding_curve",
       "stat_label": "TIMELESS JUDGMENT + AI AMPLIFICATION",
       "stat_subtext": "80% permanent foundations • 20% modern AI execution tools",
-      "highlight_words": ["eighty-twenty", "twenty", "eighty", "timeless"],
-      "narration": "Use the eighty-twenty Lindy rule: spend twenty percent of your learning budget on modern AI tools, and eighty percent sharpening timeless two-thousand-year-old foundations."
+      "highlight_words": [
+        "eighty-twenty",
+        "twenty",
+        "eighty",
+        "timeless"
+      ],
+      "narration": "Use the eighty-twenty Lindy rule: spend twenty percent of your learning budget on modern AI tools, and eighty percent sharpening timeless two-thousand-year-old foundations.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "LOOP",
@@ -81,8 +104,14 @@
         "Tools change every season; human psychology stays constant",
         "Own the judgment layer software cannot commoditize"
       ],
-      "highlight_words": ["amplifier", "permanent", "judgment", "remember"],
-      "narration": "Treat new software as a power amplifier on top of permanent human judgment, because in an AI-accelerated economy you have to remember that..."
+      "highlight_words": [
+        "amplifier",
+        "permanent",
+        "judgment",
+        "remember"
+      ],
+      "narration": "Treat new software as a power amplifier on top of permanent human judgment, because in an AI-accelerated economy you have to remember that...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

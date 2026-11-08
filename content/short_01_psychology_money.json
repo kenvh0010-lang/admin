@@ -84,14 +84,15 @@
       "headline": "The 50% Invisible Raise Rule",
       "visual_type": "compounding_curve",
       "stat_label": "INVESTING 50% OF EVERY NEW RAISE",
-      "stat_subtext": "Lifestyle still grows—margin compounds 4x faster",
+      "stat_subtext": "Lifestyle still grows, margin compounds 4x faster",
       "highlight_words": [
         "50%",
         "automated",
         "freedom",
         "margin"
       ],
-      "narration": "To break the spiral, use the Invisible Raise Rule: whenever your income jumps, automatically route fifty percent into assets before it ever hits your checking account."
+      "narration": "To break the spiral, use the Invisible Raise Rule: whenever your income jumps, automatically route fifty percent into assets before it ever hits your checking account.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "LOOP",
@@ -101,7 +102,7 @@
       "stat_label": "COOLING-OFF WINDOW BEFORE ANY UPGRADE",
       "bullets": [
         "Wait 72 hours before matching a new purchase",
-        "Keep the raise—skip the chain reaction"
+        "Keep the raise, skip the chain reaction"
       ],
       "highlight_words": [
         "wealth",
@@ -109,7 +110,8 @@
         "72",
         "hours"
       ],
-      "narration": "Real wealth isn't what people see in your driveway—it's the freedom you didn't trade away. Which is exactly why..."
+      "narration": "Real wealth isn't what people see in your driveway, it's the freedom you didn't trade away. Which is exactly why...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

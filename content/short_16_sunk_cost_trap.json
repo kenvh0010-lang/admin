@@ -4,7 +4,7 @@
   "alt_title_2": "Why Smart People Pour Good Years After Bad Decisions",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Britain and France knew the supersonic Concorde jet would lose billions - yet kept funding it for decades out of pride. Here is how the Concorde Fallacy traps ambitious builders and the Zero-Base Question to escape it.",
+  "description_hook": "Britain and France kept funding the supersonic Concorde long after it was clear it would never pay back its costs. Here is how the Concorde Fallacy traps ambitious builders and the Zero-Base Question to escape it.",
   "tags": [
     "sunk cost fallacy",
     "concorde fallacy",
@@ -29,13 +29,18 @@
       "tag": "HOOK",
       "headline": "Why High Achievers Stay Too Long",
       "visual_type": "stat_callout",
-      "stat_value": "3+ Yrs",
+      "stat_value": "Sunk Cost",
       "stat_label": "AVERAGE DELAY BEFORE EXITING DEAD PATHS",
       "bullets": [
         "Intelligent people rarely struggle to start hard things",
         "They struggle to walk away once an investment stops paying"
       ],
-      "highlight_words": ["smart", "draining", "dead-end", "years"],
+      "highlight_words": [
+        "smart",
+        "draining",
+        "dead-end",
+        "years"
+      ],
       "narration": "Why do smart people stay in draining careers, dead-end side projects, and broken commitments for years after they clearly stop working?"
     },
     {
@@ -45,11 +50,17 @@
       "stat_value": "1976",
       "stat_label": "THE ORIGINAL CONCORDE FALLACY",
       "bullets": [
-        "Britain and France knew early the jet would never profit",
-        "Both kept spending billions so past costs would not look foolish"
+        "Concorde was never expected to repay its development costs",
+        "Both governments kept paying so past spending would not look wasted"
       ],
-      "highlight_words": ["concorde", "1976", "billions", "wasted"],
-      "narration": "Behavioral scientists call it the Concorde Fallacy. Long before the supersonic Concorde jet launched in 1976, Britain and France knew it would lose fortunes. Yet both governments poured billions more in so prior spending would not look wasted."
+      "highlight_words": [
+        "concorde",
+        "1976",
+        "billions",
+        "wasted"
+      ],
+      "narration": "Biologists Richard Dawkins and Tamsin Carlisle named it the Concorde Fallacy in 1976, the year the supersonic jet entered service. Britain and France kept funding Concorde long after it was clear it would never pay back its costs.",
+      "source": "Dawkins & Carlisle, 'Parental investment, mate desertion and a fallacy', Nature (1976)"
     },
     {
       "tag": "THE TRAP",
@@ -59,7 +70,12 @@
       "left_body": "'I already spent 3 years here -> I cannot walk away now'",
       "right_title": "FORWARD MARGIN",
       "right_body": "Past costs are gone -> price only the next 12 months",
-      "highlight_words": ["loss", "future", "unrecoverable", "forever"],
+      "highlight_words": [
+        "loss",
+        "future",
+        "unrecoverable",
+        "forever"
+      ],
       "narration": "Your brain hates admitting a loss so intensely that it throws precious future years after unrecoverable past years. Past time and past money are gone forever."
     },
     {
@@ -68,7 +84,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "REDEPLOYING ENERGY INTO ASYMMETRIC WINNERS",
       "stat_subtext": "Cut dead weight fast -> compound fresh upside",
-      "highlight_words": ["zero-base", "today", "already", "scratch"],
+      "highlight_words": [
+        "zero-base",
+        "today",
+        "already",
+        "scratch"
+      ],
       "narration": "Break the spell with the Zero-Base Question: knowing everything I know today, if I were not already inside this project or commitment right now, would I enter it from scratch?"
     },
     {
@@ -81,8 +102,14 @@
         "Never pay future life energy to defend a past mistake",
         "Audit your top 3 commitments every quarter from Day 0"
       ],
-      "highlight_words": ["honest", "quitting", "freeing", "margin"],
-      "narration": "If the honest answer is no, walking away is not quitting - it is freeing your future margin. Otherwise, ask yourself..."
+      "highlight_words": [
+        "honest",
+        "quitting",
+        "freeing",
+        "margin"
+      ],
+      "narration": "If the honest answer is no, walking away is not quitting - it is freeing your future margin. Otherwise, ask yourself...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

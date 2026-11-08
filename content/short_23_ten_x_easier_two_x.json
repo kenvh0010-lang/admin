@@ -35,12 +35,18 @@
         "Most people assume bigger targets require 10x more hours",
         "In practice, moderate targets trap you inside broken routines"
       ],
-      "highlight_words": ["ten-times", "harder", "doubling", "opposite"],
-      "narration": "Aiming for ten-times growth sounds ten times harder than doubling your current output. Psychologically, the exact opposite is true."
+      "highlight_words": [
+        "ten-times",
+        "harder",
+        "doubling",
+        "opposite"
+      ],
+      "narration": "Aiming for ten-times growth sounds ten times harder than doubling your current output. Psychologically, the exact opposite is true.",
+      "source": "Dan Sullivan & Benjamin Hardy, 10x Is Easier Than 2x (2023)"
     },
     {
       "tag": "THE STUDY",
-      "headline": "Sullivan & Hardy's 80% Noise Discovery",
+      "headline": "Sullivan & Hardy's 10x Filter",
       "visual_type": "stat_callout",
       "stat_value": "80%",
       "stat_label": "DAILY BUSYWORK KEPT ALIVE BY 2X GOALS",
@@ -48,8 +54,14 @@
         "You can brute-force 2x growth by sacrificing sleep and weekends",
         "Brute force never forces you to question low-value habits"
       ],
-      "highlight_words": ["sullivan", "hardy", "keeping", "grinding"],
-      "narration": "Strategist Dan Sullivan and psychologist Benjamin Hardy explain why in 10x Is Easier Than 2x. Chasing two-x growth tricks you into keeping your current habits and simply grinding twice as long."
+      "highlight_words": [
+        "sullivan",
+        "hardy",
+        "keeping",
+        "grinding"
+      ],
+      "narration": "Strategist Dan Sullivan and psychologist Benjamin Hardy explain why in 10x Is Easier Than 2x. Chasing two-x growth tricks you into keeping your current habits and simply grinding twice as long.",
+      "source": "Dan Sullivan & Benjamin Hardy, 10x Is Easier Than 2x (2023)"
     },
     {
       "tag": "THE SHIFT",
@@ -59,8 +71,14 @@
       "left_body": "Keep 80% busywork -> work 2x longer -> hit a ceiling",
       "right_title": "THE 10X FILTER",
       "right_body": "Cut 80% noise -> go all-in on 20% compounding core",
-      "highlight_words": ["eighty", "impossible", "drop", "twenty"],
-      "narration": "A two-x target lets eighty percent of your daily busywork survive. A ten-x target makes brute force impossible, forcing you to drop everything except the twenty percent asymmetric core."
+      "highlight_words": [
+        "eighty",
+        "impossible",
+        "drop",
+        "twenty"
+      ],
+      "narration": "A two-x target lets eighty percent of your daily busywork survive. A ten-x target makes brute force impossible, forcing you to drop everything except the twenty percent asymmetric core.",
+      "source": "Dan Sullivan & Benjamin Hardy, 10x Is Easier Than 2x (2023)"
     },
     {
       "tag": "THE RULE",
@@ -68,8 +86,14 @@
       "visual_type": "compounding_curve",
       "stat_label": "ALL-IN ON YOUR 20% ASYMMETRIC CORE",
       "stat_subtext": "Subtract 4 of 5 low-return tasks -> compound quality",
-      "highlight_words": ["sunday", "twenty", "leverage", "eliminate"],
-      "narration": "Apply the Ten-X Filter every Sunday: identify the narrow twenty percent of work producing nearly all real leverage, and ruthlessly eliminate or automate the noisy eighty percent."
+      "highlight_words": [
+        "sunday",
+        "twenty",
+        "leverage",
+        "eliminate"
+      ],
+      "narration": "Apply the Ten-X Filter every Sunday: identify the narrow twenty percent of work producing nearly all real leverage, and ruthlessly eliminate or automate the noisy eighty percent.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "LOOP",
@@ -81,8 +105,14 @@
         "Stop asking how to squeeze more tasks into your calendar",
         "Ask which 4 tasks vanish when you raise the standard"
       ],
-      "highlight_words": ["doubling", "linear", "simplicity", "shift"],
-      "narration": "Doubling traps you in linear hustle; ten-x forces radical simplicity. That hidden shift explains why..."
+      "highlight_words": [
+        "doubling",
+        "linear",
+        "simplicity",
+        "shift"
+      ],
+      "narration": "Doubling traps you in linear hustle; ten-x forces radical simplicity. That hidden shift explains why...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

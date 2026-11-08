@@ -1,10 +1,10 @@
 {
-  "title": "Why One 'Quick Message Check' Destroys 23 Minutes of IQ",
+  "title": "Why One 'Quick Message Check' Can Cost You 23 Minutes",
   "alt_title_1": "The Cognitive Tax Behind 'Just Checking Slack for 10 Seconds'",
   "alt_title_2": "Sophie Leroy's Attention Residue Study Will Change How You Work",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Checking a notification for 30 seconds never costs just 30 seconds. Prof. Sophie Leroy's Attention Residue research explains why task-switching leaves cognitive static for 23 minutes - and the simple physical rule to fix it.",
+  "description_hook": "Checking a notification for 30 seconds never costs just 30 seconds. Sophie Leroy's attention residue research and Gloria Mark's interruption studies explain why, and the simple physical rule to fix it.",
   "tags": [
     "attention residue",
     "sophie leroy",
@@ -33,10 +33,16 @@
       "stat_label": "RECOVERY TIME AFTER ONE INTERRUPTION",
       "bullets": [
         "Quick message checks feel harmless in the moment",
-        "Lab data shows each switch fractures deep focus for 23 minutes"
+        "Gloria Mark: ~23 minutes on average to resume an interrupted task"
       ],
-      "highlight_words": ["thirty", "hijacks", "twenty-three", "sharpness"],
-      "narration": "Glancing at a single notification for thirty seconds does not cost you thirty seconds. Research shows it hijacks the next twenty-three minutes of your cognitive sharpness."
+      "highlight_words": [
+        "thirty",
+        "hijacks",
+        "twenty-three",
+        "sharpness"
+      ],
+      "narration": "Glancing at a single notification for thirty seconds does not cost you thirty seconds. Gloria Mark's research found it takes about twenty-three minutes on average to get back to an interrupted task.",
+      "source": "Gloria Mark et al., 'The Cost of Interrupted Work', CHI (2008)"
     },
     {
       "tag": "THE STUDY",
@@ -45,11 +51,17 @@
       "stat_value": "2009",
       "stat_label": "LANDMARK TASK-SWITCHING DISCOVERY",
       "bullets": [
-        "Your brain cannot snap cleanly between unfinished loops",
-        "Neural bandwidth stays stuck on the message you just read"
+        "Your brain cannot snap cleanly between unfinished tasks",
+        "Part of your attention stays on the message you just read"
       ],
-      "highlight_words": ["leroy", "attention", "residue", "stuck"],
-      "narration": "Business professor Sophie Leroy proved why in a landmark lab study. She called it Attention Residue. When you switch from deep work to check one message, part of your working memory stays stuck behind."
+      "highlight_words": [
+        "leroy",
+        "attention",
+        "residue",
+        "stuck"
+      ],
+      "narration": "In 2009, business professor Sophie Leroy showed why. She called it attention residue. When you switch from deep work to check one message, part of your attention stays stuck behind.",
+      "source": "Sophie Leroy, Organizational Behavior and Human Decision Processes (2009)"
     },
     {
       "tag": "THE TRAP",
@@ -59,7 +71,12 @@
       "left_body": "Check inbox every 15m -> permanent cognitive static",
       "right_title": "SEALED FOCUS",
       "right_body": "Zero open loops -> 100% bandwidth on 1 high-value asset",
-      "highlight_words": ["penalty", "residue", "four", "zero"],
+      "highlight_words": [
+        "penalty",
+        "residue",
+        "four",
+        "zero"
+      ],
       "narration": "Even after you look back at your main task, your brain operates with a steep cognitive penalty while clearing that leftover residue. Four quick checks in two hours means zero deep output."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "UNBROKEN 90-MINUTE COGNITIVE COMPOUNDING",
       "stat_subtext": "Phone in another room -> 3x faster asset output",
-      "highlight_words": ["drawer", "another", "ninety-minute", "before"],
+      "highlight_words": [
+        "drawer",
+        "another",
+        "ninety-minute",
+        "before"
+      ],
       "narration": "Use the Out-of-Sight Protocol: place your phone inside a closed drawer in another room for one ninety-minute block every morning before opening email."
     },
     {
@@ -81,8 +103,14 @@
         "Physical distance beats willpower every single morning",
         "Ship one real asset before opening any inbox"
       ],
-      "highlight_words": ["uninterrupted", "sprint", "fragmented", "seal"],
-      "narration": "One uninterrupted ninety-minute sprint out-produces an entire fragmented workday. Because the instant you break that seal..."
+      "highlight_words": [
+        "uninterrupted",
+        "sprint",
+        "fragmented",
+        "seal"
+      ],
+      "narration": "One uninterrupted ninety-minute sprint can beat a whole fragmented workday. Because the instant you break that seal...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

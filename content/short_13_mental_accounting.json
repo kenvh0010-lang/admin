@@ -35,8 +35,14 @@
         "Hard-earned salary gets protected down to the cent",
         "Identical tax refunds or bonuses vanish within days"
       ],
-      "highlight_words": ["paycheck", "guard", "refund", "vanishes"],
-      "narration": "Hand someone a thousand-dollar paycheck and they guard every cent. Hand that exact same person a thousand-dollar tax refund and half of it vanishes by Sunday."
+      "highlight_words": [
+        "paycheck",
+        "guard",
+        "refund",
+        "vanishes"
+      ],
+      "narration": "Hand someone a thousand-dollar paycheck and they guard every cent. Hand that same person a thousand-dollar tax refund and it is far easier to spend.",
+      "source": "Richard Thaler, 'Mental Accounting Matters', Journal of Behavioral Decision Making (1999)"
     },
     {
       "tag": "THE STUDY",
@@ -45,11 +51,17 @@
       "stat_value": "2017",
       "stat_label": "NOBEL PRIZE IN BEHAVIORAL ECONOMICS",
       "bullets": [
-        "Coined 'Mental Accounting' after studying household budgets",
-        "Your brain tags identical cash with fake emotional labels"
+        "Thaler described 'mental accounting' in household budgets",
+        "Your brain tags identical cash with different labels"
       ],
-      "highlight_words": ["thaler", "nobel", "mental", "accounting"],
-      "narration": "Economist Richard Thaler won the Nobel Prize for proving why. He called it Mental Accounting. Even though money is completely interchangeable, your brain tags every dollar with an emotional story."
+      "highlight_words": [
+        "thaler",
+        "nobel",
+        "mental",
+        "accounting"
+      ],
+      "narration": "Economist Richard Thaler won the 2017 Nobel Prize, in part for describing this. He called it mental accounting. Money is interchangeable, but your brain tags every dollar with a story about where it came from.",
+      "source": "Nobel Prize in Economic Sciences (2017), Richard Thaler"
     },
     {
       "tag": "THE TRAP",
@@ -59,7 +71,12 @@
       "left_body": "Bonus or refund -> tagged 'house money' -> impulse upgrades",
       "right_title": "TRUE FUNGIBILITY",
       "right_body": "Every $1 carries identical future compounding power",
-      "highlight_words": ["heavy", "weightless", "house", "friction"],
+      "highlight_words": [
+        "heavy",
+        "weightless",
+        "house",
+        "friction"
+      ],
       "narration": "Salary dollars feel heavy because you traded forty hours of stress to earn them. Refund or bonus dollars feel weightless - like house money - so spending friction disappears."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "ROUTING WINDFALLS INTO COMPOUNDING ASSETS",
       "stat_subtext": "14-day pause strips the 'free money' illusion",
-      "highlight_words": ["fungibility", "fourteen", "windfall", "overtime"],
+      "highlight_words": [
+        "fungibility",
+        "fourteen",
+        "windfall",
+        "overtime"
+      ],
       "narration": "Use the Fungibility Rule: park every bonus, gift, or tax refund in savings for fourteen days until the windfall rush fades. Then ask if you would buy that upgrade using overtime pay."
     },
     {
@@ -81,8 +103,14 @@
         "Quarantine windfalls for 14 days before touching a cent",
         "Judge every purchase in hours of real sweat equity"
       ],
-      "highlight_words": ["strip", "label", "windfall", "compounding"],
-      "narration": "Once you strip the fake label off your cash, every windfall starts compounding like real wealth. Because without that reset..."
+      "highlight_words": [
+        "strip",
+        "label",
+        "windfall",
+        "compounding"
+      ],
+      "narration": "Once you strip the fake label off your cash, every windfall starts compounding like real wealth. Because without that reset...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

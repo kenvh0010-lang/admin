@@ -35,8 +35,14 @@
         "Color-coding templates feels like productive progress",
         "Complex friction kills execution the first busy week"
       ],
-      "highlight_words": ["twenty-tab", "dashboard", "thursday", "engineering"],
-      "narration": "If you spent all weekend building a twenty-tab productivity dashboard and stopped using it by Thursday, a nineteen seventy-five engineering rule explains why."
+      "highlight_words": [
+        "twenty-tab",
+        "dashboard",
+        "thursday",
+        "engineering"
+      ],
+      "narration": "If you spent all weekend building a twenty-tab productivity dashboard and stopped using it by Thursday, a nineteen seventy-five engineering rule explains why.",
+      "source": "John Gall, Systemantics (1975)"
     },
     {
       "tag": "THE STUDY",
@@ -48,8 +54,14 @@
         "Every working complex system grew out of a simple one",
         "Systems designed complicated on Day 1 never survive"
       ],
-      "highlight_words": ["gall", "complex", "evolved", "collapse"],
-      "narration": "Systems theorist John Gall formulated Gall's Law: every complex system that actually works evolved from a simple system that worked first. Complex systems designed from scratch always collapse."
+      "highlight_words": [
+        "gall",
+        "complex",
+        "evolved",
+        "collapse"
+      ],
+      "narration": "Systems theorist John Gall put it in his 1975 book Systemantics: a complex system that works has always evolved from a simple system that worked. A complex system designed from scratch never works.",
+      "source": "John Gall, Systemantics (1975)"
     },
     {
       "tag": "THE TRAP",
@@ -59,7 +71,12 @@
       "left_body": "12 habits + 14 databases -> 0 shipped output",
       "right_title": "GALL'S LAW VERSION 1.0",
       "right_body": "1 index card + 1 daily block -> evolved over 90 days",
-      "highlight_words": ["twelve-step", "complicated", "shipped", "single"],
+      "highlight_words": [
+        "twelve-step",
+        "complicated",
+        "shipped",
+        "single"
+      ],
       "narration": "Beginners break this rule constantly. They design twelve-step morning routines and complicated automation pipelines before they have even shipped a single piece of finished work."
     },
     {
@@ -68,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "SIMPLE DAILY REPS -> DURABLE SCALE",
       "stat_subtext": "1 checklist • 1 focus block • Upgrade only real bottlenecks",
-      "highlight_words": ["checklist", "focus", "repeatable", "tuesday"],
+      "highlight_words": [
+        "checklist",
+        "focus",
+        "repeatable",
+        "tuesday"
+      ],
       "narration": "Flip the sequence: start with one plain checklist, one daily focus block, and one repeatable workflow you can execute even on your most exhausting Tuesday."
     },
     {
@@ -81,8 +103,14 @@
         "Consistency beats clever architecture every week",
         "Add automation only when manual reps work smoothly"
       ],
-      "highlight_words": ["complexity", "thirty", "simple", "surprised"],
-      "narration": "Earn the right to add complexity only after thirty days of simple wins - otherwise, do not be surprised..."
+      "highlight_words": [
+        "complexity",
+        "thirty",
+        "simple",
+        "surprised"
+      ],
+      "narration": "Earn the right to add complexity only after thirty days of simple wins - otherwise, do not be surprised...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }
