@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:02,676
+How do smart adults miss subtracting
+
+2
+00:00:02,676 --> 00:00:05,500
+three from twenty-three to get twenty?
+
+3
+00:00:05,500 --> 00:00:07,284
+By getting too good at a
+
+4
+00:00:07,284 --> 00:00:08,770
+harder method first.
+
+5
+00:00:08,770 --> 00:00:09,245
+In 1942,
+
+6
+00:00:09,245 --> 00:00:12,631
+psychologist Abraham Luchins demonstrated the Einstellung
+
+7
+00:00:12,631 --> 00:00:14,472
+Effect using water-jar puzzles:
+
+8
+00:00:14,472 --> 00:00:17,383
+after five problems required a three-jar formula,
+
+9
+00:00:17,383 --> 00:00:19,640
+over eighty percent of subjects missed
+
+10
+00:00:19,640 --> 00:00:21,778
+an obvious two-jar shortcut right in
+
+11
+00:00:21,778 --> 00:00:22,610
+front of them.
+
+12
+00:00:22,610 --> 00:00:24,679
+Past career success builds the same
+
+13
+00:00:24,679 --> 00:00:25,329
+mental rut:
+
+14
+00:00:25,329 --> 00:00:28,520
+experienced operators throw complex six-step workflows
+
+15
+00:00:28,520 --> 00:00:30,471
+and pricey agencies at problems a
+
+16
+00:00:30,471 --> 00:00:31,830
+ten-line script solves.
+
+17
+00:00:31,830 --> 00:00:33,533
+Use Luchins's exact cue,
+
+18
+00:00:33,533 --> 00:00:34,739
+'Don't be blind':
+
+19
+00:00:34,739 --> 00:00:37,365
+before launching your usual playbook,
+
+20
+00:00:37,365 --> 00:00:39,565
+spend five minutes asking how a
+
+21
+00:00:39,565 --> 00:00:41,835
+beginner would solve this in one
+
+22
+00:00:41,835 --> 00:00:42,190
+step.
+
+23
+00:00:42,190 --> 00:00:45,117
+Question yesterday's winning formula before every
+
+24
+00:00:45,117 --> 00:00:47,267
+sprint so old expertise never blinds
+
+25
+00:00:47,267 --> 00:00:48,700
+you to simpler leverage.

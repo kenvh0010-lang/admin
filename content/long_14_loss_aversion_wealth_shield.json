@@ -1,0 +1,138 @@
+{
+  "title": "How Loss Aversion Quietly Drains Investor Returns Over Decades",
+  "alt_title_1": "Myopic Loss Aversion: Why Checking Stocks Daily Costs You Thousands",
+  "alt_title_2": "Kahneman, Statman & Thaler on Building an Unshakable Portfolio Shield",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "Why do so many intelligent savers earn lower returns than the very index funds they own? Synthesizing Kahneman and Tversky's 1979 Prospect Theory, Shefrin and Statman's 1985 Disposition Effect, and Benartzi and Thaler's 1995 Myopic Loss Aversion, here is how to stop emotional drag from draining decades of wealth.",
+  "tags": [
+    "loss aversion",
+    "myopic loss aversion",
+    "disposition effect",
+    "prospect theory",
+    "richard thaler",
+    "daniel kahneman",
+    "behavioral finance",
+    "long term investing"
+  ],
+  "thumbnail": {
+    "hook_text": "THE 2X LOSS TAX",
+    "badge": "WEALTH SHIELD",
+    "stat": "2X PAIN"
+  },
+  "affiliate_cta": {
+    "offer_name": "1-Page Investment Policy Shield + Behavioral Finance Book List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Be honest: do you still have a live stock or crypto price widget on your phone home screen? Grab our free 1-Page Investment Policy Shield + behavioral finance book list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "Why Investors Trail the Exact Funds Sitting in Their Accounts",
+      "visual_type": "stat_callout",
+      "stat_value": "2x Pain",
+      "stat_label": "LOSSES HURT TWICE AS MUCH AS EQUAL GAINS FEEL GOOD",
+      "bullets": [
+        "Index compounding works cleanly on spreadsheets, not nervous systems",
+        "Kahneman & Tversky (1979): human loss pain is roughly 2-to-1",
+        "Emotional exits during drawdowns erase years of patient saving"
+      ],
+      "highlight_words": [
+        "kahneman",
+        "tversky",
+        "twice",
+        "nervous"
+      ],
+      "narration": "On a spreadsheet, building long-term wealth looks effortless: buy a diversified low-cost index, reinvest dividends, and wait thirty years. Yet decade after decade, millions of smart, hardworking savers earn meaningfully less than the exact funds sitting inside their accounts. The culprit is rarely bad arithmetic; it is ancient human survival wiring colliding with live market tickers. In their foundational 1979 Econometrica study on Prospect Theory, psychologists Daniel Kahneman and Amos Tversky demonstrated that financial losses sting roughly twice as hard psychologically as identical gains feel rewarding. Left unguarded, that two-to-one asymmetry quietly taxes your portfolio for decades.",
+      "source": "Kahneman & Tversky, 'Prospect Theory: An Analysis of Decision under Risk', Econometrica (1979)"
+    },
+    {
+      "tag": "CHAPTER 2 • SHEFRIN & STATMAN'S DISPOSITION EFFECT",
+      "headline": "Cutting Your Flowers Early While Watering Your Weeds",
+      "visual_type": "comparison_split",
+      "left_title": "DISPOSITION TRAP (1985)",
+      "left_body": "Sells +15% winners fast for relief • clings to -40% losers to 'get even'",
+      "right_title": "RULE-BASED ALLOCATION",
+      "right_body": "Lets compounding winners run • rebalances strictly on scheduled targets",
+      "highlight_words": [
+        "shefrin",
+        "statman",
+        "disposition",
+        "weeds"
+      ],
+      "narration": "Six years after Prospect Theory appeared, finance professors Hersh Shefrin and Meir Statman documented its first major wealth leak in a 1985 Journal of Finance paper: the Disposition Effect. Because closing a losing position forces our brains to admit a permanent defeat, everyday investors desperately hold deteriorating stocks for years just hoping to break even. Meanwhile, the moment a great company climbs fifteen percent, those same investors rush to sell it so they can lock in a comforting win before it slips away. Over twenty years, trimming winners early while nursing losers turns a healthy portfolio into a museum of past mistakes.",
+      "source": "Shefrin & Statman, 'The Disposition to Sell Winners Too Early and Ride Losers Too Long', Journal of Finance (1985)"
+    },
+    {
+      "tag": "CHAPTER 3 • BENARTZI & THALER: MYOPIC LOSS AVERSION",
+      "headline": "How Evaluation Frequency Turns Calm Assets Into Stress Traps",
+      "visual_type": "stat_callout",
+      "stat_value": "1995",
+      "stat_label": "BENARTZI & THALER SOLVE THE EQUITY PREMIUM PUZZLE",
+      "bullets": [
+        "Minute-by-minute stock moves look like a noisy 50/50 coin toss",
+        "Frequent peeks multiply 2x loss pain across normal volatility",
+        "Evaluating once per year flips perceived risk dramatically"
+      ],
+      "highlight_words": [
+        "benartzi",
+        "thaler",
+        "myopic",
+        "frequency"
+      ],
+      "narration": "In 1995, economists Shlomo Benartzi and Richard Thaler published a landmark paper in the Quarterly Journal of Economics that uncovered an even deeper trap called Myopic Loss Aversion. They combined Kahneman's two-times loss sensitivity with a second habit: checking performance far too often. On any random Tuesday afternoon, broad stock markets rise barely more often than a coin flip. If you inspect your balance every afternoon and feel red days twice as sharply as green days, owning equities feels like constant punishment. Stretch that exact same portfolio review out to one-year or five-year intervals, and historical gains dominate noise.",
+      "source": "Benartzi & Thaler, 'Myopic Loss Aversion and the Equity Premium Puzzle', Quarterly Journal of Economics (1995)"
+    },
+    {
+      "tag": "CHAPTER 4 • SMARTPHONE TICKERS MULTIPLY EMOTIONAL DRAG",
+      "headline": "Modern Apps Compress 30-Year Horizons Into 30-Second Alerts",
+      "visual_type": "compounding_curve",
+      "stat_label": "FEWER PORTFOLIO PEEKS -> HIGHER REALIZED WEALTH",
+      "stat_subtext": "Quarterly reviews protect 30-year compounding from daily panic",
+      "highlight_words": [
+        "smartphone",
+        "confetti",
+        "compress",
+        "bottom"
+      ],
+      "narration": "Notice how modern fintech design pours fuel directly onto Benartzi and Thaler's fire. In 1995, checking your retirement balance meant unfolding a quarterly paper envelope at the kitchen table. Today, brokerage apps sit beside your text messages, beaming crimson alerts onto your lock screen whenever an overseas headline knocks two percent off an index. Checking a thirty-year retirement engine six times before lunch is like digging up an oak seed every morning to check its roots. Eventually, a sharp correction arrives during a stressful week at work, your threat circuitry wins, and you move to cash right near the bottom.",
+      "source": "Behavioral synthesis of Benartzi & Thaler (1995)"
+    },
+    {
+      "tag": "CHAPTER 5 • DAILY TINKERING VS STRUCTURAL BLINDERS",
+      "headline": "Willpower Cannot Beat a Red Lock Screen at 11 PM",
+      "visual_type": "comparison_split",
+      "left_title": "REACTIVE RETAIL INVESTING",
+      "left_body": "Phone ticker widgets + macro doom scrolling + emotional market timing",
+      "right_title": "INSTITUTIONAL WEALTH SHIELD",
+      "right_body": "6-month cash moat + desktop-only brokerage + automated payday buys",
+      "highlight_words": [
+        "willpower",
+        "blinders",
+        "moat",
+        "automated"
+      ],
+      "narration": "Trying to overpower loss aversion through sheer grit during a twenty-five-percent market drawdown almost never works, because cortisol narrows human time horizons when prices plunge. Disciplined wealth builders never rely on midnight bravery. Instead, they install structural blinders while markets are calm. First, they separate survival money from compounding money by keeping six months of living expenses in boring, liquid cash reserves, ensuring a bear market never threatens rent or groceries. Second, they remove one-tap trading friction from their pockets so impulsive Thursday headlines cannot touch decades of patient capital."
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "Install the 3-Rule Loss-Aversion Wealth Shield Tonight",
+      "visual_type": "stat_callout",
+      "stat_value": "4x / Year",
+      "stat_label": "DESKTOP-ONLY + PAYDAY AUTO-BUY + QUARTERLY CHECK-IN",
+      "bullets": [
+        "1. Delete brokerage apps & live price widgets from your phone",
+        "2. Automate payday transfers into broad low-cost holdings",
+        "3. Open your account on 4 scheduled quarterly dates per year"
+      ],
+      "highlight_words": [
+        "shield",
+        "delete",
+        "quarterly",
+        "policy"
+      ],
+      "narration": "Put this research to work tonight with three concrete rules. Rule One: delete every trading app and live stock widget from your smartphone so checking your net worth requires sitting calmly at a desktop browser. Rule Two: automate fixed payday contributions into diversified long-term holdings alongside a separate high-yield cash buffer, removing monthly guesswork. Rule Three: write a five-sentence Investment Policy Statement and put four twenty-minute portfolio reviews onto your calendar, one at the end of each quarter, to rebalance strictly by target percentages rather than headlines. Blind yourself to daily noise so decades of quiet compounding can finish the job.",
+      "source": "Mind & Margin Wealth Shield protocol based on Kahneman & Tversky (1979) and Benartzi & Thaler (1995)"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "title": "Why One 30-Minute Meeting Wrecks a Whole Afternoon",
+  "alt_title_1": "Paul Graham's Maker vs Manager Schedule Explained in 60 Seconds",
+  "alt_title_2": "How to Protect 4-Hour Deep Focus Blocks From Calendar Creep",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In his classic 2009 essay 'Maker's Schedule, Manager's Schedule', Paul Graham explained why a single 30-minute afternoon meeting fractures four hours of creative output. Here is how to batch calls onto the edges of your day.",
+  "tags": [
+    "makers schedule",
+    "paul graham",
+    "deep work",
+    "calendar design",
+    "meeting overload",
+    "time management",
+    "knowledge work"
+  ],
+  "thumbnail": {
+    "hook_text": "ONE 30-MIN MEETING",
+    "badge": "MAKER SCHEDULE",
+    "stat": "4 HOURS"
+  },
+  "affiliate_cta": {
+    "offer_name": "Maker's Calendar Blocking Template + Deep Focus Book List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "How many unbroken 4-hour blocks did you actually get on your calendar this week? Grab our free Maker's Calendar Blocking Template here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "How 30 Minutes Ruins a 4-Hour Afternoon",
+      "visual_type": "stat_callout",
+      "stat_value": "30 Mins",
+      "stat_label": "ENOUGH TO FRACTURE AN ENTIRE MAKER AFTERNOON",
+      "bullets": [
+        "Looks harmless on an hourly calendar grid",
+        "Splits deep focus into two unusable shards"
+      ],
+      "highlight_words": [
+        "thirty-minute",
+        "two-thirty",
+        "four-hour",
+        "strategy"
+      ],
+      "narration": "Why can a single thirty-minute check-in at two-thirty P.M. wipe out an entire four-hour afternoon of serious coding, writing, or strategy work?",
+      "source": "Paul Graham, 'Maker's Schedule, Manager's Schedule' (2009)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Paul Graham's Two Incompatible Clocks",
+      "visual_type": "stat_callout",
+      "stat_value": "2009",
+      "stat_label": "MAKER'S SCHEDULE VS MANAGER'S SCHEDULE",
+      "bullets": [
+        "Manager clock: neat 60-minute task-switching slots",
+        "Maker clock: half-day blocks needed to build complex work"
+      ],
+      "highlight_words": [
+        "2009",
+        "graham",
+        "incompatible",
+        "half-day"
+      ],
+      "narration": "In his influential 2009 essay Maker's Schedule, Manager's Schedule, Y Combinator co-founder Paul Graham explained that workplaces run on two incompatible clocks: hourly manager slots versus half-day maker blocks.",
+      "source": "Paul Graham, 'Maker's Schedule, Manager's Schedule' (July 2009)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Midday Calls Split Context Into Fragments",
+      "visual_type": "comparison_split",
+      "left_title": "SWISS-CHEESE CALENDAR",
+      "left_body": "Calls at 10:30 AM & 2:30 PM -> zero deep work finished",
+      "right_title": "EDGE-CLUSTERED CALLS",
+      "right_body": "8 AM-2 PM sealed focus -> all calls batched after 3:30 PM",
+      "highlight_words": [
+        "sixty",
+        "memory",
+        "mid-afternoon",
+        "fragments"
+      ],
+      "narration": "Managers switch tasks smoothly every sixty minutes. Makers must load complex mental models into working memory, so one mid-afternoon call splits a block into unusable fragments."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Push Every Meeting to the Calendar's Edge",
+      "visual_type": "compounding_curve",
+      "stat_label": "UNBROKEN MORNING VAULT -> COMPOUNDING OUTPUT",
+      "stat_subtext": "Batch calls after 3:30 PM to preserve 4-hour creation blocks",
+      "highlight_words": [
+        "clustering",
+        "edges",
+        "three-thirty",
+        "unbroken"
+      ],
+      "narration": "Protect deep output by clustering every call onto the edges of your day, after three-thirty P.M., leaving mornings and early afternoons completely unbroken."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Defend Half-Day Blocks Like Client Calls",
+      "visual_type": "stat_callout",
+      "stat_value": "4h Blocks",
+      "stat_label": "MINIMUM UNIT OF SERIOUS CREATIVE CRAFT",
+      "bullets": [
+        "Lock recurring morning maker blocks on your calendar",
+        "Stack calls back-to-back at the end of the afternoon"
+      ],
+      "highlight_words": [
+        "guard",
+        "half-day",
+        "assets",
+        "quiet"
+      ],
+      "narration": "Guard half-day maker blocks like client appointments, because finished assets only emerge inside long, quiet stretches.",
+      "source": "Mind & Margin calendar protocol based on Paul Graham (2009)"
+    }
+  ]
+}

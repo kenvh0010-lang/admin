@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:02,064
+Put one person on a rope
+
+2
+00:00:02,064 --> 00:00:04,729
+and they pull at full strength.
+
+3
+00:00:04,729 --> 00:00:07,222
+Put eight people on that rope
+
+4
+00:00:07,222 --> 00:00:08,770
+and half vanishes.
+
+5
+00:00:08,770 --> 00:00:12,150
+French agricultural engineer Maximilien Ringelmann published
+
+6
+00:00:12,150 --> 00:00:13,615
+the exact numbers in 1913:
+
+7
+00:00:13,615 --> 00:00:15,981
+solo pullers delivered one hundred percent
+
+8
+00:00:15,981 --> 00:00:16,995
+of their capacity,
+
+9
+00:00:16,995 --> 00:00:19,136
+pairs dropped to ninety-three percent,
+
+10
+00:00:19,136 --> 00:00:21,840
+and groups of eight averaged forty-nine percent.
+
+11
+00:00:21,840 --> 00:00:24,756
+Modern offices recreate Ringelmann's rope every morning:
+
+12
+00:00:24,756 --> 00:00:27,463
+eight-person status calls blur individual ownership,
+
+13
+00:00:27,463 --> 00:00:29,077
+multiply coordination friction,
+
+14
+00:00:29,077 --> 00:00:31,420
+and make coasting invisible inside the crowd.
+
+15
+00:00:31,420 --> 00:00:33,482
+Protect single-threaded ownership:
+
+16
+00:00:33,482 --> 00:00:35,967
+assign one clear builder per deliverable,
+
+17
+00:00:35,967 --> 00:00:37,665
+keep working units to one or
+
+18
+00:00:37,665 --> 00:00:38,332
+two people,
+
+19
+00:00:38,332 --> 00:00:41,000
+and automate routine handoffs with software.
+
+20
+00:00:41,000 --> 00:00:43,120
+Shrink the rope until every name
+
+21
+00:00:43,120 --> 00:00:44,842
+owns a measurable outcome,
+
+22
+00:00:44,842 --> 00:00:47,690
+and tiny teams outship bloated departments.

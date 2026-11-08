@@ -1,0 +1,116 @@
+{
+  "title": "Why Time-Saving Tools Often Leave You Busier: Jevons Paradox",
+  "alt_title_1": "The 1865 Steam-Engine Law Explaining AI Burnout",
+  "alt_title_2": "Jevons Paradox at Work: How to Actually Keep Time Saved by AI",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1865, British economist William Stanley Jevons showed in 'The Coal Question' that more fuel-efficient steam engines increased Britain's total coal use instead of cutting it. Here is how Jevons Paradox turns fast AI tools into heavier workloads unless you cap output.",
+  "tags": [
+    "jevons paradox",
+    "william stanley jevons",
+    "ai productivity",
+    "parkinsons law",
+    "economic mental models",
+    "burnout prevention",
+    "time leverage"
+  ],
+  "thumbnail": {
+    "hook_text": "FASTER YET BUSIER",
+    "badge": "JEVONS PARADOX",
+    "stat": "1865"
+  },
+  "affiliate_cta": {
+    "offer_name": "AI Time-Reclamation Protocol + Mental Models Book List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Has AI and faster software given you calmer afternoons, or just raised daily volume expectations? Grab our AI Time-Reclamation Protocol here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Faster Software, Yet Zero Extra Free Time",
+      "visual_type": "stat_callout",
+      "stat_value": "1865",
+      "stat_label": "THE ECONOMIC PARADOX BEHIND MODERN BUSYNESS",
+      "bullets": [
+        "Email replaced letters -> inbox volume exploded 50x",
+        "AI drafts in seconds -> calendars still overflow"
+      ],
+      "highlight_words": [
+        "faster",
+        "ai",
+        "afternoons",
+        "busier"
+      ],
+      "narration": "Every decade brings faster software and smarter AI tools promised to hand back our afternoons, yet knowledge workers end up busier than ever.",
+      "source": "William Stanley Jevons, The Coal Question (1865)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "William Stanley Jevons's 1865 Coal Discovery",
+      "visual_type": "stat_callout",
+      "stat_value": "More Coal",
+      "stat_label": "HIGHER EFFICIENCY SPARKED MASSIVE NEW DEMAND",
+      "bullets": [
+        "Watt's improved engine burned far less coal per unit of work",
+        "Cheaper steam power made factories multiply coal consumption"
+      ],
+      "highlight_words": [
+        "1865",
+        "jevons",
+        "watt",
+        "surged"
+      ],
+      "narration": "In his 1865 book The Coal Question, economist William Stanley Jevons spotted why: when James Watt's efficient steam engine burned less coal per job, Britain's total coal consumption surged instead of falling.",
+      "source": "William Stanley Jevons, The Coal Question (1865)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Cheaper Drafting Multiplies Low-Value Noise",
+      "visual_type": "comparison_split",
+      "left_title": "UNBOUNDED EFFICIENCY",
+      "left_body": "AI saves 5 hours -> fills gap with 10x more emails & slides",
+      "right_title": "CAPPED OUTPUT LEVERAGE",
+      "right_body": "AI saves 5 hours -> walls surplus off for 1 flagship asset",
+      "highlight_words": [
+        "cheaper",
+        "multiplies",
+        "ten",
+        "meetings"
+      ],
+      "narration": "Making an input cheaper multiplies demand. When email and AI make drafting messages ten times faster, workplaces quietly generate ten times more messages, decks, and meetings."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Wall Off Reclaimed Hours Immediately",
+      "visual_type": "compounding_curve",
+      "stat_label": "AUTOMATE REPETITION + HARD-CAP VOLUME",
+      "stat_subtext": "Route saved hours into deep craft or recovery, never busywork",
+      "highlight_words": [
+        "capping",
+        "five",
+        "wall",
+        "flagship"
+      ],
+      "narration": "Beat Jevons Paradox by capping output volume: when automation saves you five hours a week, immediately wall those hours off for flagship assets or real rest."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Bank Saved Hours Before Busywork Steals Them",
+      "visual_type": "stat_callout",
+      "stat_value": "Bank Hours",
+      "stat_label": "CLAIM EFFICIENCY DIVIDENDS ON YOUR CALENDAR",
+      "bullets": [
+        "Keep shallow communication quotas strictly capped",
+        "Convert AI speed directly into protected margin"
+      ],
+      "highlight_words": [
+        "efficiency",
+        "leak",
+        "bank",
+        "calm"
+      ],
+      "narration": "Never let efficiency gains leak back into inbox volume; bank saved hours into calm leverage.",
+      "source": "Mind & Margin rule applying William Stanley Jevons (1865)"
+    }
+  ]
+}

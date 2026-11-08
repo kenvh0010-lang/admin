@@ -1,0 +1,116 @@
+{
+  "title": "Why 'Good Enough' Decision-Makers End Up Happier",
+  "alt_title_1": "Herbert Simon & Barry Schwartz on Satisficing vs Maximizing",
+  "alt_title_2": "Stop Over-Researching Small Choices: The 10-Minute Satisfice Rule",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Nobel laureate Herbert Simon coined 'satisficing' in 1956, and psychologist Barry Schwartz proved in a 2002 Journal of Personality and Social Psychology study that relentless maximizers feel worse even after winning objectively good outcomes. Here is when 'good enough' wins.",
+  "tags": [
+    "satisficing",
+    "maximizing vs satisficing",
+    "herbert simon",
+    "barry schwartz",
+    "paradox of choice",
+    "decision fatigue",
+    "mental models"
+  ],
+  "thumbnail": {
+    "hook_text": "GOOD ENOUGH WINS",
+    "badge": "DECISION SCIENCE",
+    "stat": "1956"
+  },
+  "affiliate_cta": {
+    "offer_name": "Reversible vs Irreversible Decision Filter + Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What minor purchase or choice recently stole way too many browser tabs from your week? Grab our Reversible Decision Filter + book list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why 50 Open Browser Tabs Leave You Less Happy",
+      "visual_type": "stat_callout",
+      "stat_value": "50 Tabs",
+      "stat_label": "OVER-OPTIMIZING SMALL CHOICES BREEDS REGRET",
+      "bullets": [
+        "Four hours spent comparing nearly identical options",
+        "Less satisfaction after buying than fast deciders"
+      ],
+      "highlight_words": [
+        "four",
+        "fifty",
+        "decisive",
+        "five"
+      ],
+      "narration": "Why do people who spend four hours comparing fifty nearly identical hotels end up less happy than decisive travelers who pick in five minutes?",
+      "source": "Barry Schwartz et al., Journal of Personality and Social Psychology (2002)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Herbert Simon (1956) & Barry Schwartz (2002)",
+      "visual_type": "stat_callout",
+      "stat_value": "1956 -> 2002",
+      "stat_label": "SATISFICERS BEAT MAXIMIZERS ON HAPPINESS",
+      "bullets": [
+        "Simon (1956): 'satisfice' = pick first option meeting your bar",
+        "Schwartz et al. (2002): maximizers suffer chronic buyer's remorse"
+      ],
+      "highlight_words": [
+        "simon",
+        "1956",
+        "schwartz",
+        "2002"
+      ],
+      "narration": "Nobel laureate Herbert Simon coined satisficing in 1956 for choosing the first option that meets clear standards. In 2002, psychologist Barry Schwartz and colleagues proved relentless maximizers experience higher regret and lower satisfaction.",
+      "source": "Herbert Simon, Psychological Review (1956); Schwartz et al., JPSP (2002)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Spending Deep-Work Energy on Reversible Trivia",
+      "visual_type": "comparison_split",
+      "left_title": "CHRONIC MAXIMIZER",
+      "left_body": "3 hours researching $40 gear -> haunted by missed alternatives",
+      "right_title": "STRATEGIC SATISFICER",
+      "right_body": "3 clear criteria + 10-min cap -> saves energy for big bets",
+      "highlight_words": [
+        "reversible",
+        "drains",
+        "torture",
+        "forty-seven"
+      ],
+      "narration": "Maximizing reversible purchases drains hours of precious focus. Even after buying a top-rated laptop, maximizers torture themselves wondering whether tab forty-seven held a slightly better deal."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Set 3 Criteria and a 10-Minute Timer",
+      "visual_type": "compounding_curve",
+      "stat_label": "FAST REVERSIBLE DECISIONS -> MORE CREATIVE BANDWIDTH",
+      "stat_subtext": "Save deep research strictly for long-term asymmetric bets",
+      "highlight_words": [
+        "irreversible",
+        "three",
+        "ten-minute",
+        "match"
+      ],
+      "narration": "Reserve exhaustive research for rare, irreversible life bets. For everyday tools and purchases, define three must-have criteria, set a ten-minute timer, and pick the first match."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Protect Bandwidth for Decisions That Compound",
+      "visual_type": "stat_callout",
+      "stat_value": "10-Min Cap",
+      "stat_label": "DEFAULT SPEED LIMIT FOR REVERSIBLE CHOICES",
+      "bullets": [
+        "Close comparison tabs once your baseline bar is met",
+        "Invest reclaimed hours into building durable skills and assets"
+      ],
+      "highlight_words": [
+        "satisfice",
+        "reversible",
+        "energy",
+        "high-leverage"
+      ],
+      "narration": "Satisfice small reversible choices quickly so your best mental energy stays locked on high-leverage work.",
+      "source": "Mind & Margin decision rule based on Simon (1956) and Schwartz et al. (2002)"
+    }
+  ]
+}

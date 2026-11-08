@@ -1,0 +1,117 @@
+{
+  "title": "Why Sudden Windfalls Vanish Faster Than Hard-Earned Savings",
+  "alt_title_1": "Thaler & Johnson's 1990 Study on the House Money Effect",
+  "alt_title_2": "The 30-Day Cooling Rule That Saves Bonuses and Tax Refunds",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1990, Nobel laureate Richard Thaler and economist Eric Johnson proved in Management Science that unexpected gains trigger reckless risk-taking known as the House Money Effect. Here is the 30-day rule that protects windfalls.",
+  "tags": [
+    "house money effect",
+    "richard thaler",
+    "mental accounting",
+    "behavioral finance",
+    "wealth psychology",
+    "windfall management",
+    "personal finance"
+  ],
+  "thumbnail": {
+    "hook_text": "HOUSE MONEY TRAP",
+    "badge": "WEALTH PSYCHOLOGY",
+    "stat": "1990"
+  },
+  "affiliate_cta": {
+    "offer_name": "Windfall Allocation Blueprint + Richard Thaler Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "How differently do you treat a tax refund or bonus compared to dollars earned from a tough week of work? 👇 Grab our Windfall Allocation Blueprint + Thaler reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why Bonus Dollars Burn Twice as Fast",
+      "visual_type": "stat_callout",
+      "stat_value": "$1 = $1",
+      "stat_label": "FUNGIBLE CASH TREATED LIKE CASINO CHIPS",
+      "bullets": [
+        "Every dollar has identical purchasing and compounding power",
+        "Yet sudden windfalls get spent or gambled away fast"
+      ],
+      "highlight_words": [
+        "thousand-dollar",
+        "refund",
+        "paycheck",
+        "recklessly"
+      ],
+      "narration": "A thousand-dollar tax refund buys the exact same groceries as a thousand-dollar paycheck, yet people spend sudden windfalls far more recklessly.",
+      "source": "Thaler & Johnson, Management Science (1990)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Thaler & Johnson's 1990 House Money Study",
+      "visual_type": "stat_callout",
+      "stat_value": "77% vs 44%",
+      "stat_label": "GAMBLE RATE AFTER A WINDFALL VS BASELINE",
+      "bullets": [
+        "44% accepted a coin-flip gamble using baseline funds",
+        "77% gambled right after receiving an unexpected $30 gain"
+      ],
+      "highlight_words": [
+        "1990",
+        "thaler",
+        "seventy-seven",
+        "forty-four"
+      ],
+      "narration": "In 1990, economists Richard Thaler and Eric Johnson proved the House Money Effect in Management Science. After receiving an unexpected thirty-dollar gain, seventy-seven percent of subjects took a coin-flip gamble versus forty-four percent normally.",
+      "source": "Thaler & Johnson, 'Gambling with the House Money', Management Science (1990)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Mental Accounting Numbs Normal Caution",
+      "visual_type": "comparison_split",
+      "left_title": "'FOUND MONEY' MODE",
+      "left_body": "Bonus or lucky trade -> rushed into speculative bets & upgrades",
+      "right_title": "CORE PRINCIPAL MODE",
+      "right_body": "Merged into net worth -> guarded with strict sober discipline",
+      "highlight_words": [
+        "accounting",
+        "bonuses",
+        "casino",
+        "evaporates"
+      ],
+      "narration": "Mental accounting tags bonuses, inheritances, and lucky market gains as temporary casino chips, numbing normal loss aversion until the windfall evaporates."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Enforce a 30-Day Treasury Cooling Lock",
+      "visual_type": "compounding_curve",
+      "stat_label": "COOLING PERIOD CONVERTS CHIPS TO CAPITAL",
+      "stat_subtext": "30 days untouched in T-bills -> brain reclassifies cash as savings",
+      "highlight_words": [
+        "thirty-day",
+        "treasury",
+        "reserve",
+        "month"
+      ],
+      "narration": "Erase the casino label with a Thirty-Day Treasury Lock: park every unexpected payout in a quiet reserve account for one full month before touching a cent.",
+      "source": "Mind & Margin behavioral rule inspired by Thaler & Johnson (1990)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Let Windfalls Age Into Permanent Principal",
+      "visual_type": "stat_callout",
+      "stat_value": "30-Day Lock",
+      "stat_label": "PAUSE IMPULSES SO SURPLUS CASH COMPOUNDS",
+      "bullets": [
+        "Wait 30 days before allocating any bonus, refund, or payout",
+        "Spend at most 10% guilt-free and compound the remaining 90%"
+      ],
+      "highlight_words": [
+        "thirty",
+        "calm",
+        "principal",
+        "compound"
+      ],
+      "narration": "Give sudden cash thirty calm days to feel like hard-earned principal so your windfalls actually compound.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
+    }
+  ]
+}

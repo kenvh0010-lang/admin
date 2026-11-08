@@ -1,0 +1,117 @@
+{
+  "title": "Why Unfinished Tasks Hijack Your Sleep (Zeigarnik Open Loops)",
+  "alt_title_1": "The 5-Minute Written Plan That Quiets 2 AM Overthinking",
+  "alt_title_2": "Bluma Zeigarnik's 1927 Discovery on Intrusive Work Thoughts",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1927, psychologist Bluma Zeigarnik discovered why unfinished tasks stay active in working memory long after you leave your desk. In 2011, E. J. Masicampo and Roy Baumeister proved that writing a concrete plan quiets those intrusive open loops.",
+  "tags": [
+    "zeigarnik effect",
+    "open loops",
+    "bluma zeigarnik",
+    "roy baumeister",
+    "cognitive psychology",
+    "shutdown ritual",
+    "deep focus"
+  ],
+  "thumbnail": {
+    "hook_text": "CLOSE OPEN LOOPS",
+    "badge": "FOCUS SCIENCE",
+    "stat": "5 MINS"
+  },
+  "affiliate_cta": {
+    "offer_name": "5-Minute Evening Shutdown Template + Focus Book List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Do unfinished work tasks follow you into dinner or wake you up at 2 AM? Grab our free 5-Minute Evening Shutdown Template here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why Half-Finished Work Follows You to Bed",
+      "visual_type": "stat_callout",
+      "stat_value": "2:00 AM",
+      "stat_label": "WHEN UNCLOSED WORK LOOPS REPLAY IN MEMORY",
+      "bullets": [
+        "Completed projects vanish cleanly from working memory",
+        "Unfinished tasks keep pinging your attention"
+      ],
+      "highlight_words": [
+        "replay",
+        "half-finished",
+        "forget",
+        "check"
+      ],
+      "narration": "Why does your brain replay half-finished emails at two A.M., yet instantly forget far harder projects the moment you check them off?",
+      "source": "Bluma Zeigarnik, Psychologische Forschung (1927)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "From Zeigarnik (1927) to Baumeister (2011)",
+      "visual_type": "stat_callout",
+      "stat_value": "1927 -> 2011",
+      "stat_label": "OPEN-LOOP MEMORY TENSION & ITS OFF-SWITCH",
+      "bullets": [
+        "Zeigarnik (1927): incomplete tasks create cognitive tension",
+        "Masicampo & Baumeister (2011): concrete plans clear the loop"
+      ],
+      "highlight_words": [
+        "1927",
+        "zeigarnik",
+        "masicampo",
+        "baumeister"
+      ],
+      "narration": "In 1927, psychologist Bluma Zeigarnik showed unfinished tasks stay active in working memory like unpaid cafe tabs. In 2011, E. J. Masicampo and Roy Baumeister found a fast off-switch.",
+      "source": "Zeigarnik (1927); Masicampo & Baumeister, Journal of Personality and Social Psychology (2011)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Vague To-Do Lists Keep Mental Alarms Lit",
+      "visual_type": "comparison_split",
+      "left_title": "ABRUPT LAPTOP SLAM",
+      "left_body": "10 vague half-done tasks -> evening rumination & poor sleep",
+      "right_title": "CONCRETE NEXT-STEP PLAN",
+      "right_body": "Written time + exact first action -> working memory released",
+      "highlight_words": [
+        "shutting",
+        "vague",
+        "alert",
+        "sleep"
+      ],
+      "narration": "Shutting your laptop at six P.M. with ten vague open tasks tricks your brain into keeping background alert loops running through dinner and sleep."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "A Specific Plan Satisfies the Brain's Alarm",
+      "visual_type": "compounding_curve",
+      "stat_label": "WRITTEN IMPLEMENTATION PLAN -> QUIET RECOVERY",
+      "stat_subtext": "Clear morning specs protect sleep and next-day focus",
+      "highlight_words": [
+        "finish",
+        "silence",
+        "specific",
+        "quiets"
+      ],
+      "narration": "Masicampo and Baumeister proved you do not need to finish a project tonight to silence intrusive thoughts: writing a specific next-step plan quiets the mental alarm.",
+      "source": "Masicampo & Baumeister, 'Consider It Done!', Journal of Personality and Social Psychology (2011)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Run a 5-Minute Written Shutdown Tonight",
+      "visual_type": "stat_callout",
+      "stat_value": "5-Min Close",
+      "stat_label": "WRITE WHERE, WHEN, AND FIRST ACTION FOR TOMORROW",
+      "bullets": [
+        "List open items before closing your workspace",
+        "Assign each one a calendar slot and concrete first step"
+      ],
+      "highlight_words": [
+        "five-minute",
+        "written",
+        "starting",
+        "evening"
+      ],
+      "narration": "End every workday with a five-minute written plan naming tomorrow's exact starting step so your evening stays yours.",
+      "source": "Mind & Margin protocol based on Masicampo & Baumeister (2011)"
+    }
+  ]
+}

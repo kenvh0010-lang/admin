@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:02,712
+Losing one thousand dollars hurts roughly
+
+2
+00:00:02,712 --> 00:00:05,358
+twice as much psychologically as winning
+
+3
+00:00:05,358 --> 00:00:07,806
+the exact same thousand dollars feels
+
+4
+00:00:07,806 --> 00:00:08,136
+good,
+
+5
+00:00:08,136 --> 00:00:09,790
+and it warps your wealth.
+
+6
+00:00:09,790 --> 00:00:12,392
+In their landmark 1979 Econometrica paper
+
+7
+00:00:12,392 --> 00:00:13,597
+on Prospect Theory,
+
+8
+00:00:13,597 --> 00:00:16,516
+psychologists Daniel Kahneman and Amos Tversky
+
+9
+00:00:16,516 --> 00:00:19,308
+proved human value perception is asymmetric:
+
+10
+00:00:19,308 --> 00:00:20,958
+the mental sting of a loss
+
+11
+00:00:20,958 --> 00:00:22,290
+dwarfs an equal gain.
+
+12
+00:00:22,290 --> 00:00:25,683
+That wiring turns daily stock-checking into self-sabotage.
+
+13
+00:00:25,683 --> 00:00:28,549
+Watching normal market dips triggers evolutionary
+
+14
+00:00:28,549 --> 00:00:29,368
+threat alarms,
+
+15
+00:00:29,368 --> 00:00:31,649
+pushing investors to panic-sell lows or
+
+16
+00:00:31,649 --> 00:00:33,170
+hoard idle cash for years.
+
+17
+00:00:33,170 --> 00:00:35,540
+Neutralize loss aversion by widening your
+
+18
+00:00:35,540 --> 00:00:36,580
+evaluation window:
+
+19
+00:00:36,580 --> 00:00:39,355
+automate monthly index contributions and inspect
+
+20
+00:00:39,355 --> 00:00:41,609
+your portfolio once per quarter instead
+
+21
+00:00:41,609 --> 00:00:43,170
+of five times before lunch.
+
+22
+00:00:43,170 --> 00:00:45,306
+Delete live brokerage widgets from your
+
+23
+00:00:45,306 --> 00:00:47,332
+phone today so temporary market noise
+
+24
+00:00:47,332 --> 00:00:50,070
+stops hijacking thirty-year compounding decisions.

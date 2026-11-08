@@ -1,14 +1,17 @@
-"""End-to-end QA tests across Content, Monetization, Visual, Audio, and Web Studio departments."""
+"""End-to-end QA tests across Content (Q1+Q2: 96 Scripts), Monetization, Visual, Audio, Autopilot & Web Studio."""
 
+import csv
 import json
 from pathlib import Path
 import tempfile
 import unittest
 
 from yt_studio.config import CONTENT_DIR, FORMATS, PROJECT_ROOT, resolve_font_path
+from yt_studio.site_builder import DEFAULT_AMAZON_TAG
 from yt_studio.subtitle_maker import build_scene_beats, export_srt
 from yt_studio.tts_engine import estimate_speech_duration, generate_ambient_bed
 from yt_studio.visual_composer import render_scene_beat_frame, render_thumbnail
+from yt_studio.youtube_uploader import build_youtube_description, pick_next_unpublished_storyboard
 
 
 class TestYouTubeStudioEcosystem(unittest.TestCase):
@@ -16,42 +19,56 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertTrue(Path(resolve_font_path(bold=True)).is_file())
         self.assertTrue(Path(resolve_font_path(bold=False)).is_file())
 
-    def test_all_48_q1_storyboards_valid_and_glyph_safe(self) -> None:
+    def test_all_96_h1_storyboards_valid_cited_and_glyph_safe(self) -> None:
         storyboards = sorted(
             p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"
         )
-        self.assertEqual(len(storyboards), 48, "Expected all 48 Quarter-1 storyboards (36 Shorts + 12 Longs) in content/")
+        self.assertEqual(
+            len(storyboards), 96,
+            "Expected all 96 Half-Year storyboards (72 Shorts + 24 Longs across Q1 & Q2) in content/",
+        )
         required_keys = {"title", "format", "scenes", "tags", "thumbnail", "affiliate_cta"}
-        forbidden_glyphs = {"✕", "✓", "▸", "→"}
+        forbidden_glyphs = {"✕", "✓", "▸", "→", "—"}
         for sb in storyboards:
             data = json.loads(sb.read_text(encoding="utf-8"))
             self.assertTrue(required_keys.issubset(data.keys()), f"Missing keys in {sb.name}")
             self.assertGreaterEqual(len(data["scenes"]), 3, f"Too few scenes in {sb.name}")
+            has_source = any(bool(sc.get("source")) for sc in data["scenes"])
+            self.assertTrue(has_source, f"Expected at least one research source citation in {sb.name}")
             for sc in data["scenes"]:
                 card_blob = json.dumps(sc, ensure_ascii=False)
                 for bad in forbidden_glyphs:
                     self.assertNotIn(bad, card_blob, f"Forbidden glyph {bad!r} found in {sb.name}")
 
-    def test_trend_radar_intelligence(self) -> None:
+    def test_trend_radar_intelligence_96_scripts(self) -> None:
         from yt_studio.trend_radar import build_trend_intelligence_report, score_topic_opportunity
-        report = build_trend_intelligence_report(live_query="mental accounting")
-        self.assertEqual(report["cluster_count"], 5)
-        self.assertEqual(report["total_mapped_scripts"], 48)
-        scored = score_topic_opportunity("one person ai business wealth")
+
+        report = build_trend_intelligence_report(live_query="kelly criterion wealth")
+        self.assertEqual(report["cluster_count"], 7)
+        self.assertEqual(report["total_mapped_scripts"], 96)
+        mapped_flat = [s for c in report["clusters"] for s in c["mapped_scripts"]]
+        self.assertEqual(len(set(mapped_flat)), 96, "Duplicate or missing mapped script in trend_radar.py")
+        scored = score_topic_opportunity("coase solo ai business wealth")
         self.assertGreaterEqual(scored["opportunity_score"], 85)
         self.assertIn("$", scored["estimated_rpm_usd"])
 
-    def test_digital_products_and_branding_present(self) -> None:
+    def test_digital_products_and_youtube_autopilot_ready(self) -> None:
         self.assertTrue((PROJECT_ROOT / "products" / "5_hour_asset_builder_os" / "index.html").is_file())
         self.assertTrue((PROJECT_ROOT / "products" / "bio_funnel_page" / "index.html").is_file())
         self.assertTrue((PROJECT_ROOT / "products" / "free_lead_magnet" / "Wealth_and_Leverage_Playbook.md").is_file())
-        self.assertTrue((PROJECT_ROOT / "products" / "monetization_ops_guide.md").is_file())
+        self.assertTrue((PROJECT_ROOT / "products" / "youtube_autopilot_guide.md").is_file())
         self.assertTrue((PROJECT_ROOT / "web_studio" / "index.html").is_file())
         self.assertTrue((PROJECT_ROOT / "studio_server.py").is_file())
-        self.assertEqual(len(list((PROJECT_ROOT / "assets" / "thumbnails").glob("*.jpg"))), 4)
+
+        next_sb = pick_next_unpublished_storyboard()
+        self.assertIsNotNone(next_sb)
+        sample_data = json.loads(next_sb.read_text(encoding="utf-8"))
+        desc = build_youtube_description(sample_data, slug=next_sb.stem)
+        self.assertIn("As an Amazon Associate I earn from qualifying purchases.", desc)
+        self.assertIn("https://kenvh0010-lang.github.io/admin/bio/", desc)
 
     def test_subtitle_beats_and_srt(self) -> None:
-        narration = "Sixty-two percent of people earning six figures still live paycheck to paycheck. Here is why."
+        narration = "Nearly half of people earning six figures still live paycheck to paycheck. Here is why."
         dur = estimate_speech_duration(narration)
         beats = build_scene_beats(0, narration, scene_start_sec=0.0, scene_duration_sec=dur, max_words=6)
         self.assertGreaterEqual(len(beats), 2)
@@ -94,7 +111,7 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
             self.assertGreater(thumb.stat().st_size, 5_000)
             self.assertGreater(ambient.stat().st_size, 20_000)
 
-    def test_no_visual_card_or_source_clipping_across_48_storyboards(self) -> None:
+    def test_no_visual_card_or_source_clipping_across_96_storyboards(self) -> None:
         from PIL import Image, ImageDraw
         from yt_studio.visual_composer import _load_font, _wrap_text
 
@@ -142,18 +159,15 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
                         )
 
     def test_calendar_csv_and_amazon_tag_sync(self) -> None:
-        import csv
-        from yt_studio.site_builder import DEFAULT_AMAZON_TAG
-
         self.assertEqual(DEFAULT_AMAZON_TAG, "mindandmarg06-20")
         sb_titles = {
             json.loads(p.read_text(encoding="utf-8"))["title"]
             for p in CONTENT_DIR.glob("*.json")
             if p.name != "published_ledger.json"
         }
-        for csv_name in ("calendar_30_days.csv", "calendar_90_days.csv"):
+        for csv_name in ("calendar_30_days.csv", "calendar_90_days.csv", "calendar_180_days.csv"):
             rows = list(csv.DictReader((CONTENT_DIR / csv_name).read_text(encoding="utf-8").splitlines()))
-            self.assertEqual(len(rows), 48, f"Expected 48 rows in {csv_name}")
+            self.assertEqual(len(rows), 96, f"Expected 96 rows in {csv_name}")
             for row in rows:
                 title = row["Video Title (English - High RPM)"]
                 self.assertIn(title, sb_titles, f"Unmatched calendar title {title!r} in {csv_name}")
@@ -161,4 +175,3 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

@@ -1,0 +1,103 @@
+1
+00:00:00,000 --> 00:00:02,068
+Why does a pristine used car
+
+2
+00:00:02,068 --> 00:00:04,580
+lose thousands in value the minute
+
+3
+00:00:04,580 --> 00:00:05,910
+it leaves the lot?
+
+4
+00:00:05,910 --> 00:00:09,160
+Because buyers cannot verify hidden quality.
+
+5
+00:00:09,160 --> 00:00:11,680
+Economist George Akerlof explained why in
+
+6
+00:00:11,680 --> 00:00:13,708
+his 1970 Market for Lemons paper:
+
+7
+00:00:13,708 --> 00:00:16,228
+when buyers cannot separate great peaches
+
+8
+00:00:16,228 --> 00:00:17,580
+from defective lemons,
+
+9
+00:00:17,580 --> 00:00:18,994
+they discount everyone.
+
+10
+00:00:18,994 --> 00:00:19,486
+In 1973,
+
+11
+00:00:19,486 --> 00:00:21,576
+Michael Spence showed only costly,
+
+12
+00:00:21,576 --> 00:00:24,280
+hard-to-fake signals restore premium prices.
+
+13
+00:00:24,280 --> 00:00:27,053
+In an AI-flooded job and freelance market,
+
+14
+00:00:27,053 --> 00:00:29,694
+polished resumes and buzzwords cost zero
+
+15
+00:00:29,694 --> 00:00:30,685
+effort to fake,
+
+16
+00:00:30,685 --> 00:00:33,458
+so skeptical clients price verbal promises
+
+17
+00:00:33,458 --> 00:00:34,250
+like lemons.
+
+18
+00:00:34,250 --> 00:00:36,108
+Ship public proof of work that
+
+19
+00:00:36,108 --> 00:00:37,284
+fakers cannot copy:
+
+20
+00:00:37,284 --> 00:00:38,213
+live teardowns,
+
+21
+00:00:38,213 --> 00:00:39,823
+working code repositories,
+
+22
+00:00:39,823 --> 00:00:42,300
+or documented client audits proving your
+
+23
+00:00:42,300 --> 00:00:44,220
+exact thinking before pitching.
+
+24
+00:00:44,220 --> 00:00:47,766
+Eliminate the buyer's uncertainty with visible proof,
+
+25
+00:00:47,766 --> 00:00:49,907
+and you command peach pricing in
+
+26
+00:00:49,907 --> 00:00:50,910
+a noisy market.

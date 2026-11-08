@@ -1,0 +1,138 @@
+{
+  "title": "Ironies of Automation: Using AI Without Dulling Your Own Judgment",
+  "alt_title_1": "What Aviation's 1983 Paradox & Microsoft's 2025 AI Study Warn Us",
+  "alt_title_2": "The Deliberate First-Draft Protocol for Thinking Sharply With AI",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "In 1983, psychologist Lisanne Bainbridge warned that automating routine tasks dulls human expertise right when rare emergencies hit. Four decades later, a 2025 Microsoft Research and Carnegie Mellon CHI study of 936 generative AI workflows confirmed the exact same risk in knowledge work. Here is how to use AI as an amplifier without losing your edge.",
+  "tags": [
+    "ironies of automation",
+    "lisanne bainbridge",
+    "ai and critical thinking",
+    "cognitive offloading",
+    "deliberate practice",
+    "desirable difficulties",
+    "knowledge work",
+    "mental models"
+  ],
+  "thumbnail": {
+    "hook_text": "KEEP YOUR EDGE",
+    "badge": "AI & COGNITION",
+    "stat": "AI CRAFT"
+  },
+  "affiliate_cta": {
+    "offer_name": "Deliberate AI Workflow Playbook + Human Judgment Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "How do you draw the line between tasks you hand to AI immediately and thinking you always do solo first? 👇 Grab our Deliberate AI Workflow Playbook + reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "Why Autopilot Makes Rare Crises More Dangerous",
+      "visual_type": "stat_callout",
+      "stat_value": "1983 -> Now",
+      "stat_label": "FROM COCKPIT AUTOPILOTS TO GENERATIVE AI",
+      "bullets": [
+        "Automating easy tasks feels like pure productivity on Day 1",
+        "Months later, hands-on intuition quietly erodes from disuse",
+        "When AI hallucinates on a complex edge case, rusty humans miss it"
+      ],
+      "highlight_words": [
+        "bainbridge",
+        "autopilot",
+        "intuition",
+        "rusty"
+      ],
+      "narration": "Every knowledge worker using generative AI today is running an experiment on their own brain that aviation engineers first confronted over forty years ago. When early flight-deck autopilots and automated factory controllers arrived, executives assumed human error would disappear overnight. Instead, investigators began noticing a strange new failure pattern: seasoned operators sat monitoring screens for months while software handled every calm, routine hour, only to freeze or misdiagnose the system during a sudden sensor failure. In 1983, University College London psychologist Lisanne Bainbridge explained why in a five-page classic titled Ironies of Automation.",
+      "source": "Lisanne Bainbridge, 'Ironies of Automation', Automatica (1983)"
+    },
+    {
+      "tag": "CHAPTER 2 • BAINBRIDGE'S DOUBLE PARADOX",
+      "headline": "Removing Easy Reps Destroys Hard-Case Readiness",
+      "visual_type": "comparison_split",
+      "left_title": "IRONY 1: SKILL ATROPHY",
+      "left_body": "Automation absorbs the routine 95% of reps that kept mental models sharp",
+      "right_title": "IRONY 2: HARDER LEFTOVERS",
+      "right_body": "Humans are kept only to rescue abnormal 5% edge cases requiring peak skill",
+      "highlight_words": [
+        "automatica",
+        "ninety-five",
+        "atrophy",
+        "anomalies"
+      ],
+      "narration": "Published in the engineering journal Automatica, Bainbridge's paper exposed a double bind. System designers automate every predictable task they know how to formalize, leaving the human operator to supervise and step in whenever something novel breaks. Yet expertise is not a static trophy stored in a filing cabinet; physical and cognitive skills decay rapidly without regular manual practice. By stripping away the routine ninety-five percent of hands-on problem solving, automation starves the operator of the exact daily feedback loops needed to handle the remaining five percent of high-stakes anomalies.",
+      "source": "Lisanne Bainbridge, Automatica, Vol. 19, No. 6, pp. 775-779 (1983)"
+    },
+    {
+      "tag": "CHAPTER 3 • THE 2025 MICROSOFT-CMU STUDY",
+      "headline": "What 936 Real AI Workflows Revealed About Thinking",
+      "visual_type": "stat_callout",
+      "stat_value": "936 Tasks",
+      "stat_label": "MICROSOFT & CARNEGIE MELLON CHI 2025 SURVEY",
+      "bullets": [
+        "Surveyed 319 knowledge workers across 936 generative AI tasks",
+        "High blind confidence in AI predicted lower critical scrutiny",
+        "Strong personal domain confidence preserved active error checking"
+      ],
+      "highlight_words": [
+        "2025",
+        "carnegie",
+        "scrutiny",
+        "confidence"
+      ],
+      "narration": "In 2025, researchers at Microsoft Research and Carnegie Mellon University led by Hao-Ping Lee tested whether Bainbridge's paradox now governs white-collar AI work. Surveying three hundred nineteen knowledge workers across nine hundred thirty-six real-world generative AI tasks for the ACM CHI conference, they uncovered a clear split. Whenever workers held high uncritical trust in the AI model and low confidence in their own craft, cognitive effort dropped sharply; work shifted into passive rubber-stamping. By contrast, workers who maintained strong firsthand confidence in their own domain skills questioned assumptions, caught subtle flaws, and produced markedly stronger work.",
+      "source": "Hao-Ping (Hank) Lee et al., Microsoft Research & CMU, ACM CHI (2025)"
+    },
+    {
+      "tag": "CHAPTER 4 • COGNITIVE ATROPHY VS AMPLIFICATION",
+      "headline": "Are You Using AI as a Crutch or a Wind Tunnel?",
+      "visual_type": "comparison_split",
+      "left_title": "COPY-PASTE PASSENGER",
+      "left_body": "Starts from blank prompt -> accepts smooth prose -> loses error detector",
+      "right_title": "ADVERSARIAL CAPTAIN",
+      "right_body": "Frames logic solo first -> uses AI for drudgery & red-team stress tests",
+      "highlight_words": [
+        "fluent",
+        "crutch",
+        "tunnel",
+        "detector"
+      ],
+      "narration": "The danger of modern language models is that wrong answers rarely look messy; they arrive dressed in calm, fluent, authoritative paragraphs. If you ask AI to write a strategy memo, debug an unfamiliar codebase, or value a business before forming your own independent view, anchoring bias locks onto the machine's framing within seconds. Do that five days a week for a year, and your internal error detector goes quiet. Used properly, however, AI is not a replacement brain; it is a high-speed wind tunnel for stress-testing ideas you framed yourself."
+    },
+    {
+      "tag": "CHAPTER 5 • BJORK'S DESIRABLE DIFFICULTIES",
+      "headline": "Why 15 Minutes of Friction Protects Your Career Moat",
+      "visual_type": "compounding_curve",
+      "stat_label": "MANUAL FRICTION + AI LEVERAGE COMPOUNDS SKILL",
+      "stat_subtext": "15m solo struggle builds schema -> AI accelerates execution 3x safely",
+      "highlight_words": [
+        "bjork",
+        "1994",
+        "desirable",
+        "struggle"
+      ],
+      "narration": "Cognitive psychologist Robert Bjork coined the term desirable difficulties in 1994 to describe why slight mental friction during practice produces far deeper retention and transfer than effortless reading. Wrestling with a blank sheet of paper for fifteen minutes, outlining the core argument, estimating the rough math on the back of an envelope, activates your working schema before any machine output enters the room. That brief solo struggle is what keeps your domain confidence high, putting you squarely on the winning side of the Microsoft and Carnegie Mellon findings while still enjoying full automation speed afterward.",
+      "source": "Robert A. Bjork, 'Memory and Metamemory Considerations in the Training of Human Beings' (1994)"
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "Install the 3-Step Deliberate First-Draft Protocol",
+      "visual_type": "stat_callout",
+      "stat_value": "3 Flight Ops",
+      "stat_label": "SOLO SKELETON + RED TEAM + WEEKLY MANUAL REPS",
+      "bullets": [
+        "1. 15-Minute Solo Skeleton: write thesis & rough numbers before prompting",
+        "2. Red-Team Prompting: ask AI to attack blind spots in your draft",
+        "3. Weekly Flight Hours: ship 1 memo or model 100% unassisted each week"
+      ],
+      "highlight_words": [
+        "skeleton",
+        "red-team",
+        "unassisted",
+        "pilot"
+      ],
+      "narration": "Protect your judgment starting tomorrow with three concrete flight rules. Rule one is the Fifteen-Minute Solo Skeleton: never open an AI prompt on an important problem until you have written your own bullet outline, core architecture, or order-of-magnitude estimate by hand. Rule two is Red-Team Prompting: instead of asking the model to think for you, feed it your draft and instruct it to find three logical weak spots, missing counterarguments, or edge-case risks. Rule three is Weekly Manual Flight Hours: complete one meaningful memo, code module, or financial analysis completely unassisted every week so you always remain the pilot in command.",
+      "source": "Mind & Margin protocol synthesizing Bainbridge (1983), Bjork (1994) & Lee et al. (2025)"
+    }
+  ]
+}

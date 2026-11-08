@@ -1,0 +1,117 @@
+{
+  "title": "Why 5 Trusted Peers Beat 10,000 Shallow Contacts",
+  "alt_title_1": "Dunbar's Number & Weak Ties: The Science of High-Trust Networks",
+  "alt_title_2": "Stop Collecting Connections (Use the 5 + 2 Relationship Rule)",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Oxford anthropologist Robin Dunbar proved in 1992 that human brain architecture limits stable relationships to ~150 people, with an inner core of just 5. Combined with Mark Granovetter's 1973 Weak Ties research, here is a smarter way to build career relationships.",
+  "tags": [
+    "dunbars number",
+    "robin dunbar",
+    "strength of weak ties",
+    "mark granovetter",
+    "career networking",
+    "high trust peers",
+    "social psychology"
+  ],
+  "thumbnail": {
+    "hook_text": "DUNBAR'S 5 RULE",
+    "badge": "NETWORK SCIENCE",
+    "stat": "~150 MAX"
+  },
+  "affiliate_cta": {
+    "offer_name": "5+2 Relationship Cadence Tracker + Social Capital Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Do you currently have 5 trusted peers you can call for brutally honest feedback on a hard decision? 👇 Grab our 5+2 Relationship Cadence Tracker + reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why 10,000 Followers Still Feels Lonely",
+      "visual_type": "stat_callout",
+      "stat_value": "~150 Max",
+      "stat_label": "HARD BIOLOGICAL CEILING ON REAL TIES",
+      "bullets": [
+        "Digital contact lists scale infinitely on a screen",
+        "Human neocortex bandwidth has not changed in millennia"
+      ],
+      "highlight_words": [
+        "ten",
+        "thousand",
+        "primate",
+        "sustain"
+      ],
+      "narration": "Collecting ten thousand online contacts feels productive, yet primate brain biology caps how many real relationships any human can actually sustain.",
+      "source": "Robin Dunbar, Journal of Human Evolution (1992)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Robin Dunbar's 1992 Neocortex Limit",
+      "visual_type": "stat_callout",
+      "stat_value": "5 Core",
+      "stat_label": "INNER SUPPORT CLIQUE INSIDE DUNBAR'S 150",
+      "bullets": [
+        "~150 total stable social ties; ~15 close allies",
+        "Just 5 intimate high-trust confidants form your core"
+      ],
+      "highlight_words": [
+        "1992",
+        "dunbar",
+        "neocortex",
+        "five"
+      ],
+      "narration": "In 1992, Oxford anthropologist Robin Dunbar showed in the Journal of Human Evolution that neocortex size limits stable human networks to roughly one hundred fifty people, anchored by an inner circle of five.",
+      "source": "Robin I. M. Dunbar, J. Human Evolution, Vol. 22, No. 6 (1992)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Shallow Feeds Starve Both Core & Weak Ties",
+      "visual_type": "comparison_split",
+      "left_title": "TRANSACTIONS & NOISE",
+      "left_body": "10,000 cold DMs & feed likes -> zero candor when stakes rise",
+      "right_title": "DUNBAR + GRANOVETTER",
+      "right_body": "5 deep kitchen-cabinet peers + warm check-ins with weak ties",
+      "highlight_words": [
+        "noisy",
+        "starves",
+        "granovetter",
+        "1973"
+      ],
+      "narration": "Spreading attention thinly across noisy feeds starves both your five high-trust peers and what sociologist Mark Granovetter in 1973 called valuable weak ties.",
+      "source": "Mark S. Granovetter, 'The Strength of Weak Ties', American Journal of Sociology (1973)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Install the Weekly 5 + 2 Relationship Cadence",
+      "visual_type": "compounding_curve",
+      "stat_label": "HIGH-TRUST CANDOR + BRIDGED OPPORTUNITY",
+      "stat_subtext": "80% energy in 5 core peers + 2 weekly no-ask notes -> lifelong trust",
+      "highlight_words": [
+        "eighty",
+        "five",
+        "candid",
+        "no-ask"
+      ],
+      "narration": "Build a two-tier network: invest eighty percent of your relational energy into five candid builders, and send two thoughtful no-ask notes weekly to respected weak ties."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Depth Protects You, Bridges Expand You",
+      "visual_type": "stat_callout",
+      "stat_value": "5 + 2 Rule",
+      "stat_label": "FIVE INNER ALLIES • TWO WARM BRIDGES WEEKLY",
+      "bullets": [
+        "Your inner 5 sharpen your thinking and tell hard truths",
+        "Respected weak ties open doors outside your daily bubble"
+      ],
+      "highlight_words": [
+        "depth",
+        "resilience",
+        "curiosity",
+        "opportunity"
+      ],
+      "narration": "Depth in your inner five builds resilience, while genuine curiosity across weak ties brings fresh opportunity.",
+      "source": "Mind & Margin synthesis of Dunbar (1992) & Granovetter (1973)"
+    }
+  ]
+}

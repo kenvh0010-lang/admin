@@ -1,0 +1,139 @@
+{
+  "title": "Career Moats: Combining Two Good Skills Instead of Competing at One",
+  "alt_title_1": "Why Top 25% at Two Skills Beats Grinding for Top 1% at One",
+  "alt_title_2": "Cal Newport & Scott Adams on Building Uncopyable Career Leverage",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "Trying to outwork 100,000 specialists along a single standardized metric triggers Leigh Van Valen's 1973 Red Queen trap. Drawing on Cal Newport's 'So Good They Can't Ignore You' (2012) and Scott Adams's skill-stacking model (2013), here is how combining complementary skills creates a durable career moat.",
+  "tags": [
+    "career moats",
+    "skill stacking",
+    "cal newport",
+    "career capital",
+    "scott adams",
+    "red queen effect",
+    "future of work",
+    "mental models"
+  ],
+  "thumbnail": {
+    "hook_text": "SKILL STACK MOATS",
+    "badge": "CAREER STRATEGY",
+    "stat": "2 SKILLS"
+  },
+  "affiliate_cta": {
+    "offer_name": "Career Moat Venn Architect + 'So Good They Can't Ignore You' Book Link",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What are the 2 or 3 distinct skills in your personal Venn diagram right now? 👇 Grab our Career Moat Venn Architect + Cal Newport book link here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "The Brutal Math of Single-Skill Tournaments",
+      "visual_type": "stat_callout",
+      "stat_value": "Top 25% x 2",
+      "stat_label": "INTERSECTION SCARCITY BEATS SOLO PERFECTION",
+      "bullets": [
+        "Reaching the top 0.1% of one crowded field takes decades",
+        "Reaching the top 25% of two distinct crafts is achievable in years",
+        "Rare intersections earn autonomy without Red Queen burnout"
+      ],
+      "highlight_words": [
+        "tournament",
+        "crowded",
+        "twenty-five",
+        "moat"
+      ],
+      "narration": "Most ambitious professionals inherit a flawed career playbook from school: pick one narrow subject, climb a single linear ladder, and try to outscore everyone else on the exact same exam. In a global digital market, that single-skill tournament has brutal odds. Competing head-to-head to become the top zero-point-one percent Python coder, graphic designer, or financial analyst pits you against hundreds of thousands of tireless specialists worldwide. Yet there is a quieter mathematical path to becoming irreplaceable: reaching the top twenty-five percent in two or three distinct skills that rarely live inside the same brain.",
+      "source": "Scott Adams, How to Fail at Almost Everything and Still Win Big (2013)"
+    },
+    {
+      "tag": "CHAPTER 2 • VAN VALEN'S RED QUEEN ARENA",
+      "headline": "Why Single-Track Specialists Keep Running in Place",
+      "visual_type": "comparison_split",
+      "left_title": "RED QUEEN SPECIALIST",
+      "left_body": "Competes on 1 commodity metric -> AI & peers erase every speed gain",
+      "right_title": "INTERSECTION BUILDER",
+      "right_body": "Combines technical craft + persuasion + domain fluency -> scarce category",
+      "highlight_words": [
+        "valen",
+        "1973",
+        "commodity",
+        "erasable"
+      ],
+      "narration": "Evolutionary biologist Leigh Van Valen explained why single-lane competition feels so exhausting in his 1973 paper introducing the Red Queen Hypothesis. Named after Lewis Carroll's character who runs at full speed just to stay under the same tree, the law shows that rivals sharing an identical niche neutralize each other's upgrades. When every junior marketer, coder, or copywriter adopts the same AI tool on Monday, nobody wins lasting pricing power by Friday; baseline expectations simply double. Working longer hours inside a standardized commodity role only speeds up the treadmill underneath your feet.",
+      "source": "Leigh Van Valen, 'A New Evolutionary Law', Evolutionary Theory (1973)"
+    },
+    {
+      "tag": "CHAPTER 3 • NEWPORT'S CAREER CAPITAL LAW",
+      "headline": "Autonomy Is Bought With Rare and Valuable Capital",
+      "visual_type": "stat_callout",
+      "stat_value": "Rare + Real",
+      "stat_label": "CAL NEWPORT'S SUPPLY-AND-DEMAND LAW OF WORK",
+      "bullets": [
+        "Great work traits: autonomy, high margin, creative control",
+        "Basic economics: rare rewards require rare & valuable skills",
+        "Commodity effort cannot buy leverage, no matter how passionate"
+      ],
+      "highlight_words": [
+        "newport",
+        "capital",
+        "supply",
+        "autonomy"
+      ],
+      "narration": "In his 2012 book So Good They Can't Ignore You, computer science professor Cal Newport studied why certain professionals command flexible schedules, strong compensation, and creative freedom while others stay micromanaged. His conclusion followed straightforward supply and demand. Traits that make a career deeply rewarding are rare and valuable; therefore, the market only trades them in exchange for rare and valuable skills, which Newport calls career capital. Wishing for autonomy without scarce career capital always fails, and generic tasks that anyone can learn in a weekend never accumulate real leverage.",
+      "source": "Cal Newport, So Good They Can't Ignore You (Grand Central Publishing, 2012)"
+    },
+    {
+      "tag": "CHAPTER 4 • MULTIPLICATIVE SKILL STACKING",
+      "headline": "How Three Good Skills Multiply Into Top-2% Rarity",
+      "visual_type": "compounding_curve",
+      "stat_label": "SKILL STACKING MULTIPLIES RARITY FAST",
+      "stat_subtext": "Top 25% craft x Top 25% writing x Top 25% finance -> ~1.5% niche",
+      "highlight_words": [
+        "adams",
+        "dilbert",
+        "multiply",
+        "stacking"
+      ],
+      "narration": "Creator Scott Adams demonstrated the cleanest way to build that scarce career capital in his 2013 book How to Fail at Almost Everything and Still Win Big. Adams noted he was never the finest visual artist, never the funniest stand-up comedian, and never the sharpest corporate executive. Yet almost nobody stood in the overlap of decent drawing, sharp observational humor, and firsthand corporate literacy, producing Dilbert. Think in independent probabilities: reaching the top twenty-five percent in three separate disciplines is realistic with focused practice, and one-fourth times one-fourth times one-fourth puts your exact combination near the top one-point-five percent.",
+      "source": "Scott Adams, How to Fail at Almost Everything and Still Win Big (2013)"
+    },
+    {
+      "tag": "CHAPTER 5 • BRIDGING UNCONNECTED TRIBES",
+      "headline": "Why Cross-Aisle Combinations Pay the Highest Margin",
+      "visual_type": "comparison_split",
+      "left_title": "ADJACENT OVERLAP",
+      "left_body": "Python + SQL, or Copywriting + Social Posts -> common & crowded",
+      "right_title": "CROSS-AISLE BRIDGE",
+      "right_body": "Data Automation + Clinical Regulation + Executive Writing -> high trust",
+      "highlight_words": [
+        "tribes",
+        "translator",
+        "adjacent",
+        "aisle"
+      ],
+      "narration": "One mistake derails most people who try skill stacking: choosing skills that sit right next to each other. Pairing Python with SQL, or pairing graphic design with video editing, keeps you inside a crowded neighborhood where thousands of peers already live. Real career moats form when you build a bridge across two tribes that struggle to understand one another. An engineer who can write crystal-clear board memos and model unit economics becomes indispensable. A clinician or accountant who builds clean AI data pipelines translates problems that neither pure coders nor pure executives can solve alone.",
+      "source": "Ronald Burt, Structural Holes: The Social Structure of Competition (Harvard, 1992)"
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "Architect Your 3-Layer Career Moat in 90 Days",
+      "visual_type": "stat_callout",
+      "stat_value": "3-Part Moat",
+      "stat_label": "ANCHOR CRAFT + CROSS-AISLE AMPLIFIER + ARTIFACTS",
+      "bullets": [
+        "1. Anchor Skill: 1 rigorous technical, analytical, or domain craft",
+        "2. Amplifier Skill: clear writing, persuasion, or systems automation",
+        "3. Public Proof: publish 10 case studies solving cross-tribe problems"
+      ],
+      "highlight_words": [
+        "anchor",
+        "amplifier",
+        "ten",
+        "artifacts"
+      ],
+      "narration": "Build your own career moat over the next ninety days using three deliberate layers. First, protect your Anchor Skill: the rigorous domain or technical craft that proves you can deliver real substance. Second, pair it with one Cross-Aisle Amplifier: if you work in numbers or code, study persuasive writing and commercial negotiation; if you work in words or operations, learn data modeling and AI workflow architecture. Third, make your intersection visible by publishing ten concrete case studies, tear-downs, or working tools. Stop sprinting in a crowded lane, and own the bridge instead.",
+      "source": "Mind & Margin synthesis of Newport (2012), Adams (2013) & Burt (1992) (advice)"
+    }
+  ]
+}

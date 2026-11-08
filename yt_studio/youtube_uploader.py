@@ -1,10 +1,12 @@
-"""Automated YouTube Data API v3 Uploader (Video + Thumbnail + SRT Captions + Ledger)."""
+"""Automated YouTube Data API v3 Uploader (Video + Thumbnail + SRT Captions + Top Comment + Ledger)."""
 
 import json
 import mimetypes
 import os
 from pathlib import Path
+import shutil
 import sys
+from datetime import datetime, timezone
 import urllib.parse
 import urllib.request
 from typing import Any, Dict, List, Optional
@@ -36,11 +38,54 @@ def get_access_token(client_id: str, client_secret: str, refresh_token: str) -> 
     return data["access_token"]
 
 
-def build_youtube_description(storyboard: Dict[str, Any]) -> str:
-    """Build a compliant, high-converting YouTube description with Bio & Amazon disclosures."""
+def verify_youtube_channel(
+    client_id: Optional[str] = None,
+    client_secret: Optional[str] = None,
+    refresh_token: Optional[str] = None,
+) -> Optional[Dict[str, Any]]:
+    """Verify OAuth2 credentials and return connected YouTube channel metadata."""
+    cid = (client_id or os.environ.get("YOUTUBE_CLIENT_ID", "")).strip()
+    csec = (client_secret or os.environ.get("YOUTUBE_CLIENT_SECRET", "")).strip()
+    rtok = (refresh_token or os.environ.get("YOUTUBE_REFRESH_TOKEN", "")).strip()
+
+    if not (cid and csec and rtok):
+        print("ℹ️  Missing YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET / YOUTUBE_REFRESH_TOKEN.")
+        return None
+
+    token = get_access_token(cid, csec, rtok)
+    req = urllib.request.Request(
+        "https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&mine=true",
+        headers={"Authorization": f"Bearer {token}"},
+        method="GET",
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        data = json.loads(resp.read().decode("utf-8"))
+
+    items = data.get("items", [])
+    if not items:
+        raise RuntimeError("OAuth succeeded, but no YouTube channel was found on this Google account.")
+
+    ch = items[0]
+    info = {
+        "channel_id": ch["id"],
+        "title": ch["snippet"].get("title", ""),
+        "custom_url": ch["snippet"].get("customUrl", ""),
+        "subscribers": ch.get("statistics", {}).get("subscriberCount", "0"),
+        "video_count": ch.get("statistics", {}).get("videoCount", "0"),
+    }
+    print(
+        f"✅ Connected to YouTube Channel: {info['title']} ({info['custom_url'] or info['channel_id']}) "
+        f"| Videos: {info['video_count']} | Subscribers: {info['subscribers']}"
+    )
+    return info
+
+
+def build_youtube_description(storyboard: Dict[str, Any], slug: str = "") -> str:
+    """Build a compliant, high-converting YouTube description with Bio & verbatim Amazon disclosure."""
     hook = storyboard.get("description_hook", storyboard.get("title", ""))
     aff = storyboard.get("affiliate_cta", {})
     offer_name = aff.get("offer_name", "Free Asymmetric Playbook & 5-Hour Asset Builder OS")
+    article_url = f"{SITE_HOME_URL}articles/{slug}.html" if slug else SITE_HOME_URL
 
     chapters: List[str] = []
     for idx, sc in enumerate(storyboard.get("scenes", []), start=1):
@@ -53,12 +98,12 @@ def build_youtube_description(storyboard: Dict[str, Any]) -> str:
         f"{hook}\n\n"
         f"⚡ {offer_name}:\n"
         f"👉 {SITE_BIO_URL}\n"
-        f"📚 Full Written Breakdown & Book List:\n"
-        f"👉 {SITE_HOME_URL}\n\n"
+        f"📚 Full Written Breakdown, Citations & Book List:\n"
+        f"👉 {article_url}\n\n"
         f"📌 Key Takeaways Covered:\n"
         f"{chr(10).join(chapters)}\n\n"
         f"⚠️ Disclosure: Educational content and historical/behavioral case studies only — not personalized "
-        f"financial or legal advice. As an Amazon Associate I earn from qualifying purchases at no extra cost to you."
+        f"financial or legal advice. As an Amazon Associate I earn from qualifying purchases."
         f"{short_hashtags}"
     )
 
@@ -67,6 +112,7 @@ def upload_video_resumable(
     access_token: str,
     mp4_path: Path,
     storyboard: Dict[str, Any],
+    slug: str = "",
     privacy_status: str = "public",
 ) -> str:
     """Upload MP4 to YouTube via Resumable Upload protocol and return videoId."""
@@ -80,7 +126,7 @@ def upload_video_resumable(
     metadata = {
         "snippet": {
             "title": title,
-            "description": build_youtube_description(storyboard),
+            "description": build_youtube_description(storyboard, slug=slug),
             "tags": storyboard.get("tags", ["wealth psychology", "mental models", "self improvement"]),
             "categoryId": "27",  # Education (high-CPM advertiser safe)
             "defaultLanguage": "en",
@@ -145,6 +191,76 @@ def upload_custom_thumbnail(access_token: str, video_id: str, thumb_path: Path) 
         pass
 
 
+def upload_srt_captions(access_token: str, video_id: str, srt_path: Path) -> None:
+    """Upload English .srt closed captions for stronger YouTube Search SEO & accessibility."""
+    if not srt_path.is_file():
+        return
+    boundary = "===============MindAndMarginCaptionBoundary=="
+    meta_json = json.dumps({
+        "snippet": {
+            "videoId": video_id,
+            "language": "en",
+            "name": "English",
+            "isDraft": False,
+        }
+    }).encode("utf-8")
+    srt_bytes = srt_path.read_bytes()
+    body = (
+        f"--{boundary}\r\n"
+        f"Content-Type: application/json; charset=UTF-8\r\n\r\n"
+    ).encode("utf-8") + meta_json + (
+        f"\r\n--{boundary}\r\n"
+        f"Content-Type: application/x-subrip\r\n\r\n"
+    ).encode("utf-8") + srt_bytes + f"\r\n--{boundary}--\r\n".encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://www.googleapis.com/upload/youtube/v3/captions?uploadType=multipart&part=snippet",
+        data=body,
+        headers={
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": f"multipart/related; boundary={boundary}",
+            "Content-Length": str(len(body)),
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=60):
+        pass
+
+
+def post_top_affiliate_comment(access_token: str, video_id: str, storyboard: Dict[str, Any]) -> None:
+    """Post the Day-1 monetization CTA + disclosure as the first top-level comment on the video."""
+    aff = storyboard.get("affiliate_cta", {})
+    raw_comment = aff.get("pinned_comment", "").strip()
+    if not raw_comment:
+        raw_comment = (
+            f"📚 Grab the free Asymmetric Playbook, book list & 5-Hour Asset Builder OS here: {SITE_BIO_URL}"
+        )
+    if "Amazon Associate" not in raw_comment:
+        raw_comment = f"{raw_comment}\n\n(Disclosure: As an Amazon Associate I earn from qualifying purchases.)"
+
+    payload = json.dumps({
+        "snippet": {
+            "videoId": video_id,
+            "topLevelComment": {
+                "snippet": {
+                    "textOriginal": raw_comment,
+                }
+            },
+        }
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet",
+        data=payload,
+        headers={
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json; charset=UTF-8",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=30):
+        pass
+
+
 def load_ledger() -> Dict[str, Any]:
     if LEDGER_PATH.is_file():
         return json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
@@ -156,7 +272,7 @@ def save_ledger(ledger: Dict[str, Any]) -> None:
 
 
 def pick_next_unpublished_storyboard() -> Optional[Path]:
-    """Follow calendar order: 3 Shorts then 1 Long-form per week."""
+    """Follow calendar order across all quarters: 3 Shorts then 1 Long-form per week."""
     ledger = load_ledger()
     published = ledger.get("published", {})
 
@@ -176,14 +292,25 @@ def pick_next_unpublished_storyboard() -> Optional[Path]:
     return None
 
 
+def _select_live_tts_provider() -> str:
+    """Guarantee live YouTube uploads always use real neural speech rather than silent offline fallback."""
+    if os.environ.get("OPENAI_API_KEY"):
+        return "openai"
+    if os.environ.get("ELEVENLABS_API_KEY"):
+        return "elevenlabs"
+    if shutil.which("edge-tts"):
+        return "edge"
+    return "auto"
+
+
 def publish_next_in_queue(privacy_status: str = "public") -> Optional[Dict[str, str]]:
-    """Render (with neural voice if available) and upload the next scheduled video."""
+    """Render (with guaranteed neural voice) and upload the next scheduled video + SRT + Thumbnail + Comment."""
     client_id = os.environ.get("YOUTUBE_CLIENT_ID", "").strip()
     client_secret = os.environ.get("YOUTUBE_CLIENT_SECRET", "").strip()
     refresh_token = os.environ.get("YOUTUBE_REFRESH_TOKEN", "").strip()
 
     if not (client_id and client_secret and refresh_token):
-        print("ℹ️  YouTube OAuth secrets not set yet — skipping live YouTube API upload (videos still rendered).")
+        print("ℹ️  YouTube OAuth secrets not set yet — skipping live YouTube API upload.")
         return None
 
     sb_path = pick_next_unpublished_storyboard()
@@ -192,13 +319,16 @@ def publish_next_in_queue(privacy_status: str = "public") -> Optional[Dict[str, 
         return None
 
     storyboard = json.loads(sb_path.read_text(encoding="utf-8"))
-    outputs = render_project(storyboard_path=sb_path, output_dir=OUTPUT_DIR, tts_provider="auto")
+    tts_provider = _select_live_tts_provider()
+    print(f"🎙️ Rendering next queued video '{sb_path.stem}' with TTS={tts_provider}...")
+    outputs = render_project(storyboard_path=sb_path, output_dir=OUTPUT_DIR, tts_provider=tts_provider)
     access_token = get_access_token(client_id, client_secret, refresh_token)
 
     video_id = upload_video_resumable(
         access_token=access_token,
         mp4_path=outputs["video"],
         storyboard=storyboard,
+        slug=sb_path.stem,
         privacy_status=privacy_status,
     )
 
@@ -210,17 +340,35 @@ def publish_next_in_queue(privacy_status: str = "public") -> Optional[Dict[str, 
         except Exception as exc:
             print(f"⚠️ Thumbnail upload skipped (verify phone number in YouTube Studio): {exc}")
 
+    try:
+        upload_srt_captions(access_token, video_id, outputs["srt"])
+        print("   ✓ Uploaded English .srt closed captions.")
+    except Exception as exc:
+        print(f"⚠️ SRT caption upload skipped (optional youtube.force-ssl scope): {exc}")
+
+    if privacy_status == "public":
+        try:
+            post_top_affiliate_comment(access_token, video_id, storyboard)
+            print("   ✓ Posted Day-1 Affiliate CTA comment.")
+        except Exception as exc:
+            print(f"⚠️ Top comment skipped (enable youtube.force-ssl scope if desired): {exc}")
+
     ledger = load_ledger()
     ledger.setdefault("published", {})[sb_path.stem] = {
         "video_id": video_id,
         "url": f"https://youtu.be/{video_id}",
         "title": storyboard["title"],
+        "privacy_status": privacy_status,
+        "published_at": datetime.now(timezone.utc).isoformat(),
     }
     save_ledger(ledger)
-    print(f"✅ Auto-published to YouTube: https://youtu.be/{video_id}")
+    print(f"✅ Auto-published to YouTube ({privacy_status}): https://youtu.be/{video_id}")
     return {"slug": sb_path.stem, "video_id": video_id, "url": f"https://youtu.be/{video_id}"}
 
 
 if __name__ == "__main__":
-    privacy = sys.argv[1] if len(sys.argv) > 1 else "public"
-    publish_next_in_queue(privacy_status=privacy)
+    arg = sys.argv[1] if len(sys.argv) > 1 else "public"
+    if arg in ("--verify", "verify"):
+        verify_youtube_channel()
+    else:
+        publish_next_in_queue(privacy_status=arg)

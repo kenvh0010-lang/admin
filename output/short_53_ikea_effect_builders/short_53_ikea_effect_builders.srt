@@ -1,0 +1,103 @@
+1
+00:00:00,000 --> 00:00:02,500
+The hardest project to shut down
+
+2
+00:00:02,500 --> 00:00:04,922
+is never the expensive tool you
+
+3
+00:00:04,922 --> 00:00:05,469
+bought;
+
+4
+00:00:05,469 --> 00:00:07,579
+it is the clunky system you
+
+5
+00:00:07,579 --> 00:00:09,610
+built with your own hands.
+
+6
+00:00:09,610 --> 00:00:10,110
+In 2012,
+
+7
+00:00:10,110 --> 00:00:11,797
+researchers Michael Norton,
+
+8
+00:00:11,797 --> 00:00:12,672
+Daniel Mochon,
+
+9
+00:00:12,672 --> 00:00:14,922
+and Dan Ariely demonstrated the IKEA
+
+10
+00:00:14,922 --> 00:00:16,985
+Effect in the Journal of Consumer
+
+11
+00:00:16,985 --> 00:00:17,672
+Psychology.
+
+12
+00:00:17,672 --> 00:00:20,297
+Participants who assembled plain boxes and
+
+13
+00:00:20,297 --> 00:00:23,047
+paper origami valued their amateur creations
+
+14
+00:00:23,047 --> 00:00:25,110
+up to sixty-three percent higher.
+
+15
+00:00:25,110 --> 00:00:26,468
+Sweat distorts judgment.
+
+16
+00:00:26,468 --> 00:00:28,675
+Founders and engineers pour months into
+
+17
+00:00:28,675 --> 00:00:31,447
+lukewarm products or tangled spreadsheets because
+
+18
+00:00:31,447 --> 00:00:33,880
+personal labor masquerades as market value.
+
+19
+00:00:33,880 --> 00:00:36,230
+Protect your hours with the Outsider
+
+20
+00:00:36,230 --> 00:00:37,340
+Replacement Test:
+
+21
+00:00:37,340 --> 00:00:39,951
+ask whether an objective stranger taking
+
+22
+00:00:39,951 --> 00:00:41,845
+your seat today would pay for
+
+23
+00:00:41,845 --> 00:00:44,260
+or rebuild this project from scratch.
+
+24
+00:00:44,260 --> 00:00:46,850
+Judge your work by the problem
+
+25
+00:00:46,850 --> 00:00:48,663
+it solves for others,
+
+26
+00:00:48,663 --> 00:00:51,340
+never by the hours it cost you.

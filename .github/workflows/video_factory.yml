@@ -1,4 +1,4 @@
-name: Mind & Margin — Background Video Factory & Autopilot
+name: Mind & Margin — Background Video Factory & 24/7 YouTube Autopilot
 
 on:
   push:
@@ -11,88 +11,120 @@ on:
     - cron: '0 13 * * 2,4,6,0'
   workflow_dispatch:
     inputs:
+      mode:
+        description: 'Execution mode'
+        type: choice
+        options:
+          - auto_publish_next
+          - verify_youtube_only
+          - rebuild_full_vault
+        default: auto_publish_next
+      privacy_status:
+        description: 'YouTube upload privacy status (use unlisted to preview first!)'
+        type: choice
+        options:
+          - public
+          - unlisted
+          - private
+        default: public
       amazon_associate_tag:
-        description: 'Optional Amazon Associate Tag (e.g., mindandmargin-20) to inject across site & descriptions'
+        description: 'Optional override for Amazon Associate Tag (defaults to mindandmarg06-20)'
         required: false
         default: ''
-      auto_upload_youtube:
-        description: 'Upload next unpublished video to YouTube if OAuth secrets are configured'
-        type: boolean
-        default: true
 
 permissions:
   contents: write
 
 concurrency:
-  group: mind-and-margin-video-factory
-  cancel-in-progress: true
+  group: mind-and-margin-video-factory-${{ github.event_name }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
   produce-and-publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.12 & FFmpeg
+      - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Install FFmpeg & Free Microsoft Neural TTS (edge-tts)
         run: |
-          sudo apt-get update -y && sudo apt-get install -y ffmpeg fonts-roboto fonts-dejavu-core zip
+          if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
+            sudo apt-get update -y && sudo apt-get install -y ffmpeg fonts-roboto fonts-dejavu-core zip
+          fi
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Rebuild 48-Article Public SEO Website & Sync Affiliate Tag
-        env:
-          INPUT_TAG: ${{ inputs.amazon_associate_tag || vars.AMAZON_ASSOC_TAG || 'mindandmarg06-20' }}
-        run: |
-          python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
-
-      - name: Parallel Batch Render All 48 Videos With American Neural Voiceover (edge-tts)
-        run: |
-          python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4
-          mkdir -p release_bundles
-          zip -r release_bundles/month1_week01_videos.zip output/short_01_* output/short_02_* output/short_03_* output/long_01_*
-          zip -r release_bundles/month1_week02_videos.zip output/short_04_* output/short_05_* output/short_06_* output/long_02_*
-          zip -r release_bundles/month1_week03_videos.zip output/short_07_* output/short_08_* output/short_09_* output/long_03_*
-          zip -r release_bundles/month1_week04_videos.zip output/short_10_* output/short_11_* output/short_12_* output/long_04_*
-          zip -r release_bundles/month2_week05_videos.zip output/short_13_* output/short_14_* output/short_15_* output/long_05_*
-          zip -r release_bundles/month2_week06_videos.zip output/short_16_* output/short_17_* output/short_18_* output/long_06_*
-          zip -r release_bundles/month2_week07_videos.zip output/short_19_* output/short_20_* output/short_21_* output/long_07_*
-          zip -r release_bundles/month2_week08_videos.zip output/short_22_* output/short_23_* output/short_24_* output/long_08_*
-          zip -r release_bundles/month3_week09_videos.zip output/short_25_* output/short_26_* output/short_27_* output/long_09_*
-          zip -r release_bundles/month3_week10_videos.zip output/short_28_* output/short_29_* output/short_30_* output/long_10_*
-          zip -r release_bundles/month3_week11_videos.zip output/short_31_* output/short_32_* output/short_33_* output/long_11_*
-          zip -r release_bundles/month3_week12_videos.zip output/short_34_* output/short_35_* output/short_36_* output/long_12_*
-
-      - name: Auto-Publish Next Queued Video to YouTube (if YouTube Secrets configured)
-        if: ${{ github.event_name == 'schedule' || inputs.auto_upload_youtube == true }}
+      - name: Verify YouTube Channel OAuth Connection (when verify_youtube_only selected)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'verify_youtube_only' }}
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: |
-          python3 -m yt_studio.youtube_uploader public
+          python3 cli.py verify-youtube
+
+      - name: Rebuild Public SEO Website & Sync Affiliate Tag (mindandmarg06-20)
+        if: ${{ inputs.mode != 'verify_youtube_only' }}
+        env:
+          INPUT_TAG: ${{ inputs.amazon_associate_tag || vars.AMAZON_ASSOC_TAG || 'mindandmarg06-20' }}
+        run: |
+          python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
+
+      - name: Parallel Batch Render All 24 Weeks / 96 Videos (on code/script push or full rebuild)
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        run: |
+          python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4
+          mkdir -p release_bundles
+          python3 - <<'PY'
+          import subprocess
+          from pathlib import Path
+          shorts = sorted(Path("output").glob("short_*"))
+          longs = sorted(Path("output").glob("long_*"))
+          total_weeks = min(len(longs), len(shorts) // 3)
+          for w in range(1, total_weeks + 1):
+              m = (w - 1) // 4 + 1
+              s_dirs = shorts[(w - 1) * 3 : w * 3]
+              l_dir = longs[w - 1]
+              zip_name = f"release_bundles/month{m}_week{w:02d}_videos.zip"
+              cmd = ["zip", "-r", zip_name] + [str(p) for p in s_dirs] + [str(l_dir)]
+              subprocess.run(cmd, check=True)
+              print(f"Packed {zip_name}")
+          PY
+
+      - name: Fast 24/7 YouTube Auto-Publish Next Queued Video + SRT + Thumbnail + Top Comment
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'auto_publish_next') }}
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          PRIVACY: ${{ inputs.privacy_status || 'public' }}
+        run: |
+          python3 cli.py publish-next --privacy "$PRIVACY"
 
       - name: Commit Updated Site, SEO Packs & Publish Ledger
+        if: ${{ inputs.mode != 'verify_youtube_only' }}
         run: |
           git config user.name "Mind & Margin Autopilot"
           git config user.email "actions@github.com"
           git add docs/ products/bio_funnel_page/ output/
           if [ -f content/published_ledger.json ]; then git add content/published_ledger.json; fi
-          git diff --cached --quiet || (git pull --rebase origin main && git commit -m "chore(autopilot): sync 48-guide site, neural voice SEO packs & ledger [skip ci]" && git push)
+          git diff --cached --quiet || (git pull --rebase origin main && git commit -m "chore(autopilot): sync SEO site, upload packs & YouTube ledger [skip ci]" && git push)
 
-      - name: Publish 90-Day Neural-Voiced MP4 Packs (48 Videos) to GitHub Releases
+      - name: Publish 24-Week / 180-Day Neural-Voiced MP4 Packs to GitHub Releases
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: q1-90day-neural-videos
-          name: "🎬 Quarter 1 Complete 90-Day Video Vault (48 Neural-Voiced MP4s — Weeks 1–12)"
+          name: "🎬 Complete Half-Year Video Vault (96 Neural-Voiced MP4s — Weeks 1–24 / Q1 & Q2)"
           body: |
-            ### 100% Automated Cloud Render — Full 90-Day / 12-Week Library (48 Videos)!
-            Download any weekly `.zip` bundle (`month1_week01` through `month3_week12`) containing ready-to-upload **1080x1920 Shorts (36)** & **1920x1080 Long-form Visual Essays (12)** with natural American English neural voiceover (`en-US-ChristopherNeural`), 100% copyright-free ambient music, `.srt` subtitles, high-CTR thumbnails, and copy-paste YouTube SEO descriptions.
+            ### 100% Automated Cloud Render — Full 180-Day / 24-Week Library (96 Fact-Checked Videos)!
+            Download any weekly `.zip` bundle (`month1_week01` through `month6_week24`) containing ready-to-upload **1080x1920 Shorts (72)** & **1920x1080 Long-form Visual Essays (24)** with natural American English neural voiceover (`en-US-ChristopherNeural`), Ken Burns motion transitions, academic source citations, 100% copyright-free ambient music, `.srt` subtitles, high-CTR thumbnails, and copy-paste YouTube SEO descriptions (`mindandmarg06-20`).
           files: |
             release_bundles/*.zip
         env:

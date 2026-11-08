@@ -71,19 +71,25 @@ def synthesize_voice(
                 raise RuntimeError(f"ElevenLabs TTS failed: {exc}") from exc
 
     if provider in ("auto", "edge") and shutil.which("edge-tts"):
-        try:
-            mp3_path = output_path.with_suffix(".mp3")
-            subprocess.run(
-                ["edge-tts", "--voice", resolved_voice, "--rate=+4%", "--text", text, "--write-media", str(mp3_path)],
-                check=True,
-                capture_output=True,
-                text=True,
-                timeout=30,
-            )
-            return mp3_path, probe_audio_duration(mp3_path), f"edge-tts ({resolved_voice})"
-        except Exception as exc:
-            if provider == "edge":
-                raise RuntimeError(f"edge-tts failed: {exc}") from exc
+        mp3_path = output_path.with_suffix(".mp3")
+        last_exc = None
+        for attempt in range(3):
+            try:
+                subprocess.run(
+                    ["edge-tts", "--voice", resolved_voice, "--rate=+4%", "--text", text, "--write-media", str(mp3_path)],
+                    check=True,
+                    capture_output=True,
+                    text=True,
+                    timeout=35,
+                )
+                if mp3_path.is_file() and mp3_path.stat().st_size > 512:
+                    return mp3_path, probe_audio_duration(mp3_path), f"edge-tts ({resolved_voice})"
+            except Exception as exc:
+                last_exc = exc
+                import time
+                time.sleep(0.8 * (attempt + 1))
+        if provider == "edge" and last_exc is not None:
+            raise RuntimeError(f"edge-tts failed after 3 attempts: {last_exc}") from last_exc
 
     # Offline fallback: silent narration timing track (ambient music will carry audio during preview)
     wav_path = output_path.with_suffix(".wav")

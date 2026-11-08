@@ -179,6 +179,9 @@ def main() -> int:
     p_pub.add_argument("--privacy", default="public", choices=["public", "unlisted", "private"])
     p_pub.set_defaults(func=cmd_publish_next)
 
+    p_ver = sub.add_parser("verify-youtube", help="Verify YouTube OAuth2 secrets and print connected channel info")
+    p_ver.set_defaults(func=cmd_verify_youtube)
+
     args = parser.parse_args()
     return args.func(args)
 
@@ -194,6 +197,12 @@ def cmd_publish_next(args: argparse.Namespace) -> int:
     from yt_studio.youtube_uploader import publish_next_in_queue
     publish_next_in_queue(privacy_status=args.privacy)
     return 0
+
+
+def cmd_verify_youtube(args: argparse.Namespace) -> int:
+    from yt_studio.youtube_uploader import verify_youtube_channel
+    info = verify_youtube_channel()
+    return 0 if info else 1
 
 
 if __name__ == "__main__":

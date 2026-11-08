@@ -1,0 +1,383 @@
+1
+00:00:00,000 --> 00:00:03,467
+Suppose someone offers you a fair coin toss on
+
+2
+00:00:03,467 --> 00:00:05,126
+your entire net worth.
+
+3
+00:00:05,126 --> 00:00:07,085
+Every time it lands heads,
+
+4
+00:00:07,085 --> 00:00:09,497
+your wealth jumps fifty percent.
+
+5
+00:00:09,497 --> 00:00:11,457
+Every time it lands tails,
+
+6
+00:00:11,457 --> 00:00:13,869
+your wealth drops forty percent.
+
+7
+00:00:13,869 --> 00:00:18,316
+Standard textbook expected value says you gain five percent
+
+8
+00:00:18,316 --> 00:00:18,995
+per toss,
+
+9
+00:00:18,995 --> 00:00:21,482
+so you should play all afternoon.
+
+10
+00:00:21,482 --> 00:00:25,251
+Yet watch what actually happens to one real person
+
+11
+00:00:25,251 --> 00:00:26,005
+over time.
+
+12
+00:00:26,005 --> 00:00:28,341
+Start with one hundred dollars:
+
+13
+00:00:28,341 --> 00:00:31,733
+win fifty percent to reach one hundred fifty,
+
+14
+00:00:31,733 --> 00:00:34,824
+then lose forty percent on the next toss,
+
+15
+00:00:34,824 --> 00:00:37,160
+and you drop to ninety dollars.
+
+16
+00:00:37,160 --> 00:00:41,080
+One win plus one loss leaves you ten percent poorer.
+
+17
+00:00:41,080 --> 00:00:41,609
+In 2019,
+
+18
+00:00:41,609 --> 00:00:45,706
+physicist Ole Peters explained this paradox in Nature Physics.
+
+19
+00:00:45,706 --> 00:00:46,631
+For centuries,
+
+20
+00:00:46,631 --> 00:00:49,605
+economic models treated the ensemble average,
+
+21
+00:00:49,605 --> 00:00:52,844
+the mean across a thousand parallel people at one
+
+22
+00:00:52,844 --> 00:00:53,967
+snapshot in time,
+
+23
+00:00:53,967 --> 00:00:56,148
+as identical to the time average,
+
+24
+00:00:56,148 --> 00:01:00,576
+the path experienced by one person living through sequential years.
+
+25
+00:01:00,576 --> 00:01:04,409
+A system where those two averages match is called ergodic.
+
+26
+00:01:04,409 --> 00:01:05,202
+Real wealth,
+
+27
+00:01:05,202 --> 00:01:05,665
+health,
+
+28
+00:01:05,665 --> 00:01:08,308
+and reputation are strictly non-ergodic.
+
+29
+00:01:08,308 --> 00:01:09,432
+In the coin game,
+
+30
+00:01:09,432 --> 00:01:13,067
+a tiny handful of parallel players flip twenty straight
+
+31
+00:01:13,067 --> 00:01:15,049
+heads and become billionaires,
+
+32
+00:01:15,049 --> 00:01:19,147
+skewing the crowd average upward while nearly every individual
+
+33
+00:01:19,147 --> 00:01:21,460
+player steadily bleeds toward zero.
+
+34
+00:01:21,460 --> 00:01:25,823
+Non-ergodic traps exist wherever gains and losses multiply rather
+
+35
+00:01:25,823 --> 00:01:26,427
+than add,
+
+36
+00:01:26,427 --> 00:01:29,716
+especially near an absorbing barrier called ruin.
+
+37
+00:01:29,716 --> 00:01:33,945
+Multiply thirty years of brilliant fifteen-percent returns by a
+
+38
+00:01:33,945 --> 00:01:34,750
+single zero,
+
+39
+00:01:34,750 --> 00:01:37,301
+and the final product is zero forever.
+
+40
+00:01:37,301 --> 00:01:40,724
+You cannot average your way back out of bankruptcy,
+
+41
+00:01:40,724 --> 00:01:41,932
+permanent burnout,
+
+42
+00:01:41,932 --> 00:01:45,557
+or a shattered reputation by pointing to what happened
+
+43
+00:01:45,557 --> 00:01:48,108
+to nine other people in a spreadsheet.
+
+44
+00:01:48,108 --> 00:01:49,853
+Think of Russian roulette:
+
+45
+00:01:49,853 --> 00:01:52,806
+five chambers out of six pay a massive prize
+
+46
+00:01:52,806 --> 00:01:53,947
+on a single pull,
+
+47
+00:01:53,947 --> 00:01:58,310
+yet play sequentially across enough Tuesday mornings and survival
+
+48
+00:01:58,310 --> 00:01:59,250
+drops to zero.
+
+49
+00:01:59,250 --> 00:02:03,058
+Here is the empowering twist discovered by Bell Labs
+
+50
+00:02:03,058 --> 00:02:04,815
+physicist John Kelly Jr.
+
+51
+00:02:04,815 --> 00:02:05,401
+in 1956.
+
+52
+00:02:05,401 --> 00:02:08,184
+You do not have to walk away from that
+
+53
+00:02:08,184 --> 00:02:09,355
+biased fifty-up,
+
+54
+00:02:09,355 --> 00:02:10,893
+forty-down coin game;
+
+55
+00:02:10,893 --> 00:02:14,408
+you simply have to stop betting your whole pile.
+
+56
+00:02:14,408 --> 00:02:18,289
+If you wager only twenty-five percent of your capital
+
+57
+00:02:18,289 --> 00:02:21,951
+on each toss and keep seventy-five percent in safe
+
+58
+00:02:21,951 --> 00:02:22,610
+reserves,
+
+59
+00:02:22,610 --> 00:02:26,344
+a heads win lifts your total portfolio twelve point
+
+60
+00:02:26,344 --> 00:02:27,296
+five percent,
+
+61
+00:02:27,296 --> 00:02:30,372
+while a tails loss trims just ten percent.
+
+62
+00:02:30,372 --> 00:02:32,642
+Pair one win with one loss now,
+
+63
+00:02:32,642 --> 00:02:36,157
+and one hundred dollars grows to one hundred one
+
+64
+00:02:36,157 --> 00:02:38,354
+dollars and twenty-five cents.
+
+65
+00:02:38,354 --> 00:02:40,990
+Sizing flips decay into compounding.
+
+66
+00:02:40,990 --> 00:02:43,309
+Once you wear the ergodicity lens,
+
+67
+00:02:43,309 --> 00:02:47,741
+hidden traps jump out across everyday finance and career choices.
+
+68
+00:02:47,741 --> 00:02:51,492
+Buying stocks on margin looks clever during calm years,
+
+69
+00:02:51,492 --> 00:02:55,106
+until one sharp recession forces a liquidation at the
+
+70
+00:02:55,106 --> 00:02:55,993
+exact bottom,
+
+71
+00:02:55,993 --> 00:02:58,175
+locking you out of the recovery.
+
+72
+00:02:58,175 --> 00:03:02,062
+Living with zero emergency savings turns a routine layoff
+
+73
+00:03:02,062 --> 00:03:04,517
+into high-interest credit card debt.
+
+74
+00:03:04,517 --> 00:03:08,064
+Cutting an ethical corner to hit one quarterly bonus
+
+75
+00:03:08,064 --> 00:03:11,132
+puts thirty years of career trust on a single
+
+76
+00:03:11,132 --> 00:03:12,360
+spin of the wheel.
+
+77
+00:03:12,360 --> 00:03:13,110
+Conversely,
+
+78
+00:03:13,110 --> 00:03:17,134
+holding a boring six-month cash reserve looks suboptimal on
+
+79
+00:03:17,134 --> 00:03:18,498
+a bull-market chart,
+
+80
+00:03:18,498 --> 00:03:21,430
+yet guarantees you never sell under duress.
+
+81
+00:03:21,430 --> 00:03:25,378
+Apply survival math this week using three concrete shields.
+
+82
+00:03:25,378 --> 00:03:27,719
+Shield one is the Zero-Ruin Filter:
+
+83
+00:03:27,719 --> 00:03:29,258
+refuse any opportunity,
+
+84
+00:03:29,258 --> 00:03:32,537
+no matter how high the advertised average return,
+
+85
+00:03:32,537 --> 00:03:35,614
+if its worst-case outcome impairs your health,
+
+86
+00:03:35,614 --> 00:03:36,618
+your integrity,
+
+87
+00:03:36,618 --> 00:03:38,157
+or your basic solvency.
+
+88
+00:03:38,157 --> 00:03:40,900
+Shield two is Fractional Position Sizing:
+
+89
+00:03:40,900 --> 00:03:43,108
+cap any single speculative stock,
+
+90
+00:03:43,108 --> 00:03:43,911
+angel check,
+
+91
+00:03:43,911 --> 00:03:46,654
+or side venture at five to ten percent of
+
+92
+00:03:46,654 --> 00:03:49,665
+your net worth so even a total wipeout leaves
+
+93
+00:03:49,665 --> 00:03:52,141
+ninety percent of your engine intact.
+
+94
+00:03:52,141 --> 00:03:54,616
+Shield three is Forced-Sale Immunity:
+
+95
+00:03:54,616 --> 00:03:58,296
+maintain six months of lean expenses in liquid treasury
+
+96
+00:03:58,296 --> 00:04:02,110
+cash so your compounding line stays unbroken for decades.

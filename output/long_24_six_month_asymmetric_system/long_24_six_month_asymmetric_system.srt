@@ -1,0 +1,391 @@
+1
+00:00:00,000 --> 00:00:01,945
+Six months into any calendar year,
+
+2
+00:00:01,945 --> 00:00:05,434
+the gap between loud January resolutions and quiet behavioral
+
+3
+00:00:05,434 --> 00:00:07,837
+architecture becomes impossible to ignore.
+
+4
+00:00:07,837 --> 00:00:10,812
+Willpower-driven sprints fizzle out by mid-February,
+
+5
+00:00:10,812 --> 00:00:14,473
+leaving behind unused subscriptions and half-finished notebooks.
+
+6
+00:00:14,473 --> 00:00:15,045
+Meanwhile,
+
+7
+00:00:15,045 --> 00:00:18,134
+someone protecting just five calm morning hours a week
+
+8
+00:00:18,134 --> 00:00:21,910
+across twenty-six consecutive weeks has quietly banked one hundred
+
+9
+00:00:21,910 --> 00:00:25,285
+and thirty hours of deep asset creation alongside automated
+
+10
+00:00:25,285 --> 00:00:26,200
+monthly savings.
+
+11
+00:00:26,200 --> 00:00:29,403
+To make your next twenty-six weeks compound even cleaner
+
+12
+00:00:29,403 --> 00:00:30,261
+than your last,
+
+13
+00:00:30,261 --> 00:00:34,151
+we are locking five classic economic and psychological breakthroughs
+
+14
+00:00:34,151 --> 00:00:36,840
+into one repeatable half-year operating system.
+
+15
+00:00:36,840 --> 00:00:40,309
+Layer One begins with Nobel economist Ronald Coase and
+
+16
+00:00:40,309 --> 00:00:42,493
+his landmark 1937 Economica paper,
+
+17
+00:00:42,493 --> 00:00:46,476
+'The Nature of the Firm.' Coase asked a foundational question:
+
+18
+00:00:46,476 --> 00:00:48,082
+if markets are efficient,
+
+19
+00:00:48,082 --> 00:00:51,486
+why do giant companies with layers of middle managers
+
+20
+00:00:51,486 --> 00:00:52,321
+exist at all?
+
+21
+00:00:52,321 --> 00:00:54,441
+His answer was transaction costs,
+
+22
+00:00:54,441 --> 00:00:56,240
+the friction of negotiating,
+
+23
+00:00:56,240 --> 00:00:57,075
+coordinating,
+
+24
+00:00:57,075 --> 00:00:59,773
+and verifying every step across outsiders.
+
+25
+00:00:59,773 --> 00:01:00,158
+Today,
+
+26
+00:01:00,158 --> 00:01:01,122
+Python scripts,
+
+27
+00:01:01,122 --> 00:01:02,342
+cloud distribution,
+
+28
+00:01:02,342 --> 00:01:06,197
+and modern AI pipelines collapse those production costs near
+
+29
+00:01:06,197 --> 00:01:09,730
+zero while big firms drown in internal status meetings.
+
+30
+00:01:09,730 --> 00:01:13,584
+Keeping your operation to one clear owner plus deterministic
+
+31
+00:01:13,584 --> 00:01:17,181
+software lets five weekly hours produce output that once
+
+32
+00:01:17,181 --> 00:01:18,980
+required a whole department.
+
+33
+00:01:18,980 --> 00:01:22,405
+Layer Two funds your personal runway without austerity,
+
+34
+00:01:22,405 --> 00:01:26,141
+drawing on Richard Thaler and Shlomo Benartzi's 2004 Journal
+
+35
+00:01:26,141 --> 00:01:27,823
+of Political Economy study,
+
+36
+00:01:27,823 --> 00:01:31,310
+'Save More Tomorrow.' Instead of asking workers to slash
+
+37
+00:01:31,310 --> 00:01:32,742
+today's grocery budget,
+
+38
+00:01:32,742 --> 00:01:36,167
+Thaler and Benartzi had employees pre-commit a slice of
+
+39
+00:01:36,167 --> 00:01:39,904
+future pay raises directly into investments before the extra
+
+40
+00:01:39,904 --> 00:01:41,398
+money ever hit checking.
+
+41
+00:01:41,398 --> 00:01:42,581
+Across four raises,
+
+42
+00:01:42,581 --> 00:01:48,186
+average savings rates climbed from three-point-five percent to thirteen-point-six percent.
+
+43
+00:01:48,186 --> 00:01:51,237
+Apply the exact ratchet at your half-year review:
+
+44
+00:01:51,237 --> 00:01:53,230
+route half of every salary bump,
+
+45
+00:01:53,230 --> 00:01:53,604
+bonus,
+
+46
+00:01:53,604 --> 00:01:57,340
+or new digital asset dollar straight into broad index funds.
+
+47
+00:01:57,340 --> 00:02:02,026
+Layer Three converts good creative intentions into unbroken shipping
+
+48
+00:02:02,026 --> 00:02:07,609
+using psychologist Peter Gollwitzer's 1999 research on Implementation Intentions.
+
+49
+00:02:07,609 --> 00:02:11,468
+Never leave your five weekly asset hours floating inside
+
+50
+00:02:11,468 --> 00:02:15,466
+weekday evenings when your cognitive fuel is already spent
+
+51
+00:02:15,466 --> 00:02:16,568
+by your day job.
+
+52
+00:02:16,568 --> 00:02:20,428
+Anchor them to unbreakable If-Then cues before the world
+
+53
+00:02:20,428 --> 00:02:21,048
+wakes up.
+
+54
+00:02:21,048 --> 00:02:21,875
+For example:
+
+55
+00:02:21,875 --> 00:02:24,976
+'If it is seven AM Saturday at my clear desk,
+
+56
+00:02:24,976 --> 00:02:27,871
+then my phone stays in the kitchen while I
+
+57
+00:02:27,871 --> 00:02:30,834
+write one flagship essay for two and a half
+
+58
+00:02:30,834 --> 00:02:31,248
+hours.
+
+59
+00:02:31,248 --> 00:02:32,971
+If it is seven AM Sunday,
+
+60
+00:02:32,971 --> 00:02:33,936
+then I render,
+
+61
+00:02:33,936 --> 00:02:34,418
+verify,
+
+62
+00:02:34,418 --> 00:02:38,760
+and schedule the week's four finished assets before breakfast.'
+
+63
+00:02:38,760 --> 00:02:43,016
+Even a clean studio accumulates barnacles across twenty-six weeks,
+
+64
+00:02:43,016 --> 00:02:46,562
+which is why Layer Four combines Gabrielle Adams's 2021
+
+65
+00:02:46,562 --> 00:02:50,947
+Nature research on subtraction with Peter Drucker's 1964 abandonment
+
+66
+00:02:50,947 --> 00:02:51,269
+rule.
+
+67
+00:02:51,269 --> 00:02:55,138
+Adams and her co-authors proved our brains instinctively add
+
+68
+00:02:55,138 --> 00:02:59,200
+new tasks when reviewing progress instead of deleting friction.
+
+69
+00:02:59,200 --> 00:03:02,811
+Counter that bias before Quarter Three starts by running
+
+70
+00:03:02,811 --> 00:03:06,035
+Drucker's question across every recurring expense,
+
+71
+00:03:06,035 --> 00:03:06,938
+software tool,
+
+72
+00:03:06,938 --> 00:03:07,905
+content format,
+
+73
+00:03:07,905 --> 00:03:08,872
+and obligation:
+
+74
+00:03:08,872 --> 00:03:11,258
+'If I were not already in this today,
+
+75
+00:03:11,258 --> 00:03:12,805
+knowing what I now know,
+
+76
+00:03:12,805 --> 00:03:15,707
+would I enter it now?' Every honest 'no' gets
+
+77
+00:03:15,707 --> 00:03:19,060
+retired this week so your best energy stays unsplit.
+
+78
+00:03:19,060 --> 00:03:22,597
+Block sixty quiet minutes this weekend and execute all
+
+79
+00:03:22,597 --> 00:03:23,907
+four steps in order.
+
+80
+00:03:23,907 --> 00:03:24,497
+Step One,
+
+81
+00:03:24,497 --> 00:03:25,610
+the Coase Filter:
+
+82
+00:03:25,610 --> 00:03:29,671
+inspect your production workflow and automate or eliminate one
+
+83
+00:03:29,671 --> 00:03:33,470
+repetitive manual step so your studio stays friction-free.
+
+84
+00:03:33,470 --> 00:03:34,060
+Step Two,
+
+85
+00:03:34,060 --> 00:03:36,091
+the Save More Tomorrow Ratchet:
+
+86
+00:03:36,091 --> 00:03:39,824
+nudge your automatic payday investment transfer up by one
+
+87
+00:03:39,824 --> 00:03:40,807
+or two percent,
+
+88
+00:03:40,807 --> 00:03:44,999
+and pre-assign half of any second-half windfalls to investments.
+
+89
+00:03:44,999 --> 00:03:45,719
+Step Three,
+
+90
+00:03:45,719 --> 00:03:47,029
+the Gollwitzer Lock:
+
+91
+00:03:47,029 --> 00:03:50,698
+put your Saturday and Sunday morning If-Then blocks onto
+
+92
+00:03:50,698 --> 00:03:53,514
+the calendar for the next twenty-six weeks.
+
+93
+00:03:53,514 --> 00:03:54,169
+Step Four,
+
+94
+00:03:54,169 --> 00:03:55,741
+the Drucker-Adams Prune:
+
+95
+00:03:55,741 --> 00:03:58,820
+cancel three dead bills or commitments tonight,
+
+96
+00:03:58,820 --> 00:04:01,047
+and enter the second half lighter,
+
+97
+00:04:01,047 --> 00:04:01,702
+wealthier,
+
+98
+00:04:01,702 --> 00:04:02,750
+and compounding.

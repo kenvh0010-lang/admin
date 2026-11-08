@@ -1,0 +1,117 @@
+{
+  "title": "The Bell Labs Formula That Keeps Smart Winners Solvent",
+  "alt_title_1": "Why Betting Too Big on a Winning Edge Leads to Ruin",
+  "alt_title_2": "John Kelly's 1956 Position-Sizing Rule for Investors",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1956, Bell Labs physicist J. L. Kelly Jr. proved mathematically why betting too much of your capital on a genuine advantage still ends in bankruptcy. Here is how Half-Kelly position sizing protects long-term compounding.",
+  "tags": [
+    "kelly criterion",
+    "position sizing",
+    "bell labs math",
+    "risk of ruin",
+    "edward thorp",
+    "portfolio management",
+    "decision science"
+  ],
+  "thumbnail": {
+    "hook_text": "THE KELLY FORMULA",
+    "badge": "BEHAVIORAL MATH",
+    "stat": "1956"
+  },
+  "affiliate_cta": {
+    "offer_name": "Position-Sizing Calculator + Kelly & Thorp Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Have you ever been right about an investment thesis yet hurt by sizing the position too aggressively? 👇 Grab our Position-Sizing Calculator + reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "How a 60% Winning Coin Still Bankrupts You",
+      "visual_type": "stat_callout",
+      "stat_value": "Kelly Rule",
+      "stat_label": "WHY EDGE WITHOUT SIZING EQUALS RUIN",
+      "bullets": [
+        "Imagine a biased coin that lands heads 60% of flips",
+        "Betting 100% of your bankroll guarantees hitting zero"
+      ],
+      "highlight_words": [
+        "sixty",
+        "bankroll",
+        "guarantees",
+        "bankruptcy"
+      ],
+      "narration": "Even if you hold a winning coin that lands heads sixty percent of the time, betting your entire bankroll on every flip still guarantees eventual bankruptcy.",
+      "source": "J. L. Kelly Jr., Bell System Technical Journal (1956)"
+    },
+    {
+      "tag": "THE MATH",
+      "headline": "John Kelly's 1956 Bell Labs Proof",
+      "visual_type": "stat_callout",
+      "stat_value": "Bell 1956",
+      "stat_label": "ASYMMETRIC LOSSES PUNISH OVERBETTING",
+      "bullets": [
+        "A 50% drawdown demands a 100% gain just to break even",
+        "Betting past twice the Kelly optimum shrinks wealth to zero"
+      ],
+      "highlight_words": [
+        "1956",
+        "kelly",
+        "fifty",
+        "hundred"
+      ],
+      "narration": "In 1956, Bell Labs physicist John Kelly Jr. proved why in the Bell System Technical Journal: losses compound asymmetrically, because a fifty percent drop requires a one hundred percent gain just to recover.",
+      "source": "J. L. Kelly Jr., 'A New Interpretation of Information Rate' (1956)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Volatility Drag Wipes Out Impatient Winners",
+      "visual_type": "comparison_split",
+      "left_title": "RECKLESS ALL-IN BETS",
+      "left_body": "Positive edge + oversized stakes -> wiped out by 3 bad flips",
+      "right_title": "PROPORTIONAL SIZING",
+      "right_body": "Positive edge + capped stake -> survives streaks & compounds",
+      "highlight_words": [
+        "overbetting",
+        "volatility",
+        "streak",
+        "patient"
+      ],
+      "narration": "Overbetting a real advantage destroys wealth through volatility drag. One inevitable three-loss streak wipes out years of patient gains before the odds can play out."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Edward Thorp's Half-Kelly Guardrail",
+      "visual_type": "compounding_curve",
+      "stat_label": "HALF-KELLY SIZING SMOOTHS COMPOUNDING",
+      "stat_subtext": "Cut theoretical max bet by 50% -> ~75% growth at half the swing",
+      "highlight_words": [
+        "thorp",
+        "half-kelly",
+        "shallow",
+        "uninterrupted"
+      ],
+      "narration": "Seasoned allocators like Edward Thorp apply Half-Kelly sizing: stake half the mathematical maximum on any single bet so drawdowns stay shallow and capital compounds uninterrupted.",
+      "source": "Edward O. Thorp, 'The Kelly Criterion in Blackjack, Sports Betting, and the Stock Market' (1997)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Stay Solvent Long Enough for Edge to Work",
+      "visual_type": "stat_callout",
+      "stat_value": "<= 10% Cap",
+      "stat_label": "NEVER LET ONE LOSS END YOUR GAME",
+      "bullets": [
+        "Real-world probabilities are noisier than casino coins",
+        "Cap speculative bets so survival is never in question"
+      ],
+      "highlight_words": [
+        "speculative",
+        "position",
+        "outcome",
+        "compounding"
+      ],
+      "narration": "Cap every speculative position so no single bad outcome can ever knock you off the compounding curve.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
+    }
+  ]
+}

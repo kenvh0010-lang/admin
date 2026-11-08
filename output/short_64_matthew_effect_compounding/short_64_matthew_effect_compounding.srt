@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:02,453
+Why do two equally talented builders
+
+2
+00:00:02,453 --> 00:00:04,429
+start a hair apart in January
+
+3
+00:00:04,429 --> 00:00:06,474
+and finish five years later in
+
+4
+00:00:06,474 --> 00:00:08,450
+completely different leagues?
+
+5
+00:00:08,450 --> 00:00:10,355
+In a 1968 Science paper studying
+
+6
+00:00:10,355 --> 00:00:11,307
+Nobel laureates,
+
+7
+00:00:11,307 --> 00:00:12,557
+sociologist Robert K.
+
+8
+00:00:12,557 --> 00:00:15,056
+Merton named this cumulative advantage the
+
+9
+00:00:15,056 --> 00:00:15,949
+Matthew Effect:
+
+10
+00:00:15,949 --> 00:00:19,104
+a slight early lead attracts disproportionate credit,
+
+11
+00:00:19,104 --> 00:00:19,699
+resources,
+
+12
+00:00:19,699 --> 00:00:22,020
+and better opportunities that compound.
+
+13
+00:00:22,020 --> 00:00:24,061
+Perfectionists misread this math.
+
+14
+00:00:24,061 --> 00:00:26,411
+Waiting two years until your portfolio
+
+15
+00:00:26,411 --> 00:00:28,576
+or skill feels polished hands every
+
+16
+00:00:28,576 --> 00:00:31,112
+early feedback loop and distribution edge
+
+17
+00:00:31,112 --> 00:00:32,720
+to someone shipping today.
+
+18
+00:00:32,720 --> 00:00:34,780
+Optimize for earliest valid rep,
+
+19
+00:00:34,780 --> 00:00:36,068
+not flashiest debut:
+
+20
+00:00:36,068 --> 00:00:38,643
+automate your first small index transfer
+
+21
+00:00:38,643 --> 00:00:40,897
+and publish version one while peers
+
+22
+00:00:40,897 --> 00:00:42,120
+are still planning.
+
+23
+00:00:42,120 --> 00:00:45,410
+Get onto the cumulative advantage curve early,
+
+24
+00:00:45,410 --> 00:00:47,555
+and let small wins recruit the
+
+25
+00:00:47,555 --> 00:00:49,200
+next round of leverage.

@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:02,781
+Why can a single thirty-minute check-in
+
+2
+00:00:02,781 --> 00:00:04,064
+at two-thirty P.M.
+
+3
+00:00:04,064 --> 00:00:06,774
+wipe out an entire four-hour afternoon
+
+4
+00:00:06,774 --> 00:00:08,057
+of serious coding,
+
+5
+00:00:08,057 --> 00:00:08,628
+writing,
+
+6
+00:00:08,628 --> 00:00:09,840
+or strategy work?
+
+7
+00:00:09,840 --> 00:00:12,544
+In his influential 2009 essay Maker's Schedule,
+
+8
+00:00:12,544 --> 00:00:13,637
+Manager's Schedule,
+
+9
+00:00:13,637 --> 00:00:16,227
+Y Combinator co-founder Paul Graham explained
+
+10
+00:00:16,227 --> 00:00:18,470
+that workplaces run on two incompatible
+
+11
+00:00:18,470 --> 00:00:18,873
+clocks:
+
+12
+00:00:18,873 --> 00:00:21,750
+hourly manager slots versus half-day maker blocks.
+
+13
+00:00:21,750 --> 00:00:24,957
+Managers switch tasks smoothly every sixty minutes.
+
+14
+00:00:24,957 --> 00:00:27,347
+Makers must load complex mental models
+
+15
+00:00:27,347 --> 00:00:28,605
+into working memory,
+
+16
+00:00:28,605 --> 00:00:30,743
+so one mid-afternoon call splits a
+
+17
+00:00:30,743 --> 00:00:32,630
+block into unusable fragments.
+
+18
+00:00:32,630 --> 00:00:35,252
+Protect deep output by clustering every
+
+19
+00:00:35,252 --> 00:00:37,068
+call onto the edges of your
+
+20
+00:00:37,068 --> 00:00:37,337
+day,
+
+21
+00:00:37,337 --> 00:00:38,950
+after three-thirty P.M.,
+
+22
+00:00:38,950 --> 00:00:42,850
+leaving mornings and early afternoons completely unbroken.
+
+23
+00:00:42,850 --> 00:00:45,962
+Guard half-day maker blocks like client appointments,
+
+24
+00:00:45,962 --> 00:00:48,781
+because finished assets only emerge inside long,
+
+25
+00:00:48,781 --> 00:00:49,720
+quiet stretches.

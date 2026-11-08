@@ -1,0 +1,139 @@
+{
+  "title": "Escaping the 'Pretty Good' Trap: How Tolerable Comfort Stalls Growth",
+  "alt_title_1": "The Region-Beta Escape Plan: Kill Criteria for 6/10 Commitments",
+  "alt_title_2": "Daniel Gilbert, Annie Duke, and Peter Drucker on Quitting Stale Paths",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "Harvard psychologist Daniel Gilbert showed in 2004 that people escape terrible situations fast yet stay trapped in 'not so bad' ones for years. Combining Gilbert's Region-Beta Paradox with Annie Duke's Kill Criteria and Peter Drucker's Purposeful Abandonment, here is a calm plan to exit 6-out-of-10 stagnation.",
+  "tags": [
+    "region beta paradox",
+    "daniel gilbert",
+    "annie duke quit",
+    "kill criteria",
+    "peter drucker",
+    "career compounding",
+    "decision making",
+    "opportunity cost"
+  ],
+  "thumbnail": {
+    "hook_text": "ESCAPE 'PRETTY GOOD'",
+    "badge": "DECISION ESSAY",
+    "stat": "6/10 RUT"
+  },
+  "affiliate_cta": {
+    "offer_name": "States-and-Dates Kill Criteria Template + Annie Duke 'Quit' Link",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Where in your career or portfolio is a 'pretty good' 6/10 commitment blocking an 9/10 opportunity? Grab our free Kill-Criteria Decision Worksheet + book links here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "Why Disasters Last Months While 'Okay' Years Slip Away",
+      "visual_type": "stat_callout",
+      "stat_value": "6/10 Trap",
+      "stat_label": "THE PECULIAR LONGEVITY OF THINGS NOT SO BAD",
+      "bullets": [
+        "Toxic 2/10 jobs force immediate resumes and bold moves",
+        "Lukewarm 6/10 roles sedate ambition with Friday paychecks",
+        "Opportunity cost compounds invisibly across a full decade"
+      ],
+      "highlight_words": [
+        "disasters",
+        "lukewarm",
+        "gilbert",
+        "decade"
+      ],
+      "narration": "Ask ambitious professionals about the worst job or business partnership they ever endured, and most tell a surprisingly short story: things got unbearable, they updated their skills, and within ninety days they moved somewhere far better. Now ask about the role that quietly cost them their thirties, and the story sounds completely different. The manager was polite, the salary covered rent, the work felt dull by Tuesday noon, yet nothing hurt quite enough to force a change. In 2004, Harvard psychologist Daniel Gilbert and his co-authors gave this exact trap a scientific name: the Region-Beta Paradox.",
+      "source": "Gilbert, Lieberman, Morewedge & Wilson, Psychological Science (2004)"
+    },
+    {
+      "tag": "CHAPTER 2 • GILBERT'S THRESHOLD PARADOX",
+      "headline": "Why Biking 2 Miles Beats Walking 1 Mile",
+      "visual_type": "comparison_split",
+      "left_title": "UNDER THRESHOLD (WALK)",
+      "left_body": "0.9 miles feels 'close enough' -> 18 slow minutes on foot",
+      "right_title": "OVER THRESHOLD (BIKE)",
+      "right_body": "1.8 miles triggers bicycle -> arrives in 9 minutes flat",
+      "highlight_words": [
+        "commuter",
+        "threshold",
+        "bicycle",
+        "coping"
+      ],
+      "narration": "In their 2004 Psychological Science paper, Gilbert, Matthew Lieberman, Carey Morewedge, and Timothy Wilson illustrated the paradox through a simple commuter rule. Imagine you walk everywhere under one mile at twenty minutes per mile, but ride a bicycle at ten miles per hour for anything farther. Reaching a shop two miles away by bike takes twelve minutes, whereas walking nine-tenths of a mile takes eighteen. Human emotion and career action obey the same non-linear switch. Intense pain crosses your psychological defense threshold and mobilizes bold action, while mild dissatisfaction slips underneath the alarm and lingers indefinitely.",
+      "source": "Gilbert et al., 'The Peculiar Longevity of Things Not So Bad', Psychological Science (2004)"
+    },
+    {
+      "tag": "CHAPTER 3 • WHY GRIT TURNS TOXIC INSIDE THE RUT",
+      "headline": "Sunk Costs and Identity Disguise Inertia as Loyalty",
+      "visual_type": "stat_callout",
+      "stat_value": "Sunk Cost",
+      "stat_label": "IN-THE-MOMENT BIASES BLOCK RATIONAL EXITS",
+      "bullets": [
+        "Culture praises blind persistence while shaming strategic exits",
+        "Escalation of commitment pours fresh years after spent ones",
+        "Status quo bias magnifies switching risk over stagnation cost"
+      ],
+      "highlight_words": [
+        "duke",
+        "persistence",
+        "sunk",
+        "stagnation"
+      ],
+      "narration": "Former championship poker player and decision researcher Annie Duke explains why smart people stay stuck inside Region Beta in her 2022 book Quit. Modern work culture worships grit without asking whether you are climbing the right mountain. Once you have invested four years into a career track, a stagnant product line, or an underperforming stock, loss aversion and identity attachment warp your math. Stepping into the unknown carries visible short-term friction, whereas staying in a six-out-of-ten rut carries an invisible ten-year opportunity cost that never prints on a monthly bank statement, quietly starving the higher-upside bets you never had bandwidth to start.",
+      "source": "Annie Duke, Quit: The Power of Knowing When to Walk Away (2022)"
+    },
+    {
+      "tag": "CHAPTER 4 • PRE-COMMITTED KILL CRITERIA",
+      "headline": "Annie Duke's 'States and Dates' Firewall",
+      "visual_type": "compounding_curve",
+      "stat_label": "FAST CAPITAL & TIME REALLOCATION MULTIPLIES UPSIDE",
+      "stat_subtext": "Pre-set States & Dates -> prune flat bets early -> compound winning bets",
+      "highlight_words": [
+        "criteria",
+        "states",
+        "dates",
+        "calm"
+      ],
+      "narration": "Because nobody thinks clearly while emotionally invested mid-project, Duke recommends writing explicit Kill Criteria, which she summarizes as States and Dates, before or calmly outside the heat of execution. Mountain guides use strict turnaround times near a summit for the exact same reason: if climbers have not topped out by one PM, everyone turns down regardless of how close the peak looks. A career State-and-Date contract sounds equally concrete: 'If this role does not expand my technical ownership or compensation by fifteen percent before October first, I begin allocating five morning hours a week to an external portfolio.' When October arrives, you simply execute the sober rule your clearest self already signed.",
+      "source": "Annie Duke, Quit (2022), Kill Criteria ('States and Dates')"
+    },
+    {
+      "tag": "CHAPTER 5 • DRUCKER'S ABANDONMENT + PARALLEL BRIDGE",
+      "headline": "Never Leap Recklessly; Reallocate Deliberately",
+      "visual_type": "comparison_split",
+      "left_title": "IMPULSIVE BURNOUT LEAP",
+      "left_body": "Wait until miserable -> quit with $0 runway -> take next 6/10 offer",
+      "right_title": "CALM PARALLEL BRIDGE",
+      "right_body": "Ask Drucker's question early -> build 5-hr/wk asset bridge on salary",
+      "highlight_words": [
+        "drucker",
+        "1964",
+        "abandonment",
+        "bridge"
+      ],
+      "narration": "Management thinker Peter Drucker supplied the sharpest diagnostic lens in his 1964 classic Managing for Results: 'If we were not already in this today, knowing what we now know, would we enter it now?' Notice that answering 'no' about a stagnant job does not mean storming out tomorrow morning without a cash cushion. Financial margin makes strategic quitting calm. Keep collecting the steady paycheck to fund your automated savings floor, strip your daytime energy back from over-volunteering on dead-end committees, and channel five protected morning hours each week into building your replacement skill or digital asset bridge.",
+      "source": "Peter F. Drucker, Managing for Results (1964), purposeful abandonment"
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "Run the 3-Step Region-Beta Escape Audit",
+      "visual_type": "stat_callout",
+      "stat_value": "3-Step Exit",
+      "stat_label": "SCORE RUTS • SET KILL DATES • BUILD YOUR BRIDGE",
+      "bullets": [
+        "1. Score career, projects, and holdings 1-10; circle every 5 or 6",
+        "2. Write 2 measurable 'State by Date' kill criteria for the next 6 months",
+        "3. Lock 5 morning hours/week to build your 9/10 bridge before leaping"
+      ],
+      "highlight_words": [
+        "circle",
+        "sixes",
+        "six-month",
+        "five"
+      ],
+      "narration": "Run this three-step Region-Beta audit before Monday begins. Step One: list your primary career role, active side projects, and concentrated investments, score each from one to ten on compounding upside, and circle the dangerous fives and sixes hiding in plain sight. Step Two: apply Drucker's entry test to every circled item, then write down two measurable State-and-Date kill criteria six months out on your calendar. Step Three: protect five quiet morning hours a week starting Saturday to build demonstrable skills, six months of cash runway, or owned digital assets, so you step out of mediocrity from a position of unshakeable calm.",
+      "source": "Mind & Margin system synthesizing Gilbert (2004), Duke (2022) & Drucker (1964)"
+    }
+  ]
+}

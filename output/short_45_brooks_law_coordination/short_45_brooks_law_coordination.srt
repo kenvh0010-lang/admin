@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:02,256
+When a critical software or creative
+
+2
+00:00:02,256 --> 00:00:04,136
+project falls behind schedule,
+
+3
+00:00:04,136 --> 00:00:06,893
+adding three helpful teammates almost always
+
+4
+00:00:06,893 --> 00:00:09,087
+pushes the finish line even further
+
+5
+00:00:09,087 --> 00:00:09,400
+away.
+
+6
+00:00:09,400 --> 00:00:12,265
+In his 1975 classic The Mythical Man-Month,
+
+7
+00:00:12,265 --> 00:00:15,396
+IBM engineering manager Fred Brooks showed why:
+
+8
+00:00:15,396 --> 00:00:17,994
+communication channels scale by N times
+
+9
+00:00:17,994 --> 00:00:19,393
+N minus one over two.
+
+10
+00:00:19,393 --> 00:00:21,524
+Three builders have three links;
+
+11
+00:00:21,524 --> 00:00:22,990
+ten create forty-five.
+
+12
+00:00:22,990 --> 00:00:25,633
+Every newcomer requires onboarding from your
+
+13
+00:00:25,633 --> 00:00:27,735
+busiest builders right when time is
+
+14
+00:00:27,735 --> 00:00:28,275
+scarcest,
+
+15
+00:00:28,275 --> 00:00:31,398
+turning productive creation hours into status calls,
+
+16
+00:00:31,398 --> 00:00:31,939
+handoffs,
+
+17
+00:00:31,939 --> 00:00:33,140
+and merge conflicts.
+
+18
+00:00:33,140 --> 00:00:34,603
+When a deadline slips,
+
+19
+00:00:34,603 --> 00:00:37,330
+resist throwing headcount at the problem.
+
+20
+00:00:37,330 --> 00:00:38,926
+Cut non-essential scope,
+
+21
+00:00:38,926 --> 00:00:42,385
+shield a tiny two-to-three-person pod from meetings,
+
+22
+00:00:42,385 --> 00:00:44,380
+and ship the core asset first.
+
+23
+00:00:44,380 --> 00:00:46,594
+Shrink scope before expanding headcount,
+
+24
+00:00:46,594 --> 00:00:48,919
+because tiny aligned pods out-ship crowded
+
+25
+00:00:48,919 --> 00:00:50,690
+committees every single quarter.

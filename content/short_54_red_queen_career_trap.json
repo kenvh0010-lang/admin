@@ -1,0 +1,117 @@
+{
+  "title": "Running Twice as Fast Just to Stay in Place: The Red Queen Trap",
+  "alt_title_1": "Leigh Van Valen's 1973 Law Applied to Modern Careers",
+  "alt_title_2": "How to Escape Commodity Competition With Two-Domain Skills",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1973, evolutionary biologist Leigh Van Valen formulated the Red Queen Hypothesis to explain why species can evolve nonstop without gaining any survival edge. Here is how the exact same trap stalls single-skill careers.",
+  "tags": [
+    "red queen effect",
+    "leigh van valen",
+    "career moats",
+    "skill stacking",
+    "career strategy",
+    "mental models",
+    "ai commoditization"
+  ],
+  "thumbnail": {
+    "hook_text": "RED QUEEN TRAP",
+    "badge": "CAREER STRATEGY",
+    "stat": "1973"
+  },
+  "affiliate_cta": {
+    "offer_name": "Two-Domain Career Moat Map + Evolutionary Strategy Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What two separate domains could you combine so you stop competing on price or speed alone? 👇 Grab our Two-Domain Career Moat Map + reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Working Harder Every Year for Zero Extra Leverage",
+      "visual_type": "stat_callout",
+      "stat_value": "0 Net Gain",
+      "stat_label": "WHEN FASTER OUTPUT ONLY MATCHES THE CROWD",
+      "bullets": [
+        "Everyone adopts the same AI prompts and resume keywords",
+        "Hours climb while bargaining power stays flat"
+      ],
+      "highlight_words": [
+        "harder",
+        "productivity",
+        "leverage",
+        "still"
+      ],
+      "narration": "Why can you work harder every single year, adopt every new productivity tool, and still watch your career leverage stand completely still?",
+      "source": "Leigh Van Valen, 'A New Evolutionary Law', Evolutionary Theory (1973)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Leigh Van Valen's 1973 Red Queen Hypothesis",
+      "visual_type": "stat_callout",
+      "stat_value": "1973 Law",
+      "stat_label": "CO-EVOLUTION INSIDE CROWDED NICHES",
+      "bullets": [
+        "Predator and prey upgrades cancel each other's relative edge",
+        "Constant sprinting is required merely to avoid falling behind"
+      ],
+      "highlight_words": [
+        "1973",
+        "valen",
+        "queen",
+        "niche"
+      ],
+      "narration": "In 1973, evolutionary biologist Leigh Van Valen proposed the Red Queen Hypothesis: when rivals compete inside the exact same niche, every adaptation gets matched, forcing nonstop sprinting just to survive.",
+      "source": "Leigh Van Valen, Evolutionary Theory, Vol. 1, pp. 1-30 (1973)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Commodity Single-Lane Races Compress Margins",
+      "visual_type": "comparison_split",
+      "left_title": "CROWDED SINGLE LANE",
+      "left_body": "10,000 peers with identical templates -> faster work, lower pay",
+      "right_title": "ORTHOGONAL PAIRING",
+      "right_body": "Technical craft + domain strategy -> scarce intersection of one",
+      "highlight_words": [
+        "standardized",
+        "commodity",
+        "identical",
+        "lowers"
+      ],
+      "narration": "Competing on one standardized skill puts you in a commodity tournament. When ten thousand peers use identical templates and AI prompts, faster output only lowers everyone's rate."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Pair Orthogonal Skills to Exit the Tournament",
+      "visual_type": "compounding_curve",
+      "stat_label": "UNIQUE INTERSECTIONS COMPOUND PRICING POWER",
+      "stat_subtext": "Hard craft + rare communication or domain fluency -> zero clones",
+      "highlight_words": [
+        "orthogonal",
+        "combine",
+        "persuasive",
+        "ignore"
+      ],
+      "narration": "Escape the single-lane race through orthogonal skill pairing: combine a hard technical craft with persuasive writing, client strategy, or domain regulation that rivals ignore.",
+      "source": "Applied from Van Valen (1973) & Scott Adams, How to Fail at Almost Everything (2013)"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Step Sideways Out of Crowded Tournaments",
+      "visual_type": "stat_callout",
+      "stat_value": "2 Domains",
+      "stat_label": "CHANGE THE GAME INSTEAD OF DOUBLING SPEED",
+      "bullets": [
+        "Never fight a head-on commodity war you can sidestep",
+        "Build at the bridge between two valuable worlds"
+      ],
+      "highlight_words": [
+        "crowded",
+        "sideways",
+        "intersection",
+        "occupies"
+      ],
+      "narration": "Stop running faster down a crowded lane; step sideways into an intersection almost nobody else occupies.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
+    }
+  ]
+}

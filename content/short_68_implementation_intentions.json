@@ -1,0 +1,116 @@
+{
+  "title": "How One 'If-Then' Sentence Doubled Follow-Through in Labs",
+  "alt_title_1": "91% vs 38%: Peter Gollwitzer's Implementation Intentions",
+  "alt_title_2": "Why Specifying Time and Place Beats Motivation Speeches",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Psychologist Peter Gollwitzer introduced Implementation Intentions in 1999. In a 2002 British Journal of Health Psychology trial by Milne, Orbell, and Sheeran, adding one written 'When and Where' plan lifted exercise follow-through from 38% to 91%.",
+  "tags": [
+    "implementation intentions",
+    "peter gollwitzer",
+    "if then planning",
+    "habit science",
+    "behavioral psychology",
+    "deep work habits",
+    "execution systems"
+  ],
+  "thumbnail": {
+    "hook_text": "THE IF-THEN SENTENCE",
+    "badge": "91% VS 38% LAB",
+    "stat": "91%"
+  },
+  "affiliate_cta": {
+    "offer_name": "If-Then Execution Card + Behavioral Habit Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Write your next If-Then sentence in the comments ('If it is [time/place], then I will [action]')! Grab our printable If-Then Execution Card here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "38% vs 91% Follow-Through From One Sentence",
+      "visual_type": "stat_callout",
+      "stat_value": "91% vs 38%",
+      "stat_label": "SAME GOAL, RADICALLY DIFFERENT EXECUTION RATE",
+      "bullets": [
+        "Control group stayed stuck at 38% completion",
+        "One written If-Then trigger pushed action to 91%"
+      ],
+      "highlight_words": [
+        "thirty-eight",
+        "ninety-one",
+        "written",
+        "if-then"
+      ],
+      "narration": "How did one group of British students jump from thirty-eight percent exercise follow-through to ninety-one percent? One written If-Then sentence.",
+      "source": "Milne, Orbell & Sheeran, British Journal of Health Psychology (2002)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Gollwitzer (1999) & Milne, Orbell, Sheeran (2002)",
+      "visual_type": "stat_callout",
+      "stat_value": "35% -> 91%",
+      "stat_label": "MOTIVATION ALONE (35%) VS MOTIVATION + PLAN (91%)",
+      "bullets": [
+        "Health-risk pep talks alone added zero follow-through",
+        "Specifying exact day, time, and gym hit 91%"
+      ],
+      "highlight_words": [
+        "gollwitzer",
+        "1999",
+        "2002",
+        "ninety-one"
+      ],
+      "narration": "Psychologist Peter Gollwitzer formalized Implementation Intentions in 1999. Testing it in 2002, Sarah Milne, Sheina Orbell, and Paschal Sheeran found scary health warnings alone stayed stuck at thirty-five percent, while specifying exact time and place hit ninety-one.",
+      "source": "Gollwitzer, American Psychologist (1999); Milne, Orbell & Sheeran (2002)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Vague Wishes Collapse When You Feel Tired",
+      "visual_type": "comparison_split",
+      "left_title": "VAGUE GOAL INTENTION",
+      "left_body": "'I will work on my side business this weekend' -> 38% odds",
+      "right_title": "IF-THEN TRIGGER",
+      "right_body": "'If 7 AM Saturday at desk -> draft script for 90m' -> 91% odds",
+      "highlight_words": [
+        "vague",
+        "collapse",
+        "tired",
+        "negotiate"
+      ],
+      "narration": "Vague goals like 'save more' or 'build this weekend' collapse at five PM because a tired brain has to negotiate when and where."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Pre-Code Your Cue Before Going to Sleep",
+      "visual_type": "compounding_curve",
+      "stat_label": "ENVIRONMENTAL CUES BYPASS REAL-TIME WILLPOWER TAX",
+      "stat_subtext": "If [Exact Time + Location] -> Then [Immediate 2-Minute Start]",
+      "highlight_words": [
+        "gollwitzer's",
+        "saturday",
+        "desk",
+        "ninety"
+      ],
+      "narration": "Pre-load the cue tonight using Gollwitzer's exact syntax: 'If it is seven AM Saturday at my desk, then I immediately draft for ninety minutes.'"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Fire Before Your Excuses Wake Up",
+      "visual_type": "stat_callout",
+      "stat_value": "If X -> Do Y",
+      "stat_label": "TURN DECISIONS INTO AUTOMATIC REFLEXES",
+      "bullets": [
+        "Never leave tomorrow's deep block unscheduled",
+        "Bind every core habit to a clock and a chair"
+      ],
+      "highlight_words": [
+        "delegate",
+        "concrete",
+        "fires",
+        "excuses"
+      ],
+      "narration": "Delegate the starting pistol to a concrete time and place so action fires before excuses wake up.",
+      "source": "Mind & Margin protocol based on Gollwitzer (1999) & Milne et al. (2002)"
+    }
+  ]
+}

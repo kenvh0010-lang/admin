@@ -1,0 +1,116 @@
+{
+  "title": "How Small Early Edges Snowball Into Giant Leads (Matthew Effect)",
+  "alt_title_1": "Robert Merton's 1968 Science Study on Cumulative Advantage",
+  "alt_title_2": "Why Shipping Imperfectly Today Beats Waiting Two Years",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In a landmark 1968 Science paper studying Nobel laureates, sociologist Robert K. Merton coined the Matthew Effect: tiny initial edges attract disproportionate recognition, capital, and opportunities that snowball over time.",
+  "tags": [
+    "matthew effect",
+    "cumulative advantage",
+    "robert merton",
+    "compounding wealth",
+    "skill compounding",
+    "behavioral economics",
+    "mental models"
+  ],
+  "thumbnail": {
+    "hook_text": "TINY EARLY EDGES",
+    "badge": "SCIENCE 1968",
+    "stat": "1%->10X"
+  },
+  "affiliate_cta": {
+    "offer_name": "First-Brick Compounding Tracker + Classic Systems Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What project or investment have you delayed waiting for 'perfect timing'? Grab our free First-Brick Compounding Tracker here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "How Tiny Head Starts Become Giant Gaps",
+      "visual_type": "stat_callout",
+      "stat_value": "1% -> 10X",
+      "stat_label": "EQUAL TALENT AT START, UNEQUAL OUTCOME AT YEAR 5",
+      "bullets": [
+        "Two peers begin with almost identical ability",
+        "One tiny early win recruits the next ten"
+      ],
+      "highlight_words": [
+        "talented",
+        "january",
+        "five",
+        "leagues"
+      ],
+      "narration": "Why do two equally talented builders start a hair apart in January and finish five years later in completely different leagues?",
+      "source": "Robert K. Merton, 'The Matthew Effect in Science', Science (1968)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Robert Merton's 1968 'Science' Discovery",
+      "visual_type": "stat_callout",
+      "stat_value": "Science 1968",
+      "stat_label": "CUMULATIVE ADVANTAGE IN NOBEL CAREERS",
+      "bullets": [
+        "Early visibility drew better labs, grants, and collaborators",
+        "Initial advantage multiplied independent of raw IQ"
+      ],
+      "highlight_words": [
+        "1968",
+        "merton",
+        "cumulative",
+        "matthew"
+      ],
+      "narration": "In a 1968 Science paper studying Nobel laureates, sociologist Robert K. Merton named this cumulative advantage the Matthew Effect: a slight early lead attracts disproportionate credit, resources, and better opportunities that compound.",
+      "source": "Robert K. Merton, Science (1968); Harriet Zuckerman Nobel interviews"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Perfectionism Forfeits the Early Snowball",
+      "visual_type": "comparison_split",
+      "left_title": "2-YEAR PERFECTIONIST",
+      "left_body": "Polishes in private -> zero feedback loops, zero early capital",
+      "right_title": "EARLY SHIPPER",
+      "right_body": "Ships Version 1.0 today -> feedback, search trust & cash compound",
+      "highlight_words": [
+        "perfectionists",
+        "waiting",
+        "feedback",
+        "shipping"
+      ],
+      "narration": "Perfectionists misread this math. Waiting two years until your portfolio or skill feels polished hands every early feedback loop and distribution edge to someone shipping today."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Optimize for Your Earliest Valid Rep",
+      "visual_type": "compounding_curve",
+      "stat_label": "TIME ON THE CURVE BEATS A POLISHED LATE ENTRY",
+      "stat_subtext": "Start $100 index auto-transfers + publish Asset #1 this weekend",
+      "highlight_words": [
+        "earliest",
+        "automate",
+        "publish",
+        "planning"
+      ],
+      "narration": "Optimize for earliest valid rep, not flashiest debut: automate your first small index transfer and publish version one while peers are still planning."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Let Early Wins Recruit Future Leverage",
+      "visual_type": "stat_callout",
+      "stat_value": "Start Early",
+      "stat_label": "SMALL ASSETS ATTRACT BIGGER OPPORTUNITIES",
+      "bullets": [
+        "Every public brick compounds reputation while you sleep",
+        "Early capital earns years of extra market doublings"
+      ],
+      "highlight_words": [
+        "cumulative",
+        "curve",
+        "recruit",
+        "leverage"
+      ],
+      "narration": "Get onto the cumulative advantage curve early, and let small wins recruit the next round of leverage.",
+      "source": "Mind & Margin rule based on Robert K. Merton, Science (1968)"
+    }
+  ]
+}

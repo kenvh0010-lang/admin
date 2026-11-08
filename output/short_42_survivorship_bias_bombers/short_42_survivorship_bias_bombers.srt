@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:00,499
+In 1943,
+
+2
+00:00:00,499 --> 00:00:03,741
+military officers inspected bullet-riddled World War
+
+3
+00:00:03,741 --> 00:00:05,862
+Two bombers and nearly armored the
+
+4
+00:00:05,862 --> 00:00:07,732
+exact wrong parts of the plane
+
+5
+00:00:07,732 --> 00:00:09,790
+until a mathematician intervened.
+
+6
+00:00:09,790 --> 00:00:13,251
+Working at Columbia University's Statistical Research Group,
+
+7
+00:00:13,251 --> 00:00:16,135
+mathematician Abraham Wald noticed returning wings
+
+8
+00:00:16,135 --> 00:00:18,154
+were covered in holes while engines
+
+9
+00:00:18,154 --> 00:00:18,789
+were clean.
+
+10
+00:00:18,789 --> 00:00:21,154
+He advised armoring the spotless engines:
+
+11
+00:00:21,154 --> 00:00:23,000
+planes hit there never returned.
+
+12
+00:00:23,000 --> 00:00:25,422
+Financial media commits that exact Survivorship
+
+13
+00:00:25,422 --> 00:00:25,989
+Bias daily,
+
+14
+00:00:25,989 --> 00:00:28,977
+interviewing reckless leverage gamblers or college-dropout
+
+15
+00:00:28,977 --> 00:00:31,553
+billionaires while ignoring thousands of identical
+
+16
+00:00:31,553 --> 00:00:32,790
+bets that went bankrupt.
+
+17
+00:00:32,790 --> 00:00:34,922
+Before copying any viral wealth or
+
+18
+00:00:34,922 --> 00:00:36,051
+business playbook,
+
+19
+00:00:36,051 --> 00:00:37,556
+inspect the denominator:
+
+20
+00:00:37,556 --> 00:00:40,315
+look at where the missing casualties failed,
+
+21
+00:00:40,315 --> 00:00:42,760
+and optimize for repeatable base rates.
+
+22
+00:00:42,760 --> 00:00:45,328
+Armor your engines against ruin first,
+
+23
+00:00:45,328 --> 00:00:48,369
+because compounding only rewards builders who
+
+24
+00:00:48,369 --> 00:00:49,450
+stay in the air.

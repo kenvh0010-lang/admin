@@ -1,0 +1,116 @@
+{
+  "title": "Abraham Wald's WWII Bullet-Hole Map: Stop Copying Lucky Outliers",
+  "alt_title_1": "The 1943 Bomber Armor Insight That Saves Investors From Ruin",
+  "alt_title_2": "Survivorship Bias Explained: Why Missing Failures Matter Most",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1943, mathematician Abraham Wald at Columbia's Statistical Research Group stopped military planners from armoring the bullet-riddled wings of returning bombers, pointing to the missing planes hit in the engines instead. Here is how Survivorship Bias distorts wealth advice.",
+  "tags": [
+    "survivorship bias",
+    "abraham wald",
+    "statistical thinking",
+    "mental models",
+    "risk management",
+    "wealth psychology",
+    "base rates"
+  ],
+  "thumbnail": {
+    "hook_text": "THE MISSING PLANES",
+    "badge": "SURVIVORSHIP BIAS",
+    "stat": "1943"
+  },
+  "affiliate_cta": {
+    "offer_name": "Base-Rate Risk Filter + Mental Models Book List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What piece of popular business or investing advice looks like pure Survivorship Bias to you? Grab our Base-Rate Risk Filter + reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "The 1943 Bullet-Hole Mistake Nearly Everyone Makes",
+      "visual_type": "stat_callout",
+      "stat_value": "1943",
+      "stat_label": "WWII BOMBER ARMOR PUZZLE AT COLUMBIA",
+      "bullets": [
+        "Returning planes had wings covered in shrapnel holes",
+        "Officers wanted extra armor placed right over the holes"
+      ],
+      "highlight_words": [
+        "1943",
+        "bombers",
+        "wrong",
+        "mathematician"
+      ],
+      "narration": "In 1943, military officers inspected bullet-riddled World War Two bombers and nearly armored the exact wrong parts of the plane until a mathematician intervened.",
+      "source": "Abraham Wald, Statistical Research Group at Columbia University (1943)"
+    },
+    {
+      "tag": "THE MATH",
+      "headline": "Abraham Wald Counted the Planes That Never Returned",
+      "visual_type": "stat_callout",
+      "stat_value": "0 Holes",
+      "stat_label": "SPOTLESS ENGINES REVEALED FATAL VULNERABILITY",
+      "bullets": [
+        "Planes hit in the wings survived the flight home",
+        "Planes hit in the engines crashed before reaching the hangar"
+      ],
+      "highlight_words": [
+        "wald",
+        "columbia",
+        "spotless",
+        "engines"
+      ],
+      "narration": "Working at Columbia University's Statistical Research Group, mathematician Abraham Wald noticed returning wings were covered in holes while engines were clean. He advised armoring the spotless engines: planes hit there never returned.",
+      "source": "Abraham Wald, 'A Method of Estimating Plane Vulnerability', SRG Memo (1943)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Copying Visible Winners While Ignoring Silent Graveyards",
+      "visual_type": "comparison_split",
+      "left_title": "OUTLIER WORSHIP",
+      "left_body": "Copies 1 lucky 50x gamble -> ignores 999 silent wipeouts",
+      "right_title": "BASE-RATE STRATEGY",
+      "right_body": "Studies failure modes first -> compounds high-probability bets",
+      "highlight_words": [
+        "survivorship",
+        "gamblers",
+        "ignoring",
+        "bankrupt"
+      ],
+      "narration": "Financial media commits that exact Survivorship Bias daily, interviewing reckless leverage gamblers or college-dropout billionaires while ignoring thousands of identical bets that went bankrupt."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Always Inspect the Missing Denominator",
+      "visual_type": "compounding_curve",
+      "stat_label": "SURVIVAL FIRST -> DECADES OF UNBROKEN COMPOUNDING",
+      "stat_subtext": "Avoid catastrophic downside before chasing upside",
+      "highlight_words": [
+        "denominator",
+        "casualties",
+        "repeatable",
+        "base"
+      ],
+      "narration": "Before copying any viral wealth or business playbook, inspect the denominator: look at where the missing casualties failed, and optimize for repeatable base rates."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Armor Your Financial Engines First",
+      "visual_type": "stat_callout",
+      "stat_value": "Base Rates",
+      "stat_label": "STUDY FAILURES BEFORE COPYING OUTLIERS",
+      "bullets": [
+        "Never risk survival margin on low-probability bets",
+        "Build durable skills and cash reserves that prevent ruin"
+      ],
+      "highlight_words": [
+        "armor",
+        "ruin",
+        "compounding",
+        "air"
+      ],
+      "narration": "Armor your engines against ruin first, because compounding only rewards builders who stay in the air.",
+      "source": "Mind & Margin risk rule inspired by Abraham Wald (1943)"
+    }
+  ]
+}

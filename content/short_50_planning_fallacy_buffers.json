@@ -1,0 +1,118 @@
+{
+  "title": "Why Smart Projects Take Twice as Long as Planned",
+  "alt_title_1": "The 1994 Study Behind Every Missed Project Deadline",
+  "alt_title_2": "Daniel Kahneman's Outside-View Fix for the Planning Fallacy",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1994, psychologists Roger Buehler, Dale Griffin, and Michael Ross measured why intelligent people systematically underestimate completion times. Here is how Daniel Kahneman's Reference Class Forecasting fixes broken schedules.",
+  "tags": [
+    "planning fallacy",
+    "daniel kahneman",
+    "reference class forecasting",
+    "project management",
+    "decision making",
+    "cognitive biases",
+    "time estimation"
+  ],
+  "thumbnail": {
+    "hook_text": "PLANNING FALLACY",
+    "badge": "DECISION SCIENCE",
+    "stat": "2X TIME"
+  },
+  "affiliate_cta": {
+    "offer_name": "Outside-View Project Estimator + Kahneman Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What is the biggest gap you have seen between an initial 'two-week' estimate and the real launch date? 👇 Grab our Outside-View Project Estimator + book list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why 'Two-Week' Sprints Turn Into Five Weeks",
+      "visual_type": "stat_callout",
+      "stat_value": "30% On Time",
+      "stat_label": "TYPICAL SHARE FINISHING BY OWN ESTIMATE",
+      "bullets": [
+        "Even experienced builders repeat optimistic deadline errors",
+        "Intelligence alone does not cure schedule blindness"
+      ],
+      "highlight_words": [
+        "experienced",
+        "two-week",
+        "timeline",
+        "five"
+      ],
+      "narration": "Why do intelligent, experienced professionals estimate a two-week project timeline and routinely finish five weeks later?",
+      "source": "Buehler, Griffin & Ross, Journal of Personality and Social Psychology (1994)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Buehler, Griffin & Ross's 1994 Thesis Study",
+      "visual_type": "stat_callout",
+      "stat_value": "34d -> 56d",
+      "stat_label": "PREDICTED VS ACTUAL COMPLETION DAYS",
+      "bullets": [
+        "Students predicted 34 days; actual average hit 55.5 days",
+        "Even their 'worst-case' estimates averaged only 49 days"
+      ],
+      "highlight_words": [
+        "1994",
+        "buehler",
+        "thirty-four",
+        "fifty-six"
+      ],
+      "narration": "In a 1994 study, psychologists Roger Buehler, Dale Griffin, and Michael Ross asked honors students when their theses would finish. Students predicted thirty-four days on average, yet actual completion took nearly fifty-six.",
+      "source": "Buehler, Griffin & Ross, JPSP, Vol. 67, No. 3 (1994)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Inside View Fantasy vs Real-World Friction",
+      "visual_type": "comparison_split",
+      "left_title": "THE INSIDE VIEW",
+      "left_body": "Pictures zero interruptions, zero bugs, and best-case focus",
+      "right_title": "THE OUTSIDE VIEW",
+      "right_body": "Anchors on historical base rates of past comparable projects",
+      "highlight_words": [
+        "kahneman",
+        "inside",
+        "best-case",
+        "dependencies"
+      ],
+      "narration": "Daniel Kahneman traced this planning fallacy to the Inside View: your brain pictures an uninterrupted best-case sprint while ignoring sick days, scope changes, and hidden dependencies.",
+      "source": "Daniel Kahneman, Thinking, Fast and Slow (2011)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Reference Class Forecasting + 1.5x Buffer",
+      "visual_type": "compounding_curve",
+      "stat_label": "BASE-RATE BUFFERS COMPOUND RELIABILITY",
+      "stat_subtext": "Historical median duration x 1.5 buffer -> calm on-time shipping",
+      "highlight_words": [
+        "reference",
+        "forecasting",
+        "similar",
+        "multiply"
+      ],
+      "narration": "Use Kahneman's Reference Class Forecasting instead: check how long your last three similar projects actually took from start to finish, then multiply your optimistic estimate by one point five.",
+      "source": "Lovallo & Kahneman, Harvard Business Review (2003); 1.5x buffer is practical advice"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Under-Promise on Dates, Over-Deliver on Craft",
+      "visual_type": "stat_callout",
+      "stat_value": "1.5x Buffer",
+      "stat_label": "PRICE REAL-WORLD FRICTION IN UPFRONT",
+      "bullets": [
+        "Log actual completion times to calibrate future quotes",
+        "Calm buffers turn rushed panic into trusted execution"
+      ],
+      "highlight_words": [
+        "friction",
+        "calendar",
+        "deadlines",
+        "reputation"
+      ],
+      "narration": "Price real-world friction into your calendar upfront so you hit deadlines calmly and protect your reputation.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
+    }
+  ]
+}

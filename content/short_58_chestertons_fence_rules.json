@@ -1,0 +1,116 @@
+{
+  "title": "Never Delete an Old Rule Before Passing Chesterton's Fence",
+  "alt_title_1": "G. K. Chesterton's 1929 Mental Model for Systems & Money",
+  "alt_title_2": "Why Tearing Down 'Boring' Guardrails Triggers Forgotten Crises",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In his 1929 book 'The Thing', writer G. K. Chesterton formulated a timeless systems rule: never tear down an old fence until you understand why someone built it. Here is how Chesterton's Fence protects budgets, codebases, and careers.",
+  "tags": [
+    "chestertons fence",
+    "second order thinking",
+    "systems thinking",
+    "mental models",
+    "risk management",
+    "decision making",
+    "financial guardrails"
+  ],
+  "thumbnail": {
+    "hook_text": "CHESTERTON'S FENCE",
+    "badge": "SYSTEMS THINKING",
+    "stat": "1929"
+  },
+  "affiliate_cta": {
+    "offer_name": "Systems Pre-Mortem Checklist + Mental Models Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Have you ever seen a team or investor delete a 'pointless' old rule and immediately rediscover why it existed? 👇 Grab our Systems Pre-Mortem Checklist + reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "The Rookie Impulse to Rip Out Old Rules",
+      "visual_type": "stat_callout",
+      "stat_value": "1929 Rule",
+      "stat_label": "WHY BORING GUARDRAILS EXIST FOR A REASON",
+      "bullets": [
+        "Newcomers love deleting checklists, cash buffers, and reviews",
+        "Weeks later, a forgotten failure mode comes roaring back"
+      ],
+      "highlight_words": [
+        "ambitious",
+        "tear",
+        "checklists",
+        "buffers"
+      ],
+      "narration": "Every ambitious newcomer wants to tear down clunky old checklists, boring budget buffers, and legacy rules on day one.",
+      "source": "G. K. Chesterton, The Thing, Ch. 4 'The Drift from Domesticity' (1929)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "G. K. Chesterton's 1929 Fence Parable",
+      "visual_type": "stat_callout",
+      "stat_value": "Why Built?",
+      "stat_label": "STATE THE ORIGINAL PURPOSE BEFORE DELETING",
+      "bullets": [
+        "Fences do not grow out of country roads by accident",
+        "Only reformers who know a rule's origin can safely revise it"
+      ],
+      "highlight_words": [
+        "1929",
+        "chesterton",
+        "fence",
+        "reason"
+      ],
+      "narration": "In his 1929 book The Thing, writer G. K. Chesterton imagined a fence blocking a country road. Never tear down a fence, he warned, until you can state the exact reason someone paid to build it.",
+      "source": "G. K. Chesterton, The Thing (1929)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Working Guardrails Always Look Unnecessary",
+      "visual_type": "comparison_split",
+      "left_title": "BLIND DELETION",
+      "left_body": "Cuts emergency cash or QA checks -> revives the original crash",
+      "right_title": "CHESTERTON AUDIT",
+      "right_body": "Traces historical scar tissue -> upgrades without blind risk",
+      "highlight_words": [
+        "guardrails",
+        "pointless",
+        "emergency",
+        "disaster"
+      ],
+      "narration": "Effective guardrails look pointless precisely because they work quietly. Deleting emergency cash reserves or pre-launch checks revives the forgotten disaster that originally created them."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Pass the One-Sentence Origin Audit First",
+      "visual_type": "compounding_curve",
+      "stat_label": "INFORMED PRUNING PRESERVES COMPOUNDING",
+      "stat_subtext": "Name the original risk + confirm it vanished -> simplify safely",
+      "highlight_words": [
+        "audit",
+        "trace",
+        "birthed",
+        "disappeared"
+      ],
+      "narration": "Apply Chesterton's Audit before cutting any system: trace the failure that birthed the rule, then verify whether that underlying risk actually disappeared."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Understand First, Simplify Second",
+      "visual_type": "stat_callout",
+      "stat_value": "Audit First",
+      "stat_label": "RESPECT INSTITUTIONAL & FINANCIAL MEMORY",
+      "bullets": [
+        "Write one clear sentence explaining what a buffer prevents",
+        "Remove obsolete friction only after proving the hazard is gone"
+      ],
+      "highlight_words": [
+        "earn",
+        "simplify",
+        "guardrail",
+        "protects"
+      ],
+      "narration": "Earn the right to simplify an old guardrail by proving in writing that you understand what it quietly protects.",
+      "source": "Mind & Margin rule of thumb inspired by Chesterton (1929)"
+    }
+  ]
+}

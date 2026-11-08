@@ -1,0 +1,116 @@
+{
+  "title": "How a 1937 Nobel Paper Predicted Tiny Million-Dollar Firms",
+  "alt_title_1": "Ronald Coase's 1937 Law Behind One-Person Software Businesses",
+  "alt_title_2": "Why Shrinking Transaction Costs Favor Tiny High-Margin Teams",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1937, future Nobel laureate Ronald Coase published 'The Nature of the Firm' in Economica, showing that large companies exist only when market transaction costs are high. As software and AI shrink coordination costs, tiny high-margin firms gain a structural edge.",
+  "tags": [
+    "ronald coase",
+    "nature of the firm",
+    "transaction costs",
+    "one person business",
+    "ai leverage",
+    "economics mental models",
+    "micro enterprise"
+  ],
+  "thumbnail": {
+    "hook_text": "TINY MILLION FIRMS",
+    "badge": "NOBEL ECONOMICS",
+    "stat": "1937"
+  },
+  "affiliate_cta": {
+    "offer_name": "Solo Enterprise Automation Audit + Economics Book List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Would you rather run a 30-person agency at 10% margin or a 1-person firm at 85% margin? Grab our Solo Enterprise Automation Audit + reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "The 1937 Paper Behind Tiny High-Profit Firms",
+      "visual_type": "stat_callout",
+      "stat_value": "1937",
+      "stat_label": "YEAR RONALD COASE EXPLAINED FIRM SIZE",
+      "bullets": [
+        "Big revenue once required giant internal headcount",
+        "One economic variable changed the math"
+      ],
+      "highlight_words": [
+        "1937",
+        "economist",
+        "tiny",
+        "profit"
+      ],
+      "narration": "In 1937, a twenty-six-year-old British economist wrote a paper that quietly explains why tiny one-to-three-person software businesses now rival hundred-person agencies in profit.",
+      "source": "Ronald Coase, 'The Nature of the Firm', Economica (1937)"
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Ronald Coase's Transaction Cost Discovery",
+      "visual_type": "stat_callout",
+      "stat_value": "Nobel 1991",
+      "stat_label": "FIRMS EXIST TO REDUCE COORDINATION FRICTION",
+      "bullets": [
+        "Hiring external vendors once meant steep search & contract costs",
+        "Firms grew only until internal bureaucracy cost just as much"
+      ],
+      "highlight_words": [
+        "coase",
+        "transaction",
+        "negotiating",
+        "markets"
+      ],
+      "narration": "In Economica, future Nobel laureate Ronald Coase asked why large corporations exist at all. His answer was transaction costs: searching for specialists, negotiating contracts, and policing quality across open markets.",
+      "source": "Ronald Coase, 'The Nature of the Firm', Economica (1937); Nobel Prize in Economics (1991)"
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Chasing Headcount Status Recreates Bureaucracy",
+      "visual_type": "comparison_split",
+      "left_title": "VANITY HEADCOUNT",
+      "left_body": "30 employees -> endless status calls & thin net margins",
+      "right_title": "COASEAN MICRO-FIRM",
+      "right_body": "1-3 builders + APIs & AI -> low overhead & calm autonomy",
+      "highlight_words": [
+        "eighty",
+        "headcount",
+        "status",
+        "bureaucracy"
+      ],
+      "narration": "For eighty years, high transaction costs forced ambitious founders to hire big internal staffs. Today, many entrepreneurs still chase headcount for status, recreating slow corporate bureaucracy."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Automate Repeatable Work Before Hiring",
+      "visual_type": "compounding_curve",
+      "stat_label": "LOWER TRANSACTION COSTS -> SMALLER OPTIMAL TEAMS",
+      "stat_subtext": "APIs + scripts + AI shrink coordination overhead",
+      "highlight_words": [
+        "collapse",
+        "coasean",
+        "tiny",
+        "automate"
+      ],
+      "narration": "Modern APIs, cloud billing, and AI workflows collapse coordination friction. Build Coasean micro-firms instead: keep core ownership tiny and automate repeatable production before hiring anyone."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Optimize Profit Per Person, Not Office Size",
+      "visual_type": "stat_callout",
+      "stat_value": "Margin > Ego",
+      "stat_label": "THE MODERN MICRO-ENTERPRISE SCOREBOARD",
+      "bullets": [
+        "Replace repetitive admin with deterministic code",
+        "Judge success by free cashflow and unscheduled hours"
+      ],
+      "highlight_words": [
+        "cashflow",
+        "calm",
+        "person",
+        "headcount"
+      ],
+      "narration": "Measure your business by free cashflow and calm calendar hours per person, never by crowded office headcount.",
+      "source": "Mind & Margin application of Ronald Coase, Economica (1937)"
+    }
+  ]
+}
