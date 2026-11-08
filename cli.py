@@ -113,8 +113,29 @@ def main() -> int:
     p_thumb.add_argument("--out", default=str(OUTPUT_DIR / "custom_thumbnail.png"), help="Output PNG path")
     p_thumb.set_defaults(func=cmd_thumbnail)
 
+    p_site = sub.add_parser("build-site", help="Rebuild docs/ public website, sitemap.xml & optionally inject Amazon Associate tag")
+    p_site.add_argument("--amazon-tag", default=None, help="Amazon Associate tag (e.g., mindandmargin-20)")
+    p_site.set_defaults(func=cmd_build_site)
+
+    p_pub = sub.add_parser("publish-next", help="Auto-upload the next scheduled video in queue to YouTube Data API v3")
+    p_pub.add_argument("--privacy", default="public", choices=["public", "unlisted", "private"])
+    p_pub.set_defaults(func=cmd_publish_next)
+
     args = parser.parse_args()
     return args.func(args)
+
+
+def cmd_build_site(args: argparse.Namespace) -> int:
+    from yt_studio.site_builder import build_public_site
+    docs_path = build_public_site(amazon_tag=args.amazon_tag)
+    print(f"✅ Public website + sitemap.xml rebuilt at: {docs_path}")
+    return 0
+
+
+def cmd_publish_next(args: argparse.Namespace) -> int:
+    from yt_studio.youtube_uploader import publish_next_in_queue
+    publish_next_in_queue(privacy_status=args.privacy)
+    return 0
 
 
 if __name__ == "__main__":

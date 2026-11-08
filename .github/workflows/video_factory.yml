@@ -1,0 +1,86 @@
+name: Mind & Margin — Background Video Factory & Autopilot
+
+on:
+  push:
+    paths:
+      - 'content/*.json'
+      - 'yt_studio/**'
+      - '.github/workflows/video_factory.yml'
+  schedule:
+    # Runs automatically in the background every Tue, Thu, Sat, Sun at 13:00 UTC (20:00 VN / 08:00-09:00 US)
+    - cron: '0 13 * * 2,4,6,0'
+  workflow_dispatch:
+    inputs:
+      amazon_associate_tag:
+        description: 'Optional Amazon Associate Tag (e.g., mindandmargin-20) to inject across site & descriptions'
+        required: false
+        default: ''
+      auto_upload_youtube:
+        description: 'Upload next unpublished video to YouTube if OAuth secrets are configured'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  produce-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12 & FFmpeg
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install FFmpeg & Free Microsoft Neural TTS (edge-tts)
+        run: |
+          sudo apt-get update -y && sudo apt-get install -y ffmpeg fonts-roboto fonts-dejavu-core
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Rebuild Public SEO Website & Sync Affiliate Tag
+        env:
+          INPUT_TAG: ${{ inputs.amazon_associate_tag || vars.AMAZON_ASSOC_TAG }}
+        run: |
+          python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
+
+      - name: Batch Render All Videos With Real American Neural Voiceover (edge-tts)
+        run: |
+          python3 cli.py batch content/ --tts edge --voice en_authoritative
+          mkdir -p release_bundles
+          zip -r release_bundles/week1_videos_mp4_srt.zip output/short_01_* output/short_02_* output/short_03_* output/long_01_*
+          zip -r release_bundles/week2_videos_mp4_srt.zip output/short_04_* output/short_05_* output/short_06_* output/long_02_*
+          zip -r release_bundles/week3_videos_mp4_srt.zip output/short_07_* output/short_08_* output/short_09_* output/long_03_*
+          zip -r release_bundles/week4_videos_mp4_srt.zip output/short_10_* output/short_11_* output/short_12_* output/long_04_*
+
+      - name: Auto-Publish Next Queued Video to YouTube (if YouTube Secrets configured)
+        if: ${{ github.event_name == 'schedule' || inputs.auto_upload_youtube == true }}
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          python3 -m yt_studio.youtube_uploader public
+
+      - name: Commit Updated Site, SEO Packs & Publish Ledger
+        run: |
+          git config user.name "Mind & Margin Autopilot"
+          git config user.email "actions@github.com"
+          git add docs/ products/bio_funnel_page/ output/ content/published_ledger.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "chore(autopilot): sync site, neural voice SEO packs & publish ledger [skip ci]" && git push)
+
+      - name: Publish Ready-to-Download Neural-Voiced MP4s to GitHub Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: month-1-neural-videos
+          name: "🎬 Month 1 Complete Video Pack (Real American Neural Voiceover - 16 MP4s)"
+          body: |
+            ### 100% Automated Cloud Render Complete!
+            Download any weekly `.zip` bundle below containing ready-to-upload **1080x1920 Shorts** & **1920x1080 Long-form `.mp4` videos** with natural American English neural voiceover (`en-US-ChristopherNeural`), 100% copyright-free ambient music, `.srt` subtitles, thumbnails, and copy-paste YouTube SEO descriptions.
+          files: |
+            release_bundles/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
