@@ -14,7 +14,7 @@
 ```text
 Author Morgan Housel explains why most people fail at building wealth because they copy visible 'rich' spending instead of invisible assets. Here is the Ronald Read janitor case study and the calendar rule of real wealth.
 
-🔗 **Listen to 'The Psychology of Money' & 'Same as Ever' Free on Audible**: https://yourlink.com/audible-morgan-housel
+🔗 **Listen to 'The Psychology of Money' & 'Same as Ever' Free on Audible**: https://kenvh0010-lang.github.io/admin/bio/?ref=audible-morgan-housel
 
 ⏱️ Timestamps:
 00:00 - The $100,000 Driveway Illusion
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Would you rather look rich to strangers or own 100% of your Tuesday mornings? Grab Morgan Housel's 'The Psychology of Money' free audiobook trial + our Quiet Wealth Margin Tracker here: https://yourlink.com/audible-morgan-housel
+Would you rather look rich to strangers or own 100% of your Tuesday mornings? Grab Morgan Housel's 'The Psychology of Money' free audiobook trial + our Quiet Wealth Margin Tracker here: https://kenvh0010-lang.github.io/admin/bio/?ref=audible-morgan-housel
 ```
 
 ## 4. Tags

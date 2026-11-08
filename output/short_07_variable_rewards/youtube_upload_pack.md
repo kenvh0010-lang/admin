@@ -14,7 +14,7 @@
 ```text
 In 1957, Harvard psychologist B.F. Skinner proved that random rewards create stronger compulsion than guaranteed payouts. Here is how shopping apps use variable ratio schedules against your wallet and the 20-second shield to break it.
 
-🔗 **Free Dopamine-Proof Wallet Checklist + 'Hooked' Free Audiobook Trial**: https://yourlink.com/wallet-shield
+🔗 **Free Dopamine-Proof Wallet Checklist + 'Hooked' Free Audiobook Trial**: https://kenvh0010-lang.github.io/admin/bio/?ref=wallet-shield
 
 ⏱️ Timestamps:
 00:00 - The Slot Machine Inside Your Pocket
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Have you deleted saved credit cards from 1-click checkout apps yet? Grab the free 1-Page Dopamine-Proof Wallet Audit + Nir Eyal's 'Hooked' free Audible trial here: https://yourlink.com/wallet-shield
+Have you deleted saved credit cards from 1-click checkout apps yet? Grab the free 1-Page Dopamine-Proof Wallet Audit + Nir Eyal's 'Hooked' free Audible trial here: https://kenvh0010-lang.github.io/admin/bio/?ref=wallet-shield
 ```
 
 ## 4. Tags

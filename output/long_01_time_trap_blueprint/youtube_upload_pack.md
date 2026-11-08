@@ -14,7 +14,7 @@
 ```text
 For fifty years, productivity grew nearly 3.5x faster than hourly pay. Trading more hours is a losing game—here is the 3-layer Asymmetric Asset System to build compounding income margins in under 5 hours a week.
 
-🔗 **The 5-Hour Asset Builder Notion OS + Free Audible Book List**: https://yourlink.com/asset-builder-os
+🔗 **The 5-Hour Asset Builder Notion OS + Free Audible Book List**: https://kenvh0010-lang.github.io/admin/bio/?ref=asset-builder-os
 
 ⏱️ Timestamps:
 00:00 - The Great Decoupling Between Effort & Pay
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Which of the 3 Asymmetric Levers are you starting this month? 👇 Download the free 5-Hour Weekly Asset Roadmap + grab 'The Almanack of Naval Ravikant' & 'The Psychology of Money' free trial here: https://yourlink.com/asset-builder-os
+Which of the 3 Asymmetric Levers are you starting this month? 👇 Download the free 5-Hour Weekly Asset Roadmap + grab 'The Almanack of Naval Ravikant' & 'The Psychology of Money' free trial here: https://kenvh0010-lang.github.io/admin/bio/?ref=asset-builder-os
 ```
 
 ## 4. Tags

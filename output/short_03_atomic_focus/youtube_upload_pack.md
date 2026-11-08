@@ -14,7 +14,7 @@
 ```text
 Sleep researcher Nathaniel Kleitman discovered that the human brain runs on 90-minute Ultradian cycles—even while awake. Here is how to use one 90-minute deep block per day to build a side income.
 
-🔗 **Download the 90-Minute Ultradian Sprint Timer & Notion Planner**: https://yourlink.com/90min-planner
+🔗 **Download the 90-Minute Ultradian Sprint Timer & Notion Planner**: https://kenvh0010-lang.github.io/admin/bio/?ref=90min-planner
 
 ⏱️ Timestamps:
 00:00 - The 8-Hour Workday Is Biologically Fake
@@ -29,7 +29,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Are you a morning builder or a late-night builder? ⚡ Grab the free 90-Minute Deep Work Notion Tracker + 'Deep Work' free audiobook link here: https://yourlink.com/90min-planner
+Are you a morning builder or a late-night builder? ⚡ Grab the free 90-Minute Deep Work Notion Tracker + 'Deep Work' free audiobook link here: https://kenvh0010-lang.github.io/admin/bio/?ref=90min-planner
 ```
 
 ## 4. Tags

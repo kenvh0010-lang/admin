@@ -43,7 +43,7 @@ jobs:
 
       - name: Rebuild 48-Article Public SEO Website & Sync Affiliate Tag
         env:
-          INPUT_TAG: ${{ inputs.amazon_associate_tag || vars.AMAZON_ASSOC_TAG }}
+          INPUT_TAG: ${{ inputs.amazon_associate_tag || vars.AMAZON_ASSOC_TAG || 'mindandmarg06-20' }}
         run: |
           python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
 

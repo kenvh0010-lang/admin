@@ -14,7 +14,7 @@
 ```text
 Naval Ravikant famously identified four types of leverage: Labor, Capital, Code, and Media. Here is why permissionless leverage lets solo builders earn full-time margins in under 5 hours a week.
 
-🔗 **Grab the Solo-Builder AI Stack & Notion OS**: https://yourlink.com/ai-leverage-stack
+🔗 **Grab the Solo-Builder AI Stack & Notion OS**: https://kenvh0010-lang.github.io/admin/bio/?ref=ai-leverage-stack
 
 ⏱️ Timestamps:
 00:00 - Hard Work Without Leverage Has a Ceiling
@@ -30,7 +30,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Which leverage are you building right now—Code, Media, or both? 👇 Full list of free AI tools & 'Almanack of Naval' summary linked here: https://yourlink.com/ai-leverage-stack
+Which leverage are you building right now—Code, Media, or both? 👇 Full list of free AI tools & 'Almanack of Naval' summary linked here: https://kenvh0010-lang.github.io/admin/bio/?ref=ai-leverage-stack
 ```
 
 ## 4. Tags

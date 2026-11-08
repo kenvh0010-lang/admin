@@ -14,7 +14,7 @@
 ```text
 Most side hustles are just exhausting, lower-paying second jobs that stop paying the minute you stop working. Here is the realistic, systems-based architecture for building an evergreen Digital Asset Library - combining search-driven media, $19 practical templates, and recurring software partnerships - in 5 focused hours a week.
 
-🔗 **Complete Solo-Creator Digital Asset Bundle ($29 Templates + Full Tool Stack)**: https://yourlink.com/digital-asset-bundle
+🔗 **Complete Solo-Creator Digital Asset Bundle ($29 Templates + Full Tool Stack)**: https://kenvh0010-lang.github.io/admin/bio/?ref=digital-asset-bundle
 
 ⏱️ Timestamps:
 00:00 - Why 90% of Side Hustles Just Buy You More Burnout
@@ -33,7 +33,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Which layer of your Digital Asset Library are you building first this month: Search Media, a $19 Micro-Template, or Recurring Tool Affiliates? Grab the complete Solo-Creator Asset Bundle & weekly checklist here: https://yourlink.com/digital-asset-bundle
+Which layer of your Digital Asset Library are you building first this month: Search Media, a $19 Micro-Template, or Recurring Tool Affiliates? Grab the complete Solo-Creator Asset Bundle & weekly checklist here: https://kenvh0010-lang.github.io/admin/bio/?ref=digital-asset-bundle
 ```
 
 ## 4. Tags

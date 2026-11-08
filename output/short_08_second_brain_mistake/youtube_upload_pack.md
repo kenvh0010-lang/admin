@@ -14,7 +14,7 @@
 ```text
 Researcher Christian Tietze coined the 'Collector's Fallacy' in 2014 to explain why saving articles and color-coding Notion folders tricks your brain into feeling productive with zero real output.
 
-🔗 **Get the 1-Page Action-First Notion OS + 'Building a Second Brain' Trial**: https://yourlink.com/action-notion-os
+🔗 **Get the 1-Page Action-First Notion OS + 'Building a Second Brain' Trial**: https://kenvh0010-lang.github.io/admin/bio/?ref=action-notion-os
 
 ⏱️ Timestamps:
 00:00 - Your Notes App Is Probably a Graveyard
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Be honest: how many unread 'Read Later' tabs or bookmarks are sitting in your browser right now? Grab my minimalist 1-Page Project Notion OS free here: https://yourlink.com/action-notion-os
+Be honest: how many unread 'Read Later' tabs or bookmarks are sitting in your browser right now? Grab my minimalist 1-Page Project Notion OS free here: https://kenvh0010-lang.github.io/admin/bio/?ref=action-notion-os
 ```
 
 ## 4. Tags

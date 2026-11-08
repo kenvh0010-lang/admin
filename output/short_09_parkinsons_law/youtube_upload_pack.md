@@ -14,7 +14,7 @@
 ```text
 In 1955, historian C. Northcote Parkinson published a landmark essay in The Economist proving that work expands to fill whatever deadline you give it. Here is why cutting deadlines by 50% produces sharper work.
 
-🔗 **Download the 90-Minute Parkinson Sprint Timer & Weekly Board**: https://yourlink.com/parkinson-sprint
+🔗 **Download the 90-Minute Parkinson Sprint Timer & Weekly Board**: https://kenvh0010-lang.github.io/admin/bio/?ref=parkinson-sprint
 
 ⏱️ Timestamps:
 00:00 - Why 2-Week Tasks Take Exactly 2 Weeks
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Have you ever finished a 'two-week' task in 90 minutes right before leaving for a trip? Grab our free 90-Minute Parkinson Sprint Timer + Notion Board here: https://yourlink.com/parkinson-sprint
+Have you ever finished a 'two-week' task in 90 minutes right before leaving for a trip? Grab our free 90-Minute Parkinson Sprint Timer + Notion Board here: https://kenvh0010-lang.github.io/admin/bio/?ref=parkinson-sprint
 ```
 
 ## 4. Tags

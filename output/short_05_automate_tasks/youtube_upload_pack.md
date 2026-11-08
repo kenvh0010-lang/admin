@@ -14,7 +14,7 @@
 ```text
 Knowledge workers lose nearly 40% of their week acting like human copy-paste routers between browser tabs. Use the software engineer's 3x Automation Rule to eliminate 3 repetitive chores permanently.
 
-🔗 **Free 3x Automation Blueprint (Make.com + Zapier + Notion AI Templates)**: https://yourlink.com/3x-automation-pack
+🔗 **Free 3x Automation Blueprint (Make.com + Zapier + Notion AI Templates)**: https://kenvh0010-lang.github.io/admin/bio/?ref=3x-automation-pack
 
 ⏱️ Timestamps:
 00:00 - You Are Acting Like a Human Router
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-What is the most annoying digital chore you still do by hand every week? Grab my plug-and-play Make/Zapier + Notion AI workflow templates free here: https://yourlink.com/3x-automation-pack
+What is the most annoying digital chore you still do by hand every week? Grab my plug-and-play Make/Zapier + Notion AI workflow templates free here: https://kenvh0010-lang.github.io/admin/bio/?ref=3x-automation-pack
 ```
 
 ## 4. Tags

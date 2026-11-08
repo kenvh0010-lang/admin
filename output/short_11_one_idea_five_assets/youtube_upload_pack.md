@@ -14,7 +14,7 @@
 ```text
 Burnout happens when solo creators try to invent a brand-new topic every single day. Learn the 1-to-5 Content Waterfall to turn one deep weekly research session into five compounding media assets.
 
-🔗 **Launch Your Owned Newsletter Free on Beehiiv + 1-to-5 Waterfall Template**: https://yourlink.com/beehiiv-waterfall
+🔗 **Launch Your Owned Newsletter Free on Beehiiv + 1-to-5 Waterfall Template**: https://kenvh0010-lang.github.io/admin/bio/?ref=beehiiv-waterfall
 
 ⏱️ Timestamps:
 00:00 - Stop Inventing 30 Separate Ideas a Month
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Are you still creating every post from scratch, or running a 1-to-5 Waterfall? Start your free owned newsletter on Beehiiv + grab my Content Waterfall Notion tracker here: https://yourlink.com/beehiiv-waterfall
+Are you still creating every post from scratch, or running a 1-to-5 Waterfall? Start your free owned newsletter on Beehiiv + grab my Content Waterfall Notion tracker here: https://kenvh0010-lang.github.io/admin/bio/?ref=beehiiv-waterfall
 ```
 
 ## 4. Tags

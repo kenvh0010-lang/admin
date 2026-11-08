@@ -14,7 +14,7 @@
 ```text
 In 1994, Jeff Bezos walked away from a lucrative Wall Street bonus at D.E. Shaw using one mental time machine: the Age-80 Regret Minimization Framework, backed by Cornell psychology research on lifelong regret.
 
-🔗 **Free Founder Mental Models PDF + 'Invent and Wander' Audiobook Trial**: https://yourlink.com/founder-models-pdf
+🔗 **Free Founder Mental Models PDF + 'Invent and Wander' Audiobook Trial**: https://kenvh0010-lang.github.io/admin/bio/?ref=founder-models-pdf
 
 ⏱️ Timestamps:
 00:00 - The 1994 Wall Street Bonus Dilemma
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-If your 80-year-old self gave you 1 sentence of advice this week, what would it be? Download the free Founder Mental Models PDF + grab Jeff Bezos' 'Invent and Wander' free trial here: https://yourlink.com/founder-models-pdf
+If your 80-year-old self gave you 1 sentence of advice this week, what would it be? Download the free Founder Mental Models PDF + grab Jeff Bezos' 'Invent and Wander' free trial here: https://kenvh0010-lang.github.io/admin/bio/?ref=founder-models-pdf
 ```
 
 ## 4. Tags

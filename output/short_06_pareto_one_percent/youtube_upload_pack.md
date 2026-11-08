@@ -14,7 +14,7 @@
 ```text
 In 1896, economist Vilfredo Pareto discovered the 80/20 distribution. But Pareto's law is fractal: apply 80/20 a second time and just 4% of your inputs drive 64% of your entire life's results.
 
-🔗 **Get the 80/20 Fractal Priority Matrix Sheet + Richard Koch's Book**: https://yourlink.com/pareto-matrix
+🔗 **Get the 80/20 Fractal Priority Matrix Sheet + Richard Koch's Book**: https://kenvh0010-lang.github.io/admin/bio/?ref=pareto-matrix
 
 ⏱️ Timestamps:
 00:00 - Nobody Runs the 80/20 Math Twice
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Look at your 25 tasks this week: what is the ONE task inside your top 4%? Grab the 80/20 Fractal Priority Matrix + 'The 80/20 Principle' free audiobook trial here: https://yourlink.com/pareto-matrix
+Look at your 25 tasks this week: what is the ONE task inside your top 4%? Grab the 80/20 Fractal Priority Matrix + 'The 80/20 Principle' free audiobook trial here: https://kenvh0010-lang.github.io/admin/bio/?ref=pareto-matrix
 ```
 
 ## 4. Tags

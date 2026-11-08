@@ -14,7 +14,7 @@
 ```text
 Choreographer Twyla Tharp and 'Atomic Habits' author James Clear share one rule for hard habits: shrink any ambitious goal down to a 120-second gateway ritual until showing up becomes automatic.
 
-🔗 **Listen to 'Atomic Habits' Free on Audible + 2-Minute Habit Tracker CSV**: https://yourlink.com/2min-gateway-kit
+🔗 **Listen to 'Atomic Habits' Free on Audible + 2-Minute Habit Tracker CSV**: https://kenvh0010-lang.github.io/admin/bio/?ref=2min-gateway-kit
 
 ⏱️ Timestamps:
 00:00 - Never Start a 60-Minute Habit on Day One
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-What hard habit are you shrinking down to a 120-second gateway tonight? Grab the free 2-Minute Gateway Tracker + James Clear's 'Atomic Habits' free audiobook trial here: https://yourlink.com/2min-gateway-kit
+What hard habit are you shrinking down to a 120-second gateway tonight? Grab the free 2-Minute Gateway Tracker + James Clear's 'Atomic Habits' free audiobook trial here: https://kenvh0010-lang.github.io/admin/bio/?ref=2min-gateway-kit
 ```
 
 ## 4. Tags

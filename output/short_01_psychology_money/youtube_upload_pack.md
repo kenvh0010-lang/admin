@@ -14,7 +14,7 @@
 ```text
 In 1765, French philosopher Denis Diderot got rich overnight—and went broke within months because of one scarlet robe. Here is how the Diderot Effect silently drains modern paychecks and the 72-hour rule to stop it.
 
-🔗 **Listen to 'The Psychology of Money' Free on Audible (30-Day Trial)**: https://yourlink.com/audible-psychology-of-money
+🔗 **Listen to 'The Psychology of Money' Free on Audible (30-Day Trial)**: https://kenvh0010-lang.github.io/admin/bio/?ref=audible-psychology-of-money
 
 ⏱️ Timestamps:
 00:00 - Why Getting a Raise Makes People Poorer
@@ -31,7 +31,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-Have you ever upgraded one thing (like a phone or car) and suddenly felt everything else you owned looked 'old'? 👇 Grab 'The Psychology of Money' audiobook free + my 1-page Anti-Creep Tracker here: https://yourlink.com/wealth-kit
+Have you ever upgraded one thing (like a phone or car) and suddenly felt everything else you owned looked 'old'? 👇 Grab 'The Psychology of Money' audiobook free + my 1-page Anti-Creep Tracker here: https://kenvh0010-lang.github.io/admin/bio/?ref=wealth-kit
 ```
 
 ## 4. Tags

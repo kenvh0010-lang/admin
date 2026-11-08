@@ -14,7 +14,7 @@
 ```text
 The most expensive line item in your life never shows up on a bank statement: hesitation. Explore Friedrich von Wieser's Opportunity Cost, Baron & Ritov's Omission Bias, and Jeff Bezos' Type-1 vs Type-2 Door framework to stop paying the tax of indecision.
 
-🔗 **Type-1/Type-2 Decision Matrix Notion OS + 'Thinking in Bets' Free Trial**: https://yourlink.com/decision-matrix-os
+🔗 **Type-1/Type-2 Decision Matrix Notion OS + 'Thinking in Bets' Free Trial**: https://kenvh0010-lang.github.io/admin/bio/?ref=decision-matrix-os
 
 ⏱️ Timestamps:
 00:00 - Why Your Biggest Expense Never Sends a Receipt
@@ -33,7 +33,7 @@ We break down wealth psychology, timeless book frameworks, and modern AI leverag
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)
 ```text
-What is ONE reversible 'Two-Way Door' project you have been overthinking for more than 30 days? Download the Decision Matrix Notion OS + grab Annie Duke's 'Thinking in Bets' free audiobook trial here: https://yourlink.com/decision-matrix-os
+What is ONE reversible 'Two-Way Door' project you have been overthinking for more than 30 days? Download the Decision Matrix Notion OS + grab Annie Duke's 'Thinking in Bets' free audiobook trial here: https://kenvh0010-lang.github.io/admin/bio/?ref=decision-matrix-os
 ```
 
 ## 4. Tags
