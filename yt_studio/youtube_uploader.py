@@ -19,12 +19,33 @@ SITE_BIO_URL = "https://kenvh0010-lang.github.io/admin/bio/"
 SITE_HOME_URL = "https://kenvh0010-lang.github.io/admin/"
 
 
+def _normalize_oauth_secret(raw: str, field_name: str) -> str:
+    """Strip accidental quotes/whitespace or extract field from pasted Google OAuth JSON."""
+    val = (raw or "").strip()
+    if val.startswith("{") and val.endswith("}"):
+        try:
+            parsed = json.loads(val)
+            if isinstance(parsed, dict):
+                for container in (parsed, parsed.get("web") or {}, parsed.get("installed") or {}):
+                    if isinstance(container, dict) and container.get(field_name):
+                        return str(container[field_name]).strip()
+        except json.JSONDecodeError:
+            pass
+    return val.strip().strip('"').strip("'").strip()
+
+
 def get_access_token(client_id: str, client_secret: str, refresh_token: str) -> str:
     """Exchange OAuth2 refresh token for a fresh YouTube Data API v3 access token."""
+    import urllib.error
+
+    cid = _normalize_oauth_secret(client_id, "client_id")
+    csec = _normalize_oauth_secret(client_secret, "client_secret")
+    rtok = _normalize_oauth_secret(refresh_token, "refresh_token")
+
     payload = urllib.parse.urlencode({
-        "client_id": client_id,
-        "client_secret": client_secret,
-        "refresh_token": refresh_token,
+        "client_id": cid,
+        "client_secret": csec,
+        "refresh_token": rtok,
         "grant_type": "refresh_token",
     }).encode("utf-8")
     req = urllib.request.Request(
@@ -33,9 +54,33 @@ def get_access_token(client_id: str, client_secret: str, refresh_token: str) -> 
         headers={"Content-Type": "application/x-www-form-urlencoded"},
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-    return data["access_token"]
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        return data["access_token"]
+    except urllib.error.HTTPError as exc:
+        err_code = "unknown"
+        err_desc = ""
+        try:
+            err_json = json.loads(exc.read().decode("utf-8", errors="replace"))
+            err_code = str(err_json.get("error", "unknown"))
+            err_desc = str(err_json.get("error_description", ""))
+        except Exception:
+            pass
+        placeholder_words = ("placeholder", "your_", "dummy", "example", "todo", "xxx", "changeme")
+        has_placeholder = any(
+            w in s.lower() for s in (cid, csec, rtok) for w in placeholder_words
+        )
+        diag = (
+            f"OAuth token exchange failed (HTTP {exc.code}: {err_code}"
+            f"{' - ' + err_desc if err_desc else ''}). "
+            f"Format check: client_id_googleusercontent={cid.endswith('.apps.googleusercontent.com')}, "
+            f"client_secret_gocspx={csec.startswith('GOCSPX-')}, "
+            f"refresh_token_1slash={rtok.startswith('1//')}, "
+            f"placeholder_detected={has_placeholder}, "
+            f"lengths=({len(cid)}, {len(csec)}, {len(rtok)})."
+        )
+        raise RuntimeError(diag) from None
 
 
 def verify_youtube_channel(
@@ -44,9 +89,9 @@ def verify_youtube_channel(
     refresh_token: Optional[str] = None,
 ) -> Optional[Dict[str, Any]]:
     """Verify OAuth2 credentials and return connected YouTube channel metadata."""
-    cid = (client_id or os.environ.get("YOUTUBE_CLIENT_ID", "")).strip()
-    csec = (client_secret or os.environ.get("YOUTUBE_CLIENT_SECRET", "")).strip()
-    rtok = (refresh_token or os.environ.get("YOUTUBE_REFRESH_TOKEN", "")).strip()
+    cid = _normalize_oauth_secret(client_id or os.environ.get("YOUTUBE_CLIENT_ID", ""), "client_id")
+    csec = _normalize_oauth_secret(client_secret or os.environ.get("YOUTUBE_CLIENT_SECRET", ""), "client_secret")
+    rtok = _normalize_oauth_secret(refresh_token or os.environ.get("YOUTUBE_REFRESH_TOKEN", ""), "refresh_token")
 
     if not (cid and csec and rtok):
         print("ℹ️  Missing YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET / YOUTUBE_REFRESH_TOKEN.")
@@ -314,13 +359,16 @@ def _select_live_tts_provider() -> str:
 
 def publish_next_in_queue(privacy_status: str = "public") -> Optional[Dict[str, str]]:
     """Render (with guaranteed neural voice) and upload the next scheduled video + SRT + Thumbnail + Comment."""
-    client_id = os.environ.get("YOUTUBE_CLIENT_ID", "").strip()
-    client_secret = os.environ.get("YOUTUBE_CLIENT_SECRET", "").strip()
-    refresh_token = os.environ.get("YOUTUBE_REFRESH_TOKEN", "").strip()
+    client_id = _normalize_oauth_secret(os.environ.get("YOUTUBE_CLIENT_ID", ""), "client_id")
+    client_secret = _normalize_oauth_secret(os.environ.get("YOUTUBE_CLIENT_SECRET", ""), "client_secret")
+    refresh_token = _normalize_oauth_secret(os.environ.get("YOUTUBE_REFRESH_TOKEN", ""), "refresh_token")
 
     if not (client_id and client_secret and refresh_token):
         print("ℹ️  YouTube OAuth secrets not set yet — skipping live YouTube API upload.")
         return None
+
+    # Fail fast (<1s) if OAuth credentials are invalid before spending CPU rendering video
+    access_token = get_access_token(client_id, client_secret, refresh_token)
 
     sb_path = pick_next_unpublished_storyboard()
     if not sb_path:
@@ -330,7 +378,12 @@ def publish_next_in_queue(privacy_status: str = "public") -> Optional[Dict[str, 
     storyboard = json.loads(sb_path.read_text(encoding="utf-8"))
     tts_provider = _select_live_tts_provider()
     print(f"🎙️ Rendering next queued video '{sb_path.stem}' with TTS={tts_provider}...")
-    outputs = render_project(storyboard_path=sb_path, output_dir=OUTPUT_DIR, tts_provider=tts_provider)
+    outputs = render_project(
+        storyboard_path=sb_path,
+        output_dir=OUTPUT_DIR,
+        tts_provider=tts_provider,
+        skip_existing=True,
+    )
     access_token = get_access_token(client_id, client_secret, refresh_token)
 
     video_id = upload_video_resumable(
