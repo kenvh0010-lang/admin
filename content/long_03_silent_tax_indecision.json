@@ -37,19 +37,31 @@
         "Bank statements track dollars spent, never compounding years lost",
         "Hesitation feels free today and charges compound interest later"
       ],
-      "highlight_words": ["invisible", "receipt", "hesitation", "compound"],
-      "narration": "If you audit your bank statement tonight, you will see every coffee, subscription, and utility bill down to the penny. What you will never see is an invoice for the skill you postponed learning two years ago, the side project still sitting in a notes folder, or the career move you researched until the window closed. In 1914, Austrian economist Friedrich von Wieser formalized this hidden price tag as Opportunity Cost: the true cost of any choice is the best alternative you gave up to keep things the same. Doing nothing is never neutral. Every month you say let me wait until the timing is perfect, you are actively paying full price for the status quo."
+      "highlight_words": [
+        "invisible",
+        "receipt",
+        "hesitation",
+        "compound"
+      ],
+      "narration": "If you audit your bank statement tonight, you will see every coffee, subscription, and utility bill down to the penny. What you will never see is an invoice for the skill you postponed learning two years ago, the side project still sitting in a notes folder, or the career move you researched until the window closed. In 1914, Austrian economist Friedrich von Wieser gave this hidden price tag a name: opportunity cost, the value of the best alternative you gave up. Doing nothing is never neutral. Every month you say let me wait until the timing is perfect, you are paying full price for the status quo.",
+      "source": "Friedrich von Wieser, Theorie der gesellschaftlichen Wirtschaft (1914)"
     },
     {
       "tag": "CHAPTER 2 - OMISSION BIAS",
-      "headline": "Why Losing $500 Hurts More Than Missing $50,000",
+      "headline": "Why a Visible $200 Loss Hurts More Than an Invisible One",
       "visual_type": "comparison_split",
       "left_title": "ERROR OF COMMISSION",
       "left_body": "Visible action fails -> costs $500 and bruises ego -> people avoid it at all costs",
       "right_title": "ERROR OF OMISSION",
       "right_body": "Quiet inaction -> forfeits $50,000 in 3-year skill & asset growth -> zero social blame",
-      "highlight_words": ["omission", "commission", "ego", "invisible"],
-      "narration": "Why do intelligent, analytical adults fall into this trap more often than beginners? In 1988, psychologists Jonathan Baron and Ilana Ritov identified a cognitive blind spot called Omission Bias. Human brains evolved in small tribes where making a visible mistake could get you exiled, whereas staying quiet in the crowd kept you safe. As a result, we punish visible errors of commission ten times harder than invisible errors of omission. If you spend two hundred dollars testing a digital product and nobody buys it, your ego feels a sting. If you sit on the idea for four years and forfeit fifty thousand dollars of compounding skill and income, nobody laughs at you, so your brain calls it safe."
+      "highlight_words": [
+        "omission",
+        "commission",
+        "ego",
+        "invisible"
+      ],
+      "narration": "Why do intelligent, analytical adults fall into this trap? In 1990, psychologists Ilana Ritov and Jonathan Baron documented a pattern called omission bias: people judge harm caused by acting as worse than the same harm caused by doing nothing. If you spend two hundred dollars testing a digital product and nobody buys it, the loss is visible and it stings. If you sit on the idea for four years, the cost is just as real, but nobody sees it, so your brain files it as safe.",
+      "source": "Ritov & Baron, 'Reluctance to vaccinate: omission bias and ambiguity', Journal of Behavioral Decision Making (1990)"
     },
     {
       "tag": "CHAPTER 3 - ONE-WAY VS TWO-WAY DOORS",
@@ -59,17 +71,29 @@
       "left_body": "Irreversible & high stakes (selling a company, signing massive debt) -> go slow & deliberate",
       "right_title": "TYPE 2: TWO-WAY DOORS",
       "right_body": "Reversible & low stakes (publishing a video, testing an offer) -> walk through in 24 hours",
-      "highlight_words": ["reversible", "irreversible", "doors", "heavyweight"],
-      "narration": "In his landmark 2015 letter to Amazon shareholders, Jeff Bezos shared the exact mental model he used to keep a giant company from slowing to a crawl. He divided every decision into Type One and Type Two. Type One decisions are one-way doors: once you walk through, you cannot easily go back, like taking on massive personal debt or selling a business. Those deserve weeks of careful math. Type Two decisions are two-way doors: you open the door, look around, and if you dislike what you see, you step right back out. Publishing your first video essay, pitching three clients, or launching a nineteen-dollar template are all two-way doors. Tragedy strikes when ambitious people apply heavyweight Type-One fear to lightweight Type-Two experiments."
+      "highlight_words": [
+        "reversible",
+        "irreversible",
+        "doors",
+        "heavyweight"
+      ],
+      "narration": "In his 2015 letter to Amazon shareholders, Jeff Bezos described the mental model he used to keep a giant company from slowing to a crawl. He divided decisions into Type One and Type Two. Type One decisions are one-way doors: once you walk through, you cannot easily go back, like taking on massive personal debt or selling a business. Those deserve weeks of careful math. Type Two decisions are two-way doors: you open the door, look around, and if you dislike what you see, you step back out. Publishing your first video essay, pitching three clients, or launching a nineteen-dollar template are all two-way doors. The trouble starts when people bring Type One fear to Type Two experiments.",
+      "source": "Jeff Bezos, 2015 Letter to Amazon Shareholders"
     },
     {
       "tag": "CHAPTER 4 - THE 70% CERTAINTY RULE",
-      "headline": "Waiting From 70% to 95% Certainty Destroys Your Margin",
+      "headline": "Waiting From 70% to 90% Certainty Makes You Slow",
       "visual_type": "compounding_curve",
       "stat_label": "DECIDE AT 70% DATA + COURSE-CORRECT IN MOTION",
       "stat_subtext": "Real-world feedback in 48 hours teaches more than 6 months of spreadsheets",
-      "highlight_words": ["seventy", "ninety-five", "feedback", "motion"],
-      "narration": "Perfectionists love to call their hesitation thorough research. Yet both former Secretary of State Colin Powell and Jeff Bezos arrived at practically the same threshold: on any reversible decision, act the moment you hold roughly seventy percent of the information you wish you had. If you wait for ninety-five percent certainty, two bad things happen. First, everyone else can see the obvious opportunity too, so margins compress. Second, the final thirty percent of clarity almost never lives inside another podcast or textbook; it only reveals itself after your work touches real reality. You cannot steer a parked car, no matter how long you study the map."
+      "highlight_words": [
+        "seventy",
+        "ninety-five",
+        "feedback",
+        "motion"
+      ],
+      "narration": "Perfectionists love to call their hesitation thorough research. In his 2016 shareholder letter, Jeff Bezos wrote that most decisions should be made with somewhere around seventy percent of the information you wish you had. If you wait for ninety percent, he wrote, you are probably being slow. Two things happen while you wait. Everyone else can see the obvious opportunity too, so the advantage shrinks. And the missing information rarely lives inside another podcast or textbook; it shows up after your work touches the real world. You cannot steer a parked car, no matter how long you study the map.",
+      "source": "Jeff Bezos, 2016 Letter to Amazon Shareholders"
     },
     {
       "tag": "CHAPTER 5 - BURIDAN'S PARADOX",
@@ -78,12 +102,18 @@
       "stat_value": "0 Progress",
       "stat_label": "STARVING BETWEEN TWO IDENTICAL BALES OF HAY",
       "bullets": [
-        "14th-century philosopher Jean Buridan described paralysis between equal choices",
+        "'Buridan's ass': a paradox named after 14th-century philosopher Jean Buridan",
         "Debating Niche A vs Niche B for 90 days loses to picking either in 10 minutes",
         "When two options score within 10% of each other, flip a coin and execute"
       ],
-      "highlight_words": ["buridan", "equal", "niche", "coin"],
-      "narration": "Fourteenth-century French philosopher Jean Buridan illustrated another trap that haunts analytical minds today. Imagine a hungry donkey standing halfway between two equally fresh stacks of hay. Because neither stack is provably superior, the animal freezes in endless comparison until it starves. Look at how modern creators and professionals stall for months debating Python versus JavaScript, Notion versus Obsidian, or YouTube topic A versus topic B. Whenever two reversible paths look roughly equal, that is mathematical proof the difference between them is tiny compared to the cost of standing still. Pick one before dinner and let execution break the tie."
+      "highlight_words": [
+        "buridan",
+        "equal",
+        "niche",
+        "coin"
+      ],
+      "narration": "A puzzle named after fourteenth-century philosopher Jean Buridan describes another trap that haunts analytical minds. Imagine a hungry donkey standing halfway between two equally fresh stacks of hay. Because neither stack is clearly better, the animal freezes in endless comparison until it starves. Look at how creators and professionals stall for months debating Python versus JavaScript, Notion versus Obsidian, or YouTube topic A versus topic B. When two reversible paths look roughly equal, the difference between them is usually small compared to the cost of standing still. Pick one before dinner and let execution break the tie.",
+      "source": "Buridan's ass paradox; decision rule is a Mind & Margin rule of thumb"
     },
     {
       "tag": "CHAPTER 6 - CAPPING THE DOWNSIDE",
@@ -91,8 +121,14 @@
       "visual_type": "compounding_curve",
       "stat_label": "CAPPED COST ($50 + WEEKENDS) VS UNCAPPED UPSIDE",
       "stat_subtext": "Protect your baseline bills so your experiments stay fearless",
-      "highlight_words": ["downside", "capped", "ceiling", "barbell"],
-      "narration": "Moving fast never means gambling recklessly with rent money. Risk scholar Nassim Taleb calls the smart alternative a Barbell Strategy: keep ninety percent of your foundation ultra-stable, such as a reliable day job and cash emergency reserves, while using the remaining ten percent of your time for fast, asymmetric experiments. When an experiment costs zero debt, fifty dollars in software, and five hours on Saturday morning, your worst-case scenario is a sharper resume skill and a good story. Your best-case scenario is a compounding digital asset that transforms your income margin."
+      "highlight_words": [
+        "downside",
+        "capped",
+        "ceiling",
+        "barbell"
+      ],
+      "narration": "Moving fast never means gambling recklessly with rent money. Risk scholar Nassim Taleb calls the smart alternative a Barbell Strategy: keep ninety percent of your foundation ultra-stable, such as a reliable day job and cash emergency reserves, while using the remaining ten percent of your time for fast, asymmetric experiments. When an experiment costs zero debt, fifty dollars in software, and five hours on Saturday morning, your worst-case scenario is a sharper resume skill and a good story. Your best-case scenario is a compounding digital asset that transforms your income margin.",
+      "source": "Nassim Nicholas Taleb, Antifragile (2012), barbell strategy"
     },
     {
       "tag": "CHAPTER 7 - THE 3-QUESTION PROTOCOL",
@@ -105,8 +141,14 @@
         "Q2: Can I cap the worst-case loss to under $100 and 10 hours?",
         "Q3: What will waiting another 12 months silently cost me?"
       ],
-      "highlight_words": ["backlog", "five", "minutes", "walk"],
-      "narration": "Before closing this video, run one stalled decision through a five-minute filter. Question one: is this truly an irreversible one-way door, or can you undo it in thirty days without permanent harm? Question two: how can you shrink the first test so the maximum downside is under one hundred dollars and two weekends? Question three: if you repeat the last twelve months of waiting, what will that hesitation quietly cost your future self? If the door swings both ways and the downside is capped, stop researching and walk through it tonight."
+      "highlight_words": [
+        "backlog",
+        "five",
+        "minutes",
+        "walk"
+      ],
+      "narration": "Before closing this video, run one stalled decision through a five-minute filter. Question one: is this truly an irreversible one-way door, or can you undo it in thirty days without permanent harm? Question two: how can you shrink the first test so the maximum downside is under one hundred dollars and two weekends? Question three: if you repeat the last twelve months of waiting, what will that hesitation quietly cost your future self? If the door swings both ways and the downside is capped, stop researching and walk through it tonight.",
+      "source": "Mind & Margin decision checklist (advice, not a study)"
     }
   ]
 }

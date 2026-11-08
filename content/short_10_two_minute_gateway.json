@@ -35,8 +35,14 @@
         "Big 1-hour plans collapse on your first tired Tuesday",
         "You cannot optimize a routine you fail to start"
       ],
-      "highlight_words": ["sixty", "minute", "optimize", "start"],
-      "narration": "Never try to launch a sixty-minute habit from scratch. Master the first one hundred twenty seconds instead, because you cannot optimize a habit you never start."
+      "highlight_words": [
+        "sixty",
+        "minute",
+        "optimize",
+        "start"
+      ],
+      "narration": "Never try to launch a sixty-minute habit from scratch. Master the first one hundred twenty seconds instead, because you cannot optimize a habit you never start.",
+      "source": "James Clear, Atomic Habits (2018), the Two-Minute Rule"
     },
     {
       "tag": "TWYLA THARP",
@@ -45,11 +51,17 @@
       "stat_value": "5:30 AM",
       "stat_label": "HAILING THE CAB WAS THE ACTUAL HABIT",
       "bullets": [
-        "Legendary choreographer trained 2 hours daily for decades",
-        "Her only rule: put on a coat and wave down a New York cab"
+        "She worked out for two hours each morning",
+        "Her ritual: get dressed and hail a New York cab"
       ],
-      "highlight_words": ["choreographer", "coat", "taxi", "automatic"],
-      "narration": "In Atomic Habits, James Clear shares how legendary choreographer Twyla Tharp hit the gym at five-thirty every morning. Her ritual was not lifting weights; it was putting on her coat and hailing a cab."
+      "highlight_words": [
+        "choreographer",
+        "coat",
+        "taxi",
+        "automatic"
+      ],
+      "narration": "In Atomic Habits, James Clear shares choreographer Twyla Tharp's morning ritual. She wakes at five-thirty, puts on her workout clothes, and hails a cab to the gym. The ritual is not the workout. It is getting in the cab.",
+      "source": "Twyla Tharp, The Creative Habit (2003); James Clear, Atomic Habits (2018)"
     },
     {
       "tag": "SHRINK THE DOOR",
@@ -59,7 +71,12 @@
       "left_body": "Write 2,000 words tonight / Study coding for 90 minutes",
       "right_title": "2-MINUTE GATEWAY",
       "right_body": "Open the blank doc + type 1 sentence / Run 1 line of code",
-      "highlight_words": ["heavy", "gateway", "open", "sentence"],
+      "highlight_words": [
+        "heavy",
+        "gateway",
+        "open",
+        "sentence"
+      ],
       "narration": "Once the taxi door closed, momentum took over. Apply the same physics to your work: replace write two thousand words with open the document and type one ugly sentence."
     },
     {
@@ -68,8 +85,14 @@
       "visual_type": "compounding_curve",
       "stat_label": "5 DAYS X 2 MINS BEATS 0 DAYS X 2 HOURS",
       "stat_subtext": "Starting burns 10x more mental fuel than continuing in motion",
-      "highlight_words": ["standardize", "optimize", "ten", "motion"],
-      "narration": "Starting demands ten times more activation energy than continuing once you are already moving. Standardize the act of showing up first, then expand the volume naturally."
+      "highlight_words": [
+        "standardize",
+        "optimize",
+        "ten",
+        "motion"
+      ],
+      "narration": "Starting is the hardest part. Make showing up your standard first, then add more once the habit sticks.",
+      "source": "James Clear, Atomic Habits (2018)"
     },
     {
       "tag": "LOOP",
@@ -81,8 +104,14 @@
         "Make the entry step too small to skip on bad days",
         "Identity builds from streaks, never one heroic burst"
       ],
-      "highlight_words": ["entry", "small", "streaks", "rule"],
-      "narration": "Make the entry doorway so small you can walk through it even on your most exhausted day. Follow this one rule and..."
+      "highlight_words": [
+        "entry",
+        "small",
+        "streaks",
+        "rule"
+      ],
+      "narration": "Make the entry doorway so small you can walk through it even on your most exhausted day. Follow this one rule and...",
+      "source": "James Clear, Atomic Habits (2018)"
     }
   ]
 }

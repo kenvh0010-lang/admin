@@ -4,7 +4,7 @@
   "alt_title_2": "Why High Earners Still Live Paycheck to Paycheck",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "In 1765, French philosopher Denis Diderot got rich overnight—and went broke within months because of one scarlet robe. Here is how the Diderot Effect silently drains modern paychecks and the 72-hour rule to stop it.",
+  "description_hook": "In 1769 the philosopher Denis Diderot was given a scarlet robe, and it made everything else he owned look shabby. Here is how the Diderot Effect drains modern paychecks, and a simple rule to stop it. Stat: PYMNTS Intelligence, Jan 2024.",
   "tags": [
     "psychology of money",
     "diderot effect",
@@ -16,10 +16,10 @@
   "thumbnail": {
     "hook_text": "THE PAYCHECK TRAP",
     "badge": "WEALTH PSYCHOLOGY",
-    "stat": "78%"
+    "stat": "48%"
   },
   "affiliate_cta": {
-    "offer_name": "Listen to 'The Psychology of Money' Free on Audible (30-Day Trial)",
+    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "Have you ever upgraded one thing (like a phone or car) and suddenly felt everything else you owned looked 'old'? 👇 Grab 'The Psychology of Money' audiobook free + my 1-page Anti-Creep Tracker here: https://kenvh0010-lang.github.io/admin/bio/"
   },
@@ -28,27 +28,39 @@
       "tag": "HOOK",
       "headline": "Why Getting a Raise Makes People Poorer",
       "visual_type": "stat_callout",
-      "stat_value": "62%",
-      "stat_label": "SIX-FIGURE EARNERS LIVING PAYCHECK TO PAYCHECK",
+      "stat_value": "48%",
+      "stat_label": "OF $100K+ EARNERS LIVE PAYCHECK TO PAYCHECK",
       "bullets": [
         "Higher income rarely fixes money stress",
         "A 250-year-old psychological chain reaction explains why"
       ],
-      "highlight_words": ["62%", "six-figure", "broke", "chain"],
-      "narration": "Sixty-two percent of people earning six figures still live paycheck to paycheck. And a two-hundred-fifty-year-old story explains why."
+      "highlight_words": [
+        "half",
+        "six",
+        "figures",
+        "story"
+      ],
+      "narration": "Nearly half of Americans earning over one hundred thousand dollars a year live paycheck to paycheck. A story from 1769 explains why.",
+      "source": "PYMNTS Intelligence, Jan 2024 (4,285 U.S. consumers)"
     },
     {
       "tag": "THE STORY",
-      "headline": "Denis Diderot & The Scarlet Robe (1765)",
+      "headline": "Denis Diderot & The Scarlet Robe (1769)",
       "visual_type": "stat_callout",
-      "stat_value": "1765",
+      "stat_value": "1769",
       "stat_label": "THE DIDEROT SPIRAL BEGINS",
       "bullets": [
         "Gifted one luxury scarlet dressing gown",
         "Suddenly his desk, rug, and chairs looked 'cheap'"
       ],
-      "highlight_words": ["scarlet", "robe", "cheap", "replaced"],
-      "narration": "In 1765, philosopher Denis Diderot was gifted a luxurious scarlet robe. Next to that robe, his old wooden desk looked cheap. So he replaced the desk. Then the rug. Then every chair in his home."
+      "highlight_words": [
+        "scarlet",
+        "robe",
+        "cheap",
+        "replaced"
+      ],
+      "narration": "In 1769, the philosopher Denis Diderot wrote about a luxurious scarlet robe he had been given. Next to that robe, his old desk looked cheap. So he replaced the desk. Then the tapestry. Then the chairs.",
+      "source": "Denis Diderot, 'Regrets on Parting with My Old Dressing Gown' (1769)"
     },
     {
       "tag": "THE TRAP",
@@ -58,8 +70,14 @@
       "left_body": "New phone -> watch -> earbuds -> monthly subscriptions",
       "right_title": "WEALTH MARGIN",
       "right_body": "Freeze lifestyle for 12 months after every raise",
-      "highlight_words": ["upgrade", "five", "margin", "freeze"],
-      "narration": "Psychologists call this the Diderot Effect. You rarely buy just one upgrade—you buy a whole new identity that demands five more purchases to match."
+      "highlight_words": [
+        "upgrade",
+        "five",
+        "margin",
+        "freeze"
+      ],
+      "narration": "The anthropologist Grant McCracken later named this the Diderot Effect. You rarely buy just one upgrade. You buy a new identity that demands more purchases to match.",
+      "source": "Grant McCracken, Culture and Consumption (1988)"
     },
     {
       "tag": "THE RULE",
@@ -67,7 +85,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "INVESTING 50% OF EVERY NEW RAISE",
       "stat_subtext": "Lifestyle still grows—margin compounds 4x faster",
-      "highlight_words": ["50%", "automated", "freedom", "margin"],
+      "highlight_words": [
+        "50%",
+        "automated",
+        "freedom",
+        "margin"
+      ],
       "narration": "To break the spiral, use the Invisible Raise Rule: whenever your income jumps, automatically route fifty percent into assets before it ever hits your checking account."
     },
     {
@@ -80,7 +103,12 @@
         "Wait 72 hours before matching a new purchase",
         "Keep the raise—skip the chain reaction"
       ],
-      "highlight_words": ["wealth", "freedom", "72", "hours"],
+      "highlight_words": [
+        "wealth",
+        "freedom",
+        "72",
+        "hours"
+      ],
       "narration": "Real wealth isn't what people see in your driveway—it's the freedom you didn't trade away. Which is exactly why..."
     }
   ]

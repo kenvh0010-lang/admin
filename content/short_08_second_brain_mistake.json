@@ -4,7 +4,7 @@
   "alt_title_2": "Stop Building a Digital Graveyard in Notion",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Researcher Christian Tietze coined the 'Collector's Fallacy' in 2014 to explain why saving articles and color-coding Notion folders tricks your brain into feeling productive with zero real output.",
+  "description_hook": "In 2014, Zettelkasten writer Christian Tietze named the 'Collector's Fallacy': saving articles feels like learning, even when nothing gets made.",
   "tags": [
     "building a second brain notion",
     "collectors fallacy",
@@ -17,7 +17,7 @@
   "thumbnail": {
     "hook_text": "NOTE HOARDING",
     "badge": "AI LEVERAGE",
-    "stat": "90%"
+    "stat": "0 SHIPPED"
   },
   "affiliate_cta": {
     "offer_name": "Get the 1-Page Action-First Notion OS + 'Building a Second Brain' Trial",
@@ -29,14 +29,20 @@
       "tag": "HOOK",
       "headline": "Your Notes App Is Probably a Graveyard",
       "visual_type": "stat_callout",
-      "stat_value": "90%",
+      "stat_value": "0 SHIPPED",
       "stat_label": "SAVED BOOKMARKS & HIGHLIGHTS NEVER REOPENED",
       "bullets": [
         "Clipping 20 articles feels like real intellectual progress",
         "Without output, it is just organized procrastination"
       ],
-      "highlight_words": ["graveyard", "ninety", "percent", "procrastination"],
-      "narration": "Highlighting books and clipping articles into a sleek Notion workspace feels productive, until you realize ninety percent of saved notes are never opened again."
+      "highlight_words": [
+        "graveyard",
+        "ninety",
+        "percent",
+        "procrastination"
+      ],
+      "narration": "Highlighting books and clipping articles into a sleek Notion workspace feels productive, until you notice how few of those notes you ever open again.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "THE FALLACY",
@@ -48,8 +54,14 @@
         "Your brain rewards 'Save Bookmark' like finished learning",
         "Complex tag trees steal hours from actual building"
       ],
-      "highlight_words": ["collector", "fallacy", "saving", "understanding"],
-      "narration": "In 2014, Zettelkasten researcher Christian Tietze named this trap the Collector's Fallacy: our brains mistake saving a bookmark for actually absorbing the skill."
+      "highlight_words": [
+        "collector",
+        "fallacy",
+        "saving",
+        "understanding"
+      ],
+      "narration": "In 2014, Zettelkasten writer Christian Tietze named this trap the Collector's Fallacy: our brains mistake saving a bookmark for actually learning the skill.",
+      "source": "Christian Tietze, 'The Collector's Fallacy', zettelkasten.de (2014)"
     },
     {
       "tag": "WAREHOUSE VS LAB",
@@ -59,7 +71,12 @@
       "left_body": "30 nested folders, rainbow tags, 400 unread links, 0 shipped work",
       "right_title": "OUTPUT FACTORY",
       "right_body": "Only clip notes tied to a real project shipping in the next 14 days",
-      "highlight_words": ["warehouse", "factory", "project", "fourteen"],
+      "highlight_words": [
+        "warehouse",
+        "factory",
+        "project",
+        "fourteen"
+      ],
       "narration": "Turn your Second Brain from a dusty warehouse into a workshop. Never clip an article into vague topic folders; attach it directly to a project you are shipping within two weeks."
     },
     {
@@ -68,8 +85,14 @@
       "visual_type": "compounding_curve",
       "stat_label": "CONSUME 3 SOURCES -> PUBLISH 1 ORIGINAL ASSET",
       "stat_subtext": "Ideas only compound when tested in the real world",
-      "highlight_words": ["three", "one", "publish", "compound"],
-      "narration": "Use the three-to-one rule: before you allow yourself to save a fourth video or essay, synthesize the last three into one published post, script, or working template."
+      "highlight_words": [
+        "three",
+        "one",
+        "publish",
+        "compound"
+      ],
+      "narration": "Use the three-to-one rule: before you allow yourself to save a fourth video or essay, synthesize the last three into one published post, script, or working template.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "LOOP",
@@ -81,8 +104,14 @@
         "Measure weekly creations, never total notes stored",
         "Simplicity beats aesthetic dashboards every time"
       ],
-      "highlight_words": ["measure", "creations", "simplicity", "otherwise"],
-      "narration": "Judge your system by what you ship on Friday, never by how pretty your dashboard looks on Monday. Because otherwise..."
+      "highlight_words": [
+        "measure",
+        "creations",
+        "simplicity",
+        "otherwise"
+      ],
+      "narration": "Judge your system by what you ship on Friday, never by how pretty your dashboard looks on Monday. Because otherwise...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

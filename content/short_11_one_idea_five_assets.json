@@ -32,11 +32,17 @@
       "stat_value": "1 -> 5",
       "stat_label": "ONE RESEARCH CORE = FIVE COMPOUNDING ASSETS",
       "bullets": [
-        "Amateurs chase daily trends and burn out by Week 4",
+        "Amateurs chase daily trends and burn out fast",
         "Solo media pros research 1 deep thesis every 7 days"
       ],
-      "highlight_words": ["thirty", "burn", "one", "five"],
-      "narration": "Amateurs burn out trying to invent thirty brand-new ideas every month. Smart one-person media businesses research one deep idea a week and slice it into five compounding assets."
+      "highlight_words": [
+        "thirty",
+        "burn",
+        "one",
+        "five"
+      ],
+      "narration": "Amateurs burn out trying to invent thirty brand-new ideas every month. Smart one-person media businesses research one deep idea a week and slice it into five compounding assets.",
+      "source": "Mind & Margin content workflow (advice)"
     },
     {
       "tag": "THE WATERFALL",
@@ -46,7 +52,12 @@
       "left_body": "Random daily posts -> shallow hooks -> vanishes in 24 hours",
       "right_title": "1-TO-5 WATERFALL",
       "right_body": "1 Deep Script -> 1 Long Essay + 3 Vertical Shorts + 1 Newsletter",
-      "highlight_words": ["treadmill", "waterfall", "script", "newsletter"],
+      "highlight_words": [
+        "treadmill",
+        "waterfall",
+        "script",
+        "newsletter"
+      ],
       "narration": "Instead of waking up asking what to post today, build an upstream waterfall: write one thousand-word flagship script on Saturday morning as your master source code."
     },
     {
@@ -60,8 +71,14 @@
         "Assets 2-4: Three 50-second Shorts from top case studies",
         "Asset 5: Weekly email newsletter issue you actually own"
       ],
-      "highlight_words": ["ninety", "evergreen", "shorts", "email"],
-      "narration": "That single script renders into one searchable long-form video, three punchy vertical Shorts extracted from its best stories, and one high-trust weekly email newsletter."
+      "highlight_words": [
+        "ninety",
+        "evergreen",
+        "shorts",
+        "email"
+      ],
+      "narration": "That single script renders into one searchable long-form video, three punchy vertical Shorts extracted from its best stories, and one high-trust weekly email newsletter.",
+      "source": "Mind & Margin content workflow (advice)"
     },
     {
       "tag": "OWNED EQUITY",
@@ -69,7 +86,12 @@
       "visual_type": "compounding_curve",
       "stat_label": "SHORTS ATTRACT -> LONG VIDEO BUILDS TRUST -> EMAIL OWNS",
       "stat_subtext": "Algorithm reach fluctuates; direct subscriber lists compound for years",
-      "highlight_words": ["rent", "own", "trust", "algorithm"],
+      "highlight_words": [
+        "rent",
+        "own",
+        "trust",
+        "algorithm"
+      ],
       "narration": "Short videos capture new eyeballs, long videos build deep authority, and your newsletter locks in audience equity that no sudden algorithm change can take away."
     },
     {
@@ -82,8 +104,14 @@
         "Higher research quality because you only pick 1 topic/week",
         "5x distribution without working 5x longer"
       ],
-      "highlight_words": ["fifty-two", "two", "hundred", "why"],
-      "narration": "Fifty-two weekly theses turn into two hundred sixty published assets a year without adding a single extra work hour. Which is the exact reason why..."
+      "highlight_words": [
+        "fifty-two",
+        "two",
+        "hundred",
+        "why"
+      ],
+      "narration": "Fifty-two weekly theses turn into two hundred sixty published assets a year without researching five separate topics. Which is the exact reason why...",
+      "source": "Calculation: 52 weeks x 5 assets = 260"
     }
   ]
 }

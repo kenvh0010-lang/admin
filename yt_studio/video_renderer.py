@@ -122,28 +122,41 @@ def render_project(
             capture_output=True,
         )
 
-        # Step 4: Build FFmpeg image concat timeline & encode H.264 MP4
-        video_concat_list = work_dir / "frames_list.txt"
-        concat_lines: List[str] = []
-        for frame_png, beat in zip(beat_frames, all_beats):
-            concat_lines.append(f"file '{frame_png.as_posix()}'")
-            concat_lines.append(f"duration {beat.duration:.3f}")
-        # FFmpeg concat demuxer requires repeating the final file entry
-        concat_lines.append(f"file '{beat_frames[-1].as_posix()}'")
-        video_concat_list.write_text("\n".join(concat_lines) + "\n", encoding="utf-8")
+        # Step 4: Each beat becomes a moving clip (slow push-in that continues across a
+        # scene, fade-in on scene changes), then clips are joined losslessly.
+        scene_starts: List[float] = []
+        acc = 0.0
+        for d in scene_durations:
+            scene_starts.append(acc)
+            acc += d
+        clip_paths: List[Path] = []
+        elapsed = 0.0
+        frames_done = 0
+        for i, (frame_png, beat) in enumerate(zip(beat_frames, all_beats)):
+            # frame counts from the cumulative timeline so rounding never drifts from the audio
+            elapsed += beat.duration
+            n_frames = max(1, round(elapsed * fmt.fps) - frames_done)
+            frames_done += n_frames
+            clip = work_dir / f"clip_{i:04d}.mp4"
+            _render_motion_clip(
+                frame_png, clip, n_frames / fmt.fps,
+                t_offset=beat.start_sec - scene_starts[beat.scene_index],
+                scene_dur=scene_durations[beat.scene_index],
+                first_in_scene=(beat.beat_index == 0),
+                fmt=fmt,
+            )
+            clip_paths.append(clip)
+        clips_list = work_dir / "clips_list.txt"
+        clips_list.write_text("\n".join(f"file '{c.as_posix()}'" for c in clip_paths) + "\n", encoding="utf-8")
 
         output_mp4 = proj_out / f"{project_slug}.mp4"
         subprocess.run(
             [
                 "ffmpeg", "-y",
-                "-f", "concat", "-safe", "0", "-i", str(video_concat_list),
+                "-f", "concat", "-safe", "0", "-i", str(clips_list),
                 "-i", str(mixed_audio_m4a),
-                "-c:v", "libx264",
-                "-preset", "ultrafast",
-                "-tune", "stillimage",
-                "-crf", "22",
-                "-r", str(min(fmt.fps, 15)),
-                "-pix_fmt", "yuv420p",
+                "-map", "0:v", "-map", "1:a",
+                "-c:v", "copy",
                 "-c:a", "copy",
                 "-movflags", "+faststart",
                 "-shortest",
@@ -172,6 +185,41 @@ def render_project(
         }
     finally:
         shutil.rmtree(work_dir, ignore_errors=True)
+
+
+def _render_motion_clip(
+    frame_png: Path,
+    out_mp4: Path,
+    duration: float,
+    t_offset: float,
+    scene_dur: float,
+    first_in_scene: bool,
+    fmt,
+    zoom_max: float = 0.05,
+) -> None:
+    """Turn one still frame into a clip with a slow push-in; zoom is tied to time in the
+    scene so consecutive beats of the same scene continue the move without a jump."""
+    fps = fmt.fps
+    w, h = fmt.width, fmt.height
+    n = max(1, round(duration * fps))
+    sd = max(0.1, scene_dur)
+    zoom = f"1+{zoom_max}*({t_offset:.4f}+on/{fps})/{sd:.4f}"
+    vf = (
+        f"scale={w * 2}:{h * 2},"
+        f"zoompan=z='{zoom}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={w}x{h}:fps={fps}"
+    )
+    if first_in_scene:
+        vf += ",fade=t=in:st=0:d=0.3"
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-i", str(frame_png),
+            "-vf", vf, "-frames:v", str(n),
+            "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-pix_fmt", "yuv420p",
+            "-r", str(fps), str(out_mp4),
+        ],
+        check=True,
+        capture_output=True,
+    )
 
 
 def _format_chapter_ts(seconds: float) -> str:

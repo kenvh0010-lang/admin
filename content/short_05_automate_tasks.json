@@ -4,7 +4,7 @@
   "alt_title_2": "Stop Doing $5 Robot Chores With Your Brain",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "Knowledge workers lose nearly 40% of their week acting like human copy-paste routers between browser tabs. Use the software engineer's 3x Automation Rule to eliminate 3 repetitive chores permanently.",
+  "description_hook": "A 2012 McKinsey report estimated knowledge workers spend about 28% of the workweek on email. Use the 3x Automation Rule to remove 3 repetitive chores for good.",
   "tags": [
     "ai workflow automation",
     "productivity systems",
@@ -29,14 +29,20 @@
       "tag": "HOOK",
       "headline": "You Are Acting Like a Human Router",
       "visual_type": "stat_callout",
-      "stat_value": "40%",
-      "stat_label": "WORKWEEK LOST TO REPETITIVE DIGITAL ADMIN",
+      "stat_value": "28%",
+      "stat_label": "OF THE WORKWEEK SPENT ON EMAIL",
       "bullets": [
-        "McKinsey found 40% of desk work is repeatable busywork",
+        "McKinsey (2012): ~28% of the workweek goes to email",
         "Copying data across tabs drains deep creative focus"
       ],
-      "highlight_words": ["40%", "human", "router", "busywork"],
-      "narration": "Workplace studies show knowledge workers burn nearly forty percent of their week on repetitive admin, copying text from one browser tab and pasting it into another."
+      "highlight_words": [
+        "40%",
+        "human",
+        "router",
+        "busywork"
+      ],
+      "narration": "A 2012 McKinsey report estimated that knowledge workers spend about twenty-eight percent of their workweek just reading and answering email.",
+      "source": "McKinsey Global Institute, 'The social economy' (July 2012)"
     },
     {
       "tag": "THE RULE",
@@ -48,8 +54,14 @@
         "1st time: Do it manually to learn the steps",
         "3rd time in a week: Build a permanent AI or webhook flow"
       ],
-      "highlight_words": ["three", "times", "week", "automate"],
-      "narration": "Senior software engineers protect their focus using the Three-Strike Rule: if you perform the exact same digital task three times in one week, stop and automate it."
+      "highlight_words": [
+        "three",
+        "times",
+        "week",
+        "automate"
+      ],
+      "narration": "Programmers have a rule of three: the third time you repeat something, automate it. Apply it to your week. If you do the same digital task three times, stop and automate it.",
+      "source": "'Rule of three', popularized in Martin Fowler, Refactoring (1999)"
     },
     {
       "tag": "3 TASKS",
@@ -59,7 +71,12 @@
       "left_body": "1. Typing call notes  2. Sorting PDF receipts  3. Reformatting posts",
       "right_title": "AUTOMATED PIPELINE",
       "right_body": "AI call summaries -> auto-tagged cloud folders -> 1-click drafts",
-      "highlight_words": ["notes", "receipts", "pipeline", "seconds"],
+      "highlight_words": [
+        "notes",
+        "receipts",
+        "pipeline",
+        "seconds"
+      ],
       "narration": "Start with three culprits: typing meeting action items, renaming email receipts for taxes, and reformatting one script into social posts. Modern AI workflows handle all three in seconds."
     },
     {
@@ -68,21 +85,33 @@
       "visual_type": "compounding_curve",
       "stat_label": "20-MINUTE SETUP -> 2+ WORKWEEKS RECLAIMED YEARLY",
       "stat_subtext": "Reinvest those 91 hours into high-margin skills and assets",
-      "highlight_words": ["fifteen", "ninety-one", "hours", "workweeks"],
-      "narration": "Eliminating just fifteen minutes of daily friction takes twenty minutes to wire up once, yet hands you back ninety-one hours of deep creation every single year."
+      "highlight_words": [
+        "fifteen",
+        "ninety-one",
+        "hours",
+        "workweeks"
+      ],
+      "narration": "Cut fifteen minutes of daily busywork and you get back about ninety-one hours a year for real work.",
+      "source": "Calculation: 15 minutes x 365 days = 91 hours"
     },
     {
       "tag": "LOOP",
       "headline": "Protect Your Brain for Asymmetric Work",
       "visual_type": "stat_callout",
-      "stat_value": "$0/run",
+      "stat_value": "3x Rule",
       "stat_label": "MARGINAL EFFORT AFTER WORKFLOW SETUP",
       "bullets": [
         "Robots never forget a step at 4 PM on Friday",
         "Save human energy for judgment and strategy"
       ],
-      "highlight_words": ["robots", "energy", "judgment", "because"],
-      "narration": "Let software do the robot work so your brain stays sharp for high-value judgment. Because right now..."
+      "highlight_words": [
+        "robots",
+        "energy",
+        "judgment",
+        "because"
+      ],
+      "narration": "Let software do the robot work so your brain stays sharp for high-value judgment. Because right now...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }

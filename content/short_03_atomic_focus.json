@@ -16,45 +16,62 @@
   "thumbnail": {
     "hook_text": "90 MINUTE RULE",
     "badge": "BRAIN SCIENCE",
-    "stat": "4.5X"
+    "stat": "2H 53M"
   },
   "affiliate_cta": {
-    "offer_name": "Download the 90-Minute Ultradian Sprint Timer & Notion Planner",
+    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "Are you a morning builder or a late-night builder? ⚡ Grab the free 90-Minute Deep Work Notion Tracker + 'Deep Work' free audiobook link here: https://kenvh0010-lang.github.io/admin/bio/"
   },
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "The 8-Hour Workday Is Biologically Fake",
+      "headline": "Most of an 8-Hour Day Isn't Real Work",
       "visual_type": "stat_callout",
       "stat_value": "2h 53m",
-      "stat_label": "REAL FOCUSED WORK IN AN 8-HOUR OFFICE DAY",
+      "stat_label": "SELF-REPORTED PRODUCTIVE TIME PER DAY",
       "bullets": [
-        "Average knowledge worker focuses under 3 hours/day",
-        "The rest goes to context-switching & fatigue"
+        "UK office workers, average answer",
+        "News sites and social media ate the most time"
       ],
-      "highlight_words": ["fake", "three", "hours", "fatigue"],
-      "narration": "Studies show the average office worker gets just two hours and fifty-three minutes of real focus in an eight-hour day. Your brain was never wired for nonstop grinding."
+      "highlight_words": [
+        "fake",
+        "three",
+        "hours",
+        "fatigue"
+      ],
+      "narration": "A survey of nearly two thousand UK office workers found they were truly productive for just two hours and fifty-three minutes a day. Grinding for eight hours does not mean working for eight hours.",
+      "source": "Vouchercloud survey of 1,989 UK office workers (2016)"
     },
     {
       "tag": "SCIENCE",
-      "headline": "Ultradian Cycles: 90 Mins On, 20 Mins Off",
+      "headline": "Work in ~90-Minute Blocks",
       "visual_type": "comparison_split",
       "left_title": "CAFFEINE PUSHING",
-      "left_body": "23-minute penalty every time you check your phone",
+      "left_body": "Checking your phone mid-task breaks focus that takes time to rebuild",
       "right_title": "ULTRADIAN SPRINT",
       "right_body": "90 mins zero-notification creation + 20 mins walk",
-      "highlight_words": ["90", "minutes", "23", "sprint"],
-      "narration": "Neuroscientists call your natural rhythm the Ultradian Cycle: ninety minutes of peak cognitive output followed by a mandatory twenty-minute neural reset."
+      "highlight_words": [
+        "90",
+        "minutes",
+        "23",
+        "sprint"
+      ],
+      "narration": "Sleep researcher Nathaniel Kleitman proposed a roughly ninety-minute rest and activity cycle that keeps running while we are awake. So work in focused blocks of about ninety minutes, then take a real break.",
+      "source": "Nathaniel Kleitman's basic rest-activity cycle"
     },
     {
       "tag": "THE MATH",
-      "headline": "One Daily Block = 547 Hours a Year",
+      "headline": "3 Blocks a Week = 234 Hours a Year",
       "visual_type": "compounding_curve",
-      "stat_label": "1 BLOCK/DAY COMPOUNDED OVER 12 MONTHS",
+      "stat_label": "3 x 90 MIN x 52 WEEKS",
       "stat_subtext": "Enough to launch 52 videos or a profitable digital business",
-      "highlight_words": ["one", "block", "547", "business"],
+      "highlight_words": [
+        "one",
+        "block",
+        "547",
+        "business"
+      ],
       "narration": "Protect just one phone-free ninety-minute block three mornings a week, and you unlock two hundred thirty hours of pure creation a year—more than enough to change your life."
     }
   ]

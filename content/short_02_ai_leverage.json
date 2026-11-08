@@ -16,10 +16,10 @@
   "thumbnail": {
     "hook_text": "ZERO PERMISSION",
     "badge": "AI LEVERAGE",
-    "stat": "4X"
+    "stat": "24/7"
   },
   "affiliate_cta": {
-    "offer_name": "Grab the Solo-Builder AI Stack & Notion OS",
+    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "Which leverage are you building right now—Code, Media, or both? 👇 Full list of free AI tools & 'Almanack of Naval' summary linked here: https://kenvh0010-lang.github.io/admin/bio/"
   },
@@ -28,13 +28,17 @@
       "tag": "HOOK",
       "headline": "Hard Work Without Leverage Has a Ceiling",
       "visual_type": "stat_callout",
-      "stat_value": "1,000x",
-      "stat_label": "OUTPUT GAP BETWEEN EFFORT VS LEVERAGE",
+      "stat_value": "2x",
+      "stat_label": "TWICE THE HOURS, AT MOST TWICE THE OUTPUT",
       "bullets": [
-        "Working 2x longer only pays 2x more",
-        "The right lever multiplies every hour 1,000x"
+        "Effort alone scales in a straight line",
+        "Leverage is what bends the line"
       ],
-      "highlight_words": ["1,000x", "effort", "lever", "ceiling"],
+      "highlight_words": [
+        "twice",
+        "leverage",
+        "burnout"
+      ],
       "narration": "You cannot out-work someone who has better leverage than you. Working twice as long only doubles your output—until you hit burnout."
     },
     {
@@ -44,18 +48,29 @@
       "left_title": "PERMISSIONED LEVERAGE",
       "left_body": "Labor & Capital: Needs investors, bosses, or payroll",
       "right_title": "PERMISSIONLESS LEVERAGE",
-      "right_body": "Code & Media: Zero gatekeepers, zero marginal cost",
-      "highlight_words": ["permission", "capital", "code", "media"],
-      "narration": "For centuries, wealth required permissioned leverage: hiring people or raising millions in capital. Both required someone else to say yes to you first."
+      "right_body": "Code & Media: No gatekeepers, near-zero cost per copy",
+      "highlight_words": [
+        "permission",
+        "capital",
+        "code",
+        "media"
+      ],
+      "narration": "For centuries, wealth required permissioned leverage: hiring people or raising millions in capital. Both required someone else to say yes to you first.",
+      "source": "Naval Ravikant, 'How to Get Rich' (2018)"
     },
     {
       "tag": "THE SHIFT",
       "headline": "AI Turned Words Into Working Software",
       "visual_type": "compounding_curve",
-      "stat_label": "ZERO MARGINAL COST REPLICATION",
+      "stat_label": "NEAR-ZERO COST PER EXTRA COPY",
       "stat_subtext": "1 Video or 1 Script works while you sleep",
-      "highlight_words": ["sleep", "zero", "marginal", "software"],
-      "narration": "Code and media changed the rules. A video you publish tonight or an AI script you build on Sunday works for ten thousand people while you sleep—at zero extra cost."
+      "highlight_words": [
+        "sleep",
+        "zero",
+        "marginal",
+        "software"
+      ],
+      "narration": "Code and media changed the rules. A video you publish tonight or an AI script you build on Sunday can keep serving thousands of people while you sleep, at almost no extra cost."
     },
     {
       "tag": "ACTION",
@@ -67,7 +82,12 @@
         "Keep your day job to fund peace of mind",
         "Turn weekend curiosity into digital media + tools"
       ],
-      "highlight_words": ["5", "hours", "assets", "renting"],
+      "highlight_words": [
+        "5",
+        "hours",
+        "assets",
+        "renting"
+      ],
       "narration": "Stop selling every waking hour and save five hours a week to build digital assets you actually own. Because in the modern economy..."
     }
   ]

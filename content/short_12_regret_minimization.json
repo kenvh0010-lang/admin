@@ -35,8 +35,14 @@
         "Age 30 VP at Wall Street firm D.E. Shaw",
         "Quitting mid-year meant forfeiting a huge annual bonus"
       ],
-      "highlight_words": ["1994", "bonus", "bookstore", "thirty"],
-      "narration": "In 1994, a thirty-year-old Wall Street vice president had to decide whether to give up a massive mid-year bonus to sell books on an obscure new network called the internet."
+      "highlight_words": [
+        "1994",
+        "bonus",
+        "bookstore",
+        "thirty"
+      ],
+      "narration": "In 1994, a thirty-year-old Wall Street vice president had to decide whether to give up a massive mid-year bonus to sell books on an obscure new network called the internet.",
+      "source": "Jeff Bezos, Academy of Achievement interview (2001)"
     },
     {
       "tag": "THE LENS",
@@ -48,8 +54,14 @@
         "Step outside short-term salary noise and social approval",
         "Minimize total lifelong regrets from your 80th birthday"
       ],
-      "highlight_words": ["eighty", "regret", "noise", "looking"],
-      "narration": "His boss warned him not to leave a great job. So Jeff Bezos pictured himself at age eighty looking back on his life, aiming to minimize the total regrets he would carry."
+      "highlight_words": [
+        "eighty",
+        "regret",
+        "noise",
+        "looking"
+      ],
+      "narration": "His boss suggested he think it over for forty-eight hours. So Jeff Bezos pictured himself at age eighty looking back on his life, aiming to minimize the total regrets he would carry.",
+      "source": "Jeff Bezos, Academy of Achievement interview (2001)"
     },
     {
       "tag": "THE CONTRAST",
@@ -59,17 +71,28 @@
       "left_body": "Forfeiting one annual bonus, awkward failure, bruised pride",
       "right_title": "AGE-80 CLARITY",
       "right_body": "0% regret for trying and failing -> 100% haunting regret for never trying",
-      "highlight_words": ["failing", "haunting", "bonus", "clarity"],
+      "highlight_words": [
+        "failing",
+        "haunting",
+        "bonus",
+        "clarity"
+      ],
       "narration": "At eighty, he knew he would never regret missing one Wall Street bonus, and he would not even regret trying and failing. The one thing that would haunt him forever was never trying."
     },
     {
       "tag": "CORNELL STUDY",
-      "headline": "75% of Deep Life Regrets Are Inactions",
+      "headline": "In the Long Run, We Regret Inaction More",
       "visual_type": "compounding_curve",
       "stat_label": "CORNELL PSYCHOLOGY (GILOVICH, 1995): 75% INACTION REGRET",
       "stat_subtext": "Mistakes hurt briefly in the present; unlived paths ache for decades",
-      "highlight_words": ["seventy-five", "cornell", "inaction", "decades"],
-      "narration": "Cornell psychologist Thomas Gilovich confirmed why in 1995: seventy-five percent of enduring human regrets come from paths we were too cautious to test, never attempts that fell short."
+      "highlight_words": [
+        "seventy-five",
+        "cornell",
+        "inaction",
+        "decades"
+      ],
+      "narration": "Cornell psychologists Thomas Gilovich and Victoria Medvec found in 1994 that our actions hurt more in the short term, but over a lifetime, people's biggest regrets are about the things they never tried.",
+      "source": "Gilovich & Medvec, Journal of Personality and Social Psychology (1994)"
     },
     {
       "tag": "LOOP",
@@ -81,8 +104,14 @@
         "Cap your downside so survival is protected",
         "Then take the swing your older self will thank you for"
       ],
-      "highlight_words": ["older", "swing", "comfort", "just"],
-      "narration": "Whenever short-term comfort tries to talk you out of a calculated leap, let your eighty-year-old self cast the deciding vote. Just like..."
+      "highlight_words": [
+        "older",
+        "swing",
+        "comfort",
+        "just"
+      ],
+      "narration": "Whenever short-term comfort tries to talk you out of a calculated leap, let your eighty-year-old self cast the deciding vote. Just like...",
+      "source": "Jeff Bezos, Academy of Achievement interview (2001)"
     }
   ]
 }

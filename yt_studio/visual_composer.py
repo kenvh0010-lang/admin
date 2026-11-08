@@ -119,6 +119,10 @@ def render_scene_beat_frame(
             is_vert=is_vert,
             theme=theme,
         )
+        source = scene.get("source")
+        if source:
+            src_font = _load_font(26 if is_vert else 22, bold=False)
+            draw.text((pad_x + 8, card_bottom + 12), f"Source: {source}", font=src_font, fill=theme.text_muted)
 
     # 5. High-Retention Kinetic Caption Box (in Shorts safe zone!)
     cap_top = int(h * (0.68 if is_vert else 0.75))
@@ -189,8 +193,8 @@ def _draw_visual_card_content(
         right_label = scene.get("right_title", "COMPOUND LEVERAGE")
         right_val = scene.get("right_body", "Build assets once, earn 24/7")
 
-        lbl_font = _load_font(28 if is_vert else 24, bold=True)
-        body_font = _load_font(34 if is_vert else 28, bold=False)
+        lbl_font = _load_font(34 if is_vert else 28, bold=True)
+        body_font = _load_font(44 if is_vert else 34, bold=False)
 
         if is_vert:
             mid_y = y1 + ch // 2
@@ -254,22 +258,31 @@ def _draw_visual_card_content(
         stat_label = str(scene.get("stat_label", "CORE MENTAL MODEL"))
         bullets = scene.get("bullets", [])
 
-        big_font = _load_font(108 if is_vert else 88, bold=True)
-        lbl_font = _load_font(32 if is_vert else 28, bold=True)
-        bul_font = _load_font(30 if is_vert else 25, bold=False)
+        big_font = _load_font(200 if is_vert else 150, bold=True)
+        lbl_font = _load_font(40 if is_vert else 34, bold=True)
+        bul_font = _load_font(42 if is_vert else 34, bold=False)
+        line_gap = 56 if is_vert else 46
 
-        draw.text((x1 + 16, y1 + 10), stat_val, font=big_font, fill=theme.accent_gold)
-        vb = draw.textbbox((x1 + 16, y1 + 10), stat_val, font=big_font)
-        curr_y = vb[3] + 22
-        draw.text((x1 + 16, curr_y), stat_label.upper(), font=lbl_font, fill=theme.accent_cyan)
-        curr_y += 52
-
+        # Lay out once to measure, then draw centered so the card has no dead space
+        vb = draw.textbbox((0, 0), stat_val, font=big_font)
+        stat_h = vb[3] - vb[1]
+        lbl_lines = _wrap_text(draw, stat_label.upper(), lbl_font, cw - 32)[:2]
+        bul_lines: List[str] = []
         for b_text in bullets[:3]:
-            wrapped = _wrap_text(draw, f"•  {b_text}", bul_font, cw - 32)
-            for ln in wrapped[:2]:
-                if curr_y + 36 <= y2:
-                    draw.text((x1 + 16, curr_y), ln, font=bul_font, fill=theme.text_primary)
-                    curr_y += 38
+            bul_lines.extend(_wrap_text(draw, f"•  {b_text}", bul_font, cw - 32)[:2])
+        total_h = stat_h + 30 + len(lbl_lines) * (line_gap - 4) + 26 + len(bul_lines) * line_gap
+        curr_y = y1 + max(0, (ch - total_h) // 2)
+
+        draw.text((x1 + 16, curr_y - vb[1]), stat_val, font=big_font, fill=theme.accent_gold)
+        curr_y += stat_h + 30
+        for ln in lbl_lines:
+            draw.text((x1 + 16, curr_y), ln, font=lbl_font, fill=theme.accent_cyan)
+            curr_y += line_gap - 4
+        curr_y += 26
+        for ln in bul_lines:
+            if curr_y + line_gap <= y2:
+                draw.text((x1 + 16, curr_y), ln, font=bul_font, fill=theme.text_primary)
+                curr_y += line_gap
 
 
 def render_thumbnail(

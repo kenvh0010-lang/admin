@@ -4,7 +4,7 @@
   "alt_title_2": "How 20 Seconds of Friction Saves $3,600 a Year",
   "format": "short",
   "voice": "en_authoritative",
-  "description_hook": "In 1957, Harvard psychologist B.F. Skinner proved that random rewards create stronger compulsion than guaranteed payouts. Here is how shopping apps use variable ratio schedules against your wallet and the 20-second shield to break it.",
+  "description_hook": "In 1957, Charles Ferster and B.F. Skinner showed that unpredictable rewards keep behavior going longer than predictable ones. Here is how shopping apps use the same trick on your wallet, and how to add friction back.",
   "tags": [
     "variable rewards psychology",
     "b f skinner",
@@ -29,14 +29,20 @@
       "tag": "HOOK",
       "headline": "The Slot Machine Inside Your Pocket",
       "visual_type": "stat_callout",
-      "stat_value": "$35B+",
+      "stat_value": "$35.5B",
       "stat_label": "US SLOT REVENUE BEATS MOVIES + BASEBALL",
       "bullets": [
-        "Slot machines out-earn box-office films and MLB combined",
-        "Retail apps copied the exact same brain trigger"
+        "U.S. slot machines took in $35.5B in 2023",
+        "Retail apps copied the same brain trigger"
       ],
-      "highlight_words": ["slot", "movies", "baseball", "pocket"],
-      "narration": "Slot machines generate more annual revenue in America than Hollywood movies and Major League Baseball combined, and the exact same mechanism is sitting inside your phone."
+      "highlight_words": [
+        "slot",
+        "movies",
+        "baseball",
+        "pocket"
+      ],
+      "narration": "In 2023, U.S. commercial casino slot machines took in thirty-five and a half billion dollars, several times the entire North American movie box office. The same mechanism is sitting inside your phone.",
+      "source": "American Gaming Association, Commercial Gaming Revenue Tracker (2023)"
     },
     {
       "tag": "SKINNER 1957",
@@ -45,31 +51,49 @@
       "stat_value": "1957",
       "stat_label": "RANDOM PAYOUTS TRIGGER OBSESSIVE PECKING",
       "bullets": [
-        "Fixed pellets: Pigeons only pressed the lever when hungry",
-        "Random pellets: Pigeons pecked nonstop until exhaustion"
+        "Fixed schedule: pecking came in bursts with pauses",
+        "Random schedule: fast, steady pecking that was hard to stop"
       ],
-      "highlight_words": ["skinner", "random", "pigeons", "nonstop"],
-      "narration": "In 1957, Harvard psychologist B.F. Skinner showed that when food dropped on a predictable schedule, pigeons stayed calm. When payouts turned random, they pressed the lever obsessively."
+      "highlight_words": [
+        "skinner",
+        "random",
+        "pigeons",
+        "nonstop"
+      ],
+      "narration": "In 1957, Charles Ferster and B.F. Skinner found that pigeons rewarded on a fixed schedule pecked in bursts, then paused. With rewards after an unpredictable number of pecks, they pecked fast and kept going.",
+      "source": "Ferster & Skinner, Schedules of Reinforcement (1957)"
     },
     {
       "tag": "THE TRAP",
-      "headline": "Uncertainty Spikes Dopamine Higher Than Winning",
+      "headline": "Uncertainty Keeps You Chasing",
       "visual_type": "comparison_split",
       "left_title": "DIGITAL CASINO TRAPS",
       "left_body": "Pull-to-refresh feeds, spin-the-wheel coupons, flash timers",
       "right_title": "THE 20-SECOND SHIELD",
       "right_body": "Delete saved cards -> type 16 digits manually -> wait 48 hours",
-      "highlight_words": ["uncertainty", "dopamine", "delete", "digits"],
-      "narration": "Flash-sale countdowns, mystery discounts, and pull-to-refresh feeds exploit that exact uncertainty spike. Your brain chases the anticipation of a deal, not the item itself."
+      "highlight_words": [
+        "uncertainty",
+        "dopamine",
+        "delete",
+        "digits"
+      ],
+      "narration": "Brain research from Wolfram Schultz's lab found dopamine activity builds most when the odds of a reward are fifty-fifty. Flash-sale countdowns, mystery discounts, and pull-to-refresh feeds use that same uncertainty.",
+      "source": "Fiorillo, Tobler & Schultz, Science (2003)"
     },
     {
       "tag": "THE MARGIN",
-      "headline": "Kill 1-Click Checkout, Reclaim $300/Month",
+      "headline": "Kill 1-Click Checkout Tonight",
       "visual_type": "compounding_curve",
       "stat_label": "20 SECONDS OF CHECKOUT FRICTION = $3,600/YR SAVED",
       "stat_subtext": "Walking to grab your physical wallet breaks the impulse loop",
-      "highlight_words": ["twenty", "seconds", "friction", "impulse"],
-      "narration": "To disarm the algorithm, delete saved payment cards from every shopping app tonight. Twenty seconds of walking across the room to type sixteen digits kills eighty percent of impulse buys."
+      "highlight_words": [
+        "twenty",
+        "seconds",
+        "friction",
+        "impulse"
+      ],
+      "narration": "To disarm the algorithm, delete saved payment cards from every shopping app tonight. Walking across the room to type sixteen digits gives you time to change your mind.",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     },
     {
       "tag": "LOOP",
@@ -81,8 +105,14 @@
         "Turn off retail push notifications permanently",
         "Never fight billion-dollar UX with willpower alone"
       ],
-      "highlight_words": ["willpower", "friction", "billion", "because"],
-      "narration": "Stop blaming willpower when billion-dollar apps engineer urgency against you; build friction around your wallet instead. Because think about this..."
+      "highlight_words": [
+        "willpower",
+        "friction",
+        "billion",
+        "because"
+      ],
+      "narration": "Stop blaming willpower when billion-dollar apps engineer urgency against you; build friction around your wallet instead. Because think about this...",
+      "source": "Mind & Margin rule of thumb (advice, not a study)"
     }
   ]
 }
