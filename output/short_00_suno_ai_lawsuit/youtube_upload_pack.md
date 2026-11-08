@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Eminem and Elvis vs. the $5.4 Billion AI Song App
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `33.3s`
-- **Voice Engine Used**: `edge:en-US-ChristopherNeural`
+- **Estimated Runtime**: `33.0s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -28,7 +28,7 @@ On November 6, 2026, Eminem's publisher Eight Mile Style and the owners of Elvis
 00:04 - Then Elvis Sued Too
 00:08 - Trained on Almost Every Song Online
 00:16 - A $5.4 Billion Company
-00:23 - Owners Set the Price
+00:24 - Owners Set the Price
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.

@@ -2,7 +2,7 @@
 
 - **Format**: `SHORT`
 - **Estimated Runtime**: `44.0s`
-- **Voice Engine Used**: `edge:en-US-ChristopherNeural`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -24,10 +24,10 @@ Starting October 27, 2026, the Federal Trade Commission began sending 2,124,796 
 
 ⏱️ Timestamps:
 00:00 - 2.1 Million PayPal Refunds Went Out
-00:09 - Promised Up to $250 Today
-00:16 - Almost Nobody Got $250
-00:26 - Blocked From Canceling
-00:35 - Count Fees Like Interest
+00:10 - Promised Up to $250 Today
+00:17 - Almost Nobody Got $250
+00:27 - Blocked From Canceling
+00:36 - Count Fees Like Interest
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
