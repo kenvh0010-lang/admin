@@ -8,8 +8,8 @@ on:
       - 'yt_studio/**'
       - '.github/workflows/video_factory.yml'
   schedule:
-    # Runs automatically in the background every Tue, Thu, Sat, Sun at 13:00 UTC (20:00 VN / 08:00-09:00 US)
-    - cron: '0 13 * * 2,4,6,0'
+    # Runs automatically every single day at 13:00 UTC (20:00 VN / 08:00-09:00 US Eastern peak RPM)
+    - cron: '0 13 * * *'
   workflow_dispatch:
     inputs:
       mode:

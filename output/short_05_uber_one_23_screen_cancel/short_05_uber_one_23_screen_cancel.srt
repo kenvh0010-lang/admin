@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:00,750
+The FTC,
+
+2
+00:00:00,750 --> 00:00:01,688
+21 states,
+
+3
+00:00:01,688 --> 00:00:02,439
+and D.C.
+
+4
+00:00:02,439 --> 00:00:05,347
+sued Uber in federal court over
+
+5
+00:00:05,347 --> 00:00:07,973
+its 9.99 dollar a month Uber
+
+6
+00:00:07,973 --> 00:00:09,380
+One membership.
+
+7
+00:00:09,380 --> 00:00:11,828
+Exhibit 4 shows the signup popup:
+
+8
+00:00:11,828 --> 00:00:13,533
+one tap on Try for free
+
+9
+00:00:13,533 --> 00:00:14,423
+enrolls you,
+
+10
+00:00:14,423 --> 00:00:17,168
+and regulators allege some users were
+
+11
+00:00:17,168 --> 00:00:19,170
+billed before trials ended.
+
+12
+00:00:19,170 --> 00:00:21,996
+Exhibit 20 maps an alleged cancellation
+
+13
+00:00:21,996 --> 00:00:23,445
+loop inside the app:
+
+14
+00:00:23,445 --> 00:00:25,837
+four screens of pause and savings
+
+15
+00:00:25,837 --> 00:00:28,228
+offers that send users right back
+
+16
+00:00:28,228 --> 00:00:29,170
+to the start.
+
+17
+00:00:29,170 --> 00:00:32,305
+The complaint alleges canceling can take
+
+18
+00:00:32,305 --> 00:00:34,108
+up to 23 screens and 32
+
+19
+00:00:34,108 --> 00:00:34,735
+actions.
+
+20
+00:00:34,735 --> 00:00:36,538
+Uber denies the claims,
+
+21
+00:00:36,538 --> 00:00:38,890
+and the case is still pending.
+
+22
+00:00:38,890 --> 00:00:41,091
+Before tapping any free trial,
+
+23
+00:00:41,091 --> 00:00:43,659
+check where the cancel button lives
+
+24
+00:00:43,659 --> 00:00:45,640
+and set an alert three days
+
+25
+00:00:45,640 --> 00:00:46,740
+before billing.

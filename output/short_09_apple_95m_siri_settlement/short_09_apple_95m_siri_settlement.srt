@@ -1,0 +1,79 @@
+1
+00:00:00,000 --> 00:00:02,289
+A federal judge granted final approval
+
+2
+00:00:02,289 --> 00:00:04,338
+to Apple's 95 million dollar class
+
+3
+00:00:04,338 --> 00:00:07,290
+settlement over unintended Siri voice recordings.
+
+4
+00:00:07,290 --> 00:00:09,354
+The lawsuit alleged Siri woke up
+
+5
+00:00:09,354 --> 00:00:12,192
+accidentally during private talks and shared
+
+6
+00:00:12,192 --> 00:00:14,321
+snippets that led to targeted ads
+
+7
+00:00:14,321 --> 00:00:15,740
+and contractor review.
+
+8
+00:00:15,740 --> 00:00:18,537
+Against Apple's 93.74 billion dollars in
+
+9
+00:00:18,537 --> 00:00:19,795
+annual net income,
+
+10
+00:00:19,795 --> 00:00:22,173
+that entire 95 million dollar fund
+
+11
+00:00:22,173 --> 00:00:24,690
+equals roughly nine hours of profit.
+
+12
+00:00:24,690 --> 00:00:27,396
+Apple denied all wrongdoing and settled
+
+13
+00:00:27,396 --> 00:00:29,061
+without admitting fault,
+
+14
+00:00:29,061 --> 00:00:31,073
+capping user payouts at up to
+
+15
+00:00:31,073 --> 00:00:33,155
+20 dollars per device for five
+
+16
+00:00:33,155 --> 00:00:33,710
+devices.
+
+17
+00:00:33,710 --> 00:00:35,827
+Class actions price a decade of
+
+18
+00:00:35,827 --> 00:00:37,329
+privacy at 20 dollars.
+
+19
+00:00:37,329 --> 00:00:40,061
+Audit your microphone and Siri analytics
+
+20
+00:00:40,061 --> 00:00:41,700
+settings yourself today.

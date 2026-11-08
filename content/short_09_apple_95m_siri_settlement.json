@@ -1,0 +1,132 @@
+{
+  "title": "Apple's $95 Million Siri Settlement Equals 9 Hours of Profit",
+  "alt_title_1": "Up to $20 Per Device: Inside Apple's $95M Siri Privacy Deal",
+  "alt_title_2": "Why a Federal Judge Approved the $95 Million Siri Payout",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In Lopez v. Apple Inc., a federal judge granted final approval to a $95 million class-action settlement resolving allegations that unintended Siri activations recorded private conversations between 2014 and 2024. Apple denied wrongdoing, and claims are capped at up to $20 per device across five devices.",
+  "tags": [
+    "apple siri settlement",
+    "lopez v apple",
+    "siri privacy lawsuit",
+    "class action payout",
+    "tech privacy",
+    "apple news",
+    "consumer rights"
+  ],
+  "thumbnail": {
+    "hook_text": "$95M SIRI PAYOUT",
+    "badge": "9 HRS PROFIT",
+    "stat": "$20 MAX"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Is up to $20 per device fair for 10 years of alleged voice recordings? Case filings and sources are in the description."
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Final Approval on $95M Siri Deal",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/apple_siri/lowey_final_approval_95m.png",
+      "evidence_crop": [
+        115,
+        355,
+        810,
+        990
+      ],
+      "highlight_words": [
+        "95",
+        "million",
+        "Siri"
+      ],
+      "narration": "A federal judge granted final approval to Apple's 95 million dollar class settlement over unintended Siri voice recordings.",
+      "source": "Lopez v. Apple Inc., No. 4:19-cv-04577, Final Approval (N.D. Cal.)"
+    },
+    {
+      "tag": "THE CLAIM",
+      "headline": "Triggered Without Saying 'Hey Siri'",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/apple_siri/cbs_siri_95m_eligibility.png",
+      "evidence_crop": [
+        95,
+        210,
+        780,
+        845
+      ],
+      "highlight_words": [
+        "private",
+        "ads"
+      ],
+      "narration": "The lawsuit alleged Siri woke up accidentally during private talks and shared snippets that led to targeted ads and contractor review.",
+      "source": "CBS MoneyWatch Summary of Lopez v. Apple Claims (May 2025)"
+    },
+    {
+      "tag": "THE MATH",
+      "headline": "Roughly Nine Hours of Profit",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/apple_siri/guardian_95m_nine_hours_profit.png",
+      "evidence_crop": [
+        235,
+        212,
+        875,
+        388
+      ],
+      "highlight_words": [
+        "nine",
+        "hours",
+        "profit"
+      ],
+      "narration": "Against Apple's 93.74 billion dollars in annual net income, that entire 95 million dollar fund equals roughly nine hours of profit.",
+      "source": "The Guardian Analysis of Apple FY2024 Net Income (Jan 2025)"
+    },
+    {
+      "tag": "THE PAYOUT",
+      "headline": "Capped at $20 Per Siri Device",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/apple_siri/cbs_siri_95m_eligibility.png",
+      "evidence_crop": [
+        95,
+        860,
+        780,
+        1345
+      ],
+      "highlight_words": [
+        "denies",
+        "20"
+      ],
+      "narration": "Apple denied all wrongdoing and settled without admitting fault, capping user payouts at up to 20 dollars per device for five devices.",
+      "source": "Lopez v. Apple Settlement Notice (2014-2024 Class Period)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Lock Settings, Don't Wait on Court",
+      "visual_type": "comparison_split",
+      "left_title": "LAWSUIT CHECK",
+      "left_body": "Up to $20 after six years",
+      "right_title": "SETTINGS FIX",
+      "right_body": "Turn off Siri audio sharing now",
+      "highlight_words": [
+        "privacy",
+        "settings"
+      ],
+      "narration": "Class actions price a decade of privacy at 20 dollars. Audit your microphone and Siri analytics settings yourself today.",
+      "source": "Lopez v. Apple Inc., No. 4:19-cv-04577 (N.D. Cal.)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Co-Lead Class Counsel Lowey Dannenberg: Final Approval in Lopez v. Apple ($95M)",
+      "url": "https://lowey.com/blog/the-courts-granted-final-approval-for-apple-siri-litigation-for-95-million/"
+    },
+    {
+      "label": "CBS MoneyWatch: Apple Paying $95M in Siri Eavesdropping Settlement",
+      "url": "https://www.cbsnews.com/news/apple-siri-settlement-95-million-lopez-how-to-file-claim/"
+    },
+    {
+      "label": "The Guardian: Apple $95M Siri Settlement Represents Nine Hours of Profit",
+      "url": "https://www.theguardian.com/technology/2025/jan/03/apple-siri-class-action-lawsuit-settlement"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:00,887
+In March 2026,
+
+2
+00:00:00,887 --> 00:00:03,740
+the Justice Department announced Adobe agreed
+
+3
+00:00:03,740 --> 00:00:05,514
+to a 150 million dollar deal
+
+4
+00:00:05,514 --> 00:00:08,240
+over hidden subscription cancellation fees.
+
+5
+00:00:08,240 --> 00:00:10,169
+Look at Example 1 from the
+
+6
+00:00:10,169 --> 00:00:11,208
+DOJ complaint:
+
+7
+00:00:11,208 --> 00:00:13,137
+Adobe pre-selected Annual,
+
+8
+00:00:13,137 --> 00:00:14,101
+paid monthly,
+
+9
+00:00:14,101 --> 00:00:16,327
+tucking the fee terms inside a
+
+10
+00:00:16,327 --> 00:00:17,440
+tiny info icon.
+
+11
+00:00:17,440 --> 00:00:20,502
+Prosecutors alleged many subscribers only learned
+
+12
+00:00:20,502 --> 00:00:22,313
+they owed 50 percent of their
+
+13
+00:00:22,313 --> 00:00:24,875
+remaining annual contract when they tried
+
+14
+00:00:24,875 --> 00:00:25,500
+to cancel.
+
+15
+00:00:25,500 --> 00:00:27,376
+Without admitting liability,
+
+16
+00:00:27,376 --> 00:00:28,984
+Adobe agreed to pay a 75
+
+17
+00:00:28,984 --> 00:00:30,927
+million dollar civil penalty,
+
+18
+00:00:30,927 --> 00:00:33,339
+provide 75 million in free services,
+
+19
+00:00:33,339 --> 00:00:34,880
+and simplify canceling.
+
+20
+00:00:34,880 --> 00:00:37,850
+Never read paid monthly as cancel anytime.
+
+21
+00:00:37,850 --> 00:00:40,112
+Open every tooltip and check the
+
+22
+00:00:40,112 --> 00:00:42,870
+contract length before entering a card.

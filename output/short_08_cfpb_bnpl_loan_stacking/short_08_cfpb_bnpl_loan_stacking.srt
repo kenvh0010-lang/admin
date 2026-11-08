@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:02,148
+Across six major Buy Now,
+
+2
+00:00:02,148 --> 00:00:05,242
+Pay Later firms tracked by the CFPB,
+
+3
+00:00:05,242 --> 00:00:08,508
+53.6 million borrowers took an average
+
+4
+00:00:08,508 --> 00:00:10,570
+of 6.3 loans in a single
+
+5
+00:00:10,570 --> 00:00:11,000
+year.
+
+6
+00:00:11,000 --> 00:00:12,938
+In CFPB credit-panel data,
+
+7
+00:00:12,938 --> 00:00:15,547
+62.7 percent of users held multiple
+
+8
+00:00:15,547 --> 00:00:16,964
+BNPL loans at once,
+
+9
+00:00:16,964 --> 00:00:19,722
+and 32.6 percent stacked loans across
+
+10
+00:00:19,722 --> 00:00:20,840
+different apps.
+
+11
+00:00:20,840 --> 00:00:23,125
+Figure 5 shows active Pay-in-4 loans
+
+12
+00:00:23,125 --> 00:00:25,663
+spiking every holiday season as separate
+
+13
+00:00:25,663 --> 00:00:27,821
+biweekly debits pile onto the same
+
+14
+00:00:27,821 --> 00:00:28,900
+checking account.
+
+15
+00:00:28,900 --> 00:00:32,020
+BNPL borrowers also carried higher credit card,
+
+16
+00:00:32,020 --> 00:00:32,485
+retail,
+
+17
+00:00:32,485 --> 00:00:34,277
+and personal loan balances,
+
+18
+00:00:34,277 --> 00:00:36,535
+though the CFPB notes that pattern
+
+19
+00:00:36,535 --> 00:00:37,531
+is correlation,
+
+20
+00:00:37,531 --> 00:00:38,460
+not causation.
+
+21
+00:00:38,460 --> 00:00:40,898
+Zero interest is still real debt.
+
+22
+00:00:40,898 --> 00:00:43,336
+Never open a second Pay-in-4 plan
+
+23
+00:00:43,336 --> 00:00:46,070
+until your current balance hits zero.

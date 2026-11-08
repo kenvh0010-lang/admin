@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:02,716
+Federal prosecutors and the SEC charged
+
+2
+00:00:02,716 --> 00:00:04,805
+the former CEO of shopping app
+
+3
+00:00:04,805 --> 00:00:07,173
+Nate after raising over 42 million
+
+4
+00:00:07,173 --> 00:00:09,610
+dollars on claims of autonomous AI.
+
+5
+00:00:09,610 --> 00:00:12,107
+The indictment alleges investors were told
+
+6
+00:00:12,107 --> 00:00:15,021
+proprietary neural networks finished checkouts in
+
+7
+00:00:15,021 --> 00:00:16,745
+seconds with 93 to 97 percent
+
+8
+00:00:16,745 --> 00:00:17,280
+accuracy.
+
+9
+00:00:17,280 --> 00:00:19,570
+Prosecutors allege the app's actual AI
+
+10
+00:00:19,570 --> 00:00:21,799
+automation rate was effectively zero,
+
+11
+00:00:21,799 --> 00:00:23,848
+and hundreds of contractors in the
+
+12
+00:00:23,848 --> 00:00:26,680
+Philippines and Romania placed orders manually.
+
+13
+00:00:26,680 --> 00:00:29,009
+Even its limited bots allegedly used
+
+14
+00:00:29,009 --> 00:00:30,433
+site-specific scripts,
+
+15
+00:00:30,433 --> 00:00:30,886
+not AI.
+
+16
+00:00:30,886 --> 00:00:32,762
+These are indictment charges,
+
+17
+00:00:32,762 --> 00:00:35,221
+and the defendant is presumed innocent
+
+18
+00:00:35,221 --> 00:00:36,580
+unless proven guilty.
+
+19
+00:00:36,580 --> 00:00:39,076
+Never trust a rehearsed AI demo
+
+20
+00:00:39,076 --> 00:00:41,169
+when money is on the line.
+
+21
+00:00:41,169 --> 00:00:43,666
+Test the product live with your
+
+22
+00:00:43,666 --> 00:00:44,471
+own messy,
+
+23
+00:00:44,471 --> 00:00:45,920
+unscripted inputs.

@@ -47,8 +47,8 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
 
     def test_all_evidence_storyboards_valid_cited_and_glyph_safe(self) -> None:
         storyboards = discover_storyboards(CONTENT_DIR)
-        # 09/11/2026: batch_02_ai_earn moved to archive/ (off-format), 5 news shorts remain in the queue.
-        self.assertGreaterEqual(len(storyboards), 5, "Expected at least 5 evidence-based storyboards in content/**")
+        # 11 active news shorts in content/ (1 published + 10 queued for daily autopilot; batch_02_ai_earn archived).
+        self.assertGreaterEqual(len(storyboards), 11, "Expected at least 11 evidence-based storyboards in content/**")
         self.assertEqual(
             len({p.stem for p in storyboards}),
             len(storyboards),
@@ -59,6 +59,11 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         for sb in storyboards:
             data = json.loads(sb.read_text(encoding="utf-8"))
             self.assertTrue(required_keys.issubset(data.keys()), f"Missing keys in {sb.name}")
+            self.assertEqual(data.get("format"), "short", f"Active queue must stay 100% pure News-Shorts: {sb.name}")
+            yt_desc = build_youtube_description(data, slug=sb.stem)
+            for bracket in ("<", ">"):
+                self.assertNotIn(bracket, data["title"], f"Forbidden YouTube bracket {bracket!r} in title of {sb.name}")
+                self.assertNotIn(bracket, yt_desc, f"Forbidden YouTube bracket {bracket!r} in description of {sb.name}")
             self.assertGreaterEqual(len(data["scenes"]), 4, f"Too few scenes in {sb.name}")
             self.assertGreaterEqual(len(data["sources"]), 2, f"Expected >=2 primary source URLs in {sb.name}")
             for src_entry in data["sources"]:
@@ -145,14 +150,16 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertTrue((docs_dir / "dossier.html").is_file())
         self.assertTrue((docs_dir / "assets" / "evidence" / "citibank" / "sdny_flexcube_p13.png").is_file())
         self.assertTrue((docs_dir / "articles" / "short_00_suno_ai_lawsuit.html").is_file())
+        self.assertTrue((docs_dir / "articles" / "short_05_uber_one_23_screen_cancel.html").is_file())
+        self.assertTrue((docs_dir / "articles" / "short_10_cash_app_175m_cfpb_order.html").is_file())
         citi_article = (docs_dir / "articles" / "short_03_citibank_900m_wire_blunder.html").read_text(encoding="utf-8")
         self.assertIn("Verified Primary Sources", citi_article)
         self.assertIn("sdny_flexcube_p13.png", citi_article)
         self.assertIn("As an Amazon Associate I earn from qualifying purchases.", citi_article)
 
         dash = studio_server.build_dashboard_payload()
-        self.assertGreaterEqual(dash["stats"]["total_scripts"], 5)
-        self.assertGreaterEqual(dash["stats"]["short_count"], 5)
+        self.assertGreaterEqual(dash["stats"]["total_scripts"], 11)
+        self.assertGreaterEqual(dash["stats"]["short_count"], 11)
 
         next_sb = pick_next_unpublished_storyboard()
         self.assertIsNotNone(next_sb)

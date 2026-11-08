@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:03,521
+The CFPB ordered Cash App's parent company,
+
+2
+00:00:03,521 --> 00:00:04,012
+Block,
+
+3
+00:00:04,012 --> 00:00:05,977
+to pay up to 175 million
+
+4
+00:00:05,977 --> 00:00:08,679
+dollars over how it handled fraud
+
+5
+00:00:08,679 --> 00:00:09,580
+on the app.
+
+6
+00:00:09,580 --> 00:00:10,392
+Until 2021,
+
+7
+00:00:10,392 --> 00:00:12,239
+the number on the back of
+
+8
+00:00:12,239 --> 00:00:14,750
+Cash Cards played a recording with
+
+9
+00:00:14,750 --> 00:00:15,784
+no live agent,
+
+10
+00:00:15,784 --> 00:00:19,550
+pushing victims toward fake support numbers online.
+
+11
+00:00:19,550 --> 00:00:21,452
+When users asked their banks to
+
+12
+00:00:21,452 --> 00:00:24,152
+reverse unauthorized peer-to-peer transfers,
+
+13
+00:00:24,152 --> 00:00:26,238
+the CFPB found Block challenged at
+
+14
+00:00:26,238 --> 00:00:28,570
+least 75 percent of those chargebacks.
+
+15
+00:00:28,570 --> 00:00:31,666
+Without admitting or denying the findings,
+
+16
+00:00:31,666 --> 00:00:33,508
+Block agreed to up to 120
+
+17
+00:00:33,508 --> 00:00:35,867
+million dollars in user redress,
+
+18
+00:00:35,867 --> 00:00:37,415
+a 55 million penalty,
+
+19
+00:00:37,415 --> 00:00:39,110
+and live phone support.
+
+20
+00:00:39,110 --> 00:00:41,407
+Use payment apps like cash in
+
+21
+00:00:41,407 --> 00:00:42,357
+your pocket,
+
+22
+00:00:42,357 --> 00:00:43,308
+not a vault.
+
+23
+00:00:43,308 --> 00:00:46,159
+Sweep idle balances straight back to
+
+24
+00:00:46,159 --> 00:00:48,060
+an insured bank account.

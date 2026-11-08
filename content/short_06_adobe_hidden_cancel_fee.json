@@ -1,0 +1,129 @@
+{
+  "title": "Why Adobe Agreed to a $150 Million Cancellation Fee Deal",
+  "alt_title_1": "Inside the DOJ Case Over Adobe's 50% Early Termination Fee",
+  "alt_title_2": "The Tiny Tooltip Behind Adobe's $150 Million DOJ Settlement",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "On March 13, 2026, the U.S. Department of Justice announced that Adobe agreed to a $150 million settlement ($75 million in civil penalties plus $75 million in free services) to resolve federal allegations over hidden 50% early termination fees on Annual, Paid Monthly subscriptions.",
+  "tags": [
+    "adobe settlement",
+    "adobe cancellation fee",
+    "doj adobe",
+    "subscription fees",
+    "creative cloud",
+    "consumer law",
+    "personal finance"
+  ],
+  "thumbnail": {
+    "hook_text": "$150M CANCEL FEE DEAL",
+    "badge": "DOJ SETTLEMENT",
+    "stat": "50% FEE"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Did you ever get hit with Adobe's 50% early termination fee? Both DOJ filings are linked in the description."
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Adobe's $150M DOJ Settlement",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/adobe_etf/doj_150m_settlement_pr.png",
+      "evidence_crop": [
+        390,
+        365,
+        1140,
+        660
+      ],
+      "highlight_words": [
+        "150",
+        "million",
+        "Adobe"
+      ],
+      "narration": "In March 2026, the Justice Department announced Adobe agreed to a 150 million dollar deal over hidden subscription cancellation fees.",
+      "source": "U.S. Department of Justice Press Release (Mar 13, 2026)"
+    },
+    {
+      "tag": "THE DEFAULT",
+      "headline": "Pre-Selected Annual Lock-In",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/adobe_etf/doj_complaint_p8_apm_flow.png",
+      "evidence_crop": [
+        165,
+        565,
+        1190,
+        1255
+      ],
+      "highlight_words": [
+        "Annual",
+        "monthly",
+        "tooltip"
+      ],
+      "narration": "Look at Example 1 from the DOJ complaint: Adobe pre-selected Annual, paid monthly, tucking the fee terms inside a tiny info icon.",
+      "source": "U.S. v. Adobe Inc., No. 5:24-cv-03630, Complaint p. 8 (N.D. Cal.)"
+    },
+    {
+      "tag": "THE PENALTY",
+      "headline": "50% of Months Remaining",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/adobe_etf/doj_complaint_p11_50pct_fee.png",
+      "evidence_crop": [
+        150,
+        960,
+        1200,
+        1460
+      ],
+      "highlight_words": [
+        "50%",
+        "remaining"
+      ],
+      "narration": "Prosecutors alleged many subscribers only learned they owed 50 percent of their remaining annual contract when they tried to cancel.",
+      "source": "U.S. v. Adobe Inc., Complaint Para. 51-52, p. 11 (N.D. Cal.)"
+    },
+    {
+      "tag": "THE ORDER",
+      "headline": "$75M Penalty + $75M Credits",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/adobe_etf/doj_150m_settlement_pr.png",
+      "evidence_crop": [
+        390,
+        865,
+        1140,
+        1315
+      ],
+      "highlight_words": [
+        "75",
+        "million",
+        "disclose"
+      ],
+      "narration": "Without admitting liability, Adobe agreed to pay a 75 million dollar civil penalty, provide 75 million in free services, and simplify canceling.",
+      "source": "DOJ Proposed Stipulated Order Announcement (Mar 13, 2026)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Paid Monthly Isn't Cancel Anytime",
+      "visual_type": "comparison_split",
+      "left_title": "PRICE TAG",
+      "left_body": "Paid monthly looks flexible",
+      "right_title": "FINE PRINT",
+      "right_body": "Annual contract + 50% exit fee",
+      "highlight_words": [
+        "monthly",
+        "icon"
+      ],
+      "narration": "Never read paid monthly as cancel anytime. Open every tooltip and check the contract length before entering a card.",
+      "source": "Restore Online Shoppers' Confidence Act & DOJ Settlement (2026)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "DOJ Press Release: Adobe Agrees to $150M Settlement Under ROSCA (Mar 13, 2026)",
+      "url": "https://www.justice.gov/opa/pr/adobe-agrees-150-million-settlement-and-injunction-resolve-alleged-violations-restore-online"
+    },
+    {
+      "label": "DOJ Complaint: United States v. Adobe Inc., No. 5:24-cv-03630-BLF (N.D. Cal.)",
+      "url": "https://www.justice.gov/d9/2024-07/adobe_complaint.pdf"
+    }
+  ]
+}
