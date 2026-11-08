@@ -252,6 +252,8 @@ def _write_seo_upload_pack(
         "No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people)."
     )
 
+    src_lines = "\n".join(f"• {s['label']}: {s['url']}" for s in data.get("sources", []))
+    sources_block = f"📰 Sources:\n{src_lines}\n\n" if src_lines else ""
     md = f"""# YouTube Upload Pack — {data.get('title')}
 
 - **Format**: `{data.get('format', 'short').upper()}`
@@ -268,7 +270,7 @@ def _write_seo_upload_pack(
 ```text
 {data.get('description_hook', data.get('title'))}
 
-{aff_block}
+{sources_block}{aff_block}
 
 ⏱️ Timestamps:
 {chr(10).join(chapters)}

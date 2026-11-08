@@ -91,11 +91,15 @@ def build_youtube_description(storyboard: Dict[str, Any], slug: str = "") -> str
     for idx, sc in enumerate(storyboard.get("scenes", []), start=1):
         chapters.append(f"• Part {idx}: {sc.get('headline', sc.get('tag', 'Insight'))}")
 
+    src_lines = "\n".join(f"• {s['label']}: {s['url']}" for s in storyboard.get("sources", []))
+    sources_block = f"📰 Sources:\n{src_lines}\n\n" if src_lines else ""
+
     is_short = storyboard.get("format", "short") == "short"
     short_hashtags = "\n\n#shorts #wealthpsychology #mentalmodels #productivity" if is_short else ""
 
     return (
         f"{hook}\n\n"
+        f"{sources_block}"
         f"⚡ {offer_name}:\n"
         f"👉 {SITE_BIO_URL}\n"
         f"📚 Full Written Breakdown, Citations & Book List:\n"

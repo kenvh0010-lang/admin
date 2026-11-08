@@ -1,0 +1,139 @@
+{
+  "title": "Eminem and Elvis vs. the $5.4 Billion AI Song App",
+  "alt_title_1": "Why Eminem's Publisher Wants $41 Million From Suno",
+  "alt_title_2": "The AI App That Learned From Almost Every Song Online",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "On November 6, 2026, Eminem's publisher Eight Mile Style and the owners of Elvis Presley's catalog filed separate lawsuits against Suno, an AI music app valued at $5.4 billion. These are allegations; no court has ruled.",
+  "tags": [
+    "suno lawsuit",
+    "ai music",
+    "eminem",
+    "elvis presley",
+    "copyright",
+    "ai news",
+    "music business"
+  ],
+  "thumbnail": {
+    "hook_text": "EMINEM VS AI",
+    "badge": "LAWSUIT",
+    "stat": "$41M"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Should AI companies pay for the songs they learn from? Sources for every number in this video are in the description."
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Eminem's Publisher Wants $41 Million",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/suno/freep.png",
+      "evidence_crop": [
+        80,
+        450,
+        760,
+        1100
+      ],
+      "highlight_words": [
+        "41",
+        "million",
+        "AI"
+      ],
+      "narration": "Eminem's publisher wants 41 million dollars from an AI app.",
+      "source": "Detroit Free Press, Nov 7, 2026"
+    },
+    {
+      "tag": "THE SAME NIGHT",
+      "headline": "Then Elvis Sued Too",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/suno/variety.png",
+      "evidence_crop": [
+        90,
+        440,
+        720,
+        700
+      ],
+      "highlight_words": [
+        "Elvis"
+      ],
+      "narration": "The same night, Elvis Presley's catalog owners sued too.",
+      "source": "Variety, Nov 7, 2026"
+    },
+    {
+      "tag": "THE ADMISSION",
+      "headline": "Trained on Almost Every Song Online",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/suno/cbs.png",
+      "evidence_crop": [
+        70,
+        220,
+        730,
+        1240
+      ],
+      "highlight_words": [
+        "essentially",
+        "all"
+      ],
+      "narration": "The lawsuit quotes Suno's own words: its AI learned from essentially all music of reasonable quality on the open internet.",
+      "source": "Eight Mile Style v. Suno, No. 3:26-cv-13399 (N.D. Cal.)"
+    },
+    {
+      "tag": "THE MONEY",
+      "headline": "A $5.4 Billion Company",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/suno/suno_blog.png",
+      "evidence_crop": [
+        20,
+        100,
+        1180,
+        940
+      ],
+      "highlight_words": [
+        "5.4",
+        "billion",
+        "nothing"
+      ],
+      "narration": "That music helped build a 5.4 billion dollar company. The songwriters got nothing, the suit says.",
+      "source": "Suno blog, Jun 3, 2026; complaint via Detroit Free Press, Nov 7, 2026"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Owners Set the Price",
+      "visual_type": "comparison_split",
+      "left_title": "SUNO",
+      "left_body": "Valued at $5.4B. Says training is fair use",
+      "right_title": "SONG OWNERS",
+      "right_body": "Hold the rights, so they set the price",
+      "highlight_words": [
+        "owns",
+        "price"
+      ],
+      "narration": "No court has ruled yet. But the rule is old: whoever owns the asset sets the price, even against a billion dollar machine.",
+      "source": "Suno statement to Variety, Nov 7, 2026"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Detroit Free Press (Nov 7, 2026)",
+      "url": "https://www.freep.com/story/entertainment/music/brian-mccollum/2026/11/07/eminem-publisher-suno-ai-lawsuit/92659897007/"
+    },
+    {
+      "label": "Variety (Nov 7, 2026)",
+      "url": "https://variety.com/2026/music/news/elvis-eminem-sue-suno-ai-music-generator-1236941798/"
+    },
+    {
+      "label": "CBS Detroit (Nov 7, 2026)",
+      "url": "https://www.cbsnews.com/detroit/news/suno-eminem-eight-mile-music-copyright-lawsuit/"
+    },
+    {
+      "label": "Suno Series D announcement (Jun 3, 2026)",
+      "url": "https://suno.com/blog/series-d-announcement"
+    },
+    {
+      "label": "Reuters (Jun 3, 2026)",
+      "url": "https://www.reuters.com/legal/transactional/ai-music-startup-suno-raises-funding-54-billion-valuation-2026-06-03/"
+    }
+  ]
+}

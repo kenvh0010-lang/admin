@@ -23,9 +23,10 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         storyboards = sorted(
             p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"
         )
-        self.assertEqual(
+        # Thư viện gốc 112 kịch bản phải còn đủ; video tin tức hằng ngày được thêm vào nên chỉ chặn dưới.
+        self.assertGreaterEqual(
             len(storyboards), 112,
-            "Expected all 112 storyboards (84 Shorts + 28 Longs across Weeks 1-28) in content/",
+            "Expected at least the 112 library storyboards (84 Shorts + 28 Longs) in content/",
         )
         required_keys = {"title", "format", "scenes", "tags", "thumbnail", "affiliate_cta"}
         forbidden_glyphs = {"✕", "✓", "▸", "→", "—"}

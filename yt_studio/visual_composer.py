@@ -112,13 +112,18 @@ def render_scene_beat_frame(
             outline=theme.grid_line,
             width=3,
         )
-        _draw_visual_card_content(
-            draw=draw,
-            scene=scene,
-            box=(pad_x + 40, card_top + 36, w - pad_x - 40, card_bottom - 36),
-            is_vert=is_vert,
-            theme=theme,
-        )
+        ev_path = scene.get("evidence_image")
+        if scene.get("visual_type") == "evidence_image" and ev_path and Path(ev_path).is_file():
+            _paste_evidence(img, draw, Path(ev_path), scene.get("evidence_crop"),
+                            (pad_x + 24, card_top + 24, w - pad_x - 24, card_bottom - 24), theme)
+        else:
+            _draw_visual_card_content(
+                draw=draw,
+                scene=scene,
+                box=(pad_x + 40, card_top + 36, w - pad_x - 40, card_bottom - 36),
+                is_vert=is_vert,
+                theme=theme,
+            )
         source = scene.get("source")
         if source:
             src_text = f"Source: {source}"
@@ -186,6 +191,29 @@ def render_scene_beat_frame(
 
     img.save(output_png, format="PNG", compress_level=1)
     return output_png
+
+
+def _paste_evidence(
+    img: Image.Image,
+    draw: ImageDraw.ImageDraw,
+    path: Path,
+    crop: Optional[List[int]],
+    box: Tuple[int, int, int, int],
+    theme: BrandTheme,
+) -> None:
+    """Dán ảnh chụp bài báo/tài liệu gốc vào thẻ: cắt theo evidence_crop [x1,y1,x2,y2] nếu có,
+    co theo chiều rộng thẻ, phần thừa phía dưới bị cắt (giữ tiêu đề ở trên)."""
+    x1, y1, x2, y2 = box
+    src = Image.open(path).convert("RGB")
+    if crop and len(crop) == 4:
+        src = src.crop(tuple(int(v) for v in crop))
+    bw, bh = x2 - x1, y2 - y1
+    scale = bw / src.width
+    shot = src.resize((max(1, int(src.width * scale)), max(1, int(src.height * scale))), Image.Resampling.LANCZOS)
+    shot = shot.crop((0, 0, min(shot.width, bw), min(shot.height, bh)))
+    ox, oy = x1 + (bw - shot.width) // 2, y1 + (bh - shot.height) // 2
+    img.paste(shot, (ox, oy))
+    draw.rectangle([ox - 3, oy - 3, ox + shot.width + 2, oy + shot.height + 2], outline=theme.accent_gold, width=3)
 
 
 def _draw_visual_card_content(
