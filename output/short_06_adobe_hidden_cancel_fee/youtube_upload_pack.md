@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Why Adobe Agreed to a $150 Million Cancellation Fee Deal
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `42.9s`
-- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
+- **Estimated Runtime**: `44.4s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -22,10 +22,10 @@ On March 13, 2026, the U.S. Department of Justice announced that Adobe agreed to
 
 ⏱️ Timestamps:
 00:00 - Adobe's $150M DOJ Settlement
-00:08 - Pre-Selected Annual Lock-In
-00:17 - 50% of Months Remaining
+00:09 - Pre-Selected Annual Lock-In
+00:18 - 50% of Months Remaining
 00:25 - $75M Penalty + $75M Credits
-00:34 - Paid Monthly Isn't Cancel Anytime
+00:36 - Paid Monthly Isn't Cancel Anytime
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.

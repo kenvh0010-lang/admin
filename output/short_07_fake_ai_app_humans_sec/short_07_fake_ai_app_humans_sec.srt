@@ -1,91 +1,91 @@
 1
-00:00:00,000 --> 00:00:02,716
+00:00:00,000 --> 00:00:02,686
 Federal prosecutors and the SEC charged
 
 2
-00:00:02,716 --> 00:00:04,805
+00:00:02,686 --> 00:00:04,752
 the former CEO of shopping app
 
 3
-00:00:04,805 --> 00:00:07,173
+00:00:04,752 --> 00:00:07,094
 Nate after raising over 42 million
 
 4
-00:00:07,173 --> 00:00:09,610
+00:00:07,094 --> 00:00:09,504
 dollars on claims of autonomous AI.
 
 5
-00:00:09,610 --> 00:00:12,107
+00:00:09,504 --> 00:00:12,255
 The indictment alleges investors were told
 
 6
-00:00:12,107 --> 00:00:15,021
+00:00:12,255 --> 00:00:15,463
 proprietary neural networks finished checkouts in
 
 7
-00:00:15,021 --> 00:00:16,745
+00:00:15,463 --> 00:00:17,363
 seconds with 93 to 97 percent
 
 8
-00:00:16,745 --> 00:00:17,280
+00:00:17,363 --> 00:00:17,952
 accuracy.
 
 9
-00:00:17,280 --> 00:00:19,570
+00:00:17,952 --> 00:00:20,261
 Prosecutors allege the app's actual AI
 
 10
-00:00:19,570 --> 00:00:21,799
+00:00:20,261 --> 00:00:22,510
 automation rate was effectively zero,
 
 11
-00:00:21,799 --> 00:00:23,848
+00:00:22,510 --> 00:00:24,576
 and hundreds of contractors in the
 
 12
-00:00:23,848 --> 00:00:26,680
+00:00:24,576 --> 00:00:27,432
 Philippines and Romania placed orders manually.
 
 13
-00:00:26,680 --> 00:00:29,009
+00:00:27,432 --> 00:00:29,900
 Even its limited bots allegedly used
 
 14
-00:00:29,009 --> 00:00:30,433
+00:00:29,900 --> 00:00:31,408
 site-specific scripts,
 
 15
-00:00:30,433 --> 00:00:30,886
+00:00:31,408 --> 00:00:31,888
 not AI.
 
 16
-00:00:30,886 --> 00:00:32,762
+00:00:31,888 --> 00:00:33,876
 These are indictment charges,
 
 17
-00:00:32,762 --> 00:00:35,221
+00:00:33,876 --> 00:00:36,480
 and the defendant is presumed innocent
 
 18
-00:00:35,221 --> 00:00:36,580
+00:00:36,480 --> 00:00:37,920
 unless proven guilty.
 
 19
-00:00:36,580 --> 00:00:39,076
+00:00:37,920 --> 00:00:40,171
 Never trust a rehearsed AI demo
 
 20
-00:00:39,076 --> 00:00:41,169
+00:00:40,171 --> 00:00:42,059
 when money is on the line.
 
 21
-00:00:41,169 --> 00:00:43,666
+00:00:42,059 --> 00:00:44,311
 Test the product live with your
 
 22
-00:00:43,666 --> 00:00:44,471
+00:00:44,311 --> 00:00:45,037
 own messy,
 
 23
-00:00:44,471 --> 00:00:45,920
+00:00:45,037 --> 00:00:46,344
 unscripted inputs.

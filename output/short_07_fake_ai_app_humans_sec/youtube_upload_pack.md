@@ -1,8 +1,8 @@
 # YouTube Upload Pack — This $42M 'AI' Shopping App Was Secretly Hundreds of Humans
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `45.9s`
-- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
+- **Estimated Runtime**: `46.3s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -25,8 +25,8 @@ In April 2025, the U.S. Attorney for the Southern District of New York and the S
 00:00 - Raised $42M for 'AI' Checkout
 00:09 - Claimed 93% to 97% AI Success
 00:17 - Humans Typed Orders Overseas
-00:26 - Scripts, Not Autonomous AI
-00:36 - Audit Live Inputs, Not Demos
+00:27 - Scripts, Not Autonomous AI
+00:37 - Audit Live Inputs, Not Demos
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
