@@ -59,33 +59,37 @@ and PiLiMi at roughly 3,000 dollars
 gross per title.
 
 16
-00:00:29,016 --> 00:00:31,719
-Across 77 tracked AI data disputes,
+00:00:29,016 --> 00:00:31,418
+Out of 77 AI training-data cases
 
 17
-00:00:31,719 --> 00:00:34,500
-that 1.5 billion dollar fund remains
+00:00:31,418 --> 00:00:33,145
+one tracker has logged,
 
 18
-00:00:34,500 --> 00:00:37,512
-the largest copyright payout on record.
+00:00:33,145 --> 00:00:35,923
+this 1.5 billion dollar settlement is
 
 19
-00:00:37,512 --> 00:00:38,514
-For builders,
+00:00:35,923 --> 00:00:37,800
+still the largest payout.
 
 20
-00:00:38,514 --> 00:00:40,134
-pay for clean inputs.
+00:00:37,800 --> 00:00:38,802
+For builders,
 
 21
-00:00:40,134 --> 00:00:41,136
-For creators,
+00:00:38,802 --> 00:00:40,422
+pay for clean inputs.
 
 22
-00:00:41,136 --> 00:00:44,529
-timely copyright registration was the ticket
+00:00:40,422 --> 00:00:41,424
+For creators,
 
 23
-00:00:44,529 --> 00:00:45,840
+00:00:41,424 --> 00:00:44,817
+timely copyright registration was the ticket
+
+24
+00:00:44,817 --> 00:00:46,128
 into this payout.

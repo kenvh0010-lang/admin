@@ -1,7 +1,7 @@
 # YouTube Upload Pack — Why Anthropic Is Paying Book Authors $1.5 Billion This Month
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `45.8s`
+- **Estimated Runtime**: `46.1s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 

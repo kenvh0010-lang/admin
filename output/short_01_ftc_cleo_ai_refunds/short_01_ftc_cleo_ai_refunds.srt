@@ -19,65 +19,69 @@ Total payout:
 more than 15.8 million dollars.
 
 6
-00:00:10,416 --> 00:00:12,618
-Cleo AI ran ads promising up
+00:00:10,416 --> 00:00:12,988
+The FTC says Cleo's ads promised
 
 7
-00:00:12,618 --> 00:00:14,741
-to 250 or 500 dollars today
+00:00:12,988 --> 00:00:14,918
+up to 250 or 500 dollars
 
 8
-00:00:14,741 --> 00:00:17,808
-if users bought a monthly subscription.
+00:00:14,918 --> 00:00:15,400
+today,
 
 9
-00:00:17,808 --> 00:00:18,820
-The FTC sued,
+00:00:15,400 --> 00:00:18,696
+if users paid for a monthly subscription.
 
 10
-00:00:18,820 --> 00:00:21,467
-alleging fewer than 0.3 percent of
+00:00:18,696 --> 00:00:21,006
+The FTC alleged only 0.3 percent
 
 11
-00:00:21,467 --> 00:00:24,270
-Plus borrowers ever got 250 dollars,
+00:00:21,006 --> 00:00:23,171
+of Plus borrowers got the full
 
 12
-00:00:24,270 --> 00:00:26,840
-and extra express fees still took
+00:00:23,171 --> 00:00:24,037
+250 dollars,
 
 13
-00:00:26,840 --> 00:00:27,696
-a full day.
+00:00:24,037 --> 00:00:26,780
+and paid express transfers could still
 
 14
-00:00:27,696 --> 00:00:29,983
-Users with an unpaid advance were
+00:00:26,780 --> 00:00:28,224
+arrive the next day.
 
 15
-00:00:29,983 --> 00:00:32,824
-also blocked from canceling monthly fees.
+00:00:28,224 --> 00:00:30,328
+It also alleged users with an
 
 16
-00:00:32,824 --> 00:00:35,249
-Cleo settled for 17 million dollars
+00:00:30,328 --> 00:00:32,650
+unpaid advance could not cancel.
 
 17
-00:00:35,249 --> 00:00:36,912
-without admitting fault.
+00:00:32,650 --> 00:00:35,262
+Cleo settled for 17 million dollars,
 
 18
-00:00:36,912 --> 00:00:38,926
-When a small advance requires a
+00:00:35,262 --> 00:00:37,656
+and no court ruled on the claims.
 
 19
-00:00:38,926 --> 00:00:40,809
-subscription plus a rush fee,
+00:00:37,656 --> 00:00:39,670
+When a small advance requires a
 
 20
-00:00:40,809 --> 00:00:43,018
-treat both fees as interest before
+00:00:39,670 --> 00:00:41,553
+subscription plus a rush fee,
 
 21
-00:00:43,018 --> 00:00:43,992
+00:00:41,553 --> 00:00:43,762
+treat both fees as interest before
+
+22
+00:00:43,762 --> 00:00:44,736
 you tap accept.

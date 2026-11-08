@@ -1,7 +1,7 @@
 # YouTube Upload Pack — Two Unchecked Boxes Made Citibank Wire $900 Million by Mistake
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `48.6s`
+- **Estimated Runtime**: `48.9s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -25,8 +25,8 @@ On August 11, 2020, Citibank intended to wire $7.8 million in Revlon interest bu
 00:00 - Meant $7.8M. Wired $900M.
 00:10 - The Actual Flexcube Screen
 00:19 - Lenders Kept $500 Million
-00:29 - Rewrote 88% of Loan Contracts
-00:39 - Fix Defaults, Not Just People
+00:30 - Rewrote 88% of Loan Contracts
+00:40 - Fix Defaults, Not Just People
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
