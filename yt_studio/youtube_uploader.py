@@ -276,12 +276,14 @@ def save_ledger(ledger: Dict[str, Any]) -> None:
 
 
 def pick_next_unpublished_storyboard() -> Optional[Path]:
-    """Follow calendar order across all quarters: 3 Shorts then 1 Long-form per week."""
+    """Follow natural calendar order across all queued Shorts and Long-form storyboards."""
+    from .config import natural_sort_key
+
     ledger = load_ledger()
     published = ledger.get("published", {})
 
-    shorts = sorted(CONTENT_DIR.glob("short_*.json"))
-    longs = sorted(CONTENT_DIR.glob("long_*.json"))
+    shorts = sorted(CONTENT_DIR.glob("short_*.json"), key=natural_sort_key)
+    longs = sorted(CONTENT_DIR.glob("long_*.json"), key=natural_sort_key)
 
     ordered: List[Path] = []
     max_weeks = max(len(longs), (len(shorts) + 2) // 3)

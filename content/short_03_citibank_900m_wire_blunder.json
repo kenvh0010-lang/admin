@@ -1,0 +1,131 @@
+{
+  "title": "Two Unchecked Boxes Made Citibank Wire $900 Million by Mistake",
+  "alt_title_1": "Inside the Software Screen Behind Citibank's $900M Error",
+  "alt_title_2": "How One Citibank Wire Typo Rewrote 88% of Loan Contracts",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "On August 11, 2020, Citibank intended to wire $7.8 million in Revlon interest but accidentally wired nearly $900 million of its own funds after missing two Flexcube software checkboxes. By 2026, erroneous-payment clauses appear in 88% of corporate credit agreements.",
+  "tags": [
+    "citibank 900 million",
+    "revlon wire error",
+    "banking history",
+    "ux design failure",
+    "finance case study",
+    "corporate law",
+    "risk management"
+  ],
+  "thumbnail": {
+    "hook_text": "$900M WIRE TYPO",
+    "badge": "COURT EXHIBIT",
+    "stat": "2 BOXES"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Look at Figure 1 from the court opinion in Scene 2. Would you have caught that UI trap? Full court PDF is linked in the description."
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Meant $7.8M. Wired $900M.",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/citibank/sdny_citi_page-002.png",
+      "evidence_crop": [
+        130,
+        930,
+        1150,
+        1460
+      ],
+      "highlight_words": [
+        "7.8",
+        "900",
+        "million"
+      ],
+      "narration": "Citibank meant to wire 7.8 million dollars in interest for Revlon. Instead, it accidentally wired almost 900 million of its own money.",
+      "source": "In re Citibank Aug. 11, 2020 Wire Transfers, Opinion p. 2 (S.D.N.Y. 2021)"
+    },
+    {
+      "tag": "THE SCREEN",
+      "headline": "The Actual Flexcube Screen",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/citibank/sdny_flexcube_p13.png",
+      "evidence_crop": [
+        130,
+        420,
+        1145,
+        1140
+      ],
+      "highlight_words": [
+        "PRINCIPAL",
+        "FRONT",
+        "FUND"
+      ],
+      "narration": "Here is Exhibit Figure 1 from court. Three reviewers checked PRINCIPAL, but missed that FRONT and FUND also had to be checked to stop the wire.",
+      "source": "In re Citibank, No. 20-cv-6539, Opinion Figure 1, p. 13 (S.D.N.Y.)"
+    },
+    {
+      "tag": "THE LAWSUIT",
+      "headline": "Lenders Kept $500 Million",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/citibank/sdny_citi_page-003.png",
+      "evidence_crop": [
+        130,
+        710,
+        1145,
+        1360
+      ],
+      "highlight_words": [
+        "500",
+        "reversed"
+      ],
+      "narration": "Ten firms refused to return over 500 million dollars. A trial judge let them keep it in 2021 before an appeals court reversed the ruling in 2022.",
+      "source": "S.D.N.Y. Opinion p. 3 (2021); 2d Cir. Reversal (Sep 8, 2022)"
+    },
+    {
+      "tag": "THE LEGACY",
+      "headline": "Rewrote 88% of Loan Contracts",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/citibank/thomson_reuters_clauses.png",
+      "evidence_crop": [
+        75,
+        200,
+        770,
+        960
+      ],
+      "highlight_words": [
+        "88%"
+      ],
+      "narration": "Wall Street never forgot. By September 2026, erroneous payment clawback clauses sit inside 88 percent of corporate credit agreements.",
+      "source": "Thomson Reuters Legal Analysis, Sep 2, 2026"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Fix Defaults, Not Just People",
+      "visual_type": "comparison_split",
+      "left_title": "HUMAN REVIEW",
+      "left_body": "Three eyes missed a confusing screen",
+      "right_title": "SAFE DEFAULT",
+      "right_body": "Require explicit confirmation on principal",
+      "highlight_words": [
+        "default",
+        "three"
+      ],
+      "narration": "Three human reviewers still missed a bad software default. High-stakes systems need clearer screens, not just extra signatures.",
+      "source": "OCC Consent Order & S.D.N.Y. Findings"
+    }
+  ],
+  "sources": [
+    {
+      "label": "S.D.N.Y. Opinion: In re Citibank Aug. 11, 2020 Wire Transfers (Feb 16, 2021)",
+      "url": "https://www.nysd.uscourts.gov/sites/default/files/2021-02/20cv6539%20Citibank%20Opinion.pdf"
+    },
+    {
+      "label": "Second Circuit Opinion Reversing & Vacating Judgment (Sep 8, 2022)",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca2/21-487/21-487-2022-09-08.html"
+    },
+    {
+      "label": "Thomson Reuters Legal: Erroneous Payment Clauses in 88% of Deals (Sep 2, 2026)",
+      "url": "https://legal.thomsonreuters.com/blog/erroneous-payment-clauses/"
+    }
+  ]
+}

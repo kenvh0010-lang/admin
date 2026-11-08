@@ -1,0 +1,63 @@
+1
+00:00:00,000 --> 00:00:03,106
+Eminem's publisher wants 41 million dollars
+
+2
+00:00:03,106 --> 00:00:04,190
+from an AI app.
+
+3
+00:00:04,190 --> 00:00:05,275
+The same night,
+
+4
+00:00:05,275 --> 00:00:08,170
+Elvis Presley's catalog owners sued too.
+
+5
+00:00:08,170 --> 00:00:10,608
+The lawsuit quotes Suno's own words:
+
+6
+00:00:10,608 --> 00:00:12,979
+its AI learned from essentially all
+
+7
+00:00:12,979 --> 00:00:15,282
+music of reasonable quality on the
+
+8
+00:00:15,282 --> 00:00:16,230
+open internet.
+
+9
+00:00:16,230 --> 00:00:18,491
+That music helped build a 5.4
+
+10
+00:00:18,491 --> 00:00:20,285
+billion dollar company.
+
+11
+00:00:20,285 --> 00:00:22,468
+The songwriters got nothing,
+
+12
+00:00:22,468 --> 00:00:23,560
+the suit says.
+
+13
+00:00:23,560 --> 00:00:25,439
+No court has ruled yet.
+
+14
+00:00:25,439 --> 00:00:27,072
+But the rule is old:
+
+15
+00:00:27,072 --> 00:00:30,176
+whoever owns the asset sets the price,
+
+16
+00:00:30,176 --> 00:00:33,280
+even against a billion dollar machine.

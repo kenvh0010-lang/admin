@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from PIL import Image, ImageDraw, ImageFont
 
-from .config import BrandTheme, DEFAULT_THEME, VideoFormat, resolve_font_path
+from .config import BrandTheme, DEFAULT_THEME, PROJECT_ROOT, VideoFormat, resolve_font_path
 
 
 def _load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
@@ -113,8 +113,12 @@ def render_scene_beat_frame(
             width=3,
         )
         ev_path = scene.get("evidence_image")
-        if scene.get("visual_type") == "evidence_image" and ev_path and Path(ev_path).is_file():
-            _paste_evidence(img, draw, Path(ev_path), scene.get("evidence_crop"),
+        ev_file = (
+            (Path(ev_path) if Path(ev_path).is_absolute() else (PROJECT_ROOT / ev_path))
+            if ev_path else None
+        )
+        if scene.get("visual_type") == "evidence_image" and ev_file and ev_file.is_file():
+            _paste_evidence(img, draw, ev_file, scene.get("evidence_crop"),
                             (pad_x + 24, card_top + 24, w - pad_x - 24, card_bottom - 24), theme)
         else:
             _draw_visual_card_content(

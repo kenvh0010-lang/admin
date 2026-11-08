@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'content/*.json'
+      - 'assets/evidence/**'
       - 'yt_studio/**'
       - '.github/workflows/video_factory.yml'
   schedule:
@@ -76,26 +77,71 @@ jobs:
         run: |
           python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
 
-      - name: Parallel Batch Render All 28 Weeks / 112 Videos (on code/script push or full rebuild)
+      - name: Cache Rendered Video Vault (Incremental SHA-256 Manifests)
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        uses: actions/cache@v4
+        with:
+          path: output
+          key: video-vault-v23-${{ hashFiles('yt_studio/**', 'content/*.json', 'assets/evidence/**') }}
+          restore-keys: |
+            video-vault-v23-
+
+      - name: Parallel Batch Render Evidence-Based Videos & Bundle Release Zips
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         run: |
-          python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4
+          python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4 --skip-existing
           mkdir -p release_bundles
           python3 - <<'PY'
           import subprocess
           from pathlib import Path
-          shorts = sorted(Path("output").glob("short_*"))
-          longs = sorted(Path("output").glob("long_*"))
-          total_weeks = min(len(longs), len(shorts) // 3)
-          for w in range(1, total_weeks + 1):
-              m = (w - 1) // 4 + 1
-              s_dirs = shorts[(w - 1) * 3 : w * 3]
-              l_dir = longs[w - 1]
-              zip_name = f"release_bundles/month{m}_week{w:02d}_videos.zip"
-              cmd = ["zip", "-r", zip_name] + [str(p) for p in s_dirs] + [str(l_dir)]
-              subprocess.run(cmd, check=True)
-              print(f"Packed {zip_name}")
+          from yt_studio.config import natural_sort_key
+
+          active_stems = {
+              p.stem for p in Path("content").glob("*.json") if p.name != "published_ledger.json"
+          }
+          rendered_dirs = sorted(
+              (
+                  d for d in Path("output").iterdir()
+                  if d.is_dir() and d.name in active_stems and list(d.glob("*.mp4"))
+              ),
+              key=natural_sort_key,
+          )
+          if not rendered_dirs:
+              raise SystemExit("No rendered MP4 directories found in output/")
+
+          vault_zip = "release_bundles/evidence_shorts_complete_vault.zip"
+          subprocess.run(
+              ["zip", "-r", vault_zip] + [str(d) for d in rendered_dirs] + ["-x", "*/.render_manifest.json"],
+              check=True,
+          )
+          print(f"Packed {vault_zip} ({len(rendered_dirs)} videos)")
+
+          for b_idx in range(0, len(rendered_dirs), 5):
+              chunk = rendered_dirs[b_idx : b_idx + 5]
+              pack_zip = f"release_bundles/evidence_pack_{(b_idx // 5) + 1:02d}_videos.zip"
+              subprocess.run(
+                  ["zip", "-r", pack_zip] + [str(d) for d in chunk] + ["-x", "*/.render_manifest.json"],
+                  check=True,
+              )
+              print(f"Packed {pack_zip} ({len(chunk)} videos)")
           PY
+
+      - name: Publish Neural-Voiced Evidence Shorts Packs to GitHub Releases
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: evidence-shorts-vault
+          name: "🎬 Evidence-Based Shorts Vault (1080x1920 Neural MP4s + Court & Regulator Exhibits)"
+          body: |
+            ### 100% Automated Cloud Render — Evidence-Based Documentary Shorts Vault!
+            Download `evidence_shorts_complete_vault.zip` (or individual 5-video packs) containing ready-to-upload **1080x1920 Shorts** rendered with:
+            - **Real Primary Exhibits (`assets/evidence/`)**: Actual SDNY court filings, SEC administrative orders, FTC refund notices, and copyright settlement tables framed cleanly inside every scene.
+            - **Natural American English Neural Voiceover** (`en-US-ChristopherNeural`) + original ambient audio bed.
+            - **Synced `.srt` Captions, High-CTR Thumbnails & Copy-Paste YouTube SEO Packs** with clickable primary source URLs and Amazon Associate disclosure (`mindandmarg06-20`).
+          files: |
+            release_bundles/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fast 24/7 YouTube Auto-Publish Next Queued Video + SRT + Thumbnail + Top Comment
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'auto_publish_next') }}
@@ -114,18 +160,8 @@ jobs:
           git config user.email "actions@github.com"
           git add docs/ products/bio_funnel_page/ output/
           if [ -f content/published_ledger.json ]; then git add content/published_ledger.json; fi
-          git diff --cached --quiet || (git pull --rebase origin main && git commit -m "chore(autopilot): sync SEO site, upload packs & YouTube ledger [skip ci]" && git push)
-
-      - name: Publish 28-Week / 196-Day Neural-Voiced MP4 Packs to GitHub Releases
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: q1-90day-neural-videos
-          name: "🎬 Complete 28-Week Video Vault (112 Neural-Voiced MP4s — Weeks 1–28)"
-          body: |
-            ### 100% Automated Cloud Render — Full 196-Day / 28-Week Library (112 Fact-Checked Videos)!
-            Download any weekly `.zip` bundle (`month1_week01` through `month7_week28`) containing ready-to-upload **1080x1920 Shorts (84)** & **1920x1080 Long-form Visual Essays (28)** with natural American English neural voiceover (`en-US-ChristopherNeural`), Ken Burns motion transitions, primary archival & academic citations, 100% copyright-free ambient music, `.srt` subtitles, high-CTR thumbnails, and copy-paste YouTube SEO descriptions (`mindandmarg06-20`).
-          files: |
-            release_bundles/*.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(autopilot): sync SEO site, upload packs & YouTube ledger [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

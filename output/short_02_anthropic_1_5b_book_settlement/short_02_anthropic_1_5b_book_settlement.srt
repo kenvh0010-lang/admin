@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:00,917
+This November,
+
+2
+00:00:00,917 --> 00:00:03,276
+book authors start collecting from a
+
+3
+00:00:03,276 --> 00:00:06,027
+1.5 billion dollar AI copyright settlement
+
+4
+00:00:06,027 --> 00:00:07,010
+with Anthropic.
+
+5
+00:00:07,010 --> 00:00:08,038
+In June 2025,
+
+6
+00:00:08,038 --> 00:00:10,252
+the judge drew a sharp line:
+
+7
+00:00:10,252 --> 00:00:12,704
+training AI on bought books was
+
+8
+00:00:12,704 --> 00:00:13,416
+fair use,
+
+9
+00:00:13,416 --> 00:00:16,737
+but downloading millions of pirated copies
+
+10
+00:00:16,737 --> 00:00:17,370
+was not.
+
+11
+00:00:17,370 --> 00:00:18,172
+Before trial,
+
+12
+00:00:18,172 --> 00:00:21,009
+Anthropic settled without admitting liability,
+
+13
+00:00:21,009 --> 00:00:23,784
+covering 482,460 registered books from LibGen
+
+14
+00:00:23,784 --> 00:00:25,943
+and PiLiMi at roughly 3,000 dollars
+
+15
+00:00:25,943 --> 00:00:26,930
+gross per title.
+
+16
+00:00:26,930 --> 00:00:29,409
+Across 77 tracked AI data disputes,
+
+17
+00:00:29,409 --> 00:00:31,958
+that 1.5 billion dollar fund remains
+
+18
+00:00:31,958 --> 00:00:34,720
+the largest copyright payout on record.
+
+19
+00:00:34,720 --> 00:00:35,632
+For builders,
+
+20
+00:00:35,632 --> 00:00:37,106
+pay for clean inputs.
+
+21
+00:00:37,106 --> 00:00:38,019
+For creators,
+
+22
+00:00:38,019 --> 00:00:41,107
+timely copyright registration was the ticket
+
+23
+00:00:41,107 --> 00:00:42,300
+into this payout.

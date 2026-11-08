@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Original visual essays, behavioral finance breakdowns, and curated non-fiction book guides by Mind & Margin." />
-  <title>Mind &amp; Margin — Wealth Psychology, Book Summaries &amp; AI Leverage (1 Guides)</title>
+  <meta name="description" content="Evidence-backed financial, AI copyright, and regulatory case breakdowns with primary court filings by Mind & Margin." />
+  <title>Mind &amp; Margin — Evidence-Based Case Breakdowns &amp; Primary Filings (5 Investigations)</title>
   <style>
 :root { --bg:#0B1020; --card:#131C34; --border:#233259; --gold:#F5B942; --cyan:#22D3EE; --text:#F8FAFC; --muted:#94A3B8; }
 * { box-sizing:border-box; }
@@ -16,7 +16,7 @@ header { border-bottom:1px solid var(--border); background:#080c18; padding:18px
 .nav { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px; }
 .brand { font-size:1.25rem; font-weight:800; letter-spacing:0.03em; color:var(--text); }
 .brand span { color:var(--gold); }
-.nav-links { display:flex; gap:18px; font-size:0.92rem; }
+.nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:0.92rem; }
 .disclosure-bar { background:#101930; border-bottom:1px solid var(--border); font-size:0.82rem; color:var(--muted); padding:10px 0; }
 .hero { padding:44px 0 28px; border-bottom:1px solid var(--border); }
 .hero h1 { font-size:2.1rem; line-height:1.25; margin:0 0 12px; }
@@ -27,11 +27,16 @@ header { border-bottom:1px solid var(--border); background:#080c18; padding:18px
 .card h2 { font-size:1.15rem; line-height:1.35; margin:0 0 10px; }
 .card p { font-size:0.92rem; color:var(--muted); margin:0 0 16px; }
 .btn { display:inline-block; background:var(--gold); color:#0B1020; font-weight:700; padding:9px 16px; border-radius:8px; font-size:0.9rem; text-decoration:none !important; }
-article { padding:36px 0; max-width:760px; }
+article { padding:36px 0; max-width:780px; }
 article h1 { font-size:2rem; line-height:1.28; margin-bottom:12px; }
 .scene-block { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin:20px 0; }
 .scene-block h3 { margin:0 0 8px; color:var(--gold); font-size:1.1rem; }
+.ev-shot { display:block; max-width:100%; border-radius:10px; border:2px solid var(--gold); margin:14px 0 10px; background:#fff; }
+.sources-box { background:#0f182e; border:1px solid var(--border); border-left:4px solid var(--cyan); padding:18px 22px; border-radius:10px; margin:26px 0; }
+.sources-box ul { margin:10px 0 0; padding-left:20px; }
+.sources-box li { margin:6px 0; word-break:break-word; }
 .book-box { background:#162240; border-left:4px solid var(--gold); padding:18px 22px; border-radius:10px; margin:28px 0; }
+code { background:#182444; padding:2px 6px; border-radius:5px; font-size:0.88em; color:#E2E8F0; }
 footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--muted); font-size:0.86rem; margin-top:40px; }
 
   .toolbar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; margin-top:22px; }
@@ -47,7 +52,8 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
     <div class="wrap nav">
       <a class="brand" href="index.html">MIND <span>&amp;</span> MARGIN</a>
       <nav class="nav-links">
-        <a href="index.html">Essays &amp; Book Guides (1)</a>
+        <a href="index.html">Evidence Breakdowns (5)</a>
+        <a href="dossier.html">48-Event Source Dossier</a>
         <a href="bio/index.html">Creator Resource Hub</a>
         <a href="5_hour_asset_builder_os/index.html">5-Hour Asset OS</a>
         <a href="about.html">About</a>
@@ -57,27 +63,60 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
   </header>
   <main class="wrap">
     <section class="hero">
-      <span class="badge">Editorial Publication &amp; Book Breakdowns • 1 Original Guides</span>
-      <h1>Wealth Psychology, Timeless Mental Models &amp; Modern Leverage</h1>
-      <p>Original visual essays, behavioral finance breakdowns, and curated non-fiction reading guides accompanying the Mind &amp; Margin YouTube channel.</p>
+      <span class="badge">Evidence-First Editorial • 5 Active Screenshot Investigations + 48-Case Dossier</span>
+      <h1>Real Court Filings, Regulatory Orders &amp; Financial Forensics</h1>
+      <p>Every Mind &amp; Margin breakdown shows the actual federal complaint, SEC/FTC enforcement order, or court exhibit behind high-stakes business and AI collisions.</p>
       <div class="toolbar">
         <div class="tabs">
-          <button class="tab-btn active" onclick="filterCards('all', this)">All Guides (1)</button>
+          <button class="tab-btn active" onclick="filterCards('all', this)">All Investigations (5)</button>
+          <button class="tab-btn" onclick="filterCards('short', this)">Evidence Shorts (5)</button>
           <button class="tab-btn" onclick="filterCards('long', this)">Long-Form Essays (0)</button>
-          <button class="tab-btn" onclick="filterCards('short', this)">Mental Model Breakdowns (1)</button>
+          <a class="tab-btn" href="dossier.html" style="text-decoration:none;">Browse 48-Event Source Vault &rarr;</a>
         </div>
-        <input id="qInput" class="search-input" type="search" placeholder="Search mental models, books, AI..." oninput="applySearch()" />
+        <input id="qInput" class="search-input" type="search" placeholder="Search filings, SEC, FTC, AI..." oninput="applySearch()" />
       </div>
     </section>
     <section class="grid" id="articlesGrid">
       
     <div class="card" data-fmt="short" data-search="eminem and elvis vs. the $5.4 billion ai song app suno lawsuit, ai music, eminem, elvis presley, copyright, ai news, music business">
       <div>
-        <span class="badge">Mental Model Breakdown</span>
+        <span class="badge">Evidence Investigation • 5 Primary Sources</span>
         <h2><a href="articles/short_00_suno_ai_lawsuit.html" style="color:var(--text);">Eminem and Elvis vs. the $5.4 Billion AI Song App</a></h2>
         <p>On November 6, 2026, Eminem&#x27;s publisher Eight Mile Style and the owners of Elvis Presley&#x27;s catalog filed separate lawsuits against Suno, an AI music app valued at $5.4 billion. These are allegations; no court has ruled.</p>
       </div>
-      <div><a class="btn" href="articles/short_00_suno_ai_lawsuit.html">Read Full Breakdown &rarr;</a></div>
+      <div><a class="btn" href="articles/short_00_suno_ai_lawsuit.html">Inspect Exhibits &amp; Sources &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="2.1 million users are getting paypal refunds from cleo ai cleo ai refund, ftc refunds, cash advance apps, consumer protection, fintech news, personal finance, dark patterns">
+      <div>
+        <span class="badge">Evidence Investigation • 4 Primary Sources</span>
+        <h2><a href="articles/short_01_ftc_cleo_ai_refunds.html" style="color:var(--text);">2.1 Million Users Are Getting PayPal Refunds From Cleo AI</a></h2>
+        <p>Starting October 27, 2026, the Federal Trade Commission began sending 2,124,796 PayPal payments totaling more than $15.8 million to users of the cash-advance app Cleo AI, following a $17 million 2025 settlement order in federal court.</p>
+      </div>
+      <div><a class="btn" href="articles/short_01_ftc_cleo_ai_refunds.html">Inspect Exhibits &amp; Sources &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why anthropic is paying book authors $1.5 billion this month anthropic settlement, bartz v anthropic, ai copyright, authors guild, fair use, ai training data, tech law">
+      <div>
+        <span class="badge">Evidence Investigation • 4 Primary Sources</span>
+        <h2><a href="articles/short_02_anthropic_1_5b_book_settlement.html" style="color:var(--text);">Why Anthropic Is Paying Book Authors $1.5 Billion This Month</a></h2>
+        <p>In Bartz v. Anthropic, a federal court approved a $1.5 billion class settlement covering 482,460 books downloaded from shadow libraries, with initial author and publisher distributions scheduled in November 2026.</p>
+      </div>
+      <div><a class="btn" href="articles/short_02_anthropic_1_5b_book_settlement.html">Inspect Exhibits &amp; Sources &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="two unchecked boxes made citibank wire $900 million by mistake citibank 900 million, revlon wire error, banking history, ux design failure, finance case study, corporate law, risk management">
+      <div>
+        <span class="badge">Evidence Investigation • 3 Primary Sources</span>
+        <h2><a href="articles/short_03_citibank_900m_wire_blunder.html" style="color:var(--text);">Two Unchecked Boxes Made Citibank Wire $900 Million by Mistake</a></h2>
+        <p>On August 11, 2020, Citibank intended to wire $7.8 million in Revlon interest but accidentally wired nearly $900 million of its own funds after missing two Flexcube software checkboxes. By 2026, erroneous-payment clauses appear in 88% of corporate credit agreements.</p>
+      </div>
+      <div><a class="btn" href="articles/short_03_citibank_900m_wire_blunder.html">Inspect Exhibits &amp; Sources &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="how one unupdated server cost $460 million in 45 minutes knight capital, software bug, sec enforcement, algorithmic trading, engineering failure, wall street history, devops">
+      <div>
+        <span class="badge">Evidence Investigation • 2 Primary Sources</span>
+        <h2><a href="articles/short_04_knight_capital_440m_sec_order.html" style="color:var(--text);">How One Unupdated Server Cost $460 Million in 45 Minutes</a></h2>
+        <p>According to SEC Release No. 34-70694, Knight Capital deployed new trading code manually to only seven of eight servers on August 1, 2012. In 45 minutes, dead 2003 code executed over 4 million trades and lost more than $460 million.</p>
+      </div>
+      <div><a class="btn" href="articles/short_04_knight_capital_440m_sec_order.html">Inspect Exhibits &amp; Sources &rarr;</a></div>
     </div>
     </section>
   </main>

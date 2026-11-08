@@ -4,48 +4,44 @@ This file defines the unified engineering, editorial, and QA workflow for **Clau
 
 ---
 
-## 1. Project Overview & Live Architecture
-- **Channel**: `Mind & Margin` (`@MindAndMargin`) — English behavioral economics, decision science, archival corporate case studies, non-fiction book breakdowns, and solo AI leverage (`$15–$48` CPM).
-- **Content Vault (`content/`)**: **112 complete storyboards** (28 Weeks / 196 Days: `short_01`..`short_84` + `long_01`..`long_28`) mapped across **8 high-RPM trend clusters** in `yt_studio/trend_radar.py`, backed by primary archival citations in `products/real_world_events_dossier.md`.
-- **Official Amazon Associates Tag**: **`mindandmarg06-20`** (wired as `DEFAULT_AMAZON_TAG` in `yt_studio/site_builder.py` and `.github/workflows/video_factory.yml`).
-- **Live Public Website (112 SEO Articles)**: https://kenvh0010-lang.github.io/admin/
+## 1. Project Overview & Live Architecture (Evidence-Based Shorts Pivot — Nov 2026)
+- **Channel**: `Mind & Margin` (`@MindAndMargin`) — Documentary-style English Shorts (`1080x1920`) breaking down real lawsuits, federal regulatory actions, corporate blunders, and AI copyright collisions with **real primary screenshots & court exhibits** (`$15–$48` CPM).
+- **Content Vault (`content/`)**: Active evidence-based news & case-study Shorts (`short_00_suno_ai_lawsuit.json`, `short_01_ftc_cleo_ai_refunds.json`, `short_02_anthropic_1_5b_book_settlement.json`, `short_03_citibank_900m_wire_blunder.json`, `short_04_knight_capital_440m_sec_order.json`, ...) backed by primary screenshots in `assets/evidence/<topic>/*.png` and the **48-Event Primary Research Dossier** in `products/real_world_events_dossier.md`.
+  - *Note*: The legacy 112 generic-card library and fixed CSV calendars were retired in commit `bbf6416` (`08/11/2026`). Do **not** restore generic stat-only scripts without real primary exhibits.
+- **Official Amazon Associates Tag**: **`mindandmarg06-20`** (`DEFAULT_AMAZON_TAG` in `yt_studio/site_builder.py`).
+- **Live Public Website + Exhibits + 48-Event Dossier**: https://kenvh0010-lang.github.io/admin/ (`dossier.html` for full research vault)
 - **Day-1 Bio Funnel**: https://kenvh0010-lang.github.io/admin/bio/
-- **Cloud Neural Video Releases (28 Weekly `.zip` Packs)**: https://github.com/kenvh0010-lang/admin/releases
+- **Cloud Neural Video Releases**: https://github.com/kenvh0010-lang/admin/releases (`evidence-shorts-vault`)
 
 ---
 
-## 2. Mandatory Editorial & Fact-Checking Rules (For All Storyboards in `content/*.json`)
-1. **Every Claim & Number Needs a Real Source**:
-   - Every factual or statistical scene MUST include an accurate `"source"` field citing the real paper, author, and year (e.g., `"Kahneman & Tversky, Econometrica (1979)"`, `"Gloria Mark et al., CHI (2008)"`).
-   - Actionable frameworks invented by the channel must be labeled transparently (e.g., `"Mind & Margin system / rule of thumb (advice, not a study)"`).
-   - Never invent statistics or misattribute quotes (e.g., 23-min task resumption = Gloria Mark 2008, Attention Residue = Sophie Leroy 2009; Goodhart target phrasing = Marilyn Strathern 1997).
-2. **Zero AI-Writing Tells & Zero Forbidden Glyphs**:
-   - **NEVER** use forbidden glyphs (`✕`, `✓`, `▸`, `→`, or `—` em-dash) anywhere in JSON — use ASCII `->`, colons, commas, or periods so Linux/DejaVu/Roboto fonts render cleanly without tofu boxes.
-   - **NEVER** use AI buzzwords (`unlock`, `delve`, `game-changer`, `tapestry` outside Diderot's literal 1769 essay, `skyrocket`, `secretly`, `ruthlessly`, vague `"studies show"`), `"Here is how/the"` openers, or `"..."` cliffhanger endings.
-3. **Visual Card & Thumbnail Bounds**:
-   - Keep `"stat_value"` concise (`<= 12` characters recommended; `yt_studio/visual_composer.py` auto-scales fonts down to `64px` and wraps `Source:` to 2 lines, but punchy values look sharpest on `1080x1920` Shorts).
-   - Keep `thumbnail.hook_text <= 20` chars, `thumbnail.badge <= 18` chars, and `thumbnail.stat <= 8` chars.
+## 2. Mandatory Editorial, Screenshot & Fact-Checking Rules (`content/*.json`)
+1. **Real Primary Screenshots (`visual_type: "evidence_image"`)**:
+   - Capture real browser screenshots (`1200x1400`) or `150 DPI` `pdftoppm` renders of official court complaints, SEC/FTC orders, or reputable news reporting into `assets/evidence/<topic>/<name>.png`.
+   - Visually inspect **every** PNG to confirm zero CAPTCHAs, zero anti-bot error pages, and zero cookie/disclaimer modals blocking text.
+   - Set `"evidence_crop": [x1, y1, x2, y2]` inside image bounds (`0 <= x1 < x2 <= width`, `0 <= y1 < y2 <= height`) to frame the exact headline, paragraph, or exhibit table cleanly.
+2. **Primary Citations & Top-Level `sources` Array**:
+   - Every scene MUST include a concise `"source"` citation (e.g., `"SEC Release No. 34-70694, para. 1, p. 2"`).
+   - Every storyboard MUST include a top-level `"sources": [{"label": "...", "url": "https://..."}]` list so `yt_studio/video_renderer.py`, `yt_studio/youtube_uploader.py`, and `yt_studio/site_builder.py` automatically embed clickable source links in YouTube descriptions and web articles.
+   - Distinguish unproven lawsuit allegations (`"alleged"`, `"the suit says"`, `"settled without admitting fault"`) from final court findings.
+3. **Zero AI-Writing Tells & Zero Forbidden Glyphs**:
+   - **NEVER** use forbidden glyphs (`✕`, `✓`, `▸`, `→`, `—`, or `–`) anywhere in JSON — use ASCII `->`, hyphens `-`, colons, commas, or periods.
+   - **NEVER** use AI buzzwords (`unlock`, `delve`, `game-changer`, `tapestry`, `skyrocket`, `secretly`, `ruthlessly`, vague `"studies show"`), `"Here is how"` openers, or `"..."` cliffhangers.
+   - Keep narration tight and documentary-crisp (`~65–105` words across 5 scenes = `~28–42s` high-retention Short).
 4. **Amazon Operating Agreement Compliance**:
-   - Every public page, bio funnel, YouTube upload pack (`output/*/youtube_upload_pack.md`), and API upload (`yt_studio/youtube_uploader.py`) MUST retain the verbatim disclosure:
-     `"As an Amazon Associate I earn from qualifying purchases."`
+   - Retain the verbatim disclosure `"As an Amazon Associate I earn from qualifying purchases."` across `docs/`, `bio/`, `youtube_upload_pack.md`, and `yt_studio/youtube_uploader.py` (`mindandmarg06-20`). Avoid making videos that disparage Amazon retail/Prime while participating in Amazon Associates.
 
 ---
 
 ## 3. Mandatory Sync & QA Checklist Before Every Commit
-Whenever you add or edit any storyboard JSON (`content/*.json`), title, or renderer code, **always run all 4 steps before committing** so downstream files never go stale:
-
-1. **Sync Calendars (`content/calendar_30_days.csv`, `calendar_90_days.csv`, `calendar_180_days.csv`)**:
-   - Always write CSVs via Python `csv.writer` (proper RFC-4180 quoting for commas like `"$1,000/Month"`) and keep `Video Title (English - High RPM)` 100% identical to `storyboard["title"]`.
-2. **Regenerate Upload Packs, SRTs, Thumbnails & Public Site (`docs/`)**:
+1. **Rebuild Public Site, Exhibits, Dossier & Upload Packs**:
    ```bash
    python3 cli.py build-site --amazon-tag mindandmarg06-20
    ```
-   *(And regenerate `output/<slug>/youtube_upload_pack.md`, `<slug>.srt`, and `<slug>_thumbnail.png` for any edited storyboards).*
-3. **Keep Cloud Encoding Fast & Safe**:
-   - In `yt_studio/video_renderer.py` (`_render_motion_clip`), keep `-preset veryfast` so 112-video GitHub Actions batch builds finish well inside runner limits.
-   - Do NOT commit `.mp4` files or `release_bundles/` to Git (they belong on GitHub Releases via `.github/workflows/video_factory.yml`).
-4. **Run the Full Automated QA Suite (Must Pass 100%)**:
+2. **Incremental Render / Smoke Test**:
+   - Use `--skip-existing` (`python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4 --skip-existing`) so unchanged videos reuse `.render_manifest.json` SHA-256 signatures.
+   - Never commit `.mp4`, `.render_manifest.json`, or `release_bundles/` to Git.
+3. **Run the Full Automated QA Suite (Must Pass 100%)**:
    ```bash
    python3 -m unittest discover -s tests -v
    ```
-   This verifies all 112 JSON schemas, research `source` presence, zero forbidden glyphs, zero PIL `textbbox` card/source clipping across all 112 scripts, 8 Trend Radar clusters, Amazon tag sync, and 100% calendar title matching.

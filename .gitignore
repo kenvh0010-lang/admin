@@ -5,5 +5,6 @@ venv/
 .env
 output/*.mp4
 output/*/*.mp4
+output/*/.render_manifest.json
 release_bundles/
 *.prompt.txt

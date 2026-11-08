@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:02,252
+One missed server update cost a
+
+2
+00:00:02,252 --> 00:00:04,721
+Wall Street trading giant over 460
+
+3
+00:00:04,721 --> 00:00:06,900
+million dollars in 45 minutes.
+
+4
+00:00:06,900 --> 00:00:09,559
+A technician manually copied new code
+
+5
+00:00:09,559 --> 00:00:10,781
+to seven servers,
+
+6
+00:00:10,781 --> 00:00:12,075
+missed the eighth,
+
+7
+00:00:12,075 --> 00:00:14,519
+and accidentally woke up dead 2003
+
+8
+00:00:14,519 --> 00:00:16,100
+code called Power Peg.
+
+9
+00:00:16,100 --> 00:00:17,119
+At market open,
+
+10
+00:00:17,119 --> 00:00:19,633
+that server fired millions of orders,
+
+11
+00:00:19,633 --> 00:00:22,215
+racking up 4 million executions across
+
+12
+00:00:22,215 --> 00:00:25,069
+397 million shares before engineers pulled
+
+13
+00:00:25,069 --> 00:00:25,680
+the plug.
+
+14
+00:00:25,680 --> 00:00:28,044
+An internal system had sent 97
+
+15
+00:00:28,044 --> 00:00:30,645
+Power Peg emails before the open,
+
+16
+00:00:30,645 --> 00:00:33,325
+but nobody treated them as alerts.
+
+17
+00:00:33,325 --> 00:00:35,689
+Knight later paid a 12 million
+
+18
+00:00:35,689 --> 00:00:36,950
+dollar SEC fine.
+
+19
+00:00:36,950 --> 00:00:39,461
+Any automated machine moving real money
+
+20
+00:00:39,461 --> 00:00:40,814
+needs two guardrails:
+
+21
+00:00:40,814 --> 00:00:42,553
+zero manual server deploys,
+
+22
+00:00:42,553 --> 00:00:44,420
+and an automatic kill switch.

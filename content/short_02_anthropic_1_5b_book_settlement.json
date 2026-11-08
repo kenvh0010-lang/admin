@@ -1,0 +1,135 @@
+{
+  "title": "Why Anthropic Is Paying Book Authors $1.5 Billion This Month",
+  "alt_title_1": "The $1.5 Billion Line Between AI Fair Use and Piracy",
+  "alt_title_2": "482,460 Books: Inside the Largest AI Copyright Payout Yet",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In Bartz v. Anthropic, a federal court approved a $1.5 billion class settlement covering 482,460 books downloaded from shadow libraries, with initial author and publisher distributions scheduled in November 2026.",
+  "tags": [
+    "anthropic settlement",
+    "bartz v anthropic",
+    "ai copyright",
+    "authors guild",
+    "fair use",
+    "ai training data",
+    "tech law"
+  ],
+  "thumbnail": {
+    "hook_text": "$1.5B BOOK PAYOUT",
+    "badge": "SETTLEMENT",
+    "stat": "$3,000"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Fair line or too low at roughly $3,000 gross per book? Full court timeline and sources are in the description."
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Authors Start Getting $1.5 Billion",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/anthropic/authors_guild.png",
+      "evidence_crop": [
+        30,
+        240,
+        885,
+        1020
+      ],
+      "highlight_words": [
+        "1.5",
+        "billion",
+        "November"
+      ],
+      "narration": "This November, book authors start collecting from a 1.5 billion dollar AI copyright settlement with Anthropic.",
+      "source": "Authors Guild Settlement Update, Oct 29, 2026"
+    },
+    {
+      "tag": "THE RULING",
+      "headline": "Training Passed. Piracy Failed.",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/anthropic/vircon_legal.png",
+      "evidence_crop": [
+        200,
+        865,
+        1175,
+        1385
+      ],
+      "highlight_words": [
+        "fair",
+        "pirate"
+      ],
+      "narration": "In June 2025, the judge drew a sharp line: training AI on bought books was fair use, but downloading millions of pirated copies was not.",
+      "source": "Bartz v. Anthropic, N.D. Cal. summary judgment (Jun 23, 2025)"
+    },
+    {
+      "tag": "THE NUMBERS",
+      "headline": "482,460 Registered Books Covered",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/anthropic/authors_alliance_faq.png",
+      "evidence_crop": [
+        15,
+        180,
+        1170,
+        860
+      ],
+      "highlight_words": [
+        "482,460",
+        "3,000"
+      ],
+      "narration": "Before trial, Anthropic settled without admitting liability, covering 482,460 registered books from LibGen and PiLiMi at roughly 3,000 dollars gross per title.",
+      "source": "Authors Alliance FAQ & Final Approval Order (Jul 20, 2026)"
+    },
+    {
+      "tag": "THE RECORD",
+      "headline": "Largest AI Copyright Deal So Far",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/anthropic/aitraining_tracker.png",
+      "evidence_crop": [
+        30,
+        110,
+        1150,
+        880
+      ],
+      "highlight_words": [
+        "77",
+        "largest"
+      ],
+      "narration": "Across 77 tracked AI data disputes, that 1.5 billion dollar fund remains the largest copyright payout on record.",
+      "source": "AITraining.jobs Litigation Tracker (through Oct 29, 2026)"
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "How You Source Data Matters",
+      "visual_type": "comparison_split",
+      "left_title": "BOUGHT COPIES",
+      "left_body": "Lawfully acquired books passed fair use",
+      "right_title": "SHADOW FILES",
+      "right_body": "Pirated libraries triggered $1.5B risk",
+      "highlight_words": [
+        "receipt",
+        "registration"
+      ],
+      "narration": "For builders, pay for clean inputs. For creators, timely copyright registration was the ticket into this payout.",
+      "source": "Bartz v. Anthropic Class Definition, N.D. Cal."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Authors Guild: Bartz v. Anthropic Settlement Update (Oct 29, 2026)",
+      "url": "https://authorsguild.org/advocacy/artificial-intelligence/what-authors-need-to-know-about-the-anthropic-settlement/"
+    },
+    {
+      "label": "Authors Alliance: Bartz v. Anthropic Settlement FAQ",
+      "url": "https://www.authorsalliance.org/resources/generative-ai/bartz-v-anthropic-settlement-faq/"
+    },
+    {
+      "label": "Vircon Legal Breakdown of Jul 20, 2026 Final Approval (Oct 28, 2026)",
+      "url": "https://virconlegal.com/bartz-v-anthropic-1-5-billion-copyright-settlement-turkish-law/"
+    },
+    {
+      "label": "AITraining.jobs AI Data Lawsuits & Settlements Tracker (Oct 29, 2026)",
+      "url": "https://aitraining.jobs/research/ai-training-data-lawsuits"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import json
 
-from yt_studio.config import OUTPUT_DIR, PROJECT_ROOT
+from yt_studio.config import OUTPUT_DIR, PROJECT_ROOT, natural_sort_key
 from yt_studio.script_generator import generate_storyboard_json
 from yt_studio.trend_radar import build_trend_intelligence_report, export_trend_report_markdown
 from yt_studio.video_renderer import render_project
@@ -16,13 +16,14 @@ from yt_studio.visual_composer import render_thumbnail
 
 
 def _render_worker(args_tuple):
-    sb_str, out_str, tts_provider, voice = args_tuple
+    sb_str, out_str, tts_provider, voice, skip_existing = args_tuple
     sb = Path(sb_str)
     outputs = render_project(
         storyboard_path=sb,
         output_dir=Path(out_str),
         tts_provider=tts_provider,
         voice=voice,
+        skip_existing=skip_existing,
     )
     return sb.name, str(outputs["video"])
 
@@ -36,6 +37,7 @@ def cmd_render(args: argparse.Namespace) -> int:
         output_dir=out_dir,
         tts_provider=args.tts,
         voice=args.voice,
+        skip_existing=bool(getattr(args, "skip_existing", False)),
     )
     print("✅ Production complete!")
     for key, path in outputs.items():
@@ -46,12 +48,16 @@ def cmd_render(args: argparse.Namespace) -> int:
 def cmd_batch(args: argparse.Namespace) -> int:
     folder = Path(args.folder).resolve()
     out_dir = Path(args.out).resolve()
-    files = sorted(p for p in folder.glob("*.json") if p.name != "published_ledger.json")
+    files = sorted(
+        (p for p in folder.glob("*.json") if p.name != "published_ledger.json"),
+        key=natural_sort_key,
+    )
     if not files:
         print(f"No .json storyboards found in {folder}", file=sys.stderr)
         return 1
     workers = max(1, int(args.workers))
-    print(f"🚀 Batch rendering {len(files)} storyboards from {folder} (workers={workers})...")
+    skip_existing = bool(getattr(args, "skip_existing", False))
+    print(f"🚀 Batch rendering {len(files)} storyboards from {folder} (workers={workers}, skip_existing={skip_existing})...")
     if workers == 1:
         for sb in files:
             print(f"\n--- [{sb.name}] ---")
@@ -60,10 +66,11 @@ def cmd_batch(args: argparse.Namespace) -> int:
                 output_dir=out_dir,
                 tts_provider=args.tts,
                 voice=args.voice,
+                skip_existing=skip_existing,
             )
             print(f"   ✓ Video: {outputs['video']}")
     else:
-        tasks = [(str(sb), str(out_dir), args.tts, args.voice) for sb in files]
+        tasks = [(str(sb), str(out_dir), args.tts, args.voice, skip_existing) for sb in files]
         with ProcessPoolExecutor(max_workers=workers) as pool:
             futs = {pool.submit(_render_worker, t): t[0] for t in tasks}
             done_count = 0
@@ -140,6 +147,7 @@ def main() -> int:
     p_render.add_argument("--out", default=str(OUTPUT_DIR), help="Output directory (default: ./output)")
     p_render.add_argument("--tts", default="auto", choices=["auto", "edge", "openai", "elevenlabs", "offline"], help="TTS provider")
     p_render.add_argument("--voice", default="en_authoritative", help="Voice preset or Edge-TTS voice ID")
+    p_render.add_argument("--skip-existing", action="store_true", help="Skip re-encoding when cached MP4 matches storyboard signature")
     p_render.set_defaults(func=cmd_render)
 
     p_batch = sub.add_parser("batch", help="Batch render all storyboard .json files in a directory")
@@ -148,6 +156,7 @@ def main() -> int:
     p_batch.add_argument("--tts", default="auto", choices=["auto", "edge", "openai", "elevenlabs", "offline"])
     p_batch.add_argument("--voice", default="en_authoritative")
     p_batch.add_argument("--workers", type=int, default=4, help="Parallel worker processes (default: 4)")
+    p_batch.add_argument("--skip-existing", action="store_true", help="Skip re-encoding unchanged storyboards")
     p_batch.set_defaults(func=cmd_batch)
 
     p_script = sub.add_parser("script", help="Generate a storyboard JSON from a topic (or export a $0 LLM prompt)")

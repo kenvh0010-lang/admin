@@ -1,5 +1,6 @@
 """End-to-end FFmpeg Video Renderer + SEO Upload Pack Generator."""
 
+import hashlib
 import json
 import shutil
 import subprocess
@@ -7,10 +8,33 @@ import tempfile
 from pathlib import Path
 from typing import Any, Dict, List
 
-from .config import DEFAULT_THEME, FORMATS
+from .config import DEFAULT_THEME, FORMATS, PROJECT_ROOT, RENDERER_VERSION
 from .subtitle_maker import CaptionBeat, build_scene_beats, export_srt
 from .tts_engine import generate_ambient_bed, synthesize_voice
 from .visual_composer import render_scene_beat_frame, render_thumbnail
+
+
+def compute_storyboard_signature(
+    storyboard_path: Path,
+    tts_provider: str = "auto",
+    voice: str = "en_authoritative",
+) -> str:
+    """Compute deterministic SHA-256 over renderer version, storyboard JSON, and evidence PNGs."""
+    h = hashlib.sha256()
+    h.update(f"renderer={RENDERER_VERSION}|tts={tts_provider}|voice={voice}\n".encode("utf-8"))
+    raw = storyboard_path.read_bytes()
+    h.update(raw)
+    try:
+        data = json.loads(raw.decode("utf-8"))
+        for sc in data.get("scenes", []):
+            ev = sc.get("evidence_image")
+            if ev:
+                ev_file = Path(ev) if Path(ev).is_absolute() else (PROJECT_ROOT / ev)
+                if ev_file.is_file():
+                    h.update(ev_file.read_bytes())
+    except Exception:
+        pass
+    return h.hexdigest()
 
 
 def render_project(
@@ -18,6 +42,7 @@ def render_project(
     output_dir: Path,
     tts_provider: str = "auto",
     voice: str = "en_authoritative",
+    skip_existing: bool = False,
 ) -> Dict[str, Path]:
     """
     Compile a JSON storyboard into:
@@ -30,6 +55,28 @@ def render_project(
     project_slug = storyboard_path.stem
     proj_out = output_dir / project_slug
     proj_out.mkdir(parents=True, exist_ok=True)
+
+    sig = compute_storyboard_signature(storyboard_path, tts_provider=tts_provider, voice=data.get("voice", voice))
+    manifest_path = proj_out / ".render_manifest.json"
+    cached_mp4 = proj_out / f"{project_slug}.mp4"
+    cached_srt = proj_out / f"{project_slug}.srt"
+    cached_thumb = proj_out / f"{project_slug}_thumbnail.png"
+    cached_seo = proj_out / "youtube_upload_pack.md"
+
+    if skip_existing and manifest_path.is_file() and all(
+        p.is_file() and p.stat().st_size > 0 for p in (cached_mp4, cached_srt, cached_thumb, cached_seo)
+    ):
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            if manifest.get("signature") == sig:
+                return {
+                    "video": cached_mp4,
+                    "srt": cached_srt,
+                    "thumbnail": cached_thumb,
+                    "seo_pack": cached_seo,
+                }
+        except Exception:
+            pass
 
     fmt_key = data.get("format", "short").lower()
     fmt = FORMATS.get(fmt_key, FORMATS["short"])
@@ -176,6 +223,10 @@ def render_project(
             output_png=proj_out / f"{project_slug}_thumbnail.png",
         )
         output_seo = _write_seo_upload_pack(data, scenes, scene_durations, tts_used, proj_out / "youtube_upload_pack.md")
+        manifest_path.write_text(
+            json.dumps({"signature": sig, "renderer_version": RENDERER_VERSION}, indent=2) + "\n",
+            encoding="utf-8",
+        )
 
         return {
             "video": output_mp4,

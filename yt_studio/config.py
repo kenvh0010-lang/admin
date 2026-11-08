@@ -2,12 +2,21 @@
 
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Tuple
+import re
+from typing import Any, List, Tuple
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = PROJECT_ROOT / "content"
 ASSETS_DIR = PROJECT_ROOT / "assets"
 OUTPUT_DIR = PROJECT_ROOT / "output"
+
+RENDERER_VERSION = "2.3"
+
+
+def natural_sort_key(path_or_str: Any) -> List[Any]:
+    """Natural numeric sort key so short_2 < short_10 < short_100."""
+    name = path_or_str.name if isinstance(path_or_str, Path) else str(path_or_str)
+    return [int(tok) if tok.isdigit() else tok.lower() for tok in re.split(r"(\d+)", name)]
 
 
 @dataclass(frozen=True)

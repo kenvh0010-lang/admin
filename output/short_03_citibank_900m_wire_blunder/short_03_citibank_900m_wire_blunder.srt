@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:02,526
+Citibank meant to wire 7.8 million
+
+2
+00:00:02,526 --> 00:00:04,830
+dollars in interest for Revlon.
+
+3
+00:00:04,830 --> 00:00:05,424
+Instead,
+
+4
+00:00:05,424 --> 00:00:08,397
+it accidentally wired almost 900 million
+
+5
+00:00:08,397 --> 00:00:09,660
+of its own money.
+
+6
+00:00:09,660 --> 00:00:12,478
+Here is Exhibit Figure 1 from court.
+
+7
+00:00:12,478 --> 00:00:15,139
+Three reviewers checked PRINCIPAL,
+
+8
+00:00:15,139 --> 00:00:17,487
+but missed that FRONT and FUND
+
+9
+00:00:17,487 --> 00:00:19,444
+also had to be checked to
+
+10
+00:00:19,444 --> 00:00:20,540
+stop the wire.
+
+11
+00:00:20,540 --> 00:00:23,057
+Ten firms refused to return over
+
+12
+00:00:23,057 --> 00:00:24,630
+500 million dollars.
+
+13
+00:00:24,630 --> 00:00:26,754
+A trial judge let them keep
+
+14
+00:00:26,754 --> 00:00:28,956
+it in 2021 before an appeals
+
+15
+00:00:28,956 --> 00:00:31,630
+court reversed the ruling in 2022.
+
+16
+00:00:31,630 --> 00:00:33,201
+Wall Street never forgot.
+
+17
+00:00:33,201 --> 00:00:34,332
+By September 2026,
+
+18
+00:00:34,332 --> 00:00:37,160
+erroneous payment clawback clauses sit inside
+
+19
+00:00:37,160 --> 00:00:39,800
+88 percent of corporate credit agreements.
+
+20
+00:00:39,800 --> 00:00:42,062
+Three human reviewers still missed a
+
+21
+00:00:42,062 --> 00:00:43,381
+bad software default.
+
+22
+00:00:43,381 --> 00:00:45,957
+High-stakes systems need clearer screens,
+
+23
+00:00:45,957 --> 00:00:47,590
+not just extra signatures.
