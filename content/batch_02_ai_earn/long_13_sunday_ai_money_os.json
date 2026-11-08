@@ -24,13 +24,27 @@
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "Which part leaks faster for you right now: small recurring charges or fragmented afternoon hours? Grab the free 30-Minute Sunday Audit Checklist and 5-Hour Asset Builder OS here: https://kenvh0010-lang.github.io/admin/bio/"
   },
+  "sources": [
+    {
+      "label": "Federal Reserve Board: Economic Well-Being of U.S. Households (SHED) Report (May 2024)",
+      "url": "https://www.federalreserve.gov/publications/files/2023-report-economic-well-being-us-households-202405.pdf"
+    },
+    {
+      "label": "Paul Graham, 'Maker's Schedule, Manager's Schedule' (July 2009)",
+      "url": "https://paulgraham.com/makersschedule.html"
+    },
+    {
+      "label": "Mind & Margin 5-Hour Asset Builder OS & Recommended Reading (Drucker 1967; Sethi 2019)",
+      "url": "https://kenvh0010-lang.github.io/admin/bio/"
+    }
+  ],
   "scenes": [
     {
       "tag": "CHAPTER 1 • HOOK",
       "headline": "Why Money and Hours Leak Between Paychecks",
-      "visual_type": "stat_callout",
-      "stat_value": "37%",
-      "stat_label": "LACK $400 EMERGENCY CASH EQUIVALENT (FED SHED)",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/sunday_os/fed_shed_fig21_400.png",
+      "evidence_crop": [165, 505, 1110, 1235],
       "bullets": [
         "Federal Reserve survey: 37% would borrow, sell, or come up short",
         "Peter Drucker (1967): memory always lies about where time goes"
@@ -42,7 +56,7 @@
         "sunday"
       ],
       "narration": "According to the Federal Reserve's Survey of Household Economics and Decisionmaking, thirty-seven percent of American adults could not cover an unexpected four-hundred-dollar expense using cash or its equivalent alone. In 1967, management writer Peter Drucker noticed the exact same blind spot with time: when executives guessed how they spent their week, their memory was wrong every single time. Most people lose both money and focus in tiny unrecorded leaks. You can fix both in thirty minutes every Sunday afternoon.",
-      "source": "Federal Reserve SHED Report; Peter Drucker, The Effective Executive (1967)"
+      "source": "Federal Reserve SHED Report (Fig. 21); Peter Drucker, The Effective Executive (1967)"
     },
     {
       "tag": "CHAPTER 2 • PRIVACY TRAP",
@@ -83,11 +97,13 @@
     {
       "tag": "CHAPTER 4 • MINUTE 10-20",
       "headline": "Paul Graham's Maker vs Manager Calendar Audit",
-      "visual_type": "comparison_split",
-      "left_title": "FRAGMENTED AFTERNOON",
-      "left_body": "One 2:00 PM call splits 4 hours into two shallow halves",
-      "right_title": "PROTECTED MAKER BLOCKS",
-      "right_body": "Lock two 90-minute focus blocks before Monday starts",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/sunday_os/paulgraham_makers.png",
+      "evidence_crop": [80, 55, 570, 505],
+      "bullets": [
+        "One mid-afternoon meeting splits 4 open hours into shallow halves",
+        "Lock two uninterrupted 90-minute focus blocks before Monday starts"
+      ],
       "highlight_words": [
         "graham",
         "meeting",
@@ -100,9 +116,9 @@
     {
       "tag": "CHAPTER 5 • MINUTE 20-30",
       "headline": "Automate Payday Routing Before Willpower Fades",
-      "visual_type": "stat_callout",
-      "stat_value": "Day 1",
-      "stat_label": "ROUTE SAVINGS & ASSETS BEFORE SPENDING STARTS",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/sunday_os/fed_shed_table16_400.png",
+      "evidence_crop": [165, 175, 1110, 620],
       "bullets": [
         "Schedule automatic transfers for the day after payday",
         "Spend whatever remains guilt-free without daily tracking"
@@ -114,7 +130,7 @@
         "guilt-free"
       ],
       "narration": "Use the final ten minutes to verify your upcoming automatic transfers. Author Ramit Sethi popularized a straightforward rule in I Will Teach You To Be Rich: decide your savings and investment percentages once, schedule those transfers for the day right after your paycheck lands, and spend the remaining checking balance without guilt. When money moves automatically on day one, impulse moods on Friday night cannot touch your future margin.",
-      "source": "Ramit Sethi, I Will Teach You To Be Rich (2nd ed., 2019)"
+      "source": "Federal Reserve SHED Table 16; Ramit Sethi, I Will Teach You To Be Rich (2019)"
     },
     {
       "tag": "CHAPTER 6 • 52 SUNDAYS",

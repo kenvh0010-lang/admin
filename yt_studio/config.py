@@ -19,6 +19,24 @@ def natural_sort_key(path_or_str: Any) -> List[Any]:
     return [int(tok) if tok.isdigit() else tok.lower() for tok in re.split(r"(\d+)", name)]
 
 
+def discover_storyboards(root: Path = CONTENT_DIR) -> List[Path]:
+    """Recursively discover all storyboard .json files under root in natural sort order."""
+    if root.is_file():
+        return [root]
+    if not root.is_dir():
+        return []
+    return sorted(
+        (
+            p
+            for p in root.rglob("*.json")
+            if p.is_file()
+            and p.name != "published_ledger.json"
+            and not any(part.startswith(".") for part in p.relative_to(root).parts)
+        ),
+        key=natural_sort_key,
+    )
+
+
 @dataclass(frozen=True)
 class BrandTheme:
     channel_name: str = "Mind & Margin"

@@ -206,13 +206,16 @@ def _paste_evidence(
     theme: BrandTheme,
 ) -> None:
     """Dán ảnh chụp bài báo/tài liệu gốc vào thẻ: cắt theo evidence_crop [x1,y1,x2,y2] nếu có,
-    co theo chiều rộng thẻ, phần thừa phía dưới bị cắt (giữ tiêu đề ở trên)."""
+    co theo chiều rộng thẻ (9:16) hoặc vừa khung ngang (16:9)."""
     x1, y1, x2, y2 = box
     src = Image.open(path).convert("RGB")
     if crop and len(crop) == 4:
         src = src.crop(tuple(int(v) for v in crop))
     bw, bh = x2 - x1, y2 - y1
-    scale = bw / src.width
+    if bw > bh * 1.8:
+        scale = min(bw / src.width, bh / src.height)
+    else:
+        scale = bw / src.width
     shot = src.resize((max(1, int(src.width * scale)), max(1, int(src.height * scale))), Image.Resampling.LANCZOS)
     shot = shot.crop((0, 0, min(shot.width, bw), min(shot.height, bh)))
     ox, oy = x1 + (bw - shot.width) // 2, y1 + (bh - shot.height) // 2

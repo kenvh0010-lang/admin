@@ -1,0 +1,243 @@
+1
+00:00:00,000 --> 00:00:04,074
+According to the Federal Reserve's Survey of Household Economics
+
+2
+00:00:04,074 --> 00:00:05,283
+and Decisionmaking,
+
+3
+00:00:05,283 --> 00:00:08,975
+thirty-seven percent of American adults could not cover an
+
+4
+00:00:08,975 --> 00:00:13,686
+unexpected four-hundred-dollar expense using cash or its equivalent alone.
+
+5
+00:00:13,686 --> 00:00:14,195
+In 1967,
+
+6
+00:00:14,195 --> 00:00:18,014
+management writer Peter Drucker noticed the exact same blind
+
+7
+00:00:18,014 --> 00:00:18,969
+spot with time:
+
+8
+00:00:18,969 --> 00:00:22,152
+when executives guessed how they spent their week,
+
+9
+00:00:22,152 --> 00:00:24,761
+their memory was wrong every single time.
+
+10
+00:00:24,761 --> 00:00:27,626
+Most people lose both money and focus in tiny
+
+11
+00:00:27,626 --> 00:00:28,708
+unrecorded leaks.
+
+12
+00:00:28,708 --> 00:00:32,400
+You can fix both in thirty minutes every Sunday afternoon.
+
+13
+00:00:32,400 --> 00:00:35,377
+Traditional budgeting fails for a simple reason:
+
+14
+00:00:35,377 --> 00:00:38,974
+logging every four-dollar coffee by hand drains willpower,
+
+15
+00:00:38,974 --> 00:00:41,392
+so most people quit inside three weeks.
+
+16
+00:00:41,392 --> 00:00:44,741
+Yet the modern shortcut of handing live bank usernames
+
+17
+00:00:44,741 --> 00:00:48,896
+and passwords to unverified third-party apps creates an unnecessary
+
+18
+00:00:48,896 --> 00:00:50,012
+security exposure.
+
+19
+00:00:50,012 --> 00:00:53,299
+A safer alternative uses the plain CSV statement your
+
+20
+00:00:53,299 --> 00:00:55,221
+bank already lets you download,
+
+21
+00:00:55,221 --> 00:00:57,330
+with zero live account connection.
+
+22
+00:00:57,330 --> 00:01:00,508
+Spend the first ten minutes on cash clarity.
+
+23
+00:01:00,508 --> 00:01:02,386
+Open your recent card CSV,
+
+24
+00:01:02,386 --> 00:01:05,853
+delete the column with your name or card digits,
+
+25
+00:01:05,853 --> 00:01:07,370
+and paste only dates,
+
+26
+00:01:07,370 --> 00:01:08,454
+merchant names,
+
+27
+00:01:08,454 --> 00:01:11,487
+and dollar amounts into your AI workspace.
+
+28
+00:01:11,487 --> 00:01:14,810
+Ask it to group every line into three buckets:
+
+29
+00:01:14,810 --> 00:01:16,399
+essential fixed bills,
+
+30
+00:01:16,399 --> 00:01:18,638
+purchases you genuinely valued,
+
+31
+00:01:18,638 --> 00:01:22,105
+and forgotten recurring charges or price creeps.
+
+32
+00:01:22,105 --> 00:01:24,850
+Cancel one unused renewal on the spot.
+
+33
+00:01:24,850 --> 00:01:28,099
+Spend minutes ten through twenty on your calendar.
+
+34
+00:01:28,099 --> 00:01:30,374
+In his 2009 essay Maker's Schedule,
+
+35
+00:01:30,374 --> 00:01:31,609
+Manager's Schedule,
+
+36
+00:01:31,609 --> 00:01:35,963
+programmer Paul Graham explained how a single thirty-minute meeting
+
+37
+00:01:35,963 --> 00:01:38,952
+in the middle of an afternoon breaks four open
+
+38
+00:01:38,952 --> 00:01:42,592
+hours into two fragments too short for serious creation.
+
+39
+00:01:42,592 --> 00:01:44,801
+Look at the coming week right now,
+
+40
+00:01:44,801 --> 00:01:47,596
+cluster routine errands onto one afternoon,
+
+41
+00:01:47,596 --> 00:01:51,495
+and lock two uninterrupted ninety-minute blocks for skill or
+
+42
+00:01:51,495 --> 00:01:52,470
+asset building.
+
+43
+00:01:52,470 --> 00:01:55,670
+Use the final ten minutes to verify your upcoming
+
+44
+00:01:55,670 --> 00:01:56,976
+automatic transfers.
+
+45
+00:01:56,976 --> 00:02:00,763
+Author Ramit Sethi popularized a straightforward rule in I
+
+46
+00:02:00,763 --> 00:02:02,461
+Will Teach You To Be Rich:
+
+47
+00:02:02,461 --> 00:02:05,857
+decide your savings and investment percentages once,
+
+48
+00:02:05,857 --> 00:02:09,318
+schedule those transfers for the day right after your
+
+49
+00:02:09,318 --> 00:02:10,297
+paycheck lands,
+
+50
+00:02:10,297 --> 00:02:13,889
+and spend the remaining checking balance without guilt.
+
+51
+00:02:13,889 --> 00:02:16,631
+When money moves automatically on day one,
+
+52
+00:02:16,631 --> 00:02:20,680
+impulse moods on Friday night cannot touch your future margin.
+
+53
+00:02:20,680 --> 00:02:24,328
+Thirty minutes every Sunday adds up to just twenty-six
+
+54
+00:02:24,328 --> 00:02:26,219
+hours across an entire year.
+
+55
+00:02:26,219 --> 00:02:30,542
+Yet those fifty-two small checkpoints catch silent fee increases
+
+56
+00:02:30,542 --> 00:02:33,785
+early and guard over one hundred and fifty hours
+
+57
+00:02:33,785 --> 00:02:35,473
+of focused creative work.
+
+58
+00:02:35,473 --> 00:02:38,513
+Start this Sunday with one CSV export and two
+
+59
+00:02:38,513 --> 00:02:39,594
+calendar blocks,
+
+60
+00:02:39,594 --> 00:02:43,377
+and grab the free one-page Sunday Audit Checklist linked
+
+61
+00:02:43,377 --> 00:02:44,660
+in the description.

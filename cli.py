@@ -8,7 +8,7 @@ from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import json
 
-from yt_studio.config import OUTPUT_DIR, PROJECT_ROOT, natural_sort_key
+from yt_studio.config import OUTPUT_DIR, PROJECT_ROOT, discover_storyboards
 from yt_studio.script_generator import generate_storyboard_json
 from yt_studio.trend_radar import build_trend_intelligence_report, export_trend_report_markdown
 from yt_studio.video_renderer import render_project
@@ -48,10 +48,7 @@ def cmd_render(args: argparse.Namespace) -> int:
 def cmd_batch(args: argparse.Namespace) -> int:
     folder = Path(args.folder).resolve()
     out_dir = Path(args.out).resolve()
-    files = sorted(
-        (p for p in folder.glob("*.json") if p.name != "published_ledger.json"),
-        key=natural_sort_key,
-    )
+    files = discover_storyboards(folder)
     if not files:
         print(f"No .json storyboards found in {folder}", file=sys.stderr)
         return 1

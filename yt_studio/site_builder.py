@@ -7,7 +7,7 @@ import shutil
 from pathlib import Path
 from typing import Optional
 
-from .config import ASSETS_DIR, CONTENT_DIR, OUTPUT_DIR, PROJECT_ROOT, natural_sort_key
+from .config import ASSETS_DIR, CONTENT_DIR, OUTPUT_DIR, PROJECT_ROOT, discover_storyboards
 
 SITE_BASE_URL = "https://kenvh0010-lang.github.io/admin"
 
@@ -200,11 +200,9 @@ def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
 
     has_dossier = _build_dossier_page(docs)
 
-    storyboards = sorted(
-        (p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"),
-        key=natural_sort_key,
-    )
+    storyboards = discover_storyboards(CONTENT_DIR)
     cards_html = []
+    long_count = 0
     sitemap_urls = [
         f"{SITE_BASE_URL}/",
         f"{SITE_BASE_URL}/bio/",
@@ -221,10 +219,13 @@ def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
         title = html.escape(d["title"])
         desc = html.escape(d.get("description_hook", ""))
         is_long = d.get("format") == "long"
+        if is_long:
+            long_count += 1
         sources_list = d.get("sources", [])
         fmt_key = "long" if is_long else "short"
         if sources_list:
-            fmt_label = f"Evidence Investigation • {len(sources_list)} Primary Sources"
+            kind = "Long-Form Evidence Essay" if is_long else "Evidence Investigation"
+            fmt_label = f"{kind} • {len(sources_list)} Primary Sources"
         else:
             fmt_label = "Long-Form Visual Essay" if is_long else "Mental Model Breakdown"
         tags_str = ", ".join(html.escape(t) for t in d.get("tags", []))
@@ -325,7 +326,6 @@ def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
     </div>""")
 
     total_count = len(storyboards)
-    long_count = sum(1 for p in storyboards if p.stem.startswith("long_"))
     short_count = total_count - long_count
 
     index_html = f"""<!DOCTYPE html>

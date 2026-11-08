@@ -9,7 +9,14 @@ import unittest
 
 from PIL import Image, ImageDraw
 
-from yt_studio.config import CONTENT_DIR, FORMATS, PROJECT_ROOT, natural_sort_key, resolve_font_path
+from yt_studio.config import (
+    CONTENT_DIR,
+    FORMATS,
+    PROJECT_ROOT,
+    discover_storyboards,
+    natural_sort_key,
+    resolve_font_path,
+)
 from yt_studio.site_builder import DEFAULT_AMAZON_TAG, build_public_site
 from yt_studio.subtitle_maker import build_scene_beats, export_srt
 from yt_studio.tts_engine import estimate_speech_duration, generate_ambient_bed
@@ -27,12 +34,14 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertEqual(ordered, ["short_00.json", "short_2.json", "short_10.json", "short_100.json"])
 
     def test_all_evidence_storyboards_valid_cited_and_glyph_safe(self) -> None:
-        storyboards = sorted(
-            (p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"),
-            key=natural_sort_key,
+        storyboards = discover_storyboards(CONTENT_DIR)
+        # 08/11/2026: 5 root shorts + 2 merged claude-sync scripts in content/batch_02_ai_earn/ = 7 active videos.
+        self.assertGreaterEqual(len(storyboards), 7, "Expected at least 7 evidence-based storyboards in content/**")
+        self.assertEqual(
+            len({p.stem for p in storyboards}),
+            len(storyboards),
+            "Storyboard stems must be unique across content/ subdirectories",
         )
-        # 08/11/2026: kênh chuyển sang short tin tức & hồ sơ thực tế có ảnh dẫn chứng (assets/evidence/).
-        self.assertGreaterEqual(len(storyboards), 5, "Expected at least 5 evidence-based storyboards in content/")
         required_keys = {"title", "format", "scenes", "tags", "thumbnail", "affiliate_cta", "sources"}
         forbidden_glyphs = {"✕", "✓", "▸", "→", "—", "–"}
         for sb in storyboards:
@@ -110,6 +119,8 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertIn("$", scored["estimated_rpm_usd"])
 
     def test_digital_products_public_site_and_youtube_autopilot_ready(self) -> None:
+        import studio_server
+
         self.assertTrue((PROJECT_ROOT / "products" / "5_hour_asset_builder_os" / "index.html").is_file())
         self.assertTrue((PROJECT_ROOT / "products" / "bio_funnel_page" / "index.html").is_file())
         self.assertTrue((PROJECT_ROOT / "products" / "free_lead_magnet" / "Wealth_and_Leverage_Playbook.md").is_file())
@@ -121,10 +132,17 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         docs_dir = build_public_site(amazon_tag=DEFAULT_AMAZON_TAG)
         self.assertTrue((docs_dir / "dossier.html").is_file())
         self.assertTrue((docs_dir / "assets" / "evidence" / "citibank" / "sdny_flexcube_p13.png").is_file())
+        self.assertTrue((docs_dir / "articles" / "short_37_tap_to_pay_experiment.html").is_file())
+        self.assertTrue((docs_dir / "articles" / "long_13_sunday_ai_money_os.html").is_file())
         citi_article = (docs_dir / "articles" / "short_03_citibank_900m_wire_blunder.html").read_text(encoding="utf-8")
         self.assertIn("Verified Primary Sources", citi_article)
         self.assertIn("sdny_flexcube_p13.png", citi_article)
         self.assertIn("As an Amazon Associate I earn from qualifying purchases.", citi_article)
+
+        dash = studio_server.build_dashboard_payload()
+        self.assertGreaterEqual(dash["stats"]["total_scripts"], 7)
+        self.assertGreaterEqual(dash["stats"]["short_count"], 6)
+        self.assertGreaterEqual(dash["stats"]["long_count"], 1)
 
         next_sb = pick_next_unpublished_storyboard()
         self.assertIsNotNone(next_sb)
@@ -181,10 +199,7 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
     def test_no_visual_card_or_source_clipping_across_storyboards(self) -> None:
         img = Image.new("RGB", (1920, 1920))
         draw = ImageDraw.Draw(img)
-        for sb in sorted(
-            (p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"),
-            key=natural_sort_key,
-        ):
+        for sb in discover_storyboards(CONTENT_DIR):
             data = json.loads(sb.read_text(encoding="utf-8"))
             is_vert = data.get("format", "short") == "short"
             w = 1080 if is_vert else 1920
@@ -229,8 +244,7 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertEqual(DEFAULT_AMAZON_TAG, "mindandmarg06-20")
         sb_titles = {
             json.loads(p.read_text(encoding="utf-8"))["title"]
-            for p in CONTENT_DIR.glob("*.json")
-            if p.name != "published_ledger.json"
+            for p in discover_storyboards(CONTENT_DIR)
         }
         for csv_path in CONTENT_DIR.glob("calendar_*.csv"):
             for row in csv.DictReader(csv_path.read_text(encoding="utf-8").splitlines()):

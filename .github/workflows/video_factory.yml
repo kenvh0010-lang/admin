@@ -3,7 +3,7 @@ name: Mind & Margin — Background Video Factory & 24/7 YouTube Autopilot
 on:
   push:
     paths:
-      - 'content/*.json'
+      - 'content/**/*.json'
       - 'assets/evidence/**'
       - 'yt_studio/**'
       - '.github/workflows/video_factory.yml'
@@ -82,7 +82,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: output
-          key: video-vault-v23-${{ hashFiles('yt_studio/**', 'content/*.json', 'assets/evidence/**') }}
+          key: video-vault-v23-${{ hashFiles('yt_studio/**', 'content/**/*.json', 'assets/evidence/**') }}
           restore-keys: |
             video-vault-v23-
 
@@ -94,11 +94,9 @@ jobs:
           python3 - <<'PY'
           import subprocess
           from pathlib import Path
-          from yt_studio.config import natural_sort_key
+          from yt_studio.config import CONTENT_DIR, discover_storyboards, natural_sort_key
 
-          active_stems = {
-              p.stem for p in Path("content").glob("*.json") if p.name != "published_ledger.json"
-          }
+          active_stems = {p.stem for p in discover_storyboards(CONTENT_DIR)}
           rendered_dirs = sorted(
               (
                   d for d in Path("output").iterdir()
@@ -126,16 +124,16 @@ jobs:
               print(f"Packed {pack_zip} ({len(chunk)} videos)")
           PY
 
-      - name: Publish Neural-Voiced Evidence Shorts Packs to GitHub Releases
+      - name: Publish Neural-Voiced Evidence Video Packs to GitHub Releases
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: evidence-shorts-vault
-          name: "🎬 Evidence-Based Shorts Vault (1080x1920 Neural MP4s + Court & Regulator Exhibits)"
+          name: "🎬 Evidence-Based Video Vault (Neural 9:16 Shorts + 16:9 Long-Form Essays)"
           body: |
-            ### 100% Automated Cloud Render — Evidence-Based Documentary Shorts Vault!
-            Download `evidence_shorts_complete_vault.zip` (or individual 5-video packs) containing ready-to-upload **1080x1920 Shorts** rendered with:
-            - **Real Primary Exhibits (`assets/evidence/`)**: Actual SDNY court filings, SEC administrative orders, FTC refund notices, and copyright settlement tables framed cleanly inside every scene.
+            ### 100% Automated Cloud Render — Evidence-Based Documentary Video Vault!
+            Download `evidence_shorts_complete_vault.zip` (or individual 5-video packs) containing ready-to-upload **1080x1920 Shorts** and **1920x1080 Long-Form Essays** rendered with:
+            - **Real Primary Exhibits (`assets/evidence/`)**: Actual SDNY court filings, SEC administrative orders, FTC refund notices, Federal Reserve SHED data, and MIT Sloan study exhibits framed cleanly inside every video.
             - **Natural American English Neural Voiceover** (`en-US-ChristopherNeural`) + original ambient audio bed.
             - **Synced `.srt` Captions, High-CTR Thumbnails & Copy-Paste YouTube SEO Packs** with clickable primary source URLs and Amazon Associate disclosure (`mindandmarg06-20`).
           files: |

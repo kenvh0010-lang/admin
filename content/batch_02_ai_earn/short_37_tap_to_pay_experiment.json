@@ -23,13 +23,27 @@
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "Do you spend less when you carry physical cash, or do you use another rule before tapping your phone? Get the free 1-page Spending Audit and 5-Hour Asset Builder OS here: https://kenvh0010-lang.github.io/admin/bio/"
   },
+  "sources": [
+    {
+      "label": "Prelec & Simester, 'Always Leave Home Without It,' Marketing Letters 12(1), 5-12 (2001)",
+      "url": "https://link.springer.com/article/10.1023/A:1008196717017"
+    },
+    {
+      "label": "MIT OpenCourseWare 15.821: Drazen Prelec Celtics Sealed-Bid Auction Slides",
+      "url": "https://ocw.mit.edu/courses/15-821-listening-to-the-customer-fall-2002/5cc52570803b6e1bbea64585acdce779_redblack20copy.pdf"
+    },
+    {
+      "label": "Federal Reserve Bank of St. Louis: Page One Economics on Mental Accounting & Pain of Paying",
+      "url": "https://fraser.stlouisfed.org/files/docs/publications/pageone/frbsl-pageone-202604-how-mental-accounting-shapes.pdf"
+    }
+  ],
   "scenes": [
     {
       "tag": "HOOK",
       "headline": "The MIT Sold-Out NBA Ticket Experiment",
-      "visual_type": "stat_callout",
-      "stat_value": "2.1x",
-      "stat_label": "HIGHER BIDS FOR THE EXACT SAME SEATS",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/mit_card/mit_ocw_celtics_setup.png",
+      "evidence_crop": [160, 150, 1460, 930],
       "bullets": [
         "Real sealed-bid auction for sold-out Celtics tickets",
         "Only one rule changed between the two student groups"
@@ -46,11 +60,13 @@
     {
       "tag": "THE AUCTION",
       "headline": "Cash Within 24 Hours vs Credit Card",
-      "visual_type": "comparison_split",
-      "left_title": "CASH GROUP",
-      "left_body": "Average bid: $28.51 paid in physical bills",
-      "right_title": "CREDIT CARD GROUP",
-      "right_body": "Average bid: $60.64 for identical seats",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/mit_card/mit_ocw_celtics_results.png",
+      "evidence_crop": [160, 170, 1460, 1060],
+      "bullets": [
+        "Cash bidders averaged $28.51 paid within 24 hours",
+        "Credit card bidders averaged $60.64 for identical seats"
+      ],
       "highlight_words": [
         "cash",
         "28",
@@ -63,9 +79,9 @@
     {
       "tag": "THE MECHANISM",
       "headline": "Why Tap-to-Pay Numbs the Pain Center",
-      "visual_type": "stat_callout",
-      "stat_value": "$32",
-      "stat_label": "SILENT MARKUP FROM PAYMENT FRICTION LOSS",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/mit_card/stlouisfed_pain_of_paying.png",
+      "evidence_crop": [115, 55, 1160, 600],
       "bullets": [
         "Handing over bills triggers immediate loss awareness",
         "Tapping a phone delays the mental cost by 30 days"
@@ -77,7 +93,7 @@
         "bill"
       ],
       "narration": "Economists call this the pain of paying. Cash makes your brain feel the loss right now. A card delivers the reward today and hides the bill next month.",
-      "source": "Prelec & Loewenstein, Marketing Science (1998)"
+      "source": "Prelec & Loewenstein, Marketing Science (1998); St. Louis Fed"
     },
     {
       "tag": "THE RULE",
@@ -91,14 +107,15 @@
         "four",
         "tap"
       ],
-      "narration": "Before tapping for any non-essential item, divide its price by your net hourly pay. At twenty-two fifty an hour, a ninety-dollar impulse buy costs four desk hours."
+      "narration": "Before tapping for any non-essential item, divide its price by your net hourly pay. At twenty-two fifty an hour, a ninety-dollar impulse buy costs four desk hours.",
+      "source": "Mind & Margin Real-Wage Filter (rule of thumb, not a study)"
     },
     {
       "tag": "LOOP",
       "headline": "Put Friction Back Before You Tap",
-      "visual_type": "stat_callout",
-      "stat_value": "24h",
-      "stat_label": "WAIT RULE FOR ANY PURCHASE OVER 2 WORK HOURS",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/mit_card/springer_prelec_2001.png",
+      "evidence_crop": [0, 140, 810, 955],
       "bullets": [
         "Wait 24 hours whenever an item costs over 2 work hours",
         "Keep the cash gap working in your own account"
@@ -110,7 +127,7 @@
         "room"
       ],
       "narration": "Wait twenty-four hours on anything above two work hours, and you stop overpaying like the credit card half of that MIT room.",
-      "source": "Mind & Margin Behavioral Spending Filter"
+      "source": "Prelec & Simester (2001); Mind & Margin Spending Filter"
     }
   ]
 }

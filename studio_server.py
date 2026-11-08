@@ -32,7 +32,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from yt_studio.config import ASSETS_DIR, CONTENT_DIR, DEFAULT_THEME, OUTPUT_DIR
+from yt_studio.config import ASSETS_DIR, CONTENT_DIR, DEFAULT_THEME, OUTPUT_DIR, discover_storyboards
 from yt_studio.video_renderer import render_project
 
 WEB_STUDIO_DIR = PROJECT_ROOT / "web_studio"
@@ -595,14 +595,7 @@ def build_dashboard_payload() -> Dict[str, Any]:
     """Assemble the complete real-time JSON payload for `GET /api/dashboard`."""
     from yt_studio.trend_radar import build_trend_intelligence_report
 
-    storyboard_files = (
-        sorted(
-            (p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"),
-            key=_storyboard_sort_key,
-        )
-        if CONTENT_DIR.is_dir()
-        else []
-    )
+    storyboard_files = sorted(discover_storyboards(CONTENT_DIR), key=_storyboard_sort_key)
     storyboards = [build_storyboard_item(p) for p in storyboard_files]
     calendar_rows = _load_calendar_rows(storyboards)
     branding, thumbnails = _scan_branding_and_thumbnails(storyboards)
@@ -824,8 +817,11 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
 
         storyboard_path = safe_resolve_under(CONTENT_DIR, f"{slug}.json")
         if storyboard_path is None or not storyboard_path.is_file():
+            matches = [p for p in discover_storyboards(CONTENT_DIR) if p.stem == slug]
+            storyboard_path = matches[0] if matches else None
+        if storyboard_path is None or not storyboard_path.is_file():
             self._send_json(
-                {"ok": False, "error": f"Storyboard 'content/{slug}.json' not found."},
+                {"ok": False, "error": f"Storyboard '{slug}.json' not found under content/."},
                 status=HTTPStatus.NOT_FOUND,
             )
             return
