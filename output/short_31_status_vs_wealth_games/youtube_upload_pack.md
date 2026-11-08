@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Naval's Warning: Never Play Zero-Sum Status Games
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `51.9s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `49.1s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -12,7 +12,7 @@
 
 ## 2. Copy-Paste SEO Description
 ```text
-Angel investor Naval Ravikant explains the hidden war between ancient zero-sum status hierarchies and modern positive-sum asset creation - and why trading public clout for quiet ownership changes everything.
+Angel investor Naval Ravikant explains the hidden war between ancient zero-sum status hierarchies and modern positive-sum asset creation, and why trading public clout for quiet ownership changes everything.
 
 🔗 **Solo-Asset Leverage Kit + Naval Ravikant Reading Guide**: https://kenvh0010-lang.github.io/admin/bio/
 
@@ -26,7 +26,7 @@ Angel investor Naval Ravikant explains the hidden war between ancient zero-sum s
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

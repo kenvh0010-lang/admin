@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Why Organ Donation & Millionaire Habits Share One Secret (Defaults)
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `50.1s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `46.7s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -12,21 +12,21 @@
 
 ## 2. Copy-Paste SEO Description
 ```text
-In 2003, behavioral scientists Eric Johnson and Dan Goldstein uncovered why neighboring European nations had 12% vs 99% organ donor consent: a single default checkbox. Here is how to make saving and deep work automatic defaults.
+In 2003, behavioral scientists Eric Johnson and Dan Goldstein uncovered why neighboring European nations had 12% vs 99% organ donor consent: a single default checkbox. This video shows how to make saving and deep work automatic defaults.
 
 🔗 **20-Minute Automated Default Checklist + Behavioral Book List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
 00:00 - 12% vs 99%: The Power of One Checkbox
 00:08 - Johnson & Goldstein's 2003 'Science' Study
-00:20 - Willpower Collapses; Architecture Doesn't
+00:21 - Willpower Collapses; System Doesn't
 00:31 - Spend 20 Minutes Engineering Your Defaults
 00:41 - Design Once, Compound Automatically
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

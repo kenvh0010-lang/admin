@@ -23,89 +23,81 @@ because you cannot optimize a habit
 you never start.
 
 7
-00:00:10,880 --> 00:00:12,105
+00:00:10,880 --> 00:00:12,230
 In Atomic Habits,
 
 8
-00:00:12,105 --> 00:00:15,420
-James Clear shares how legendary choreographer
+00:00:12,230 --> 00:00:15,885
+James Clear shares choreographer Twyla Tharp's
 
 9
-00:00:15,420 --> 00:00:17,294
-Twyla Tharp hit the gym at
+00:00:15,885 --> 00:00:17,076
+morning ritual.
 
 10
-00:00:17,294 --> 00:00:19,167
-five-thirty every morning.
+00:00:17,076 --> 00:00:19,062
+She wakes at five-thirty,
 
 11
-00:00:19,167 --> 00:00:21,689
-Her ritual was not lifting weights;
+00:00:19,062 --> 00:00:21,286
+puts on her workout clothes,
 
 12
-00:00:21,689 --> 00:00:23,563
-it was putting on her coat
+00:00:21,286 --> 00:00:23,431
+and hails a cab to the gym.
 
 13
-00:00:23,563 --> 00:00:24,860
-and hailing a cab.
+00:00:23,431 --> 00:00:25,814
+The ritual is not the workout.
 
 14
-00:00:24,860 --> 00:00:26,794
-Once the taxi door closed,
+00:00:25,814 --> 00:00:27,800
+It is getting in the cab.
 
 15
-00:00:26,794 --> 00:00:28,207
-momentum took over.
+00:00:27,800 --> 00:00:29,734
+Once the taxi door closed,
 
 16
-00:00:28,207 --> 00:00:30,885
-Apply the same physics to your work:
+00:00:29,734 --> 00:00:31,147
+momentum took over.
 
 17
-00:00:30,885 --> 00:00:33,637
-replace write two thousand words with
+00:00:31,147 --> 00:00:33,825
+Apply the same physics to your work:
 
 18
-00:00:33,637 --> 00:00:35,869
-open the document and type one
+00:00:33,825 --> 00:00:36,577
+replace write two thousand words with
 
 19
-00:00:35,869 --> 00:00:36,910
-ugly sentence.
+00:00:36,577 --> 00:00:38,809
+open the document and type one
 
 20
-00:00:36,910 --> 00:00:39,679
-Starting demands ten times more activation
+00:00:38,809 --> 00:00:39,850
+ugly sentence.
 
 21
-00:00:39,679 --> 00:00:41,987
-energy than continuing once you are
+00:00:39,850 --> 00:00:42,087
+Starting is the hardest part.
 
 22
-00:00:41,987 --> 00:00:42,976
-already moving.
+00:00:42,087 --> 00:00:44,863
+Make showing up your standard first,
 
 23
-00:00:42,976 --> 00:00:45,614
-Standardize the act of showing up first,
+00:00:44,863 --> 00:00:47,640
+then add more once the habit sticks.
 
 24
-00:00:45,614 --> 00:00:47,790
-then expand the volume naturally.
-
-25
-00:00:47,790 --> 00:00:50,478
+00:00:47,640 --> 00:00:50,127
 Make the entry doorway so small
 
-26
-00:00:50,478 --> 00:00:52,907
+25
+00:00:50,127 --> 00:00:52,374
 you can walk through it even
 
-27
-00:00:52,907 --> 00:00:55,248
+26
+00:00:52,374 --> 00:00:54,540
 on your most exhausted day.
-
-28
-00:00:55,248 --> 00:00:57,590
-Follow this one rule and...

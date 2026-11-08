@@ -168,7 +168,7 @@ def _build_fallback_seo_description(data: Dict[str, Any], scenes: List[Dict[str,
         f"We break down wealth psychology, timeless book frameworks, and modern AI leverage "
         f"in visual essays designed for asymmetric thinkers.\n\n"
         f"⚠️ Disclaimer: Educational content & case studies only — not personalized financial "
-        f"or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you."
+        f"or legal advice. As an Amazon Associate I earn from qualifying purchases."
     ).strip()
 
 

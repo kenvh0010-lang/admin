@@ -1,383 +1,387 @@
 1
-00:00:00,000 --> 00:00:02,013
+00:00:00,000 --> 00:00:02,021
 From your very first paycheck,
 
 2
-00:00:02,013 --> 00:00:05,769
+00:00:02,021 --> 00:00:05,794
 modern culture hands you a remarkably narrow scoreboard:
 
 3
-00:00:05,769 --> 00:00:08,453
+00:00:05,794 --> 00:00:08,489
 one single number inside a bank account.
 
 4
-00:00:08,453 --> 00:00:13,015
+00:00:08,489 --> 00:00:13,070
 That single-metric obsession explains one of the strangest paradoxes
 
 5
-00:00:13,015 --> 00:00:16,034
-of modern success - how someone can hit seven
+00:00:13,070 --> 00:00:14,283
+of modern success,
 
 6
-00:00:16,034 --> 00:00:18,650
-figures on paper yet wake up exhausted,
+00:00:14,283 --> 00:00:17,382
+how someone can hit seven figures on paper yet
 
 7
-00:00:18,650 --> 00:00:19,254
-isolated,
+00:00:17,382 --> 00:00:18,594
+wake up exhausted,
 
 8
-00:00:19,254 --> 00:00:22,407
-and chained to a calendar they secretly resent.
+00:00:18,594 --> 00:00:19,201
+isolated,
 
 9
-00:00:22,407 --> 00:00:25,560
-As writer Sahil Bloom highlights in The 5 Types
+00:00:19,201 --> 00:00:21,761
+and chained to a calendar they resent.
 
 10
-00:00:25,560 --> 00:00:26,231
-of Wealth,
+00:00:21,761 --> 00:00:24,927
+As writer Sahil Bloom highlights in The 5 Types
 
 11
-00:00:26,231 --> 00:00:30,524
-a genuinely rich life actually runs on five distinct currencies:
+00:00:24,927 --> 00:00:25,601
+of Wealth,
 
 12
-00:00:30,524 --> 00:00:31,329
-Time Wealth,
+00:00:25,601 --> 00:00:29,912
+a genuinely rich life actually runs on five distinct currencies:
 
 13
-00:00:31,329 --> 00:00:32,269
-Social Wealth,
+00:00:29,912 --> 00:00:30,721
+Time Wealth,
 
 14
-00:00:32,269 --> 00:00:33,208
-Mental Wealth,
+00:00:30,721 --> 00:00:31,664
+Social Wealth,
 
 15
-00:00:33,208 --> 00:00:34,281
-Physical Wealth,
+00:00:31,664 --> 00:00:32,607
+Mental Wealth,
 
 16
-00:00:34,281 --> 00:00:35,690
-and Financial Wealth.
+00:00:32,607 --> 00:00:33,685
+Physical Wealth,
 
 17
-00:00:35,690 --> 00:00:38,426
-Start with Time Wealth and Social Wealth.
+00:00:33,685 --> 00:00:35,100
+and Financial Wealth.
 
 18
-00:00:38,426 --> 00:00:41,697
-Time Wealth is not merely retiring at sixty-five;
+00:00:35,100 --> 00:00:37,999
+Start with Time Wealth and Social Wealth.
 
 19
-00:00:41,697 --> 00:00:44,566
-it is daily autonomy over what you work on,
+00:00:37,999 --> 00:00:41,464
+Time Wealth is not merely retiring at sixty-five;
 
 20
-00:00:44,566 --> 00:00:45,501
-where you sit,
+00:00:41,464 --> 00:00:44,504
+it is daily autonomy over what you work on,
 
 21
-00:00:45,501 --> 00:00:47,436
-and whom you build alongside.
+00:00:44,504 --> 00:00:45,494
+where you sit,
 
 22
-00:00:47,436 --> 00:00:49,438
-Time data makes this sobering:
+00:00:45,494 --> 00:00:47,545
+and whom you build alongside.
 
 23
-00:00:49,438 --> 00:00:53,510
-roughly ninety percent of total in-person hours with children
+00:00:47,545 --> 00:00:49,878
+Writer Tim Urban ran the numbers:
 
 24
-00:00:53,510 --> 00:00:55,712
-happen before they turn eighteen,
+00:00:49,878 --> 00:00:52,353
+by the time a child turns eighteen,
 
 25
-00:00:55,712 --> 00:00:59,650
-and visits with aging parents are often measured in dozens,
+00:00:52,353 --> 00:00:55,535
+most of the in-person time a parent will ever
 
 26
-00:00:59,650 --> 00:01:00,451
-not decades.
+00:00:55,535 --> 00:00:58,151
+spend with them has already happened.
 
 27
-00:01:00,451 --> 00:01:01,118
+00:00:58,151 --> 00:00:58,858
 Meanwhile,
 
 28
-00:01:01,118 --> 00:01:05,723
-the eighty-five-year Harvard Study of Adult Development proved Social
+00:00:58,858 --> 00:01:01,615
+the Harvard Study of Adult Development,
 
 29
-00:01:05,723 --> 00:01:09,327
-Wealth is biological armor - relationship depth at age
+00:01:01,615 --> 00:01:02,959
+running since 1938,
 
 30
-00:01:09,327 --> 00:01:13,398
-fifty predicted health and satisfaction at eighty better than
+00:01:02,959 --> 00:01:07,272
+found that how satisfied people were with their relationships
 
 31
-00:01:13,398 --> 00:01:13,732
-fame,
+00:01:07,272 --> 00:01:11,019
+at fifty predicted their health at eighty better than
 
 32
-00:01:13,732 --> 00:01:13,999
-IQ,
+00:01:11,019 --> 00:01:13,070
+their cholesterol levels did.
 
 33
-00:01:13,999 --> 00:01:15,000
-or cholesterol.
-
-34
-00:01:15,000 --> 00:01:18,064
+00:01:13,070 --> 00:01:16,129
 Next come Mental Wealth and Physical Wealth.
 
-35
-00:01:18,064 --> 00:01:20,361
+34
+00:01:16,129 --> 00:01:18,423
 Mental Wealth combines curiosity,
 
-36
-00:01:20,361 --> 00:01:20,918
+35
+00:01:18,423 --> 00:01:18,979
 purpose,
 
+36
+00:01:18,979 --> 00:01:20,091
+and inner peace,
+
 37
-00:01:20,918 --> 00:01:23,843
-and inner peace - the rare capacity to sit
+00:01:20,091 --> 00:01:22,942
+the rare capacity to sit in a silent room
 
 38
-00:01:23,843 --> 00:01:27,463
-in a silent room for thirty minutes without drowning
+00:01:22,942 --> 00:01:26,835
+for thirty minutes without drowning in status anxiety or
 
 39
-00:01:27,463 --> 00:01:31,014
-in status anxiety or reaching for a glowing screen.
+00:01:26,835 --> 00:01:28,920
+reaching for a glowing screen.
 
 40
-00:01:31,014 --> 00:01:33,382
+00:01:28,920 --> 00:01:31,284
 Physical Wealth is daily vitality,
 
 41
-00:01:33,382 --> 00:01:34,635
+00:01:31,284 --> 00:01:32,535
 restorative sleep,
 
 42
-00:01:34,635 --> 00:01:35,262
+00:01:32,535 --> 00:01:33,161
 strength,
 
 43
-00:01:35,262 --> 00:01:37,211
+00:01:33,161 --> 00:01:35,108
 and mobility across decades.
 
 44
-00:01:37,211 --> 00:01:40,693
+00:01:35,108 --> 00:01:38,584
 Think of Physical and Mental Wealth as the leading
 
 45
-00:01:40,693 --> 00:01:44,383
+00:01:38,584 --> 00:01:42,268
 digit 'one' standing in front of every financial zero
 
 46
-00:01:44,383 --> 00:01:45,427
+00:01:42,268 --> 00:01:43,311
 you accumulate.
 
 47
-00:01:45,427 --> 00:01:48,491
+00:01:43,311 --> 00:01:46,370
 Stack six zeros behind a healthy one and you
 
 48
-00:01:48,491 --> 00:01:49,535
+00:01:46,370 --> 00:01:47,413
 hold a million;
 
 49
-00:01:49,535 --> 00:01:52,808
+00:01:47,413 --> 00:01:50,680
 erase that leading one and every zero behind it
 
 50
-00:01:52,808 --> 00:01:54,270
+00:01:50,680 --> 00:01:52,140
 collapses to nothing.
 
 51
-00:01:54,270 --> 00:01:55,461
+00:01:52,140 --> 00:01:53,331
 Here is where smart,
 
 52
-00:01:55,461 --> 00:01:57,427
+00:01:53,331 --> 00:01:55,297
 hard-working people get ambushed.
 
 53
-00:01:57,427 --> 00:01:59,512
+00:01:55,297 --> 00:01:57,382
 Between ages twenty-five and fifty,
 
 54
-00:01:59,512 --> 00:02:03,385
+00:01:57,382 --> 00:02:01,255
 millions play what psychologists call the Deferred Life Strategy:
 
 55
-00:02:03,385 --> 00:02:05,172
+00:02:01,255 --> 00:02:03,042
 aggressively liquidating Time,
 
 56
-00:02:05,172 --> 00:02:05,589
+00:02:03,042 --> 00:02:03,459
 Social,
 
 57
-00:02:05,589 --> 00:02:06,006
+00:02:03,459 --> 00:02:03,876
 Mental,
 
 58
-00:02:06,006 --> 00:02:08,985
+00:02:03,876 --> 00:02:06,855
 and Physical wealth to stockpile Financial wealth,
 
 59
-00:02:08,985 --> 00:02:12,559
+00:02:06,855 --> 00:02:10,429
 assuming they can simply repurchase the first four at sixty.
 
 60
-00:02:12,559 --> 00:02:13,393
+00:02:10,429 --> 00:02:11,263
 Unfortunately,
 
 61
-00:02:13,393 --> 00:02:16,133
+00:02:11,263 --> 00:02:14,003
 compound interest works in reverse on neglect.
 
 62
-00:02:16,133 --> 00:02:18,457
+00:02:14,003 --> 00:02:16,327
 Neglected friendships quietly dissolve,
 
 63
-00:02:18,457 --> 00:02:20,720
+00:02:16,327 --> 00:02:18,590
 missed childhood summers never replay,
 
 64
-00:02:20,720 --> 00:02:23,937
+00:02:18,590 --> 00:02:21,807
 and twenty years of chronic stress and five-hour sleep
 
 65
-00:02:23,937 --> 00:02:27,750
+00:02:21,807 --> 00:02:25,620
 nights carry biological interest rates money can rarely reverse.
 
 66
-00:02:27,750 --> 00:02:30,925
-Financial Wealth only shines when it serves as a
+00:02:25,620 --> 00:02:29,026
+Financial Wealth works best as a freedom engine,
 
 67
-00:02:30,925 --> 00:02:34,695
-freedom engine rather than an infinite status tournament.
+00:02:29,026 --> 00:02:31,154
+not an endless status contest.
 
 68
-00:02:34,695 --> 00:02:38,796
-Author Kurt Vonnegut once teased fellow novelist Joseph Heller
+00:02:31,154 --> 00:02:33,850
+Kurt Vonnegut once told Joseph Heller,
 
 69
-00:02:38,796 --> 00:02:41,508
-at a billionaire hedge-fund host's party,
+00:02:33,850 --> 00:02:36,333
+at a party thrown by a billionaire,
 
 70
-00:02:41,508 --> 00:02:44,484
-pointing out that their host earned more in a
+00:02:36,333 --> 00:02:39,171
+that their host had made more money in a
 
 71
-00:02:44,484 --> 00:02:48,254
-single day than Heller's classic novel Catch-22 earned in
+00:02:39,171 --> 00:02:42,648
+single day than Catch-22 had earned in its entire
 
 72
-00:02:48,254 --> 00:02:48,783
+00:02:42,648 --> 00:02:43,216
 history.
 
 73
-00:02:48,783 --> 00:02:52,024
-Heller smiled and replied that he owned one thing
+00:02:43,216 --> 00:02:47,331
+Heller replied that he had something the billionaire could
 
 74
-00:02:52,024 --> 00:02:53,876
-the billionaire never would:
+00:02:47,331 --> 00:02:48,111
+never have:
 
 75
-00:02:53,876 --> 00:02:56,059
-the knowledge that he had enough.
+00:02:48,111 --> 00:02:48,608
+enough.
 
 76
-00:02:56,059 --> 00:02:58,638
+00:02:48,608 --> 00:02:51,375
 Without a written definition of enough,
 
 77
-00:02:58,638 --> 00:03:02,210
-every income jump simply pushes the goalpost ten yards
+00:02:51,375 --> 00:02:55,490
+every income jump simply pushes the goalpost further away.
 
 78
-00:03:02,210 --> 00:03:03,070
-further away.
-
-79
-00:03:03,070 --> 00:03:06,513
+00:02:55,490 --> 00:02:58,919
 Put this framework into practice this Sunday with a
 
-80
-00:03:06,513 --> 00:03:08,674
+79
+00:02:58,919 --> 00:03:01,071
 ten-minute Life Portfolio Audit.
 
-81
-00:03:08,674 --> 00:03:09,079
+80
+00:03:01,071 --> 00:03:01,475
 First,
 
+81
+00:03:01,475 --> 00:03:03,021
+score all five buckets,
+
 82
-00:03:09,079 --> 00:03:11,104
-score all five buckets - Time,
+00:03:03,021 --> 00:03:03,357
+Time,
 
 83
-00:03:11,104 --> 00:03:11,577
+00:03:03,357 --> 00:03:03,828
 Social,
 
 84
-00:03:11,577 --> 00:03:12,049
+00:03:03,828 --> 00:03:04,299
 Mental,
 
 85
-00:03:12,049 --> 00:03:12,657
+00:03:04,299 --> 00:03:04,904
 Physical,
 
 86
-00:03:12,657 --> 00:03:15,425
-and Financial - honestly from one to ten.
+00:03:04,904 --> 00:03:05,845
+and Financial,
 
 87
-00:03:15,425 --> 00:03:15,898
-Second,
+00:03:05,845 --> 00:03:07,527
+honestly from one to ten.
 
 88
-00:03:15,898 --> 00:03:18,801
-write one strict Anti-Goal for each pillar:
+00:03:07,527 --> 00:03:07,997
+Second,
 
 89
-00:03:18,801 --> 00:03:23,257
-non-negotiable boundaries you refuse to cross during busy seasons,
+00:03:07,997 --> 00:03:10,889
+write one strict Anti-Goal for each pillar:
 
 90
-00:03:23,257 --> 00:03:26,430
-such as never missing three family dinners in a
+00:03:10,889 --> 00:03:15,327
+non-negotiable boundaries you refuse to cross during busy seasons,
 
 91
-00:03:26,430 --> 00:03:29,940
-row or never trading a morning walk for low-priority
+00:03:15,327 --> 00:03:18,487
+such as never missing three family dinners in a
 
 92
-00:03:29,940 --> 00:03:30,345
-email.
+00:03:18,487 --> 00:03:21,984
+row or never trading a morning walk for low-priority
 
 93
-00:03:30,345 --> 00:03:30,886
-Finally,
+00:03:21,984 --> 00:03:22,387
+email.
 
 94
-00:03:30,886 --> 00:03:35,139
-put one concrete thirty-minute deposit on Monday's calendar for
+00:03:22,387 --> 00:03:22,925
+Finally,
 
 95
-00:03:35,139 --> 00:03:37,232
-whichever pillar scored lowest,
+00:03:22,925 --> 00:03:27,162
+put one concrete thirty-minute deposit on Monday's calendar for
 
 96
-00:03:37,232 --> 00:03:40,810
+00:03:27,162 --> 00:03:29,246
+whichever pillar scored lowest,
+
+97
+00:03:29,246 --> 00:03:32,810
 so your life rebalances long before crisis forces it.

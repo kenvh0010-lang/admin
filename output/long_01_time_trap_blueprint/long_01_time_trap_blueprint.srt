@@ -1,207 +1,219 @@
 1
-00:00:00,000 --> 00:00:01,961
-Over the last five decades,
+00:00:00,000 --> 00:00:01,748
+Between 1979 and 2019,
 
 2
-00:00:01,961 --> 00:00:05,882
-worker productivity climbed more than three and a half
+00:00:01,748 --> 00:00:05,722
+productivity in the United States grew three and a
 
 3
-00:00:05,882 --> 00:00:07,988
-times faster than hourly pay.
+00:00:05,722 --> 00:00:08,424
+half times as much as the pay of a
 
 4
-00:00:07,988 --> 00:00:10,675
-That gap didn't vanish into thin air.
+00:00:08,424 --> 00:00:09,616
+typical worker.
 
 5
-00:00:10,675 --> 00:00:14,451
-It flowed straight to the people who stopped selling
+00:00:09,616 --> 00:00:12,557
+That gap didn't vanish into thin air.
 
 6
-00:00:14,451 --> 00:00:16,847
-hours and started owning systems.
+00:00:12,557 --> 00:00:15,656
+Much of it flowed to the people who own
 
 7
-00:00:16,847 --> 00:00:18,590
-In the next few minutes,
+00:00:15,656 --> 00:00:18,199
+assets instead of selling hours.
 
 8
-00:00:18,590 --> 00:00:21,640
-we will break down why trading time hits a
+00:00:18,199 --> 00:00:20,107
+In the next few minutes,
 
 9
-00:00:21,640 --> 00:00:26,143
-mathematical wall—and how you can build your first compounding
+00:00:20,107 --> 00:00:23,444
+we will break down why trading time hits a
 
 10
-00:00:26,143 --> 00:00:29,120
-digital asset in under five hours a week.
+00:00:23,444 --> 00:00:24,875
+mathematical wall,
 
 11
-00:00:29,120 --> 00:00:32,688
-Think of every income source on earth as falling
+00:00:24,875 --> 00:00:29,007
+and how you can build your first compounding digital
 
 12
-00:00:32,688 --> 00:00:34,472
-into one of two buckets.
+00:00:29,007 --> 00:00:31,630
+asset in under five hours a week.
 
 13
-00:00:34,472 --> 00:00:35,661
-In a linear job,
+00:00:31,630 --> 00:00:35,229
+Think of every income source on earth as falling
 
 14
-00:00:35,661 --> 00:00:38,634
-your input is handcuffed to your output.
+00:00:35,229 --> 00:00:37,029
+into one of two buckets.
 
 15
-00:00:38,634 --> 00:00:41,979
-If a dentist or consultant takes a month off,
+00:00:37,029 --> 00:00:38,229
+In a linear job,
 
 16
-00:00:41,979 --> 00:00:43,614
-revenue drops to zero.
+00:00:38,229 --> 00:00:41,228
+your input is handcuffed to your output.
 
 17
-00:00:43,614 --> 00:00:45,398
-In an asymmetric system,
+00:00:41,228 --> 00:00:44,603
+If a dentist or consultant takes a month off,
 
 18
-00:00:45,398 --> 00:00:47,925
-input and output are disconnected.
+00:00:44,603 --> 00:00:46,253
+revenue drops to zero.
 
 19
-00:00:47,925 --> 00:00:50,303
-An author writes a chapter once;
+00:00:46,253 --> 00:00:48,052
+In an asymmetric system,
 
 20
-00:00:50,303 --> 00:00:53,425
-a creator uploads an evergreen video once;
+00:00:48,052 --> 00:00:50,602
+input and output are disconnected.
 
 21
-00:00:53,425 --> 00:00:57,587
-a developer writes a script once—and ten thousand people
+00:00:50,602 --> 00:00:53,002
+An author writes a chapter once;
 
 22
-00:00:57,587 --> 00:00:59,520
-can use it simultaneously.
+00:00:53,002 --> 00:00:56,376
+a creator uploads an long-lasting video once;
 
 23
-00:00:59,520 --> 00:01:02,206
-So why doesn't everyone build assets?
+00:00:56,376 --> 00:00:58,851
+a developer writes a script once,
 
 24
-00:01:02,206 --> 00:01:05,109
-Because our brains crave linear rewards.
+00:00:58,851 --> 00:01:02,600
+and ten thousand people can use it simultaneously.
 
 25
-00:01:05,109 --> 00:01:07,650
-When you work eight hours at a job,
+00:01:02,600 --> 00:01:05,269
+So why doesn't everyone build assets?
 
 26
-00:01:07,650 --> 00:01:09,682
-you see exact pay on Friday.
+00:01:05,269 --> 00:01:08,154
+Because our brains crave linear rewards.
 
 27
-00:01:09,682 --> 00:01:13,312
-When you build a media channel or digital product,
+00:01:08,154 --> 00:01:10,679
+When you work eight hours at a job,
 
 28
-00:01:13,312 --> 00:01:15,780
-month one might pay three dollars.
+00:01:10,679 --> 00:01:12,699
+you see exact pay on Friday.
 
 29
-00:01:15,780 --> 00:01:20,353
-Author James Clear calls this gap the Valley of Disappointment.
+00:01:12,699 --> 00:01:16,305
+When you build a media channel or digital product,
 
 30
-00:01:20,353 --> 00:01:23,910
-Ninety percent of people quit in week six because
+00:01:16,305 --> 00:01:18,758
+month one might pay three dollars.
 
 31
-00:01:23,910 --> 00:01:28,120
-they judge an exponential curve using linear expectations.
+00:01:18,758 --> 00:01:23,302
+Author James Clear calls this gap the Valley of Disappointment.
 
 32
-00:01:28,120 --> 00:01:31,723
-Smart creators don't wait months for platform ad revenue
+00:01:23,302 --> 00:01:27,342
+Many people quit early because they judge an exponential
 
 33
-00:01:31,723 --> 00:01:32,946
-to pay their bills.
+00:01:27,342 --> 00:01:29,650
+curve using linear expectations.
 
 34
-00:01:32,946 --> 00:01:35,841
-They stack three revenue layers from day one.
+00:01:29,650 --> 00:01:33,326
+Smart creators don't wait months for platform ad revenue
 
 35
-00:01:35,841 --> 00:01:40,409
-Layer one is high-trust affiliate curation—recommending the exact books
+00:01:33,326 --> 00:01:34,573
+to pay their bills.
 
 36
-00:01:40,409 --> 00:01:43,176
-and software tools discussed in each video.
+00:01:34,573 --> 00:01:37,526
+They stack three revenue layers from day one.
 
 37
-00:01:43,176 --> 00:01:46,843
-Layer two is a simple nineteen-dollar digital template or
+00:01:37,526 --> 00:01:40,349
+Layer one is high-trust affiliate curation,
 
 38
-00:01:46,843 --> 00:01:49,932
-checklist that saves viewers ten hours of setup.
+00:01:40,349 --> 00:01:44,287
+recommending the exact books and software tools discussed in
 
 39
-00:01:49,932 --> 00:01:53,535
-Layer three is high-RPM ad revenue and sponsorships that
+00:01:44,287 --> 00:01:45,009
+each video.
 
 40
-00:01:53,535 --> 00:01:56,430
-compound automatically as your library grows.
+00:01:45,009 --> 00:01:48,750
+Layer two is a simple nineteen-dollar digital template or
 
 41
-00:01:56,430 --> 00:01:58,994
-You don't need forty hours a week or a
+00:01:48,750 --> 00:01:51,901
+checklist that saves viewers ten hours of setup.
 
 42
-00:01:58,994 --> 00:02:01,086
-camera crew to run this system.
+00:01:51,901 --> 00:01:55,576
+Layer three is high-RPM ad revenue and sponsorships that
 
 43
-00:02:01,086 --> 00:02:03,717
-Keep your primary income for stability,
+00:01:55,576 --> 00:01:58,530
+compound automatically as your library grows.
 
 44
-00:02:03,717 --> 00:02:06,281
-and protect five focused hours a week:
+00:01:58,530 --> 00:02:01,094
+You don't need forty hours a week or a
 
 45
-00:02:06,281 --> 00:02:10,060
-ninety minutes on Saturday morning to research and write
+00:02:01,094 --> 00:02:03,186
+camera crew to run this system.
 
 46
-00:02:10,060 --> 00:02:10,937
-one original,
+00:02:03,186 --> 00:02:05,817
+Keep your primary income for stability,
 
 47
-00:02:10,937 --> 00:02:12,151
-high-value script;
+00:02:05,817 --> 00:02:08,381
+and protect five focused hours a week:
 
 48
-00:02:12,151 --> 00:02:16,065
-two hours using AI voiceover and automated visual assembly
+00:02:08,381 --> 00:02:12,160
+ninety minutes on Saturday morning to research and write
 
 49
-00:02:16,065 --> 00:02:19,641
-to produce one flagship video plus three short clips;
+00:02:12,160 --> 00:02:13,037
+one original,
 
 50
-00:02:19,641 --> 00:02:24,027
-and ninety minutes crafting high-curiosity titles and thumbnails.
+00:02:13,037 --> 00:02:14,251
+high-value script;
 
 51
-00:02:24,027 --> 00:02:27,468
-One brick a week equals fifty-two digital assets in
+00:02:14,251 --> 00:02:18,165
+two hours using AI voiceover and automated visual assembly
 
 52
-00:02:27,468 --> 00:02:27,940
+00:02:18,165 --> 00:02:21,741
+to produce one flagship video plus three short clips;
+
+53
+00:02:21,741 --> 00:02:26,127
+and ninety minutes crafting high-curiosity titles and thumbnails.
+
+54
+00:02:26,127 --> 00:02:29,568
+One brick a week equals fifty-two digital assets in
+
+55
+00:02:29,568 --> 00:02:30,040
 a year.

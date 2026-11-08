@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Why Rigid 5-Year Plans Backfire (Run 'Tiny Experiments' Instead)
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `59.1s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `55.1s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -19,14 +19,14 @@ Rigid 5-year career ladders break in fast-moving markets. Neuroscientist Anne-La
 ⏱️ Timestamps:
 00:00 - Why Linear 5-Year Plans Create Paralysis
 00:08 - Anne-Laure Le Cunff's Neuroscience Lens
-00:21 - High-Stakes Goals vs Clean Lab Data
-00:35 - Write One 14-Day Curiosity Pact
-00:48 - 26 Real Experiments Beat 1 Spreadsheet
+00:22 - High-Stakes Goals vs Clean Lab Data
+00:36 - Write One 14-Day Curiosity Pact
+00:49 - 26 Real Experiments Beat 1 Spreadsheet
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

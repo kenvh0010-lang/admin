@@ -15,93 +15,89 @@ and ruin your future by assuming
 your strategy was wrong.
 
 5
-00:00:09,200 --> 00:00:10,572
+00:00:09,200 --> 00:00:10,561
 In Thinking in Bets,
 
 6
-00:00:10,572 --> 00:00:13,041
-World Series of Poker champion Annie
+00:00:10,561 --> 00:00:12,739
+poker player and World Series of
 
 7
-00:00:13,041 --> 00:00:15,236
-Duke warns against a mental trap
+00:00:12,739 --> 00:00:15,325
+Poker bracelet winner Annie Duke warns
 
 8
-00:00:15,236 --> 00:00:16,403
-called Resulting:
+00:00:15,325 --> 00:00:17,979
+against a mental trap called resulting:
 
 9
-00:00:16,403 --> 00:00:18,666
+00:00:17,979 --> 00:00:20,224
 judging the quality of a decision
 
 10
-00:00:18,666 --> 00:00:20,930
+00:00:20,224 --> 00:00:22,470
 purely by its short-term outcome.
 
 11
-00:00:20,930 --> 00:00:23,465
+00:00:22,470 --> 00:00:25,005
 Running a red light blindfolded and
 
 12
-00:00:23,465 --> 00:00:25,855
+00:00:25,005 --> 00:00:27,395
 arriving home unharmed is still a
 
 13
-00:00:25,855 --> 00:00:27,158
+00:00:27,395 --> 00:00:28,698
 terrible decision.
 
 14
-00:00:27,158 --> 00:00:27,810
+00:00:28,698 --> 00:00:29,350
 Likewise,
 
 15
-00:00:27,810 --> 00:00:30,345
+00:00:29,350 --> 00:00:31,885
 shipping a smart project that flops
 
 16
-00:00:30,345 --> 00:00:32,300
+00:00:31,885 --> 00:00:33,840
 once can still be a winning
 
 17
-00:00:32,300 --> 00:00:32,590
+00:00:33,840 --> 00:00:34,130
 bet.
 
 18
-00:00:32,590 --> 00:00:33,546
+00:00:34,130 --> 00:00:35,086
 Life is poker,
 
 19
-00:00:33,546 --> 00:00:34,229
+00:00:35,086 --> 00:00:35,769
 not chess,
 
 20
-00:00:34,229 --> 00:00:36,891
+00:00:35,769 --> 00:00:38,431
 because luck and hidden information sit
 
 21
-00:00:36,891 --> 00:00:37,915
+00:00:38,431 --> 00:00:39,455
 at every table.
 
 22
-00:00:37,915 --> 00:00:40,646
+00:00:39,455 --> 00:00:42,186
 Write down your reasoning beforehand and
 
 23
-00:00:40,646 --> 00:00:43,650
+00:00:42,186 --> 00:00:45,190
 test positive-odds habits across fifty reps.
 
 24
-00:00:43,650 --> 00:00:46,669
+00:00:45,190 --> 00:00:47,886
 Separate your daily process from single
 
 25
-00:00:46,669 --> 00:00:47,830
+00:00:47,886 --> 00:00:48,923
 noisy outcomes,
 
 26
-00:00:47,830 --> 00:00:49,843
-because in the real world,
-
-27
-00:00:49,843 --> 00:00:52,320
-even when the math favors you...
+00:00:48,923 --> 00:00:50,720
+because in the real world.

@@ -1,103 +1,91 @@
 1
-00:00:00,000 --> 00:00:02,970
-Workplace studies show knowledge workers burn
+00:00:00,000 --> 00:00:02,177
+A 2012 McKinsey report estimated that
 
 2
-00:00:02,970 --> 00:00:05,214
-nearly forty percent of their week
+00:00:02,177 --> 00:00:05,118
+knowledge workers spend about twenty-eight percent
 
 3
-00:00:05,214 --> 00:00:06,534
-on repetitive admin,
+00:00:05,118 --> 00:00:07,119
+of their workweek just reading and
 
 4
-00:00:06,534 --> 00:00:08,712
-copying text from one browser tab
+00:00:07,119 --> 00:00:08,060
+answering email.
 
 5
-00:00:08,712 --> 00:00:10,560
-and pasting it into another.
+00:00:08,060 --> 00:00:10,769
+Programmers have a rule of three:
 
 6
-00:00:10,560 --> 00:00:13,659
-Senior software engineers protect their focus
+00:00:10,769 --> 00:00:13,725
+the third time you repeat something,
 
 7
-00:00:13,659 --> 00:00:15,587
-using the Three-Strike Rule:
+00:00:13,725 --> 00:00:14,710
+automate it.
 
 8
-00:00:15,587 --> 00:00:17,585
-if you perform the exact same
+00:00:14,710 --> 00:00:16,516
+Apply it to your week.
 
 9
-00:00:17,585 --> 00:00:19,719
-digital task three times in one
+00:00:16,516 --> 00:00:18,650
+If you do the same digital
 
 10
-00:00:19,719 --> 00:00:20,064
-week,
+00:00:18,650 --> 00:00:20,046
+task three times,
 
 11
-00:00:20,064 --> 00:00:21,510
+00:00:20,046 --> 00:00:21,770
 stop and automate it.
 
 12
-00:00:21,510 --> 00:00:23,211
+00:00:21,770 --> 00:00:23,471
 Start with three culprits:
 
 13
-00:00:23,211 --> 00:00:25,042
+00:00:23,471 --> 00:00:25,302
 typing meeting action items,
 
 14
-00:00:25,042 --> 00:00:27,266
+00:00:25,302 --> 00:00:27,526
 renaming email receipts for taxes,
 
 15
-00:00:27,266 --> 00:00:30,276
+00:00:27,526 --> 00:00:30,536
 and reformatting one script into social posts.
 
 16
-00:00:30,276 --> 00:00:32,630
+00:00:30,536 --> 00:00:32,890
 Modern AI workflows handle all three
 
 17
-00:00:32,630 --> 00:00:33,350
+00:00:32,890 --> 00:00:33,610
 in seconds.
 
 18
-00:00:33,350 --> 00:00:36,125
-Eliminating just fifteen minutes of daily
+00:00:33,610 --> 00:00:36,391
+Cut fifteen minutes of daily busywork
 
 19
-00:00:36,125 --> 00:00:38,630
-friction takes twenty minutes to wire
+00:00:36,391 --> 00:00:38,871
+and you get back about ninety-one
 
 20
-00:00:38,630 --> 00:00:39,172
-up once,
+00:00:38,871 --> 00:00:40,900
+hours a year for real work.
 
 21
-00:00:39,172 --> 00:00:41,541
-yet hands you back ninety-one hours
-
-22
-00:00:41,541 --> 00:00:43,910
-of deep creation every single year.
-
-23
-00:00:43,910 --> 00:00:46,292
+00:00:40,900 --> 00:00:43,080
 Let software do the robot work
 
-24
-00:00:46,292 --> 00:00:48,594
+22
+00:00:43,080 --> 00:00:45,187
 so your brain stays sharp for
 
-25
-00:00:48,594 --> 00:00:50,182
+23
+00:00:45,187 --> 00:00:46,640
 high-value judgment.
-
-26
-00:00:50,182 --> 00:00:51,770
-Because right now...

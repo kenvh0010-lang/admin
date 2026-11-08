@@ -1,471 +1,443 @@
 1
-00:00:00,000 --> 00:00:03,055
+00:00:00,000 --> 00:00:03,095
 If you audit your bank statement tonight,
 
 2
-00:00:03,055 --> 00:00:04,992
+00:00:03,095 --> 00:00:05,057
 you will see every coffee,
 
 3
-00:00:04,992 --> 00:00:05,961
+00:00:05,057 --> 00:00:06,039
 subscription,
 
 4
-00:00:05,961 --> 00:00:08,568
+00:00:06,039 --> 00:00:08,681
 and utility bill down to the penny.
 
 5
-00:00:08,568 --> 00:00:11,623
+00:00:08,681 --> 00:00:11,775
 What you will never see is an invoice for
 
 6
-00:00:11,623 --> 00:00:15,125
+00:00:11,775 --> 00:00:15,323
 the skill you postponed learning two years ago,
 
 7
-00:00:15,125 --> 00:00:18,776
+00:00:15,323 --> 00:00:19,022
 the side project still sitting in a notes folder,
 
 8
-00:00:18,776 --> 00:00:23,098
+00:00:19,022 --> 00:00:23,400
 or the career move you researched until the window closed.
 
 9
-00:00:23,098 --> 00:00:23,694
+00:00:23,400 --> 00:00:24,004
 In 1914,
 
 10
-00:00:23,694 --> 00:00:28,760
-Austrian economist Friedrich von Wieser formalized this hidden price
+00:00:24,004 --> 00:00:28,684
+Austrian economist Friedrich von Wieser gave this hidden price
 
 11
-00:00:28,760 --> 00:00:30,549
-tag as Opportunity Cost:
+00:00:28,684 --> 00:00:29,514
+tag a name:
 
 12
-00:00:30,549 --> 00:00:33,454
-the true cost of any choice is the best
+00:00:29,514 --> 00:00:30,797
+opportunity cost,
 
 13
-00:00:33,454 --> 00:00:37,031
-alternative you gave up to keep things the same.
+00:00:30,797 --> 00:00:34,270
+the value of the best alternative you gave up.
 
 14
-00:00:37,031 --> 00:00:39,341
+00:00:34,270 --> 00:00:36,610
 Doing nothing is never neutral.
 
 15
-00:00:39,341 --> 00:00:42,395
+00:00:36,610 --> 00:00:39,705
 Every month you say let me wait until the
 
 16
-00:00:42,395 --> 00:00:43,737
+00:00:39,705 --> 00:00:41,063
 timing is perfect,
 
 17
-00:00:43,737 --> 00:00:47,760
-you are actively paying full price for the status quo.
+00:00:41,063 --> 00:00:44,460
+you are paying full price for the status quo.
 
 18
-00:00:47,760 --> 00:00:49,125
+00:00:44,460 --> 00:00:45,929
 Why do intelligent,
 
 19
-00:00:49,125 --> 00:00:53,724
-analytical adults fall into this trap more often than beginners?
+00:00:45,929 --> 00:00:48,868
+analytical adults fall into this trap?
 
 20
-00:00:53,724 --> 00:00:54,299
-In 1988,
+00:00:48,868 --> 00:00:49,487
+In 1990,
 
 21
-00:00:54,299 --> 00:00:59,113
-psychologists Jonathan Baron and Ilana Ritov identified a cognitive
+00:00:49,487 --> 00:00:54,513
+psychologists Ilana Ritov and Jonathan Baron documented a pattern
 
 22
-00:00:59,113 --> 00:01:01,412
-blind spot called Omission Bias.
+00:00:54,513 --> 00:00:56,137
+called omission bias:
 
 23
-00:01:01,412 --> 00:01:05,077
-Human brains evolved in small tribes where making a
+00:00:56,137 --> 00:00:59,849
+people judge harm caused by acting as worse than
 
 24
-00:01:05,077 --> 00:01:07,735
-visible mistake could get you exiled,
+00:00:59,849 --> 00:01:02,788
+the same harm caused by doing nothing.
 
 25
-00:01:07,735 --> 00:01:11,256
-whereas staying quiet in the crowd kept you safe.
-
-26
-00:01:11,256 --> 00:01:12,118
-As a result,
-
-27
-00:01:12,118 --> 00:01:16,070
-we punish visible errors of commission ten times harder
-
-28
-00:01:16,070 --> 00:01:18,513
-than invisible errors of omission.
-
-29
-00:01:18,513 --> 00:01:22,106
+00:01:02,788 --> 00:01:06,654
 If you spend two hundred dollars testing a digital
 
-30
-00:01:22,106 --> 00:01:24,046
+26
+00:01:06,654 --> 00:01:08,742
 product and nobody buys it,
 
+27
+00:01:08,742 --> 00:01:11,371
+the loss is visible and it stings.
+
+28
+00:01:11,371 --> 00:01:14,310
+If you sit on the idea for four years,
+
+29
+00:01:14,310 --> 00:01:16,243
+the cost is just as real,
+
+30
+00:01:16,243 --> 00:01:17,713
+but nobody sees it,
+
 31
-00:01:24,046 --> 00:01:25,698
-your ego feels a sting.
+00:01:17,713 --> 00:01:20,110
+so your brain files it as safe.
 
 32
-00:01:25,698 --> 00:01:28,357
-If you sit on the idea for four years
+00:01:20,110 --> 00:01:23,190
+In his 2015 letter to Amazon shareholders,
 
 33
-00:01:28,357 --> 00:01:32,596
-and forfeit fifty thousand dollars of compounding skill and
+00:01:23,190 --> 00:01:26,711
+Jeff Bezos described the mental model he used to
 
 34
-00:01:32,596 --> 00:01:33,099
-income,
+00:01:26,711 --> 00:01:30,011
+keep a giant company from slowing to a crawl.
 
 35
-00:01:33,099 --> 00:01:34,608
-nobody laughs at you,
+00:01:30,011 --> 00:01:33,532
+He divided decisions into Type One and Type Two.
 
 36
-00:01:34,608 --> 00:01:36,620
-so your brain calls it safe.
-
-37
-00:01:36,620 --> 00:01:40,196
-In his landmark 2015 letter to Amazon shareholders,
-
-38
-00:01:40,196 --> 00:01:43,562
-Jeff Bezos shared the exact mental model he used
-
-39
-00:01:43,562 --> 00:01:46,437
-to keep a giant company from slowing to a
-
-40
-00:01:46,437 --> 00:01:46,858
-crawl.
-
-41
-00:01:46,858 --> 00:01:50,575
-He divided every decision into Type One and Type Two.
-
-42
-00:01:50,575 --> 00:01:53,169
+00:01:33,532 --> 00:01:36,246
 Type One decisions are one-way doors:
 
-43
-00:01:53,169 --> 00:01:54,712
+37
+00:01:36,246 --> 00:01:37,859
 once you walk through,
 
-44
-00:01:54,712 --> 00:01:56,535
+38
+00:01:37,859 --> 00:01:39,766
 you cannot easily go back,
 
-45
-00:01:56,535 --> 00:02:00,673
+39
+00:01:39,766 --> 00:01:44,093
 like taking on massive personal debt or selling a business.
 
-46
-00:02:00,673 --> 00:02:03,197
+40
+00:01:44,093 --> 00:01:46,734
 Those deserve weeks of careful math.
 
-47
-00:02:03,197 --> 00:02:05,792
+41
+00:01:46,734 --> 00:01:49,447
 Type Two decisions are two-way doors:
 
-48
-00:02:05,792 --> 00:02:07,054
+42
+00:01:49,447 --> 00:01:50,767
 you open the door,
 
-49
-00:02:07,054 --> 00:02:07,895
+43
+00:01:50,767 --> 00:01:51,648
 look around,
 
-50
-00:02:07,895 --> 00:02:10,139
+44
+00:01:51,648 --> 00:01:53,995
 and if you dislike what you see,
 
-51
-00:02:10,139 --> 00:02:11,822
-you step right back out.
+45
+00:01:53,995 --> 00:01:55,315
+you step back out.
 
-52
-00:02:11,822 --> 00:02:14,206
+46
+00:01:55,315 --> 00:01:57,808
 Publishing your first video essay,
 
-53
-00:02:14,206 --> 00:02:15,819
+47
+00:01:57,808 --> 00:01:59,495
 pitching three clients,
 
-54
-00:02:15,819 --> 00:02:20,167
+48
+00:01:59,495 --> 00:02:04,043
 or launching a nineteen-dollar template are all two-way doors.
 
-55
-00:02:20,167 --> 00:02:25,006
-Tragedy strikes when ambitious people apply heavyweight Type-One fear
+49
+00:02:04,043 --> 00:02:07,710
+The trouble starts when people bring Type One fear
 
-56
-00:02:25,006 --> 00:02:27,530
-to lightweight Type-Two experiments.
+50
+00:02:07,710 --> 00:02:09,470
+to Type Two experiments.
 
-57
-00:02:27,530 --> 00:02:31,837
+51
+00:02:09,470 --> 00:02:13,962
 Perfectionists love to call their hesitation thorough research.
 
+52
+00:02:13,962 --> 00:02:16,172
+In his 2016 shareholder letter,
+
+53
+00:02:16,172 --> 00:02:19,808
+Jeff Bezos wrote that most decisions should be made
+
+54
+00:02:19,808 --> 00:02:24,085
+with somewhere around seventy percent of the information you
+
+55
+00:02:24,085 --> 00:02:25,012
+wish you had.
+
+56
+00:02:25,012 --> 00:02:27,222
+If you wait for ninety percent,
+
+57
+00:02:27,222 --> 00:02:27,864
+he wrote,
+
 58
-00:02:31,837 --> 00:02:35,324
-Yet both former Secretary of State Colin Powell and
+00:02:27,864 --> 00:02:29,860
+you are probably being slow.
 
 59
-00:02:35,324 --> 00:02:38,948
-Jeff Bezos arrived at practically the same threshold:
+00:02:29,860 --> 00:02:32,213
+Two things happen while you wait.
 
 60
-00:02:38,948 --> 00:02:40,794
-on any reversible decision,
+00:02:32,213 --> 00:02:35,778
+Everyone else can see the obvious opportunity too,
 
 61
-00:02:40,794 --> 00:02:44,212
-act the moment you hold roughly seventy percent of
+00:02:35,778 --> 00:02:37,560
+so the advantage shrinks.
 
 62
-00:02:44,212 --> 00:02:46,468
-the information you wish you had.
+00:02:37,560 --> 00:02:42,052
+And the missing information rarely lives inside another podcast
 
 63
-00:02:46,468 --> 00:02:49,613
-If you wait for ninety-five percent certainty,
+00:02:42,052 --> 00:02:42,907
+or textbook;
 
 64
-00:02:49,613 --> 00:02:51,118
-two bad things happen.
+00:02:42,907 --> 00:02:46,543
+it shows up after your work touches the real world.
 
 65
-00:02:51,118 --> 00:02:51,528
-First,
-
-66
-00:02:51,528 --> 00:02:54,946
-everyone else can see the obvious opportunity too,
-
-67
-00:02:54,946 --> 00:02:56,314
-so margins compress.
-
-68
-00:02:56,314 --> 00:02:56,792
-Second,
-
-69
-00:02:56,792 --> 00:03:00,484
-the final thirty percent of clarity almost never lives
-
-70
-00:03:00,484 --> 00:03:02,877
-inside another podcast or textbook;
-
-71
-00:03:02,877 --> 00:03:06,979
-it only reveals itself after your work touches real reality.
-
-72
-00:03:06,979 --> 00:03:09,030
+00:02:46,543 --> 00:02:48,682
 You cannot steer a parked car,
 
-73
-00:03:09,030 --> 00:03:11,560
+66
+00:02:48,682 --> 00:02:51,320
 no matter how long you study the map.
 
-74
-00:03:11,560 --> 00:03:16,609
-Fourteenth-century French philosopher Jean Buridan illustrated another trap that
+67
+00:02:51,320 --> 00:02:56,094
+A puzzle named after fourteenth-century philosopher Jean Buridan describes
 
-75
-00:03:16,609 --> 00:03:18,502
-haunts analytical minds today.
+68
+00:02:56,094 --> 00:02:58,803
+another trap that haunts analytical minds.
 
-76
-00:03:18,502 --> 00:03:22,289
+69
+00:02:58,803 --> 00:03:02,674
 Imagine a hungry donkey standing halfway between two equally
 
-77
-00:03:22,289 --> 00:03:23,551
+70
+00:03:02,674 --> 00:03:03,964
 fresh stacks of hay.
 
-78
-00:03:23,551 --> 00:03:26,265
-Because neither stack is provably superior,
+71
+00:03:03,964 --> 00:03:06,544
+Because neither stack is clearly better,
 
-79
-00:03:26,265 --> 00:03:29,926
+72
+00:03:06,544 --> 00:03:10,286
 the animal freezes in endless comparison until it starves.
 
-80
-00:03:29,926 --> 00:03:33,397
-Look at how modern creators and professionals stall for
+73
+00:03:10,286 --> 00:03:13,834
+Look at how creators and professionals stall for months
 
-81
-00:03:33,397 --> 00:03:35,985
-months debating Python versus JavaScript,
+74
+00:03:13,834 --> 00:03:16,027
+debating Python versus JavaScript,
 
-82
-00:03:35,985 --> 00:03:37,436
+75
+00:03:16,027 --> 00:03:17,511
 Notion versus Obsidian,
 
-83
-00:03:37,436 --> 00:03:39,582
+76
+00:03:17,511 --> 00:03:19,705
 or YouTube topic A versus topic B.
 
-84
-00:03:39,582 --> 00:03:42,674
-Whenever two reversible paths look roughly equal,
+77
+00:03:19,705 --> 00:03:22,608
+When two reversible paths look roughly equal,
 
-85
-00:03:42,674 --> 00:03:46,272
-that is mathematical proof the difference between them is
+78
+00:03:22,608 --> 00:03:26,220
+the difference between them is usually small compared to
 
-86
-00:03:46,272 --> 00:03:49,049
-tiny compared to the cost of standing still.
+79
+00:03:26,220 --> 00:03:27,962
+the cost of standing still.
 
-87
-00:03:49,049 --> 00:03:52,520
+80
+00:03:27,962 --> 00:03:31,510
 Pick one before dinner and let execution break the tie.
 
-88
-00:03:52,520 --> 00:03:56,456
+81
+00:03:31,510 --> 00:03:35,446
 Moving fast never means gambling recklessly with rent money.
 
-89
-00:03:56,456 --> 00:04:00,064
+82
+00:03:35,446 --> 00:03:39,054
 Risk scholar Nassim Taleb calls the smart alternative a
 
-90
-00:04:00,064 --> 00:04:01,179
+83
+00:03:39,054 --> 00:03:40,169
 Barbell Strategy:
 
-91
-00:04:01,179 --> 00:04:04,591
+84
+00:03:40,169 --> 00:03:43,581
 keep ninety percent of your foundation ultra-stable,
 
-92
-00:04:04,591 --> 00:04:08,199
+85
+00:03:43,581 --> 00:03:47,189
 such as a reliable day job and cash emergency reserves,
 
-93
-00:04:08,199 --> 00:04:11,479
+86
+00:03:47,189 --> 00:03:50,469
 while using the remaining ten percent of your time
 
-94
-00:04:11,479 --> 00:04:12,069
+87
+00:03:50,469 --> 00:03:51,059
 for fast,
 
-95
-00:04:12,069 --> 00:04:13,578
+88
+00:03:51,059 --> 00:03:52,568
 asymmetric experiments.
 
-96
-00:04:13,578 --> 00:04:15,874
+89
+00:03:52,568 --> 00:03:54,864
 When an experiment costs zero debt,
 
-97
-00:04:15,874 --> 00:04:17,580
+90
+00:03:54,864 --> 00:03:56,570
 fifty dollars in software,
 
-98
-00:04:17,580 --> 00:04:19,876
+91
+00:03:56,570 --> 00:03:58,866
 and five hours on Saturday morning,
 
-99
-00:04:19,876 --> 00:04:23,419
+92
+00:03:58,866 --> 00:04:02,409
 your worst-case scenario is a sharper resume skill and
 
-100
-00:04:23,419 --> 00:04:24,271
+93
+00:04:02,409 --> 00:04:03,261
 a good story.
 
-101
-00:04:24,271 --> 00:04:28,142
+94
+00:04:03,261 --> 00:04:07,132
 Your best-case scenario is a compounding digital asset that
 
-102
-00:04:28,142 --> 00:04:30,110
+95
+00:04:07,132 --> 00:04:09,100
 transforms your income margin.
 
-103
-00:04:30,110 --> 00:04:31,966
+96
+00:04:09,100 --> 00:04:10,956
 Before closing this video,
 
-104
-00:04:31,966 --> 00:04:35,821
+97
+00:04:10,956 --> 00:04:14,811
 run one stalled decision through a five-minute filter.
 
-105
-00:04:35,821 --> 00:04:36,749
+98
+00:04:14,811 --> 00:04:15,739
 Question one:
 
-106
-00:04:36,749 --> 00:04:39,819
+99
+00:04:15,739 --> 00:04:18,809
 is this truly an irreversible one-way door,
 
-107
-00:04:39,819 --> 00:04:42,746
+100
+00:04:18,809 --> 00:04:21,736
 or can you undo it in thirty days without
 
-108
-00:04:42,746 --> 00:04:43,816
+101
+00:04:21,736 --> 00:04:22,806
 permanent harm?
 
-109
-00:04:43,816 --> 00:04:44,745
+102
+00:04:22,806 --> 00:04:23,735
 Question two:
 
-110
-00:04:44,745 --> 00:04:47,600
+103
+00:04:23,735 --> 00:04:26,590
 how can you shrink the first test so the
 
-111
-00:04:47,600 --> 00:04:51,384
+104
+00:04:26,590 --> 00:04:30,374
 maximum downside is under one hundred dollars and two
 
-112
-00:04:51,384 --> 00:04:52,026
+105
+00:04:30,374 --> 00:04:31,016
 weekends?
 
-113
-00:04:52,026 --> 00:04:53,097
+106
+00:04:31,016 --> 00:04:32,087
 Question three:
 
-114
-00:04:53,097 --> 00:04:56,523
+107
+00:04:32,087 --> 00:04:35,513
 if you repeat the last twelve months of waiting,
 
-115
-00:04:56,523 --> 00:05:00,521
+108
+00:04:35,513 --> 00:04:39,511
 what will that hesitation quietly cost your future self?
 
-116
-00:05:00,521 --> 00:05:03,734
+109
+00:04:39,511 --> 00:04:42,724
 If the door swings both ways and the downside
 
-117
-00:05:03,734 --> 00:05:04,448
+110
+00:04:42,724 --> 00:04:43,438
 is capped,
 
-118
-00:05:04,448 --> 00:05:07,660
+111
+00:04:43,438 --> 00:04:46,650
 stop researching and walk through it tonight.

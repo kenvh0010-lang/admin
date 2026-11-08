@@ -1,115 +1,127 @@
 1
-00:00:00,000 --> 00:00:02,672
-Slot machines generate more annual revenue
+00:00:00,000 --> 00:00:00,582
+In 2023,
 
 2
-00:00:02,672 --> 00:00:04,962
-in America than Hollywood movies and
+00:00:00,582 --> 00:00:00,872
+U.S.
 
 3
-00:00:04,962 --> 00:00:06,934
-Major League Baseball combined,
+00:00:00,872 --> 00:00:03,707
+commercial casino slot machines took in
 
 4
-00:00:06,934 --> 00:00:08,906
-and the exact same mechanism is
+00:00:03,707 --> 00:00:06,542
+thirty-five and a half billion dollars,
 
 5
-00:00:08,906 --> 00:00:10,560
-sitting inside your phone.
+00:00:06,542 --> 00:00:09,378
+several times the entire North American
 
 6
-00:00:10,560 --> 00:00:11,111
-In 1957,
+00:00:09,378 --> 00:00:10,613
+movie box office.
 
 7
-00:00:11,111 --> 00:00:12,835
-Harvard psychologist B.F.
+00:00:10,613 --> 00:00:13,230
+The same mechanism is sitting inside
 
 8
-00:00:12,835 --> 00:00:15,385
-Skinner showed that when food dropped
+00:00:13,230 --> 00:00:14,030
+your phone.
 
 9
-00:00:15,385 --> 00:00:17,178
-on a predictable schedule,
+00:00:14,030 --> 00:00:14,632
+In 1957,
 
 10
-00:00:17,178 --> 00:00:18,556
-pigeons stayed calm.
+00:00:14,632 --> 00:00:16,439
+Charles Ferster and B.F.
 
 11
-00:00:18,556 --> 00:00:20,417
-When payouts turned random,
+00:00:16,439 --> 00:00:19,299
+Skinner found that pigeons rewarded on
 
 12
-00:00:20,417 --> 00:00:22,830
-they pressed the lever obsessively.
+00:00:19,299 --> 00:00:21,859
+a fixed schedule pecked in bursts,
 
 13
-00:00:22,830 --> 00:00:24,218
-Flash-sale countdowns,
+00:00:21,859 --> 00:00:22,762
+then paused.
 
 14
-00:00:24,218 --> 00:00:25,353
-mystery discounts,
+00:00:22,762 --> 00:00:25,924
+With rewards after an unpredictable number
 
 15
-00:00:25,353 --> 00:00:28,128
-and pull-to-refresh feeds exploit that exact
+00:00:25,924 --> 00:00:26,601
+of pecks,
 
 16
-00:00:28,128 --> 00:00:29,263
-uncertainty spike.
+00:00:26,601 --> 00:00:29,010
+they pecked fast and kept going.
 
 17
-00:00:29,263 --> 00:00:31,597
-Your brain chases the anticipation of
+00:00:29,010 --> 00:00:31,484
+Brain research from Wolfram Schultz's lab
 
 18
-00:00:31,597 --> 00:00:32,039
-a deal,
+00:00:31,484 --> 00:00:33,897
+found dopamine activity builds most when
 
 19
-00:00:32,039 --> 00:00:33,300
-not the item itself.
+00:00:33,897 --> 00:00:35,345
+the odds of a reward are
 
 20
-00:00:33,300 --> 00:00:34,939
-To disarm the algorithm,
+00:00:35,345 --> 00:00:36,069
+fifty-fifty.
 
 21
-00:00:34,939 --> 00:00:37,466
-delete saved payment cards from every
+00:00:36,069 --> 00:00:37,397
+Flash-sale countdowns,
 
 22
-00:00:37,466 --> 00:00:38,900
-shopping app tonight.
+00:00:37,397 --> 00:00:38,483
+mystery discounts,
 
 23
-00:00:38,900 --> 00:00:41,359
-Twenty seconds of walking across the
+00:00:38,483 --> 00:00:41,620
+and pull-to-refresh feeds use that same uncertainty.
 
 24
-00:00:41,359 --> 00:00:43,613
-room to type sixteen digits kills
+00:00:41,620 --> 00:00:43,347
+To disarm the algorithm,
 
 25
-00:00:43,613 --> 00:00:45,730
-eighty percent of impulse buys.
+00:00:43,347 --> 00:00:46,010
+delete saved payment cards from every
 
 26
-00:00:45,730 --> 00:00:48,654
-Stop blaming willpower when billion-dollar apps
+00:00:46,010 --> 00:00:47,522
+shopping app tonight.
 
 27
-00:00:48,654 --> 00:00:50,458
-engineer urgency against you;
+00:00:47,522 --> 00:00:49,753
+Walking across the room to type
 
 28
-00:00:50,458 --> 00:00:53,070
-build friction around your wallet instead.
+00:00:49,753 --> 00:00:52,056
+sixteen digits gives you time to
 
 29
-00:00:53,070 --> 00:00:54,750
-Because think about this...
+00:00:52,056 --> 00:00:53,280
+change your mind.
+
+30
+00:00:53,280 --> 00:00:55,873
+Stop blaming willpower when billion-dollar apps
+
+31
+00:00:55,873 --> 00:00:57,473
+engineer urgency against you;
+
+32
+00:00:57,473 --> 00:00:59,790
+build friction around your wallet instead.

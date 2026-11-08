@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Nassim Taleb's Barbell Rule for Unbreakable Leverage
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `53.1s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `49.4s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -18,15 +18,15 @@ You do not have to choose between playing it timidly safe forever or burning you
 
 ⏱️ Timestamps:
 00:00 - Escape the False Choice of Career Risk
-00:08 - Nassim Taleb's Antifragile Architecture
+00:08 - Nassim Taleb's Antifragile System
 00:19 - Reckless Leap vs 90/10 Barbell Split
-00:33 - Capped Downside, Uncapped Weekly Shots
+00:32 - Capped Downside, Uncapped Weekly Shots
 00:44 - Calm Floors Create Unstoppable Patience
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

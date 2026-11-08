@@ -1,99 +1,107 @@
 1
-00:00:00,000 --> 00:00:02,266
-Sixty-two percent of people earning six
+00:00:00,000 --> 00:00:02,627
+Nearly half of Americans earning over
 
 2
-00:00:02,266 --> 00:00:04,589
-figures still live paycheck to paycheck.
+00:00:02,627 --> 00:00:05,113
+one hundred thousand dollars a year
 
 3
-00:00:04,589 --> 00:00:07,610
-And a two-hundred-fifty-year-old story explains why.
+00:00:05,113 --> 00:00:06,959
+live paycheck to paycheck.
 
 4
-00:00:07,610 --> 00:00:08,277
-In 1765,
+00:00:06,959 --> 00:00:09,160
+A story from 1769 explains why.
 
 5
-00:00:08,277 --> 00:00:11,446
-philosopher Denis Diderot was gifted a
+00:00:09,160 --> 00:00:09,819
+In 1769,
 
 6
-00:00:11,446 --> 00:00:13,364
-luxurious scarlet robe.
+00:00:09,819 --> 00:00:13,197
+the philosopher Denis Diderot wrote about
 
 7
-00:00:13,364 --> 00:00:14,865
-Next to that robe,
+00:00:13,197 --> 00:00:15,751
+a luxurious scarlet robe he had
 
 8
-00:00:14,865 --> 00:00:17,616
-his old wooden desk looked cheap.
+00:00:15,751 --> 00:00:16,657
+been given.
 
 9
-00:00:17,616 --> 00:00:19,618
-So he replaced the desk.
+00:00:16,657 --> 00:00:18,140
+Next to that robe,
 
 10
-00:00:19,618 --> 00:00:20,702
-Then the rug.
+00:00:18,140 --> 00:00:20,282
+his old desk looked cheap.
 
 11
-00:00:20,702 --> 00:00:23,120
-Then every chair in his home.
+00:00:20,282 --> 00:00:22,259
+So he replaced the desk.
 
 12
-00:00:23,120 --> 00:00:26,085
-Psychologists call this the Diderot Effect.
+00:00:22,259 --> 00:00:23,742
+Then the tapestry.
 
 13
-00:00:26,085 --> 00:00:28,499
-You rarely buy just one upgrade—you
+00:00:23,742 --> 00:00:25,060
+Then the chairs.
 
 14
-00:00:28,499 --> 00:00:30,499
-buy a whole new identity that
+00:00:25,060 --> 00:00:28,320
+The anthropologist Grant McCracken later named
 
 15
-00:00:30,499 --> 00:00:33,050
-demands five more purchases to match.
+00:00:28,320 --> 00:00:30,021
+this the Diderot Effect.
 
 16
-00:00:33,050 --> 00:00:34,376
-To break the spiral,
+00:00:30,021 --> 00:00:32,289
+You rarely buy just one upgrade.
 
 17
-00:00:34,376 --> 00:00:36,299
-use the Invisible Raise Rule:
+00:00:32,289 --> 00:00:34,202
+You buy a new identity that
 
 18
-00:00:36,299 --> 00:00:38,089
-whenever your income jumps,
+00:00:34,202 --> 00:00:36,470
+demands more purchases to match.
 
 19
-00:00:38,089 --> 00:00:41,072
-automatically route fifty percent into assets
+00:00:36,470 --> 00:00:37,796
+To break the spiral,
 
 20
-00:00:41,072 --> 00:00:43,260
-before it ever hits your checking
+00:00:37,796 --> 00:00:39,719
+use the Invisible Raise Rule:
 
 21
-00:00:43,260 --> 00:00:43,790
-account.
+00:00:39,719 --> 00:00:41,509
+whenever your income jumps,
 
 22
-00:00:43,790 --> 00:00:46,356
-Real wealth isn't what people see
+00:00:41,509 --> 00:00:44,492
+automatically route fifty percent into assets
 
 23
-00:00:46,356 --> 00:00:49,232
-in your driveway—it's the freedom you
+00:00:44,492 --> 00:00:46,680
+before it ever hits your checking
 
 24
-00:00:49,232 --> 00:00:50,632
-didn't trade away.
+00:00:46,680 --> 00:00:47,210
+account.
 
 25
-00:00:50,632 --> 00:00:52,420
-Which is exactly why...
+00:00:47,210 --> 00:00:49,691
+Real wealth isn't what people see
+
+26
+00:00:49,691 --> 00:00:50,968
+in your driveway,
+
+27
+00:00:50,968 --> 00:00:53,900
+it's the freedom you didn't trade away.

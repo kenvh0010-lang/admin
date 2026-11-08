@@ -15,77 +15,77 @@ Austria hit ninety-nine percent?
 One tiny default checkbox.
 
 5
-00:00:08,380 --> 00:00:10,256
-In a landmark two thousand three
+00:00:08,380 --> 00:00:09,934
+In a 2003 Science paper,
 
 6
-00:00:10,256 --> 00:00:11,077
-Science study,
-
-7
-00:00:11,077 --> 00:00:13,657
+00:00:09,934 --> 00:00:12,783
 psychologists Eric Johnson and Dan Goldstein
 
+7
+00:00:12,783 --> 00:00:15,696
+showed that people rarely change pre-selected
+
 8
-00:00:13,657 --> 00:00:16,647
-proved humans rarely override pre-selected options.
+00:00:15,696 --> 00:00:16,214
+options.
 
 9
-00:00:16,647 --> 00:00:18,758
-Germany required citizens to opt in;
+00:00:16,214 --> 00:00:18,481
+Germany required citizens to opt in
 
 10
-00:00:18,758 --> 00:00:20,810
-Austria made participation opt-out.
+00:00:18,481 --> 00:00:19,646
+to organ donation;
 
 11
-00:00:20,810 --> 00:00:23,261
-Most people run their finances and
+00:00:19,646 --> 00:00:21,200
+Austria made it opt-out.
 
 12
-00:00:23,261 --> 00:00:25,640
-focus backward as opt-in habits -
+00:00:21,200 --> 00:00:23,620
+Most people run their finances and
 
 13
-00:00:25,640 --> 00:00:28,307
-hoping willpower survives at eight PM
+00:00:23,620 --> 00:00:25,898
+focus backward as opt-in habits,
 
 14
-00:00:28,307 --> 00:00:30,541
-on Friday to save leftover cash
+00:00:25,898 --> 00:00:28,532
+hoping willpower survives at eight PM
 
 15
-00:00:30,541 --> 00:00:31,190
-or study.
+00:00:28,532 --> 00:00:30,739
+on Friday to save leftover cash
 
 16
-00:00:31,190 --> 00:00:33,845
-Millionaire habits work like Austria's form:
+00:00:30,739 --> 00:00:31,380
+or study.
 
 17
-00:00:33,845 --> 00:00:36,440
-spend twenty minutes once automating payday
+00:00:31,380 --> 00:00:34,035
+Millionaire habits work like Austria's form:
 
 18
-00:00:36,440 --> 00:00:38,975
-savings transfers and morning app blockers
+00:00:34,035 --> 00:00:36,630
+spend twenty minutes once automating payday
 
 19
-00:00:38,975 --> 00:00:40,906
-so winning happens even when you
+00:00:36,630 --> 00:00:39,165
+savings transfers and morning app blockers
 
 20
-00:00:40,906 --> 00:00:41,570
-feel tired.
+00:00:39,165 --> 00:00:41,096
+so winning happens even when you
 
 21
-00:00:41,570 --> 00:00:43,912
-Stop relying on fragile daily motivation
+00:00:41,096 --> 00:00:41,760
+feel tired.
 
 22
-00:00:43,912 --> 00:00:46,723
-and engineer automatic opt-out defaults instead,
+00:00:41,760 --> 00:00:44,019
+Stop relying on fragile daily motivation
 
 23
-00:00:46,723 --> 00:00:50,060
-because human psychology already answered the question...
+00:00:44,019 --> 00:00:46,730
+and engineer automatic opt-out defaults instead.

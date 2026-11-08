@@ -19,97 +19,101 @@ When you do,
 a hidden second layer appears.
 
 6
-00:00:09,520 --> 00:00:10,044
+00:00:09,520 --> 00:00:10,119
 In 1896,
 
 7
-00:00:10,044 --> 00:00:13,186
-Italian economist Vilfredo Pareto noticed twenty
+00:00:10,119 --> 00:00:13,487
+Italian economist Vilfredo Pareto showed that
 
 8
-00:00:13,186 --> 00:00:14,889
-percent of the pea pods in
+00:00:13,487 --> 00:00:16,031
+about twenty percent of the people
 
 9
-00:00:14,889 --> 00:00:17,311
-his garden produced eighty percent of
+00:00:16,031 --> 00:00:18,651
+in Italy owned about eighty percent
 
 10
-00:00:17,311 --> 00:00:18,097
-the harvest,
+00:00:18,651 --> 00:00:19,549
+of the land.
 
 11
-00:00:18,097 --> 00:00:20,650
-matching wealth patterns across Europe.
+00:00:19,549 --> 00:00:21,944
+The popular story about pea pods
 
 12
-00:00:20,650 --> 00:00:22,981
-As strategist Perry Marshall proved,
+00:00:21,944 --> 00:00:23,890
+in his garden is a legend.
 
 13
-00:00:22,981 --> 00:00:24,146
-Pareto is fractal.
+00:00:23,890 --> 00:00:26,597
+Marketing writer Perry Marshall points out
 
 14
-00:00:24,146 --> 00:00:26,542
-Take twenty percent of twenty percent
+00:00:26,597 --> 00:00:28,273
+that if the pattern holds,
 
 15
-00:00:26,542 --> 00:00:28,938
-and eighty percent of eighty percent:
+00:00:28,273 --> 00:00:30,142
+Pareto repeats inside itself.
 
 16
-00:00:28,938 --> 00:00:31,074
-just four percent of your actions
+00:00:30,142 --> 00:00:32,527
+Take twenty percent of twenty percent
 
 17
-00:00:31,074 --> 00:00:33,470
-create sixty-four percent of results.
+00:00:32,527 --> 00:00:34,912
+and eighty percent of eighty percent:
 
 18
-00:00:33,470 --> 00:00:35,458
-Run it one layer deeper and
+00:00:34,912 --> 00:00:37,039
+just four percent of your actions
 
 19
-00:00:35,458 --> 00:00:37,592
-less than one percent of your
+00:00:37,039 --> 00:00:39,810
+could create sixty-four percent of results.
 
 20
-00:00:37,592 --> 00:00:39,875
-choices drive over half of your
+00:00:39,810 --> 00:00:41,791
+Run it one layer deeper and
 
 21
-00:00:39,875 --> 00:00:41,715
-career and income growth.
+00:00:41,791 --> 00:00:43,918
+less than one percent of your
 
 22
-00:00:41,715 --> 00:00:44,807
-Busy people polish the ninety-six percent;
+00:00:43,918 --> 00:00:46,338
+choices could drive about half of
 
 23
-00:00:44,807 --> 00:00:46,500
-builders guard the one.
+00:00:46,338 --> 00:00:47,292
+your results.
 
 24
-00:00:46,500 --> 00:00:47,489
-Every Monday,
+00:00:47,292 --> 00:00:50,373
+Busy people polish the ninety-six percent;
 
 25
-00:00:47,489 --> 00:00:50,533
-look at twenty-five things competing for
+00:00:50,373 --> 00:00:52,060
+builders guard the one.
 
 26
-00:00:50,533 --> 00:00:51,294
-your week,
+00:00:52,060 --> 00:00:53,010
+Every Monday,
 
 27
-00:00:51,294 --> 00:00:52,740
-circle the top one,
+00:00:53,010 --> 00:00:55,934
+look at twenty-five things competing for
 
 28
-00:00:52,740 --> 00:00:55,860
-and finish it before touching your inbox.
+00:00:55,934 --> 00:00:56,665
+your week,
 
 29
-00:00:55,860 --> 00:00:57,610
-Because funny enough...
+00:00:56,665 --> 00:00:58,053
+circle the top one,
+
+30
+00:00:58,053 --> 00:01:01,050
+and finish it before touching your inbox.

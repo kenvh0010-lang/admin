@@ -23,31 +23,31 @@ sell books on an obscure new
 network called the internet.
 
 7
-00:00:12,110 --> 00:00:14,217
-His boss warned him not to
+00:00:12,110 --> 00:00:14,362
+His boss suggested he think it
 
 8
-00:00:14,217 --> 00:00:15,676
-leave a great job.
+00:00:14,362 --> 00:00:16,388
+over for forty-eight hours.
 
 9
-00:00:15,676 --> 00:00:18,350
+00:00:16,388 --> 00:00:18,865
 So Jeff Bezos pictured himself at
 
 10
-00:00:18,350 --> 00:00:20,782
+00:00:18,865 --> 00:00:21,117
 age eighty looking back on his
 
 11
-00:00:20,782 --> 00:00:21,187
+00:00:21,117 --> 00:00:21,492
 life,
 
 12
-00:00:21,187 --> 00:00:24,104
+00:00:21,492 --> 00:00:24,194
 aiming to minimize the total regrets
 
 13
-00:00:24,104 --> 00:00:25,320
+00:00:24,194 --> 00:00:25,320
 he would carry.
 
 14
@@ -79,45 +79,45 @@ The one thing that would haunt
 him forever was never trying.
 
 21
-00:00:39,090 --> 00:00:42,258
-Cornell psychologist Thomas Gilovich confirmed why
+00:00:39,090 --> 00:00:42,521
+Cornell psychologists Thomas Gilovich and Victoria
 
 22
-00:00:42,258 --> 00:00:42,764
-in 1995:
+00:00:42,521 --> 00:00:44,511
+Medvec found in 1994 that our
 
 23
-00:00:42,764 --> 00:00:45,679
-seventy-five percent of enduring human regrets
+00:00:44,511 --> 00:00:46,570
+actions hurt more in the short
 
 24
-00:00:45,679 --> 00:00:47,389
-come from paths we were too
+00:00:46,570 --> 00:00:46,913
+term,
 
 25
-00:00:47,389 --> 00:00:48,466
-cautious to test,
+00:00:46,913 --> 00:00:48,285
+but over a lifetime,
 
 26
-00:00:48,466 --> 00:00:50,430
-never attempts that fell short.
+00:00:48,285 --> 00:00:50,893
+people's biggest regrets are about the
 
 27
-00:00:50,430 --> 00:00:53,484
-Whenever short-term comfort tries to talk
+00:00:50,893 --> 00:00:52,540
+things they never tried.
 
 28
-00:00:53,484 --> 00:00:55,643
-you out of a calculated leap,
+00:00:52,540 --> 00:00:55,309
+Whenever short-term comfort tries to talk
 
 29
-00:00:55,643 --> 00:00:58,474
-let your eighty-year-old self cast the
+00:00:55,309 --> 00:00:57,268
+you out of a calculated leap,
 
 30
-00:00:58,474 --> 00:00:59,516
-deciding vote.
+00:00:57,268 --> 00:00:59,834
+let your eighty-year-old self cast the
 
 31
-00:00:59,516 --> 00:01:00,410
-Just like...
+00:00:59,834 --> 00:01:00,780
+deciding vote.

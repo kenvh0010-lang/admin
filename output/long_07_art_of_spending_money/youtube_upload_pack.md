@@ -1,8 +1,8 @@
 # YouTube Upload Pack — The Art of Spending Money: 6 Psychological Traps Draining Modern Incomes
 
 - **Format**: `LONG`
-- **Estimated Runtime**: `202.5s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `197.9s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -20,14 +20,14 @@ Earning money requires leverage, while spending money wisely requires self-aware
 00:00 - The Missing Half of Financial Mastery
 00:30 - Traps 1 & 2: Buying Stranger Admiration
 01:06 - Traps 3 & 4: Fake Windfalls and Invisible Auto-Pay
-01:39 - Traps 5 & 6: Permanent Overhead from 48-Hour Thrills
-02:12 - What Behavioral Science Says Actually Buys Joy
-02:45 - The 3-Filter Conscious Margin Protocol
+01:34 - Traps 5 & 6: Permanent Overhead from 48-Hour Thrills
+02:07 - What Behavioral Science Says Actually Buys Joy
+02:40 - The 3-Filter Conscious Margin Protocol
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

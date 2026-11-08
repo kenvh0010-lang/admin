@@ -27,93 +27,85 @@ and you finish it with ten
 minutes to spare.
 
 8
-00:00:13,210 --> 00:00:13,705
-In 1955,
+00:00:13,210 --> 00:00:15,332
+In a 1955 essay in The Economist,
 
 9
-00:00:13,705 --> 00:00:16,488
-historian Cyril Northcote Parkinson proved in
+00:00:15,332 --> 00:00:18,355
+historian Cyril Northcote Parkinson pointed out
 
 10
-00:00:16,488 --> 00:00:18,591
-The Economist that as British Navy
+00:00:18,355 --> 00:00:20,091
+that between 1914 and 1928,
 
 11
-00:00:18,591 --> 00:00:20,261
-ships shrank by two-thirds,
+00:00:20,091 --> 00:00:22,342
+the Royal Navy's capital ships fell
 
 12
-00:00:20,261 --> 00:00:23,230
-headquarters staff grew by seventy-eight percent
+00:00:22,342 --> 00:00:23,629
+by about two-thirds,
 
 13
-00:00:23,230 --> 00:00:25,581
-because work expands to fill available
+00:00:23,629 --> 00:00:27,230
+while Admiralty officials grew by seventy-eight percent.
 
 14
-00:00:25,581 --> 00:00:25,890
-time.
-
-15
-00:00:25,890 --> 00:00:28,276
+00:00:27,230 --> 00:00:29,616
 Long deadlines rarely create masterpieces;
 
-16
-00:00:28,276 --> 00:00:29,753
+15
+00:00:29,616 --> 00:00:31,093
 they invite perfectionism,
 
-17
-00:00:29,753 --> 00:00:31,116
+16
+00:00:31,093 --> 00:00:32,456
 anxious second-guessing,
 
-18
-00:00:31,116 --> 00:00:32,480
+17
+00:00:32,456 --> 00:00:33,820
 and decorative busywork.
 
-19
-00:00:32,480 --> 00:00:34,582
+18
+00:00:33,820 --> 00:00:35,922
 Tight constraints force your brain to
 
-20
-00:00:34,582 --> 00:00:36,570
+19
+00:00:35,922 --> 00:00:37,910
 execute only what moves the needle.
 
+20
+00:00:37,910 --> 00:00:40,078
+That is why a shorter deadline
+
 21
-00:00:36,570 --> 00:00:38,848
-That is why cutting your deadline
+00:00:40,078 --> 00:00:40,945
+often helps:
 
 22
-00:00:38,848 --> 00:00:41,058
-in half actually raises quality:
-
-23
-00:00:41,058 --> 00:00:43,405
+00:00:40,945 --> 00:00:43,401
 shipping version one in three days
 
-24
-00:00:43,405 --> 00:00:45,476
+23
+00:00:43,401 --> 00:00:45,569
 instead of two weeks lets real
 
-25
-00:00:45,476 --> 00:00:47,340
+24
+00:00:45,569 --> 00:00:47,520
 feedback guide version two.
 
-26
-00:00:47,340 --> 00:00:50,413
+25
+00:00:47,520 --> 00:00:50,467
 Take your most important task tomorrow,
 
-27
-00:00:50,413 --> 00:00:52,777
+26
+00:00:50,467 --> 00:00:52,735
 slice the time budget in half,
 
-28
-00:00:52,777 --> 00:00:54,825
+27
+00:00:52,735 --> 00:00:54,699
 and start a visible timer.
 
-29
-00:00:54,825 --> 00:00:57,662
-Watch how fast the fluff disappears,
-
-30
-00:00:57,662 --> 00:00:58,450
-because...
+28
+00:00:54,699 --> 00:00:57,420
+Watch how fast the fluff disappears.

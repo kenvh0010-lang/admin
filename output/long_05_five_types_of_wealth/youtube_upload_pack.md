@@ -1,8 +1,8 @@
 # YouTube Upload Pack — The 5 Types of Wealth: Why Financially Rich People Still Feel Broke
 
 - **Format**: `LONG`
-- **Estimated Runtime**: `220.8s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `212.8s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -12,22 +12,22 @@
 
 ## 2. Copy-Paste SEO Description
 ```text
-Optimizing exclusively for Financial Wealth silently bankrupts the four other currencies that create a rich life. Inspired by Sahil Bloom's 'The 5 Types of Wealth' and Harvard's 85-year study, here is how to balance Time, Social, Mental, Physical, and Financial margin.
+Optimizing exclusively for Financial Wealth silently bankrupts the four other currencies that create a rich life. Inspired by Sahil Bloom's 'The 5 Types of Wealth' and Harvard's 85-year study, This video shows how to balance Time, Social, Mental, Physical, and Financial margin.
 
 🔗 **Sahil Bloom's 'The 5 Types of Wealth' on Audible + Weekly Life Audit OS**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
 00:00 - The Trap of a One-Number Scoreboard
 00:35 - Calendar Autonomy and the 85-Year Harvard Study
-01:15 - The Leading '1' Before Every Financial Zero
-01:54 - Why Deferred Living Carries Compound Interest
-02:27 - From Endless Status Game to Sufficiency Engine
-03:03 - The 10-Minute Sunday Life Portfolio Audit
+01:13 - The Leading '1' Before Every Financial Zero
+01:52 - Why Deferred Living Carries Compound Interest
+02:25 - From Endless Status Game to Sufficiency Engine
+02:55 - The 10-Minute Sunday Life Portfolio Audit
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

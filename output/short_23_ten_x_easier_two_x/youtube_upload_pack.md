@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Why Going 10x Is Psychologically Easier Than Going 2x
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `50.9s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `47.6s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -12,13 +12,13 @@
 
 ## 2. Copy-Paste SEO Description
 ```text
-Aiming for 2x tricks you into keeping 80% low-value busywork and working longer nights. Dan Sullivan and Dr. Benjamin Hardy show why a 10x lens forces ruthless simplicity around your 20% asymmetric core.
+Aiming for 2x tricks you into keeping 80% low-value busywork and working longer nights. Dan Sullivan and Dr. Benjamin Hardy show why a 10x lens forces strict simplicity around your 20% asymmetric core.
 
 🔗 **'10x Is Easier Than 2x' Free Audiobook Trial + Weekly 80/20 Filter**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
 00:00 - Why 2x Ambition Breeds Exhaustion
-00:08 - Sullivan & Hardy's 80% Noise Discovery
+00:08 - Sullivan & Hardy's 10x Filter
 00:20 - Linear Brute Force vs Asymmetric Pruning
 00:32 - Run the Sunday 20% Core Audit
 00:43 - Subtract Noise Before Adding Effort
@@ -26,7 +26,7 @@ Aiming for 2x tricks you into keeping 80% low-value busywork and working longer 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

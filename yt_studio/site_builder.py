@@ -47,16 +47,20 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
 """
 
 
-def build_public_site(amazon_tag: Optional[str] = None) -> Path:
+DEFAULT_AMAZON_TAG = "mindandmarg06-20"
+
+
+def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
     """Rebuild docs/ static site, sync Bio + 5hr OS, and generate sitemap.xml & robots.txt."""
     docs = PROJECT_ROOT / "docs"
     articles_dir = docs / "articles"
     articles_dir.mkdir(parents=True, exist_ok=True)
     (docs / ".nojekyll").write_text("", encoding="utf-8")
 
-    tag_query = f"?tag={amazon_tag.strip()}" if amazon_tag and amazon_tag.strip() else ""
+    effective_tag = (amazon_tag if amazon_tag is not None else DEFAULT_AMAZON_TAG).strip()
+    tag_query = f"?tag={effective_tag}" if effective_tag else ""
     audible_url = f"https://www.audible.com/ep/freetrial{tag_query}"
-    amazon_books_url = f"https://www.amazon.com/b?node=283155{'&tag=' + amazon_tag.strip() if amazon_tag and amazon_tag.strip() else ''}"
+    amazon_books_url = f"https://www.amazon.com/b?node=283155{'&tag=' + effective_tag if effective_tag else ''}"
 
     # Sync products into docs/
     for sub_src, sub_dst in [
@@ -69,7 +73,7 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
                 shutil.rmtree(sub_dst)
             shutil.copytree(sub_src, sub_dst)
 
-    if amazon_tag and amazon_tag.strip():
+    if effective_tag:
         for bio_file in [PROJECT_ROOT / "products/bio_funnel_page/index.html", docs / "bio/index.html"]:
             if bio_file.is_file():
                 btxt = bio_file.read_text(encoding="utf-8")
@@ -112,7 +116,12 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
             nar = html.escape(s.get("narration", ""))
             bullets = s.get("bullets", [])
             b_html = "<ul>" + "".join(f"<li>{html.escape(b)}</li>" for b in bullets) + "</ul>" if bullets else ""
-            sections.append(f'<div class="scene-block"><h3>{sh}</h3><p>{nar}</p>{b_html}</div>')
+            src = s.get("source")
+            src_html = (
+                f'<p style="font-size:0.82rem;color:var(--muted);margin:10px 0 0;"><em>Source: {html.escape(str(src))}</em></p>'
+                if src else ""
+            )
+            sections.append(f'<div class="scene-block"><h3>{sh}</h3><p>{nar}</p>{b_html}{src_html}</div>')
 
         aff_name = html.escape(d.get("affiliate_cta", {}).get("offer_name", "Recommended Reading on Amazon & Audible"))
         art_html = f"""<!DOCTYPE html>

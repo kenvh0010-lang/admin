@@ -1,63 +1,75 @@
 1
-00:00:00,000 --> 00:00:02,693
-Studies show the average office worker
+00:00:00,000 --> 00:00:02,240
+A survey of nearly two thousand
 
 2
-00:00:02,693 --> 00:00:05,173
-gets just two hours and fifty-three
+00:00:02,240 --> 00:00:04,624
+UK office workers found they were
 
 3
-00:00:05,173 --> 00:00:07,086
-minutes of real focus in an
+00:00:04,624 --> 00:00:07,153
+truly productive for just two hours
 
 4
-00:00:07,086 --> 00:00:08,149
-eight-hour day.
+00:00:07,153 --> 00:00:09,320
+and fifty-three minutes a day.
 
 5
-00:00:08,149 --> 00:00:10,275
-Your brain was never wired for
+00:00:09,320 --> 00:00:11,705
+Grinding for eight hours does not
 
 6
-00:00:10,275 --> 00:00:11,480
-nonstop grinding.
+00:00:11,705 --> 00:00:13,800
+mean working for eight hours.
 
 7
-00:00:11,480 --> 00:00:13,975
-Neuroscientists call your natural rhythm the
+00:00:13,800 --> 00:00:16,926
+Sleep researcher Nathaniel Kleitman proposed a
 
 8
-00:00:13,975 --> 00:00:14,883
-Ultradian Cycle:
+00:00:16,926 --> 00:00:19,983
+roughly ninety-minute rest and activity cycle
 
 9
-00:00:14,883 --> 00:00:17,094
-ninety minutes of peak cognitive output
+00:00:19,983 --> 00:00:22,090
+that keeps running while we are
 
 10
-00:00:17,094 --> 00:00:19,590
-followed by a mandatory twenty-minute neural
+00:00:22,090 --> 00:00:22,498
+awake.
 
 11
-00:00:19,590 --> 00:00:19,930
-reset.
+00:00:22,498 --> 00:00:24,400
+So work in focused blocks of
 
 12
-00:00:19,930 --> 00:00:23,102
-Protect just one phone-free ninety-minute block
+00:00:24,400 --> 00:00:25,827
+about ninety minutes,
 
 13
-00:00:23,102 --> 00:00:24,587
-three mornings a week,
+00:00:25,827 --> 00:00:27,390
+then take a real break.
 
 14
-00:00:24,587 --> 00:00:26,815
-and you unlock two hundred thirty
+00:00:27,390 --> 00:00:30,788
+Protect just one phone-free ninety-minute block
 
 15
-00:00:26,815 --> 00:00:29,110
-hours of pure creation a year—more
+00:00:30,788 --> 00:00:32,378
+three mornings a week,
 
 16
-00:00:29,110 --> 00:00:31,270
-than enough to change your life.
+00:00:32,378 --> 00:00:34,403
+and you get back two hundred
+
+17
+00:00:34,403 --> 00:00:36,644
+thirty hours of pure creation a
+
+18
+00:00:36,644 --> 00:00:37,005
+year,
+
+19
+00:00:37,005 --> 00:00:39,680
+more than enough to change your life.

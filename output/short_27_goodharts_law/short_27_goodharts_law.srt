@@ -1,103 +1,111 @@
 1
-00:00:00,000 --> 00:00:02,754
-When colonial officials in Delhi offered
+00:00:00,000 --> 00:00:01,360
+As the story goes,
 
 2
-00:00:02,754 --> 00:00:05,164
-cash bounties for every dead cobra,
+00:00:01,360 --> 00:00:04,381
+when colonial officials in Delhi offered
 
 3
-00:00:05,164 --> 00:00:07,230
-the city somehow ended up with
+00:00:04,381 --> 00:00:06,345
+cash for every dead cobra,
 
 4
-00:00:07,230 --> 00:00:09,020
-even more venomous snakes.
+00:00:06,345 --> 00:00:08,384
+the city ended up with even
 
 5
-00:00:09,020 --> 00:00:11,684
-Locals started breeding cobras in backyard
+00:00:08,384 --> 00:00:09,970
+more venomous snakes.
 
 6
-00:00:11,684 --> 00:00:13,777
-sheds just to collect the payout.
+00:00:09,970 --> 00:00:12,634
+Locals started breeding cobras in backyard
 
 7
-00:00:13,777 --> 00:00:16,313
-When officials discovered the scheme and
+00:00:12,634 --> 00:00:14,727
+sheds just to collect the payout.
 
 8
-00:00:16,313 --> 00:00:17,582
-canceled the bounty,
+00:00:14,727 --> 00:00:17,263
+When officials discovered the scheme and
 
 9
-00:00:17,582 --> 00:00:20,309
-breeders released the worthless snakes into
+00:00:17,263 --> 00:00:18,532
+canceled the bounty,
 
 10
-00:00:20,309 --> 00:00:21,070
-the streets.
+00:00:18,532 --> 00:00:21,259
+breeders released the worthless snakes into
 
 11
-00:00:21,070 --> 00:00:21,639
-In 1975,
+00:00:21,259 --> 00:00:22,020
+the streets.
 
 12
-00:00:21,639 --> 00:00:24,911
-British economist Charles Goodhart turned this
+00:00:22,020 --> 00:00:22,596
+In 1975,
 
 13
-00:00:24,911 --> 00:00:26,902
-failure into Goodhart's Law:
+00:00:22,596 --> 00:00:26,050
+British economist Charles Goodhart observed that
 
 14
-00:00:26,902 --> 00:00:29,605
-the moment a measure becomes a target,
+00:00:26,050 --> 00:00:27,849
+a number used as a target
 
 15
-00:00:29,605 --> 00:00:31,810
-it ceases to be a good measure.
+00:00:27,849 --> 00:00:30,152
+stops measuring what it used to.
 
 16
-00:00:31,810 --> 00:00:33,974
-You fall into the exact same
+00:00:30,152 --> 00:00:33,966
+Anthropologist Marilyn Strathern later put it simply:
 
 17
-00:00:33,974 --> 00:00:36,757
-trap whenever you chase hours logged
+00:00:33,966 --> 00:00:36,269
+when a measure becomes a target,
 
 18
-00:00:36,757 --> 00:00:37,530
-at a desk,
+00:00:36,269 --> 00:00:38,500
+it ceases to be a good measure.
 
 19
-00:00:37,530 --> 00:00:38,457
-app streaks,
+00:00:38,500 --> 00:00:40,601
+You fall into the same trap
 
 20
-00:00:38,457 --> 00:00:40,853
-or vanity views instead of real
+00:00:40,601 --> 00:00:43,247
+whenever you chase hours logged at
 
 21
-00:00:40,853 --> 00:00:42,940
-skills and cashflow margin.
+00:00:43,247 --> 00:00:43,792
+a desk,
 
 22
-00:00:42,940 --> 00:00:45,323
-Use numbers as a quiet compass,
+00:00:43,792 --> 00:00:44,726
+app streaks,
 
 23
-00:00:45,323 --> 00:00:47,092
-never as your identity,
+00:00:44,726 --> 00:00:47,139
+or vanity views instead of real
 
 24
-00:00:47,092 --> 00:00:49,706
-because the second you worship the
+00:00:47,139 --> 00:00:49,240
+skills and cashflow margin.
 
 25
-00:00:49,706 --> 00:00:52,627
-scoreboard you start gaming yourself -
+00:00:49,240 --> 00:00:51,425
+Use numbers as a quiet compass,
 
 26
-00:00:52,627 --> 00:00:53,550
-just like...
+00:00:51,425 --> 00:00:53,046
+never as your identity,
+
+27
+00:00:53,046 --> 00:00:55,442
+because the second you worship the
+
+28
+00:00:55,442 --> 00:00:58,050
+scoreboard you start gaming yourself.

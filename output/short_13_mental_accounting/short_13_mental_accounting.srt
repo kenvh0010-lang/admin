@@ -1,115 +1,119 @@
 1
-00:00:00,000 --> 00:00:02,988
+00:00:00,000 --> 00:00:03,082
 Hand someone a thousand-dollar paycheck and
 
 2
-00:00:02,988 --> 00:00:04,516
+00:00:03,082 --> 00:00:04,658
 they guard every cent.
 
 3
-00:00:04,516 --> 00:00:06,531
-Hand that exact same person a
+00:00:04,658 --> 00:00:07,453
+Hand that same person a thousand-dollar
 
 4
-00:00:06,531 --> 00:00:09,171
-thousand-dollar tax refund and half of
+00:00:07,453 --> 00:00:09,173
+tax refund and it is far
 
 5
-00:00:09,171 --> 00:00:10,700
-it vanishes by Sunday.
+00:00:09,173 --> 00:00:10,320
+easier to spend.
 
 6
-00:00:10,700 --> 00:00:13,237
-Economist Richard Thaler won the Nobel
+00:00:10,320 --> 00:00:13,044
+Economist Richard Thaler won the 2017
 
 7
-00:00:13,237 --> 00:00:14,705
-Prize for proving why.
+00:00:13,044 --> 00:00:13,927
+Nobel Prize,
 
 8
-00:00:14,705 --> 00:00:16,775
-He called it Mental Accounting.
+00:00:13,927 --> 00:00:15,988
+in part for describing this.
 
 9
-00:00:16,775 --> 00:00:19,979
-Even though money is completely interchangeable,
+00:00:15,988 --> 00:00:18,270
+He called it mental accounting.
 
 10
-00:00:19,979 --> 00:00:22,182
-your brain tags every dollar with
+00:00:18,270 --> 00:00:20,111
+Money is interchangeable,
 
 11
-00:00:22,182 --> 00:00:23,450
-an emotional story.
+00:00:20,111 --> 00:00:22,466
+but your brain tags every dollar
 
 12
-00:00:23,450 --> 00:00:26,049
-Salary dollars feel heavy because you
+00:00:22,466 --> 00:00:24,454
+with a story about where it
 
 13
-00:00:26,049 --> 00:00:28,226
-traded forty hours of stress to
+00:00:24,454 --> 00:00:25,190
+came from.
 
 14
-00:00:28,226 --> 00:00:28,928
-earn them.
+00:00:25,190 --> 00:00:27,727
+Salary dollars feel heavy because you
 
 15
-00:00:28,928 --> 00:00:31,668
-Refund or bonus dollars feel weightless
+00:00:27,727 --> 00:00:29,852
+traded forty hours of stress to
 
 16
-00:00:31,668 --> 00:00:33,283
-- like house money - so
+00:00:29,852 --> 00:00:30,538
+earn them.
 
 17
-00:00:33,283 --> 00:00:35,320
-spending friction disappears.
+00:00:30,538 --> 00:00:33,280
+Refund or bonus dollars feel weightless,
 
 18
-00:00:35,320 --> 00:00:37,233
-Use the Fungibility Rule:
+00:00:33,280 --> 00:00:34,446
+like house money,
 
 19
-00:00:37,233 --> 00:00:38,534
-park every bonus,
+00:00:34,446 --> 00:00:36,640
+so spending friction disappears.
 
 20
-00:00:38,534 --> 00:00:38,916
-gift,
+00:00:36,640 --> 00:00:38,553
+Use the Fungibility Rule:
 
 21
-00:00:38,916 --> 00:00:41,059
-or tax refund in savings for
+00:00:38,553 --> 00:00:39,854
+park every bonus,
 
 22
-00:00:41,059 --> 00:00:43,890
-fourteen days until the windfall rush
+00:00:39,854 --> 00:00:40,236
+gift,
 
 23
-00:00:43,890 --> 00:00:44,349
-fades.
+00:00:40,236 --> 00:00:42,379
+or tax refund in savings for
 
 24
-00:00:44,349 --> 00:00:46,262
-Then ask if you would buy
+00:00:42,379 --> 00:00:45,210
+fourteen days until the windfall rush
 
 25
-00:00:46,262 --> 00:00:48,710
-that upgrade using overtime pay.
+00:00:45,210 --> 00:00:45,669
+fades.
 
 26
-00:00:48,710 --> 00:00:50,879
-Once you strip the fake label
+00:00:45,669 --> 00:00:47,582
+Then ask if you would buy
 
 27
-00:00:50,879 --> 00:00:51,926
-off your cash,
+00:00:47,582 --> 00:00:50,030
+that upgrade using overtime pay.
 
 28
-00:00:51,926 --> 00:00:55,741
-every windfall starts compounding like real wealth.
+00:00:50,030 --> 00:00:52,094
+Once you strip the fake label
 
 29
-00:00:55,741 --> 00:00:57,910
-Because without that reset...
+00:00:52,094 --> 00:00:53,090
+off your cash,
+
+30
+00:00:53,090 --> 00:00:56,720
+every windfall starts compounding like real wealth.

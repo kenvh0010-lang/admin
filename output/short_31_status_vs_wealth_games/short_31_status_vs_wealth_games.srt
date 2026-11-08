@@ -91,13 +91,9 @@ earn compounding equity without needing anyone
 to lose.
 
 24
-00:00:44,140 --> 00:00:46,670
+00:00:44,140 --> 00:00:46,420
 Step off zero-sum leaderboards and pour
 
 25
-00:00:46,670 --> 00:00:49,654
-your best mornings into positive-sum creation,
-
-26
-00:00:49,654 --> 00:00:51,860
-especially once you notice that...
+00:00:46,420 --> 00:00:49,110
+your best mornings into positive-sum creation.

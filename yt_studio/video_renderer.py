@@ -214,7 +214,7 @@ def _render_motion_clip(
         [
             "ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-i", str(frame_png),
             "-vf", vf, "-frames:v", str(n),
-            "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-pix_fmt", "yuv420p",
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
             "-r", str(fps), str(out_mp4),
         ],
         check=True,

@@ -47,233 +47,233 @@ modern marketing effortlessly exploits six psychological blind spots that
 turn impressive salaries into thin monthly margins.
 
 13
-00:00:30,850 --> 00:00:34,636
-Trap One is confusing Internal Utility with External Status
+00:00:30,850 --> 00:00:35,325
+Trap One is confusing Internal Utility with External Status Signaling,
 
 14
-00:00:34,636 --> 00:00:36,496
-Signaling - upgrading houses,
+00:00:35,325 --> 00:00:36,411
+upgrading houses,
 
 15
-00:00:36,496 --> 00:00:37,138
+00:00:36,411 --> 00:00:37,050
 wardrobes,
 
 16
-00:00:37,138 --> 00:00:40,860
+00:00:37,050 --> 00:00:40,758
 or vehicles for how acquaintances perceive you rather than
 
 17
-00:00:40,860 --> 00:00:44,196
+00:00:40,758 --> 00:00:44,082
 how Tuesday morning actually feels inside your skin.
 
 18
-00:00:44,196 --> 00:00:46,378
+00:00:44,082 --> 00:00:46,255
 That leads straight into Trap Two,
 
 19
-00:00:46,378 --> 00:00:49,778
+00:00:46,255 --> 00:00:49,643
 which author Morgan Housel famously called the Man in
 
 20
-00:00:49,778 --> 00:00:50,805
+00:00:49,643 --> 00:00:50,666
 the Car Paradox.
 
 21
-00:00:50,805 --> 00:00:54,462
+00:00:50,666 --> 00:00:54,309
 When people spot an exotic sports car at an intersection,
 
 22
-00:00:54,462 --> 00:00:58,184
+00:00:54,309 --> 00:00:58,017
 they almost never think about how admirable the driver is;
 
 23
-00:00:58,184 --> 00:01:00,814
+00:00:58,017 --> 00:01:00,637
 they picture themselves behind the wheel.
 
 24
-00:01:00,814 --> 00:01:04,728
+00:01:00,637 --> 00:01:04,537
 Trading years of sweat equity to purchase stranger admiration
 
 25
-00:01:04,728 --> 00:01:06,910
+00:01:04,537 --> 00:01:06,710
 yields near-zero emotional return.
 
 26
-00:01:06,910 --> 00:01:10,712
-Trap Three is Nobel laureate Richard Thaler's Mental Accounting:
+00:01:06,710 --> 00:01:10,860
+Trap Three is Nobel laureate Richard Thaler's mental accounting:
 
 27
-00:01:10,712 --> 00:01:13,919
+00:01:10,860 --> 00:01:14,361
 debating a six-dollar grocery difference on Wednesday,
 
 28
-00:01:13,919 --> 00:01:17,721
-then casually rolling a two-thousand-dollar trim package into an
+00:01:14,361 --> 00:01:18,640
+then rolling a two-thousand-dollar trim package into an auto loan,
 
 29
-00:01:17,721 --> 00:01:20,453
-auto loan or blowing a tax refund because your
+00:01:18,640 --> 00:01:21,882
+or spending a tax refund because your brain labels
 
 30
-00:01:20,453 --> 00:01:22,116
-brain labels it house money.
+00:01:21,882 --> 00:01:22,855
+it house money.
 
 31
-00:01:22,116 --> 00:01:24,195
-Trap Four is the Frictionless Leak.
+00:01:22,855 --> 00:01:25,124
+Trap Four is the frictionless leak.
 
 32
-00:01:24,195 --> 00:01:28,116
-Neuroeconomics brain scans confirm that handing over physical cash
+00:01:25,124 --> 00:01:27,847
+Paying with cash makes the cost feel real.
 
 33
-00:01:28,116 --> 00:01:30,076
-activates the insula pain center,
+00:01:27,847 --> 00:01:31,219
+Tap-to-pay and auto-renewals take that feeling away,
 
 34
-00:01:30,076 --> 00:01:34,175
-whereas tap-to-pay and auto-renewals anesthetize that natural brake -
+00:01:31,219 --> 00:01:34,850
+so small recurring charges pile up without you noticing.
 
 35
-00:01:34,175 --> 00:01:38,570
-causing households to underestimate recurring monthly subscriptions by two
-
-36
-00:01:38,570 --> 00:01:39,580
-and a half times.
-
-37
-00:01:39,580 --> 00:01:42,195
+00:01:34,850 --> 00:01:37,447
 Trap Five is the Hedonic Baseline Ratchet:
 
-38
-00:01:42,195 --> 00:01:46,864
+36
+00:01:37,447 --> 00:01:42,085
 letting occasional celebratory luxuries harden into fixed monthly overhead.
 
-39
-00:01:46,864 --> 00:01:49,853
+37
+00:01:42,085 --> 00:01:45,053
 Once a luxury becomes your baseline expectation,
 
-40
-00:01:49,853 --> 00:01:52,779
+38
+00:01:45,053 --> 00:01:47,959
 it stops producing joy and starts acting like a
 
-41
-00:01:52,779 --> 00:01:55,892
+39
+00:01:47,959 --> 00:01:51,051
 cage that forces you to stay in unfulfilling work.
 
-42
-00:01:55,892 --> 00:01:58,445
+40
+00:01:51,051 --> 00:01:53,587
 Trap Six is the Dopamine Timing Illusion:
 
+41
+00:01:53,587 --> 00:01:56,988
+brain chemistry spikes right before you click purchase,
+
+42
+00:01:56,988 --> 00:01:58,224
+during anticipation,
+
 43
-00:01:58,445 --> 00:02:01,931
-brain chemistry spikes right before you click purchase -
+00:01:58,224 --> 00:02:00,080
+not six months into ownership,
 
 44
-00:02:01,931 --> 00:02:05,169
-during anticipation - not six months into ownership,
-
-45
-00:02:05,169 --> 00:02:09,216
+00:02:00,080 --> 00:02:04,099
 leaving garages full of dusty upgrades that delivered forty-eight
 
-46
-00:02:09,216 --> 00:02:12,640
+45
+00:02:04,099 --> 00:02:07,500
 hours of excitement for forty-eight months of payments.
 
+46
+00:02:07,500 --> 00:02:10,764
+So where does money actually raise well-being?
+
 47
-00:02:12,640 --> 00:02:16,205
-So where does money genuinely elevate human well-being?
+00:02:10,764 --> 00:02:14,098
+A 2017 study in the Proceedings of the National
 
 48
-00:02:16,205 --> 00:02:20,482
-Multi-country studies published in the Proceedings of the National
+00:02:14,098 --> 00:02:15,517
+Academy of Sciences,
 
 49
-00:02:20,482 --> 00:02:23,658
-Academy of Sciences point to three clear winners:
+00:02:15,517 --> 00:02:17,787
+with people from four countries,
 
 50
-00:02:23,658 --> 00:02:27,093
-spending money to buy back hours from dreaded chores,
+00:02:17,787 --> 00:02:21,122
+found that paying to avoid chores you dread was
 
 51
-00:02:27,093 --> 00:02:30,981
-investing in physical health and high-use daily craft tools,
+00:02:21,122 --> 00:02:23,605
+linked to higher life satisfaction.
 
 52
-00:02:30,981 --> 00:02:34,351
-and funding shared experiences with people you love.
+00:02:23,605 --> 00:02:27,578
+Research by Elizabeth Dunn and Michael Norton found that
 
 53
-00:02:34,351 --> 00:02:35,000
-Above all,
+00:02:27,578 --> 00:02:31,551
+spending on shared experiences and on other people tends
 
 54
-00:02:35,000 --> 00:02:38,888
-unspent cash sitting in liquid and compounding reserves buys
+00:02:31,551 --> 00:02:34,601
+to make us happier than buying more things.
 
 55
-00:02:38,888 --> 00:02:42,582
-the highest-returning luxury on earth - the calm autonomy
+00:02:34,601 --> 00:02:38,007
+And cash you keep in reserve buys something too:
 
 56
-00:02:42,582 --> 00:02:45,110
-to say no to bad deals and toxic rooms.
+00:02:38,007 --> 00:02:40,490
+the freedom to say no to bad deals.
 
 57
-00:02:45,110 --> 00:02:48,780
+00:02:40,490 --> 00:02:44,160
 Protect your cashflow without living like a miser using
 
 58
-00:02:48,780 --> 00:02:51,649
+00:02:44,160 --> 00:02:47,029
 the Three-Filter Conscious Margin Protocol.
 
 59
-00:02:51,649 --> 00:02:54,117
+00:02:47,029 --> 00:02:49,497
 Filter One is the Desert Island Test:
 
 60
-00:02:54,117 --> 00:02:56,386
+00:02:49,497 --> 00:02:51,766
 before buying any visible upgrade,
 
 61
-00:02:56,386 --> 00:02:59,388
+00:02:51,766 --> 00:02:54,768
 ask whether you would still want it if nobody
 
 62
-00:02:59,388 --> 00:03:01,923
+00:02:54,768 --> 00:02:57,303
 on earth could ever know you owned it.
 
 63
-00:03:01,923 --> 00:03:04,392
+00:02:57,303 --> 00:02:59,772
 Filter Two is Life-Energy Conversion:
 
 64
-00:03:04,392 --> 00:03:07,528
+00:02:59,772 --> 00:03:02,908
 divide any price tag above a hundred dollars by
 
 65
-00:03:07,528 --> 00:03:11,331
+00:03:02,908 --> 00:03:06,711
 your true post-tax discretionary hourly income to see how
 
 66
-00:03:11,331 --> 00:03:13,533
+00:03:06,711 --> 00:03:08,913
 many Fridays of freedom it costs.
 
 67
-00:03:13,533 --> 00:03:14,400
+00:03:08,913 --> 00:03:09,780
 Filter Three:
 
 68
-00:03:14,400 --> 00:03:17,336
+00:03:09,780 --> 00:03:12,716
 automate your wealth rate on payday morning,
 
 69
-00:03:17,336 --> 00:03:19,804
+00:03:12,716 --> 00:03:15,184
 quarantine bonuses for fourteen days,
 
 70
-00:03:19,804 --> 00:03:22,540
+00:03:15,184 --> 00:03:17,920
 and enjoy the rest completely guilt-free.

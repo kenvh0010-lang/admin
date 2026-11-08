@@ -83,21 +83,13 @@ equity that no sudden algorithm change
 can take away.
 
 22
-00:00:42,370 --> 00:00:45,167
+00:00:42,370 --> 00:00:44,590
 Fifty-two weekly theses turn into two
 
 23
-00:00:45,167 --> 00:00:47,963
+00:00:44,590 --> 00:00:46,810
 hundred sixty published assets a year
 
 24
-00:00:47,963 --> 00:00:50,533
-without adding a single extra work
-
-25
-00:00:50,533 --> 00:00:50,911
-hour.
-
-26
-00:00:50,911 --> 00:00:53,330
-Which is the exact reason why...
+00:00:46,810 --> 00:00:49,270
+without researching five separate topics.

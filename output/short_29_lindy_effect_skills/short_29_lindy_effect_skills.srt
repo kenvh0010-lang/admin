@@ -1,103 +1,99 @@
 1
-00:00:00,000 --> 00:00:02,660
-Half the software tutorials trending this
+00:00:00,000 --> 00:00:02,929
+Many of the software tutorials trending
 
 2
-00:00:02,660 --> 00:00:05,320
-month will be obsolete within twenty-four
+00:00:02,929 --> 00:00:04,806
+this month will be out of
 
 3
-00:00:05,320 --> 00:00:07,331
-months - yet four ancient human
+00:00:04,806 --> 00:00:07,059
+date within a couple of years,
 
 4
-00:00:07,331 --> 00:00:09,147
-skills will pay even more in
+00:00:07,059 --> 00:00:09,312
+yet some very old human skills
 
 5
-00:00:09,147 --> 00:00:10,380
-twenty thirty-five.
+00:00:09,312 --> 00:00:11,340
+keep getting more valuable.
 
 6
-00:00:10,380 --> 00:00:13,274
-Mathematician Benoit Mandelbrot and author Nassim
+00:00:11,340 --> 00:00:14,494
+Mathematician Benoit Mandelbrot formalized it and
 
 7
-00:00:13,274 --> 00:00:15,224
-Taleb call this the Lindy Effect:
+00:00:14,494 --> 00:00:16,876
+author Nassim Taleb popularized it as
 
 8
-00:00:15,224 --> 00:00:16,700
-for non-perishable ideas,
+00:00:16,876 --> 00:00:17,970
+the Lindy Effect:
 
 9
-00:00:16,700 --> 00:00:19,477
-future lifespan is proportional to current age.
+00:00:17,970 --> 00:00:21,060
+for non-perishable things like ideas and skills,
 
 10
-00:00:19,477 --> 00:00:22,430
-What survived centuries will survive decades more.
+00:00:21,060 --> 00:00:23,120
+the longer something has lasted,
 
 11
-00:00:22,430 --> 00:00:24,743
-Chasing shiny app workflows puts you
+00:00:23,120 --> 00:00:25,180
+the longer it is likely to last.
 
 12
-00:00:24,743 --> 00:00:26,799
-on a treadmill that resets every
+00:00:25,180 --> 00:00:27,493
+Chasing shiny app workflows puts you
 
 13
-00:00:26,799 --> 00:00:27,442
-two years.
+00:00:27,493 --> 00:00:29,549
+on a treadmill that resets every
 
 14
-00:00:27,442 --> 00:00:28,984
-Mastering clear writing,
+00:00:29,549 --> 00:00:30,192
+two years.
 
 15
-00:00:28,984 --> 00:00:30,398
-behavioral persuasion,
+00:00:30,192 --> 00:00:31,734
+Mastering clear writing,
 
 16
-00:00:30,398 --> 00:00:31,361
-systems design,
+00:00:31,734 --> 00:00:33,148
+behavioral persuasion,
 
 17
-00:00:31,361 --> 00:00:34,060
-and capital allocation compounds for life.
+00:00:33,148 --> 00:00:34,111
+systems design,
 
 18
-00:00:34,060 --> 00:00:35,896
-Use the eighty-twenty Lindy rule:
+00:00:34,111 --> 00:00:36,810
+and capital allocation compounds for life.
 
 19
-00:00:35,896 --> 00:00:37,953
-spend twenty percent of your learning
+00:00:36,810 --> 00:00:38,613
+Use the eighty-twenty Lindy rule:
 
 20
-00:00:37,953 --> 00:00:39,400
-budget on modern AI tools,
+00:00:38,613 --> 00:00:40,636
+spend twenty percent of your learning
 
 21
-00:00:39,400 --> 00:00:43,460
-and eighty percent sharpening timeless two-thousand-year-old foundations.
+00:00:40,636 --> 00:00:42,057
+budget on modern AI tools,
 
 22
-00:00:43,460 --> 00:00:45,585
-Treat new software as a power
+00:00:42,057 --> 00:00:46,210
+and eighty percent sharpening long-tested two-thousand-year-old foundations.
 
 23
-00:00:45,585 --> 00:00:48,150
-amplifier on top of permanent human
+00:00:46,210 --> 00:00:48,335
+Treat new software as a power
 
 24
-00:00:48,150 --> 00:00:48,810
-judgment,
+00:00:48,335 --> 00:00:50,900
+amplifier on top of permanent human
 
 25
-00:00:48,810 --> 00:00:51,741
-because in an AI-accelerated economy you
-
-26
-00:00:51,741 --> 00:00:53,500
-have to remember that...
+00:00:50,900 --> 00:00:51,560
+judgment.

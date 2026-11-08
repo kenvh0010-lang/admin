@@ -121,8 +121,21 @@ def render_scene_beat_frame(
         )
         source = scene.get("source")
         if source:
-            src_font = _load_font(26 if is_vert else 22, bold=False)
-            draw.text((pad_x + 8, card_bottom + 12), f"Source: {source}", font=src_font, fill=theme.text_muted)
+            src_text = f"Source: {source}"
+            max_src_w = w - 2 * pad_x - 16
+            src_size = 25 if is_vert else 21
+            src_font = _load_font(src_size, bold=False)
+            while src_size > 17:
+                sbx = draw.textbbox((0, 0), src_text, font=src_font)
+                if (sbx[2] - sbx[0]) <= max_src_w:
+                    break
+                src_size -= 2
+                src_font = _load_font(src_size, bold=False)
+            src_lines = _wrap_text(draw, src_text, src_font, max_src_w)[:2]
+            sy = card_bottom + (8 if len(src_lines) > 1 else 12)
+            for sln in src_lines:
+                draw.text((pad_x + 8, sy), sln, font=src_font, fill=theme.text_muted)
+                sy += src_size + 5
 
     # 5. High-Retention Kinetic Caption Box (in Shorts safe zone!)
     cap_top = int(h * (0.68 if is_vert else 0.75))
@@ -194,29 +207,29 @@ def _draw_visual_card_content(
         right_val = scene.get("right_body", "Build assets once, earn 24/7")
 
         lbl_font = _load_font(34 if is_vert else 28, bold=True)
-        body_font = _load_font(44 if is_vert else 34, bold=False)
+        body_font = _load_font(40 if is_vert else 32, bold=False)
 
         if is_vert:
             mid_y = y1 + ch // 2
             draw.rounded_rectangle([x1, y1, x2, mid_y - 14], radius=18, fill=(28, 22, 38), outline=theme.accent_crimson, width=2)
             draw.text((x1 + 26, y1 + 22), f"[X]  {left_label}", font=lbl_font, fill=theme.accent_crimson)
-            for idx, ln in enumerate(_wrap_text(draw, left_val, body_font, cw - 52)[:2]):
-                draw.text((x1 + 26, y1 + 68 + idx * 42), ln, font=body_font, fill=theme.text_primary)
+            for idx, ln in enumerate(_wrap_text(draw, left_val, body_font, cw - 52)[:3]):
+                draw.text((x1 + 26, y1 + 68 + idx * 44), ln, font=body_font, fill=theme.text_primary)
 
             draw.rounded_rectangle([x1, mid_y + 14, x2, y2], radius=18, fill=(16, 36, 52), outline=theme.accent_cyan, width=2)
             draw.text((x1 + 26, mid_y + 36), f"[+]  {right_label}", font=lbl_font, fill=theme.accent_cyan)
-            for idx, ln in enumerate(_wrap_text(draw, right_val, body_font, cw - 52)[:2]):
-                draw.text((x1 + 26, mid_y + 82 + idx * 42), ln, font=body_font, fill=theme.text_primary)
+            for idx, ln in enumerate(_wrap_text(draw, right_val, body_font, cw - 52)[:3]):
+                draw.text((x1 + 26, mid_y + 82 + idx * 44), ln, font=body_font, fill=theme.text_primary)
         else:
             mid_x = x1 + cw // 2
             draw.rounded_rectangle([x1, y1, mid_x - 16, y2], radius=18, fill=(28, 22, 38), outline=theme.accent_crimson, width=2)
             draw.text((x1 + 24, y1 + 24), f"[X]  {left_label}", font=lbl_font, fill=theme.accent_crimson)
-            for idx, ln in enumerate(_wrap_text(draw, left_val, body_font, (cw // 2) - 64)[:3]):
+            for idx, ln in enumerate(_wrap_text(draw, left_val, body_font, (cw // 2) - 64)[:4]):
                 draw.text((x1 + 24, y1 + 74 + idx * 38), ln, font=body_font, fill=theme.text_primary)
 
             draw.rounded_rectangle([mid_x + 16, y1, x2, y2], radius=18, fill=(16, 36, 52), outline=theme.accent_cyan, width=2)
             draw.text((mid_x + 40, y1 + 24), f"[+]  {right_label}", font=lbl_font, fill=theme.accent_cyan)
-            for idx, ln in enumerate(_wrap_text(draw, right_val, body_font, (cw // 2) - 64)[:3]):
+            for idx, ln in enumerate(_wrap_text(draw, right_val, body_font, (cw // 2) - 64)[:4]):
                 draw.text((mid_x + 40, y1 + 74 + idx * 38), ln, font=body_font, fill=theme.text_primary)
 
     elif layout == "compounding_curve":
@@ -253,34 +266,50 @@ def _draw_visual_card_content(
         draw.text((axis_left + 16, axis_bottom + 14), scene.get("stat_subtext", "Time + Leverage -> Asymmetric Output"), font=sub_f, fill=theme.text_muted)
 
     else:
-        # Default: High-impact Stat / Principle Callout + Bullet Takeaways
+        # Default: High-impact Stat / Principle Callout + Bullet Takeaways (auto-fitted to card bounds)
         stat_val = str(scene.get("stat_value", "1%"))
         stat_label = str(scene.get("stat_label", "CORE MENTAL MODEL"))
         bullets = scene.get("bullets", [])
 
-        big_font = _load_font(200 if is_vert else 150, bold=True)
-        lbl_font = _load_font(40 if is_vert else 34, bold=True)
-        bul_font = _load_font(42 if is_vert else 34, bold=False)
-        line_gap = 56 if is_vert else 46
+        big_size = 196 if is_vert else 144
+        big_font = _load_font(big_size, bold=True)
+        while big_size > 64:
+            vb_test = draw.textbbox((0, 0), stat_val, font=big_font)
+            if (vb_test[2] - vb_test[0]) <= cw - 32:
+                break
+            big_size -= 8
+            big_font = _load_font(big_size, bold=True)
 
-        # Lay out once to measure, then draw centered so the card has no dead space
+        lbl_font = _load_font(38 if is_vert else 32, bold=True)
+        bul_font = _load_font(40 if is_vert else 32, bold=False)
+        line_gap = 52 if is_vert else 42
+
+        # Lay out once to measure; shrink if vertical stack exceeds card height
         vb = draw.textbbox((0, 0), stat_val, font=big_font)
         stat_h = vb[3] - vb[1]
         lbl_lines = _wrap_text(draw, stat_label.upper(), lbl_font, cw - 32)[:2]
         bul_lines: List[str] = []
         for b_text in bullets[:3]:
             bul_lines.extend(_wrap_text(draw, f"•  {b_text}", bul_font, cw - 32)[:2])
-        total_h = stat_h + 30 + len(lbl_lines) * (line_gap - 4) + 26 + len(bul_lines) * line_gap
+        total_h = stat_h + 26 + len(lbl_lines) * (line_gap - 4) + 22 + len(bul_lines) * line_gap
+        if total_h > ch and big_size > 84:
+            shrink = min(big_size - 76, total_h - ch + 16)
+            big_size = max(76, big_size - shrink)
+            big_font = _load_font(big_size, bold=True)
+            vb = draw.textbbox((0, 0), stat_val, font=big_font)
+            stat_h = vb[3] - vb[1]
+            total_h = stat_h + 24 + len(lbl_lines) * (line_gap - 4) + 20 + len(bul_lines) * line_gap
+
         curr_y = y1 + max(0, (ch - total_h) // 2)
 
         draw.text((x1 + 16, curr_y - vb[1]), stat_val, font=big_font, fill=theme.accent_gold)
-        curr_y += stat_h + 30
+        curr_y += stat_h + 26
         for ln in lbl_lines:
             draw.text((x1 + 16, curr_y), ln, font=lbl_font, fill=theme.accent_cyan)
             curr_y += line_gap - 4
-        curr_y += 26
+        curr_y += 22
         for ln in bul_lines:
-            if curr_y + line_gap <= y2:
+            if curr_y + line_gap - 6 <= y2:
                 draw.text((x1 + 16, curr_y), ln, font=bul_font, fill=theme.text_primary)
                 curr_y += line_gap
 
@@ -323,10 +352,18 @@ def render_thumbnail(
 
     # Right-side visual metric card
     draw.rounded_rectangle([860, 150, 1212, 570], radius=28, fill=theme.bg_card, outline=theme.accent_gold, width=4)
-    stat_font = _load_font(96, bold=True)
+    stat_size = 96
+    stat_font = _load_font(stat_size, bold=True)
+    while stat_size > 40:
+        sb = draw.textbbox((0, 0), stat_highlight, font=stat_font)
+        if (sb[2] - sb[0]) <= 316:
+            break
+        stat_size -= 6
+        stat_font = _load_font(stat_size, bold=True)
     sb = draw.textbbox((0, 0), stat_highlight, font=stat_font)
     sx = 860 + (352 - (sb[2] - sb[0])) // 2
-    draw.text((sx, 260), stat_highlight, font=stat_font, fill=theme.accent_gold)
+    sy = 260 + max(0, (96 - stat_size) // 2)
+    draw.text((sx, sy), stat_highlight, font=stat_font, fill=theme.accent_gold)
 
     brand_f = _load_font(26, bold=True)
     hb = draw.textbbox((0, 0), theme.channel_handle.upper(), font=brand_f)

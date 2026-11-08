@@ -1,8 +1,8 @@
 # YouTube Upload Pack — The 'Concorde Fallacy' Keeping You in Dead-End Projects
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `57.4s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `54.7s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -12,7 +12,7 @@
 
 ## 2. Copy-Paste SEO Description
 ```text
-Britain and France knew the supersonic Concorde jet would lose billions - yet kept funding it for decades out of pride. Here is how the Concorde Fallacy traps ambitious builders and the Zero-Base Question to escape it.
+Britain and France kept funding the supersonic Concorde long after it was clear it would never pay back its costs. This video shows how the Concorde Fallacy traps ambitious builders and the Zero-Base Question to escape it.
 
 🔗 **Annie Duke's 'Quit' & 'Thinking in Bets' Free Trial + Decision Matrix**: https://kenvh0010-lang.github.io/admin/bio/
 
@@ -26,7 +26,7 @@ Britain and France knew the supersonic Concorde jet would lose billions - yet ke
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

@@ -1,287 +1,279 @@
 1
-00:00:00,000 --> 00:00:04,779
-Large-scale workplace studies tracking thousands of modern professionals uncovered
+00:00:00,000 --> 00:00:03,178
+Asana's 2021 Anatomy of Work survey of more than
 
 2
-00:00:04,779 --> 00:00:06,003
-a sobering statistic:
+00:00:03,178 --> 00:00:06,753
+ten thousand workers found that about sixty percent of
 
 3
-00:00:06,003 --> 00:00:09,442
-roughly sixty percent of the average knowledge worker's day
+00:00:06,753 --> 00:00:09,070
+their time went to work about work:
 
 4
-00:00:09,442 --> 00:00:12,414
-disappears into 'work about work' - status threads,
+00:00:09,070 --> 00:00:10,063
+status threads,
 
 5
-00:00:12,414 --> 00:00:13,522
+00:00:10,063 --> 00:00:11,321
 calendar shuffling,
 
 6
-00:00:13,522 --> 00:00:14,280
-inbox triage,
+00:00:11,321 --> 00:00:12,513
+chasing approvals,
 
 7
-00:00:14,280 --> 00:00:16,028
-and performative coordination.
+00:00:12,513 --> 00:00:14,499
+and searching for information.
 
 8
-00:00:16,028 --> 00:00:19,933
-That leaves barely two fractured hours for genuine problem-solving.
+00:00:14,499 --> 00:00:18,141
+Millions of smart people finish Friday evening drained,
 
 9
-00:00:19,933 --> 00:00:23,780
-Millions of smart people finish Friday evening completely drained,
+00:00:18,141 --> 00:00:21,252
+yet struggle to point to one lasting thing they
 
 10
-00:00:23,780 --> 00:00:26,519
-yet struggle to point to a single durable asset
+00:00:21,252 --> 00:00:23,040
+actually finished all week.
 
 11
-00:00:26,519 --> 00:00:29,550
-they actually moved across the finish line all week.
-
-12
-00:00:29,550 --> 00:00:33,679
+00:00:23,040 --> 00:00:27,169
 Georgetown computer science professor Cal Newport traces this burnout
 
-13
-00:00:33,679 --> 00:00:37,209
+12
+00:00:27,169 --> 00:00:30,699
 epidemic to a structural flaw he calls Pseudo-Productivity.
 
-14
-00:00:37,209 --> 00:00:39,363
+13
+00:00:30,699 --> 00:00:32,853
 On twentieth-century factory floors,
 
-15
-00:00:39,363 --> 00:00:42,834
+14
+00:00:32,853 --> 00:00:36,324
 supervisors could count physical widgets coming off a belt
 
-16
-00:00:42,834 --> 00:00:43,492
+15
+00:00:36,324 --> 00:00:36,982
 every hour.
 
-17
-00:00:43,492 --> 00:00:47,501
+16
+00:00:36,982 --> 00:00:40,991
 When knowledge work arrived without an obvious hourly widget count,
 
-18
-00:00:47,501 --> 00:00:51,630
+17
+00:00:40,991 --> 00:00:45,120
 workplaces lazily substituted visible activity as a proxy for effort.
 
-19
-00:00:51,630 --> 00:00:54,203
+18
+00:00:45,120 --> 00:00:47,693
 Keeping a green chat dot lit for ten hours,
 
-20
-00:00:54,203 --> 00:00:56,297
+19
+00:00:47,693 --> 00:00:49,787
 answering emails in ninety seconds,
 
-21
-00:00:56,297 --> 00:01:00,366
+20
+00:00:49,787 --> 00:00:53,856
 and sitting in back-to-back meetings looks productive while starving
 
-22
-00:01:00,366 --> 00:01:02,520
+21
+00:00:53,856 --> 00:00:56,010
 every project that actually matters.
 
+22
+00:00:56,010 --> 00:00:59,631
+Research explains why overloaded task lists collapse.
+
 23
-00:01:02,520 --> 00:01:06,595
-Cognitive science explains why overloaded task lists collapse under
+00:00:59,631 --> 00:01:03,389
+Professor Sophie Leroy showed that when you switch away
 
 24
-00:01:06,595 --> 00:01:07,629
-their own weight.
+00:01:03,389 --> 00:01:05,028
+from an unfinished task,
 
 25
-00:01:07,629 --> 00:01:12,435
-Professor Sophie Leroy's Attention Residue research demonstrated that switching
+00:01:05,028 --> 00:01:07,830
+part of your attention stays stuck on it.
 
 26
-00:01:12,435 --> 00:01:15,233
-away from deep work to glance at an unresolved
+00:01:07,830 --> 00:01:10,152
+She called this attention residue.
 
 27
-00:01:15,233 --> 00:01:18,457
-message leaves part of your working memory trapped on
+00:01:10,152 --> 00:01:10,904
+Separately,
 
 28
-00:01:18,457 --> 00:01:21,194
-that open loop for over twenty-three minutes.
+00:01:10,904 --> 00:01:15,277
+Gloria Mark's research found it takes about twenty-three minutes
 
 29
-00:01:21,194 --> 00:01:24,418
-When you simultaneously juggle eight active projects,
+00:01:15,277 --> 00:01:18,419
+on average to get back to an interrupted task.
 
 30
-00:01:24,418 --> 00:01:27,824
-each project generates its own stream of daily check-ins
+00:01:18,419 --> 00:01:20,401
+Juggle eight active projects,
 
 31
-00:01:27,824 --> 00:01:31,595
-- locking your prefrontal cortex in permanent shallow recovery
+00:01:20,401 --> 00:01:23,543
+and each one sends its own stream of check-ins
 
 32
-00:01:31,595 --> 00:01:32,690
-from nine to five.
+00:01:23,543 --> 00:01:24,090
+all day.
 
 33
-00:01:32,690 --> 00:01:36,962
+00:01:24,090 --> 00:01:28,692
 Slow Productivity flips that broken math using two foundational shifts:
 
 34
-00:01:36,962 --> 00:01:37,924
+00:01:28,692 --> 00:01:29,729
 Do Fewer Things,
 
 35
-00:01:37,924 --> 00:01:39,549
+00:01:29,729 --> 00:01:31,480
 and Work at a Natural Pace.
 
 36
-00:01:39,549 --> 00:01:42,737
-Capping your active major commitments at two or three
+00:01:31,480 --> 00:01:34,656
+Capping your major commitments at two or three at
 
 37
-00:01:42,737 --> 00:01:46,468
-at any given moment eliminates seventy percent of coordination
+00:01:34,656 --> 00:01:37,703
+a time cuts the check-ins and handoffs that eat
 
 38
-00:01:46,468 --> 00:01:47,430
-noise overnight,
+00:01:37,703 --> 00:01:38,351
+your week,
 
 39
-00:01:47,430 --> 00:01:50,258
-freeing energy to actually finish work swiftly.
+00:01:38,351 --> 00:01:40,879
+freeing energy to actually finish work.
 
 40
-00:01:50,258 --> 00:01:53,025
-Working at a natural pace aligns your day with
+00:01:40,879 --> 00:01:44,833
+Working at a natural pace borrows from physiologist Nathaniel
 
 41
-00:01:53,025 --> 00:01:57,839
-physiologist Nathaniel Kleitman's ninety-minute ultradian focus cycles - pairing
+00:01:44,833 --> 00:01:48,333
+Kleitman's idea of ninety-minute rest-activity cycles:
 
 42
-00:01:57,839 --> 00:01:58,320
-intense,
+00:01:48,333 --> 00:01:50,926
+pair focused sprints with real recovery,
 
 43
-00:01:58,320 --> 00:02:00,967
-uninterrupted sprints with genuine recovery,
+00:01:50,926 --> 00:01:55,010
+and pace big goals across calm seasons instead of all-nighters.
 
 44
-00:02:00,967 --> 00:02:04,457
-and pacing ambitious goals across calm seasons rather than
-
-45
-00:02:04,457 --> 00:02:05,720
-frantic all-nighters.
-
-46
-00:02:05,720 --> 00:02:09,276
+00:01:55,010 --> 00:01:58,549
 Newport's third principle locks the entire system together:
 
-47
-00:02:09,276 --> 00:02:10,481
+45
+00:01:58,549 --> 00:01:59,748
 Obsess Over Quality.
 
-48
-00:02:10,481 --> 00:02:13,013
+46
+00:01:59,748 --> 00:02:02,268
 In both careers and solo media businesses,
 
-49
-00:02:13,013 --> 00:02:14,218
+47
+00:02:02,268 --> 00:02:03,467
 shipping ten rushed,
 
-50
-00:02:14,218 --> 00:02:17,413
+48
+00:02:03,467 --> 00:02:06,646
 average deliverables generates zero lasting leverage,
 
-51
-00:02:17,413 --> 00:02:22,174
+49
+00:02:06,646 --> 00:02:11,385
 whereas producing one undeniably thoughtful flagship asset compounds reputation
 
-52
-00:02:22,174 --> 00:02:23,440
+50
+00:02:11,385 --> 00:02:12,644
 and demand for years.
 
-53
-00:02:23,440 --> 00:02:24,103
+51
+00:02:12,644 --> 00:02:13,304
 Better yet,
 
-54
-00:02:24,103 --> 00:02:27,598
-signature quality earns you immunity from office theater -
+52
+00:02:13,304 --> 00:02:16,723
+signature quality earns you immunity from office theater,
 
-55
-00:02:27,598 --> 00:02:31,456
+53
+00:02:16,723 --> 00:02:20,562
 colleagues and audiences gladly forgive a slower afternoon email
 
-56
-00:02:31,456 --> 00:02:34,831
+54
+00:02:20,562 --> 00:02:23,921
 reply when the finished work you deliver solves problems
 
-57
-00:02:34,831 --> 00:02:36,820
+55
+00:02:23,921 --> 00:02:25,900
 at a level nobody else can touch.
 
-58
-00:02:36,820 --> 00:02:41,735
+56
+00:02:25,900 --> 00:02:30,796
 Deploy this operating system tomorrow morning using three concrete rules.
 
-59
-00:02:41,735 --> 00:02:42,139
+57
+00:02:30,796 --> 00:02:31,198
 First,
 
-60
-00:02:42,139 --> 00:02:46,179
+58
+00:02:31,198 --> 00:02:35,223
 replace your endless to-do list with a Two-List Pull System:
 
-61
-00:02:46,179 --> 00:02:49,209
+59
+00:02:35,223 --> 00:02:38,241
 park incoming requests inside a Holding Tank,
 
-62
-00:02:49,209 --> 00:02:52,172
+60
+00:02:38,241 --> 00:02:41,192
 and enforce a strict limit of three items on
 
+61
+00:02:41,192 --> 00:02:42,332
+your Active List,
+
+62
+00:02:42,332 --> 00:02:46,222
+nothing new gets pulled in until one active project ships.
+
 63
-00:02:52,172 --> 00:02:55,202
-your Active List - nothing new gets pulled in
-
-64
-00:02:55,202 --> 00:02:57,289
-until one active project ships.
-
-65
-00:02:57,289 --> 00:02:57,761
+00:02:46,222 --> 00:02:46,691
 Second,
 
-66
-00:02:57,761 --> 00:03:02,272
+64
+00:02:46,691 --> 00:02:51,185
 protect one sealed ninety-minute Ultradian Deep Block every morning
 
-67
-00:03:02,272 --> 00:03:05,841
+65
+00:02:51,185 --> 00:02:54,740
 with your phone in another room before opening email.
 
-68
-00:03:05,841 --> 00:03:06,245
+66
+00:02:54,740 --> 00:02:55,142
 Third,
 
-69
-00:03:06,245 --> 00:03:07,524
+67
+00:02:55,142 --> 00:02:56,416
 batch all messages,
 
-70
-00:03:07,524 --> 00:03:08,197
+68
+00:02:56,416 --> 00:02:57,087
 logistics,
 
-71
-00:03:08,197 --> 00:03:12,305
+69
+00:02:57,087 --> 00:03:01,178
 and admin into two crisp twenty-five-minute windows at midday
 
-72
-00:03:12,305 --> 00:03:13,180
+70
+00:03:01,178 --> 00:03:02,050
 and four P.M.

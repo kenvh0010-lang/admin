@@ -1,38 +1,38 @@
 1
-00:00:00,000 --> 00:00:02,806
+00:00:00,000 --> 00:00:03,017
 Highlighting books and clipping articles into
 
 2
-00:00:02,806 --> 00:00:05,425
+00:00:03,017 --> 00:00:05,834
 a sleek Notion workspace feels productive,
 
 3
-00:00:05,425 --> 00:00:07,608
-until you realize ninety percent of
+00:00:05,834 --> 00:00:07,644
+until you notice how few of
 
 4
-00:00:07,608 --> 00:00:09,790
-saved notes are never opened again.
+00:00:07,644 --> 00:00:09,790
+those notes you ever open again.
 
 5
-00:00:09,790 --> 00:00:10,269
+00:00:09,790 --> 00:00:10,285
 In 2014,
 
 6
-00:00:10,269 --> 00:00:13,322
-Zettelkasten researcher Christian Tietze named this
+00:00:10,285 --> 00:00:13,191
+Zettelkasten writer Christian Tietze named this
 
 7
-00:00:13,322 --> 00:00:15,059
+00:00:13,191 --> 00:00:14,985
 trap the Collector's Fallacy:
 
 8
-00:00:15,059 --> 00:00:17,214
+00:00:14,985 --> 00:00:17,211
 our brains mistake saving a bookmark
 
 9
-00:00:17,214 --> 00:00:19,190
-for actually absorbing the skill.
+00:00:17,211 --> 00:00:19,190
+for actually learning the skill.
 
 10
 00:00:19,190 --> 00:00:21,321
@@ -87,21 +87,17 @@ script,
 or working template.
 
 23
-00:00:43,140 --> 00:00:45,480
+00:00:43,140 --> 00:00:45,445
 Judge your system by what you
 
 24
-00:00:45,480 --> 00:00:46,691
+00:00:45,445 --> 00:00:46,637
 ship on Friday,
 
 25
-00:00:46,691 --> 00:00:49,435
+00:00:46,637 --> 00:00:49,339
 never by how pretty your dashboard
 
 26
-00:00:49,435 --> 00:00:50,726
+00:00:49,339 --> 00:00:50,610
 looks on Monday.
-
-27
-00:00:50,726 --> 00:00:52,340
-Because otherwise...

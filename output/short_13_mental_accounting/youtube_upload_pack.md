@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Why You Spend Tax Refunds Faster Than Paychecks (Mental Accounting)
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `57.9s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `56.7s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -17,16 +17,16 @@ A dollar is a dollar, yet human brains treat a $1,000 tax refund completely diff
 🔗 **Richard Thaler's 'Misbehaving' on Audible + Free Windfall Margin Tracker**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
-00:00 - Same $1,000 - Two Opposite Behaviors
+00:00 - Same $1,000, Two Opposite Behaviors
 00:10 - Richard Thaler's Nobel Discovery (2017)
-00:23 - Why 'Found Money' Numbs Spending Caution
-00:35 - The 14-Day Fungibility Quarantine
-00:48 - Strip the Fake Label Off Every Dollar
+00:25 - Why 'Found Money' Numbs Spending Caution
+00:36 - The 14-Day Fungibility Quarantine
+00:50 - Strip the Fake Label Off Every Dollar
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

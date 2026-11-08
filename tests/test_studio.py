@@ -94,6 +94,71 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
             self.assertGreater(thumb.stat().st_size, 5_000)
             self.assertGreater(ambient.stat().st_size, 20_000)
 
+    def test_no_visual_card_or_source_clipping_across_48_storyboards(self) -> None:
+        from PIL import Image, ImageDraw
+        from yt_studio.visual_composer import _load_font, _wrap_text
+
+        img = Image.new("RGB", (1920, 1920))
+        draw = ImageDraw.Draw(img)
+        for sb in sorted(p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"):
+            data = json.loads(sb.read_text(encoding="utf-8"))
+            is_vert = data.get("format", "short") == "short"
+            w = 1080 if is_vert else 1920
+            pad_x = int(w * (0.075 if is_vert else 0.06))
+            cw = (w - pad_x - 40) - (pad_x + 40)
+            max_src_w = w - 2 * pad_x - 16
+
+            for s_idx, sc in enumerate(data["scenes"]):
+                if sc.get("visual_type", "stat_callout") == "stat_callout":
+                    stat_val = str(sc.get("stat_value", "1%"))
+                    big_size = 196 if is_vert else 144
+                    big_font = _load_font(big_size, bold=True)
+                    while big_size > 64:
+                        vb = draw.textbbox((0, 0), stat_val, font=big_font)
+                        if (vb[2] - vb[0]) <= cw - 32:
+                            break
+                        big_size -= 8
+                        big_font = _load_font(big_size, bold=True)
+                    vb = draw.textbbox((0, 0), stat_val, font=big_font)
+                    self.assertLessEqual(
+                        vb[2] - vb[0], cw - 16,
+                        f"Stat value {stat_val!r} clips card in {sb.name} scene {s_idx}",
+                    )
+                if sc.get("source"):
+                    src_text = f"Source: {sc['source']}"
+                    src_size = 25 if is_vert else 21
+                    src_font = _load_font(src_size, bold=False)
+                    while src_size > 17:
+                        sbx = draw.textbbox((0, 0), src_text, font=src_font)
+                        if (sbx[2] - sbx[0]) <= max_src_w:
+                            break
+                        src_size -= 2
+                        src_font = _load_font(src_size, bold=False)
+                    for sln in _wrap_text(draw, src_text, src_font, max_src_w)[:2]:
+                        lbx = draw.textbbox((0, 0), sln, font=src_font)
+                        self.assertLessEqual(
+                            lbx[2] - lbx[0], max_src_w + 4,
+                            f"Source line {sln!r} clips frame in {sb.name} scene {s_idx}",
+                        )
+
+    def test_calendar_csv_and_amazon_tag_sync(self) -> None:
+        import csv
+        from yt_studio.site_builder import DEFAULT_AMAZON_TAG
+
+        self.assertEqual(DEFAULT_AMAZON_TAG, "mindandmarg06-20")
+        sb_titles = {
+            json.loads(p.read_text(encoding="utf-8"))["title"]
+            for p in CONTENT_DIR.glob("*.json")
+            if p.name != "published_ledger.json"
+        }
+        for csv_name in ("calendar_30_days.csv", "calendar_90_days.csv"):
+            rows = list(csv.DictReader((CONTENT_DIR / csv_name).read_text(encoding="utf-8").splitlines()))
+            self.assertEqual(len(rows), 48, f"Expected 48 rows in {csv_name}")
+            for row in rows:
+                title = row["Video Title (English - High RPM)"]
+                self.assertIn(title, sb_titles, f"Unmatched calendar title {title!r} in {csv_name}")
+
 
 if __name__ == "__main__":
     unittest.main()
+

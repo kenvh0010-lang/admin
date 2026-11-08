@@ -63,33 +63,29 @@ forcing you to drop everything except
 the twenty percent asymmetric core.
 
 17
-00:00:32,860 --> 00:00:35,126
+00:00:32,860 --> 00:00:35,192
 Apply the Ten-X Filter every Sunday:
 
 18
-00:00:35,126 --> 00:00:37,454
+00:00:35,192 --> 00:00:37,589
 identify the narrow twenty percent of
 
 19
-00:00:37,454 --> 00:00:39,971
+00:00:37,589 --> 00:00:40,181
 work producing nearly all real leverage,
 
 20
-00:00:39,971 --> 00:00:42,488
-and ruthlessly eliminate or automate the
+00:00:40,181 --> 00:00:42,448
+and eliminate or automate the noisy
 
 21
-00:00:42,488 --> 00:00:43,810
-noisy eighty percent.
+00:00:42,448 --> 00:00:43,420
+eighty percent.
 
 22
-00:00:43,810 --> 00:00:46,337
+00:00:43,420 --> 00:00:45,638
 Doubling traps you in linear hustle;
 
 23
-00:00:46,337 --> 00:00:48,583
+00:00:45,638 --> 00:00:47,610
 ten-x forces radical simplicity.
-
-24
-00:00:48,583 --> 00:00:50,900
-That hidden shift explains why...

@@ -1,8 +1,8 @@
 # YouTube Upload Pack — The Ferrari Paradox: Nobody Is Actually Looking at You
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `52.0s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `49.6s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -12,21 +12,21 @@
 
 ## 2. Copy-Paste SEO Description
 ```text
-Working as a hotel valet in Los Angeles, author Morgan Housel noticed a psychological irony about $300,000 supercars: onlookers stare at the machine and mentally erase the driver. Here is the Man in the Car Paradox.
+Working as a hotel valet in Los Angeles, author Morgan Housel noticed a psychological irony about $300,000 supercars: onlookers stare at the machine and mentally erase the driver. This video covers the Man in the Car Paradox.
 
 🔗 **Stealth Wealth Freedom Calculator + Morgan Housel Book List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
 00:00 - Strangers Stare at the Paint, Not the Driver
-00:09 - Morgan Housel's Hotel Valet Realization
-00:21 - Trading Real Freedom for Imaginary Applause
+00:08 - Morgan Housel's Hotel Valet Realization
+00:20 - Trading Real Freedom for Imaginary Applause
 00:32 - Build Character Assets Debt Cannot Buy
 00:42 - The Desert-Island Purchase Filter
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

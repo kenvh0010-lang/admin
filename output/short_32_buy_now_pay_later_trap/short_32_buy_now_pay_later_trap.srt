@@ -1,95 +1,103 @@
 1
-00:00:00,000 --> 00:00:03,078
+00:00:00,000 --> 00:00:03,017
 Splitting a seventy-six-dollar checkout into four
 
 2
-00:00:03,078 --> 00:00:05,527
+00:00:03,017 --> 00:00:05,418
 easy payments of nineteen dollars looks
 
 3
-00:00:05,527 --> 00:00:07,286
-harmless - until you see how
+00:00:05,418 --> 00:00:05,973
+harmless,
 
 4
-00:00:07,286 --> 00:00:09,610
-it sedates your brain's alarm system.
+00:00:05,973 --> 00:00:07,697
+until you see how it softens
 
 5
-00:00:09,610 --> 00:00:12,786
-Stanford brain-imaging studies found that seeing
+00:00:07,697 --> 00:00:09,790
+your brain's alarm about spending.
 
 6
-00:00:12,786 --> 00:00:14,771
-a full price tag activates the
+00:00:09,790 --> 00:00:12,966
+Stanford brain-imaging studies found that seeing
 
 7
-00:00:14,771 --> 00:00:15,234
-insula,
+00:00:12,966 --> 00:00:14,951
+a full price tag activates the
 
 8
-00:00:15,234 --> 00:00:17,748
-the exact neural region that processes
+00:00:14,951 --> 00:00:15,414
+insula,
 
 9
-00:00:17,748 --> 00:00:18,675
-physical pain,
+00:00:15,414 --> 00:00:17,928
+the exact neural region that processes
 
 10
-00:00:18,675 --> 00:00:20,527
-acting as a natural brake on
+00:00:17,928 --> 00:00:18,855
+physical pain,
 
 11
-00:00:20,527 --> 00:00:21,520
-impulse buying.
+00:00:18,855 --> 00:00:20,707
+acting as a natural brake on
 
 12
-00:00:21,520 --> 00:00:24,579
-Buy-now-pay-later buttons exploit payment decoupling.
+00:00:20,707 --> 00:00:21,700
+impulse buying.
 
 13
-00:00:24,579 --> 00:00:27,639
-By shrinking seventy-six dollars into nineteen today,
+00:00:21,700 --> 00:00:24,727
+Buy-now-pay-later buttons use what researchers call
 
 14
-00:00:27,639 --> 00:00:29,832
-checkout screens numb that pain signal
+00:00:24,727 --> 00:00:25,854
+payment decoupling:
 
 15
-00:00:29,832 --> 00:00:31,506
-and push shoppers to spend up
+00:00:25,854 --> 00:00:28,347
+the cost feels separate from the purchase.
 
 16
-00:00:31,506 --> 00:00:33,180
-to thirty-eight percent more.
+00:00:28,347 --> 00:00:31,255
+Shrinking seventy-six dollars into nineteen today
 
 17
-00:00:33,180 --> 00:00:35,788
-Protect your margin with the Full-Price
+00:00:31,255 --> 00:00:33,214
+makes the price feel smaller than
 
 18
-00:00:35,788 --> 00:00:36,457
-Cash Rule:
+00:00:33,214 --> 00:00:33,570
+it is.
 
 19
-00:00:36,457 --> 00:00:40,135
-never split a non-essential purchase into installments.
+00:00:33,570 --> 00:00:36,178
+Protect your margin with the Full-Price
 
 20
-00:00:40,135 --> 00:00:42,744
-If paying the full amount stings today,
+00:00:36,178 --> 00:00:36,847
+Cash Rule:
 
 21
-00:00:42,744 --> 00:00:43,680
-close the tab.
+00:00:36,847 --> 00:00:40,525
+never split a non-essential purchase into installments.
 
 22
-00:00:43,680 --> 00:00:46,065
-Keep checkout friction high so phantom
+00:00:40,525 --> 00:00:43,134
+If paying the full amount stings today,
 
 23
-00:00:46,065 --> 00:00:48,827
-micro-bills never eat next month's paycheck,
+00:00:43,134 --> 00:00:44,070
+close the tab.
 
 24
-00:00:48,827 --> 00:00:51,400
-because behavioral science proves that...
+00:00:44,070 --> 00:00:46,336
+Keep checkout friction high so small
+
+25
+00:00:46,336 --> 00:00:48,854
+installment bills never eat next month's
+
+26
+00:00:48,854 --> 00:00:49,420
+paycheck.

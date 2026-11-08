@@ -1,18 +1,18 @@
-# YouTube Upload Pack — How '4 Easy Payments of $19' Hacks Your Brain's Pain Center
+# YouTube Upload Pack — How '4 Easy Payments of $19' Dulls the Pain of Paying
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `51.4s`
-- **Voice Engine Used**: `offline-preview (install edge-tts for free neural voice)`
+- **Estimated Runtime**: `49.4s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
-1. **How '4 Easy Payments of $19' Hacks Your Brain's Pain Center**
+1. **How '4 Easy Payments of $19' Dulls the Pain of Paying**
 2. The Neuroscience Trick Behind Buy Now, Pay Later
 3. Why Splitting Payments Increases Impulse Spending by 38%
 
 ## 2. Copy-Paste SEO Description
 ```text
-Stanford neuroeconomics research explains why '4 interest-free payments of $19' sedates the insula - your brain's natural spending brake - triggering up to 38% higher impulse spend. Here is the Full-Price Cash Rule to fight back.
+Splitting a price into '4 interest-free payments of $19' makes each number look small, which softens what psychologists call the pain of paying. This video covers the Full-Price Cash Rule to fight back.
 
 🔗 **72-Hour Impulse Filter & Cashflow Margin Sheet**: https://kenvh0010-lang.github.io/admin/bio/
 
@@ -21,12 +21,12 @@ Stanford neuroeconomics research explains why '4 interest-free payments of $19' 
 00:09 - Stanford's 'Pain of Paying' Brain Scans
 00:21 - Payment Decoupling Multiplies Micro-Bills
 00:33 - The Full-Price Cash Clarity Rule
-00:43 - Never Pre-Spend Next Month's Freedom
+00:44 - Never Pre-Spend Next Month's Freedom
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
 
-⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. Some links above may be affiliate links that support the channel at no extra cost to you.
+⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
 
 ## 3. Pinned Comment (Boosts Engagement + Early Affiliate Revenue!)

@@ -1,103 +1,103 @@
 1
-00:00:00,000 --> 00:00:02,794
+00:00:00,000 --> 00:00:02,993
 Everyone dreams of launching a flashy startup.
 
 2
-00:00:02,794 --> 00:00:03,402
+00:00:02,993 --> 00:00:03,643
 Meanwhile,
 
 3
-00:00:03,402 --> 00:00:06,379
+00:00:03,643 --> 00:00:06,831
 quiet solo operators solving unglamorous workflow
 
 4
-00:00:06,379 --> 00:00:08,687
-bottlenecks keep ninety cents of every
+00:00:06,831 --> 00:00:08,848
+problems keep most of what they
 
 5
-00:00:08,687 --> 00:00:09,720
-dollar they earn.
+00:00:08,848 --> 00:00:09,173
+earn,
 
 6
-00:00:09,720 --> 00:00:12,888
-Look inside profitable one-person digital businesses.
+00:00:09,173 --> 00:00:11,060
+because their costs stay low.
 
 7
-00:00:12,888 --> 00:00:15,099
-Instead of chasing venture funding or
+00:00:11,060 --> 00:00:13,956
+Look inside small one-person digital businesses.
 
 8
-00:00:15,099 --> 00:00:15,756
-viral hype,
+00:00:13,956 --> 00:00:16,188
+Instead of chasing venture funding or
 
 9
-00:00:15,756 --> 00:00:17,549
-they package niche checklists,
+00:00:16,188 --> 00:00:16,852
+viral hype,
 
 10
-00:00:17,549 --> 00:00:18,267
-calculators,
+00:00:16,852 --> 00:00:18,662
+they package niche checklists,
 
 11
-00:00:18,267 --> 00:00:20,358
-and evergreen guides that save busy
+00:00:18,662 --> 00:00:19,386
+calculators,
 
 12
-00:00:20,358 --> 00:00:22,510
-professionals five hours every week.
+00:00:19,386 --> 00:00:21,678
+and long-lasting guides that save busy
 
 13
-00:00:22,510 --> 00:00:25,205
-Flashy ideas attract ten thousand copycats
+00:00:21,678 --> 00:00:23,850
+professionals real hours every week.
 
 14
-00:00:25,205 --> 00:00:27,515
-overnight and burn cash on overhead.
+00:00:23,850 --> 00:00:26,300
+Flashy ideas attract crowds of copycats
 
 15
-00:00:27,515 --> 00:00:30,209
-Boring operational headaches - like client
+00:00:26,300 --> 00:00:27,934
+and burn cash on overhead.
 
 16
-00:00:30,209 --> 00:00:32,776
-onboarding trackers or audit templates -
+00:00:27,934 --> 00:00:29,755
+Boring operational headaches,
 
 17
-00:00:32,776 --> 00:00:34,380
-stay wide open for years.
+00:00:29,755 --> 00:00:32,959
+like client onboarding trackers or audit templates,
 
 18
-00:00:34,380 --> 00:00:36,414
-Use the Boring Bottleneck Filter:
+00:00:32,959 --> 00:00:34,530
+get far less competition.
 
 19
-00:00:36,414 --> 00:00:38,694
-stop asking what sounds impressive at
+00:00:34,530 --> 00:00:36,564
+Use the Boring Bottleneck Filter:
 
 20
-00:00:38,694 --> 00:00:39,619
-dinner parties,
+00:00:36,564 --> 00:00:38,844
+stop asking what sounds impressive at
 
 21
-00:00:39,619 --> 00:00:41,961
-and list three tedious spreadsheets or
+00:00:38,844 --> 00:00:39,769
+dinner parties,
 
 22
-00:00:41,961 --> 00:00:44,549
-workflows people in your industry complain
+00:00:39,769 --> 00:00:42,111
+and list three tedious spreadsheets or
 
 23
-00:00:44,549 --> 00:00:45,720
-about every Monday.
+00:00:42,111 --> 00:00:44,699
+workflows people in your industry complain
 
 24
-00:00:45,720 --> 00:00:47,919
-Vanity projects feed your ego,
+00:00:44,699 --> 00:00:45,870
+about every Monday.
 
 25
-00:00:47,919 --> 00:00:50,851
-while boring utility funds your freedom.
+00:00:45,870 --> 00:00:47,910
+Vanity projects feed your ego,
 
 26
-00:00:50,851 --> 00:00:54,150
-Yet beginners miss this every year because...
+00:00:47,910 --> 00:00:50,630
+while boring utility funds your freedom.

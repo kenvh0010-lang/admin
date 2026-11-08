@@ -23,6 +23,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: mind-and-margin-video-factory
+  cancel-in-progress: true
+
 jobs:
   produce-and-publish:
     runs-on: ubuntu-latest
@@ -77,8 +81,9 @@ jobs:
         run: |
           git config user.name "Mind & Margin Autopilot"
           git config user.email "actions@github.com"
-          git add docs/ products/bio_funnel_page/ output/ content/published_ledger.json 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "chore(autopilot): sync 48-guide site, neural voice SEO packs & ledger [skip ci]" && git push)
+          git add docs/ products/bio_funnel_page/ output/
+          if [ -f content/published_ledger.json ]; then git add content/published_ledger.json; fi
+          git diff --cached --quiet || (git pull --rebase origin main && git commit -m "chore(autopilot): sync 48-guide site, neural voice SEO packs & ledger [skip ci]" && git push)
 
       - name: Publish 90-Day Neural-Voiced MP4 Packs (48 Videos) to GitHub Releases
         uses: softprops/action-gh-release@v2
