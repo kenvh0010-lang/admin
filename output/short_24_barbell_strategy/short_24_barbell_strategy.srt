@@ -1,0 +1,103 @@
+1
+00:00:00,000 --> 00:00:03,405
+Conventional career advice offers two bad choices:
+
+2
+00:00:03,405 --> 00:00:05,584
+play it completely safe forever,
+
+3
+00:00:05,584 --> 00:00:07,287
+or burn your boats on one
+
+4
+00:00:07,287 --> 00:00:08,240
+reckless leap.
+
+5
+00:00:08,240 --> 00:00:10,485
+Risk scholar Nassim Taleb outlined a
+
+6
+00:00:10,485 --> 00:00:13,478
+smarter third architecture in Antifragile called
+
+7
+00:00:13,478 --> 00:00:14,787
+the Barbell Strategy.
+
+8
+00:00:14,787 --> 00:00:17,344
+Skip fragile moderate risk in the middle,
+
+9
+00:00:17,344 --> 00:00:19,900
+and deliberately weight the two extremes.
+
+10
+00:00:19,900 --> 00:00:22,508
+Put ninety percent of your foundation
+
+11
+00:00:22,508 --> 00:00:23,917
+on ironclad defense:
+
+12
+00:00:23,917 --> 00:00:25,538
+steady career cashflow,
+
+13
+00:00:25,538 --> 00:00:26,877
+low fixed overhead,
+
+14
+00:00:26,877 --> 00:00:28,286
+and liquid reserves.
+
+15
+00:00:28,286 --> 00:00:30,401
+Put ten percent - five focused
+
+16
+00:00:30,401 --> 00:00:32,374
+hours a week - into uncapped
+
+17
+00:00:32,374 --> 00:00:33,290
+digital bets.
+
+18
+00:00:33,290 --> 00:00:34,826
+Use the Barbell Rule:
+
+19
+00:00:34,826 --> 00:00:37,168
+never risk stability you need to
+
+20
+00:00:37,168 --> 00:00:38,777
+sleep calmly at night,
+
+21
+00:00:38,777 --> 00:00:40,606
+and never let a week pass
+
+22
+00:00:40,606 --> 00:00:43,459
+without shipping one small project with
+
+23
+00:00:43,459 --> 00:00:44,630
+uncapped upside.
+
+24
+00:00:44,630 --> 00:00:46,916
+When your downside is protected,
+
+25
+00:00:46,916 --> 00:00:50,631
+patience turns asymmetric bets into inevitable wins.
+
+26
+00:00:50,631 --> 00:00:53,060
+That is why builders reject how...

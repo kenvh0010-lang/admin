@@ -1,0 +1,379 @@
+1
+00:00:00,000 --> 00:00:01,156
+For half a century,
+
+2
+00:00:01,156 --> 00:00:04,867
+every graduation speech and job interview revolved around one
+
+3
+00:00:04,867 --> 00:00:06,205
+intimidating question:
+
+4
+00:00:06,205 --> 00:00:08,639
+where do you see yourself in five years?
+
+5
+00:00:08,639 --> 00:00:11,681
+That question made sense in nineteen seventy-five,
+
+6
+00:00:11,681 --> 00:00:14,905
+when corporate career ladders moved at glacial speed.
+
+7
+00:00:14,905 --> 00:00:18,616
+In an AI-accelerated economy where tools and entire workflows
+
+8
+00:00:18,616 --> 00:00:20,563
+transform every eighteen months,
+
+9
+00:00:20,563 --> 00:00:24,092
+locking yourself into a rigid five-year script creates two
+
+10
+00:00:24,092 --> 00:00:25,430
+painful failure modes:
+
+11
+00:00:25,430 --> 00:00:28,046
+endless analysis paralysis before starting,
+
+12
+00:00:28,046 --> 00:00:31,575
+or sunk-cost misery climbing a ladder you secretly outgrew
+
+13
+00:00:31,575 --> 00:00:32,183
+years ago.
+
+14
+00:00:32,183 --> 00:00:33,948
+In her book Tiny Experiments,
+
+15
+00:00:33,948 --> 00:00:38,145
+neuroscientist Anne-Laure Le Cunff replaces linear life planning with
+
+16
+00:00:38,145 --> 00:00:40,457
+a far more adaptable operating system:
+
+17
+00:00:40,457 --> 00:00:42,830
+treating your career like a laboratory.
+
+18
+00:00:42,830 --> 00:00:46,939
+Traditional goals fail because they anchor your self-worth to
+
+19
+00:00:46,939 --> 00:00:49,431
+outcomes you cannot directly control,
+
+20
+00:00:49,431 --> 00:00:53,204
+like hitting ten thousand subscribers or landing a dream
+
+21
+00:00:53,204 --> 00:00:54,281
+title by thirty.
+
+22
+00:00:54,281 --> 00:00:56,033
+When progress starts slow,
+
+23
+00:00:56,033 --> 00:00:58,188
+perfectionism tells you to quit.
+
+24
+00:00:58,188 --> 00:01:02,028
+Le Cunff flips this script with a simple scientific Pact:
+
+25
+00:01:02,028 --> 00:01:05,059
+I will perform one specific action at a clear
+
+26
+00:01:05,059 --> 00:01:06,406
+cadence for a short,
+
+27
+00:01:06,406 --> 00:01:10,179
+bounded duration - such as publishing one visual insight
+
+28
+00:01:10,179 --> 00:01:12,334
+every morning for fourteen days,
+
+29
+00:01:12,334 --> 00:01:16,106
+or building three small automation scripts in two weeks.
+
+30
+00:01:16,106 --> 00:01:17,925
+During those fourteen days,
+
+31
+00:01:17,925 --> 00:01:20,417
+you ignore vanity metrics completely.
+
+32
+00:01:20,417 --> 00:01:22,236
+Success is binary and calm:
+
+33
+00:01:22,236 --> 00:01:25,200
+did you show up and collect real-world data?
+
+34
+00:01:25,200 --> 00:01:28,897
+Tiny Experiments become even more powerful when paired with
+
+35
+00:01:28,897 --> 00:01:32,344
+systems theorist John Gall's nineteen seventy-five law:
+
+36
+00:01:32,344 --> 00:01:35,665
+every complex system that works evolved from a simple
+
+37
+00:01:35,665 --> 00:01:37,232
+system that worked first.
+
+38
+00:01:37,232 --> 00:01:41,869
+Ambitious beginners routinely spend six months in private designing logos,
+
+39
+00:01:41,869 --> 00:01:42,809
+legal entities,
+
+40
+00:01:42,809 --> 00:01:46,318
+and forty-page curricula for an audience they have never
+
+41
+00:01:46,318 --> 00:01:48,512
+tested - only to launch to silence.
+
+42
+00:01:48,512 --> 00:01:52,460
+A fourteen-day experimental pact forces Version One simplicity.
+
+43
+00:01:52,460 --> 00:01:54,277
+By shipping ten short essays,
+
+44
+00:01:54,277 --> 00:01:55,843
+five prototype templates,
+
+45
+00:01:55,843 --> 00:01:59,541
+or three concise video breakdowns in public over two weeks,
+
+46
+00:01:59,541 --> 00:02:03,050
+you collect honest market signal for zero dollars before
+
+47
+00:02:03,050 --> 00:02:04,930
+investing months of your life.
+
+48
+00:02:04,930 --> 00:02:08,138
+Look closely at almost any category-of-one creator,
+
+49
+00:02:08,138 --> 00:02:08,642
+founder,
+
+50
+00:02:08,642 --> 00:02:11,913
+or independent analyst and you will notice a secret:
+
+51
+00:02:11,913 --> 00:02:15,185
+almost none of them predicted their winning niche on
+
+52
+00:02:15,185 --> 00:02:15,688
+day one.
+
+53
+00:02:15,688 --> 00:02:16,191
+Instead,
+
+54
+00:02:16,191 --> 00:02:19,777
+they ran four or five consecutive tiny experiments across
+
+55
+00:02:19,777 --> 00:02:20,847
+a single quarter.
+
+56
+00:02:20,847 --> 00:02:23,111
+Loop one tested productivity habits;
+
+57
+00:02:23,111 --> 00:02:25,376
+loop two tested visual storytelling;
+
+58
+00:02:25,376 --> 00:02:29,654
+loop three combined behavioral economics with automated dashboards -
+
+59
+00:02:29,654 --> 00:02:33,051
+and suddenly one specific angle sparked five times the
+
+60
+00:02:33,051 --> 00:02:36,889
+reader replies while feeling like effortless play to produce.
+
+61
+00:02:36,889 --> 00:02:40,223
+You cannot think your way into unfair career leverage
+
+62
+00:02:40,223 --> 00:02:41,230
+on a whiteboard;
+
+63
+00:02:41,230 --> 00:02:44,690
+you uncover it through low-stakes contact with reality.
+
+64
+00:02:44,690 --> 00:02:46,941
+When a fourteen-day pact finishes,
+
+65
+00:02:46,941 --> 00:02:49,987
+how you review the data determines everything.
+
+66
+00:02:49,987 --> 00:02:53,298
+Amateurs treat small early numbers as a verdict on
+
+67
+00:02:53,298 --> 00:02:54,159
+their talent.
+
+68
+00:02:54,159 --> 00:02:57,403
+Scientists open a single notebook page and run Le
+
+69
+00:02:57,403 --> 00:03:00,648
+Cunff's ten-minute Plus-Minus-Next retrospective.
+
+70
+00:03:00,648 --> 00:03:01,376
+Under Plus,
+
+71
+00:03:01,376 --> 00:03:05,150
+list what gave you energy and resonated with real people.
+
+72
+00:03:05,150 --> 00:03:05,945
+Under Minus,
+
+73
+00:03:05,945 --> 00:03:09,719
+note the exact bottlenecks that felt unnecessarily heavy.
+
+74
+00:03:09,719 --> 00:03:10,447
+Under Next,
+
+75
+00:03:10,447 --> 00:03:13,625
+choose one of three calm paths for the following
+
+76
+00:03:13,625 --> 00:03:14,288
+two weeks:
+
+77
+00:03:14,288 --> 00:03:16,406
+Persist if momentum is building,
+
+78
+00:03:16,406 --> 00:03:19,254
+Pivot one variable such as format or topic,
+
+79
+00:03:19,254 --> 00:03:23,690
+or consciously Pause the experiment guilt-free with lessons banked.
+
+80
+00:03:23,690 --> 00:03:26,905
+Retire the pressure of figuring out the next five
+
+81
+00:03:26,905 --> 00:03:30,907
+years and design one fourteen-day Tiny Experiment today using
+
+82
+00:03:30,907 --> 00:03:31,694
+three rules.
+
+83
+00:03:31,694 --> 00:03:32,285
+Rule one:
+
+84
+00:03:32,285 --> 00:03:35,697
+write a single concrete pact sentence - for example,
+
+85
+00:03:35,697 --> 00:03:39,830
+I will publish one three-hundred-word mental model breakdown or
+
+86
+00:03:39,830 --> 00:03:43,504
+build one useful spreadsheet template every two days for
+
+87
+00:03:43,504 --> 00:03:44,423
+fourteen days.
+
+88
+00:03:44,423 --> 00:03:45,013
+Rule two:
+
+89
+00:03:45,013 --> 00:03:48,622
+cap daily execution under forty-five minutes so you can
+
+90
+00:03:48,622 --> 00:03:51,574
+complete every rep alongside a full-time job.
+
+91
+00:03:51,574 --> 00:03:52,296
+Rule three:
+
+92
+00:03:52,296 --> 00:03:55,642
+refuse to judge metrics until day fourteen arrives,
+
+93
+00:03:55,642 --> 00:03:58,069
+then run your Plus-Minus-Next review.
+
+94
+00:03:58,069 --> 00:03:59,644
+Six tiny loops from now,
+
+95
+00:03:59,644 --> 00:04:02,990
+your skills and direction will look unrecognizable.

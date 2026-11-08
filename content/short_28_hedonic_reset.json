@@ -1,0 +1,88 @@
+{
+  "title": "Why Every Luxury Feels Normal After 90 Days (Hedonic Adaptation)",
+  "alt_title_1": "The 90-Day Brain Glitch Behind Lifestyle Creep",
+  "alt_title_2": "How to Escape the Hedonic Treadmill Without Deprivation",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Psychologists Philip Brickman and Donald Campbell discovered why big material upgrades fade into invisible baseline within 90 days while the monthly bills last for years. Here is the Intentional Contrast protocol to beat Hedonic Adaptation.",
+  "tags": [
+    "hedonic adaptation",
+    "hedonic treadmill",
+    "lifestyle creep",
+    "wealth psychology",
+    "behavioral psychology",
+    "personal finance",
+    "intentional living"
+  ],
+  "thumbnail": {
+    "hook_text": "THE 90-DAY FADE",
+    "badge": "WEALTH PSYCHOLOGY",
+    "stat": "90d"
+  },
+  "affiliate_cta": {
+    "offer_name": "Anti-Creep Margin Tracker + Behavioral Wealth Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What was the last big purchase that thrilled you on Day 1 and felt totally ordinary by Month 3? 👇 Grab our free Anti-Creep Margin Tracker + book resources here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "When Luxury Turns Into Wallpaper",
+      "visual_type": "stat_callout",
+      "stat_value": "90 Days",
+      "stat_label": "UNTIL MAJOR UPGRADES FEEL COMPLETELY ORDINARY",
+      "bullets": [
+        "Day 1 brings a surge of novelty dopamine",
+        "Day 90 resets your emotional baseline back to neutral"
+      ],
+      "highlight_words": ["luxury", "invisible", "wallpaper", "ninety"],
+      "narration": "Nearly every expensive luxury upgrade you crave right now will feel like invisible background wallpaper within ninety days."
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Brickman & Campbell's Hedonic Treadmill",
+      "visual_type": "stat_callout",
+      "stat_value": "1971",
+      "stat_label": "DISCOVERY OF HEDONIC ADAPTATION",
+      "bullets": [
+        "Human nervous systems detect changes, not static comfort",
+        "Even major windfalls snap back toward baseline mood"
+      ],
+      "highlight_words": ["1971", "treadmill", "adapt", "baseline"],
+      "narration": "In 1971, psychologists Philip Brickman and Donald Campbell discovered the Hedonic Treadmill: human brains rapidly adapt to nicer apartments, newer cars, and bigger screens, snapping right back to baseline happiness."
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "90 Days of Thrill for 60 Months of Bills",
+      "visual_type": "comparison_split",
+      "left_title": "FIXED LIFESTYLE CREEP",
+      "left_body": "60-month luxury lease -> novelty gone by Month 3",
+      "right_title": "INTENTIONAL CONTRAST",
+      "right_body": "Lean monthly overhead + rare debt-free treats that stay vivid",
+      "highlight_words": ["asymmetric", "dopamine", "three", "five"],
+      "narration": "The financial trap is asymmetric. The dopamine rush of a luxury lease evaporates in three months, while the fixed monthly bill stays locked in for five years."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "The Intentional Contrast Protocol",
+      "visual_type": "compounding_curve",
+      "stat_label": "LEAN BASELINE + RARE TREATS = HIGH MARGIN",
+      "stat_subtext": "Scarcity preserves joy while surplus cash compounds",
+      "highlight_words": ["contrast", "baseline", "debt-free", "rare"],
+      "narration": "To escape without feeling deprived, practice Intentional Contrast: keep your monthly baseline lean, then enjoy occasional debt-free experiences that stay special because they are rare."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Quarterly 7-Day Simplicity Reset",
+      "visual_type": "stat_callout",
+      "stat_value": "7 Days",
+      "stat_label": "QUARTERLY RESET TO RECALIBRATE GRATITUDE",
+      "bullets": [
+        "Pause non-essential spending for 1 week per quarter",
+        "Bank the margin and restore sensitivity to simple wins"
+      ],
+      "highlight_words": ["seven-day", "reset", "compound", "realize"],
+      "narration": "Run a seven-day simplicity reset every quarter so ordinary comforts feel rich again and your savings compound untouched, especially once you realize..."
+    }
+  ]
+}

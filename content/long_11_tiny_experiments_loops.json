@@ -1,0 +1,103 @@
+{
+  "title": "Goodbye 5-Year Plans: How 'Tiny Experiments' Unlock Unfair Career Leverage",
+  "alt_title_1": "Why Rigid Career Ladders Break in 2026 (Anne-Laure Le Cunff's Framework)",
+  "alt_title_2": "The 14-Day Curiosity Loop That Beats Every 5-Year Plan",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "In an AI-accelerated economy where industries shift every 18 months, rigid 5-year career plans cause either analysis paralysis or sunk-cost burnout. Combining neuroscientist Anne-Laure Le Cunff's 'Tiny Experiments' with John Gall's Law, here is how 14-day curiosity loops uncover outlier niches.",
+  "tags": [
+    "tiny experiments",
+    "anne laure le cunff",
+    "goodbye 5 year plans",
+    "galls law",
+    "career strategy",
+    "curiosity loops",
+    "mental models",
+    "solo creator"
+  ],
+  "thumbnail": {
+    "hook_text": "TINY EXPERIMENTS",
+    "badge": "BOOK BREAKDOWN",
+    "stat": "14 DAYS"
+  },
+  "affiliate_cta": {
+    "offer_name": "14-Day Tiny Experiment Lab Log + Anne-Laure Le Cunff Book Link",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What 14-day Tiny Experiment Pact ('I will [action] every [day] for 14 days') are you testing next? 👇 Download our free Lab Log Notion template + grab 'Tiny Experiments' right here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "Why the Classic 5-Year Masterplan Stopped Working",
+      "visual_type": "stat_callout",
+      "stat_value": "18 Mos",
+      "stat_label": "HOW FAST MODERN SKILL MARKETS NOW RESHUFFLE",
+      "bullets": [
+        "5-year ladders were built for predictable 1970s corporate tracks",
+        "Guessing a fixed destination too early locks in sunk-cost misery",
+        "Neuroscientist Anne-Laure Le Cunff offers a scientific alternative"
+      ],
+      "highlight_words": ["five-year", "eighteen", "sunk-cost", "experiments"],
+      "narration": "For half a century, every graduation speech and job interview revolved around one intimidating question: where do you see yourself in five years? That question made sense in nineteen seventy-five, when corporate career ladders moved at glacial speed. In an AI-accelerated economy where tools and entire workflows transform every eighteen months, locking yourself into a rigid five-year script creates two painful failure modes: endless analysis paralysis before starting, or sunk-cost misery climbing a ladder you secretly outgrew years ago. In her book Tiny Experiments, neuroscientist Anne-Laure Le Cunff replaces linear life planning with a far more adaptable operating system: treating your career like a laboratory."
+    },
+    {
+      "tag": "CHAPTER 2 • LINEAR LADDERS VS CURIOSITY PACTS",
+      "headline": "Trade Outcome Anxiety for Structured Scientific Pacts",
+      "visual_type": "comparison_split",
+      "left_title": "RIGID 5-YEAR GOAL",
+      "left_body": "Obsesses over distant outcomes -> feels like failure until the finish line",
+      "right_title": "TINY EXPERIMENT PACT",
+      "right_body": "'I will [action] for [14 days]' -> 100% within your control, zero ego risk",
+      "highlight_words": ["linear", "pact", "fourteen", "curiosity"],
+      "narration": "Traditional goals fail because they anchor your self-worth to outcomes you cannot directly control, like hitting ten thousand subscribers or landing a dream title by thirty. When progress starts slow, perfectionism tells you to quit. Le Cunff flips this script with a simple scientific Pact: I will perform one specific action at a clear cadence for a short, bounded duration - such as publishing one visual insight every morning for fourteen days, or building three small automation scripts in two weeks. During those fourteen days, you ignore vanity metrics completely. Success is binary and calm: did you show up and collect real-world data?"
+    },
+    {
+      "tag": "CHAPTER 3 • GALL'S LAW MEETS RAPID PROTOTYPING",
+      "headline": "Ship 10 Tiny Prototypes Before 1 Giant Business Plan",
+      "visual_type": "compounding_curve",
+      "stat_label": "SHORT FEEDBACK LOOPS BEAT SECRET 6-MONTH PLANS",
+      "stat_subtext": "Gall's Law: working complex systems always evolve from simple working loops",
+      "highlight_words": ["gall", "simple", "feedback", "signal"],
+      "narration": "Tiny Experiments become even more powerful when paired with systems theorist John Gall's nineteen seventy-five law: every complex system that works evolved from a simple system that worked first. Ambitious beginners routinely spend six months in private designing logos, legal entities, and forty-page curricula for an audience they have never tested - only to launch to silence. A fourteen-day experimental pact forces Version One simplicity. By shipping ten short essays, five prototype templates, or three concise video breakdowns in public over two weeks, you collect honest market signal for zero dollars before investing months of your life."
+    },
+    {
+      "tag": "CHAPTER 4 • HOW OUTLIER NICHES EMERGE",
+      "headline": "Discovering Your Category of One Through Iteration",
+      "visual_type": "stat_callout",
+      "stat_value": "5 Loops",
+      "stat_label": "HOW ASYMMETRIC CREATORS ACTUALLY FIND THEIR NICHE",
+      "bullets": [
+        "Nobody discovers their best niche sitting alone with a blank notebook",
+        "Run 4 to 5 sequential experiments across 90 days",
+        "Double down where effortless personal energy meets 5x audience pull"
+      ],
+      "highlight_words": ["discover", "five", "energy", "pull"],
+      "narration": "Look closely at almost any category-of-one creator, founder, or independent analyst and you will notice a secret: almost none of them predicted their winning niche on day one. Instead, they ran four or five consecutive tiny experiments across a single quarter. Loop one tested productivity habits; loop two tested visual storytelling; loop three combined behavioral economics with automated dashboards - and suddenly one specific angle sparked five times the reader replies while feeling like effortless play to produce. You cannot think your way into unfair career leverage on a whiteboard; you uncover it through low-stakes contact with reality."
+    },
+    {
+      "tag": "CHAPTER 5 • THE PLUS-MINUS-NEXT REVIEW",
+      "headline": "Evaluate Like a Scientist, Never a Harsh Judge",
+      "visual_type": "comparison_split",
+      "left_title": "HARSH INNER CRITIC",
+      "left_body": "'Only 80 views -> I am terrible at this -> abandon everything'",
+      "right_title": "PLUS / MINUS / NEXT LOG",
+      "right_body": "+ What energized me? • - What caused friction? -> Persist, Pivot, or Pause",
+      "highlight_words": ["plus", "minus", "next", "persist"],
+      "narration": "When a fourteen-day pact finishes, how you review the data determines everything. Amateurs treat small early numbers as a verdict on their talent. Scientists open a single notebook page and run Le Cunff's ten-minute Plus-Minus-Next retrospective. Under Plus, list what gave you energy and resonated with real people. Under Minus, note the exact bottlenecks that felt unnecessarily heavy. Under Next, choose one of three calm paths for the following two weeks: Persist if momentum is building, Pivot one variable such as format or topic, or consciously Pause the experiment guilt-free with lessons banked."
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "Launch Your First 14-Day Curiosity Loop Today",
+      "visual_type": "stat_callout",
+      "stat_value": "3 Rules",
+      "stat_label": "DESIGN YOUR FIRST PACT IN UNDER 5 MINUTES",
+      "bullets": [
+        "1. Write 1 sentence: 'I will ship [specific output] for 14 days'",
+        "2. Keep daily scope under 45 minutes so busy days never break the chain",
+        "3. Hide analytics until Day 14, then run your Plus-Minus-Next review"
+      ],
+      "highlight_words": ["sentence", "forty-five", "analytics", "fourteen"],
+      "narration": "Retire the pressure of figuring out the next five years and design one fourteen-day Tiny Experiment today using three rules. Rule one: write a single concrete pact sentence - for example, I will publish one three-hundred-word mental model breakdown or build one useful spreadsheet template every two days for fourteen days. Rule two: cap daily execution under forty-five minutes so you can complete every rep alongside a full-time job. Rule three: refuse to judge metrics until day fourteen arrives, then run your Plus-Minus-Next review. Six tiny loops from now, your skills and direction will look unrecognizable."
+    }
+  ]
+}

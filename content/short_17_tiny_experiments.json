@@ -1,0 +1,88 @@
+{
+  "title": "Why Rigid 5-Year Plans Backfire (Run 'Tiny Experiments' Instead)",
+  "alt_title_1": "Neuroscientist's 14-Day Rule That Beats Any 5-Year Plan",
+  "alt_title_2": "Stop Guessing Your Next 5 Years - Run Curiosity Pacts",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Rigid 5-year career ladders break in fast-moving markets. Neuroscientist Anne-Laure Le Cunff's Tiny Experiments framework replaces high-pressure life plans with 14-day curiosity pacts that compound real-world data.",
+  "tags": [
+    "tiny experiments",
+    "anne-laure le cunff",
+    "goal setting",
+    "neuroscience productivity",
+    "mental models",
+    "career leverage",
+    "personal growth"
+  ],
+  "thumbnail": {
+    "hook_text": "DITCH 5-YEAR PLANS",
+    "badge": "COGNITIVE SCIENCE",
+    "stat": "14d"
+  },
+  "affiliate_cta": {
+    "offer_name": "Anne-Laure Le Cunff's 'Tiny Experiments' on Audible + 14-Day Pact Log",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What 14-day Tiny Experiment are you curious enough to test starting this Monday? 👇 Check out 'Tiny Experiments' on Audible + download our free 14-Day Pact Tracker here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why Linear 5-Year Plans Create Paralysis",
+      "visual_type": "stat_callout",
+      "stat_value": "5 Years",
+      "stat_label": "TOO DISTANT FOR FAST-MOVING MARKETS",
+      "bullets": [
+        "Predicting life 60 months ahead locks in outdated guesses",
+        "High stakes trigger perfectionism before you even start"
+      ],
+      "highlight_words": ["stall", "momentum", "rigid", "five-year"],
+      "narration": "The fastest way to stall your momentum in a fast-changing world is locking yourself into a rigid five-year life plan."
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Anne-Laure Le Cunff's Neuroscience Lens",
+      "visual_type": "stat_callout",
+      "stat_value": "14 Days",
+      "stat_label": "THE TINY EXPERIMENTS FEEDBACK LOOP",
+      "bullets": [
+        "Ambitious brains burn out chasing static linear ladders",
+        "Short experimental cycles turn anxiety into curiosity"
+      ],
+      "highlight_words": ["neuroscientist", "tiny", "experiments", "feedback"],
+      "narration": "Neuroscientist Anne-Laure Le Cunff studied why ambitious planners burn out chasing fixed ladders. In her book Tiny Experiments, she shows that human brains thrive on rapid feedback loops, not distant finish lines."
+    },
+    {
+      "tag": "THE SHIFT",
+      "headline": "High-Stakes Goals vs Clean Lab Data",
+      "visual_type": "comparison_split",
+      "left_title": "RIGID 5-YEAR GOAL",
+      "left_body": "Every detour feels like failure -> heavy procrastination",
+      "right_title": "TINY EXPERIMENT",
+      "right_body": "14-day field test -> zero failure, pure signal",
+      "highlight_words": ["failure", "laboratory", "data", "two"],
+      "narration": "A massive five-year goal frames every detour as personal failure. A tiny experiment frames every result as clean laboratory data. You stop asking if something works forever and test what happens over two weeks."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Write One 14-Day Curiosity Pact",
+      "visual_type": "compounding_curve",
+      "stat_label": "26 ITERATIONS PER YEAR COMPOUND FAST",
+      "stat_subtext": "'I will [action] for [14 days]' -> Keep, Pivot, or Drop",
+      "highlight_words": ["pact", "fourteen", "publish", "inspect"],
+      "narration": "Use the Curiosity Pact: write down 'I will perform one specific action for fourteen days.' Publish ten short notes, test one workflow, or wake thirty minutes early - then inspect the data."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "26 Real Experiments Beat 1 Spreadsheet",
+      "visual_type": "stat_callout",
+      "stat_value": "26x/Yr",
+      "stat_label": "ITERATION UNCOVERS ASYMMETRIC PATHS",
+      "bullets": [
+        "Replace 'What is my passion?' with 'What is my next 14-day test?'",
+        "Keep what energizes you and drop what drains you guilt-free"
+      ],
+      "highlight_words": ["twenty-six", "asymmetric", "spreadsheet", "trap"],
+      "narration": "Twenty-six small experiments in a year uncover asymmetric paths no spreadsheet could ever predict. Because the hidden trap for high achievers is that..."
+    }
+  ]
+}

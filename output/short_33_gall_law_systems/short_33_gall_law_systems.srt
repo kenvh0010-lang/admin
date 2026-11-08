@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:02,001
+If you spent all weekend building
+
+2
+00:00:02,001 --> 00:00:04,852
+a twenty-tab productivity dashboard and stopped
+
+3
+00:00:04,852 --> 00:00:06,125
+using it by Thursday,
+
+4
+00:00:06,125 --> 00:00:09,400
+a nineteen seventy-five engineering rule explains why.
+
+5
+00:00:09,400 --> 00:00:12,376
+Systems theorist John Gall formulated Gall's Law:
+
+6
+00:00:12,376 --> 00:00:14,806
+every complex system that actually works
+
+7
+00:00:14,806 --> 00:00:16,810
+evolved from a simple system that
+
+8
+00:00:16,810 --> 00:00:17,600
+worked first.
+
+9
+00:00:17,600 --> 00:00:20,880
+Complex systems designed from scratch always collapse.
+
+10
+00:00:20,880 --> 00:00:23,074
+Beginners break this rule constantly.
+
+11
+00:00:23,074 --> 00:00:25,684
+They design twelve-step morning routines and
+
+12
+00:00:25,684 --> 00:00:28,590
+complicated automation pipelines before they have
+
+13
+00:00:28,590 --> 00:00:30,370
+even shipped a single piece of
+
+14
+00:00:30,370 --> 00:00:31,200
+finished work.
+
+15
+00:00:31,200 --> 00:00:32,443
+Flip the sequence:
+
+16
+00:00:32,443 --> 00:00:34,584
+start with one plain checklist,
+
+17
+00:00:34,584 --> 00:00:36,104
+one daily focus block,
+
+18
+00:00:36,104 --> 00:00:38,521
+and one repeatable workflow you can
+
+19
+00:00:38,521 --> 00:00:41,007
+execute even on your most exhausting
+
+20
+00:00:41,007 --> 00:00:41,560
+Tuesday.
+
+21
+00:00:41,560 --> 00:00:44,198
+Earn the right to add complexity
+
+22
+00:00:44,198 --> 00:00:46,835
+only after thirty days of simple
+
+23
+00:00:46,835 --> 00:00:48,237
+wins - otherwise,
+
+24
+00:00:48,237 --> 00:00:50,050
+do not be surprised...

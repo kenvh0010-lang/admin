@@ -1,0 +1,88 @@
+{
+  "title": "Charlie Munger's #1 Mental Trick: Invert, Always Invert",
+  "alt_title_1": "Why Avoiding Stupidity Beats Trying to Be Brilliant",
+  "alt_title_2": "The 180-Year-Old Math Rule Charlie Munger Used for Every Decision",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Instead of asking how to get rich or productive, billionaire thinker Charlie Munger flipped every hard problem backwards using mathematician Carl Jacobi's Inversion Principle. Here is the 5-Trap Inversion filter.",
+  "tags": [
+    "charlie munger",
+    "inversion mental model",
+    "carl jacobi",
+    "wealth psychology",
+    "decision making",
+    "poor charlies almanack",
+    "mental models"
+  ],
+  "thumbnail": {
+    "hook_text": "INVERT EVERY GOAL",
+    "badge": "MENTAL MODELS",
+    "stat": "5 TRAPS"
+  },
+  "affiliate_cta": {
+    "offer_name": "'Poor Charlie's Almanack' on Amazon & Audible + Inversion Filter Sheet",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "If you inverted your #1 goal for this year, what is the single biggest daily habit trying to sabotage it? 👇 Explore 'Poor Charlie's Almanack' + grab our free 5-Trap Inversion Worksheet here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Stop Chasing Genius - Subtract Stupidity",
+      "visual_type": "stat_callout",
+      "stat_value": "60 Yrs",
+      "stat_label": "MUNGER'S UNDEFEATED DECISION FILTER",
+      "bullets": [
+        "Most people fail trying to pull off brilliant shortcuts",
+        "Consistent winners simply remove obvious self-sabotage"
+      ],
+      "highlight_words": ["munger", "sixty", "brilliant", "stupidity"],
+      "narration": "Billionaire thinker Charlie Munger spent sixty years repeating one counterintuitive secret: stop straining to be brilliant, and focus relentlessly on avoiding stupidity."
+    },
+    {
+      "tag": "THE STORY",
+      "headline": "Carl Jacobi's 19th-Century Math Secret",
+      "visual_type": "stat_callout",
+      "stat_value": "1840s",
+      "stat_label": "INVERT, ALWAYS INVERT",
+      "bullets": [
+        "German mathematician Carl Jacobi solved impossible proofs backwards",
+        "Define the exact opposite of what you want, then avoid it"
+      ],
+      "highlight_words": ["jacobi", "three", "invert", "upside"],
+      "narration": "Munger borrowed this mental model from nineteenth-century mathematician Carl Jacobi, who solved complex equations with three famous words: invert, always invert. Turn every hard problem upside down."
+    },
+    {
+      "tag": "THE SHIFT",
+      "headline": "Forward Guessing vs Backwards Clarity",
+      "visual_type": "comparison_split",
+      "left_title": "FORWARD QUESTION",
+      "left_body": "'How do I build wealth fast?' -> noisy, vague, high risk",
+      "right_title": "INVERTED FILTER",
+      "right_body": "'What guarantees staying broke?' -> debt, ego upgrades, panic",
+      "highlight_words": ["vague", "ruin", "debt", "panic"],
+      "narration": "Asking how to build extraordinary wealth produces vague guesses. Asking what guarantees financial ruin gives unmistakable answers: high-interest debt, status upgrades, zero skill margin, and emotional panic."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Run a 5-Trap Inversion Audit Today",
+      "visual_type": "compounding_curve",
+      "stat_label": "ELIMINATING DOWNSIDE COMPOUNDS UPSIDE",
+      "stat_subtext": "Block top 5 failure habits -> progress becomes automatic",
+      "highlight_words": ["five-trap", "inversion", "wreck", "guardrails"],
+      "narration": "Run a Five-Trap Inversion today: write down your top goal for the year, list the five daily behaviors guaranteed to wreck it, and build physical guardrails to eliminate them first."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Zero Unforced Errors Wins Long Games",
+      "visual_type": "stat_callout",
+      "stat_value": "0 Ruin",
+      "stat_label": "SUBTRACTION OUTPERFORMS HUSTLE",
+      "bullets": [
+        "List the 5 guaranteed failure modes for health, money, and work",
+        "Remove friction from good habits and lock out the traps"
+      ],
+      "highlight_words": ["compounding", "miracle", "unforced", "errors"],
+      "narration": "In compounding games, winners rarely need miracle breakthroughs - they simply commit zero unforced errors. Which is exactly why..."
+    }
+  ]
+}

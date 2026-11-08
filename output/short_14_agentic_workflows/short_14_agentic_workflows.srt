@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:02,448
+Ninety-five percent of people use AI
+
+2
+00:00:02,448 --> 00:00:04,149
+like a faster typewriter.
+
+3
+00:00:04,149 --> 00:00:06,121
+They sit inside a chat window
+
+4
+00:00:06,121 --> 00:00:08,774
+all afternoon trading manual typing for
+
+5
+00:00:08,774 --> 00:00:09,930
+manual prompting.
+
+6
+00:00:09,930 --> 00:00:10,504
+In 1913,
+
+7
+00:00:10,504 --> 00:00:12,872
+Henry Ford did not hand mechanics
+
+8
+00:00:12,872 --> 00:00:15,240
+faster wrenches - he engineered a
+
+9
+00:00:15,240 --> 00:00:17,034
+repeatable assembly line.
+
+10
+00:00:17,034 --> 00:00:17,465
+Today,
+
+11
+00:00:17,465 --> 00:00:19,976
+solo operators face that exact same
+
+12
+00:00:19,976 --> 00:00:21,770
+divide with digital work.
+
+13
+00:00:21,770 --> 00:00:23,760
+Chatting one prompt at a time
+
+14
+00:00:23,760 --> 00:00:26,230
+keeps you trapped as the bottleneck.
+
+15
+00:00:26,230 --> 00:00:28,974
+Building a workflow turns one documented
+
+16
+00:00:28,974 --> 00:00:31,993
+standard operating procedure into a pipeline
+
+17
+00:00:31,993 --> 00:00:33,640
+that runs on raw inputs.
+
+18
+00:00:33,640 --> 00:00:35,527
+Apply the Three-Block Rule:
+
+19
+00:00:35,527 --> 00:00:37,903
+whenever you repeat a digital task
+
+20
+00:00:37,903 --> 00:00:38,742
+three times,
+
+21
+00:00:38,742 --> 00:00:40,909
+stop chatting and write a fixed
+
+22
+00:00:40,909 --> 00:00:42,726
+spec - exact input format,
+
+23
+00:00:42,726 --> 00:00:44,473
+strict quality checklist,
+
+24
+00:00:44,473 --> 00:00:46,500
+and a locked output template.
+
+25
+00:00:46,500 --> 00:00:49,686
+Amateurs write clever prompts from scratch;
+
+26
+00:00:49,686 --> 00:00:52,428
+owners design pipelines once and feed
+
+27
+00:00:52,428 --> 00:00:53,539
+them raw ideas.
+
+28
+00:00:53,539 --> 00:00:55,910
+And until you make that shift...

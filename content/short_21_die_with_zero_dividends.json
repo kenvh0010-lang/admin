@@ -1,0 +1,88 @@
+{
+  "title": "Bill Perkins' 'Memory Dividends' Rule Changed How I View Money",
+  "alt_title_1": "Why Dying With Your Highest Net Worth at 75 Is a Trap",
+  "alt_title_2": "The Biological Window Rule From 'Die With Zero' Explained",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Automated saving builds security, but autopilot hoarding past your target misses biological windows money can never reopen. Here is Bill Perkins' Memory Dividends mental model from Die With Zero.",
+  "tags": [
+    "die with zero",
+    "bill perkins",
+    "memory dividends",
+    "wealth psychology",
+    "time wealth",
+    "intentional spending",
+    "mental models"
+  ],
+  "thumbnail": {
+    "hook_text": "MEMORY DIVIDENDS",
+    "badge": "WEALTH PSYCHOLOGY",
+    "stat": "AGE 75"
+  },
+  "affiliate_cta": {
+    "offer_name": "Bill Perkins' 'Die With Zero' Free Audiobook Trial + 5-Year Time Bucket Map",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What is one meaningful trip or experience you are glad you did NOT wait until retirement to take? 👇 Listen to 'Die With Zero' free on Audible + grab our Life Time-Bucket Planner here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Peak Net Worth at Peak Frailty?",
+      "visual_type": "stat_callout",
+      "stat_value": "Age 75",
+      "stat_label": "WHEN MANY SAVERS HIT PEAK NET WORTH",
+      "bullets": [
+        "Millions defer every meaningful trip to an abstract future",
+        "Money compounds forever, but physical energy has seasons"
+      ],
+      "highlight_words": ["seventy-five", "skipped", "decade", "energy"],
+      "narration": "What is the point of reaching your highest net worth at age seventy-five if you skipped every decade your body had the energy to enjoy it?"
+    },
+    {
+      "tag": "THE STORY",
+      "headline": "Bill Perkins & Memory Dividends",
+      "visual_type": "stat_callout",
+      "stat_value": "40 Yrs",
+      "stat_label": "RETURN ON EARLY SHARED EXPERIENCES",
+      "bullets": [
+        "Financial assets pay cash dividends into your account",
+        "Great experiences pay memory dividends every year you live"
+      ],
+      "highlight_words": ["perkins", "memory", "dividends", "revisit"],
+      "narration": "In his book Die With Zero, Bill Perkins introduces a mental model called Memory Dividends. Just as index funds pay cash dividends, meaningful experiences pay emotional dividends every time you revisit them."
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Autopilot Hoarding vs Biological Windows",
+      "visual_type": "comparison_split",
+      "left_title": "ENDLESS DELAY",
+      "left_body": "Postpone life to 70 -> high capital, low physical stamina",
+      "right_title": "TIME BUCKETING",
+      "right_body": "Automate base wealth first -> fund decade-specific memories",
+      "highlight_words": ["hoarding", "biological", "windows", "expiration"],
+      "narration": "Over-hoarding past your automated investing target ignores biological windows. Taking a demanding mountain hike at thirty or traveling with aging parents carries an expiration date money cannot reopen."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "The 5-Year Time-Bucket Protocol",
+      "visual_type": "compounding_curve",
+      "stat_label": "COMPOUNDING MEMORY + CAPITAL IN PARALLEL",
+      "stat_subtext": "Lock automated wealth floor -> invest surplus in peak decades",
+      "highlight_words": ["time-bucket", "automate", "baseline", "three"],
+      "narration": "Apply the Time-Bucket Rule: automate your baseline wealth investments on payday first, then intentionally fund three experiences over the next five years that belong to your current health window."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Balance Your Future Floor and Present Life",
+      "visual_type": "stat_callout",
+      "stat_value": "3 Axes",
+      "stat_label": "HEALTH + FREE TIME + FINANCIAL MARGIN",
+      "bullets": [
+        "Never raid your automated compounding base",
+        "Never let fear make you miss non-renewable life seasons"
+      ],
+      "highlight_words": ["fulfillment", "decades", "final", "balance"],
+      "narration": "Smart wealth planning optimizes fulfillment across decades, not just a final bank balance. Otherwise, stop and ask..."
+    }
+  ]
+}

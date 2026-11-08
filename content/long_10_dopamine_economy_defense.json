@@ -1,0 +1,103 @@
+{
+  "title": "Winning the Attention Economy: Reclaiming Your Cognitive Capital in 2026",
+  "alt_title_1": "How Algorithmic Feeds Steal 15 Hours a Week (And How to Take Them Back)",
+  "alt_title_2": "Your Focus Is the New Oil: 4 Defenses Against Dopamine Traps",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "Trillion-dollar recommendation engines are engineered to harvest your spare minutes using variable rewards and zero stopping cues. Here is the behavioral science of Attention Residue - and a 4-shield architectural system to convert 15 wasted hours a week into compounding digital assets.",
+  "tags": [
+    "attention economy",
+    "cognitive capital",
+    "dopamine detox science",
+    "attention residue",
+    "deep work",
+    "digital minimalism",
+    "wealth psychology",
+    "creator productivity"
+  ],
+  "thumbnail": {
+    "hook_text": "OWN YOUR FOCUS",
+    "badge": "COGNITIVE CAPITAL",
+    "stat": "15 HRS"
+  },
+  "affiliate_cta": {
+    "offer_name": "Cognitive Capital Defense OS + Deep Focus Reading & Tool Kit",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "If you reclaimed 15 focused hours every week for the next 12 months, what single skill or digital asset would you build first? 👇 Grab our Cognitive Capital Defense OS + focus book list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "The Silent Harvest of Your Second Career",
+      "visual_type": "stat_callout",
+      "stat_value": "1,640 Hrs",
+      "stat_label": "ANNUAL SCREEN TIME SPENT ON PASSIVE FEEDS (4.5H/DAY)",
+      "bullets": [
+        "1,640 hours equals 41 full-time 40-hour workweeks every year",
+        "You are not lacking time - your spare margin is being mined",
+        "Cognitive capital is now the scarcest asset in the modern economy"
+      ],
+      "highlight_words": ["thousand", "forty-one", "mined", "cognitive"],
+      "narration": "Most ambitious adults believe they are too busy to learn a high-income skill or build a side business. Then you check the math on modern screen habits. Four and a half hours a day on algorithmic feeds adds up to one thousand six hundred forty waking hours a year - the exact equivalent of forty-one full-time forty-hour workweeks. An entire second career is quietly evaporating through a six-inch piece of glass. You do not have a laziness problem; you are bringing an unshielded biological brain to a fight against trillion-dollar recommendation engines. In this visual essay, we will build a four-layer defense to reclaim your cognitive capital."
+    },
+    {
+      "tag": "CHAPTER 2 • VARIABLE REWARDS & ZERO STOPPING CUES",
+      "headline": "Why Infinite Scroll Bypassed Your Natural Brakes",
+      "visual_type": "comparison_split",
+      "left_title": "20TH-CENTURY MEDIA",
+      "left_body": "Books, newspapers, and films had physical endings -> natural brain stopping cues",
+      "right_title": "INFINITE FEED ENGINES",
+      "right_body": "Bottomless scroll + B.F. Skinner variable rewards -> endless anticipation loop",
+      "highlight_words": ["skinner", "variable", "stopping", "bottomless"],
+      "narration": "To beat the trap, understand two engineering mechanisms working together. First is psychologist B. F. Skinner's variable-ratio reinforcement schedule. In laboratory experiments, predictable rewards quickly became boring, whereas unpredictable rewards - three mediocre pulls followed by one exciting hit - produced obsessive repetition. Every pull-to-refresh gesture mimics that exact slot-machine cadence. Second is the deletion of stopping cues. Fifty years ago, finishing the final page of a newspaper or watching movie credits gave your prefrontal cortex a natural pause to ask what to do next. Infinite scroll and instant autoplay erased the bottom of the page, turning a five-minute break into ninety lost minutes."
+    },
+    {
+      "tag": "CHAPTER 3 • THE ATTENTION RESIDUE TAX",
+      "headline": "Why a '90-Second Glance' Costs 23 Minutes of IQ",
+      "visual_type": "stat_callout",
+      "stat_value": "23 Mins",
+      "stat_label": "RECOVERY LAG AFTER INTERRUPTING DEEP WORK",
+      "bullets": [
+        "Sophie Leroy's research: switching tasks leaves mental residue behind",
+        "Checking feeds mid-project splits working memory in half",
+        "Ten 'quick checks' a day wipe out an entire workday of depth"
+      ],
+      "highlight_words": ["leroy", "mark", "residue", "twenty-three"],
+      "narration": "The hidden cost goes far beyond the minutes shown on your phone's battery report. Business professor Sophie Leroy coined the term Attention Residue, and workplace studies by researcher Gloria Mark measured its real-world toll: when you interrupt a complex task for a quick ninety-second glance at notifications, it takes roughly twenty-three minutes to regain full cognitive depth. Part of your working memory stays stuck processing that alarming headline or social comparison while you stare blankly at your document. Ten harmless checks scattered across a workday do not cost fifteen minutes - they keep your brain permanently trapped in shallow, low-leverage thinking."
+    },
+    {
+      "tag": "CHAPTER 4 • COMPOUNDING 15 RECLAIMED HOURS",
+      "headline": "Converting Passive Scroll Into Owned Equity",
+      "visual_type": "compounding_curve",
+      "stat_label": "15 RECLAIMED HRS/WK -> 780 DEEP-WORK HOURS/YEAR",
+      "stat_subtext": "Nearly 20 full workweeks/year channeled into skills, code, and media",
+      "highlight_words": ["fifteen", "seven", "eighty", "moat"],
+      "narration": "Now look at the asymmetric upside when you reclaim even half of that leaked attention. Redirecting just two hours per weekday and five hours across the weekend recovers fifteen focused hours every single week. Over fifty-two weeks, that compounds into seven hundred eighty hours of uninterrupted creation - nearly twenty full-time workweeks per year. In seven hundred eighty deep hours, an ordinary professional can publish fifty flagship educational videos, master Python automation, or build a suite of digital templates that generate recurring margin. While everyone around you becomes more distracted each year, sustained ninety-minute focus becomes an unfair economic moat."
+    },
+    {
+      "tag": "CHAPTER 5 • ARCHITECTURE OVER WILLPOWER",
+      "headline": "Stop Fighting Supercomputers With Raw Self-Control",
+      "visual_type": "comparison_split",
+      "left_title": "WILLPOWER STRATEGY",
+      "left_body": "Phone sits 12 inches from your hand all morning -> 100 micro-temptations",
+      "right_title": "FRICTION ARCHITECTURE",
+      "right_body": "Phone locked in another room + desktop feed blockers -> zero willpower spent",
+      "highlight_words": ["willpower", "friction", "physical", "distance"],
+      "narration": "Why do most digital detoxes collapse within seventy-two hours? Because people keep their phone six inches from their keyboard and try to resist notifications using sheer willpower. Behavioral science proves physical friction beats willpower every single time. A University of Texas study found that simply leaving a smartphone in an adjacent room significantly raised test scores on hard analytical problems compared to leaving it face-down on the desk. Do not negotiate with an algorithm fifty times a day. Change your physical environment once so your highest-value creative work becomes the easiest object within arm's reach."
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "The 4-Shield Cognitive Capital Defense System",
+      "visual_type": "stat_callout",
+      "stat_value": "4 Shields",
+      "stat_label": "INSTALL YOUR FOCUS ARCHITECTURE TONIGHT",
+      "bullets": [
+        "1. Bedroom Airlock: charge phone in the kitchen; use a $12 alarm clock",
+        "2. First-90 Rule: ship 1 asset brick before opening any feed or inbox",
+        "3. Batch Queue: save links for one intentional 30-minute evening window"
+      ],
+      "highlight_words": ["airlock", "ninety", "batch", "weekly"],
+      "narration": "Install these four shields tonight to take back fifteen hours this week. Shield one is the Bedroom Airlock: plug your phone charger into the kitchen outlet and use a twelve-dollar analog alarm clock so you never start or end the day scrolling in bed. Shield two is the First-Ninety Rule: protect your sharpest morning window for creating code, writing, or career assets before opening email or social feeds. Shield three is the Batch Queue: save interesting articles and videos into a Watch Later list for one deliberate thirty-minute slot after dinner. Shield four: track weekly asset hours shipped, and watch your margin compound."
+    }
+  ]
+}

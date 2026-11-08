@@ -1,0 +1,88 @@
+{
+  "title": "The 'Concorde Fallacy' Keeping You in Dead-End Projects",
+  "alt_title_1": "One Question That Breaks the Sunk Cost Trap Instantly",
+  "alt_title_2": "Why Smart People Pour Good Years After Bad Decisions",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Britain and France knew the supersonic Concorde jet would lose billions - yet kept funding it for decades out of pride. Here is how the Concorde Fallacy traps ambitious builders and the Zero-Base Question to escape it.",
+  "tags": [
+    "sunk cost fallacy",
+    "concorde fallacy",
+    "decision making",
+    "mental models",
+    "behavioral psychology",
+    "career strategy",
+    "wealth psychology"
+  ],
+  "thumbnail": {
+    "hook_text": "THE CONCORDE TRAP",
+    "badge": "MENTAL MODELS",
+    "stat": "DAY 0"
+  },
+  "affiliate_cta": {
+    "offer_name": "Annie Duke's 'Quit' & 'Thinking in Bets' Free Trial + Decision Matrix",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What is one project, habit, or subscription you only kept because you had already put time into it? 👇 Grab Annie Duke's 'Quit' free on Audible + our Zero-Base Decision Checklist here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why High Achievers Stay Too Long",
+      "visual_type": "stat_callout",
+      "stat_value": "3+ Yrs",
+      "stat_label": "AVERAGE DELAY BEFORE EXITING DEAD PATHS",
+      "bullets": [
+        "Intelligent people rarely struggle to start hard things",
+        "They struggle to walk away once an investment stops paying"
+      ],
+      "highlight_words": ["smart", "draining", "dead-end", "years"],
+      "narration": "Why do smart people stay in draining careers, dead-end side projects, and broken commitments for years after they clearly stop working?"
+    },
+    {
+      "tag": "THE STORY",
+      "headline": "The 1976 Supersonic Money Pit",
+      "visual_type": "stat_callout",
+      "stat_value": "1976",
+      "stat_label": "THE ORIGINAL CONCORDE FALLACY",
+      "bullets": [
+        "Britain and France knew early the jet would never profit",
+        "Both kept spending billions so past costs would not look foolish"
+      ],
+      "highlight_words": ["concorde", "1976", "billions", "wasted"],
+      "narration": "Behavioral scientists call it the Concorde Fallacy. Long before the supersonic Concorde jet launched in 1976, Britain and France knew it would lose fortunes. Yet both governments poured billions more in so prior spending would not look wasted."
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Throwing Future Margin After Past Pride",
+      "visual_type": "comparison_split",
+      "left_title": "SUNK COST PRIDE",
+      "left_body": "'I already spent 3 years here -> I cannot walk away now'",
+      "right_title": "FORWARD MARGIN",
+      "right_body": "Past costs are gone -> price only the next 12 months",
+      "highlight_words": ["loss", "future", "unrecoverable", "forever"],
+      "narration": "Your brain hates admitting a loss so intensely that it throws precious future years after unrecoverable past years. Past time and past money are gone forever."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Ask the Zero-Base Entry Question",
+      "visual_type": "compounding_curve",
+      "stat_label": "REDEPLOYING ENERGY INTO ASYMMETRIC WINNERS",
+      "stat_subtext": "Cut dead weight fast -> compound fresh upside",
+      "highlight_words": ["zero-base", "today", "already", "scratch"],
+      "narration": "Break the spell with the Zero-Base Question: knowing everything I know today, if I were not already inside this project or commitment right now, would I enter it from scratch?"
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Walking Away Early Is Capital Allocation",
+      "visual_type": "stat_callout",
+      "stat_value": "Day 0",
+      "stat_label": "JUDGE EVERY COMMITMENT FROM TODAY FORWARD",
+      "bullets": [
+        "Never pay future life energy to defend a past mistake",
+        "Audit your top 3 commitments every quarter from Day 0"
+      ],
+      "highlight_words": ["honest", "quitting", "freeing", "margin"],
+      "narration": "If the honest answer is no, walking away is not quitting - it is freeing your future margin. Otherwise, ask yourself..."
+    }
+  ]
+}

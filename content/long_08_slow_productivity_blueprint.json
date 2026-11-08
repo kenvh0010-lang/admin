@@ -1,0 +1,102 @@
+{
+  "title": "Slow Productivity: How to Produce 3x More Value Doing Half the Busywork",
+  "alt_title_1": "Cal Newport's Cure for Performative Busyness and Burnout",
+  "alt_title_2": "Escape the 60% 'Work About Work' Trap With 3 Simple Rules",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "Studies show 60% of modern knowledge work goes to 'work about work' - inbox triage, status pings, and performative busyness. Synthesizing Cal Newport's Slow Productivity, Sophie Leroy's Attention Residue, and 90-minute Ultradian Sprints, here is how to build 3x more real value.",
+  "tags": [
+    "slow productivity",
+    "cal newport",
+    "deep work",
+    "attention residue",
+    "ultradian rhythms",
+    "pseudo productivity",
+    "knowledge work systems",
+    "mental models"
+  ],
+  "thumbnail": {
+    "hook_text": "SLOW PRODUCTIVITY",
+    "badge": "SYSTEMS ESSAY",
+    "stat": "3X"
+  },
+  "affiliate_cta": {
+    "offer_name": "Cal Newport's 'Slow Productivity' Free Audiobook Trial + Pull-Queue OS",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What percentage of your average workday feels like 'work about work' vs building finished assets? 👇 Listen to Cal Newport's 'Slow Productivity' free on Audible + grab our Pull-Queue Focus OS here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "The 60% 'Work About Work' Paradox",
+      "visual_type": "stat_callout",
+      "stat_value": "60%",
+      "stat_label": "HOURS LOST TO PERFORMATIVE COORDINATION",
+      "bullets": [
+        "Workplace studies show 60% of hours vanish into pings and triage",
+        "Barely 2 fragmented hours remain for real craftsmanship",
+        "Exhaustion hits record highs while finished assets stall"
+      ],
+      "highlight_words": ["sixty", "coordination", "exhausted", "assets"],
+      "narration": "Large-scale workplace studies tracking thousands of modern professionals uncovered a sobering statistic: roughly sixty percent of the average knowledge worker's day disappears into 'work about work' - status threads, calendar shuffling, inbox triage, and performative coordination. That leaves barely two fractured hours for genuine problem-solving. Millions of smart people finish Friday evening completely drained, yet struggle to point to a single durable asset they actually moved across the finish line all week."
+    },
+    {
+      "tag": "CHAPTER 2 • PSEUDO-PRODUCTIVITY THEATER",
+      "headline": "Why Offices Mistake Visible Franticness for Value",
+      "visual_type": "comparison_split",
+      "left_title": "PSEUDO-PRODUCTIVITY",
+      "left_body": "30-second Slack replies • packed calendar • shallow output",
+      "right_title": "ARTIFACT OUTPUT",
+      "right_body": "Measured by finished systems & essays that compound for years",
+      "highlight_words": ["newport", "pseudo-productivity", "franticness", "durable"],
+      "narration": "Georgetown computer science professor Cal Newport traces this burnout epidemic to a structural flaw he calls Pseudo-Productivity. On twentieth-century factory floors, supervisors could count physical widgets coming off a belt every hour. When knowledge work arrived without an obvious hourly widget count, workplaces lazily substituted visible activity as a proxy for effort. Keeping a green chat dot lit for ten hours, answering emails in ninety seconds, and sitting in back-to-back meetings looks productive while starving every project that actually matters."
+    },
+    {
+      "tag": "CHAPTER 3 • THE COGNITIVE RESIDUE MULTIPLIER",
+      "headline": "How 8 Active Projects Cut Prefrontal IQ in Half",
+      "visual_type": "stat_callout",
+      "stat_value": "23 Min",
+      "stat_label": "NEURAL RECOVERY AFTER EACH OPEN-LOOP SWITCH",
+      "bullets": [
+        "Sophie Leroy's Attention Residue: unfinished loops clog working memory",
+        "Juggling 8+ active projects creates exponential status-ping overhead"
+      ],
+      "highlight_words": ["leroy", "residue", "twenty-three", "prefrontal"],
+      "narration": "Cognitive science explains why overloaded task lists collapse under their own weight. Professor Sophie Leroy's Attention Residue research demonstrated that switching away from deep work to glance at an unresolved message leaves part of your working memory trapped on that open loop for over twenty-three minutes. When you simultaneously juggle eight active projects, each project generates its own stream of daily check-ins - locking your prefrontal cortex in permanent shallow recovery from nine to five."
+    },
+    {
+      "tag": "CHAPTER 4 • FEWER THINGS + ULTRADIAN PACE",
+      "headline": "Principles 1 & 2: Hard Caps and 90-Minute Rhythms",
+      "visual_type": "compounding_curve",
+      "stat_label": "CAPPED WORK-IN-PROGRESS COMPOUNDS FASTER",
+      "stat_subtext": "Max 3 active projects + 90m Ultradian Sprints -> 3x ship rate",
+      "highlight_words": ["three", "ultradian", "ninety-minute", "seasons"],
+      "narration": "Slow Productivity flips that broken math using two foundational shifts: Do Fewer Things, and Work at a Natural Pace. Capping your active major commitments at two or three at any given moment eliminates seventy percent of coordination noise overnight, freeing energy to actually finish work swiftly. Working at a natural pace aligns your day with physiologist Nathaniel Kleitman's ninety-minute ultradian focus cycles - pairing intense, uninterrupted sprints with genuine recovery, and pacing ambitious goals across calm seasons rather than frantic all-nighters."
+    },
+    {
+      "tag": "CHAPTER 5 • OBSESS OVER SIGNATURE QUALITY",
+      "headline": "Principle 3: Craftsmanship Buys Rare Autonomy",
+      "visual_type": "comparison_split",
+      "left_title": "DISPOSABLE VOLUME",
+      "left_body": "Ship 10 rushed, generic pieces -> forgotten by Wednesday",
+      "right_title": "SIGNATURE CRAFT",
+      "right_body": "Ship 1 undeniable flagship asset -> earns trust & autonomy",
+      "highlight_words": ["quality", "rushed", "undeniable", "autonomy"],
+      "narration": "Newport's third principle locks the entire system together: Obsess Over Quality. In both careers and solo media businesses, shipping ten rushed, average deliverables generates zero lasting leverage, whereas producing one undeniably thoughtful flagship asset compounds reputation and demand for years. Better yet, signature quality earns you immunity from office theater - colleagues and audiences gladly forgive a slower afternoon email reply when the finished work you deliver solves problems at a level nobody else can touch."
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "Install the 3-Rule Slow Productivity OS",
+      "visual_type": "stat_callout",
+      "stat_value": "3 Rules",
+      "stat_label": "PULL QUEUE + 90M SPRINT + BATCHED COMMS",
+      "bullets": [
+        "1. Two-List Pull System: Holding Tank vs max 3 Active commitments",
+        "2. Sealed 90-Minute Morning Ultradian Block (phone in another room)",
+        "3. Two 25-Minute Comms Windows (11:30 AM & 4:00 PM) for all pings"
+      ],
+      "highlight_words": ["holding", "three", "ultradian", "windows"],
+      "narration": "Deploy this operating system tomorrow morning using three concrete rules. First, replace your endless to-do list with a Two-List Pull System: park incoming requests inside a Holding Tank, and enforce a strict limit of three items on your Active List - nothing new gets pulled in until one active project ships. Second, protect one sealed ninety-minute Ultradian Deep Block every morning with your phone in another room before opening email. Third, batch all messages, logistics, and admin into two crisp twenty-five-minute windows at midday and four P.M."
+    }
+  ]
+}

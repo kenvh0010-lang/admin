@@ -1,0 +1,88 @@
+{
+  "title": "Why 'Boring' Solo Systems Out-Earn Flashy Startups",
+  "alt_title_1": "The 90%-Margin Micro-Asset Playbook Nobody Talks About",
+  "alt_title_2": "Stop Chasing Flashy Startup Ideas - Solve Boring Friction",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Flashy startups attract 10,000 competitors and high monthly burn. Quiet solo operators solving unglamorous workflow headaches run at 90% net margins with zero staff. Here is the Boring Bottleneck Filter.",
+  "tags": [
+    "one person business",
+    "solo founder",
+    "digital micro assets",
+    "boring businesses",
+    "asymmetric leverage",
+    "company of one",
+    "wealth systems"
+  ],
+  "thumbnail": {
+    "hook_text": "BORING BEATS FLASHY",
+    "badge": "AI LEVERAGE",
+    "stat": "90%"
+  },
+  "affiliate_cta": {
+    "offer_name": "Paul Jarvis's 'Company of One' on Audible + 5-Hour Solo Asset OS",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "What is one 'boring' spreadsheet or repetitive headache in your day job that people would gladly pay $19 to skip? 👇 Grab 'Company of One' + our 5-Hour Solo Asset Builder OS here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Prestige Burns Cash - Utility Keeps 90%",
+      "visual_type": "stat_callout",
+      "stat_value": "90%",
+      "stat_label": "NET MARGIN OF BORING SOLO MICRO-ASSETS",
+      "bullets": [
+        "Flashy startup ideas optimize for status and headlines",
+        "Quiet solo systems optimize for cashflow and autonomy"
+      ],
+      "highlight_words": ["flashy", "quiet", "ninety", "dollar"],
+      "narration": "Everyone dreams of launching a flashy startup. Meanwhile, quiet solo operators solving unglamorous workflow bottlenecks keep ninety cents of every dollar they earn."
+    },
+    {
+      "tag": "THE STORY",
+      "headline": "Inside High-Margin One-Person Libraries",
+      "visual_type": "stat_callout",
+      "stat_value": "0 Staff",
+      "stat_label": "SOLVING SPECIFIC MONDAY HEADACHES",
+      "bullets": [
+        "No venture debt, office leases, or bloated engineering teams",
+        "Simple templates, calculators, and guides saving 5 hours a week"
+      ],
+      "highlight_words": ["one-person", "checklists", "calculators", "five"],
+      "narration": "Look inside profitable one-person digital businesses. Instead of chasing venture funding or viral hype, they package niche checklists, calculators, and evergreen guides that save busy professionals five hours every week."
+    },
+    {
+      "tag": "THE SHIFT",
+      "headline": "Crowded Hype Markets vs Quiet Utility",
+      "visual_type": "comparison_split",
+      "left_title": "FLASHY STARTUP",
+      "left_body": "10,000 copycats • heavy ad burn • razor-thin margin",
+      "right_title": "BORING MICRO-ASSET",
+      "right_body": "1 painful bottleneck -> repeatable digital kit -> 90% net",
+      "highlight_words": ["copycats", "burn", "boring", "years"],
+      "narration": "Flashy ideas attract ten thousand copycats overnight and burn cash on overhead. Boring operational headaches - like client onboarding trackers or audit templates - stay wide open for years."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Apply the Boring Bottleneck Filter",
+      "visual_type": "compounding_curve",
+      "stat_label": "STACKING EVERGREEN MICRO-ASSETS",
+      "stat_subtext": "1 boring bottleneck solved -> years of compounding demand",
+      "highlight_words": ["bottleneck", "impressive", "three", "monday"],
+      "narration": "Use the Boring Bottleneck Filter: stop asking what sounds impressive at dinner parties, and list three tedious spreadsheets or workflows people in your industry complain about every Monday."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Let Ego Chase Hype - Build Quiet Margin",
+      "visual_type": "stat_callout",
+      "stat_value": "5h Saved",
+      "stat_label": "BUYERS PAY FOR TIME SAVED, NOT FLASH",
+      "bullets": [
+        "Find one recurring 5-hour headache you already solved",
+        "Document the system cleanly once and distribute forever"
+      ],
+      "highlight_words": ["vanity", "ego", "utility", "freedom"],
+      "narration": "Vanity projects feed your ego, while boring utility funds your freedom. Yet beginners miss this every year because..."
+    }
+  ]
+}

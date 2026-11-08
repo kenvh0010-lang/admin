@@ -138,15 +138,14 @@ def _write_transition_chime_track(wav_path: Path, duration_sec: float, sample_ra
     total_samples = int(duration_sec * sample_rate)
     chime_samples = min(total_samples, int(0.28 * sample_rate))
     buf = bytearray()
-    for i in range(total_samples):
-        if i < chime_samples:
-            t = i / sample_rate
-            env = math.exp(-t * 14.0) * 0.14
-            sample_val = env * (0.65 * math.sin(2 * math.pi * 528.0 * t) + 0.35 * math.sin(2 * math.pi * 792.0 * t))
-            pcm = max(-32767, min(32767, int(sample_val * 32767)))
-        else:
-            pcm = 0
+    for i in range(chime_samples):
+        t = i / sample_rate
+        env = math.exp(-t * 14.0) * 0.14
+        sample_val = env * (0.65 * math.sin(2 * math.pi * 528.0 * t) + 0.35 * math.sin(2 * math.pi * 792.0 * t))
+        pcm = max(-32767, min(32767, int(sample_val * 32767)))
         buf.extend(struct.pack("<h", pcm))
+    if total_samples > chime_samples:
+        buf.extend(b"\x00\x00" * (total_samples - chime_samples))
 
     with wave.open(str(wav_path), "wb") as wf:
         wf.setnchannels(1)
@@ -161,7 +160,28 @@ def generate_ambient_bed(output_wav: Path, duration_sec: float, sample_rate: int
     Uses a warm A-minor-9 harmonic bed (110Hz, 164.8Hz, 220Hz, 246.9Hz, 329.6Hz) with slow LFO breathing.
     """
     output_wav.parent.mkdir(parents=True, exist_ok=True)
-    total_samples = int((duration_sec + 0.5) * sample_rate)
+    dur = max(1.0, round(duration_sec + 0.5, 3))
+    fade_out_start = max(0.2, round(dur - 1.4, 3))
+    expr = (
+        "0.16*(0.78+0.22*sin(2*PI*0.14*t))*(1.0+0.08*sin(2*PI*1.5*t))*"
+        "(0.36*sin(2*PI*110*t)+0.24*sin(2*PI*164.81*t)+0.20*sin(2*PI*220*t)"
+        "+0.11*sin(2*PI*246.94*t)+0.09*sin(2*PI*329.63*t))"
+    )
+    if shutil.which("ffmpeg"):
+        res = subprocess.run(
+            [
+                "ffmpeg", "-y", "-f", "lavfi",
+                "-i", f"aevalsrc='{expr}':s={sample_rate}:d={dur}",
+                "-af", f"afade=t=in:st=0:d=0.8,afade=t=out:st={fade_out_start}:d=1.4",
+                "-ac", "1", "-ar", str(sample_rate),
+                str(output_wav),
+            ],
+            capture_output=True,
+        )
+        if res.returncode == 0 and output_wav.is_file() and output_wav.stat().st_size > 1000:
+            return output_wav
+
+    total_samples = int(dur * sample_rate)
     freqs = [(110.0, 0.36), (164.81, 0.24), (220.0, 0.20), (246.94, 0.11), (329.63, 0.09)]
     fade_in = int(0.8 * sample_rate)
     fade_out = int(1.4 * sample_rate)

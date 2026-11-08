@@ -86,7 +86,7 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
             mtxt = mtxt.replace("https://yourlink.com/", f"{SITE_BASE_URL}/bio/?ref=")
             seo_md.write_text(mtxt, encoding="utf-8")
 
-    storyboards = sorted(CONTENT_DIR.glob("*.json"))
+    storyboards = sorted(p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json")
     cards_html = []
     sitemap_urls = [
         f"{SITE_BASE_URL}/",
@@ -101,7 +101,9 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
         slug = sb.stem
         title = html.escape(d["title"])
         desc = html.escape(d.get("description_hook", ""))
-        fmt_label = "Long-Form Visual Essay" if d.get("format") == "long" else "Mental Model Breakdown"
+        is_long = d.get("format") == "long"
+        fmt_key = "long" if is_long else "short"
+        fmt_label = "Long-Form Visual Essay" if is_long else "Mental Model Breakdown"
         tags_str = ", ".join(html.escape(t) for t in d.get("tags", []))
 
         sections = []
@@ -161,7 +163,7 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
         (articles_dir / f"{slug}.html").write_text(art_html, encoding="utf-8")
         sitemap_urls.append(f"{SITE_BASE_URL}/articles/{slug}.html")
         cards_html.append(f"""
-    <div class="card">
+    <div class="card" data-fmt="{fmt_key}" data-search="{title.lower()} {tags_str.lower()}">
       <div>
         <span class="badge">{fmt_label}</span>
         <h2><a href="articles/{slug}.html" style="color:var(--text);">{title}</a></h2>
@@ -170,14 +172,24 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
       <div><a class="btn" href="articles/{slug}.html">Read Full Breakdown &rarr;</a></div>
     </div>""")
 
+    total_count = len(storyboards)
+    long_count = sum(1 for p in storyboards if p.stem.startswith("long_"))
+    short_count = total_count - long_count
+
     index_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Original visual essays, behavioral finance breakdowns, and curated non-fiction book guides by Mind & Margin." />
-  <title>Mind &amp; Margin — Wealth Psychology, Book Summaries &amp; AI Leverage</title>
-  <style>{CSS}</style>
+  <title>Mind &amp; Margin — Wealth Psychology, Book Summaries &amp; AI Leverage ({total_count} Guides)</title>
+  <style>{CSS}
+  .toolbar {{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; margin-top:22px; }}
+  .tabs {{ display:flex; flex-wrap:wrap; gap:8px; }}
+  .tab-btn {{ background:#131C34; color:var(--text); border:1px solid var(--border); border-radius:8px; padding:7px 14px; cursor:pointer; font-size:0.86rem; font-weight:600; }}
+  .tab-btn.active {{ background:var(--gold); color:#0B1020; border-color:var(--gold); }}
+  .search-input {{ background:#131C34; color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 14px; min-width:240px; font-size:0.9rem; }}
+  </style>
 </head>
 <body>
   <div class="disclosure-bar"><div class="wrap">{DISCLOSURE}</div></div>
@@ -185,7 +197,7 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
     <div class="wrap nav">
       <a class="brand" href="index.html">MIND <span>&amp;</span> MARGIN</a>
       <nav class="nav-links">
-        <a href="index.html">Essays &amp; Book Guides</a>
+        <a href="index.html">Essays &amp; Book Guides ({total_count})</a>
         <a href="bio/index.html">Creator Resource Hub</a>
         <a href="5_hour_asset_builder_os/index.html">5-Hour Asset OS</a>
         <a href="about.html">About</a>
@@ -195,11 +207,19 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
   </header>
   <main class="wrap">
     <section class="hero">
-      <span class="badge">Editorial Publication &amp; Book Breakdowns</span>
+      <span class="badge">Editorial Publication &amp; Book Breakdowns • {total_count} Original Guides</span>
       <h1>Wealth Psychology, Timeless Mental Models &amp; Modern Leverage</h1>
       <p>Original visual essays, behavioral finance breakdowns, and curated non-fiction reading guides accompanying the Mind &amp; Margin YouTube channel.</p>
+      <div class="toolbar">
+        <div class="tabs">
+          <button class="tab-btn active" onclick="filterCards('all', this)">All Guides ({total_count})</button>
+          <button class="tab-btn" onclick="filterCards('long', this)">Long-Form Essays ({long_count})</button>
+          <button class="tab-btn" onclick="filterCards('short', this)">Mental Model Breakdowns ({short_count})</button>
+        </div>
+        <input id="qInput" class="search-input" type="search" placeholder="Search mental models, books, AI..." oninput="applySearch()" />
+      </div>
     </section>
-    <section class="grid">
+    <section class="grid" id="articlesGrid">
       {"".join(cards_html)}
     </section>
   </main>
@@ -209,6 +229,23 @@ def build_public_site(amazon_tag: Optional[str] = None) -> Path:
       <p>&copy; 2026 Mind &amp; Margin Editorial. All rights reserved. | <a href="privacy.html">Privacy Policy &amp; Terms</a> | <a href="about.html">About &amp; Contact</a></p>
     </div>
   </footer>
+  <script>
+    let activeFmt = 'all';
+    function filterCards(fmt, btn) {{
+      activeFmt = fmt;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applySearch();
+    }}
+    function applySearch() {{
+      const q = (document.getElementById('qInput').value || '').toLowerCase().trim();
+      document.querySelectorAll('#articlesGrid .card').forEach(c => {{
+        const fmtOk = activeFmt === 'all' || c.dataset.fmt === activeFmt;
+        const qOk = !q || (c.dataset.search || '').includes(q);
+        c.style.display = (fmtOk && qOk) ? 'flex' : 'none';
+      }});
+    }}
+  </script>
 </body>
 </html>"""
     (docs / "index.html").write_text(index_html, encoding="utf-8")

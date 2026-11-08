@@ -593,8 +593,13 @@ def _scan_products() -> List[Dict[str, Any]]:
 
 def build_dashboard_payload() -> Dict[str, Any]:
     """Assemble the complete real-time JSON payload for `GET /api/dashboard`."""
+    from yt_studio.trend_radar import build_trend_intelligence_report
+
     storyboard_files = (
-        sorted(CONTENT_DIR.glob("*.json"), key=_storyboard_sort_key)
+        sorted(
+            (p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"),
+            key=_storyboard_sort_key,
+        )
         if CONTENT_DIR.is_dir()
         else []
     )
@@ -602,6 +607,7 @@ def build_dashboard_payload() -> Dict[str, Any]:
     calendar_rows = _load_calendar_rows(storyboards)
     branding, thumbnails = _scan_branding_and_thumbnails(storyboards)
     products = _scan_products()
+    trends = build_trend_intelligence_report()
 
     # Count MP4s across storyboards and output/*/*.mp4
     output_mp4_files = list(OUTPUT_DIR.glob("*/*.mp4")) if OUTPUT_DIR.is_dir() else []
@@ -640,6 +646,7 @@ def build_dashboard_payload() -> Dict[str, Any]:
         "branding": branding,
         "thumbnails": thumbnails,
         "products": products,
+        "trends": trends,
     }
 
 
@@ -704,6 +711,13 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
                     status=HTTPStatus.INTERNAL_SERVER_ERROR,
                     send_body=send_body,
                 )
+            return
+
+        if raw_path.rstrip("/") == "/api/trends":
+            from yt_studio.trend_radar import build_trend_intelligence_report
+            qs = urllib.parse.parse_qs(parsed.query)
+            q = (qs.get("q") or [None])[0]
+            self._send_json(build_trend_intelligence_report(live_query=q), status=HTTPStatus.OK, send_body=send_body)
             return
 
         if raw_path.rstrip("/") == "/api/health":

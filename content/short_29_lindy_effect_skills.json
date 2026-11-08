@@ -1,0 +1,88 @@
+{
+  "title": "The Lindy Effect: Skills AI Still Won't Replace in 2035",
+  "alt_title_1": "Stop Chasing 6-Month Tech Trends (Use the Lindy Filter)",
+  "alt_title_2": "The 2,000-Year Rule for Choosing Future-Proof Skills",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Software frameworks expire every 24 months, while certain human capabilities become more valuable every century. Here is how Benoit Mandelbrot and Nassim Taleb's Lindy Effect reveals the 4 skills to master alongside AI.",
+  "tags": [
+    "lindy effect",
+    "nassim taleb",
+    "future proof skills",
+    "ai leverage",
+    "mental models",
+    "career strategy",
+    "specific knowledge"
+  ],
+  "thumbnail": {
+    "hook_text": "THE LINDY FILTER",
+    "badge": "CAREER STRATEGY",
+    "stat": "2035"
+  },
+  "affiliate_cta": {
+    "offer_name": "Lindy Skill-Stack Audit + Antifragile Reading List",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Which of the 4 Lindy skills are you sharpening most this year - Clear Writing, Persuasion, Systems Design, or Capital Allocation? 👇 Grab our Lindy Skill-Stack Audit + book list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why Half of Today's Tech Tutorials Expire Fast",
+      "visual_type": "stat_callout",
+      "stat_value": "24 Mos",
+      "stat_label": "TYPICAL HALF-LIFE OF TRENDY SOFTWARE TACTICS",
+      "bullets": [
+        "App interfaces and prompt hacks rot every 2 years",
+        "Four ancient human skills will pay more in 2035"
+      ],
+      "highlight_words": ["tutorials", "obsolete", "twenty-four", "ancient"],
+      "narration": "Half the software tutorials trending this month will be obsolete within twenty-four months - yet four ancient human skills will pay even more in twenty thirty-five."
+    },
+    {
+      "tag": "THE STUDY",
+      "headline": "Mandelbrot & Taleb's Lindy Effect",
+      "visual_type": "stat_callout",
+      "stat_value": "2,000+ Yrs",
+      "stat_label": "PROVEN LIFESPAN OF TIMELESS HUMAN FOUNDATIONS",
+      "bullets": [
+        "Non-perishable ideas age in reverse: survival predicts longevity",
+        "Every century a skill endures proves permanent demand"
+      ],
+      "highlight_words": ["mandelbrot", "taleb", "lindy", "centuries"],
+      "narration": "Mathematician Benoit Mandelbrot and author Nassim Taleb call this the Lindy Effect: for non-perishable ideas, future lifespan is proportional to current age. What survived centuries will survive decades more."
+    },
+    {
+      "tag": "THE SHIFT",
+      "headline": "Expiring Tactics vs Compounding Foundations",
+      "visual_type": "comparison_split",
+      "left_title": "PERISHABLE FADS (20%)",
+      "left_body": "Memorizing app buttons and fleeting platform hacks",
+      "right_title": "LINDY FOUNDATIONS (80%)",
+      "right_body": "Clear writing, persuasion, systems design, capital allocation",
+      "highlight_words": ["treadmill", "writing", "persuasion", "compounds"],
+      "narration": "Chasing shiny app workflows puts you on a treadmill that resets every two years. Mastering clear writing, behavioral persuasion, systems design, and capital allocation compounds for life."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "The 80/20 Lindy Learning Portfolio",
+      "visual_type": "compounding_curve",
+      "stat_label": "TIMELESS JUDGMENT + AI AMPLIFICATION",
+      "stat_subtext": "80% permanent foundations • 20% modern AI execution tools",
+      "highlight_words": ["eighty-twenty", "twenty", "eighty", "timeless"],
+      "narration": "Use the eighty-twenty Lindy rule: spend twenty percent of your learning budget on modern AI tools, and eighty percent sharpening timeless two-thousand-year-old foundations."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Amplify What Never Goes Out of Style",
+      "visual_type": "stat_callout",
+      "stat_value": "80 / 20",
+      "stat_label": "BUILD ON BEDROCK, AUTOMATE THE REST",
+      "bullets": [
+        "Tools change every season; human psychology stays constant",
+        "Own the judgment layer software cannot commoditize"
+      ],
+      "highlight_words": ["amplifier", "permanent", "judgment", "remember"],
+      "narration": "Treat new software as a power amplifier on top of permanent human judgment, because in an AI-accelerated economy you have to remember that..."
+    }
+  ]
+}

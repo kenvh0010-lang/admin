@@ -5,10 +5,26 @@ import argparse
 import sys
 from pathlib import Path
 
-from yt_studio.config import OUTPUT_DIR
+from concurrent.futures import ProcessPoolExecutor, as_completed
+import json
+
+from yt_studio.config import OUTPUT_DIR, PROJECT_ROOT
 from yt_studio.script_generator import generate_storyboard_json
+from yt_studio.trend_radar import build_trend_intelligence_report, export_trend_report_markdown
 from yt_studio.video_renderer import render_project
 from yt_studio.visual_composer import render_thumbnail
+
+
+def _render_worker(args_tuple):
+    sb_str, out_str, tts_provider, voice = args_tuple
+    sb = Path(sb_str)
+    outputs = render_project(
+        storyboard_path=sb,
+        output_dir=Path(out_str),
+        tts_provider=tts_provider,
+        voice=voice,
+    )
+    return sb.name, str(outputs["video"])
 
 
 def cmd_render(args: argparse.Namespace) -> int:
@@ -30,20 +46,31 @@ def cmd_render(args: argparse.Namespace) -> int:
 def cmd_batch(args: argparse.Namespace) -> int:
     folder = Path(args.folder).resolve()
     out_dir = Path(args.out).resolve()
-    files = sorted(folder.glob("*.json"))
+    files = sorted(p for p in folder.glob("*.json") if p.name != "published_ledger.json")
     if not files:
         print(f"No .json storyboards found in {folder}", file=sys.stderr)
         return 1
-    print(f"🚀 Batch rendering {len(files)} storyboards from {folder}...")
-    for sb in files:
-        print(f"\n--- [{sb.name}] ---")
-        outputs = render_project(
-            storyboard_path=sb,
-            output_dir=out_dir,
-            tts_provider=args.tts,
-            voice=args.voice,
-        )
-        print(f"   ✓ Video: {outputs['video']}")
+    workers = max(1, int(args.workers))
+    print(f"🚀 Batch rendering {len(files)} storyboards from {folder} (workers={workers})...")
+    if workers == 1:
+        for sb in files:
+            print(f"\n--- [{sb.name}] ---")
+            outputs = render_project(
+                storyboard_path=sb,
+                output_dir=out_dir,
+                tts_provider=args.tts,
+                voice=args.voice,
+            )
+            print(f"   ✓ Video: {outputs['video']}")
+    else:
+        tasks = [(str(sb), str(out_dir), args.tts, args.voice) for sb in files]
+        with ProcessPoolExecutor(max_workers=workers) as pool:
+            futs = {pool.submit(_render_worker, t): t[0] for t in tasks}
+            done_count = 0
+            for fut in as_completed(futs):
+                sb_name, vid_path = fut.result()
+                done_count += 1
+                print(f"   [{done_count:02d}/{len(files):02d}] ✓ {sb_name} -> {vid_path}")
     print("\n🎉 Batch production finished!")
     return 0
 
@@ -78,6 +105,30 @@ def cmd_thumbnail(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_trends(args: argparse.Namespace) -> int:
+    report = build_trend_intelligence_report(live_query=args.query)
+    if args.json:
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+    else:
+        print(f"🔥 {report['channel']} — {report['updated_for']}")
+        print(f"   Clusters: {report['cluster_count']} | Mapped Scripts in Vault: {report['total_mapped_scripts']}\n")
+        for idx, c in enumerate(report["clusters"], start=1):
+            print(f"  [{idx}] {c['cluster_name']} ({c['cpm_range_usd']} CPM | {c['demand_velocity']})")
+            print(f"      VN: {c['vi_name']}")
+            print(f"      Scripts ({len(c['mapped_scripts'])}): {', '.join(c['mapped_scripts'][:4])} ...")
+        if report["live_suggestions"]:
+            print(f"\n🔎 Live Keyword Opportunities for '{args.query}':")
+            for item in report["live_suggestions"]:
+                print(
+                    f"   • [{item['opportunity_score']}/99] {item['keyword']} "
+                    f"-> Est RPM {item['estimated_rpm_usd']} | {item['day1_monetization']}"
+                )
+    if args.export_md:
+        md_path = export_trend_report_markdown(Path(args.export_md).resolve())
+        print(f"\n📄 Exported Trend Report Markdown to: {md_path}")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Mind & Margin — Automated Faceless YouTube Video & SEO Studio"
@@ -96,6 +147,7 @@ def main() -> int:
     p_batch.add_argument("--out", default=str(OUTPUT_DIR), help="Output directory")
     p_batch.add_argument("--tts", default="auto", choices=["auto", "edge", "openai", "elevenlabs", "offline"])
     p_batch.add_argument("--voice", default="en_authoritative")
+    p_batch.add_argument("--workers", type=int, default=4, help="Parallel worker processes (default: 4)")
     p_batch.set_defaults(func=cmd_batch)
 
     p_script = sub.add_parser("script", help="Generate a storyboard JSON from a topic (or export a $0 LLM prompt)")
@@ -112,6 +164,12 @@ def main() -> int:
     p_thumb.add_argument("--bg", default=None, help="Optional background image path")
     p_thumb.add_argument("--out", default=str(OUTPUT_DIR / "custom_thumbnail.png"), help="Output PNG path")
     p_thumb.set_defaults(func=cmd_thumbnail)
+
+    p_trends = sub.add_parser("trends", help="Explore high-RPM 2026 YouTube trend clusters & live keyword opportunities")
+    p_trends.add_argument("--query", default=None, help="Optional seed keyword to mine live YouTube search suggestions")
+    p_trends.add_argument("--json", action="store_true", help="Output raw JSON")
+    p_trends.add_argument("--export-md", default=None, help="Optional path to export bilingual Markdown report")
+    p_trends.set_defaults(func=cmd_trends)
 
     p_site = sub.add_parser("build-site", help="Rebuild docs/ public website, sitemap.xml & optionally inject Amazon Associate tag")
     p_site.add_argument("--amazon-tag", default=None, help="Amazon Associate tag (e.g., mindandmargin-20)")

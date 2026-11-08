@@ -1,0 +1,102 @@
+{
+  "title": "The Architecture of a One-Person AI Business (90% Margin Blueprint)",
+  "alt_title_1": "How Solo Founders Replace 10-Person Overhead With 5 Workflows",
+  "alt_title_2": "The 5-Hour Weekly Operating System Behind 90%-Margin Solo Assets",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "Scaling output no longer requires hiring 10 employees, signing office leases, or sitting in Slack all day. Here is the 5-Engine Architecture modern solo operators use to run 90%-margin digital asset systems in 5 hours a week.",
+  "tags": [
+    "one person ai business",
+    "solo founder architecture",
+    "company of one",
+    "digital leverage",
+    "90 percent margin",
+    "ai workflows",
+    "asymmetric assets",
+    "side business systems"
+  ],
+  "thumbnail": {
+    "hook_text": "1-PERSON AI SYSTEM",
+    "badge": "SYSTEMS ESSAY",
+    "stat": "90%"
+  },
+  "affiliate_cta": {
+    "offer_name": "The 5-Hour Solo Asset Builder Notion OS + 'Company of One' Free Trial",
+    "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
+    "pinned_comment": "Which of the 5 Solo Engines (Research, Evergreen Media, Lead Funnel, Digital Product OS, or Async Retention) are you building next? 👇 Grab our complete 5-Hour Asset Builder OS + curated reading list here: https://kenvh0010-lang.github.io/admin/bio/"
+  },
+  "scenes": [
+    {
+      "tag": "CHAPTER 1 • HOOK",
+      "headline": "Why Revenue Decoupled From Headcount",
+      "visual_type": "stat_callout",
+      "stat_value": "90%",
+      "stat_label": "OPERATING MARGIN OF SYSTEMIZED SOLO ASSETS",
+      "bullets": [
+        "Old industrial rule: 2x revenue required 2x payroll and meetings",
+        "New leverage rule: deterministic software + evergreen media scale at zero marginal cost",
+        "One disciplined architect can match a 10-person boutique studio"
+      ],
+      "highlight_words": ["complexity", "deterministic", "ninety", "five"],
+      "narration": "For nearly a hundred years, growing a business meant growing organizational complexity: hiring full-time specialists, signing multi-year leases, and losing half your week to management meetings. Over the past few years, that equation quietly broke in half. By combining permissionless media distribution with deterministic AI workflows, a single focused operator can now build digital libraries and software-assisted templates at ninety percent net margin - matching the creative output of a ten-person studio in roughly five focused hours a week."
+    },
+    {
+      "tag": "CHAPTER 2 • COORDINATION TAX VS SOLO STACK",
+      "headline": "Fred Brooks's Law and the 45-Channel Penalty",
+      "visual_type": "comparison_split",
+      "left_title": "10-PERSON AGENCY",
+      "left_body": "45 Slack pathways • 65% payroll burn • 15% net margin",
+      "right_title": "1-PERSON SYSTEM OS",
+      "right_body": "5 documented SOP pipelines • 0 meetings • 90% margin",
+      "highlight_words": ["brooks", "forty-five", "politics", "pipelines"],
+      "narration": "Computer scientist Fred Brooks explained decades ago why traditional teams bog down as they grow: communication pathways multiply quadratically. A ten-person company has forty-five separate communication channels, heavy payroll obligations, and endless handoff delays, frequently leaving the founder with fifteen percent net margin and maximum stress. A one-person business replaces organizational bloat with architectural clarity: zero internal politics, instant decisions, and five repeatable standard operating pipelines doing the repetitive lifting."
+    },
+    {
+      "tag": "CHAPTER 3 • ENGINES 1 & 2: RESEARCH + MEDIA",
+      "headline": "Turning One Deep Insight Into Four Evergreen Assets",
+      "visual_type": "stat_callout",
+      "stat_value": "1 -> 4",
+      "stat_label": "ONE RESEARCH SPRINT FEEDS FOUR CHANNELS",
+      "bullets": [
+        "Engine 1 (Research Vault): Academic studies, classic books & real bottlenecks",
+        "Engine 2 (Media Pipeline): 1 Flagship Essay -> 1 Long Video + 3 Shorts + 1 Web Guide"
+      ],
+      "highlight_words": ["vault", "evergreen", "flagship", "four"],
+      "narration": "The top half of a one-person company runs on Engines One and Two. Engine One is your Research Intelligence Vault: instead of chasing fleeting daily news, you systematically capture behavioral studies, timeless book mental models, and recurring workflow problems into a structured database. Engine Two is your Evergreen Media Pipeline: once a week, you turn one researched thesis into a master storyboard that compiles into one flagship visual essay, three vertical short-form clips, and one search-indexed companion article - four durable assets from one writing block."
+    },
+    {
+      "tag": "CHAPTER 4 • ENGINES 3 & 4: FUNNEL + PRODUCT OS",
+      "headline": "Routing Attention Into Day-1 Monetization",
+      "visual_type": "compounding_curve",
+      "stat_label": "52 EVERGREEN VIDEOS -> 24/7 FUNNEL TRAFFIC",
+      "stat_subtext": "Every past upload keeps routing readers to your Resource Hub",
+      "highlight_words": ["funnel", "resource", "curated", "templates"],
+      "narration": "Views alone do not pay bills unless Engines Three and Four sit directly underneath them. Engine Three is your Automated Bio and Lead Funnel: every video description and pinned comment points viewers to one clean, fast-loading resource hub hosting free companion checklists. Engine Four is your Digital Product and Affiliate OS: from day one, your hub pairs curated, high-trust book and software recommendations with nineteen-to-forty-nine-dollar Notion dashboards, spreadsheets, and playbooks that save buyers ten hours of trial and error."
+    },
+    {
+      "tag": "CHAPTER 5 • ENGINE 5: ASYNC RETENTION",
+      "headline": "Serving 10,000 Readers With Zero Calendar Calls",
+      "visual_type": "comparison_split",
+      "left_title": "CUSTOM CLIENT SERVICE",
+      "left_body": "Hourly Zoom calls • scope creep • hits ceiling at 8 clients",
+      "right_title": "ASYNC RETENTION LOOP",
+      "right_body": "Self-serve setup guides + weekly written synthesis -> infinite scale",
+      "highlight_words": ["calendar", "asynchronous", "self-serve", "ten"],
+      "narration": "The hidden trap that ruins most solo founders is selling unscalable access to their calendar. Engine Five prevents burnout through Asynchronous Retention: every digital toolkit includes an instant five-minute walkthrough guide, clear FAQ documentation, and an optional weekly written briefing that deepens trust across years with zero live meetings. Because delivery is asynchronous, serving ten thousand readers takes the exact same Monday morning energy as serving ten."
+    },
+    {
+      "tag": "CHAPTER 6 • THE ACTION PROTOCOL",
+      "headline": "The 5-Hour Weekly Solo Operator Cadence",
+      "visual_type": "stat_callout",
+      "stat_value": "5h / Wk",
+      "stat_label": "BUILD ALONGSIDE YOUR PRIMARY CAREER",
+      "bullets": [
+        "90m Research & Original Script • 90m Automated Audio/Visual Render",
+        "60m Thumbnails, SEO & Static Site Sync • 60m Retention Data Review",
+        "1 weekly brick = 52 compounding digital assets in 12 months"
+      ],
+      "highlight_words": ["ninety", "automated", "sixty", "fifty-two"],
+      "narration": "You do not need to quit your day job to deploy this architecture; run it inside a protected five-hour weekly cadence. Block ninety minutes on Saturday morning to research and write one original, high-utility script. Spend ninety minutes running automated voice synthesis, dynamic visual card rendering, and subtitle packaging. Dedicate sixty minutes to crafting high-contrast thumbnails, SEO metadata, and syncing your static resource site. Use the final sixty minutes each month-end and Sunday to study audience retention curves so every asset outperforms the last - stacking fifty-two permanent bricks a year."
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Original visual essays, behavioral finance breakdowns, and curated non-fiction book guides by Mind & Margin." />
-  <title>Mind &amp; Margin — Wealth Psychology, Book Summaries &amp; AI Leverage</title>
+  <title>Mind &amp; Margin — Wealth Psychology, Book Summaries &amp; AI Leverage (48 Guides)</title>
   <style>
 :root { --bg:#0B1020; --card:#131C34; --border:#233259; --gold:#F5B942; --cyan:#22D3EE; --text:#F8FAFC; --muted:#94A3B8; }
 * { box-sizing:border-box; }
@@ -33,7 +33,13 @@ article h1 { font-size:2rem; line-height:1.28; margin-bottom:12px; }
 .scene-block h3 { margin:0 0 8px; color:var(--gold); font-size:1.1rem; }
 .book-box { background:#162240; border-left:4px solid var(--gold); padding:18px 22px; border-radius:10px; margin:28px 0; }
 footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--muted); font-size:0.86rem; margin-top:40px; }
-</style>
+
+  .toolbar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; margin-top:22px; }
+  .tabs { display:flex; flex-wrap:wrap; gap:8px; }
+  .tab-btn { background:#131C34; color:var(--text); border:1px solid var(--border); border-radius:8px; padding:7px 14px; cursor:pointer; font-size:0.86rem; font-weight:600; }
+  .tab-btn.active { background:var(--gold); color:#0B1020; border-color:var(--gold); }
+  .search-input { background:#131C34; color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 14px; min-width:240px; font-size:0.9rem; }
+  </style>
 </head>
 <body>
   <div class="disclosure-bar"><div class="wrap">Disclosure: As an Amazon Associate I earn from qualifying purchases. Mind & Margin participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com and Audible.com.</div></div>
@@ -41,7 +47,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
     <div class="wrap nav">
       <a class="brand" href="index.html">MIND <span>&amp;</span> MARGIN</a>
       <nav class="nav-links">
-        <a href="index.html">Essays &amp; Book Guides</a>
+        <a href="index.html">Essays &amp; Book Guides (48)</a>
         <a href="bio/index.html">Creator Resource Hub</a>
         <a href="5_hour_asset_builder_os/index.html">5-Hour Asset OS</a>
         <a href="about.html">About</a>
@@ -51,13 +57,21 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
   </header>
   <main class="wrap">
     <section class="hero">
-      <span class="badge">Editorial Publication &amp; Book Breakdowns</span>
+      <span class="badge">Editorial Publication &amp; Book Breakdowns • 48 Original Guides</span>
       <h1>Wealth Psychology, Timeless Mental Models &amp; Modern Leverage</h1>
       <p>Original visual essays, behavioral finance breakdowns, and curated non-fiction reading guides accompanying the Mind &amp; Margin YouTube channel.</p>
+      <div class="toolbar">
+        <div class="tabs">
+          <button class="tab-btn active" onclick="filterCards('all', this)">All Guides (48)</button>
+          <button class="tab-btn" onclick="filterCards('long', this)">Long-Form Essays (12)</button>
+          <button class="tab-btn" onclick="filterCards('short', this)">Mental Model Breakdowns (36)</button>
+        </div>
+        <input id="qInput" class="search-input" type="search" placeholder="Search mental models, books, AI..." oninput="applySearch()" />
+      </div>
     </section>
-    <section class="grid">
+    <section class="grid" id="articlesGrid">
       
-    <div class="card">
+    <div class="card" data-fmt="long" data-search="the time trap: why hard work stopped building wealth (and what does) the time trap, wealth psychology, stop trading time for money, asymmetric leverage, financial independence, mental models, side income systems">
       <div>
         <span class="badge">Long-Form Visual Essay</span>
         <h2><a href="articles/long_01_time_trap_blueprint.html" style="color:var(--text);">The Time Trap: Why Hard Work Stopped Building Wealth (And What Does)</a></h2>
@@ -65,7 +79,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/long_01_time_trap_blueprint.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="long" data-search="7 mental models from &#x27;the almanack of naval&#x27; explained visually almanack of naval ravikant summary, naval ravikant, how to get rich without getting lucky, specific knowledge, permissionless leverage, mental models, wealth psychology, one person business">
       <div>
         <span class="badge">Long-Form Visual Essay</span>
         <h2><a href="articles/long_02_naval_mental_models.html" style="color:var(--text);">7 Mental Models From &#x27;The Almanack of Naval&#x27; Explained Visually</a></h2>
@@ -73,7 +87,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/long_02_naval_mental_models.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="long" data-search="the silent tax of indecision (opportunity cost explained) opportunity cost mental model, type 1 vs type 2 decisions, indecision tax, analysis paralysis, jeff bezos decision making, wealth psychology, mental models, omission bias">
       <div>
         <span class="badge">Long-Form Visual Essay</span>
         <h2><a href="articles/long_03_silent_tax_indecision.html" style="color:var(--text);">The Silent Tax of Indecision (Opportunity Cost Explained)</a></h2>
@@ -81,7 +95,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/long_03_silent_tax_indecision.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="long" data-search="how to build a $1,000/month digital asset library in 5 hours a week digital assets passive income system, digital asset library, one person business, evergreen youtube strategy, digital templates, recurring affiliate marketing, ai leverage, side income systems">
       <div>
         <span class="badge">Long-Form Visual Essay</span>
         <h2><a href="articles/long_04_digital_asset_library.html" style="color:var(--text);">How to Build a $1,000/Month Digital Asset Library in 5 Hours a Week</a></h2>
@@ -89,7 +103,71 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/long_04_digital_asset_library.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="long" data-search="the 5 types of wealth: why financially rich people still feel broke the 5 types of wealth, sahil bloom, wealth psychology, time wealth, harvard study happiness, defining enough, mental models, life portfolio">
+      <div>
+        <span class="badge">Long-Form Visual Essay</span>
+        <h2><a href="articles/long_05_five_types_of_wealth.html" style="color:var(--text);">The 5 Types of Wealth: Why Financially Rich People Still Feel Broke</a></h2>
+        <p>Optimizing exclusively for Financial Wealth silently bankrupts the four other currencies that create a rich life. Inspired by Sahil Bloom&#x27;s &#x27;The 5 Types of Wealth&#x27; and Harvard&#x27;s 85-year study, here is how to balance Time, Social, Mental, Physical, and Financial margin.</p>
+      </div>
+      <div><a class="btn" href="articles/long_05_five_types_of_wealth.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="long" data-search="the architecture of a one-person ai business (90% margin blueprint) one person ai business, solo founder architecture, company of one, digital leverage, 90 percent margin, ai workflows, asymmetric assets, side business systems">
+      <div>
+        <span class="badge">Long-Form Visual Essay</span>
+        <h2><a href="articles/long_06_one_person_ai_company.html" style="color:var(--text);">The Architecture of a One-Person AI Business (90% Margin Blueprint)</a></h2>
+        <p>Scaling output no longer requires hiring 10 employees, signing office leases, or sitting in Slack all day. Here is the 5-Engine Architecture modern solo operators use to run 90%-margin digital asset systems in 5 hours a week.</p>
+      </div>
+      <div><a class="btn" href="articles/long_06_one_person_ai_company.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="long" data-search="the art of spending money: 6 psychological traps draining modern incomes art of spending money, morgan housel, richard thaler, psychology of money, status signaling, hedonic treadmill, conscious spending, wealth margin">
+      <div>
+        <span class="badge">Long-Form Visual Essay</span>
+        <h2><a href="articles/long_07_art_of_spending_money.html" style="color:var(--text);">The Art of Spending Money: 6 Psychological Traps Draining Modern Incomes</a></h2>
+        <p>Earning money requires leverage, while spending money wisely requires self-awareness. Synthesizing insights from Morgan Housel, Nobel laureate Richard Thaler, and PNAS happiness studies, here are 6 spending traps and the 3-Filter Margin Protocol.</p>
+      </div>
+      <div><a class="btn" href="articles/long_07_art_of_spending_money.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="long" data-search="slow productivity: how to produce 3x more value doing half the busywork slow productivity, cal newport, deep work, attention residue, ultradian rhythms, pseudo productivity, knowledge work systems, mental models">
+      <div>
+        <span class="badge">Long-Form Visual Essay</span>
+        <h2><a href="articles/long_08_slow_productivity_blueprint.html" style="color:var(--text);">Slow Productivity: How to Produce 3x More Value Doing Half the Busywork</a></h2>
+        <p>Studies show 60% of modern knowledge work goes to &#x27;work about work&#x27; - inbox triage, status pings, and performative busyness. Synthesizing Cal Newport&#x27;s Slow Productivity, Sophie Leroy&#x27;s Attention Residue, and 90-minute Ultradian Sprints, here is how to build 3x more real value.</p>
+      </div>
+      <div><a class="btn" href="articles/long_08_slow_productivity_blueprint.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="long" data-search="the barbell strategy: how to take asymmetric bets without risking your paycheck barbell strategy, nassim taleb, asymmetric bets, charlie munger inversion, thinking in bets, wealth psychology, career leverage, mental models">
+      <div>
+        <span class="badge">Long-Form Visual Essay</span>
+        <h2><a href="articles/long_09_asymmetric_barbell_life.html" style="color:var(--text);">The Barbell Strategy: How to Take Asymmetric Bets Without Risking Your Paycheck</a></h2>
+        <p>Most professionals feel trapped between clinging to a single corporate paycheck or recklessly quitting without a safety net. By combining Nassim Taleb&#x27;s Barbell Strategy, Charlie Munger&#x27;s Inversion, and Annie Duke&#x27;s &#x27;Thinking in Bets&#x27;, here is how to protect 90% of your downside while taking 10% asymmetric shots.</p>
+      </div>
+      <div><a class="btn" href="articles/long_09_asymmetric_barbell_life.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="long" data-search="winning the attention economy: reclaiming your cognitive capital in 2026 attention economy, cognitive capital, dopamine detox science, attention residue, deep work, digital minimalism, wealth psychology, creator productivity">
+      <div>
+        <span class="badge">Long-Form Visual Essay</span>
+        <h2><a href="articles/long_10_dopamine_economy_defense.html" style="color:var(--text);">Winning the Attention Economy: Reclaiming Your Cognitive Capital in 2026</a></h2>
+        <p>Trillion-dollar recommendation engines are engineered to harvest your spare minutes using variable rewards and zero stopping cues. Here is the behavioral science of Attention Residue - and a 4-shield architectural system to convert 15 wasted hours a week into compounding digital assets.</p>
+      </div>
+      <div><a class="btn" href="articles/long_10_dopamine_economy_defense.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="long" data-search="goodbye 5-year plans: how &#x27;tiny experiments&#x27; unlock unfair career leverage tiny experiments, anne laure le cunff, goodbye 5 year plans, galls law, career strategy, curiosity loops, mental models, solo creator">
+      <div>
+        <span class="badge">Long-Form Visual Essay</span>
+        <h2><a href="articles/long_11_tiny_experiments_loops.html" style="color:var(--text);">Goodbye 5-Year Plans: How &#x27;Tiny Experiments&#x27; Unlock Unfair Career Leverage</a></h2>
+        <p>In an AI-accelerated economy where industries shift every 18 months, rigid 5-year career plans cause either analysis paralysis or sunk-cost burnout. Combining neuroscientist Anne-Laure Le Cunff&#x27;s &#x27;Tiny Experiments&#x27; with John Gall&#x27;s Law, here is how 14-day curiosity loops uncover outlier niches.</p>
+      </div>
+      <div><a class="btn" href="articles/long_11_tiny_experiments_loops.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="long" data-search="quiet compounding: the 90-day system from zero to digital independence quiet compounding, 90 day creator blueprint, digital independence, wealth psychology, lindy skills, slow productivity, digital assets, one person business">
+      <div>
+        <span class="badge">Long-Form Visual Essay</span>
+        <h2><a href="articles/long_12_quiet_compounding_playbook.html" style="color:var(--text);">Quiet Compounding: The 90-Day System From Zero to Digital Independence</a></h2>
+        <p>Most side projects die between manic 14-hour hustle weekends and 3 months of burnout. Synthesizing Ronald Read&#x27;s patience, Lindy-proof skills, Default Architecture, and the 3-Layer Creator Flywheel, here is the calm 90-day operating system for digital independence.</p>
+      </div>
+      <div><a class="btn" href="articles/long_12_quiet_compounding_playbook.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why earning more still keeps you broke (the diderot trap) psychology of money, diderot effect, wealth psychology, personal finance, mental models, lifestyle creep">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_01_psychology_money.html" style="color:var(--text);">Why Earning More Still Keeps You Broke (The Diderot Trap)</a></h2>
@@ -97,7 +175,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_01_psychology_money.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="why ai changed naval&#x27;s 4 levels of leverage forever naval ravikant, ai leverage, one person business, digital assets, mental models, productivity">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_02_ai_leverage.html" style="color:var(--text);">Why AI Changed Naval&#x27;s 4 Levels of Leverage Forever</a></h2>
@@ -105,7 +183,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_02_ai_leverage.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="the 90-minute focus rule behind top 1% performers deep work, ultradian rhythm, focus habits, self improvement, productivity hacks, cal newport">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_03_atomic_focus.html" style="color:var(--text);">The 90-Minute Focus Rule Behind Top 1% Performers</a></h2>
@@ -113,7 +191,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_03_atomic_focus.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="morgan housel&#x27;s #1 rule: being rich vs being wealthy rich vs wealthy, morgan housel, psychology of money, stealth wealth, personal finance, financial freedom, wealth psychology">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_04_rich_vs_wealthy.html" style="color:var(--text);">Morgan Housel&#x27;s #1 Rule: Being Rich vs Being Wealthy</a></h2>
@@ -121,7 +199,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_04_rich_vs_wealthy.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="3 tasks you should never do manually again (the 3x rule) ai workflow automation, productivity systems, zapier automation, notion ai, time management, ai leverage, work smarter">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_05_automate_tasks.html" style="color:var(--text);">3 Tasks You Should Never Do Manually Again (The 3x Rule)</a></h2>
@@ -129,7 +207,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_05_automate_tasks.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="pareto&#x27;s hidden second layer: how 4% creates 64% of results 80 20 rule productivity, pareto principle, mental models, fractal pareto, high leverage, time management, richard koch">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_06_pareto_one_percent.html" style="color:var(--text);">Pareto&#x27;s Hidden Second Layer: How 4% Creates 64% of Results</a></h2>
@@ -137,7 +215,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_06_pareto_one_percent.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="why casinos &amp; apps use &#x27;variable rewards&#x27; against your wallet variable rewards psychology, b f skinner, dopamine spending, impulse buying, wealth psychology, behavioral economics, personal finance">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_07_variable_rewards.html" style="color:var(--text);">Why Casinos &amp; Apps Use &#x27;Variable Rewards&#x27; Against Your Wallet</a></h2>
@@ -145,7 +223,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_07_variable_rewards.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="the &#x27;second brain&#x27; mistake wasting hours of your week building a second brain notion, collectors fallacy, note taking system, tiago forte, zettelkasten, productivity mistakes, ai leverage">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_08_second_brain_mistake.html" style="color:var(--text);">The &#x27;Second Brain&#x27; Mistake Wasting Hours of Your Week</a></h2>
@@ -153,7 +231,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_08_second_brain_mistake.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="parkinson&#x27;s law: why cutting deadlines in half improves quality parkinsons law time management, parkinsons law, cut deadlines in half, mental models, deep work, productivity, procrastination fix">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_09_parkinsons_law.html" style="color:var(--text);">Parkinson&#x27;s Law: Why Cutting Deadlines in Half Improves Quality</a></h2>
@@ -161,7 +239,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_09_parkinsons_law.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="james clear&#x27;s &#x27;2-minute gateway&#x27; for hard habits atomic habits 2 minute rule, james clear, twyla tharp, habit building, consistency, mental models, productivity">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_10_two_minute_gateway.html" style="color:var(--text);">James Clear&#x27;s &#x27;2-Minute Gateway&#x27; For Hard Habits</a></h2>
@@ -169,7 +247,7 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_10_two_minute_gateway.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="how solo creators turn 1 idea into 5 assets automatically one person media business, content repurposing system, solo creator workflow, digital leverage, beehiiv newsletter, ai leverage, creator economy">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_11_one_idea_five_assets.html" style="color:var(--text);">How Solo Creators Turn 1 Idea Into 5 Assets Automatically</a></h2>
@@ -177,13 +255,205 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       </div>
       <div><a class="btn" href="articles/short_11_one_idea_five_assets.html">Read Full Breakdown &rarr;</a></div>
     </div>
-    <div class="card">
+    <div class="card" data-fmt="short" data-search="jeff bezos&#x27; regret minimization framework in 50 seconds regret minimization framework, jeff bezos, founder mental models, decision making, wealth psychology, career leap, inaction regret">
       <div>
         <span class="badge">Mental Model Breakdown</span>
         <h2><a href="articles/short_12_regret_minimization.html" style="color:var(--text);">Jeff Bezos&#x27; Regret Minimization Framework in 50 Seconds</a></h2>
         <p>In 1994, Jeff Bezos walked away from a lucrative Wall Street bonus at D.E. Shaw using one mental time machine: the Age-80 Regret Minimization Framework, backed by Cornell psychology research on lifelong regret.</p>
       </div>
       <div><a class="btn" href="articles/short_12_regret_minimization.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why you spend tax refunds faster than paychecks (mental accounting) mental accounting, richard thaler, behavioral economics, psychology of money, wealth psychology, windfall trap, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_13_mental_accounting.html" style="color:var(--text);">Why You Spend Tax Refunds Faster Than Paychecks (Mental Accounting)</a></h2>
+        <p>A dollar is a dollar, yet human brains treat a $1,000 tax refund completely differently than a $1,000 paycheck. Here is Nobel laureate Richard Thaler&#x27;s Mental Accounting discovery and the 14-day Fungibility Rule to stop windfall leaks.</p>
+      </div>
+      <div><a class="btn" href="articles/short_13_mental_accounting.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="stop prompting ai - start delegating to systems (the 2026 shift) ai workflows, agentic systems, solo business, ai productivity, digital leverage, standard operating procedures, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_14_agentic_workflows.html" style="color:var(--text);">Stop Prompting AI - Start Delegating to Systems (The 2026 Shift)</a></h2>
+        <p>Typing clever one-off prompts into a chat box all afternoon is just faster manual labor. Here is how solo creators replace ad-hoc prompting with repeatable Input -&gt; Process -&gt; Output pipelines.</p>
+      </div>
+      <div><a class="btn" href="articles/short_14_agentic_workflows.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why one &#x27;quick message check&#x27; destroys 23 minutes of iq attention residue, sophie leroy, deep work, cognitive science, focus habits, productivity psychology, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_15_attention_residue.html" style="color:var(--text);">Why One &#x27;Quick Message Check&#x27; Destroys 23 Minutes of IQ</a></h2>
+        <p>Checking a notification for 30 seconds never costs just 30 seconds. Prof. Sophie Leroy&#x27;s Attention Residue research explains why task-switching leaves cognitive static for 23 minutes - and the simple physical rule to fix it.</p>
+      </div>
+      <div><a class="btn" href="articles/short_15_attention_residue.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="the &#x27;concorde fallacy&#x27; keeping you in dead-end projects sunk cost fallacy, concorde fallacy, decision making, mental models, behavioral psychology, career strategy, wealth psychology">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_16_sunk_cost_trap.html" style="color:var(--text);">The &#x27;Concorde Fallacy&#x27; Keeping You in Dead-End Projects</a></h2>
+        <p>Britain and France knew the supersonic Concorde jet would lose billions - yet kept funding it for decades out of pride. Here is how the Concorde Fallacy traps ambitious builders and the Zero-Base Question to escape it.</p>
+      </div>
+      <div><a class="btn" href="articles/short_16_sunk_cost_trap.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why rigid 5-year plans backfire (run &#x27;tiny experiments&#x27; instead) tiny experiments, anne-laure le cunff, goal setting, neuroscience productivity, mental models, career leverage, personal growth">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_17_tiny_experiments.html" style="color:var(--text);">Why Rigid 5-Year Plans Backfire (Run &#x27;Tiny Experiments&#x27; Instead)</a></h2>
+        <p>Rigid 5-year career ladders break in fast-moving markets. Neuroscientist Anne-Laure Le Cunff&#x27;s Tiny Experiments framework replaces high-pressure life plans with 14-day curiosity pacts that compound real-world data.</p>
+      </div>
+      <div><a class="btn" href="articles/short_17_tiny_experiments.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="charlie munger&#x27;s #1 mental trick: invert, always invert charlie munger, inversion mental model, carl jacobi, wealth psychology, decision making, poor charlies almanack, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_18_munger_inversion.html" style="color:var(--text);">Charlie Munger&#x27;s #1 Mental Trick: Invert, Always Invert</a></h2>
+        <p>Instead of asking how to get rich or productive, billionaire thinker Charlie Munger flipped every hard problem backwards using mathematician Carl Jacobi&#x27;s Inversion Principle. Here is the 5-Trap Inversion filter.</p>
+      </div>
+      <div><a class="btn" href="articles/short_18_munger_inversion.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why the $149 tier exists only to sell you the $79 plan anchoring bias, decoy effect, dan ariely, predictably irrational, behavioral economics, spending psychology, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_19_anchoring_bias.html" style="color:var(--text);">Why the $149 Tier Exists Only to Sell You the $79 Plan</a></h2>
+        <p>That overpriced $149 top tier on software and subscription pages is rarely meant to be bought - it is an anchor planted to make $79 feel cheap. Here is MIT economist Dan Ariely&#x27;s Decoy Effect study and the Blank-Sheet Rule.</p>
+      </div>
+      <div><a class="btn" href="articles/short_19_anchoring_bias.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why &#x27;boring&#x27; solo systems out-earn flashy startups one person business, solo founder, digital micro assets, boring businesses, asymmetric leverage, company of one, wealth systems">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_20_boring_ai_businesses.html" style="color:var(--text);">Why &#x27;Boring&#x27; Solo Systems Out-Earn Flashy Startups</a></h2>
+        <p>Flashy startups attract 10,000 competitors and high monthly burn. Quiet solo operators solving unglamorous workflow headaches run at 90% net margins with zero staff. Here is the Boring Bottleneck Filter.</p>
+      </div>
+      <div><a class="btn" href="articles/short_20_boring_ai_businesses.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="bill perkins&#x27; &#x27;memory dividends&#x27; rule changed how i view money die with zero, bill perkins, memory dividends, wealth psychology, time wealth, intentional spending, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_21_die_with_zero_dividends.html" style="color:var(--text);">Bill Perkins&#x27; &#x27;Memory Dividends&#x27; Rule Changed How I View Money</a></h2>
+        <p>Automated saving builds security, but autopilot hoarding past your target misses biological windows money can never reopen. Here is Bill Perkins&#x27; Memory Dividends mental model from Die With Zero.</p>
+      </div>
+      <div><a class="btn" href="articles/short_21_die_with_zero_dividends.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="the $273/month leak hidden inside frictionless payments subscription creep, pain of paying, neuroeconomics, behavioral finance, wealth margin, saving money, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_22_subscription_creep.html" style="color:var(--text);">The $273/Month Leak Hidden Inside Frictionless Payments</a></h2>
+        <p>Neuroeconomics fMRI scans at MIT and Carnegie Mellon show physical cash activates the brain&#x27;s pain center (the insula), while auto-renewing subscriptions numb it - causing a 2.5x recurring spend blind spot.</p>
+      </div>
+      <div><a class="btn" href="articles/short_22_subscription_creep.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why going 10x is psychologically easier than going 2x 10x is easier than 2x, dan sullivan, benjamin hardy, pareto principle, asymmetric leverage, productivity psychology, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_23_ten_x_easier_two_x.html" style="color:var(--text);">Why Going 10x Is Psychologically Easier Than Going 2x</a></h2>
+        <p>Aiming for 2x tricks you into keeping 80% low-value busywork and working longer nights. Dan Sullivan and Dr. Benjamin Hardy show why a 10x lens forces ruthless simplicity around your 20% asymmetric core.</p>
+      </div>
+      <div><a class="btn" href="articles/short_23_ten_x_easier_two_x.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="nassim taleb&#x27;s barbell rule for unbreakable leverage barbell strategy, nassim taleb, antifragile, asymmetric risk, career leverage, wealth psychology, mental models">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_24_barbell_strategy.html" style="color:var(--text);">Nassim Taleb&#x27;s Barbell Rule for Unbreakable Leverage</a></h2>
+        <p>You do not have to choose between playing it timidly safe forever or burning your boats recklessly. Nassim Taleb&#x27;s 90/10 Barbell Strategy from Antifragile pairs ironclad stability with uncapped creative upside.</p>
+      </div>
+      <div><a class="btn" href="articles/short_24_barbell_strategy.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="how a gas station janitor secretly built $8 million ronald read, psychology of money, morgan housel, wealth psychology, compound interest, stealth wealth, behavioral finance">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_25_ronald_read_janitor.html" style="color:var(--text);">How a Gas Station Janitor Secretly Built $8 Million</a></h2>
+        <p>In 2014, 92-year-old Brattleboro janitor Ronald Read passed away leaving an $8 million portfolio - the same era Harvard-trained finance executives went bankrupt in giant mansions. Here is the behavioral lesson from Morgan Housel&#x27;s &#x27;The Psychology of Money&#x27;.</p>
+      </div>
+      <div><a class="btn" href="articles/short_25_ronald_read_janitor.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="cal newport&#x27;s cure for &#x27;pseudo-productivity&#x27; slow productivity, cal newport, pseudo productivity, deep work, focus systems, knowledge work, time management">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_26_slow_productivity.html" style="color:var(--text);">Cal Newport&#x27;s Cure for &#x27;Pseudo-Productivity&#x27;</a></h2>
+        <p>Instant Slack replies and packed Zoom calendars make you look hardworking while starving your most valuable projects. Here is computer scientist Cal Newport&#x27;s 3-part cure for Pseudo-Productivity.</p>
+      </div>
+      <div><a class="btn" href="articles/short_26_slow_productivity.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="the cobra effect: when chasing metrics ruins your life goodharts law, cobra effect, mental models, systems thinking, vanity metrics, behavioral economics, wealth psychology">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_27_goodharts_law.html" style="color:var(--text);">The Cobra Effect: When Chasing Metrics Ruins Your Life</a></h2>
+        <p>When colonial officials paid a cash bounty for dead cobras in Delhi, locals started farming venomous snakes for profit. Here is how Charles Goodhart&#x27;s Law explains why chasing vanity metrics ruins modern careers and wealth.</p>
+      </div>
+      <div><a class="btn" href="articles/short_27_goodharts_law.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why every luxury feels normal after 90 days (hedonic adaptation) hedonic adaptation, hedonic treadmill, lifestyle creep, wealth psychology, behavioral psychology, personal finance, intentional living">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_28_hedonic_reset.html" style="color:var(--text);">Why Every Luxury Feels Normal After 90 Days (Hedonic Adaptation)</a></h2>
+        <p>Psychologists Philip Brickman and Donald Campbell discovered why big material upgrades fade into invisible baseline within 90 days while the monthly bills last for years. Here is the Intentional Contrast protocol to beat Hedonic Adaptation.</p>
+      </div>
+      <div><a class="btn" href="articles/short_28_hedonic_reset.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="the lindy effect: skills ai still won&#x27;t replace in 2035 lindy effect, nassim taleb, future proof skills, ai leverage, mental models, career strategy, specific knowledge">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_29_lindy_effect_skills.html" style="color:var(--text);">The Lindy Effect: Skills AI Still Won&#x27;t Replace in 2035</a></h2>
+        <p>Software frameworks expire every 24 months, while certain human capabilities become more valuable every century. Here is how Benoit Mandelbrot and Nassim Taleb&#x27;s Lindy Effect reveals the 4 skills to master alongside AI.</p>
+      </div>
+      <div><a class="btn" href="articles/short_29_lindy_effect_skills.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why smart decisions can still lose (annie duke&#x27;s poker rule) thinking in bets, annie duke, resulting bias, decision making, mental models, expected value, behavioral psychology">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_30_thinking_in_bets.html" style="color:var(--text);">Why Smart Decisions Can Still Lose (Annie Duke&#x27;s Poker Rule)</a></h2>
+        <p>World Series of Poker champion Annie Duke explains why judging your choices solely by their immediate outcome - a cognitive trap called &#x27;Resulting&#x27; - causes smart builders to abandon winning strategies right before they pay off.</p>
+      </div>
+      <div><a class="btn" href="articles/short_30_thinking_in_bets.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="naval&#x27;s warning: never play zero-sum status games naval ravikant, status vs wealth, positive sum games, almanack of naval, wealth psychology, mental models, asset creation">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_31_status_vs_wealth_games.html" style="color:var(--text);">Naval&#x27;s Warning: Never Play Zero-Sum Status Games</a></h2>
+        <p>Angel investor Naval Ravikant explains the hidden war between ancient zero-sum status hierarchies and modern positive-sum asset creation - and why trading public clout for quiet ownership changes everything.</p>
+      </div>
+      <div><a class="btn" href="articles/short_31_status_vs_wealth_games.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="how &#x27;4 easy payments of $19&#x27; hacks your brain&#x27;s pain center buy now pay later, behavioral economics, pain of paying, impulse spending, wealth psychology, personal finance, neuroeconomics">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_32_buy_now_pay_later_trap.html" style="color:var(--text);">How &#x27;4 Easy Payments of $19&#x27; Hacks Your Brain&#x27;s Pain Center</a></h2>
+        <p>Stanford neuroeconomics research explains why &#x27;4 interest-free payments of $19&#x27; sedates the insula - your brain&#x27;s natural spending brake - triggering up to 38% higher impulse spend. Here is the Full-Price Cash Rule to fight back.</p>
+      </div>
+      <div><a class="btn" href="articles/short_32_buy_now_pay_later_trap.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="gall&#x27;s law: why over-engineered productivity systems always fail galls law, productivity systems, systems thinking, second brain, habit building, mental models, solo creator">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_33_gall_law_systems.html" style="color:var(--text);">Gall&#x27;s Law: Why Over-Engineered Productivity Systems Always Fail</a></h2>
+        <p>In 1975, systems theorist John Gall explained why complex systems designed from scratch always collapse - and why starting with a stupidly simple Version 1.0 is the only path to durable daily output.</p>
+      </div>
+      <div><a class="btn" href="articles/short_33_gall_law_systems.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="the ferrari paradox: nobody is actually looking at you man in the car paradox, morgan housel, psychology of money, status symbols, stealth wealth, wealth psychology, personal finance">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_34_envy_vs_admiration.html" style="color:var(--text);">The Ferrari Paradox: Nobody Is Actually Looking at You</a></h2>
+        <p>Working as a hotel valet in Los Angeles, author Morgan Housel noticed a psychological irony about $300,000 supercars: onlookers stare at the machine and mentally erase the driver. Here is the Man in the Car Paradox.</p>
+      </div>
+      <div><a class="btn" href="articles/short_34_envy_vs_admiration.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="flip your producer-to-consumer ratio for 30 days producer vs consumer, millionaire fastlane, mj demarco, digital assets, wealth psychology, creator economy, focus habits">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_35_producer_consumer_ratio.html" style="color:var(--text);">Flip Your Producer-to-Consumer Ratio for 30 Days</a></h2>
+        <p>The average adult consumes 4+ hours of algorithmic feeds every day and produces 0 minutes of scalable intellectual property. Here is the 30-day Create-Before-You-Scroll protocol inspired by &#x27;The Millionaire Fastlane&#x27;.</p>
+      </div>
+      <div><a class="btn" href="articles/short_35_producer_consumer_ratio.html">Read Full Breakdown &rarr;</a></div>
+    </div>
+    <div class="card" data-fmt="short" data-search="why organ donation &amp; millionaire habits share one secret (defaults) default effect, choice architecture, behavioral economics, automate wealth, habit design, wealth psychology, nudge theory">
+      <div>
+        <span class="badge">Mental Model Breakdown</span>
+        <h2><a href="articles/short_36_default_effect_wealth.html" style="color:var(--text);">Why Organ Donation &amp; Millionaire Habits Share One Secret (Defaults)</a></h2>
+        <p>In 2003, behavioral scientists Eric Johnson and Dan Goldstein uncovered why neighboring European nations had 12% vs 99% organ donor consent: a single default checkbox. Here is how to make saving and deep work automatic defaults.</p>
+      </div>
+      <div><a class="btn" href="articles/short_36_default_effect_wealth.html">Read Full Breakdown &rarr;</a></div>
     </div>
     </section>
   </main>
@@ -193,5 +463,22 @@ footer { border-top:1px solid var(--border); padding:28px 0 44px; color:var(--mu
       <p>&copy; 2026 Mind &amp; Margin Editorial. All rights reserved. | <a href="privacy.html">Privacy Policy &amp; Terms</a> | <a href="about.html">About &amp; Contact</a></p>
     </div>
   </footer>
+  <script>
+    let activeFmt = 'all';
+    function filterCards(fmt, btn) {
+      activeFmt = fmt;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applySearch();
+    }
+    function applySearch() {
+      const q = (document.getElementById('qInput').value || '').toLowerCase().trim();
+      document.querySelectorAll('#articlesGrid .card').forEach(c => {
+        const fmtOk = activeFmt === 'all' || c.dataset.fmt === activeFmt;
+        const qOk = !q || (c.dataset.search || '').includes(q);
+        c.style.display = (fmtOk && qOk) ? 'flex' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>

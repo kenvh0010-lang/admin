@@ -167,7 +167,7 @@ def render_scene_beat_frame(
     fill_w = max(12, int((w - 2 * pad_x) * min(1.0, max(0.02, progress_ratio))))
     draw.rounded_rectangle([pad_x, bar_y, pad_x + fill_w, bar_y + bar_h], radius=5, fill=theme.accent_gold)
 
-    img.save(output_png, format="PNG")
+    img.save(output_png, format="PNG", compress_level=1)
     return output_png
 
 

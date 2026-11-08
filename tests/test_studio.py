@@ -16,14 +16,30 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertTrue(Path(resolve_font_path(bold=True)).is_file())
         self.assertTrue(Path(resolve_font_path(bold=False)).is_file())
 
-    def test_all_16_month1_storyboards_valid(self) -> None:
-        storyboards = sorted(CONTENT_DIR.glob("*.json"))
-        self.assertEqual(len(storyboards), 16, "Expected all 16 Month-1 storyboards in content/")
+    def test_all_48_q1_storyboards_valid_and_glyph_safe(self) -> None:
+        storyboards = sorted(
+            p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"
+        )
+        self.assertEqual(len(storyboards), 48, "Expected all 48 Quarter-1 storyboards (36 Shorts + 12 Longs) in content/")
         required_keys = {"title", "format", "scenes", "tags", "thumbnail", "affiliate_cta"}
+        forbidden_glyphs = {"✕", "✓", "▸", "→"}
         for sb in storyboards:
             data = json.loads(sb.read_text(encoding="utf-8"))
             self.assertTrue(required_keys.issubset(data.keys()), f"Missing keys in {sb.name}")
             self.assertGreaterEqual(len(data["scenes"]), 3, f"Too few scenes in {sb.name}")
+            for sc in data["scenes"]:
+                card_blob = json.dumps(sc, ensure_ascii=False)
+                for bad in forbidden_glyphs:
+                    self.assertNotIn(bad, card_blob, f"Forbidden glyph {bad!r} found in {sb.name}")
+
+    def test_trend_radar_intelligence(self) -> None:
+        from yt_studio.trend_radar import build_trend_intelligence_report, score_topic_opportunity
+        report = build_trend_intelligence_report(live_query="mental accounting")
+        self.assertEqual(report["cluster_count"], 5)
+        self.assertEqual(report["total_mapped_scripts"], 48)
+        scored = score_topic_opportunity("one person ai business wealth")
+        self.assertGreaterEqual(scored["opportunity_score"], 85)
+        self.assertIn("$", scored["estimated_rpm_usd"])
 
     def test_digital_products_and_branding_present(self) -> None:
         self.assertTrue((PROJECT_ROOT / "products" / "5_hour_asset_builder_os" / "index.html").is_file())
