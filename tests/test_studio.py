@@ -23,11 +23,8 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         storyboards = sorted(
             p for p in CONTENT_DIR.glob("*.json") if p.name != "published_ledger.json"
         )
-        # Thư viện gốc 112 kịch bản phải còn đủ; video tin tức hằng ngày được thêm vào nên chỉ chặn dưới.
-        self.assertGreaterEqual(
-            len(storyboards), 112,
-            "Expected at least the 112 library storyboards (84 Shorts + 28 Longs) in content/",
-        )
+        # 08/11/2026: bỏ thư viện 112 kịch bản cũ, kênh chuyển sang short tin tức có ảnh dẫn chứng.
+        self.assertGreaterEqual(len(storyboards), 1, "Expected at least one storyboard in content/")
         required_keys = {"title", "format", "scenes", "tags", "thumbnail", "affiliate_cta"}
         forbidden_glyphs = {"✕", "✓", "▸", "→", "—"}
         for sb in storyboards:
@@ -162,17 +159,16 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
 
     def test_calendar_csv_and_amazon_tag_sync(self) -> None:
         self.assertEqual(DEFAULT_AMAZON_TAG, "mindandmarg06-20")
+        # Lịch CSV cố định đã bỏ cùng thư viện cũ; nếu có lịch mới thì mọi tiêu đề phải khớp kịch bản.
         sb_titles = {
             json.loads(p.read_text(encoding="utf-8"))["title"]
             for p in CONTENT_DIR.glob("*.json")
             if p.name != "published_ledger.json"
         }
-        for csv_name in ("calendar_30_days.csv", "calendar_90_days.csv", "calendar_180_days.csv"):
-            rows = list(csv.DictReader((CONTENT_DIR / csv_name).read_text(encoding="utf-8").splitlines()))
-            self.assertEqual(len(rows), 112, f"Expected 112 rows in {csv_name}")
-            for row in rows:
+        for csv_path in CONTENT_DIR.glob("calendar_*.csv"):
+            for row in csv.DictReader(csv_path.read_text(encoding="utf-8").splitlines()):
                 title = row["Video Title (English - High RPM)"]
-                self.assertIn(title, sb_titles, f"Unmatched calendar title {title!r} in {csv_name}")
+                self.assertIn(title, sb_titles, f"Unmatched calendar title {title!r} in {csv_path.name}")
 
 
 if __name__ == "__main__":
