@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind &amp; Margin (@MindAndMargin) — Official Playbook, OS &amp; Leverage Stack</title>
+  <meta name="description" content="Official resource hub for Mind &amp; Margin (@MindAndMargin): Download The Asymmetric Playbook free, preview The 5-Hour Asset Builder OS ($19), and explore our curated wealth &amp; AI leverage stack." />
+  <style>
+    :root {
+      --bg-obsidian: #0B1020;
+      --bg-deep: #070A15;
+      --bg-card: #131C34;
+      --bg-card-hover: #182443;
+      --bg-input: #0C1326;
+      --gold: #F5B942;
+      --gold-hover: #FACC6B;
+      --gold-soft: rgba(245, 185, 66, 0.13);
+      --gold-border: rgba(245, 185, 66, 0.38);
+      --cyan: #22D3EE;
+      --cyan-hover: #67E8F9;
+      --cyan-soft: rgba(34, 211, 238, 0.12);
+      --cyan-border: rgba(34, 211, 238, 0.34);
+      --emerald: #10B981;
+      --emerald-soft: rgba(16, 185, 129, 0.14);
+      --text-primary: #F8FAFC;
+      --text-secondary: #CBD5E1;
+      --text-muted: #8B9BB4;
+      --border-subtle: rgba(248, 250, 252, 0.08);
+      --border-strong: rgba(248, 250, 252, 0.16);
+      --shadow-elevated: 0 20px 44px -18px rgba(3, 6, 14, 0.82), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      --radius-xl: 18px;
+      --radius-lg: 14px;
+      --radius-sm: 9px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: "SFMono-Regular", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      background-color: var(--bg-obsidian);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(720px 380px at 50% -6%, rgba(245, 185, 66, 0.09), transparent 68%),
+        radial-gradient(640px 360px at 88% 18%, rgba(34, 211, 238, 0.06), transparent 62%),
+        var(--bg-obsidian);
+      color: var(--text-primary);
+    }
+
+    .funnel-container {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 36px 18px 64px;
+    }
+
+    .tabular {
+      font-variant-numeric: tabular-nums;
+      font-family: var(--font-mono);
+    }
+
+    /* Owner Admin Banner (?admin=1) */
+    .admin-audit-banner {
+      display: none;
+      margin-bottom: 20px;
+      padding: 14px 16px;
+      border-radius: var(--radius-lg);
+      background: rgba(34, 211, 238, 0.09);
+      border: 1px solid var(--cyan-border);
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    .admin-audit-banner.visible {
+      display: block;
+    }
+
+    /* Profile Emblem Header */
+    .hero-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .emblem-ring {
+      width: 74px;
+      height: 74px;
+      margin: 0 auto 14px;
+      border-radius: 20px;
+      background: linear-gradient(150deg, #192544, #090E1C);
+      border: 1.5px solid var(--gold-border);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55);
+    }
+
+    .handle-tag {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--cyan);
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    .hero-header h1 {
+      margin: 0;
+      font-size: clamp(1.55rem, 4vw, 1.95rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--text-primary);
+    }
+
+    .hero-tagline {
+      margin: 7px 0 14px;
+      font-size: 0.94rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .trust-proof-badge {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-strong);
+      font-size: 0.76rem;
+      color: var(--text-secondary);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    .trust-proof-badge strong {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* Section Headings */
+    .section-eyebrow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 28px 0 12px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    /* Cards */
+    .funnel-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 22px 22px;
+      box-shadow: var(--shadow-elevated);
+      margin-bottom: 16px;
+      transition: border-color 0.18s ease, transform 0.16s ease;
+    }
+
+    .funnel-card.lead-magnet-card {
+      border-color: var(--cyan-border);
+      background:
+        radial-gradient(420px 180px at 100% 0%, rgba(34, 211, 238, 0.08), transparent 70%),
+        var(--bg-card);
+    }
+
+    .funnel-card.featured-os-card {
+      border-color: var(--gold-border);
+      background:
+        radial-gradient(460px 210px at 0% 0%, rgba(245, 185, 66, 0.10), transparent 72%),
+        var(--bg-card);
+    }
+
+    .card-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.71rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .pill-cyan {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+      border: 1px solid var(--cyan-border);
+    }
+
+    .pill-gold {
+      background: var(--gold-soft);
+      color: var(--gold);
+      border: 1px solid var(--gold-border);
+    }
+
+    .pill-emerald {
+      background: var(--emerald-soft);
+      color: #34D399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .card-h2 {
+      margin: 0 0 6px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text-primary);
+    }
+
+    .card-copy {
+      margin: 0 0 15px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+
+    /* Lead Capture Form */
+    .lead-form-row {
+      display: flex;
+      gap: 9px;
+    }
+
+    .lead-input {
+      flex: 1;
+      min-width: 0;
+      background: var(--bg-input);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .lead-input:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15);
+    }
+
+    /* Buttons & Links */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease, color 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn-cyan-solid {
+      background: var(--cyan);
+      color: #06121A;
+      border-color: var(--cyan);
+    }
+
+    .btn-cyan-solid:hover {
+      background: var(--cyan-hover);
+      border-color: var(--cyan-hover);
+    }
+
+    .btn-gold-solid {
+      background: var(--gold);
+      color: #090D19;
+      border-color: var(--gold);
+    }
+
+    .btn-gold-solid:hover {
+      background: var(--gold-hover);
+      border-color: var(--gold-hover);
+    }
+
+    .btn-outline-cyan {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+      border-color: var(--cyan-border);
+    }
+
+    .btn-outline-cyan:hover {
+      background: rgba(34, 211, 238, 0.2);
+      color: var(--cyan-hover);
+    }
+
+    .btn-ghost-dark {
+      background: var(--bg-input);
+      color: var(--text-secondary);
+      border-color: var(--border-strong);
+    }
+
+    .btn-ghost-dark:hover {
+      background: var(--bg-card-hover);
+      color: var(--text-primary);
+    }
+
+    .lead-micro-note {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .direct-playbook-link {
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .direct-playbook-link:hover {
+      text-decoration: underline;
+    }
+
+    .lead-unlocked-box {
+      display: none;
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.38);
+    }
+
+    .lead-unlocked-box.visible {
+      display: block;
+    }
+
+    /* OS Feature List */
+    .os-feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 14px 0 18px;
+    }
+
+    .os-feature-item {
+      background: rgba(12, 19, 38, 0.72);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 9px 11px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .os-feature-dot {
+      color: var(--gold);
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 0.76rem;
+      margin-top: 1px;
+    }
+
+    .os-cta-pair {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 10px;
+    }
+
+    /* Filter Bar */
+    .stack-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .filter-chip {
+      background: var(--bg-card);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      border-radius: 999px;
+      padding: 5px 11px;
+      font-size: 0.74rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: var(--font-sans);
+    }
+
+    .filter-chip.active {
+      background: var(--gold-soft);
+      color: var(--gold);
+      border-color: var(--gold-border);
+    }
+
+    /* Affiliate Stack Cards */
+    .affiliate-stack-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .affiliate-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 17px 18px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: var(--shadow-elevated);
+      transition: transform 0.15s ease, border-color 0.16s ease, background-color 0.16s ease;
+    }
+
+    .affiliate-card:hover {
+      transform: translateY(-2px);
+      background: var(--bg-card-hover);
+      border-color: var(--border-strong);
+    }
+
+    .affiliate-card.hidden-by-filter {
+      display: none;
+    }
+
+    .aff-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      background: var(--bg-input);
+      border: 1px solid var(--border-strong);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+
+    .aff-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .aff-title-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 3px;
+    }
+
+    .aff-name {
+      font-weight: 700;
+      font-size: 0.96rem;
+      color: var(--text-primary);
+    }
+
+    .aff-desc {
+      margin: 0;
+      font-size: 0.81rem;
+      color: var(--text-muted);
+    }
+
+    .aff-cta-arrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--cyan);
+      flex-shrink: 0;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: var(--cyan-soft);
+      border: 1px solid var(--cyan-border);
+    }
+
+    .affiliate-card:hover .aff-cta-arrow {
+      background: rgba(34, 211, 238, 0.22);
+      color: var(--cyan-hover);
+    }
+
+    /* Footer & Disclosure */
+    .bio-footer {
+      margin-top: 38px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .disclosure-box {
+      background: rgba(12, 19, 38, 0.65);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 580px) {
+      .lead-form-row {
+        flex-direction: column;
+      }
+      .os-feature-grid,
+      .os-cta-pair {
+        grid-template-columns: 1fr;
+      }
+      .affiliate-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .aff-cta-arrow {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="funnel-container">
+    <!-- Optional Owner Diagnostics (?admin=1) -->
+    <aside class="admin-audit-banner" id="admin-audit-banner" aria-label="Owner Link Health Check">
+      <strong style="color: var(--cyan);">Owner Funnel Diagnostics (`?admin=1` active):</strong>
+      <div id="admin-audit-content" style="margin-top: 6px;"></div>
+    </aside>
+
+    <!-- 1. CHANNEL EMBLEM HEADER -->
+    <header class="hero-header">
+      <div class="emblem-ring" aria-hidden="true">
+        <svg width="38" height="38" viewBox="0 0 36 36" fill="none">
+          <path d="M5 27V9L13.5 20L18 13.5L22.5 20L31 9V27" stroke="#F5B942" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 29.5H31" stroke="#22D3EE" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="18" cy="7.5" r="2" fill="#22D3EE"/>
+        </svg>
+      </div>
+      <div class="handle-tag">@MindAndMargin</div>
+      <h1>Mind &amp; Margin</h1>
+      <p class="hero-tagline">Wealth Psychology • Mental Models • AI Leverage</p>
+      <div class="trust-proof-badge">
+        <strong>10 Asymmetric Models</strong>
+        <span>•</span>
+        <span>Local-First Systems</span>
+        <span>•</span>
+        <span>Built for Sovereign Thinkers</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. FREE PLAYBOOK LEAD CAPTURE CARD -->
+      <section aria-labelledby="heading-playbook">
+        <div class="funnel-card lead-magnet-card">
+          <div class="card-top-row">
+            <span class="pill pill-cyan">FREE FIELD GUIDE • EDITION 1.0</span>
+            <span class="tabular" style="font-size: 0.75rem; color: var(--text-muted);">12-Min Read</span>
+          </div>
+          <h2 class="card-h2" id="heading-playbook">The Asymmetric Playbook: 10 Mental Models to Compound Margin</h2>
+          <p class="card-copy">
+            Stop relying on willpower. Get our complete tactical manual covering the <strong>Diderot Effect</strong>, <strong>50% Invisible Raise Rule</strong>, <strong>Ultradian 90m Blocks</strong>, and the <strong>3-Layer Creator Stack</strong>.
+          </p>
+
+          <form id="lead-capture-form" novalidate>
+            <div class="lead-form-row">
+              <input
+                type="email"
+                id="lead-email-input"
+                class="lead-input"
+                placeholder="Enter your best email address..."
+                aria-label="Email address for free playbook"
+                required
+              />
+              <button type="submit" class="btn btn-cyan-solid" id="btn-unlock-playbook">
+                Unlock Free Playbook →
+              </button>
+            </div>
+            <div id="lead-form-error" style="display:none; margin-top:7px; font-size:0.78rem; color:#FDA4AF;"></div>
+          </form>
+
+          <div class="lead-unlocked-box" id="lead-unlocked-box">
+            <div style="font-weight: 700; color: #34D399; font-size: 0.88rem; margin-bottom: 6px;">
+              Playbook Unlocked — Ready to Download &amp; Read!
+            </div>
+            <p style="margin: 0 0 11px; font-size: 0.8rem; color: var(--text-secondary);">
+              Save your copy below and install at least <strong>two Monday Morning Protocols</strong> tonight:
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <a
+                href="../free_lead_magnet/Wealth_and_Leverage_Playbook.md"
+                download="Wealth_and_Leverage_Playbook.md"
+                class="btn btn-cyan-solid"
+                id="btn-download-playbook-file"
+              >
+                Download Playbook (.md)
+              </a>
+              <a
+                href="../free_lead_magnet/Wealth_and_Leverage_Playbook.md"
+                class="btn btn-ghost-dark"
+                id="btn-open-playbook-raw"
+              >
+                Read in Browser →
+              </a>
+            </div>
+          </div>
+
+          <div class="lead-micro-note">
+            <span>Zero spam. Actionable wealth &amp; leverage systems only.</span>
+            <a href="../free_lead_magnet/Wealth_and_Leverage_Playbook.md" class="direct-playbook-link" id="link-instant-playbook">
+              Instant direct access →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. FEATURED $19 DIGITAL PRODUCT CARD -->
+      <section aria-labelledby="heading-featured-os">
+        <div class="section-eyebrow">
+          <span>Core Execution System</span>
+          <span class="tabular" style="color: var(--gold);">One-Time License • $0/Mo Subscriptions</span>
+        </div>
+
+        <div class="funnel-card featured-os-card">
+          <div class="card-top-row">
+            <span class="pill pill-gold">FEATURED OPERATING SYSTEM</span>
+            <span class="pill pill-emerald tabular">$19 ONE-TIME</span>
+          </div>
+
+          <h2 class="card-h2" id="heading-featured-os">The 5-Hour Asset Builder OS</h2>
+          <p class="card-copy">
+            Turn mental models into weekly compounding behavior. A fast, offline-ready browser cockpit built to help busy professionals ship <strong>52 digital bricks a year</strong> in 5 focused hours a week.
+          </p>
+
+          <div class="os-feature-grid">
+            <div class="os-feature-item">
+              <span class="os-feature-dot">01</span>
+              <span><strong>90m Ultradian Timer</strong> + harmonic Web Audio chime &amp; streaks</span>
+            </div>
+            <div class="os-feature-item">
+              <span class="os-feature-dot">02</span>
+              <span><strong>50% Invisible Raise</strong> &amp; Anti-Diderot 10-Yr SVG Calculator</span>
+            </div>
+            <div class="os-feature-item">
+              <span class="os-feature-dot">03</span>
+              <span><strong>300-Min Sprint Board</strong> + interactive 52-Week Brick Grid</span>
+            </div>
+            <div class="os-feature-item">
+              <span class="os-feature-dot">04</span>
+              <span><strong>Asymmetric 80/20 Matrix</strong> (Type-2 Doors + Age-80 Regret)</span>
+            </div>
+          </div>
+
+          <div class="os-cta-pair">
+            <a
+              href="https://mindandmargin.gumroad.com/l/5-hour-asset-os"
+              class="btn btn-gold-solid affiliate-tracked-link"
+              data-affiliate-id="mind-margin-5hr-os-checkout"
+              id="btn-buy-os"
+            >
+              Get Instant OS Access — $19
+            </a>
+            <a
+              href="../5_hour_asset_builder_os/index.html"
+              class="btn btn-outline-cyan"
+              id="btn-preview-os-live"
+            >
+              Live Interactive Preview →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. CURATED HIGH-COMMISSION AFFILIATE STACK -->
+      <section aria-labelledby="heading-affiliate-stack">
+        <div class="section-eyebrow">
+          <span id="heading-affiliate-stack">Curated Mind &amp; Margin Stack</span>
+          <div class="stack-filters" role="group" aria-label="Filter recommended stack">
+            <button type="button" class="filter-chip active" data-filter="all">All (4)</button>
+            <button type="button" class="filter-chip" data-filter="wealth">Wealth Study</button>
+            <button type="button" class="filter-chip" data-filter="systems">AI &amp; Systems</button>
+            <button type="button" class="filter-chip" data-filter="audience">Owned Media</button>
+          </div>
+        </div>
+
+        <div class="affiliate-stack-list" id="affiliate-stack-list">
+          <!-- Card 1: Audible Free 30-Day Trial -->
+          <a
+            href="https://www.audible.com/ep/freetrial?tag=YOUR_AMAZON_ASSOC_TAG-20"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="affiliate-card affiliate-tracked-link"
+            data-affiliate-id="audible-free-30d-trial"
+            data-category="wealth"
+            id="aff-card-audible"
+          >
+            <div class="aff-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </div>
+            <div class="aff-body">
+              <div class="aff-title-row">
+                <span class="aff-name">Audible — Free 30-Day Trial + Free Audiobook</span>
+                <span class="pill pill-gold">$0 TRIAL PICK</span>
+              </div>
+              <p class="aff-desc">
+                Listen to <em>The Psychology of Money</em> (Morgan Housel) or <em>The Almanack of Naval Ravikant</em> free on your daily walk—yours to keep even if you cancel.
+              </p>
+            </div>
+            <span class="aff-cta-arrow">Claim Free Book →</span>
+          </a>
+
+          <!-- Card 2: Notion Plus & AI -->
+          <a
+            href="https://affiliate.notion.so/YOUR_NOTION_PARTNER_ID"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="affiliate-card affiliate-tracked-link"
+            data-affiliate-id="notion-plus-ai"
+            data-category="systems"
+            id="aff-card-notion"
+          >
+            <div class="aff-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
+            </div>
+            <div class="aff-body">
+              <div class="aff-title-row">
+                <span class="aff-name">Notion Plus &amp; AI Knowledge Vault</span>
+                <span class="pill pill-cyan">SECOND BRAIN</span>
+              </div>
+              <p class="aff-desc">
+                Where we synthesize research papers, organize mental model scripts, and run AI-assisted outline compression without workspace clutter.
+              </p>
+            </div>
+            <span class="aff-cta-arrow">Try Notion →</span>
+          </a>
+
+          <!-- Card 3: Make.com Visual Automation -->
+          <a
+            href="https://www.make.com/en/register?pc=YOUR_MAKE_AFFILIATE_CODE"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="affiliate-card affiliate-tracked-link"
+            data-affiliate-id="make-automation"
+            data-category="systems"
+            id="aff-card-make"
+          >
+            <div class="aff-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><line x1="8.7" y1="7.5" x2="10.8" y2="15.3"/><line x1="15.3" y1="7.5" x2="13.2" y2="15.3"/></svg>
+            </div>
+            <div class="aff-body">
+              <div class="aff-title-row">
+                <span class="aff-name">Make.com — Permissionless AI Automation</span>
+                <span class="pill pill-cyan">1,000 FREE OPS/MO</span>
+              </div>
+              <p class="aff-desc">
+                Build visual 24/7 workflows connecting research feeds, lead magnets, and publishing pipelines with zero backend code required.
+              </p>
+            </div>
+            <span class="aff-cta-arrow">Automate Free →</span>
+          </a>
+
+          <!-- Card 4: Beehiiv Newsletter Platform -->
+          <a
+            href="https://www.beehiiv.com?via=YOUR_BEEHIIV_PARTNER_ID"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="affiliate-card affiliate-tracked-link"
+            data-affiliate-id="beehiiv-newsletter"
+            data-category="audience"
+            id="aff-card-beehiiv"
+          >
+            <div class="aff-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="aff-body">
+              <div class="aff-title-row">
+                <span class="aff-name">Beehiiv — Owned Newsletter &amp; Growth Engine</span>
+                <span class="pill pill-emerald">FREE TO 2,500 SUBS</span>
+              </div>
+              <p class="aff-desc">
+                Never rent your audience solely from algorithms. Launch your email newsletter with built-in referral flywheels and Ad Network monetization.
+              </p>
+            </div>
+            <span class="aff-cta-arrow">Start Free →</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER & FTC AFFILIATE DISCLOSURE -->
+    <footer class="bio-footer">
+      <div class="disclosure-box">
+        <strong style="color: var(--text-secondary);">Transparency &amp; Affiliate Disclosure:</strong>
+        Some links on this page are partner links (including Amazon/Audible Associates and software partners). As an Amazon Associate and software partner, Mind &amp; Margin may earn a commission from qualifying trials or purchases at <strong>zero extra cost to you</strong>. We only recommend books and leverage systems we genuinely study and use.
+      </div>
+      <div>
+        © <span id="footer-year">2026</span> <strong>Mind &amp; Margin (`@MindAndMargin`)</strong> • Quiet Compounding Over Loud Status.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* =====================================================================
+         30-SECOND OWNER CONFIGURATION BLOCK
+         Swap placeholder URLs below with your live tracking links!
+         Every element with matching [data-affiliate-id] updates automatically.
+         ===================================================================== */
+      const FUNNEL_CONFIG = {
+        // Optional webhook URL (Make.com / Zapier / Formspree) to receive email leads remotely.
+        // Leave empty ("") to operate 100% static/offline with instant Playbook unlock.
+        leadWebhookUrl: '',
+
+        // Playbook relative path
+        playbookPath: '../free_lead_magnet/Wealth_and_Leverage_Playbook.md',
+
+        // Central Affiliate & Checkout Tracking URLs mapped by data-affiliate-id
+        affiliateLinks: {
+          'mind-margin-5hr-os-checkout': 'https://mindandmargin.gumroad.com/l/5-hour-asset-os',
+          'audible-free-30d-trial': 'https://www.audible.com/ep/freetrial?tag=YOUR_AMAZON_ASSOC_TAG-20',
+          'notion-plus-ai': 'https://affiliate.notion.so/YOUR_NOTION_PARTNER_ID',
+          'make-automation': 'https://www.make.com/en/register?pc=YOUR_MAKE_AFFILIATE_CODE',
+          'beehiiv-newsletter': 'https://www.beehiiv.com?via=YOUR_BEEHIIV_PARTNER_ID'
+        }
+      };
+
+      const LEADS_STORAGE_KEY = 'mind_margin_bio_leads_v1';
+      const CLICKS_STORAGE_KEY = 'mind_margin_bio_clicks_v1';
+
+      // Hydrate all [data-affiliate-id] links from FUNNEL_CONFIG
+      function hydrateAffiliateUrls() {
+        const trackedLinks = document.querySelectorAll('[data-affiliate-id]');
+        trackedLinks.forEach(function (anchor) {
+          const affId = anchor.getAttribute('data-affiliate-id');
+          if (affId && FUNNEL_CONFIG.affiliateLinks[affId]) {
+            anchor.setAttribute('href', FUNNEL_CONFIG.affiliateLinks[affId]);
+          }
+
+          anchor.addEventListener('click', function () {
+            recordClick(affId);
+          });
+        });
+      }
+
+      function recordClick(affId) {
+        if (!affId) return;
+        try {
+          const raw = localStorage.getItem(CLICKS_STORAGE_KEY);
+          const counts = raw ? JSON.parse(raw) : {};
+          counts[affId] = (counts[affId] || 0) + 1;
+          localStorage.setItem(CLICKS_STORAGE_KEY, JSON.stringify(counts));
+          renderOwnerAuditIfEnabled();
+        } catch (e) {}
+      }
+
+      // Lead Magnet Email Form Handler
+      function initLeadForm() {
+        const form = document.getElementById('lead-capture-form');
+        const emailInput = document.getElementById('lead-email-input');
+        const errorEl = document.getElementById('lead-form-error');
+        const unlockedBox = document.getElementById('lead-unlocked-box');
+
+        // Restore unlocked state if visitor already opted in previously
+        try {
+          const existing = JSON.parse(localStorage.getItem(LEADS_STORAGE_KEY) || '[]');
+          if (existing.length > 0) {
+            unlockedBox.classList.add('visible');
+          }
+        } catch (e) {}
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const email = emailInput.value.trim();
+          const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+          if (!validEmail) {
+            errorEl.textContent = 'Please enter a valid email address (or use "Instant direct access" below).';
+            errorEl.style.display = 'block';
+            emailInput.focus();
+            return;
+          }
+
+          errorEl.style.display = 'none';
+
+          // Save locally
+          try {
+            const leads = JSON.parse(localStorage.getItem(LEADS_STORAGE_KEY) || '[]');
+            leads.unshift({ email: email, capturedAt: new Date().toISOString() });
+            localStorage.setItem(LEADS_STORAGE_KEY, JSON.stringify(leads.slice(0, 200)));
+          } catch (err) {}
+
+          // Optional remote webhook fire-and-forget if configured
+          if (FUNNEL_CONFIG.leadWebhookUrl) {
+            try {
+              fetch(FUNNEL_CONFIG.leadWebhookUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email, source: 'mind_margin_bio_funnel' })
+              }).catch(function () {});
+            } catch (err) {}
+          }
+
+          unlockedBox.classList.add('visible');
+          emailInput.value = '';
+          recordClick('lead-magnet-playbook-optin');
+
+          // Trigger Playbook download automatically on unlock
+          const dlBtn = document.getElementById('btn-download-playbook-file');
+          if (dlBtn) dlBtn.click();
+        });
+      }
+
+      // Stack Category Filter
+      function initStackFilters() {
+        const chips = document.querySelectorAll('.filter-chip');
+        const cards = document.querySelectorAll('.affiliate-card');
+
+        chips.forEach(function (chip) {
+          chip.addEventListener('click', function () {
+            const filter = chip.getAttribute('data-filter');
+            chips.forEach(function (c) { c.classList.toggle('active', c === chip); });
+
+            cards.forEach(function (card) {
+              const cat = card.getAttribute('data-category');
+              const show = filter === 'all' || cat === filter;
+              card.classList.toggle('hidden-by-filter', !show);
+            });
+          });
+        });
+      }
+
+      // Owner Diagnostics Mode (?admin=1)
+      function renderOwnerAuditIfEnabled() {
+        if (window.location.search.indexOf('admin=1') === -1) return;
+        const banner = document.getElementById('admin-audit-banner');
+        const content = document.getElementById('admin-audit-content');
+        banner.classList.add('visible');
+
+        let clicks = {};
+        let leadsCount = 0;
+        try {
+          clicks = JSON.parse(localStorage.getItem(CLICKS_STORAGE_KEY) || '{}');
+          leadsCount = JSON.parse(localStorage.getItem(LEADS_STORAGE_KEY) || '[]').length;
+        } catch (e) {}
+
+        const rows = Object.keys(FUNNEL_CONFIG.affiliateLinks).map(function (id) {
+          const url = FUNNEL_CONFIG.affiliateLinks[id];
+          const isPlaceholder = /YOUR_[A-Z_]+/.test(url);
+          const status = isPlaceholder
+            ? '<span style="color:#F5B942;">[Placeholder — Swap before launch]</span>'
+            : '<span style="color:#34D399;">[Live URL Configured]</span>';
+          const count = clicks[id] || 0;
+          return '<div class="tabular" style="margin-top:3px;">• <strong>' + id + '</strong>: ' + status + ' (' + count + ' local clicks)</div>';
+        }).join('');
+
+        content.innerHTML =
+          '<div class="tabular" style="margin-bottom:4px;">Captured Local Test Leads: <strong>' + leadsCount + '</strong></div>' +
+          rows;
+      }
+
+      document.getElementById('footer-year').textContent = String(new Date().getFullYear());
+      hydrateAffiliateUrls();
+      initLeadForm();
+      initStackFilters();
+      renderOwnerAuditIfEnabled();
+    })();
+  </script>
+</body>
+</html>

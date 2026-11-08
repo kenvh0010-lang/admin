@@ -1,0 +1,10 @@
+# Core image composition (required)
+Pillow>=10.0.0
+
+# Free high-quality Microsoft Neural Text-to-Speech (recommended, $0 cost)
+edge-tts>=6.1.12
+
+# Optional AI Script & Image Providers (uncomment if using API keys)
+# google-genai>=0.3.0
+# openai>=1.30.0
+# requests>=2.31.0

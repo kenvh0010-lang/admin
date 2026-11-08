@@ -1,0 +1,103 @@
+1
+00:00:00,000 --> 00:00:02,970
+Workplace studies show knowledge workers burn
+
+2
+00:00:02,970 --> 00:00:05,214
+nearly forty percent of their week
+
+3
+00:00:05,214 --> 00:00:06,534
+on repetitive admin,
+
+4
+00:00:06,534 --> 00:00:08,712
+copying text from one browser tab
+
+5
+00:00:08,712 --> 00:00:10,560
+and pasting it into another.
+
+6
+00:00:10,560 --> 00:00:13,659
+Senior software engineers protect their focus
+
+7
+00:00:13,659 --> 00:00:15,587
+using the Three-Strike Rule:
+
+8
+00:00:15,587 --> 00:00:17,585
+if you perform the exact same
+
+9
+00:00:17,585 --> 00:00:19,719
+digital task three times in one
+
+10
+00:00:19,719 --> 00:00:20,064
+week,
+
+11
+00:00:20,064 --> 00:00:21,510
+stop and automate it.
+
+12
+00:00:21,510 --> 00:00:23,211
+Start with three culprits:
+
+13
+00:00:23,211 --> 00:00:25,042
+typing meeting action items,
+
+14
+00:00:25,042 --> 00:00:27,266
+renaming email receipts for taxes,
+
+15
+00:00:27,266 --> 00:00:30,276
+and reformatting one script into social posts.
+
+16
+00:00:30,276 --> 00:00:32,630
+Modern AI workflows handle all three
+
+17
+00:00:32,630 --> 00:00:33,350
+in seconds.
+
+18
+00:00:33,350 --> 00:00:36,125
+Eliminating just fifteen minutes of daily
+
+19
+00:00:36,125 --> 00:00:38,630
+friction takes twenty minutes to wire
+
+20
+00:00:38,630 --> 00:00:39,172
+up once,
+
+21
+00:00:39,172 --> 00:00:41,541
+yet hands you back ninety-one hours
+
+22
+00:00:41,541 --> 00:00:43,910
+of deep creation every single year.
+
+23
+00:00:43,910 --> 00:00:46,292
+Let software do the robot work
+
+24
+00:00:46,292 --> 00:00:48,594
+so your brain stays sharp for
+
+25
+00:00:48,594 --> 00:00:50,182
+high-value judgment.
+
+26
+00:00:50,182 --> 00:00:51,770
+Because right now...

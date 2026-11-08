@@ -1,0 +1,2864 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind &amp; Margin — Creator Command Center (@MindAndMargin)</title>
+  <meta name="description" content="Trung tâm điều hành kênh YouTube ẩn danh Mind & Margin: Quản lý kịch bản, xem trước & render MP4 tự động, copy SEO 1 chạm, lịch đăng 30 ngày và phễu sản phẩm số $19 OS." />
+  <style>
+    :root {
+      --bg-base: #0B1020;
+      --bg-surface: #131C34;
+      --bg-elevated: #192544;
+      --bg-sunken: #070B16;
+      --border-subtle: rgba(148, 163, 184, 0.14);
+      --border-strong: rgba(148, 163, 184, 0.26);
+
+      --gold: #F5B942;
+      --gold-hover: #F7C968;
+      --gold-soft: rgba(245, 185, 66, 0.14);
+
+      --cyan: #22D3EE;
+      --cyan-soft: rgba(34, 211, 238, 0.13);
+
+      --emerald: #10B981;
+      --emerald-soft: rgba(16, 185, 129, 0.14);
+
+      --crimson: #F43F5E;
+      --crimson-soft: rgba(244, 63, 94, 0.14);
+
+      --text-primary: #F8FAFC;
+      --text-secondary: #CBD5E1;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-card: 0 16px 36px -14px rgba(2, 6, 23, 0.72);
+
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button, input, select {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    .tabular {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Layout Container */
+    .app-shell {
+      max-width: 1480px;
+      margin: 0 auto;
+      padding: 24px 28px 64px;
+    }
+
+    /* Top Command Header */
+    .top-header {
+      background: linear-gradient(180deg, rgba(25, 37, 68, 0.65) 0%, rgba(19, 28, 52, 0.95) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 22px 26px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 20px;
+    }
+
+    .header-main-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .brand-cluster {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-avatar {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(245, 185, 66, 0.6);
+      background: var(--bg-sunken);
+      flex-shrink: 0;
+    }
+
+    .brand-title-group h1 {
+      margin: 0;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .handle-tag {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--cyan);
+      background: var(--cyan-soft);
+      padding: 3px 9px;
+      border-radius: 6px;
+      letter-spacing: 0;
+    }
+
+    .brand-subtitle {
+      margin: 4px 0 0;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .server-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      background: var(--bg-sunken);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 15px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: background-color 0.16s ease, border-color 0.16s ease, transform 0.1s ease, opacity 0.16s ease;
+      white-space: nowrap;
+      text-decoration: none !important;
+    }
+
+    .btn:active:not(:disabled) {
+      transform: translateY(1px);
+    }
+
+    .btn:disabled {
+      opacity: 0.58;
+      cursor: not-allowed;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #090D1A;
+      font-weight: 700;
+    }
+
+    .btn-gold:hover:not(:disabled) {
+      background: var(--gold-hover);
+    }
+
+    .btn-cyan {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+      border-color: rgba(34, 211, 238, 0.3);
+    }
+
+    .btn-cyan:hover:not(:disabled) {
+      background: rgba(34, 211, 238, 0.22);
+    }
+
+    .btn-secondary {
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+      border-color: var(--border-subtle);
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      background: #213058;
+      border-color: var(--border-strong);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-secondary);
+      border-color: var(--border-subtle);
+    }
+
+    .btn-ghost:hover:not(:disabled) {
+      background: rgba(148, 163, 184, 0.08);
+      color: var(--text-primary);
+    }
+
+    .btn-sm {
+      padding: 6px 11px;
+      font-size: 12px;
+      border-radius: 7px;
+    }
+
+    /* KPI Strip */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .kpi-card {
+      background: rgba(11, 16, 32, 0.62);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 15px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .kpi-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .kpi-value {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .kpi-value.accent-gold { color: var(--gold); }
+    .kpi-value.accent-cyan { color: var(--cyan); }
+    .kpi-value.accent-emerald { color: var(--emerald); }
+
+    .kpi-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .mini-progress {
+      height: 5px;
+      background: rgba(148, 163, 184, 0.14);
+      border-radius: 99px;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+
+    .mini-progress-bar {
+      height: 100%;
+      background: var(--emerald);
+      border-radius: 99px;
+      transition: width 0.35s ease;
+    }
+
+    /* Navigation Tabs */
+    .tabs-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 6px;
+      border-radius: var(--radius-md);
+      margin-bottom: 22px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      flex: 1;
+      min-width: max-content;
+      background: transparent;
+      color: var(--text-muted);
+      border: none;
+      padding: 11px 16px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 13.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      transition: background-color 0.16s ease, color 0.16s ease;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+      background: rgba(148, 163, 184, 0.06);
+    }
+
+    .tab-btn.active {
+      background: var(--bg-elevated);
+      color: var(--gold);
+      box-shadow: inset 0 0 0 1px rgba(245, 185, 66, 0.32);
+    }
+
+    .tab-count {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 99px;
+      background: rgba(148, 163, 184, 0.14);
+      color: var(--text-secondary);
+    }
+
+    .tab-btn.active .tab-count {
+      background: var(--gold-soft);
+      color: var(--gold);
+    }
+
+    .tab-panel {
+      display: none;
+      animation: fadeIn 0.18s ease;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .badge-short {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+    }
+
+    .badge-long {
+      background: var(--gold-soft);
+      color: var(--gold);
+    }
+
+    .badge-rendered {
+      background: var(--emerald-soft);
+      color: var(--emerald);
+    }
+
+    .badge-pending {
+      background: rgba(245, 185, 66, 0.12);
+      color: var(--gold);
+    }
+
+    .badge-crimson {
+      background: var(--crimson-soft);
+      color: var(--crimson);
+    }
+
+    /* Filter Toolbar */
+    .toolbar-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .filter-pill {
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      padding: 7px 13px;
+      border-radius: var(--radius-sm);
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .filter-pill:hover {
+      color: var(--text-primary);
+      border-color: var(--border-strong);
+    }
+
+    .filter-pill.active {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+      border-color: rgba(34, 211, 238, 0.4);
+    }
+
+    .search-box {
+      position: relative;
+      min-width: 260px;
+      flex: 0 1 320px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px 8px 34px;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--cyan);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      pointer-events: none;
+    }
+
+    /* TAB 1: Master-Detail Studio Workspace */
+    .studio-workspace {
+      display: grid;
+      grid-template-columns: 420px minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .storyboard-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sb-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 13px;
+      cursor: pointer;
+      transition: background-color 0.16s ease, border-color 0.16s ease, transform 0.12s ease;
+      display: grid;
+      grid-template-columns: 124px minmax(0, 1fr);
+      gap: 13px;
+      align-items: center;
+    }
+
+    .sb-card:hover {
+      background: var(--bg-elevated);
+      border-color: var(--border-strong);
+    }
+
+    .sb-card.selected {
+      background: var(--bg-elevated);
+      border-color: var(--gold);
+      box-shadow: 0 10px 28px -12px rgba(245, 185, 66, 0.22);
+    }
+
+    .sb-thumb-wrap {
+      position: relative;
+      width: 124px;
+      aspect-ratio: 16 / 9;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--bg-sunken);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sb-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sb-thumb-fallback {
+      padding: 6px;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .sb-runtime-chip {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      background: rgba(7, 11, 22, 0.88);
+      color: var(--text-primary);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 600;
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
+    .sb-card-body {
+      min-width: 0;
+    }
+
+    .sb-card-badges {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+
+    .sb-card-title {
+      margin: 0 0 6px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .sb-card-meta {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Right Inspector Panel */
+    .inspector-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .inspector-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .inspector-title {
+      margin: 8px 0 6px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+    }
+
+    .inspector-slug-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .mono-pill {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      background: var(--bg-sunken);
+      border: 1px solid var(--border-subtle);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .render-action-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+
+    .render-status-note {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    /* Media Preview Grid inside Inspector */
+    .media-preview-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .media-stage-card {
+      background: var(--bg-sunken);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stage-label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .video-viewport {
+      width: 100%;
+      min-height: 270px;
+      max-height: 430px;
+      background: #040710;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid rgba(148, 163, 184, 0.1);
+    }
+
+    .video-viewport video {
+      max-width: 100%;
+      max-height: 420px;
+      width: auto;
+      height: auto;
+      display: block;
+      outline: none;
+    }
+
+    .video-viewport.is-long video {
+      width: 100%;
+    }
+
+    .empty-video-state {
+      padding: 36px 20px;
+      text-align: center;
+      color: var(--text-muted);
+    }
+
+    .thumb-stage-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #040710;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      cursor: zoom-in;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumb-stage-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .thumb-stage-img-wrap:hover img {
+      transform: scale(1.02);
+    }
+
+    .download-links-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* SEO & 1-Click Copy Suite */
+    .seo-suite-card {
+      background: rgba(11, 16, 32, 0.58);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      margin-bottom: 22px;
+    }
+
+    .section-heading {
+      margin: 0 0 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .copy-buttons-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .copy-action-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 12.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      transition: all 0.15s ease;
+    }
+
+    .copy-action-btn:hover {
+      background: var(--bg-elevated);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .title-variants-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 14px;
+    }
+
+    .title-variant-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    .seo-subtabs {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seo-subtab {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 5px 11px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .seo-subtab.active {
+      background: var(--bg-elevated);
+      color: var(--cyan);
+      border-color: rgba(34, 211, 238, 0.35);
+    }
+
+    .seo-preview-pre {
+      margin: 0;
+      background: var(--bg-sunken);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 13px 15px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 240px;
+      overflow-y: auto;
+    }
+
+    /* Scene-by-Scene Breakdown */
+    .scenes-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .scene-card {
+      background: rgba(11, 16, 32, 0.55);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 15px 18px;
+    }
+
+    .scene-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .scene-index-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .scene-num {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--gold);
+      background: var(--gold-soft);
+      padding: 2px 8px;
+      border-radius: 5px;
+    }
+
+    .scene-headline {
+      margin: 0 0 10px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .scene-visual-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 10px 13px;
+      margin-bottom: 10px;
+      font-size: 12.5px;
+      color: var(--text-secondary);
+    }
+
+    .split-preview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .split-col-left {
+      border-left: 3px solid var(--crimson);
+      padding-left: 10px;
+    }
+
+    .split-col-right {
+      border-left: 3px solid var(--cyan);
+      padding-left: 10px;
+    }
+
+    .scene-narration {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 13.5px;
+      line-height: 1.6;
+      padding-left: 12px;
+      border-left: 2px solid rgba(245, 185, 66, 0.45);
+    }
+
+    .kw-chips {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 9px;
+    }
+
+    .kw-chip {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 1px 7px;
+      border-radius: 4px;
+      background: rgba(245, 185, 66, 0.1);
+      color: var(--gold);
+    }
+
+    /* TAB 2: 30-Day Calendar & YPP Checklist */
+    .ypp-grid {
+      display: grid;
+      grid-template-columns: 380px minmax(0, 1fr);
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .ypp-countdown-card {
+      background: linear-gradient(160deg, #162242 0%, #111931 100%);
+      border: 1px solid rgba(245, 185, 66, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .countdown-big {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .checklist-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 20px 22px;
+    }
+
+    .checklist-items {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .check-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 9px 12px;
+      border-radius: var(--radius-sm);
+      background: rgba(11, 16, 32, 0.5);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: border-color 0.15s ease;
+    }
+
+    .check-row:hover {
+      border-color: var(--border-strong);
+    }
+
+    .check-row input[type="checkbox"] {
+      width: 17px;
+      height: 17px;
+      margin-top: 2px;
+      accent-color: var(--emerald);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .check-row.done span {
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    /* Calendar Table */
+    .table-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+    }
+
+    table.calendar-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .calendar-table th {
+      background: rgba(7, 11, 22, 0.7);
+      color: var(--text-muted);
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 13px 15px;
+      border-bottom: 1px solid var(--border-subtle);
+      white-space: nowrap;
+    }
+
+    .calendar-table td {
+      padding: 14px 15px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+      font-size: 13px;
+    }
+
+    .calendar-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .calendar-table tr:hover td {
+      background: rgba(25, 37, 68, 0.45);
+    }
+
+    .calendar-table tr.row-published td {
+      background: rgba(16, 185, 129, 0.05);
+    }
+
+    .calendar-table tr.row-published .cal-title-text {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    .cal-hook-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* TAB 3: Branding & Thumbnails */
+    .yt-channel-mockup {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .yt-banner-frame {
+      width: 100%;
+      height: 210px;
+      background: var(--bg-sunken);
+      overflow: hidden;
+      position: relative;
+      cursor: zoom-in;
+    }
+
+    .yt-banner-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .yt-profile-bar {
+      padding: 18px 24px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .yt-profile-left {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .yt-avatar-large {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 3px solid var(--bg-surface);
+      margin-top: -46px;
+      background: var(--bg-sunken);
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      cursor: zoom-in;
+      position: relative;
+      z-index: 2;
+    }
+
+    .palette-swatches {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .swatch-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      background: var(--bg-sunken);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+
+    .swatch-chip:hover {
+      border-color: var(--gold);
+      color: var(--text-primary);
+    }
+
+    .swatch-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .gallery-grid.compact-feed {
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    }
+
+    .asset-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .asset-img-box {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: var(--bg-sunken);
+      overflow: hidden;
+      cursor: zoom-in;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .asset-img-box.square {
+      aspect-ratio: 16 / 9;
+    }
+
+    .asset-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .asset-img-box:hover img {
+      transform: scale(1.03);
+    }
+
+    .asset-card-info {
+      padding: 14px 16px;
+    }
+
+    .asset-card-title {
+      margin: 6px 0 4px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* TAB 4: Digital Products & Bio Funnel */
+    .monetization-layers-bar {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .layer-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+    }
+
+    .products-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .product-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+      transition: border-color 0.16s ease;
+    }
+
+    .product-card.active-preview {
+      border-color: var(--gold);
+      box-shadow: 0 12px 32px -14px rgba(245, 185, 66, 0.22);
+    }
+
+    .browser-preview-shell {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .browser-chrome-bar {
+      background: var(--bg-sunken);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .browser-dots {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .browser-dots i {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .browser-url-pill {
+      flex: 1;
+      min-width: 200px;
+      max-width: 560px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--cyan);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .iframe-stage {
+      background: #050811;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      min-height: 680px;
+    }
+
+    .iframe-stage iframe {
+      width: 100%;
+      height: 680px;
+      border: none;
+      background: #0B1020;
+      transition: width 0.22s ease;
+    }
+
+    .iframe-stage.viewport-tablet iframe {
+      width: 768px;
+      border-left: 1px solid var(--border-strong);
+      border-right: 1px solid var(--border-strong);
+    }
+
+    .iframe-stage.viewport-mobile iframe {
+      width: 396px;
+      border-left: 1px solid var(--border-strong);
+      border-right: 1px solid var(--border-strong);
+    }
+
+    /* Spinner */
+    .spinner {
+      width: 15px;
+      height: 15px;
+      border: 2px solid rgba(9, 13, 26, 0.28);
+      border-top-color: currentColor;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Lightbox Modal */
+    .lightbox-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 7, 16, 0.88);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+      z-index: 1000;
+    }
+
+    .lightbox-backdrop.open {
+      display: flex;
+    }
+
+    .lightbox-content {
+      max-width: min(1160px, 94vw);
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .lightbox-content img {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-strong);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Toast Notification */
+    .toast-stack {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1100;
+      pointer-events: none;
+    }
+
+    .toast {
+      background: #172342;
+      color: var(--text-primary);
+      border: 1px solid rgba(245, 185, 66, 0.45);
+      border-radius: var(--radius-sm);
+      padding: 11px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: slideUp 0.2s ease;
+    }
+
+    .toast.toast-error {
+      border-color: var(--crimson);
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1140px) {
+      .kpi-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .studio-workspace {
+        grid-template-columns: 1fr;
+      }
+      .ypp-grid {
+        grid-template-columns: 1fr;
+      }
+      .copy-buttons-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 780px) {
+      .app-shell {
+        padding: 14px 14px 48px;
+      }
+      .kpi-grid,
+      .media-preview-grid,
+      .products-cards-grid,
+      .monetization-layers-bar,
+      .split-preview {
+        grid-template-columns: 1fr;
+      }
+      .copy-buttons-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- HEADER -->
+    <header class="top-header" id="command-header">
+      <div class="header-main-row">
+        <div class="brand-cluster">
+          <img
+            id="header-avatar"
+            class="brand-avatar"
+            src="/assets/branding/avatar.jpg"
+            alt="Mind & Margin Avatar"
+            onerror="this.style.display='none'"
+          />
+          <div class="brand-title-group">
+            <h1>
+              Mind &amp; Margin — Creator Command Center
+              <span class="handle-tag" id="header-handle">@MindAndMargin</span>
+            </h1>
+            <p class="brand-subtitle" id="header-tagline">
+              Trung tâm điều hành sản xuất Video Faceless, SEO 1-Chạm, Lịch 30 Ngày &amp; Phễu Tài Sản Số
+            </p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <div class="server-status" title="Kết nối trực tiếp tới studio_server.py">
+            <span class="status-dot"></span>
+            <span id="last-sync-label">API Trực Tuyến</span>
+          </div>
+          <button type="button" class="btn btn-secondary" id="btn-refresh-dashboard">
+            <span id="refresh-icon">↻</span>
+            <span>Làm mới dữ liệu</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- KPI STRIP -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">
+            <span>Tổng kịch bản</span>
+            <span class="badge badge-short">content/*.json</span>
+          </div>
+          <div class="kpi-value tabular accent-gold" id="kpi-total-scripts">—</div>
+          <div class="kpi-sub" id="kpi-scripts-breakdown">Đang tải kho kịch bản...</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-label">
+            <span>Video đã Render</span>
+            <span class="badge badge-rendered">H.264 MP4</span>
+          </div>
+          <div class="kpi-value tabular accent-emerald" id="kpi-rendered-mp4">—</div>
+          <div>
+            <div class="kpi-sub" id="kpi-render-ratio">Sẵn sàng tải lên YouTube Studio</div>
+            <div class="mini-progress">
+              <div class="mini-progress-bar" id="kpi-render-bar" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-label">
+            <span>Lịch 30 ngày</span>
+            <span class="badge badge-short">High-RPM US</span>
+          </div>
+          <div class="kpi-value tabular accent-cyan" id="kpi-calendar-count">—</div>
+          <div class="kpi-sub" id="kpi-calendar-published">0 video đã đánh dấu xuất bản</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-label">
+            <span>Quỹ thời gian &lt;5h/tuần</span>
+            <span class="badge badge-rendered">Đạt chuẩn</span>
+          </div>
+          <div class="kpi-value tabular" id="kpi-weekly-hours">—</div>
+          <div class="kpi-sub" id="kpi-weekly-mins">Hệ thống vận hành tinh gọn cho người bận rộn</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="tabs-nav" role="tablist" aria-label="Điều hướng Studio">
+      <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="videos" id="tab-btn-videos">
+        <span>🎬 Kho Video &amp; Sản Xuất Tự Động</span>
+        <span class="tab-count tabular" id="nav-count-videos">0</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="calendar" id="tab-btn-calendar">
+        <span>📅 Lịch Đăng 30 Ngày &amp; Checklist Bật Kiếm Tiền</span>
+        <span class="tab-count tabular" id="nav-count-calendar">0</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="branding" id="tab-btn-branding">
+        <span>🎨 Bộ Nhận Diện &amp; Thumbnail Kênh</span>
+        <span class="tab-count tabular" id="nav-count-thumbs">0</span>
+      </button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="funnel" id="tab-btn-funnel">
+        <span>💰 Phễu Kiếm Tiền &amp; Sản Phẩm Số ($19 OS)</span>
+        <span class="tab-count tabular" id="nav-count-products">2</span>
+      </button>
+    </nav>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 1: KHO VIDEO & SẢN XUẤT TỰ ĐỘNG                                   -->
+    <!-- ===================================================================== -->
+    <section class="tab-panel active" id="panel-videos" role="tabpanel" aria-labelledby="tab-btn-videos">
+      <div class="toolbar-row">
+        <div class="filter-group" id="video-filter-group">
+          <button type="button" class="filter-pill active" data-filter="all">Tất cả kịch bản</button>
+          <button type="button" class="filter-pill" data-filter="short">Shorts (9:16)</button>
+          <button type="button" class="filter-pill" data-filter="long">Long-form (16:9)</button>
+          <button type="button" class="filter-pill" data-filter="rendered">Đã Render MP4</button>
+          <button type="button" class="filter-pill" data-filter="unrendered">Chưa Render</button>
+        </div>
+
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input
+            type="search"
+            id="video-search-input"
+            class="search-input"
+            placeholder="Tìm theo tiêu đề, từ khóa, tên file..."
+          />
+        </div>
+      </div>
+
+      <div class="studio-workspace">
+        <!-- Left Storyboard List -->
+        <div class="storyboard-list" id="storyboard-list-container">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Right Detail Drawer / Inspector -->
+        <div class="inspector-panel" id="video-detail-panel">
+          <div id="video-detail-content">
+            <div class="empty-video-state">Đang tải chi tiết kịch bản...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 2: LỊCH ĐĂNG 30 NGÀY & CHECKLIST BẬT KIẾM TIỀN                    -->
+    <!-- ===================================================================== -->
+    <section class="tab-panel" id="panel-calendar" role="tabpanel" aria-labelledby="tab-btn-calendar">
+      <div class="ypp-grid">
+        <div class="ypp-countdown-card">
+          <div>
+            <span class="badge badge-long">LỘ TRÌNH YPP &amp; ĐA NGUỒN THU</span>
+            <h2 style="margin: 10px 0 6px; font-size: 18px;">Đếm Ngược Mục Tiêu Bật Kiếm Tiền Trước 01/02/2027</h2>
+            <p style="margin: 0; color: var(--text-muted); font-size: 13px;">
+              Chiến lược 3 tầng giúp tạo doanh thu Affiliate &amp; Sản phẩm số $19 ngay từ Ngày 1 trong khi tích lũy giờ xem sạch tiến tới YouTube Partner Program.
+            </p>
+          </div>
+
+          <div>
+            <div class="countdown-big tabular" id="ypp-days-remaining">— ngày</div>
+            <div style="font-size: 12.5px; color: var(--cyan); margin-top: 4px;" id="ypp-deadline-sub">
+              Hạn mục tiêu YPP: 01/02/2027 • Tần suất: 3 Shorts + 1 Long-form / tuần
+            </div>
+          </div>
+
+          <div style="padding-top: 12px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; font-size: 12.5px;">
+            <span style="color: var(--text-muted);">Tiến độ lịch 30 ngày:</span>
+            <strong class="tabular" style="color: var(--emerald);" id="cal-progress-summary">0 / 16 đã đăng</strong>
+          </div>
+        </div>
+
+        <div class="checklist-card">
+          <div class="section-heading">
+            <span>✅ Checklist Thiết Lập Kiếm Tiền Ngày 1 &amp; Chuẩn Hóa YPP (Lưu tự động)</span>
+            <span class="mono-pill tabular" id="ypp-checklist-counter">0/5 hoàn tất</span>
+          </div>
+          <div class="checklist-items" id="ypp-checklist-container">
+            <!-- Rendered by JS with localStorage persistence -->
+          </div>
+        </div>
+      </div>
+
+      <div class="toolbar-row">
+        <div class="filter-group" id="calendar-week-filters">
+          <button type="button" class="filter-pill active" data-week="all">Tất cả 30 ngày</button>
+          <button type="button" class="filter-pill" data-week="Week 1">Tuần 1</button>
+          <button type="button" class="filter-pill" data-week="Week 2">Tuần 2</button>
+          <button type="button" class="filter-pill" data-week="Week 3">Tuần 3</button>
+          <button type="button" class="filter-pill" data-week="Week 4">Tuần 4</button>
+          <button type="button" class="filter-pill" data-week="long_only">Chỉ Video Dài (16:9)</button>
+        </div>
+
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <button type="button" class="btn btn-ghost btn-sm" id="btn-reset-calendar">
+            Đặt lại trạng thái đã đăng
+          </button>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <div class="table-scroll">
+          <table class="calendar-table" id="calendar-table">
+            <thead>
+              <tr>
+                <th style="width: 72px;">Đã đăng</th>
+                <th style="width: 110px;">Ngày / Tuần</th>
+                <th style="width: 155px;">Định dạng &amp; Trụ cột</th>
+                <th>Tiêu đề Video (Chuẩn RPM Cao) &amp; Hook 3 Giây Đầu</th>
+                <th style="width: 240px;">Nguồn thu Ngày 1 (Affiliate / OS)</th>
+                <th style="width: 190px;">Từ khóa SEO mục tiêu</th>
+                <th style="width: 95px;">Thời gian SX</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-tbody">
+              <!-- Populated dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 3: BỘ NHẬN DIỆN & THUMBNAIL KÊNH                                  -->
+    <!-- ===================================================================== -->
+    <section class="tab-panel" id="panel-branding" role="tabpanel" aria-labelledby="tab-btn-branding">
+      <!-- YouTube Channel Header Mockup -->
+      <div class="yt-channel-mockup">
+        <div class="yt-banner-frame" id="mockup-banner-box" title="Nhấn để phóng to Banner kênh">
+          <img id="mockup-banner-img" src="/assets/branding/banner.jpg" alt="Mind & Margin Channel Banner" />
+        </div>
+        <div class="yt-profile-bar">
+          <div class="yt-profile-left">
+            <img
+              id="mockup-avatar-img"
+              class="yt-avatar-large"
+              src="/assets/branding/avatar.jpg"
+              alt="Mind & Margin Avatar"
+              title="Nhấn để phóng to Avatar kênh"
+            />
+            <div>
+              <h2 style="margin: 0; font-size: 20px; font-weight: 700;">Mind &amp; Margin</h2>
+              <div style="color: var(--text-muted); font-size: 13px; margin-top: 2px;">
+                @MindAndMargin • Wealth Psychology • Mental Models • AI Leverage
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; font-weight: 600;">
+              Bảng màu Thương hiệu (Nhấn để Copy mã màu):
+            </div>
+            <div class="palette-swatches">
+              <button type="button" class="swatch-chip" data-hex="#0B1020">
+                <span class="swatch-dot" style="background:#0B1020;"></span> #0B1020
+              </button>
+              <button type="button" class="swatch-chip" data-hex="#131C34">
+                <span class="swatch-dot" style="background:#131C34;"></span> #131C34
+              </button>
+              <button type="button" class="swatch-chip" data-hex="#F5B942">
+                <span class="swatch-dot" style="background:#F5B942;"></span> #F5B942
+              </button>
+              <button type="button" class="swatch-chip" data-hex="#22D3EE">
+                <span class="swatch-dot" style="background:#22D3EE;"></span> #22D3EE
+              </button>
+              <button type="button" class="swatch-chip" data-hex="#F43F5E">
+                <span class="swatch-dot" style="background:#F43F5E;"></span> #F43F5E
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Branding Files -->
+      <div class="section-heading" style="margin-bottom: 14px;">
+        <span style="font-size: 16px;">🏛️ Tài Nguyên Nhận Diện Kênh (/assets/branding/)</span>
+      </div>
+      <div class="gallery-grid" id="branding-assets-grid"></div>
+
+      <!-- Thumbnails Gallery -->
+      <div class="toolbar-row" style="margin-top: 12px;">
+        <h3 style="margin: 0; font-size: 16px;">🔥 Kho Thumbnail CTR Cao (/assets/thumbnails/ &amp; /output/)</h3>
+        <div class="filter-group">
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-toggle-thumb-size">
+            🔍 Chế độ kiểm tra cỡ chữ Mobile / Đề xuất YouTube
+          </button>
+        </div>
+      </div>
+      <div class="gallery-grid" id="thumbnails-gallery-grid"></div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 4: PHỄU KIẾM TIỀN & SẢN PHẨM SỐ ($19 OS)                          -->
+    <!-- ===================================================================== -->
+    <section class="tab-panel" id="panel-funnel" role="tabpanel" aria-labelledby="tab-btn-funnel">
+      <div class="monetization-layers-bar">
+        <div class="layer-box">
+          <span class="badge badge-short">TẦNG 1 • NGÀY ĐẦU TIÊN</span>
+          <h3 style="margin: 8px 0 4px; font-size: 15px;">Affiliate Tinh Tuyển Giá Trị Cao</h3>
+          <p style="margin: 0; font-size: 12.5px; color: var(--text-muted);">
+            Audible Free Trial ($5–$15/đăng ký), Notion AI ($50 + 20% recurring), Beehiiv (50% hoa hồng 12 tháng) đặt tại Pinned Comment &amp; Bio.
+          </p>
+        </div>
+        <div class="layer-box">
+          <span class="badge badge-long">TẦNG 2 • SẢN PHẨM SỐ 100% BIÊN LỢI NHUẬN</span>
+          <h3 style="margin: 8px 0 4px; font-size: 15px;">The 5-Hour Asset Builder OS ($19)</h3>
+          <p style="margin: 0; font-size: 12.5px; color: var(--text-muted);">
+            Bán trực tiếp qua Lemon Squeezy / Gumroad ngay trên trang Bio &amp; Mô tả Video dài — chỉ cần 2 đơn/ngày đạt ~$1,140/tháng.
+          </p>
+        </div>
+        <div class="layer-box">
+          <span class="badge badge-rendered">TẦNG 3 • LÃI KÉP DÀI HẠN</span>
+          <h3 style="margin: 8px 0 4px; font-size: 15px;">YouTube AdSense RPM Cao ($12–$22)</h3>
+          <p style="margin: 0; font-size: 12.5px; color: var(--text-muted);">
+            Tệp khán giả nói tiếng Anh (US/UK/CA/AU) chủ đề Tài chính cá nhân, Tư duy &amp; AI Productivity mang lại giá quảng cáo cao gấp 6–10 lần giải trí.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Selector Cards -->
+      <div class="products-cards-grid" id="products-cards-container">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Live Embedded Interactive Viewport -->
+      <div class="browser-preview-shell">
+        <div class="browser-chrome-bar">
+          <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1;">
+            <div class="browser-dots" aria-hidden="true">
+              <i style="background: #F43F5E;"></i>
+              <i style="background: #F5B942;"></i>
+              <i style="background: #10B981;"></i>
+            </div>
+            <div class="browser-url-pill" id="preview-url-display">/products/5_hour_asset_builder_os/index.html</div>
+          </div>
+
+          <div class="filter-group">
+            <button type="button" class="filter-pill active" data-viewport="desktop">🖥 Desktop (100%)</button>
+            <button type="button" class="filter-pill" data-viewport="tablet">📱 Tablet (768px)</button>
+            <button type="button" class="filter-pill" data-viewport="mobile">📲 Mobile Bio (396px)</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="btn-reload-iframe">↻ Tải lại</button>
+            <a href="/products/5_hour_asset_builder_os/index.html" target="_blank" rel="noopener" class="btn btn-gold btn-sm" id="btn-open-product-newtab">
+              ↗ Mở Tab Mới
+            </a>
+          </div>
+        </div>
+
+        <div class="iframe-stage" id="iframe-stage-wrapper">
+          <iframe
+            id="product-preview-iframe"
+            src="about:blank"
+            title="Xem trước Sản phẩm số & Trang Phễu Bio"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-backdrop" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Preview" />
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <span id="lightbox-caption" style="color: var(--text-secondary); font-weight: 600;"></span>
+        <button type="button" class="btn btn-secondary btn-sm" id="btn-close-lightbox">Đóng (Esc)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast-stack" id="toast-stack" aria-live="polite"></div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const STORAGE_KEYS = {
+        calendarPublished: 'mm_studio_calendar_published_v1',
+        yppChecklist: 'mm_studio_ypp_checklist_v1',
+      };
+
+      const DEFAULT_YPP_CHECKLIST = [
+        {
+          id: 'setup_brand',
+          text: 'Hoàn tất hồ sơ kênh @MindAndMargin: Avatar, Banner 2560×1440, Mô tả chuẩn SEO quốc tế (US/UK) & gắn link Bio Funnel.',
+        },
+        {
+          id: 'affiliate_day1',
+          text: 'Kích hoạt kiếm tiền Ngày 1: Đăng ký Audible Bounty, Notion Affiliate, Beehiiv & gắn vào Pinned Comment mọi video.',
+        },
+        {
+          id: 'launch_19_os',
+          text: 'Xuất bản sản phẩm số "The 5-Hour Asset Builder OS ($19)" lên Gumroad / Lemon Squeezy và kết nối với Bio Funnel Page.',
+        },
+        {
+          id: 'ypp_tier1',
+          text: 'Đạt mốc YPP Mở Sớm (500 Subscribers + 3.000 giờ xem hoặc 3M views Shorts) — mở khóa Super Thanks & YouTube Shopping.',
+        },
+        {
+          id: 'ypp_full_2027',
+          text: 'Cán đích Full YouTube Partner (1.000 Subscribers + 4.000 giờ xem Long-form hoặc 10M Shorts views) trước hạn 01/02/2027.',
+        },
+      ];
+
+      const state = {
+        dashboard: null,
+        activeTab: 'videos',
+        videoFilter: 'all',
+        videoSearch: '',
+        selectedSlug: null,
+        activeSeoSubtab: 'desc',
+        renderingSlugs: new Set(),
+        calendarWeekFilter: 'all',
+        publishedMap: loadJsonStorage(STORAGE_KEYS.calendarPublished, {}),
+        checklistMap: loadJsonStorage(STORAGE_KEYS.yppChecklist, {}),
+        compactThumbMode: false,
+        activeProductUrl: '/products/5_hour_asset_builder_os/index.html',
+      };
+
+      function loadJsonStorage(key, fallback) {
+        try {
+          const raw = window.localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : fallback;
+        } catch (_) {
+          return fallback;
+        }
+      }
+
+      function saveJsonStorage(key, value) {
+        try {
+          window.localStorage.setItem(key, JSON.stringify(value));
+        } catch (_) {}
+      }
+
+      function escapeHtml(str) {
+        return String(str ?? '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function showToast(message, isError = false) {
+        const stack = document.getElementById('toast-stack');
+        const el = document.createElement('div');
+        el.className = 'toast' + (isError ? ' toast-error' : '');
+        el.innerHTML = `<span>${isError ? '⚠️' : '✓'}</span><span>${escapeHtml(message)}</span>`;
+        stack.appendChild(el);
+        setTimeout(() => {
+          el.style.opacity = '0';
+          el.style.transition = 'opacity 0.22s ease';
+          setTimeout(() => el.remove(), 240);
+        }, 2800);
+      }
+
+      async function copyText(text, label = 'nội dung') {
+        const clean = String(text ?? '');
+        if (!clean) {
+          showToast(`Không có ${label} để sao chép`, true);
+          return;
+        }
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(clean);
+          } else {
+            const ta = document.createElement('textarea');
+            ta.value = clean;
+            ta.style.position = 'fixed';
+            ta.style.left = '-9999px';
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+            document.execCommand('copy');
+            ta.remove();
+          }
+          showToast(`Đã sao chép ${label} vào bộ nhớ tạm!`);
+        } catch (err) {
+          showToast(`Lỗi khi sao chép: ${err.message}`, true);
+        }
+      }
+
+      function formatDuration(seconds) {
+        const s = Math.max(0, Math.round(Number(seconds) || 0));
+        if (s < 60) return `${s}s`;
+        const mins = Math.floor(s / 60);
+        const rem = s % 60;
+        return `${mins}p${String(rem).padStart(2, '0')}s`;
+      }
+
+      // ---- Navigation ----
+      function switchTab(tabId) {
+        state.activeTab = tabId;
+        document.querySelectorAll('.tab-btn').forEach((btn) => {
+          const active = btn.dataset.tab === tabId;
+          btn.classList.toggle('active', active);
+          btn.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        document.querySelectorAll('.tab-panel').forEach((panel) => {
+          panel.classList.toggle('active', panel.id === `panel-${tabId}`);
+        });
+
+        if (tabId === 'funnel') {
+          ensureProductIframeLoaded();
+        }
+      }
+
+      // ---- API Fetch ----
+      async function fetchDashboard(showFeedback = false) {
+        const refreshBtn = document.getElementById('btn-refresh-dashboard');
+        refreshBtn.disabled = true;
+        try {
+          const resp = await fetch('/api/dashboard', { cache: 'no-store' });
+          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+          const data = await resp.json();
+          if (!data.ok) throw new Error(data.error || 'Lỗi dữ liệu API');
+
+          state.dashboard = data;
+
+          const storyboards = data.storyboards || [];
+          if (!state.selectedSlug && storyboards.length > 0) {
+            state.selectedSlug = storyboards[0].slug;
+          } else if (state.selectedSlug && !storyboards.some((s) => s.slug === state.selectedSlug)) {
+            state.selectedSlug = storyboards[0]?.slug || null;
+          }
+
+          renderAll();
+          const now = new Date();
+          document.getElementById('last-sync-label').textContent =
+            `Đồng bộ lúc ${now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}`;
+          if (showFeedback) {
+            showToast('Đã cập nhật dữ liệu mới nhất từ dự án!');
+          }
+        } catch (err) {
+          showToast(`Không thể tải dữ liệu Studio: ${err.message}`, true);
+        } finally {
+          refreshBtn.disabled = false;
+        }
+      }
+
+      function renderAll() {
+        if (!state.dashboard) return;
+        renderHeaderAndKpis();
+        renderStoryboardsList();
+        renderSelectedStoryboardDetail();
+        renderYppCountdownAndChecklist();
+        renderCalendarTable();
+        renderBrandingAndThumbnails();
+        renderProductsSection();
+      }
+
+      // ---- Header & KPIs ----
+      function renderHeaderAndKpis() {
+        const { channel, stats, calendar, thumbnails, products } = state.dashboard;
+
+        if (channel) {
+          document.getElementById('header-handle').textContent = channel.handle || '@MindAndMargin';
+        }
+
+        document.getElementById('kpi-total-scripts').textContent = `${stats.total_scripts} kịch bản`;
+        document.getElementById('kpi-scripts-breakdown').textContent =
+          `${stats.short_count} Shorts (9:16) • ${stats.long_count} Long-form (16:9)`;
+
+        document.getElementById('kpi-rendered-mp4').textContent =
+          `${stats.rendered_mp4_count} / ${stats.total_scripts} MP4`;
+        const ratio = stats.total_scripts > 0
+          ? Math.min(100, Math.round((stats.rendered_storyboards_count / stats.total_scripts) * 100))
+          : 0;
+        document.getElementById('kpi-render-ratio').textContent =
+          `${ratio}% kho kịch bản đã xuất video hoàn chỉnh`;
+        document.getElementById('kpi-render-bar').style.width = `${ratio}%`;
+
+        const publishedCount = (calendar || []).filter((r) => Boolean(state.publishedMap[r.id])).length;
+        document.getElementById('kpi-calendar-count').textContent = `${stats.calendar_rows} lịch đăng`;
+        document.getElementById('kpi-calendar-published').textContent =
+          `Đã xuất bản ${publishedCount} / ${stats.calendar_rows} video trong lộ trình`;
+
+        document.getElementById('kpi-weekly-hours').textContent = `${stats.estimated_weekly_hours}h / tuần`;
+        document.getElementById('kpi-weekly-mins').textContent =
+          `~${stats.estimated_weekly_minutes} phút/tuần (Tối ưu dưới ngưỡng 5 giờ)`;
+
+        // Nav counters
+        document.getElementById('nav-count-videos').textContent = stats.total_scripts;
+        document.getElementById('nav-count-calendar').textContent = `${publishedCount}/${stats.calendar_rows}`;
+        document.getElementById('nav-count-thumbs').textContent = (thumbnails?.all || []).length;
+        document.getElementById('nav-count-products').textContent = (products || []).length;
+      }
+
+      // ---- Tab 1: Storyboard List & Detail Inspector ----
+      function getFilteredStoryboards() {
+        const list = state.dashboard?.storyboards || [];
+        const q = state.videoSearch.trim().toLowerCase();
+        return list.filter((sb) => {
+          if (state.videoFilter === 'short' && sb.format !== 'short') return false;
+          if (state.videoFilter === 'long' && sb.format !== 'long') return false;
+          if (state.videoFilter === 'rendered' && !sb.mp4_exists) return false;
+          if (state.videoFilter === 'unrendered' && sb.mp4_exists) return false;
+          if (q) {
+            const hay = `${sb.slug} ${sb.title} ${sb.tags_csv} ${sb.description_hook}`.toLowerCase();
+            if (!hay.includes(q)) return false;
+          }
+          return true;
+        });
+      }
+
+      function renderStoryboardsList() {
+        const container = document.getElementById('storyboard-list-container');
+        const items = getFilteredStoryboards();
+
+        if (items.length === 0) {
+          container.innerHTML = `
+            <div class="inspector-panel" style="text-align:center; color: var(--text-muted); padding: 32px 18px;">
+              Không tìm thấy kịch bản nào khớp bộ lọc hiện tại.
+            </div>`;
+          return;
+        }
+
+        container.innerHTML = items.map((sb) => {
+          const isSelected = sb.slug === state.selectedSlug;
+          const isRendering = state.renderingSlugs.has(sb.slug);
+          const thumbSrc = sb.thumbnail_url
+            ? `${sb.thumbnail_url}?t=${sb.thumbnail_mtime || 1}`
+            : '';
+          const hookFallback = sb.thumbnail_meta?.hook_text || sb.slug;
+
+          return `
+            <article class="sb-card ${isSelected ? 'selected' : ''}" data-slug="${escapeHtml(sb.slug)}">
+              <div class="sb-thumb-wrap">
+                ${thumbSrc
+                  ? `<img src="${escapeHtml(thumbSrc)}" alt="${escapeHtml(sb.title)}" loading="lazy" />`
+                  : `<div class="sb-thumb-fallback">${escapeHtml(hookFallback)}</div>`
+                }
+                <span class="sb-runtime-chip">${formatDuration(sb.estimated_runtime_sec)}</span>
+              </div>
+              <div class="sb-card-body">
+                <div class="sb-card-badges">
+                  <span class="badge ${sb.format === 'long' ? 'badge-long' : 'badge-short'}">
+                    ${sb.format === 'long' ? 'LONG 16:9' : 'SHORT 9:16'}
+                  </span>
+                  ${isRendering
+                    ? `<span class="badge badge-pending">⏳ Đang Render...</span>`
+                    : sb.mp4_exists
+                      ? `<span class="badge badge-rendered">✓ Đã có MP4</span>`
+                      : `<span class="badge badge-pending">○ Chờ Render</span>`
+                  }
+                </div>
+                <h3 class="sb-card-title">${escapeHtml(sb.title)}</h3>
+                <div class="sb-card-meta tabular">
+                  <span>🎞 ${sb.scene_count} cảnh</span>
+                  ${sb.video_size_mb != null ? `<span>• ${sb.video_size_mb} MB</span>` : ''}
+                </div>
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        container.querySelectorAll('.sb-card').forEach((card) => {
+          card.addEventListener('click', () => {
+            state.selectedSlug = card.dataset.slug;
+            renderStoryboardsList();
+            renderSelectedStoryboardDetail();
+          });
+        });
+      }
+
+      function renderSelectedStoryboardDetail() {
+        const panel = document.getElementById('video-detail-content');
+        const all = state.dashboard?.storyboards || [];
+        const sb = all.find((item) => item.slug === state.selectedSlug);
+
+        if (!sb) {
+          panel.innerHTML = `<div class="empty-video-state">Chọn một kịch bản bên trái để xem chi tiết &amp; điều khiển sản xuất.</div>`;
+          return;
+        }
+
+        const isRendering = state.renderingSlugs.has(sb.slug);
+        const videoCacheBust = sb.video_mtime || Date.now();
+        const thumbCacheBust = sb.thumbnail_mtime || Date.now();
+        const videoSrc = sb.video_url ? `${sb.video_url}?t=${videoCacheBust}` : null;
+        const thumbSrc = sb.thumbnail_url ? `${sb.thumbnail_url}?t=${thumbCacheBust}` : null;
+
+        let seoPreviewText = sb.description;
+        if (state.activeSeoSubtab === 'pinned') {
+          seoPreviewText = sb.pinned_comment;
+        } else if (state.activeSeoSubtab === 'pack') {
+          seoPreviewText = sb.youtube_upload_pack || 'Chưa có file youtube_upload_pack.md — nhấn "Render / Render lại MP4" để tạo tự động.';
+        }
+
+        const scenesHtml = (sb.scenes || []).map((sc, idx) => {
+          const vType = sc.visual_type || 'stat_callout';
+          let visualSummaryHtml = '';
+          if (vType === 'comparison_split') {
+            visualSummaryHtml = `
+              <div class="scene-visual-box">
+                <div class="split-preview">
+                  <div class="split-col-left">
+                    <strong style="color: var(--crimson); font-size: 11.5px;">[X] ${escapeHtml(sc.left_title || 'MÔ HÌNH CŨ')}</strong>
+                    <div style="margin-top: 3px;">${escapeHtml(sc.left_body || '')}</div>
+                  </div>
+                  <div class="split-col-right">
+                    <strong style="color: var(--cyan); font-size: 11.5px;">[+] ${escapeHtml(sc.right_title || 'ĐÒN BẨY MỚI')}</strong>
+                    <div style="margin-top: 3px;">${escapeHtml(sc.right_body || '')}</div>
+                  </div>
+                </div>
+              </div>`;
+          } else if (vType === 'compounding_curve') {
+            visualSummaryHtml = `
+              <div class="scene-visual-box">
+                <strong style="color: var(--gold);">📈 Đường cong Lãi kép: ${escapeHtml(sc.stat_label || 'COMPOUNDING CURVE')}</strong>
+                ${sc.stat_subtext ? `<div style="color: var(--text-muted); margin-top: 3px;">${escapeHtml(sc.stat_subtext)}</div>` : ''}
+              </div>`;
+          } else {
+            const bullets = (sc.bullets || []).map((b) => `<li>${escapeHtml(b)}</li>`).join('');
+            visualSummaryHtml = `
+              <div class="scene-visual-box">
+                <div>
+                  <strong style="color: var(--gold); font-size: 15px;">${escapeHtml(sc.stat_value || '')}</strong>
+                  <span style="color: var(--cyan); font-weight: 600; margin-left: 8px;">${escapeHtml(sc.stat_label || '')}</span>
+                </div>
+                ${bullets ? `<ul style="margin: 6px 0 0 18px; padding: 0;">${bullets}</ul>` : ''}
+              </div>`;
+          }
+
+          const kwHtml = (sc.highlight_words || [])
+            .map((w) => `<span class="kw-chip">${escapeHtml(w)}</span>`)
+            .join('');
+
+          return `
+            <div class="scene-card">
+              <div class="scene-top-row">
+                <div class="scene-index-tag">
+                  <span class="scene-num">CẢNH ${String(idx + 1).padStart(2, '0')}</span>
+                  <span class="badge ${idx === 0 ? 'badge-crimson' : 'badge-short'}">${escapeHtml(sc.tag || 'SCENE')}</span>
+                </div>
+                <span class="mono-pill">${escapeHtml(vType)}</span>
+              </div>
+              <h4 class="scene-headline">${escapeHtml(sc.headline || '')}</h4>
+              ${visualSummaryHtml}
+              <p class="scene-narration">“${escapeHtml(sc.narration || '')}”</p>
+              ${kwHtml ? `<div class="kw-chips"><span style="font-size:11px; color:var(--text-dim);">Từ khóa nhấn vàng:</span>${kwHtml}</div>` : ''}
+            </div>
+          `;
+        }).join('');
+
+        panel.innerHTML = `
+          <div class="inspector-header">
+            <div style="flex: 1; min-width: 260px;">
+              <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                <span class="badge ${sb.format === 'long' ? 'badge-long' : 'badge-short'}">
+                  ${sb.format === 'long' ? 'VIDEO DÀI • 16:9 (1920×1080)' : 'YOUTUBE SHORTS • 9:16 (1080×1920)'}
+                </span>
+                ${sb.mp4_exists
+                  ? `<span class="badge badge-rendered">✓ Đã xuất bản MP4 (${sb.video_size_mb} MB)</span>`
+                  : `<span class="badge badge-pending">○ Chưa có MP4</span>`
+                }
+              </div>
+              <h2 class="inspector-title">${escapeHtml(sb.title)}</h2>
+              <div class="inspector-slug-row tabular">
+                <span class="mono-pill">content/${escapeHtml(sb.filename)}</span>
+                <span>🎙 Giọng đọc: <strong>${escapeHtml(sb.voice)}</strong></span>
+                <span>⏱ Thời lượng: <strong>~${formatDuration(sb.estimated_runtime_sec)}</strong></span>
+                <span>🎞 <strong>${sb.scene_count}</strong> phân cảnh</span>
+              </div>
+            </div>
+
+            <div class="render-action-box">
+              <button
+                type="button"
+                class="btn btn-gold"
+                id="btn-trigger-render"
+                ${isRendering ? 'disabled' : ''}
+              >
+                ${isRendering
+                  ? `<span class="spinner"></span><span id="render-timer-label">Đang Render MP4...</span>`
+                  : `<span>🎬 ${sb.mp4_exists ? 'Render lại MP4' : 'Render MP4 Ngay'}</span>`
+                }
+              </button>
+              <span class="render-status-note" id="render-status-subnote">
+                Tự động tạo .mp4 + .srt + thumbnail.png + gói SEO
+              </span>
+            </div>
+          </div>
+
+          <!-- Video Player + Thumbnail Preview -->
+          <div class="media-preview-grid">
+            <div class="media-stage-card">
+              <div class="stage-label-row">
+                <span>▶ TRÌNH PHÁT VIDEO TRỰC TIẾP (${escapeHtml(sb.resolution)})</span>
+                ${videoSrc ? `<a href="${escapeHtml(sb.video_url)}" download>⬇ Tải MP4</a>` : ''}
+              </div>
+              <div class="video-viewport ${sb.format === 'long' ? 'is-long' : 'is-short'}">
+                ${videoSrc
+                  ? `<video controls preload="metadata" playsinline src="${escapeHtml(videoSrc)}" poster="${thumbSrc ? escapeHtml(thumbSrc) : ''}"></video>`
+                  : `<div class="empty-video-state">
+                       <p style="margin: 0 0 12px;">Kịch bản này chưa có file MP4 trong thư mục <code>output/${escapeHtml(sb.slug)}/</code>.</p>
+                       <button type="button" class="btn btn-gold btn-sm" id="btn-empty-render">🎬 Bắt đầu Render ngay</button>
+                     </div>`
+                }
+              </div>
+              <div class="download-links-row">
+                <span style="font-size: 11.5px; color: var(--text-dim);">Tệp đầu ra:</span>
+                ${sb.video_url ? `<a class="mono-pill" href="${escapeHtml(sb.video_url)}" download>.mp4 Video</a>` : ''}
+                ${sb.srt_url ? `<a class="mono-pill" href="${escapeHtml(sb.srt_url)}" download>.srt Phụ đề</a>` : ''}
+                ${sb.thumbnail_url ? `<a class="mono-pill" href="${escapeHtml(sb.thumbnail_url)}" download>.png Thumbnail</a>` : ''}
+                ${sb.seo_pack_url ? `<a class="mono-pill" href="${escapeHtml(sb.seo_pack_url)}" target="_blank" rel="noopener">youtube_upload_pack.md</a>` : ''}
+              </div>
+            </div>
+
+            <div class="media-stage-card">
+              <div class="stage-label-row">
+                <span>🖼 THUMBNAIL CTR CAO (1280×720)</span>
+                ${thumbSrc ? `<span style="color: var(--cyan); cursor: pointer;" id="btn-zoom-detail-thumb">🔍 Phóng to</span>` : ''}
+              </div>
+              <div class="thumb-stage-img-wrap" id="detail-thumb-box">
+                ${thumbSrc
+                  ? `<img src="${escapeHtml(thumbSrc)}" alt="Thumbnail ${escapeHtml(sb.title)}" />`
+                  : `<div class="empty-video-state">Thumbnail sẽ xuất hiện ngay sau khi Render.</div>`
+                }
+              </div>
+              <div style="margin-top: 12px; font-size: 12px; color: var(--text-muted); display: flex; flex-direction: column; gap: 4px;">
+                <div>Hook chữ lớn: <strong style="color: var(--gold);">${escapeHtml(sb.thumbnail_meta?.hook_text || '—')}</strong></div>
+                <div>Nhãn chủ đề: <strong style="color: var(--text-primary);">${escapeHtml(sb.thumbnail_meta?.badge || '—')}</strong> • Số liệu điểm nhấn: <strong style="color: var(--cyan);">${escapeHtml(sb.thumbnail_meta?.stat || '—')}</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1-Click SEO & Affiliate Copy Pack -->
+          <div class="seo-suite-card">
+            <div class="section-heading">
+              <span>🚀 Bộ Công Cụ Đăng Kênh &amp; SEO 1-Chạm (Copy-Paste lên YouTube Studio)</span>
+              <span style="font-size: 11.5px; color: var(--emerald); font-weight: 600;">
+                Synthetic Content Toggle: No (Đồ họa thông tin &amp; khung kiến thức giáo dục)
+              </span>
+            </div>
+
+            <div class="copy-buttons-grid">
+              <button type="button" class="copy-action-btn" id="btn-copy-title">
+                <span>📋</span> <span>Copy Tiêu đề</span>
+              </button>
+              <button type="button" class="copy-action-btn" id="btn-copy-desc">
+                <span>📝</span> <span>Copy Mô tả SEO</span>
+              </button>
+              <button type="button" class="copy-action-btn" id="btn-copy-pinned">
+                <span>📌</span> <span>Copy Pinned Comment Affiliate</span>
+              </button>
+              <button type="button" class="copy-action-btn" id="btn-copy-tags">
+                <span>🏷️</span> <span>Copy Tags</span>
+              </button>
+            </div>
+
+            <!-- Title A/B Testing Options -->
+            <div class="title-variants-list">
+              <div class="title-variant-row">
+                <div><span class="badge badge-long" style="margin-right:8px;">Chính</span> <strong>${escapeHtml(sb.title)}</strong></div>
+                <button type="button" class="btn btn-ghost btn-sm js-copy-variant" data-title="${escapeHtml(sb.title)}">Copy</button>
+              </div>
+              <div class="title-variant-row">
+                <div><span class="badge badge-short" style="margin-right:8px;">A/B #1</span> ${escapeHtml(sb.alt_title_1)}</div>
+                <button type="button" class="btn btn-ghost btn-sm js-copy-variant" data-title="${escapeHtml(sb.alt_title_1)}">Copy</button>
+              </div>
+              <div class="title-variant-row">
+                <div><span class="badge badge-short" style="margin-right:8px;">A/B #2</span> ${escapeHtml(sb.alt_title_2)}</div>
+                <button type="button" class="btn btn-ghost btn-sm js-copy-variant" data-title="${escapeHtml(sb.alt_title_2)}">Copy</button>
+              </div>
+            </div>
+
+            <div class="seo-subtabs">
+              <button type="button" class="seo-subtab ${state.activeSeoSubtab === 'desc' ? 'active' : ''}" data-subtab="desc">
+                Mô tả SEO &amp; Timestamps
+              </button>
+              <button type="button" class="seo-subtab ${state.activeSeoSubtab === 'pinned' ? 'active' : ''}" data-subtab="pinned">
+                Pinned Comment Affiliate (${escapeHtml(sb.affiliate_cta?.offer_name || 'Offer')})
+              </button>
+              <button type="button" class="seo-subtab ${state.activeSeoSubtab === 'pack' ? 'active' : ''}" data-subtab="pack">
+                Toàn bộ youtube_upload_pack.md
+              </button>
+            </div>
+            <pre class="seo-preview-pre">${escapeHtml(seoPreviewText)}</pre>
+          </div>
+
+          <!-- Scene-by-Scene Breakdown -->
+          <div>
+            <div class="section-heading">
+              <span>🎞 Phân Tích Kịch Bản Chi Tiết Từng Phân Cảnh (${sb.scene_count} Scenes)</span>
+            </div>
+            <div class="scenes-timeline">
+              ${scenesHtml}
+            </div>
+          </div>
+        `;
+
+        // Bind detail interactions
+        const renderBtn = document.getElementById('btn-trigger-render');
+        if (renderBtn) {
+          renderBtn.addEventListener('click', () => triggerRenderStoryboard(sb.slug));
+        }
+        const emptyRenderBtn = document.getElementById('btn-empty-render');
+        if (emptyRenderBtn) {
+          emptyRenderBtn.addEventListener('click', () => triggerRenderStoryboard(sb.slug));
+        }
+
+        document.getElementById('btn-copy-title')?.addEventListener('click', () => copyText(sb.title, 'Tiêu đề chính'));
+        document.getElementById('btn-copy-desc')?.addEventListener('click', () => copyText(sb.description, 'Mô tả chuẩn SEO'));
+        document.getElementById('btn-copy-pinned')?.addEventListener('click', () => copyText(sb.pinned_comment, 'Pinned Comment Affiliate'));
+        document.getElementById('btn-copy-tags')?.addEventListener('click', () => copyText(sb.tags_csv, 'Bộ từ khóa Tags'));
+
+        panel.querySelectorAll('.js-copy-variant').forEach((btn) => {
+          btn.addEventListener('click', () => copyText(btn.dataset.title, 'Tiêu đề A/B'));
+        });
+
+        panel.querySelectorAll('.seo-subtab').forEach((tab) => {
+          tab.addEventListener('click', () => {
+            state.activeSeoSubtab = tab.dataset.subtab;
+            renderSelectedStoryboardDetail();
+          });
+        });
+
+        if (thumbSrc) {
+          const openThumb = () => openLightbox(thumbSrc, `Thumbnail: ${sb.title}`);
+          document.getElementById('detail-thumb-box')?.addEventListener('click', openThumb);
+          document.getElementById('btn-zoom-detail-thumb')?.addEventListener('click', openThumb);
+        }
+      }
+
+      async function triggerRenderStoryboard(slug) {
+        if (!slug || state.renderingSlugs.has(slug)) return;
+        state.renderingSlugs.add(slug);
+        renderStoryboardsList();
+        renderSelectedStoryboardDetail();
+
+        const startedAt = performance.now();
+        const timerId = setInterval(() => {
+          const lbl = document.getElementById('render-timer-label');
+          if (lbl && state.selectedSlug === slug) {
+            const sec = ((performance.now() - startedAt) / 1000).toFixed(1);
+            lbl.textContent = `Đang tổng hợp FFmpeg... ${sec}s`;
+          }
+        }, 200);
+
+        try {
+          const resp = await fetch('/api/render', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ slug }),
+          });
+          const result = await resp.json();
+          if (!resp.ok || !result.ok) {
+            throw new Error(result.error || `HTTP ${resp.status}`);
+          }
+          showToast(`Render hoàn tất "${slug}.mp4" trong ${result.elapsed_sec}s!`);
+          await fetchDashboard(false);
+        } catch (err) {
+          showToast(`Render thất bại (${slug}): ${err.message}`, true);
+        } finally {
+          clearInterval(timerId);
+          state.renderingSlugs.delete(slug);
+          renderStoryboardsList();
+          renderSelectedStoryboardDetail();
+        }
+      }
+
+      // ---- Tab 2: Calendar & YPP Checklist ----
+      function renderYppCountdownAndChecklist() {
+        const deadline = new Date('2027-02-01T00:00:00Z');
+        const now = new Date();
+        const diffDays = Math.ceil((deadline.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+        const daysEl = document.getElementById('ypp-days-remaining');
+        if (diffDays >= 0) {
+          daysEl.textContent = `Còn ${diffDays} ngày`;
+        } else {
+          daysEl.textContent = `Mốc 01/02/2027`;
+        }
+
+        const container = document.getElementById('ypp-checklist-container');
+        let doneCount = 0;
+        container.innerHTML = DEFAULT_YPP_CHECKLIST.map((item) => {
+          const checked = Boolean(state.checklistMap[item.id]);
+          if (checked) doneCount += 1;
+          return `
+            <label class="check-row ${checked ? 'done' : ''}">
+              <input type="checkbox" data-check-id="${escapeHtml(item.id)}" ${checked ? 'checked' : ''} />
+              <span>${escapeHtml(item.text)}</span>
+            </label>
+          `;
+        }).join('');
+
+        document.getElementById('ypp-checklist-counter').textContent =
+          `${doneCount}/${DEFAULT_YPP_CHECKLIST.length} hoàn tất`;
+
+        container.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
+          cb.addEventListener('change', () => {
+            state.checklistMap[cb.dataset.checkId] = cb.checked;
+            saveJsonStorage(STORAGE_KEYS.yppChecklist, state.checklistMap);
+            renderYppCountdownAndChecklist();
+          });
+        });
+      }
+
+      function renderCalendarTable() {
+        const rows = state.dashboard?.calendar || [];
+        const publishedTotal = rows.filter((r) => Boolean(state.publishedMap[r.id])).length;
+        document.getElementById('cal-progress-summary').textContent =
+          `${publishedTotal} / ${rows.length} video đã đăng`;
+
+        const filtered = rows.filter((r) => {
+          if (state.calendarWeekFilter === 'all') return true;
+          if (state.calendarWeekFilter === 'long_only') return r.is_long;
+          return r.week === state.calendarWeekFilter;
+        });
+
+        const tbody = document.getElementById('calendar-tbody');
+        if (filtered.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; color:var(--text-muted); padding:28px;">Không có lịch đăng trong bộ lọc này.</td></tr>`;
+          return;
+        }
+
+        tbody.innerHTML = filtered.map((r) => {
+          const isPub = Boolean(state.publishedMap[r.id]);
+          return `
+            <tr class="${isPub ? 'row-published' : ''}">
+              <td style="text-align: center;">
+                <input
+                  type="checkbox"
+                  class="js-cal-check"
+                  data-row-id="${escapeHtml(r.id)}"
+                  style="width:18px; height:18px; accent-color: var(--emerald); cursor:pointer;"
+                  ${isPub ? 'checked' : ''}
+                  aria-label="Đánh dấu đã đăng ${escapeHtml(r.day)}"
+                />
+              </td>
+              <td class="tabular">
+                <strong style="color: var(--text-primary);">${escapeHtml(r.day)}</strong>
+                <div style="font-size: 11.5px; color: var(--text-muted);">${escapeHtml(r.week)}</div>
+              </td>
+              <td>
+                <span class="badge ${r.is_long ? 'badge-long' : 'badge-short'}">${escapeHtml(r.format)}</span>
+                <div style="font-size: 12px; color: var(--text-secondary); margin-top: 5px; font-weight: 600;">
+                  ${escapeHtml(r.pillar)}
+                </div>
+              </td>
+              <td>
+                <div style="font-weight: 600; color: var(--text-primary);" class="cal-title-text">
+                  ${escapeHtml(r.title)}
+                </div>
+                <div class="cal-hook-text">⚡ Hook 3s: “${escapeHtml(r.hook)}”</div>
+                <div style="display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
+                  <button type="button" class="btn btn-ghost btn-sm js-cal-copy-title" data-title="${escapeHtml(r.title)}">
+                    📋 Copy Tiêu đề
+                  </button>
+                  ${r.matched_slug
+                    ? `<button type="button" class="btn btn-cyan btn-sm js-cal-open-video" data-slug="${escapeHtml(r.matched_slug)}">
+                         ▶ Mở trong Kho Video (${r.is_rendered ? 'Đã có MP4' : 'Sẵn sàng Render'})
+                       </button>`
+                    : ''
+                  }
+                </div>
+              </td>
+              <td style="color: var(--gold); font-weight: 500; font-size: 12.5px;">
+                ${escapeHtml(r.monetization)}
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="mono-pill js-cal-copy-kw"
+                  style="cursor: pointer; text-align: left;"
+                  title="Nhấn để sao chép từ khóa SEO"
+                  data-kw="${escapeHtml(r.keyword)}"
+                >
+                  🔍 ${escapeHtml(r.keyword)}
+                </button>
+              </td>
+              <td class="tabular" style="font-weight: 600; color: var(--text-secondary);">
+                ${r.est_prod_time_mins} phút
+              </td>
+            </tr>
+          `;
+        }).join('');
+
+        tbody.querySelectorAll('.js-cal-check').forEach((cb) => {
+          cb.addEventListener('change', () => {
+            state.publishedMap[cb.dataset.rowId] = cb.checked;
+            saveJsonStorage(STORAGE_KEYS.calendarPublished, state.publishedMap);
+            renderHeaderAndKpis();
+            renderCalendarTable();
+            showToast(cb.checked ? 'Đã đánh dấu xuất bản video!' : 'Đã bỏ đánh dấu xuất bản.');
+          });
+        });
+
+        tbody.querySelectorAll('.js-cal-copy-title').forEach((btn) => {
+          btn.addEventListener('click', () => copyText(btn.dataset.title, 'Tiêu đề lịch đăng'));
+        });
+
+        tbody.querySelectorAll('.js-cal-copy-kw').forEach((btn) => {
+          btn.addEventListener('click', () => copyText(btn.dataset.kw, 'Từ khóa SEO'));
+        });
+
+        tbody.querySelectorAll('.js-cal-open-video').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            state.selectedSlug = btn.dataset.slug;
+            state.videoFilter = 'all';
+            document.querySelectorAll('#video-filter-group .filter-pill').forEach((p) => {
+              p.classList.toggle('active', p.dataset.filter === 'all');
+            });
+            switchTab('videos');
+            renderStoryboardsList();
+            renderSelectedStoryboardDetail();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        });
+      }
+
+      // ---- Tab 3: Branding & Thumbnails ----
+      function renderBrandingAndThumbnails() {
+        const branding = state.dashboard?.branding || { items: [] };
+        const thumbnails = state.dashboard?.thumbnails || { all: [] };
+
+        if (branding.banner_url) {
+          document.getElementById('mockup-banner-img').src = branding.banner_url;
+        }
+        if (branding.avatar_url) {
+          document.getElementById('mockup-avatar-img').src = branding.avatar_url;
+          document.getElementById('header-avatar').src = branding.avatar_url;
+        }
+
+        const brandGrid = document.getElementById('branding-assets-grid');
+        brandGrid.innerHTML = (branding.items || []).map((item) => `
+          <div class="asset-card">
+            <div class="asset-img-box js-lightbox-trigger" data-src="${escapeHtml(item.url)}?t=${item.mtime}" data-caption="${escapeHtml(item.name)}">
+              <img src="${escapeHtml(item.url)}?t=${item.mtime}" alt="${escapeHtml(item.name)}" loading="lazy" />
+            </div>
+            <div class="asset-card-info">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span class="badge badge-short">${escapeHtml(item.role)}</span>
+                <span class="tabular" style="font-size:11.5px; color:var(--text-muted);">${item.size_kb} KB</span>
+              </div>
+              <h4 class="asset-card-title">${escapeHtml(item.name)}</h4>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;">
+                <code style="font-size:11.5px; color:var(--text-muted);">${escapeHtml(item.filename)}</code>
+                <a href="${escapeHtml(item.url)}" download class="btn btn-secondary btn-sm">⬇ Tải xuống</a>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        const thumbGrid = document.getElementById('thumbnails-gallery-grid');
+        thumbGrid.classList.toggle('compact-feed', state.compactThumbMode);
+
+        const allThumbs = thumbnails.all || [];
+        if (allThumbs.length === 0) {
+          thumbGrid.innerHTML = `<div class="empty-video-state">Chưa có thumbnail nào được tạo.</div>`;
+        } else {
+          thumbGrid.innerHTML = allThumbs.map((th) => {
+            const imgUrl = `${th.url}?t=${th.mtime || 1}`;
+            return `
+              <div class="asset-card">
+                <div class="asset-img-box js-lightbox-trigger" data-src="${escapeHtml(imgUrl)}" data-caption="${escapeHtml(th.title)}">
+                  <img src="${escapeHtml(imgUrl)}" alt="${escapeHtml(th.title)}" loading="lazy" />
+                </div>
+                <div class="asset-card-info">
+                  <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                    <span class="badge ${th.source_type === 'rendered_output' ? 'badge-rendered' : 'badge-long'}">
+                      ${escapeHtml(th.source)}
+                    </span>
+                    <span class="tabular" style="font-size:11.5px; color:var(--text-muted);">${th.size_kb} KB</span>
+                  </div>
+                  <h4 class="asset-card-title">${escapeHtml(th.title)}</h4>
+                  ${th.hook_text
+                    ? `<div style="font-size:12px; color:var(--gold); font-weight:600;">Hook: “${escapeHtml(th.hook_text)}” ${th.stat ? `• ${escapeHtml(th.stat)}` : ''}</div>`
+                    : ''
+                  }
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; gap:8px;">
+                    ${th.slug
+                      ? `<button type="button" class="btn btn-ghost btn-sm js-thumb-open-video" data-slug="${escapeHtml(th.slug)}">▶ Mở Video</button>`
+                      : `<span></span>`
+                    }
+                    <a href="${escapeHtml(th.url)}" download class="btn btn-secondary btn-sm">⬇ Tải PNG</a>
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+
+        document.querySelectorAll('#panel-branding .js-lightbox-trigger').forEach((el) => {
+          el.addEventListener('click', () => openLightbox(el.dataset.src, el.dataset.caption));
+        });
+
+        thumbGrid.querySelectorAll('.js-thumb-open-video').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            state.selectedSlug = btn.dataset.slug;
+            switchTab('videos');
+            renderStoryboardsList();
+            renderSelectedStoryboardDetail();
+          });
+        });
+      }
+
+      // ---- Tab 4: Digital Products & Bio Funnel ----
+      function renderProductsSection() {
+        const products = state.dashboard?.products || [];
+        const container = document.getElementById('products-cards-container');
+
+        if (products.length > 0 && !products.some((p) => p.url === state.activeProductUrl)) {
+          const firstExisting = products.find((p) => p.exists) || products[0];
+          state.activeProductUrl = firstExisting.url;
+        }
+
+        container.innerHTML = products.map((prod) => {
+          const isActive = prod.url === state.activeProductUrl;
+          return `
+            <div class="product-card ${isActive ? 'active-preview' : ''}">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+                  <span class="badge badge-long">${escapeHtml(prod.layer)}</span>
+                  ${prod.exists
+                    ? `<span class="badge badge-rendered">✓ Đang hoạt động trực tuyến</span>`
+                    : `<span class="badge badge-pending">⏳ Đang chờ tạo file</span>`
+                  }
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-top: 10px;">
+                  <h3 style="margin: 0; font-size: 18px;">${escapeHtml(prod.title)}</h3>
+                  <span class="tabular" style="font-weight: 800; color: var(--gold); font-size: 16px;">${escapeHtml(prod.price)}</span>
+                </div>
+                <div style="font-size: 12.5px; color: var(--cyan); font-weight: 600; margin: 4px 0 8px;">
+                  ${escapeHtml(prod.vietnamese_label)}
+                </div>
+                <p style="margin: 0; color: var(--text-muted); font-size: 13px;">
+                  ${escapeHtml(prod.description)}
+                </p>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
+                <button type="button" class="btn ${isActive ? 'btn-gold' : 'btn-secondary'} btn-sm js-select-product-preview" data-url="${escapeHtml(prod.url)}">
+                  👁 Xem trước trực tiếp bên dưới
+                </button>
+                <a href="${escapeHtml(prod.url)}" target="_blank" rel="noopener" class="btn btn-cyan btn-sm">
+                  ↗ Mở trang đầy đủ
+                </a>
+                <button type="button" class="btn btn-ghost btn-sm js-copy-product-url" data-url="${escapeHtml(prod.url)}">
+                  📋 Copy Đường Dẫn
+                </button>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        container.querySelectorAll('.js-select-product-preview').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            state.activeProductUrl = btn.dataset.url;
+            renderProductsSection();
+            ensureProductIframeLoaded(true);
+          });
+        });
+
+        container.querySelectorAll('.js-copy-product-url').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const fullUrl = new URL(btn.dataset.url, window.location.origin).href;
+            copyText(fullUrl, 'Đường dẫn trang sản phẩm / phễu');
+          });
+        });
+
+        document.getElementById('preview-url-display').textContent = state.activeProductUrl;
+        document.getElementById('btn-open-product-newtab').href = state.activeProductUrl;
+        if (state.activeTab === 'funnel') {
+          ensureProductIframeLoaded(false);
+        }
+      }
+
+      function ensureProductIframeLoaded(forceReload = false) {
+        const iframe = document.getElementById('product-preview-iframe');
+        const target = state.activeProductUrl;
+        if (!target) return;
+        const targetWithBust = forceReload ? `${target}?t=${Date.now()}` : target;
+        if (forceReload || iframe.dataset.loadedUrl !== target) {
+          iframe.dataset.loadedUrl = target;
+          iframe.src = targetWithBust;
+        }
+      }
+
+      // ---- Lightbox ----
+      function openLightbox(src, caption = '') {
+        if (!src) return;
+        const modal = document.getElementById('lightbox-modal');
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox-caption').textContent = caption;
+        modal.classList.add('open');
+      }
+
+      function closeLightbox() {
+        const modal = document.getElementById('lightbox-modal');
+        modal.classList.remove('open');
+        document.getElementById('lightbox-img').src = '';
+      }
+
+      // ---- Global Event Listeners ----
+      function bindGlobalEvents() {
+        document.querySelectorAll('.tab-btn').forEach((btn) => {
+          btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+        });
+
+        document.getElementById('btn-refresh-dashboard').addEventListener('click', () => fetchDashboard(true));
+
+        // Tab 1 filters & search
+        document.querySelectorAll('#video-filter-group .filter-pill').forEach((pill) => {
+          pill.addEventListener('click', () => {
+            state.videoFilter = pill.dataset.filter;
+            document.querySelectorAll('#video-filter-group .filter-pill').forEach((p) => {
+              p.classList.toggle('active', p === pill);
+            });
+            renderStoryboardsList();
+          });
+        });
+
+        document.getElementById('video-search-input').addEventListener('input', (e) => {
+          state.videoSearch = e.target.value || '';
+          renderStoryboardsList();
+        });
+
+        // Tab 2 filters & reset
+        document.querySelectorAll('#calendar-week-filters .filter-pill').forEach((pill) => {
+          pill.addEventListener('click', () => {
+            state.calendarWeekFilter = pill.dataset.week;
+            document.querySelectorAll('#calendar-week-filters .filter-pill').forEach((p) => {
+              p.classList.toggle('active', p === pill);
+            });
+            renderCalendarTable();
+          });
+        });
+
+        document.getElementById('btn-reset-calendar').addEventListener('click', () => {
+          state.publishedMap = {};
+          saveJsonStorage(STORAGE_KEYS.calendarPublished, state.publishedMap);
+          renderHeaderAndKpis();
+          renderCalendarTable();
+          showToast('Đã đặt lại toàn bộ trạng thái lịch đăng 30 ngày.');
+        });
+
+        // Tab 3 brand swatches, banner/avatar zoom & compact thumb mode
+        document.querySelectorAll('.swatch-chip').forEach((chip) => {
+          chip.addEventListener('click', () => copyText(chip.dataset.hex, `mã màu ${chip.dataset.hex}`));
+        });
+
+        document.getElementById('mockup-banner-box').addEventListener('click', () => {
+          openLightbox(document.getElementById('mockup-banner-img').src, 'YouTube Channel Banner (2560×1440)');
+        });
+        document.getElementById('mockup-avatar-img').addEventListener('click', () => {
+          openLightbox(document.getElementById('mockup-avatar-img').src, 'Channel Avatar (800×800)');
+        });
+
+        document.getElementById('btn-toggle-thumb-size').addEventListener('click', (e) => {
+          state.compactThumbMode = !state.compactThumbMode;
+          e.currentTarget.textContent = state.compactThumbMode
+            ? '🖼 Quay về kích thước chuẩn (Lớn)'
+            : '🔍 Chế độ kiểm tra cỡ chữ Mobile / Đề xuất YouTube';
+          renderBrandingAndThumbnails();
+        });
+
+        // Tab 4 viewport switcher & reload
+        document.querySelectorAll('[data-viewport]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const vp = btn.dataset.viewport;
+            document.querySelectorAll('[data-viewport]').forEach((b) => b.classList.toggle('active', b === btn));
+            const stage = document.getElementById('iframe-stage-wrapper');
+            stage.classList.remove('viewport-tablet', 'viewport-mobile');
+            if (vp === 'tablet') stage.classList.add('viewport-tablet');
+            if (vp === 'mobile') stage.classList.add('viewport-mobile');
+          });
+        });
+
+        document.getElementById('btn-reload-iframe').addEventListener('click', () => {
+          ensureProductIframeLoaded(true);
+          showToast('Đã tải lại khung xem trước sản phẩm số!');
+        });
+
+        // Lightbox close
+        document.getElementById('btn-close-lightbox').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox-modal').addEventListener('click', (e) => {
+          if (e.target.id === 'lightbox-modal') closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') closeLightbox();
+        });
+      }
+
+      bindGlobalEvents();
+      fetchDashboard(false);
+    })();
+  </script>
+</body>
+</html>

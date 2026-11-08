@@ -1,0 +1,88 @@
+{
+  "title": "Why Casinos & Apps Use 'Variable Rewards' Against Your Wallet",
+  "alt_title_1": "The 1957 Pigeon Experiment Hijacking Your Phone & Bank Account",
+  "alt_title_2": "How 20 Seconds of Friction Saves $3,600 a Year",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1957, Harvard psychologist B.F. Skinner proved that random rewards create stronger compulsion than guaranteed payouts. Here is how shopping apps use variable ratio schedules against your wallet and the 20-second shield to break it.",
+  "tags": [
+    "variable rewards psychology",
+    "b f skinner",
+    "dopamine spending",
+    "impulse buying",
+    "wealth psychology",
+    "behavioral economics",
+    "personal finance"
+  ],
+  "thumbnail": {
+    "hook_text": "THE CASINO APP",
+    "badge": "WEALTH PSYCHOLOGY",
+    "stat": "$35B"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free Dopamine-Proof Wallet Checklist + 'Hooked' Free Audiobook Trial",
+    "url_placeholder": "https://yourlink.com/wallet-shield",
+    "pinned_comment": "Have you deleted saved credit cards from 1-click checkout apps yet? Grab the free 1-Page Dopamine-Proof Wallet Audit + Nir Eyal's 'Hooked' free Audible trial here: https://yourlink.com/wallet-shield"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "The Slot Machine Inside Your Pocket",
+      "visual_type": "stat_callout",
+      "stat_value": "$35B+",
+      "stat_label": "US SLOT REVENUE BEATS MOVIES + BASEBALL",
+      "bullets": [
+        "Slot machines out-earn box-office films and MLB combined",
+        "Retail apps copied the exact same brain trigger"
+      ],
+      "highlight_words": ["slot", "movies", "baseball", "pocket"],
+      "narration": "Slot machines generate more annual revenue in America than Hollywood movies and Major League Baseball combined, and the exact same mechanism is sitting inside your phone."
+    },
+    {
+      "tag": "SKINNER 1957",
+      "headline": "B.F. Skinner's Variable Ratio Discovery",
+      "visual_type": "stat_callout",
+      "stat_value": "1957",
+      "stat_label": "RANDOM PAYOUTS TRIGGER OBSESSIVE PECKING",
+      "bullets": [
+        "Fixed pellets: Pigeons only pressed the lever when hungry",
+        "Random pellets: Pigeons pecked nonstop until exhaustion"
+      ],
+      "highlight_words": ["skinner", "random", "pigeons", "nonstop"],
+      "narration": "In 1957, Harvard psychologist B.F. Skinner showed that when food dropped on a predictable schedule, pigeons stayed calm. When payouts turned random, they pressed the lever obsessively."
+    },
+    {
+      "tag": "THE TRAP",
+      "headline": "Uncertainty Spikes Dopamine Higher Than Winning",
+      "visual_type": "comparison_split",
+      "left_title": "DIGITAL CASINO TRAPS",
+      "left_body": "Pull-to-refresh feeds, spin-the-wheel coupons, flash timers",
+      "right_title": "THE 20-SECOND SHIELD",
+      "right_body": "Delete saved cards -> type 16 digits manually -> wait 48 hours",
+      "highlight_words": ["uncertainty", "dopamine", "delete", "digits"],
+      "narration": "Flash-sale countdowns, mystery discounts, and pull-to-refresh feeds exploit that exact uncertainty spike. Your brain chases the anticipation of a deal, not the item itself."
+    },
+    {
+      "tag": "THE MARGIN",
+      "headline": "Kill 1-Click Checkout, Reclaim $300/Month",
+      "visual_type": "compounding_curve",
+      "stat_label": "20 SECONDS OF CHECKOUT FRICTION = $3,600/YR SAVED",
+      "stat_subtext": "Walking to grab your physical wallet breaks the impulse loop",
+      "highlight_words": ["twenty", "seconds", "friction", "impulse"],
+      "narration": "To disarm the algorithm, delete saved payment cards from every shopping app tonight. Twenty seconds of walking across the room to type sixteen digits kills eighty percent of impulse buys."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Your Willpower Isn't Broken - Add Friction",
+      "visual_type": "stat_callout",
+      "stat_value": "0 Clicks",
+      "stat_label": "UNLINK SAVED CARDS FROM RETAIL APPS",
+      "bullets": [
+        "Turn off retail push notifications permanently",
+        "Never fight billion-dollar UX with willpower alone"
+      ],
+      "highlight_words": ["willpower", "friction", "billion", "because"],
+      "narration": "Stop blaming willpower when billion-dollar apps engineer urgency against you; build friction around your wallet instead. Because think about this..."
+    }
+  ]
+}

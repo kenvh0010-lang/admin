@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:02,806
+Highlighting books and clipping articles into
+
+2
+00:00:02,806 --> 00:00:05,425
+a sleek Notion workspace feels productive,
+
+3
+00:00:05,425 --> 00:00:07,608
+until you realize ninety percent of
+
+4
+00:00:07,608 --> 00:00:09,790
+saved notes are never opened again.
+
+5
+00:00:09,790 --> 00:00:10,269
+In 2014,
+
+6
+00:00:10,269 --> 00:00:13,322
+Zettelkasten researcher Christian Tietze named this
+
+7
+00:00:13,322 --> 00:00:15,059
+trap the Collector's Fallacy:
+
+8
+00:00:15,059 --> 00:00:17,214
+our brains mistake saving a bookmark
+
+9
+00:00:17,214 --> 00:00:19,190
+for actually absorbing the skill.
+
+10
+00:00:19,190 --> 00:00:21,321
+Turn your Second Brain from a
+
+11
+00:00:21,321 --> 00:00:23,673
+dusty warehouse into a workshop.
+
+12
+00:00:23,673 --> 00:00:26,024
+Never clip an article into vague
+
+13
+00:00:26,024 --> 00:00:27,053
+topic folders;
+
+14
+00:00:27,053 --> 00:00:29,331
+attach it directly to a project
+
+15
+00:00:29,331 --> 00:00:31,830
+you are shipping within two weeks.
+
+16
+00:00:31,830 --> 00:00:33,679
+Use the three-to-one rule:
+
+17
+00:00:33,679 --> 00:00:36,027
+before you allow yourself to save
+
+18
+00:00:36,027 --> 00:00:37,734
+a fourth video or essay,
+
+19
+00:00:37,734 --> 00:00:40,152
+synthesize the last three into one
+
+20
+00:00:40,152 --> 00:00:41,219
+published post,
+
+21
+00:00:41,219 --> 00:00:41,717
+script,
+
+22
+00:00:41,717 --> 00:00:43,140
+or working template.
+
+23
+00:00:43,140 --> 00:00:45,480
+Judge your system by what you
+
+24
+00:00:45,480 --> 00:00:46,691
+ship on Friday,
+
+25
+00:00:46,691 --> 00:00:49,435
+never by how pretty your dashboard
+
+26
+00:00:49,435 --> 00:00:50,726
+looks on Monday.
+
+27
+00:00:50,726 --> 00:00:52,340
+Because otherwise...

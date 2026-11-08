@@ -1,0 +1,539 @@
+1
+00:00:00,000 --> 00:00:00,528
+In 2018,
+
+2
+00:00:00,528 --> 00:00:04,954
+investor and AngelList founder Naval Ravikant published a blueprint
+
+3
+00:00:04,954 --> 00:00:08,521
+that Eric Jorgenson later curated into The Almanack of
+
+4
+00:00:08,521 --> 00:00:09,512
+Naval Ravikant.
+
+5
+00:00:09,512 --> 00:00:12,088
+Its first pillar is Specific Knowledge:
+
+6
+00:00:12,088 --> 00:00:16,051
+the skills you cannot be taught in a standardized classroom.
+
+7
+00:00:16,051 --> 00:00:18,957
+Naval warns that if society can train you by
+
+8
+00:00:18,957 --> 00:00:20,411
+following a checklist,
+
+9
+00:00:20,411 --> 00:00:24,770
+society can eventually replace you with cheaper labor or software.
+
+10
+00:00:24,770 --> 00:00:29,592
+Cartoonist Scott Adams proved how normal people build specific knowledge:
+
+11
+00:00:29,592 --> 00:00:32,565
+he was never the top one percent illustrator,
+
+12
+00:00:32,565 --> 00:00:33,159
+comedian,
+
+13
+00:00:33,159 --> 00:00:34,678
+or corporate executive.
+
+14
+00:00:34,678 --> 00:00:35,207
+Instead,
+
+15
+00:00:35,207 --> 00:00:38,708
+he stacked top twenty-five percent skill in all three
+
+16
+00:00:38,708 --> 00:00:39,897
+to create Dilbert,
+
+17
+00:00:39,897 --> 00:00:42,803
+a global monopoly nobody else could imitate.
+
+18
+00:00:42,803 --> 00:00:46,436
+Ask yourself what felt like effortless curiosity to you
+
+19
+00:00:46,436 --> 00:00:49,607
+ten years ago that still feels like tedious work
+
+20
+00:00:49,607 --> 00:00:51,390
+to people around you today.
+
+21
+00:00:51,390 --> 00:00:54,350
+Once you identify your specific knowledge,
+
+22
+00:00:54,350 --> 00:00:57,098
+Model Two asks how far a single hour of
+
+23
+00:00:57,098 --> 00:00:58,860
+your judgment can travel.
+
+24
+00:00:58,860 --> 00:01:00,622
+Archimedes famously said,
+
+25
+00:01:00,622 --> 00:01:03,370
+give me a lever long enough and a place
+
+26
+00:01:03,370 --> 00:01:04,004
+to stand,
+
+27
+00:01:04,004 --> 00:01:05,837
+and I will move the earth.
+
+28
+00:01:05,837 --> 00:01:06,823
+For centuries,
+
+29
+00:01:06,823 --> 00:01:10,629
+business relied on two forms of permissioned leverage:
+
+30
+00:01:10,629 --> 00:01:11,052
+labor,
+
+31
+00:01:11,052 --> 00:01:13,236
+meaning people working for you,
+
+32
+00:01:13,236 --> 00:01:14,082
+and capital,
+
+33
+00:01:14,082 --> 00:01:17,253
+meaning millions of dollars under management.
+
+34
+00:01:17,253 --> 00:01:20,002
+Both require someone else's permission.
+
+35
+00:01:20,002 --> 00:01:21,904
+Over the last thirty years,
+
+36
+00:01:21,904 --> 00:01:23,666
+a third category emerged:
+
+37
+00:01:23,666 --> 00:01:27,049
+products with zero marginal cost of replication,
+
+38
+00:01:27,049 --> 00:01:29,022
+specifically code and media.
+
+39
+00:01:29,022 --> 00:01:32,616
+You do not need a venture capitalist's signature to
+
+40
+00:01:32,616 --> 00:01:34,166
+write a Python script,
+
+41
+00:01:34,166 --> 00:01:36,633
+publish an educational video essay,
+
+42
+00:01:36,633 --> 00:01:38,536
+or ship a digital template.
+
+43
+00:01:38,536 --> 00:01:42,200
+Recording a video for ten thousand viewers costs the
+
+44
+00:01:42,200 --> 00:01:45,160
+exact same energy as recording it for ten.
+
+45
+00:01:45,160 --> 00:01:48,422
+Model Three is one of the sharpest wake-up calls
+
+46
+00:01:48,422 --> 00:01:50,257
+in modern personal finance:
+
+47
+00:01:50,257 --> 00:01:53,520
+you are not going to gain true financial freedom
+
+48
+00:01:53,520 --> 00:01:55,423
+renting out your time alone.
+
+49
+00:01:55,423 --> 00:01:58,006
+Even high-status salaried professions,
+
+50
+00:01:58,006 --> 00:01:58,957
+like surgeons,
+
+51
+00:01:58,957 --> 00:02:00,317
+corporate attorneys,
+
+52
+00:02:00,317 --> 00:02:01,880
+and senior consultants,
+
+53
+00:02:01,880 --> 00:02:03,851
+face a strict biological cap.
+
+54
+00:02:03,851 --> 00:02:04,870
+When you sleep,
+
+55
+00:02:04,870 --> 00:02:05,958
+take a vacation,
+
+56
+00:02:05,958 --> 00:02:06,773
+or burn out,
+
+57
+00:02:06,773 --> 00:02:08,201
+metered income stops.
+
+58
+00:02:08,201 --> 00:02:10,580
+Real wealth requires owning equity:
+
+59
+00:02:10,580 --> 00:02:12,075
+a piece of a business,
+
+60
+00:02:12,075 --> 00:02:13,570
+intellectual property,
+
+61
+00:02:13,570 --> 00:02:14,182
+software,
+
+62
+00:02:14,182 --> 00:02:15,269
+a media catalog,
+
+63
+00:02:15,269 --> 00:02:19,687
+or diversified productive assets that earn while you are offline.
+
+64
+00:02:19,687 --> 00:02:22,610
+Keep your salary as a launchpad to pay your
+
+65
+00:02:22,610 --> 00:02:24,037
+bills without stress,
+
+66
+00:02:24,037 --> 00:02:28,319
+then systematically channel your surplus hours and savings into
+
+67
+00:02:28,319 --> 00:02:29,950
+assets you actually own.
+
+68
+00:02:29,950 --> 00:02:32,859
+Model Four flips hustle culture upside down.
+
+69
+00:02:32,859 --> 00:02:33,983
+Without leverage,
+
+70
+00:02:33,983 --> 00:02:37,488
+working eighty hours a week produces roughly twice as
+
+71
+00:02:37,488 --> 00:02:38,942
+much as working forty.
+
+72
+00:02:38,942 --> 00:02:40,463
+Under massive leverage,
+
+73
+00:02:40,463 --> 00:02:41,521
+working frantic,
+
+74
+00:02:41,521 --> 00:02:45,819
+exhausted hours actually destroys value because tired brains make
+
+75
+00:02:45,819 --> 00:02:47,339
+sloppy strategic calls.
+
+76
+00:02:47,339 --> 00:02:49,389
+Imagine steering a supertanker:
+
+77
+00:02:49,389 --> 00:02:53,224
+a captain who chooses the right course ninety-five percent
+
+78
+00:02:53,224 --> 00:02:55,935
+of the time is worth vastly more than one
+
+79
+00:02:55,935 --> 00:02:58,910
+who is right eighty-five percent of the time,
+
+80
+00:02:58,910 --> 00:03:01,952
+even if the second captain rows twice as hard.
+
+81
+00:03:01,952 --> 00:03:05,456
+That is why Warren Buffett spends over eighty percent
+
+82
+00:03:05,456 --> 00:03:08,828
+of his workday reading quietly behind a closed door
+
+83
+00:03:08,828 --> 00:03:13,258
+rather than packing his calendar with back-to-back status meetings.
+
+84
+00:03:13,258 --> 00:03:16,697
+Treat your calendar like a fortress so your judgment
+
+85
+00:03:16,697 --> 00:03:17,490
+stays sharp.
+
+86
+00:03:17,490 --> 00:03:21,231
+Model Five explains why impatience ruins smart builders.
+
+87
+00:03:21,231 --> 00:03:23,368
+Every meaningful reward in life,
+
+88
+00:03:23,368 --> 00:03:24,437
+whether capital,
+
+89
+00:03:24,437 --> 00:03:25,372
+skill mastery,
+
+90
+00:03:25,372 --> 00:03:26,374
+audience trust,
+
+91
+00:03:26,374 --> 00:03:27,442
+or partnerships,
+
+92
+00:03:27,442 --> 00:03:29,380
+comes from compound interest.
+
+93
+00:03:29,380 --> 00:03:32,987
+Yet human beings constantly reset the exponent back to
+
+94
+00:03:32,987 --> 00:03:35,926
+day one by jumping to shiny new trends every
+
+95
+00:03:35,926 --> 00:03:39,532
+ninety days or cutting ethical corners for quick wins.
+
+96
+00:03:39,532 --> 00:03:43,674
+When you work with high-integrity collaborators over a decade,
+
+97
+00:03:43,674 --> 00:03:47,815
+you stop wasting energy on legal friction and office politics.
+
+98
+00:03:47,815 --> 00:03:50,220
+Put accountability behind your work,
+
+99
+00:03:50,220 --> 00:03:52,424
+deliver exactly what you promise,
+
+100
+00:03:52,424 --> 00:03:55,630
+and stay in one compounding lane long enough for
+
+101
+00:03:55,630 --> 00:03:57,300
+the curve to bend upward.
+
+102
+00:03:57,300 --> 00:03:59,783
+How do you actually sharpen judgment?
+
+103
+00:03:59,783 --> 00:04:03,071
+Model Six echoes Nobel physicist Richard Feynman:
+
+104
+00:04:03,071 --> 00:04:06,494
+real thinkers never hide behind complicated jargon.
+
+105
+00:04:06,494 --> 00:04:11,326
+Naval argues it is far better to understand foundational microeconomics,
+
+106
+00:04:11,326 --> 00:04:12,534
+basic probability,
+
+107
+00:04:12,534 --> 00:04:13,675
+human psychology,
+
+108
+00:04:13,675 --> 00:04:17,366
+and clear persuasive writing at a rock-solid level than
+
+109
+00:04:17,366 --> 00:04:20,520
+to memorize advanced buzzwords on shaky ground.
+
+110
+00:04:20,520 --> 00:04:24,547
+Read timeless primary books rather than daily outrage feeds.
+
+111
+00:04:24,547 --> 00:04:27,567
+If you cannot explain why a business model or
+
+112
+00:04:27,567 --> 00:04:30,385
+habit system works on the back of a napkin
+
+113
+00:04:30,385 --> 00:04:31,526
+in plain English,
+
+114
+00:04:31,526 --> 00:04:34,546
+you do not understand it deeply enough to bet
+
+115
+00:04:34,546 --> 00:04:35,620
+your time on it.
+
+116
+00:04:35,620 --> 00:04:36,184
+Finally,
+
+117
+00:04:36,184 --> 00:04:39,637
+Model Seven turns philosophy into daily behavior.
+
+118
+00:04:39,637 --> 00:04:41,681
+Long before Naval had wealth,
+
+119
+00:04:41,681 --> 00:04:45,276
+he set an aspirational personal hourly rate of five
+
+120
+00:04:45,276 --> 00:04:46,404
+hundred dollars.
+
+121
+00:04:46,404 --> 00:04:47,320
+If an errand,
+
+122
+00:04:47,320 --> 00:04:49,152
+a broken appliance return,
+
+123
+00:04:49,152 --> 00:04:52,183
+or a tedious admin task cost less than that
+
+124
+00:04:52,183 --> 00:04:53,452
+rate to outsource,
+
+125
+00:04:53,452 --> 00:04:54,086
+automate,
+
+126
+00:04:54,086 --> 00:04:55,284
+or simply ignore,
+
+127
+00:04:55,284 --> 00:04:59,302
+he refused to burn prime creative hours doing it himself.
+
+128
+00:04:59,302 --> 00:05:02,473
+You can start at fifty or one hundred dollars
+
+129
+00:05:02,473 --> 00:05:03,460
+an hour today.
+
+130
+00:05:03,460 --> 00:05:04,306
+This Sunday,
+
+131
+00:05:04,306 --> 00:05:05,927
+run a three-step audit:
+
+132
+00:05:05,927 --> 00:05:09,451
+write down the three skills you combine naturally,
+
+133
+00:05:09,451 --> 00:05:12,059
+eliminate one low-value weekly chore,
+
+134
+00:05:12,059 --> 00:05:15,794
+and invest five protected hours shipping one piece of
+
+135
+00:05:15,794 --> 00:05:18,120
+permissionless media or software.

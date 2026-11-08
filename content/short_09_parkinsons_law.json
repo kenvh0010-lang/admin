@@ -1,0 +1,88 @@
+{
+  "title": "Parkinson's Law: Why Cutting Deadlines in Half Improves Quality",
+  "alt_title_1": "The 1955 Naval Study That Explains Why Projects Drag On Forever",
+  "alt_title_2": "Give a Task 2 Weeks vs 2 Hours (The Deadline Paradox)",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "In 1955, historian C. Northcote Parkinson published a landmark essay in The Economist proving that work expands to fill whatever deadline you give it. Here is why cutting deadlines by 50% produces sharper work.",
+  "tags": [
+    "parkinsons law time management",
+    "parkinsons law",
+    "cut deadlines in half",
+    "mental models",
+    "deep work",
+    "productivity",
+    "procrastination fix"
+  ],
+  "thumbnail": {
+    "hook_text": "CUT TIME IN HALF",
+    "badge": "MENTAL MODELS",
+    "stat": "-50%"
+  },
+  "affiliate_cta": {
+    "offer_name": "Download the 90-Minute Parkinson Sprint Timer & Weekly Board",
+    "url_placeholder": "https://yourlink.com/parkinson-sprint",
+    "pinned_comment": "Have you ever finished a 'two-week' task in 90 minutes right before leaving for a trip? Grab our free 90-Minute Parkinson Sprint Timer + Notion Board here: https://yourlink.com/parkinson-sprint"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "Why 2-Week Tasks Take Exactly 2 Weeks",
+      "visual_type": "stat_callout",
+      "stat_value": "14d -> 2h",
+      "stat_label": "SAME DELIVERABLE UNDER URGENCY VS COMFORT",
+      "bullets": [
+        "Give a report 14 days and it bloats into 14 days",
+        "Give it 2 hours before a flight and you ship on time"
+      ],
+      "highlight_words": ["fourteen", "days", "two", "flight"],
+      "narration": "Give yourself two weeks to finish a project and it will mysteriously take fourteen days. Give yourself two hours before catching a flight, and you finish it with ten minutes to spare."
+    },
+    {
+      "tag": "ORIGIN 1955",
+      "headline": "C. Northcote Parkinson's 1955 Discovery",
+      "visual_type": "stat_callout",
+      "stat_value": "1955",
+      "stat_label": "THE ECONOMIST ESSAY ON BUREAUCRATIC BLOAT",
+      "bullets": [
+        "British Navy warships fell 67%, yet office staff rose 78%",
+        "Work expands to fill the time available for completion"
+      ],
+      "highlight_words": ["1955", "economist", "expands", "available"],
+      "narration": "In 1955, historian Cyril Northcote Parkinson proved in The Economist that as British Navy ships shrank by two-thirds, headquarters staff grew by seventy-eight percent because work expands to fill available time."
+    },
+    {
+      "tag": "THE PARADOX",
+      "headline": "Loose Deadlines Breed Fake Complexity",
+      "visual_type": "comparison_split",
+      "left_title": "GENEROUS DEADLINE",
+      "left_body": "Tweaking fonts, opening 30 tabs, second-guessing every sentence",
+      "right_title": "HALVED DEADLINE",
+      "right_body": "Forces instant focus on the 20% core that actually matters",
+      "highlight_words": ["loose", "complexity", "halved", "focus"],
+      "narration": "Long deadlines rarely create masterpieces; they invite perfectionism, anxious second-guessing, and decorative busywork. Tight constraints force your brain to execute only what moves the needle."
+    },
+    {
+      "tag": "QUALITY GAIN",
+      "headline": "Two Fast Iterations Beat One Slow Draft",
+      "visual_type": "compounding_curve",
+      "stat_label": "50% SHORTER DEADLINE -> 2X REAL-WORLD FEEDBACK",
+      "stat_subtext": "Version 2 after real feedback always beats Version 1 polished in a cave",
+      "highlight_words": ["half", "iterations", "feedback", "quality"],
+      "narration": "That is why cutting your deadline in half actually raises quality: shipping version one in three days instead of two weeks lets real feedback guide version two."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Set Artificial Micro-Deadlines Today",
+      "visual_type": "stat_callout",
+      "stat_value": "Cut 50%",
+      "stat_label": "SHRINK THE CLOCK BEFORE STARTING ANY PROJECT",
+      "bullets": [
+        "Take your top weekly goal and cut its timeline in half",
+        "Use a visible countdown timer to lock out distractions"
+      ],
+      "highlight_words": ["shrink", "clock", "countdown", "watch"],
+      "narration": "Take your most important task tomorrow, slice the time budget in half, and start a visible timer. Watch how fast the fluff disappears, because..."
+    }
+  ]
+}

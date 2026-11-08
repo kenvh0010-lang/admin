@@ -1,0 +1,88 @@
+{
+  "title": "3 Tasks You Should Never Do Manually Again (The 3x Rule)",
+  "alt_title_1": "The Software Engineer Rule That Saves 91 Hours a Year",
+  "alt_title_2": "Stop Doing $5 Robot Chores With Your Brain",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Knowledge workers lose nearly 40% of their week acting like human copy-paste routers between browser tabs. Use the software engineer's 3x Automation Rule to eliminate 3 repetitive chores permanently.",
+  "tags": [
+    "ai workflow automation",
+    "productivity systems",
+    "zapier automation",
+    "notion ai",
+    "time management",
+    "ai leverage",
+    "work smarter"
+  ],
+  "thumbnail": {
+    "hook_text": "NEVER DO MANUALLY",
+    "badge": "AI LEVERAGE",
+    "stat": "3X"
+  },
+  "affiliate_cta": {
+    "offer_name": "Free 3x Automation Blueprint (Make.com + Zapier + Notion AI Templates)",
+    "url_placeholder": "https://yourlink.com/3x-automation-pack",
+    "pinned_comment": "What is the most annoying digital chore you still do by hand every week? Grab my plug-and-play Make/Zapier + Notion AI workflow templates free here: https://yourlink.com/3x-automation-pack"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "You Are Acting Like a Human Router",
+      "visual_type": "stat_callout",
+      "stat_value": "40%",
+      "stat_label": "WORKWEEK LOST TO REPETITIVE DIGITAL ADMIN",
+      "bullets": [
+        "McKinsey found 40% of desk work is repeatable busywork",
+        "Copying data across tabs drains deep creative focus"
+      ],
+      "highlight_words": ["40%", "human", "router", "busywork"],
+      "narration": "Workplace studies show knowledge workers burn nearly forty percent of their week on repetitive admin, copying text from one browser tab and pasting it into another."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "The Engineer's 3-Strike Automation Rule",
+      "visual_type": "stat_callout",
+      "stat_value": "3x / wk",
+      "stat_label": "REPEAT IT THREE TIMES -> AUTOMATE IT ONCE",
+      "bullets": [
+        "1st time: Do it manually to learn the steps",
+        "3rd time in a week: Build a permanent AI or webhook flow"
+      ],
+      "highlight_words": ["three", "times", "week", "automate"],
+      "narration": "Senior software engineers protect their focus using the Three-Strike Rule: if you perform the exact same digital task three times in one week, stop and automate it."
+    },
+    {
+      "tag": "3 TASKS",
+      "headline": "3 Chores to Hand Off Immediately",
+      "visual_type": "comparison_split",
+      "left_title": "MANUAL BUSYWORK",
+      "left_body": "1. Typing call notes  2. Sorting PDF receipts  3. Reformatting posts",
+      "right_title": "AUTOMATED PIPELINE",
+      "right_body": "AI call summaries -> auto-tagged cloud folders -> 1-click drafts",
+      "highlight_words": ["notes", "receipts", "pipeline", "seconds"],
+      "narration": "Start with three culprits: typing meeting action items, renaming email receipts for taxes, and reformatting one script into social posts. Modern AI workflows handle all three in seconds."
+    },
+    {
+      "tag": "THE MATH",
+      "headline": "15 Minutes Saved Daily = 91 Hours a Year",
+      "visual_type": "compounding_curve",
+      "stat_label": "20-MINUTE SETUP -> 2+ WORKWEEKS RECLAIMED YEARLY",
+      "stat_subtext": "Reinvest those 91 hours into high-margin skills and assets",
+      "highlight_words": ["fifteen", "ninety-one", "hours", "workweeks"],
+      "narration": "Eliminating just fifteen minutes of daily friction takes twenty minutes to wire up once, yet hands you back ninety-one hours of deep creation every single year."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Protect Your Brain for Asymmetric Work",
+      "visual_type": "stat_callout",
+      "stat_value": "$0/run",
+      "stat_label": "MARGINAL EFFORT AFTER WORKFLOW SETUP",
+      "bullets": [
+        "Robots never forget a step at 4 PM on Friday",
+        "Save human energy for judgment and strategy"
+      ],
+      "highlight_words": ["robots", "energy", "judgment", "because"],
+      "narration": "Let software do the robot work so your brain stays sharp for high-value judgment. Because right now..."
+    }
+  ]
+}

@@ -1,0 +1,2975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind &amp; Margin — The 5-Hour Asset Builder OS</title>
+  <meta name="description" content="Local-first personal operating system by Mind &amp; Margin: 90-Minute Ultradian Deep Work Timer, 50% Invisible Raise SVG Compounding Calculator, 5-Hour Weekly Asset Sprint Board with 52-Week Brick Grid, and Asymmetric 80/20 Decision Matrix." />
+  <style>
+    :root {
+      --bg-obsidian: #0B1020;
+      --bg-deep: #070B16;
+      --bg-card: #131C34;
+      --bg-card-elevated: #182442;
+      --bg-input: #0D1426;
+      --gold: #F5B942;
+      --gold-hover: #FACC6B;
+      --gold-soft: rgba(245, 185, 66, 0.14);
+      --gold-border: rgba(245, 185, 66, 0.36);
+      --cyan: #22D3EE;
+      --cyan-hover: #67E8F9;
+      --cyan-soft: rgba(34, 211, 238, 0.13);
+      --cyan-border: rgba(34, 211, 238, 0.35);
+      --emerald: #10B981;
+      --emerald-soft: rgba(16, 185, 129, 0.14);
+      --rose: #F43F5E;
+      --rose-soft: rgba(244, 63, 94, 0.14);
+      --text-primary: #F8FAFC;
+      --text-secondary: #CBD5E1;
+      --text-muted: #8B9BB4;
+      --border-subtle: rgba(248, 250, 252, 0.08);
+      --border-strong: rgba(248, 250, 252, 0.15);
+      --shadow-card: 0 18px 40px -16px rgba(3, 6, 14, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      --radius-lg: 16px;
+      --radius-md: 11px;
+      --radius-sm: 7px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: "SFMono-Regular", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      background-color: var(--bg-obsidian);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(900px 440px at 10% -5%, rgba(245, 185, 66, 0.07), transparent 65%),
+        radial-gradient(850px 420px at 92% 0%, rgba(34, 211, 238, 0.06), transparent 60%),
+        var(--bg-obsidian);
+      color: var(--text-primary);
+    }
+
+    .tabular {
+      font-variant-numeric: tabular-nums;
+      font-family: var(--font-mono);
+    }
+
+    .app-shell {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+    }
+
+    /* Top Header */
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-emblem {
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      background: linear-gradient(145deg, var(--bg-card-elevated), var(--bg-deep));
+      border: 1px solid var(--gold-border);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .brand-titles h1 {
+      margin: 0;
+      font-size: clamp(1.12rem, 2vw, 1.38rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+
+    .brand-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-top: 3px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .save-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--cyan);
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+    }
+
+    .save-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--emerald);
+    }
+
+    .topbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Buttons */
+    button, .btn {
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      padding: 9px 14px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: background-color 0.16s ease, border-color 0.16s ease, transform 0.1s ease, color 0.16s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      text-decoration: none;
+      line-height: 1.2;
+    }
+
+    button:active {
+      transform: translateY(1px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #090D1A;
+      border-color: var(--gold);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-hover);
+      border-color: var(--gold-hover);
+    }
+
+    .btn-cyan {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+      border-color: var(--cyan-border);
+    }
+
+    .btn-cyan:hover {
+      background: rgba(34, 211, 238, 0.22);
+      color: var(--cyan-hover);
+    }
+
+    .btn-ghost {
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      border-color: var(--border-subtle);
+    }
+
+    .btn-ghost:hover {
+      background: var(--bg-card-elevated);
+      border-color: var(--border-strong);
+      color: var(--text-primary);
+    }
+
+    .btn-danger-subtle {
+      background: transparent;
+      color: var(--text-muted);
+      border-color: var(--border-subtle);
+    }
+
+    .btn-danger-subtle:hover {
+      background: var(--rose-soft);
+      color: #FDA4AF;
+      border-color: rgba(244, 63, 94, 0.35);
+    }
+
+    .btn-sm {
+      padding: 6px 10px;
+      font-size: 0.76rem;
+    }
+
+    /* Global Telemetry Strip */
+    .telemetry-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0 22px;
+    }
+
+    .kpi-tile {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 13px 16px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .kpi-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .kpi-value {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .kpi-value.accent-gold { color: var(--gold); }
+    .kpi-value.accent-cyan { color: var(--cyan); }
+
+    .kpi-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Tab Navigation */
+    .tab-nav {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      background: var(--bg-deep);
+      padding: 6px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 24px;
+    }
+
+    .tab-trigger {
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid transparent;
+      padding: 11px 12px;
+      border-radius: 8px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .tab-trigger:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .tab-trigger[aria-selected="true"] {
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border-color: var(--gold-border);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    .tab-num {
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      padding: 3px 6px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .tab-trigger[aria-selected="true"] .tab-num {
+      background: var(--gold-soft);
+      color: var(--gold);
+    }
+
+    /* Tab Panels */
+    .tab-panel {
+      display: none;
+      animation: fadePanel 0.18s ease-out;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    @keyframes fadePanel {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Cards & Layout Grids */
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .grid-calc {
+      display: grid;
+      grid-template-columns: 390px minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .card-subtitle {
+      margin: 4px 0 0;
+      font-size: 0.83rem;
+      color: var(--text-muted);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+
+    .badge-gold {
+      background: var(--gold-soft);
+      color: var(--gold);
+      border: 1px solid var(--gold-border);
+    }
+
+    .badge-cyan {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+      border: 1px solid var(--cyan-border);
+    }
+
+    .badge-emerald {
+      background: var(--emerald-soft);
+      color: #34D399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .badge-rose {
+      background: var(--rose-soft);
+      color: #FDA4AF;
+      border: 1px solid rgba(244, 63, 94, 0.35);
+    }
+
+    .badge-slate {
+      background: rgba(148, 163, 184, 0.12);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Form Controls */
+    label.field-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 7px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    select:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(245, 185, 66, 0.14);
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--gold);
+      cursor: pointer;
+      height: 6px;
+      margin: 6px 0 2px;
+    }
+
+    .field-group {
+      margin-bottom: 16px;
+    }
+
+    /* TOOL 1: ULTRADIAN TIMER */
+    .mode-switch {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      background: var(--bg-input);
+      padding: 5px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 18px;
+    }
+
+    .mode-btn {
+      padding: 9px 12px;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+
+    .mode-btn.active-focus {
+      background: var(--gold-soft);
+      color: var(--gold);
+      border-color: var(--gold-border);
+    }
+
+    .mode-btn.active-reset {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+      border-color: var(--cyan-border);
+    }
+
+    .timer-dial-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0 18px;
+    }
+
+    .timer-svg-box {
+      position: relative;
+      width: 256px;
+      height: 256px;
+      display: grid;
+      place-items: center;
+    }
+
+    .timer-svg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+
+    .timer-track {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.07);
+      stroke-width: 8;
+    }
+
+    .timer-progress {
+      fill: none;
+      stroke: var(--gold);
+      stroke-width: 8;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.35s linear, stroke 0.25s ease;
+    }
+
+    .timer-center-readout {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .timer-digits {
+      font-size: 3.1rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      color: var(--text-primary);
+    }
+
+    .timer-phase-tag {
+      margin-top: 8px;
+      font-size: 0.75rem;
+      color: var(--gold);
+      font-weight: 600;
+      max-width: 180px;
+    }
+
+    .timer-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .streak-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .mini-stat {
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      text-align: center;
+    }
+
+    .mini-stat-val {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .mini-stat-lbl {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .session-log-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 290px;
+      overflow-y: auto;
+    }
+
+    .session-log-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.82rem;
+    }
+
+    .protocol-rules {
+      margin-top: 16px;
+      padding: 13px 15px;
+      border-radius: var(--radius-sm);
+      background: rgba(13, 20, 38, 0.75);
+      border-left: 3px solid var(--cyan);
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    /* TOOL 2: INVISIBLE RAISE & ANTI-DIDEROT */
+    .preset-pills {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .diderot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .diderot-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+
+    .diderot-item:hover {
+      border-color: var(--border-strong);
+    }
+
+    .diderot-item.reclaimed {
+      border-color: var(--cyan-border);
+      background: rgba(34, 211, 238, 0.06);
+    }
+
+    .diderot-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.82rem;
+    }
+
+    .diderot-check {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--cyan);
+      cursor: pointer;
+    }
+
+    .milestone-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .milestone-card {
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 15px 16px;
+    }
+
+    .milestone-card.featured-10y {
+      border-color: var(--gold-border);
+      background: linear-gradient(180deg, rgba(245, 185, 66, 0.08), var(--bg-input));
+    }
+
+    .milestone-yr {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .milestone-amt {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin: 4px 0 8px;
+    }
+
+    .milestone-detail {
+      font-size: 0.76rem;
+      color: var(--text-secondary);
+      display: flex;
+      justify-content: space-between;
+      padding: 3px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .svg-chart-wrap {
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px;
+    }
+
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 0.78rem;
+    }
+
+    .legend-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+    }
+
+    .legend-swatch {
+      width: 12px;
+      height: 3px;
+      border-radius: 2px;
+    }
+
+    .year-scrubber {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    /* TOOL 3: SPRINT BOARD & 52-WEEK BRICKS */
+    .sprint-progress-wrap {
+      margin: 14px 0 18px;
+    }
+
+    .progress-bar-outer {
+      width: 100%;
+      height: 10px;
+      background: var(--bg-input);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--cyan));
+      width: 0%;
+      transition: width 0.25s ease;
+    }
+
+    .sprint-tasks {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sprint-task-row {
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 13px 15px;
+      transition: border-color 0.15s ease;
+    }
+
+    .sprint-task-row.done {
+      border-color: rgba(16, 185, 129, 0.4);
+      background: rgba(16, 185, 129, 0.05);
+    }
+
+    .sprint-task-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .sprint-check-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .sprint-check-label input[type="checkbox"] {
+      width: 19px;
+      height: 19px;
+      margin-top: 2px;
+      accent-color: var(--gold);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .sprint-task-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+    }
+
+    .sprint-task-row.done .sprint-task-title {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    .sprint-task-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .sprint-note-input {
+      margin-top: 9px;
+      font-size: 0.8rem !important;
+      padding: 7px 10px !important;
+      background: rgba(11, 16, 32, 0.65) !important;
+    }
+
+    .brick-grid {
+      display: grid;
+      grid-template-columns: repeat(13, minmax(0, 1fr));
+      gap: 6px;
+      margin: 14px 0;
+    }
+
+    .brick-cell {
+      aspect-ratio: 1 / 1;
+      border-radius: 6px;
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.12s ease, border-color 0.15s ease, background-color 0.15s ease;
+    }
+
+    .brick-cell:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-strong);
+      color: var(--text-primary);
+    }
+
+    .brick-cell.state-progress {
+      background: var(--cyan-soft);
+      border-color: var(--cyan-border);
+      color: var(--cyan);
+    }
+
+    .brick-cell.state-shipped {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #080C18;
+      font-weight: 700;
+    }
+
+    .brick-cell.selected-week {
+      outline: 2px solid var(--text-primary);
+      outline-offset: 2px;
+    }
+
+    .quarter-markers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* TOOL 4: ASYMMETRIC MATRIX */
+    .door-selector {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .door-option {
+      padding: 10px 11px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      cursor: pointer;
+    }
+
+    .door-option.selected-type2 {
+      border-color: var(--cyan-border);
+      background: var(--cyan-soft);
+      color: var(--text-primary);
+    }
+
+    .door-option.selected-type1 {
+      border-color: var(--gold-border);
+      background: var(--gold-soft);
+      color: var(--text-primary);
+    }
+
+    .live-score-preview {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-input);
+      border: 1px solid var(--border-strong);
+      margin: 14px 0;
+    }
+
+    .matrix-svg-container {
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+
+    .decision-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .decision-item {
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 13px 15px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .decision-item.top-bet {
+      border-color: var(--gold-border);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      background: var(--bg-card-elevated);
+      color: var(--text-primary);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.65);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      z-index: 999;
+    }
+
+    .toast.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer.os-footer {
+      margin-top: 44px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    footer.os-footer a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    footer.os-footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 980px) {
+      .telemetry-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .tab-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .grid-2col,
+      .grid-calc {
+        grid-template-columns: 1fr;
+      }
+      .brick-grid {
+        grid-template-columns: repeat(9, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .telemetry-strip,
+      .tab-nav,
+      .milestone-row,
+      .streak-stats-grid,
+      .door-selector {
+        grid-template-columns: 1fr;
+      }
+      .brick-grid {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+      }
+      .quarter-markers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- HEADER -->
+    <header class="topbar">
+      <div class="brand-group">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 28 28" fill="none">
+            <path d="M4 22V6L10.5 15L14 10L17.5 15L24 6V22" stroke="#F5B942" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 23.5H24" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-titles">
+          <h1>Mind &amp; Margin — The 5-Hour Asset Builder OS</h1>
+          <div class="brand-meta">
+            <span>Personal Compounding Cockpit v1.0</span>
+            <span>•</span>
+            <span class="save-status" id="save-status-indicator">
+              <span class="save-dot"></span>
+              <span id="save-timestamp">Local Vault Ready</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <button type="button" class="btn-ghost" id="btn-export-json" title="Download full JSON backup of your OS state">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Export Backup
+        </button>
+        <button type="button" class="btn-ghost" id="btn-import-json" title="Restore OS state from a JSON backup file">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Import Backup
+        </button>
+        <input type="file" id="input-import-json" accept=".json,application/json" hidden />
+        <button type="button" class="btn-danger-subtle btn-sm" id="btn-reset-os" title="Reset OS to clean starter defaults">
+          Reset
+        </button>
+      </div>
+    </header>
+
+    <!-- GLOBAL KPI TELEMETRY -->
+    <section class="telemetry-strip" aria-label="Operating System Overview">
+      <div class="kpi-tile">
+        <span class="kpi-label">Ultradian Focus Streak</span>
+        <span class="kpi-value accent-gold tabular" id="kpi-streak">0 Days</span>
+        <span class="kpi-sub tabular" id="kpi-deep-hours">0.0 hrs deep work logged</span>
+      </div>
+      <div class="kpi-tile">
+        <span class="kpi-label">10-Yr Invisible Margin</span>
+        <span class="kpi-value accent-cyan tabular" id="kpi-10y-margin">$0</span>
+        <span class="kpi-sub tabular" id="kpi-monthly-invested">$0/mo auto-compounding</span>
+      </div>
+      <div class="kpi-tile">
+        <span class="kpi-label">Weekly 5-Hr Sprint</span>
+        <span class="kpi-value tabular" id="kpi-sprint-mins">0 / 300 min</span>
+        <span class="kpi-sub tabular" id="kpi-bricks-laid">0 / 52 digital bricks laid</span>
+      </div>
+      <div class="kpi-tile">
+        <span class="kpi-label">Top 4% Asymmetric Bet</span>
+        <span class="kpi-value" id="kpi-top-bet">—</span>
+        <span class="kpi-sub tabular" id="kpi-top-bet-score">Score: — / 100</span>
+      </div>
+    </section>
+
+    <!-- TAB NAVIGATION -->
+    <nav class="tab-nav" role="tablist" aria-label="OS Tools">
+      <button type="button" role="tab" class="tab-trigger" id="tab-btn-timer" aria-controls="panel-timer" aria-selected="true" data-tab="timer">
+        <span class="tab-num">01</span>
+        <span>90m Ultradian Timer</span>
+      </button>
+      <button type="button" role="tab" class="tab-trigger" id="tab-btn-calc" aria-controls="panel-calc" aria-selected="false" data-tab="calc">
+        <span class="tab-num">02</span>
+        <span>50% Invisible Raise</span>
+      </button>
+      <button type="button" role="tab" class="tab-trigger" id="tab-btn-sprint" aria-controls="panel-sprint" aria-selected="false" data-tab="sprint">
+        <span class="tab-num">03</span>
+        <span>5-Hr Sprint &amp; 52 Bricks</span>
+      </button>
+      <button type="button" role="tab" class="tab-trigger" id="tab-btn-matrix" aria-controls="panel-matrix" aria-selected="false" data-tab="matrix">
+        <span class="tab-num">04</span>
+        <span>Asymmetric 80/20 Matrix</span>
+      </button>
+    </nav>
+
+    <main>
+      <!-- =========================================================
+           PANEL 1: 90-MINUTE ULTRADIAN DEEP WORK TIMER
+           ========================================================= -->
+      <section id="panel-timer" role="tabpanel" aria-labelledby="tab-btn-timer" class="tab-panel active">
+        <div class="grid-2col">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">90-Minute Ultradian Deep Work Engine</h2>
+                <p class="card-subtitle">Align cognitive output with Kleitman's 90m focus / 20m low-dopamine reset cycle.</p>
+              </div>
+              <span class="badge badge-gold" id="timer-status-badge">READY</span>
+            </div>
+
+            <div class="mode-switch" role="group" aria-label="Timer Cycle Mode">
+              <button type="button" class="mode-btn active-focus" id="btn-mode-focus">
+                90m Deep Focus Block
+              </button>
+              <button type="button" class="mode-btn" id="btn-mode-reset">
+                20m Neural Reset
+              </button>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="timer-intention-input">
+                <span>Single-Task Session Target (Zero Multitasking)</span>
+                <span class="tabular" style="color: var(--text-muted);">1 Block = 1 Output</span>
+              </label>
+              <input type="text" id="timer-intention-input" placeholder="e.g., Write Hook &amp; 3-Layer Outline for Video #01" maxlength="110" />
+            </div>
+
+            <div class="timer-dial-wrap">
+              <div class="timer-svg-box">
+                <svg class="timer-svg" viewBox="0 0 240 240" aria-hidden="true">
+                  <circle class="timer-track" cx="120" cy="120" r="106"></circle>
+                  <circle class="timer-progress" id="timer-ring-circle" cx="120" cy="120" r="106" stroke-dasharray="666.02" stroke-dashoffset="0"></circle>
+                </svg>
+                <div class="timer-center-readout">
+                  <div class="timer-digits tabular" id="timer-display" aria-live="polite">90:00</div>
+                  <div class="timer-phase-tag" id="timer-phase-label">Min 01–15 • Neural Ramp</div>
+                </div>
+              </div>
+
+              <div class="timer-controls">
+                <button type="button" class="btn-gold" id="btn-timer-toggle">Start 90m Focus</button>
+                <button type="button" class="btn-ghost" id="btn-timer-reset">Reset</button>
+                <button type="button" class="btn-cyan" id="btn-timer-complete" title="Complete current session, play chime, and log streak">Complete &amp; Log Block</button>
+                <button type="button" class="btn-ghost btn-sm" id="btn-timer-chime" title="Preview Web Audio API gentle harmonic chime">Preview Chime</button>
+              </div>
+            </div>
+
+            <div class="protocol-rules">
+              <strong>Ultradian Protocol:</strong> Phone physically in another room. Zero inbox or feed tabs open. When the harmonic chime plays at <code>00:00</code>, step away from all glowing screens for 20 minutes (walk, hydrate, distant horizon gaze) so prefrontal adenosine clears.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Deep Work Telemetry &amp; Streak Vault</h2>
+                <p class="card-subtitle">Compound unbroken focus blocks across consecutive days.</p>
+              </div>
+              <button type="button" class="btn-danger-subtle btn-sm" id="btn-clear-sessions">Clear Log</button>
+            </div>
+
+            <div class="streak-stats-grid">
+              <div class="mini-stat">
+                <div class="mini-stat-val tabular" id="stat-streak-days" style="color: var(--gold);">0</div>
+                <div class="mini-stat-lbl">Day Streak</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-val tabular" id="stat-blocks-today" style="color: var(--cyan);">0</div>
+                <div class="mini-stat-lbl">Blocks Today</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-val tabular" id="stat-total-hours">0.0h</div>
+                <div class="mini-stat-lbl">Total Deep Hours</div>
+              </div>
+            </div>
+
+            <label class="field-label">
+              <span>Completed Ultradian Sessions</span>
+              <span class="tabular" id="session-count-label">0 logged</span>
+            </label>
+            <ul class="session-log-list" id="session-log-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           PANEL 2: 50% INVISIBLE RAISE & ANTI-DIDEROT CALCULATOR
+           ========================================================= -->
+      <section id="panel-calc" role="tabpanel" aria-labelledby="tab-btn-calc" class="tab-panel">
+        <div class="grid-calc">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Margin &amp; Anti-Diderot Controls</h2>
+                <p class="card-subtitle">Route raises and reclaimed Diderot spirals into compounding equity.</p>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="calc-monthly-income">
+                <span>Monthly Raise / Side-Asset Cashflow</span>
+                <span class="tabular" style="color: var(--gold);" id="lbl-monthly-income">$800/mo</span>
+              </label>
+              <input type="number" id="calc-monthly-income" min="0" max="100000" step="25" value="800" />
+              <input type="range" id="slider-monthly-income" min="50" max="10000" step="50" value="800" aria-label="Monthly Raise or Side Income Slider" />
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="slider-split-pct">
+                <span>Invisible Raise Asset Split (%)</span>
+                <span class="tabular" style="color: var(--cyan);" id="lbl-split-pct">50% Invisible</span>
+              </label>
+              <input type="range" id="slider-split-pct" min="10" max="100" step="5" value="50" />
+              <div class="preset-pills">
+                <button type="button" class="btn-ghost btn-sm calc-preset-btn" data-split="25">25% Mild</button>
+                <button type="button" class="btn-cyan btn-sm calc-preset-btn" data-split="50">50% Rule</button>
+                <button type="button" class="btn-ghost btn-sm calc-preset-btn" data-split="75">75% Aggressive</button>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="calc-return-rate">
+                <span>Expected Annual Compounding Return (%)</span>
+                <span class="tabular" id="lbl-return-rate">9.0% / yr</span>
+              </label>
+              <input type="range" id="calc-return-rate" min="2" max="22" step="0.5" value="9" />
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="calc-seed-capital">
+                <span>Starting Seed Capital ($)</span>
+                <span class="tabular" id="lbl-seed-capital">$1,000</span>
+              </label>
+              <input type="number" id="calc-seed-capital" min="0" max="1000000" step="250" value="1000" />
+            </div>
+
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 14px; margin-top: 14px;">
+              <label class="field-label">
+                <span>Anti-Diderot Creep Eliminator</span>
+                <span class="tabular" style="color: var(--cyan);" id="lbl-diderot-reclaimed">+$0/mo reclaimed</span>
+              </label>
+              <p style="margin: 0 0 8px; font-size: 0.77rem; color: var(--text-muted);">
+                Check any consumption spiral you arrest—100% of reclaimed cash routes straight to your asset curve:
+              </p>
+              <div class="diderot-list" id="diderot-list"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">1, 5 &amp; 10-Year Asymmetric Margin Projection</h2>
+                <p class="card-subtitle" id="calc-summary-subtitle">Auto-investing $400/mo into compounding assets vs. lifestyle inflation.</p>
+              </div>
+              <span class="badge badge-cyan tabular" id="calc-swr-badge">4% Safe Yield: $0/mo</span>
+            </div>
+
+            <div class="milestone-row">
+              <div class="milestone-card">
+                <div class="milestone-yr">Year 01 Horizon</div>
+                <div class="milestone-amt tabular" id="ms-1y-total">$0</div>
+                <div class="milestone-detail">
+                  <span>Principal In:</span>
+                  <span class="tabular" id="ms-1y-prin">$0</span>
+                </div>
+                <div class="milestone-detail">
+                  <span>Compound Gain:</span>
+                  <span class="tabular" style="color: var(--cyan);" id="ms-1y-gain">+$0</span>
+                </div>
+                <div class="milestone-detail">
+                  <span>Guilt-Free Enjoyed:</span>
+                  <span class="tabular" id="ms-1y-lifestyle">$0</span>
+                </div>
+              </div>
+
+              <div class="milestone-card">
+                <div class="milestone-yr">Year 05 Horizon</div>
+                <div class="milestone-amt tabular" id="ms-5y-total">$0</div>
+                <div class="milestone-detail">
+                  <span>Principal In:</span>
+                  <span class="tabular" id="ms-5y-prin">$0</span>
+                </div>
+                <div class="milestone-detail">
+                  <span>Compound Gain:</span>
+                  <span class="tabular" style="color: var(--cyan);" id="ms-5y-gain">+$0</span>
+                </div>
+                <div class="milestone-detail">
+                  <span>100% Creep Loss:</span>
+                  <span class="tabular" style="color: #FDA4AF;" id="ms-5y-creep">$0</span>
+                </div>
+              </div>
+
+              <div class="milestone-card featured-10y">
+                <div class="milestone-yr" style="color: var(--gold);">Year 10 Compounded</div>
+                <div class="milestone-amt tabular" id="ms-10y-total">$0</div>
+                <div class="milestone-detail">
+                  <span>Principal In:</span>
+                  <span class="tabular" id="ms-10y-prin">$0</span>
+                </div>
+                <div class="milestone-detail">
+                  <span>Pure Compounding:</span>
+                  <span class="tabular" style="color: var(--cyan);" id="ms-10y-gain">+$0</span>
+                </div>
+                <div class="milestone-detail">
+                  <span>100% Creep Opportunity:</span>
+                  <span class="tabular" style="color: #FDA4AF;" id="ms-10y-creep">$0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="svg-chart-wrap">
+              <div class="chart-legend">
+                <div class="legend-items">
+                  <span class="legend-item">
+                    <span class="legend-swatch" style="background: var(--gold);"></span>
+                    <span>Compounded Asset Engine</span>
+                  </span>
+                  <span class="legend-item">
+                    <span class="legend-swatch" style="background: var(--cyan);"></span>
+                    <span>Linear Contributions</span>
+                  </span>
+                  <span class="legend-item">
+                    <span class="legend-swatch" style="background: var(--rose);"></span>
+                    <span>Diderot Goods Residual Value (-25%/yr)</span>
+                  </span>
+                </div>
+                <span class="tabular" id="chart-hover-readout" style="color: var(--gold); font-weight: 600;">Year 10 Inspect</span>
+              </div>
+
+              <svg id="compounding-svg" viewBox="0 0 740 300" width="100%" height="auto" role="img" aria-label="10-Year Exponential Compounding SVG Chart"></svg>
+
+              <div class="year-scrubber">
+                <label for="year-inspect-slider" style="font-weight: 600; white-space: nowrap;">Inspect Year:</label>
+                <input type="range" id="year-inspect-slider" min="0" max="10" step="1" value="10" style="max-width: 260px;" />
+                <span class="tabular" id="year-inspect-detail">Year 10: $0 Asset vs $0 Principal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           PANEL 3: WEEKLY 5-HOUR ASSET SPRINT BOARD + 52-WEEK BRICKS
+           ========================================================= -->
+      <section id="panel-sprint" role="tabpanel" aria-labelledby="tab-btn-sprint" class="tab-panel">
+        <div class="grid-2col">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Weekly 5-Hour (300-Min) Asset Sprint</h2>
+                <p class="card-subtitle">Zero-marginal-cost execution blocks. Ship 1 permanent digital brick every week.</p>
+              </div>
+              <span class="badge badge-gold tabular" id="sprint-active-week-badge">WEEK 01</span>
+            </div>
+
+            <div class="field-group" style="margin-bottom: 12px;">
+              <label class="field-label" for="sprint-asset-title">
+                <span>Current Week Asset Title / Video Thesis</span>
+                <span class="tabular" id="sprint-pct-readout" style="color: var(--cyan);">0% Complete</span>
+              </label>
+              <input type="text" id="sprint-asset-title" placeholder="e.g., Video #01 — Why One Nice Purchase Quietly Ruins Your Wealth" maxlength="120" />
+            </div>
+
+            <div class="sprint-progress-wrap">
+              <div style="display: flex; justify-content: space-between; font-size: 0.77rem; color: var(--text-muted); margin-bottom: 6px;">
+                <span>Weekly Time Budget Executed</span>
+                <span class="tabular" id="sprint-minutes-label">0 / 300 Minutes (0.0 / 5.0 hrs)</span>
+              </div>
+              <div class="progress-bar-outer">
+                <div class="progress-bar-fill" id="sprint-progress-bar"></div>
+              </div>
+            </div>
+
+            <div class="sprint-tasks" id="sprint-task-list"></div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-top: 18px;">
+              <button type="button" class="btn-ghost btn-sm" id="btn-reset-sprint-checks">Uncheck Current Sprint</button>
+              <button type="button" class="btn-gold" id="btn-seal-brick">
+                Seal Sprint &amp; Lay Brick on 52-Wk Grid →
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">52-Week Digital Real Estate Grid</h2>
+                <p class="card-subtitle">Click any week to select it; double-click (or use toggle below) to cycle status.</p>
+              </div>
+              <span class="badge badge-cyan tabular" id="brick-count-badge">0 / 52 Bricks</span>
+            </div>
+
+            <div class="streak-stats-grid" style="margin-bottom: 12px;">
+              <div class="mini-stat">
+                <div class="mini-stat-val tabular" id="brick-stat-shipped" style="color: var(--gold);">0</div>
+                <div class="mini-stat-lbl">Assets Shipped</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-val tabular" id="brick-stat-hours" style="color: var(--cyan);">0h</div>
+                <div class="mini-stat-lbl">Compounded Hours</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-val tabular" id="brick-stat-phase">Valley</div>
+                <div class="mini-stat-lbl">Flywheel Stage</div>
+              </div>
+            </div>
+
+            <div class="brick-grid" id="brick-grid" role="grid" aria-label="52-Week Asset Brick Tracker"></div>
+
+            <div class="quarter-markers">
+              <span><strong>Q1 (W01–13):</strong> Foundation</span>
+              <span><strong>Q2 (W14–26):</strong> Valley Crossing</span>
+              <span><strong>Q3 (W27–39):</strong> Flywheel Lift</span>
+              <span><strong>Q4 (W40–52):</strong> 52-Asset Moat</span>
+            </div>
+
+            <div style="margin-top: 18px; padding: 14px; border-radius: var(--radius-md); background: var(--bg-input); border: 1px solid var(--border-subtle);">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <strong style="font-size: 0.85rem;" id="inspector-week-heading">Week 01 Inspector</strong>
+                <div style="display: flex; gap: 6px;">
+                  <button type="button" class="btn-ghost btn-sm" id="btn-cycle-week-state">Cycle Status</button>
+                </div>
+              </div>
+              <p style="margin: 0; font-size: 0.81rem; color: var(--text-secondary);" id="inspector-week-note">
+                Select any brick above to view or log its shipped asset title.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           PANEL 4: ASYMMETRIC DECISION & 80/20 MATRIX
+           ========================================================= -->
+      <section id="panel-matrix" role="tabpanel" aria-labelledby="tab-btn-matrix" class="tab-panel">
+        <div class="grid-2col">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Asymmetric Decision &amp; 80/20 Scorer</h2>
+                <p class="card-subtitle">Combine Type-1/Type-2 Reversibility, Age-80 Regret, and Fractal 80/20 Leverage.</p>
+              </div>
+            </div>
+
+            <form id="decision-form">
+              <div class="field-group">
+                <label class="field-label" for="bet-title">
+                  <span>Idea, Purchase, or Project Under Evaluation</span>
+                </label>
+                <input type="text" id="bet-title" placeholder="e.g., Ship free 10-Model Playbook + $19 OS before Video #01" required maxlength="110" />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="bet-category">
+                  <span>Domain Category</span>
+                </label>
+                <select id="bet-category">
+                  <option value="Digital Asset">Digital Asset / Product</option>
+                  <option value="Content Angle">Content Thesis / Packaging</option>
+                  <option value="Capital Allocation">Capital Allocation / Purchase</option>
+                  <option value="Automation">AI / Workflow Automation</option>
+                  <option value="Time & Career">Time &amp; Career Sovereignty</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label class="field-label">
+                  <span>Bezos Reversibility Door Type</span>
+                </label>
+                <div class="door-selector">
+                  <button type="button" class="door-option selected-type2" id="btn-door-type2" data-door="type2">
+                    <strong style="font-size: 0.83rem; color: var(--cyan);">Type-2 (Two-Way Door)</strong>
+                    <span style="font-size: 0.74rem; color: var(--text-muted);">Reversible, capped downside → Bias for speed (+8)</span>
+                  </button>
+                  <button type="button" class="door-option" id="btn-door-type1" data-door="type1">
+                    <strong style="font-size: 0.83rem; color: var(--gold);">Type-1 (One-Way Door)</strong>
+                    <span style="font-size: 0.74rem; color: var(--text-muted);">Costly to reverse → Slow deliberation (-6)</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="bet-upside">
+                  <span>Asymmetric Compounding Upside (1–10)</span>
+                  <span class="tabular" style="color: var(--gold);" id="lbl-bet-upside">9 / 10</span>
+                </label>
+                <input type="range" id="bet-upside" min="1" max="10" step="1" value="9" />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="bet-effort">
+                  <span>Execution Effort &amp; Time Cost (1 = Tiny, 10 = Massive)</span>
+                  <span class="tabular" style="color: var(--cyan);" id="lbl-bet-effort">3 / 10</span>
+                </label>
+                <input type="range" id="bet-effort" min="1" max="10" step="1" value="3" />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="bet-regret">
+                  <span>Age-80 Regret of Inaction (1–10)</span>
+                  <span class="tabular" id="lbl-bet-regret">8 / 10</span>
+                </label>
+                <input type="range" id="bet-regret" min="1" max="10" step="1" value="8" />
+              </div>
+
+              <div class="live-score-preview">
+                <div>
+                  <div style="font-size: 0.74rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Calculated Leverage Score</div>
+                  <div class="tabular" style="font-size: 1.45rem; font-weight: 700; color: var(--gold);" id="preview-bet-score">86 / 100</div>
+                </div>
+                <span class="badge badge-gold" id="preview-bet-verdict">4% POWER BET — SHIP NOW</span>
+              </div>
+
+              <button type="submit" class="btn-gold" style="width: 100%;">Add Bet to 80/20 Matrix</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">2x2 Fractal Leverage Map &amp; Ranked Queue</h2>
+                <p class="card-subtitle">Top-left quadrant isolates high-upside, low-friction asymmetric dominos.</p>
+              </div>
+              <span class="badge badge-slate tabular" id="matrix-count-badge">0 Bets</span>
+            </div>
+
+            <div class="matrix-svg-container">
+              <svg id="matrix-quadrant-svg" viewBox="0 0 520 290" width="100%" height="auto" role="img" aria-label="2x2 Impact vs Effort Quadrant Plot"></svg>
+            </div>
+
+            <div class="decision-list" id="decision-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="os-footer">
+      <div>
+        <strong>Mind &amp; Margin (`@MindAndMargin`)</strong> • Wealth Psychology • Mental Models • AI Leverage
+      </div>
+      <div>
+        100% Client-Side Local Vault • <a href="../bio_funnel_page/index.html">Channel Resource Hub</a> • <a href="../free_lead_magnet/Wealth_and_Leverage_Playbook.md">10-Model Playbook</a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="os-toast" role="status" aria-live="polite">Saved</div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const STORAGE_KEY = 'mind_margin_5hr_os_v1';
+      const RING_CIRCUMFERENCE = 2 * Math.PI * 106; // r=106 => ~666.02
+
+      const DEFAULT_SPRINT_BLUEPRINT = [
+        {
+          id: 'sp-research',
+          title: 'Research & Mental Model Script',
+          minutes: 60,
+          desc: 'Synthesize core thesis, margin math, historical story hook, and Monday Morning Protocol.',
+          done: false,
+          note: ''
+        },
+        {
+          id: 'sp-render',
+          title: 'Batch Voiceover & Visual Timeline Render',
+          minutes: 45,
+          desc: 'Produce crisp narration, pace dark-luxury motion diagrams, and cut dead-air pauses.',
+          done: false,
+          note: ''
+        },
+        {
+          id: 'sp-packaging',
+          title: 'Thumbnail & First-30s Hook Craft (4% Lever)',
+          minutes: 90,
+          desc: 'Engineer 3 curiosity-gap title/thumbnail pairs and sharpen opening 30-second retention.',
+          done: false,
+          note: ''
+        },
+        {
+          id: 'sp-funnel',
+          title: 'SEO, Bio Funnel & Affiliate Wiring',
+          minutes: 45,
+          desc: 'Verify description playbook CTA, affiliate tracking tags, chapters, and pinned comment.',
+          done: false,
+          note: ''
+        },
+        {
+          id: 'sp-review',
+          title: 'Asset Telemetry & Compounding Review',
+          minutes: 60,
+          desc: 'Inspect CTR, 30s retention drop-off, playbook opt-in rate, and lock next week thesis.',
+          done: false,
+          note: ''
+        }
+      ];
+
+      const DEFAULT_DIDEROT_TRAPS = [
+        { id: 'did-car', label: 'Vehicle Trim / Payment Ecosystem Spiral', monthly: 280, reclaimed: false },
+        { id: 'did-subs', label: 'Recurring SaaS, Streaming & Convenience Creep', monthly: 135, reclaimed: true },
+        { id: 'did-tech', label: 'Unnecessary Flagship Tech & Desk Refresh Cycle', monthly: 95, reclaimed: false },
+        { id: 'did-dining', label: 'Status Impulse Purchases & Delivery Drift', monthly: 160, reclaimed: false }
+      ];
+
+      const DEFAULT_DECISIONS = [
+        {
+          id: 'bet-1',
+          title: 'Wire Day-1 Bio Funnel + Free Playbook before publishing Video #01',
+          category: 'Digital Asset',
+          door: 'type2',
+          upside: 10,
+          effort: 2,
+          regret: 9
+        },
+        {
+          id: 'bet-2',
+          title: 'Automate 50% Invisible Raise bank split 24h after payday',
+          category: 'Capital Allocation',
+          door: 'type2',
+          upside: 9,
+          effort: 1,
+          regret: 9
+        },
+        {
+          id: 'bet-3',
+          title: 'Spend 90m testing 3 high-contrast Thumbnail + Hook angles per video',
+          category: 'Content Angle',
+          door: 'type2',
+          upside: 9,
+          effort: 3,
+          regret: 8
+        },
+        {
+          id: 'bet-4',
+          title: 'Build custom backend SaaS from scratch before validating audience demand',
+          category: 'Digital Asset',
+          door: 'type1',
+          upside: 5,
+          effort: 9,
+          regret: 2
+        }
+      ];
+
+      function createDefaultState() {
+        const bricks = [];
+        for (let i = 1; i <= 52; i++) {
+          bricks.push({
+            week: i,
+            status: i === 1 ? 'progress' : 'empty', // empty | progress | shipped
+            title: i === 1 ? 'Video #01 — The Diderot Effect & Asymmetric Margin' : ''
+          });
+        }
+
+        return {
+          version: 1,
+          activeTab: 'timer',
+          lastSavedAt: null,
+          timer: {
+            mode: 'focus', // focus (5400s) | reset (1200s)
+            remainingSec: 5400,
+            isRunning: false,
+            targetEndMs: null,
+            intention: 'Draft Video #01 Hook & 3-Layer Funnel Setup',
+            completedSessions: []
+          },
+          calculator: {
+            monthlyIncome: 800,
+            splitPct: 50,
+            annualReturn: 9.0,
+            seedCapital: 1000,
+            inspectYear: 10,
+            diderotTraps: JSON.parse(JSON.stringify(DEFAULT_DIDEROT_TRAPS))
+          },
+          sprint: {
+            selectedWeek: 1,
+            currentAssetTitle: 'Video #01 — The Diderot Effect & Asymmetric Margin',
+            tasks: JSON.parse(JSON.stringify(DEFAULT_SPRINT_BLUEPRINT)),
+            bricks: bricks
+          },
+          matrix: {
+            draftDoor: 'type2',
+            decisions: JSON.parse(JSON.stringify(DEFAULT_DECISIONS))
+          }
+        };
+      }
+
+      let state = loadState();
+      let timerIntervalId = null;
+      let audioCtx = null;
+      let toastTimer = null;
+
+      function loadState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return createDefaultState();
+          const parsed = JSON.parse(raw);
+          return mergeWithDefaults(parsed);
+        } catch (err) {
+          return createDefaultState();
+        }
+      }
+
+      function mergeWithDefaults(partial) {
+        const base = createDefaultState();
+        if (!partial || typeof partial !== 'object') return base;
+
+        if (typeof partial.activeTab === 'string') base.activeTab = partial.activeTab;
+        if (partial.lastSavedAt) base.lastSavedAt = partial.lastSavedAt;
+
+        if (partial.timer && typeof partial.timer === 'object') {
+          base.timer.mode = partial.timer.mode === 'reset' ? 'reset' : 'focus';
+          base.timer.intention = typeof partial.timer.intention === 'string' ? partial.timer.intention : base.timer.intention;
+          base.timer.completedSessions = Array.isArray(partial.timer.completedSessions) ? partial.timer.completedSessions : [];
+
+          if (partial.timer.isRunning && typeof partial.timer.targetEndMs === 'number') {
+            const diffSec = Math.max(0, Math.round((partial.timer.targetEndMs - Date.now()) / 1000));
+            base.timer.remainingSec = diffSec;
+            base.timer.isRunning = diffSec > 0;
+            base.timer.targetEndMs = diffSec > 0 ? partial.timer.targetEndMs : null;
+          } else if (typeof partial.timer.remainingSec === 'number') {
+            base.timer.remainingSec = Math.max(0, partial.timer.remainingSec);
+            base.timer.isRunning = false;
+            base.timer.targetEndMs = null;
+          }
+        }
+
+        if (partial.calculator && typeof partial.calculator === 'object') {
+          base.calculator.monthlyIncome = numOr(partial.calculator.monthlyIncome, 800);
+          base.calculator.splitPct = numOr(partial.calculator.splitPct, 50);
+          base.calculator.annualReturn = numOr(partial.calculator.annualReturn, 9.0);
+          base.calculator.seedCapital = numOr(partial.calculator.seedCapital, 1000);
+          base.calculator.inspectYear = numOr(partial.calculator.inspectYear, 10);
+          if (Array.isArray(partial.calculator.diderotTraps) && partial.calculator.diderotTraps.length === 4) {
+            base.calculator.diderotTraps = partial.calculator.diderotTraps;
+          }
+        }
+
+        if (partial.sprint && typeof partial.sprint === 'object') {
+          base.sprint.selectedWeek = Math.min(52, Math.max(1, numOr(partial.sprint.selectedWeek, 1)));
+          base.sprint.currentAssetTitle = typeof partial.sprint.currentAssetTitle === 'string'
+            ? partial.sprint.currentAssetTitle
+            : base.sprint.currentAssetTitle;
+          if (Array.isArray(partial.sprint.tasks) && partial.sprint.tasks.length === 5) {
+            base.sprint.tasks = partial.sprint.tasks;
+          }
+          if (Array.isArray(partial.sprint.bricks) && partial.sprint.bricks.length === 52) {
+            base.sprint.bricks = partial.sprint.bricks;
+          }
+        }
+
+        if (partial.matrix && typeof partial.matrix === 'object') {
+          base.matrix.draftDoor = partial.matrix.draftDoor === 'type1' ? 'type1' : 'type2';
+          if (Array.isArray(partial.matrix.decisions)) {
+            base.matrix.decisions = partial.matrix.decisions;
+          }
+        }
+
+        return base;
+      }
+
+      function numOr(val, fallback) {
+        const n = Number(val);
+        return Number.isFinite(n) ? n : fallback;
+      }
+
+      function saveState(quiet) {
+        state.lastSavedAt = new Date().toISOString();
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+          const stampEl = document.getElementById('save-timestamp');
+          const d = new Date(state.lastSavedAt);
+          const hh = String(d.getHours()).padStart(2, '0');
+          const mm = String(d.getMinutes()).padStart(2, '0');
+          const ss = String(d.getSeconds()).padStart(2, '0');
+          stampEl.textContent = 'Auto-saved ' + hh + ':' + mm + ':' + ss;
+        } catch (err) {
+          // Ignore private-browsing quota issues gracefully
+        }
+        if (!quiet) {
+          updateGlobalTelemetry();
+        }
+      }
+
+      function showToast(msg) {
+        const el = document.getElementById('os-toast');
+        el.textContent = msg;
+        el.classList.add('visible');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          el.classList.remove('visible');
+        }, 2600);
+      }
+
+      function formatCurrency(val) {
+        const rounded = Math.round(val);
+        return '$' + rounded.toLocaleString('en-US');
+      }
+
+      function formatCompactCurrency(val) {
+        if (val >= 1000000) return '$' + (val / 1000000).toFixed(2) + 'M';
+        if (val >= 1000) return '$' + Math.round(val / 1000) + 'k';
+        return '$' + Math.round(val);
+      }
+
+      function escapeHtml(str) {
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      /* =========================================================
+         WEB AUDIO API GENTLE HARMONIC CHIME
+         ========================================================= */
+      function playHarmonicChime() {
+        try {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContextClass) return;
+          if (!audioCtx) {
+            audioCtx = new AudioContextClass();
+          }
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+
+          const now = audioCtx.currentTime;
+          // Warm acoustic singing-bowl chord partials (C5, E5, G5, B5, D6 gentle shimmer)
+          const notes = [523.25, 659.25, 783.99, 987.77, 1174.66];
+
+          notes.forEach(function (freq, idx) {
+            const start = now + idx * 0.11;
+            const duration = 2.6 - idx * 0.15;
+
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = idx % 2 === 0 ? 'sine' : 'triangle';
+            osc.frequency.setValueAtTime(freq, start);
+
+            gain.gain.setValueAtTime(0.0001, start);
+            gain.gain.linearRampToValueAtTime(0.09 / (1 + idx * 0.35), start + 0.045);
+            gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(start);
+            osc.stop(start + duration + 0.05);
+          });
+        } catch (e) {
+          // Silently continue if browser blocks audio context
+        }
+      }
+
+      /* =========================================================
+         TAB NAVIGATION
+         ========================================================= */
+      function switchTab(tabName) {
+        const valid = ['timer', 'calc', 'sprint', 'matrix'];
+        if (valid.indexOf(tabName) === -1) tabName = 'timer';
+        state.activeTab = tabName;
+
+        document.querySelectorAll('.tab-trigger').forEach(function (btn) {
+          const isSelected = btn.getAttribute('data-tab') === tabName;
+          btn.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+        });
+
+        document.querySelectorAll('.tab-panel').forEach(function (panel) {
+          panel.classList.toggle('active', panel.id === 'panel-' + tabName);
+        });
+
+        saveState(true);
+      }
+
+      /* =========================================================
+         TOOL 1: 90-MIN ULTRADIAN TIMER
+         ========================================================= */
+      function getModeDuration(mode) {
+        return mode === 'reset' ? 20 * 60 : 90 * 60;
+      }
+
+      function formatMMSS(totalSeconds) {
+        const s = Math.max(0, Math.floor(totalSeconds));
+        const mins = Math.floor(s / 60);
+        const secs = s % 60;
+        return String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+      }
+
+      function getPhaseDescription(mode, remainingSec) {
+        if (mode === 'reset') {
+          return '20m Neural Reset • Screen-Free Walk / Horizon Gaze';
+        }
+        const elapsedMin = (5400 - remainingSec) / 60;
+        if (elapsedMin < 15) return 'Min 01–15 • Neural Ramp & Friction Clearing';
+        if (elapsedMin < 75) return 'Min 16–75 • Peak Prefrontal Flow & Synthesis';
+        return 'Min 76–90 • Cycle Lock & Artifact Completion';
+      }
+
+      function calculateDayStreak(sessions) {
+        const focusDays = new Set();
+        sessions.forEach(function (s) {
+          if (s.mode === 'focus' && s.dateKey) {
+            focusDays.add(s.dateKey);
+          }
+        });
+        if (focusDays.size === 0) return 0;
+
+        const today = new Date();
+        const todayKey = toLocalDateKey(today);
+        const yesterday = new Date(today.getTime() - 86400000);
+        const yesterdayKey = toLocalDateKey(yesterday);
+
+        let cursor = focusDays.has(todayKey) ? today : (focusDays.has(yesterdayKey) ? yesterday : null);
+        if (!cursor) return 0;
+
+        let streak = 0;
+        while (focusDays.has(toLocalDateKey(cursor))) {
+          streak += 1;
+          cursor = new Date(cursor.getTime() - 86400000);
+        }
+        return streak;
+      }
+
+      function toLocalDateKey(d) {
+        const yr = d.getFullYear();
+        const mo = String(d.getMonth() + 1).padStart(2, '0');
+        const da = String(d.getDate()).padStart(2, '0');
+        return yr + '-' + mo + '-' + da;
+      }
+
+      function renderTimer() {
+        const t = state.timer;
+        const totalDur = getModeDuration(t.mode);
+        const displayStr = formatMMSS(t.remainingSec);
+
+        document.getElementById('timer-display').textContent = displayStr;
+        document.getElementById('timer-intention-input').value = t.intention;
+
+        const phaseLabel = document.getElementById('timer-phase-label');
+        phaseLabel.textContent = getPhaseDescription(t.mode, t.remainingSec);
+        phaseLabel.style.color = t.mode === 'focus' ? 'var(--gold)' : 'var(--cyan)';
+
+        const ring = document.getElementById('timer-ring-circle');
+        const ratio = Math.min(1, Math.max(0, t.remainingSec / totalDur));
+        const offset = RING_CIRCUMFERENCE * (1 - ratio);
+        ring.style.strokeDasharray = RING_CIRCUMFERENCE.toFixed(2);
+        ring.style.strokeDashoffset = offset.toFixed(2);
+        ring.style.stroke = t.mode === 'focus' ? 'var(--gold)' : 'var(--cyan)';
+
+        const btnFocus = document.getElementById('btn-mode-focus');
+        const btnReset = document.getElementById('btn-mode-reset');
+        btnFocus.className = 'mode-btn' + (t.mode === 'focus' ? ' active-focus' : '');
+        btnReset.className = 'mode-btn' + (t.mode === 'reset' ? ' active-reset' : '');
+
+        const toggleBtn = document.getElementById('btn-timer-toggle');
+        const statusBadge = document.getElementById('timer-status-badge');
+
+        if (t.isRunning) {
+          toggleBtn.textContent = 'Pause Session';
+          statusBadge.textContent = t.mode === 'focus' ? 'IN DEEP FOCUS' : 'NEURAL RESET';
+          statusBadge.className = 'badge ' + (t.mode === 'focus' ? 'badge-gold' : 'badge-cyan');
+          document.title = '[' + displayStr + '] Mind & Margin OS';
+        } else {
+          const isUntouched = t.remainingSec === totalDur;
+          toggleBtn.textContent = isUntouched
+            ? (t.mode === 'focus' ? 'Start 90m Focus' : 'Start 20m Reset')
+            : 'Resume';
+          statusBadge.textContent = isUntouched ? 'READY' : 'PAUSED';
+          statusBadge.className = 'badge badge-slate';
+          document.title = 'Mind & Margin — The 5-Hour Asset Builder OS';
+        }
+
+        // Render Streak & Logs
+        const todayKey = toLocalDateKey(new Date());
+        const focusSessions = t.completedSessions.filter(function (s) { return s.mode === 'focus'; });
+        const todayCount = focusSessions.filter(function (s) { return s.dateKey === todayKey; }).length;
+        const totalMinutes = focusSessions.reduce(function (acc, s) { return acc + (s.minutes || 90); }, 0);
+        const streakDays = calculateDayStreak(t.completedSessions);
+
+        document.getElementById('stat-streak-days').textContent = String(streakDays);
+        document.getElementById('stat-blocks-today').textContent = String(todayCount);
+        document.getElementById('stat-total-hours').textContent = (totalMinutes / 60).toFixed(1) + 'h';
+        document.getElementById('session-count-label').textContent = t.completedSessions.length + ' logged';
+
+        const listEl = document.getElementById('session-log-list');
+        if (t.completedSessions.length === 0) {
+          listEl.innerHTML = '<li class="session-log-item" style="color: var(--text-muted); justify-content: center;">No sessions logged yet. Start your first 90m block or click "Complete &amp; Log Block".</li>';
+        } else {
+          listEl.innerHTML = t.completedSessions.slice(0, 15).map(function (item) {
+            const pillClass = item.mode === 'focus' ? 'badge-gold' : 'badge-cyan';
+            const pillText = item.mode === 'focus' ? item.minutes + 'm Focus' : item.minutes + 'm Reset';
+            return (
+              '<li class="session-log-item">' +
+                '<div style="min-width:0;">' +
+                  '<div style="font-weight:600; color: var(--text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">' + escapeHtml(item.intention || 'Ultradian Session') + '</div>' +
+                  '<div class="tabular" style="font-size:0.73rem; color: var(--text-muted);">' + escapeHtml(item.timestampLabel || item.dateKey) + '</div>' +
+                '</div>' +
+                '<span class="badge ' + pillClass + '">' + pillText + '</span>' +
+              '</li>'
+            );
+          }).join('');
+        }
+      }
+
+      function startTimerLoop() {
+        if (timerIntervalId) clearInterval(timerIntervalId);
+        timerIntervalId = setInterval(function () {
+          if (!state.timer.isRunning || !state.timer.targetEndMs) return;
+          const remaining = Math.max(0, Math.round((state.timer.targetEndMs - Date.now()) / 1000));
+          state.timer.remainingSec = remaining;
+          if (remaining <= 0) {
+            finishTimerBlock(false);
+          } else {
+            renderTimer();
+          }
+        }, 500);
+      }
+
+      function toggleTimer() {
+        const t = state.timer;
+        if (t.isRunning) {
+          t.remainingSec = Math.max(0, Math.round((t.targetEndMs - Date.now()) / 1000));
+          t.isRunning = false;
+          t.targetEndMs = null;
+          saveState(false);
+          renderTimer();
+        } else {
+          if (t.remainingSec <= 0) {
+            t.remainingSec = getModeDuration(t.mode);
+          }
+          // Prime AudioContext on user gesture so completion chime is permitted
+          try {
+            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            if (AudioContextClass && !audioCtx) audioCtx = new AudioContextClass();
+            if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+          } catch (e) {}
+
+          t.isRunning = true;
+          t.targetEndMs = Date.now() + t.remainingSec * 1000;
+          saveState(false);
+          renderTimer();
+          startTimerLoop();
+        }
+      }
+
+      function setTimerMode(mode) {
+        state.timer.isRunning = false;
+        state.timer.targetEndMs = null;
+        state.timer.mode = mode === 'reset' ? 'reset' : 'focus';
+        state.timer.remainingSec = getModeDuration(state.timer.mode);
+        saveState(false);
+        renderTimer();
+      }
+
+      function finishTimerBlock(manualEarly) {
+        const t = state.timer;
+        const finishedMode = t.mode;
+        const totalDurMin = finishedMode === 'focus' ? 90 : 20;
+        const elapsedMin = manualEarly
+          ? Math.max(15, Math.round((getModeDuration(finishedMode) - t.remainingSec) / 60) || totalDurMin)
+          : totalDurMin;
+
+        t.isRunning = false;
+        t.targetEndMs = null;
+
+        const now = new Date();
+        t.completedSessions.unshift({
+          id: 'sess-' + now.getTime(),
+          mode: finishedMode,
+          minutes: finishedMode === 'focus' ? (manualEarly && t.remainingSec === 5400 ? 90 : elapsedMin) : 20,
+          intention: t.intention || (finishedMode === 'focus' ? '90m Deep Focus Block' : '20m Neural Reset'),
+          dateKey: toLocalDateKey(now),
+          timestampLabel: toLocalDateKey(now) + ' • ' + String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0')
+        });
+
+        playHarmonicChime();
+
+        // Automatically flip to complementary Ultradian recovery/focus mode
+        t.mode = finishedMode === 'focus' ? 'reset' : 'focus';
+        t.remainingSec = getModeDuration(t.mode);
+
+        saveState(false);
+        renderTimer();
+        showToast(finishedMode === 'focus'
+          ? 'Ultradian Focus Block logged! Starting 20m Neural Reset.'
+          : '20m Neural Reset complete! Ready for next 90m Focus Block.');
+      }
+
+      /* =========================================================
+         TOOL 2: 50% INVISIBLE RAISE & ANTI-DIDEROT CALCULATOR
+         ========================================================= */
+      function computeCompoundingSeries() {
+        const c = state.calculator;
+        const reclaimedMonthly = c.diderotTraps.reduce(function (sum, item) {
+          return sum + (item.reclaimed ? item.monthly : 0);
+        }, 0);
+
+        const splitMonthly = c.monthlyIncome * (c.splitPct / 100);
+        const monthlyInvested = splitMonthly + reclaimedMonthly;
+        const monthlyGuiltFree = c.monthlyIncome - splitMonthly;
+        const totalMonthlyPool = c.monthlyIncome + reclaimedMonthly;
+
+        const rMonth = (c.annualReturn / 100) / 12;
+        const series = [];
+
+        for (let yr = 0; yr <= 10; yr++) {
+          const months = yr * 12;
+          let assetValue = c.seedCapital;
+          let fullCreepOpportunity = c.seedCapital;
+
+          if (months > 0) {
+            if (rMonth === 0) {
+              assetValue = c.seedCapital + monthlyInvested * months;
+              fullCreepOpportunity = c.seedCapital + totalMonthlyPool * months;
+            } else {
+              const growthFactor = Math.pow(1 + rMonth, months);
+              assetValue = c.seedCapital * growthFactor + monthlyInvested * ((growthFactor - 1) / rMonth);
+              fullCreepOpportunity = c.seedCapital * growthFactor + totalMonthlyPool * ((growthFactor - 1) / rMonth);
+            }
+          }
+
+          const principal = c.seedCapital + monthlyInvested * months;
+          const pureGain = Math.max(0, assetValue - principal);
+
+          // Depreciating Diderot lifestyle goods residual value (25% annual depreciation on cumulative spent)
+          let depreciatedGoods = 0;
+          const annualSpendIfCreep = totalMonthlyPool * 12;
+          for (let k = 1; k <= yr; k++) {
+            depreciatedGoods += annualSpendIfCreep * Math.pow(0.75, yr - k + 0.5);
+          }
+
+          series.push({
+            year: yr,
+            assetValue: assetValue,
+            principal: principal,
+            pureGain: pureGain,
+            lifestyleEnjoyed: monthlyGuiltFree * months,
+            fullCreepOpportunity: fullCreepOpportunity,
+            depreciatedGoods: depreciatedGoods
+          });
+        }
+
+        return {
+          reclaimedMonthly: reclaimedMonthly,
+          monthlyInvested: monthlyInvested,
+          monthlyGuiltFree: monthlyGuiltFree,
+          series: series
+        };
+      }
+
+      function renderCalculator() {
+        const c = state.calculator;
+        const calc = computeCompoundingSeries();
+        const s = calc.series;
+
+        document.getElementById('calc-monthly-income').value = c.monthlyIncome;
+        document.getElementById('slider-monthly-income').value = Math.min(10000, c.monthlyIncome);
+        document.getElementById('lbl-monthly-income').textContent = formatCurrency(c.monthlyIncome) + '/mo';
+
+        document.getElementById('slider-split-pct').value = c.splitPct;
+        document.getElementById('lbl-split-pct').textContent = c.splitPct + '% Invisible (' + formatCurrency(c.monthlyIncome * c.splitPct / 100) + '/mo)';
+
+        document.getElementById('calc-return-rate').value = c.annualReturn;
+        document.getElementById('lbl-return-rate').textContent = c.annualReturn.toFixed(1) + '% / yr';
+
+        document.getElementById('calc-seed-capital').value = c.seedCapital;
+        document.getElementById('lbl-seed-capital').textContent = formatCurrency(c.seedCapital);
+
+        document.getElementById('lbl-diderot-reclaimed').textContent = '+' + formatCurrency(calc.reclaimedMonthly) + '/mo reclaimed';
+
+        document.querySelectorAll('.calc-preset-btn').forEach(function (btn) {
+          const splitVal = Number(btn.getAttribute('data-split'));
+          btn.className = (splitVal === c.splitPct ? 'btn-cyan' : 'btn-ghost') + ' btn-sm calc-preset-btn';
+        });
+
+        // Diderot checklist
+        const didList = document.getElementById('diderot-list');
+        didList.innerHTML = c.diderotTraps.map(function (trap, idx) {
+          return (
+            '<label class="diderot-item ' + (trap.reclaimed ? 'reclaimed' : '') + '">' +
+              '<span class="diderot-left">' +
+                '<input type="checkbox" class="diderot-check" data-diderot-idx="' + idx + '" ' + (trap.reclaimed ? 'checked' : '') + ' />' +
+                '<span>' + escapeHtml(trap.label) + '</span>' +
+              '</span>' +
+              '<span class="tabular" style="font-weight:700; color:' + (trap.reclaimed ? 'var(--cyan)' : 'var(--text-muted)') + ';">+$' + trap.monthly + '/mo</span>' +
+            '</label>'
+          );
+        }).join('');
+
+        document.getElementById('calc-summary-subtitle').textContent =
+          'Routing ' + formatCurrency(calc.monthlyInvested) + '/mo into compounding assets (' +
+          formatCurrency(calc.monthlyGuiltFree) + '/mo guilt-free present spending).';
+
+        const y1 = s[1];
+        const y5 = s[5];
+        const y10 = s[10];
+
+        document.getElementById('ms-1y-total').textContent = formatCurrency(y1.assetValue);
+        document.getElementById('ms-1y-prin').textContent = formatCurrency(y1.principal);
+        document.getElementById('ms-1y-gain').textContent = '+' + formatCurrency(y1.pureGain);
+        document.getElementById('ms-1y-lifestyle').textContent = formatCurrency(y1.lifestyleEnjoyed);
+
+        document.getElementById('ms-5y-total').textContent = formatCurrency(y5.assetValue);
+        document.getElementById('ms-5y-prin').textContent = formatCurrency(y5.principal);
+        document.getElementById('ms-5y-gain').textContent = '+' + formatCurrency(y5.pureGain);
+        document.getElementById('ms-5y-creep').textContent = '-' + formatCurrency(y5.fullCreepOpportunity - y5.depreciatedGoods);
+
+        document.getElementById('ms-10y-total').textContent = formatCurrency(y10.assetValue);
+        document.getElementById('ms-10y-prin').textContent = formatCurrency(y10.principal);
+        document.getElementById('ms-10y-gain').textContent = '+' + formatCurrency(y10.pureGain);
+        document.getElementById('ms-10y-creep').textContent = '-' + formatCurrency(y10.fullCreepOpportunity - y10.depreciatedGoods);
+
+        const monthlySwr = (y10.assetValue * 0.04) / 12;
+        document.getElementById('calc-swr-badge').textContent = 'Yr-10 4% Yield: ' + formatCurrency(monthlySwr) + '/mo';
+
+        // Inspect slider
+        const inspYr = Math.min(10, Math.max(0, c.inspectYear));
+        document.getElementById('year-inspect-slider').value = inspYr;
+        const inspPoint = s[inspYr];
+        document.getElementById('chart-hover-readout').textContent =
+          'Year ' + inspYr + ': ' + formatCurrency(inspPoint.assetValue);
+        document.getElementById('year-inspect-detail').textContent =
+          'Year ' + inspYr + ': ' + formatCurrency(inspPoint.assetValue) + ' Asset (' + formatCurrency(inspPoint.pureGain) + ' compound growth)';
+
+        renderCompoundingSVG(s, inspYr);
+      }
+
+      function renderCompoundingSVG(series, inspectYear) {
+        const svg = document.getElementById('compounding-svg');
+        const W = 740;
+        const H = 300;
+        const padL = 64;
+        const padR = 24;
+        const padT = 22;
+        const padB = 38;
+        const plotW = W - padL - padR;
+        const plotH = H - padT - padB;
+
+        const maxVal = Math.max(
+          1000,
+          series[10].assetValue * 1.08,
+          series[10].principal * 1.08
+        );
+
+        function xPos(yr) {
+          return padL + (yr / 10) * plotW;
+        }
+        function yPos(val) {
+          return padT + plotH - Math.min(1, Math.max(0, val / maxVal)) * plotH;
+        }
+
+        // Gridlines & Y labels
+        let gridMarkup = '';
+        for (let i = 0; i <= 4; i++) {
+          const v = (maxVal / 4) * i;
+          const y = yPos(v).toFixed(1);
+          gridMarkup +=
+            '<line x1="' + padL + '" y1="' + y + '" x2="' + (W - padR) + '" y2="' + y + '" stroke="rgba(248,250,252,0.06)" stroke-width="1" />' +
+            '<text x="' + (padL - 10) + '" y="' + (Number(y) + 4) + '" text-anchor="end" fill="#8B9BB4" font-size="11" font-family="monospace">' +
+              formatCompactCurrency(v) +
+            '</text>';
+        }
+
+        // X labels
+        let xMarkup = '';
+        series.forEach(function (pt) {
+          const x = xPos(pt.year).toFixed(1);
+          xMarkup +=
+            '<text x="' + x + '" y="' + (H - 12) + '" text-anchor="middle" fill="' + (pt.year === inspectYear ? '#F5B942' : '#8B9BB4') + '" font-size="11" font-family="monospace" font-weight="' + (pt.year === inspectYear ? '700' : '400') + '">Y' + pt.year + '</text>';
+        });
+
+        const assetPoints = series.map(function (pt) { return xPos(pt.year).toFixed(1) + ',' + yPos(pt.assetValue).toFixed(1); }).join(' ');
+        const prinPoints = series.map(function (pt) { return xPos(pt.year).toFixed(1) + ',' + yPos(pt.principal).toFixed(1); }).join(' ');
+        const depPoints = series.map(function (pt) { return xPos(pt.year).toFixed(1) + ',' + yPos(pt.depreciatedGoods).toFixed(1); }).join(' ');
+
+        const areaPath =
+          'M ' + xPos(0).toFixed(1) + ',' + yPos(0).toFixed(1) + ' ' +
+          series.map(function (pt) { return 'L ' + xPos(pt.year).toFixed(1) + ',' + yPos(pt.assetValue).toFixed(1); }).join(' ') +
+          ' L ' + xPos(10).toFixed(1) + ',' + yPos(0).toFixed(1) + ' Z';
+
+        const selPt = series[inspectYear];
+        const selX = xPos(inspectYear).toFixed(1);
+        const selYAsset = yPos(selPt.assetValue).toFixed(1);
+        const selYPrin = yPos(selPt.principal).toFixed(1);
+
+        let dotsMarkup = '';
+        series.forEach(function (pt) {
+          const cx = xPos(pt.year).toFixed(1);
+          const cy = yPos(pt.assetValue).toFixed(1);
+          const isSel = pt.year === inspectYear;
+          dotsMarkup +=
+            '<circle cx="' + cx + '" cy="' + cy + '" r="' + (isSel ? '6' : '3.5') + '" fill="' + (isSel ? '#F5B942' : '#131C34') + '" stroke="#F5B942" stroke-width="2" style="cursor:pointer;" data-yr-node="' + pt.year + '" />';
+        });
+
+        svg.innerHTML =
+          '<defs>' +
+            '<linearGradient id="goldAreaGrad" x1="0" y1="0" x2="0" y2="1">' +
+              '<stop offset="0%" stop-color="#F5B942" stop-opacity="0.30" />' +
+              '<stop offset="100%" stop-color="#F5B942" stop-opacity="0.01" />' +
+            '</linearGradient>' +
+          '</defs>' +
+          gridMarkup +
+          xMarkup +
+          '<path d="' + areaPath + '" fill="url(#goldAreaGrad)" />' +
+          '<polyline fill="none" stroke="#F43F5E" stroke-width="1.8" stroke-dasharray="3 4" points="' + depPoints + '" opacity="0.8" />' +
+          '<polyline fill="none" stroke="#22D3EE" stroke-width="2.2" stroke-dasharray="6 4" points="' + prinPoints + '" />' +
+          '<polyline fill="none" stroke="#F5B942" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="' + assetPoints + '" />' +
+          '<line x1="' + selX + '" y1="' + padT + '" x2="' + selX + '" y2="' + (H - padB) + '" stroke="rgba(245,185,66,0.35)" stroke-dasharray="3 3" />' +
+          '<circle cx="' + selX + '" cy="' + selYPrin + '" r="4.5" fill="#22D3EE" />' +
+          dotsMarkup;
+      }
+
+      /* =========================================================
+         TOOL 3: WEEKLY 5-HOUR SPRINT & 52-WEEK BRICKS
+         ========================================================= */
+      function renderSprintBoard() {
+        const sp = state.sprint;
+        const wkStr = String(sp.selectedWeek).padStart(2, '0');
+
+        document.getElementById('sprint-active-week-badge').textContent = 'WEEK ' + wkStr;
+        document.getElementById('sprint-asset-title').value = sp.currentAssetTitle;
+
+        const completedMin = sp.tasks.reduce(function (sum, t) {
+          return sum + (t.done ? t.minutes : 0);
+        }, 0);
+        const pct = Math.round((completedMin / 300) * 100);
+
+        document.getElementById('sprint-pct-readout').textContent = pct + '% Complete';
+        document.getElementById('sprint-minutes-label').textContent =
+          completedMin + ' / 300 Minutes (' + (completedMin / 60).toFixed(1) + ' / 5.0 hrs)';
+        document.getElementById('sprint-progress-bar').style.width = pct + '%';
+
+        const taskListEl = document.getElementById('sprint-task-list');
+        taskListEl.innerHTML = sp.tasks.map(function (task, idx) {
+          return (
+            '<div class="sprint-task-row ' + (task.done ? 'done' : '') + '">' +
+              '<div class="sprint-task-top">' +
+                '<label class="sprint-check-label">' +
+                  '<input type="checkbox" data-sprint-check="' + idx + '" ' + (task.done ? 'checked' : '') + ' />' +
+                  '<div>' +
+                    '<div class="sprint-task-title">' + escapeHtml(task.title) + '</div>' +
+                    '<div class="sprint-task-desc">' + escapeHtml(task.desc) + '</div>' +
+                  '</div>' +
+                '</label>' +
+                '<div style="display:flex; align-items:center; gap:6px; flex-shrink:0;">' +
+                  '<span class="badge ' + (task.minutes === 90 ? 'badge-gold' : 'badge-cyan') + ' tabular">' + task.minutes + 'm</span>' +
+                  '<button type="button" class="btn-ghost btn-sm" data-load-timer="' + idx + '" title="Load into Ultradian Focus Timer">Timer →</button>' +
+                '</div>' +
+              '</div>' +
+              '<input type="text" class="sprint-note-input" data-sprint-note="' + idx + '" value="' + escapeHtml(task.note || '') + '" placeholder="Deliverable link or key sprint note..." />' +
+            '</div>'
+          );
+        }).join('');
+
+        // Render 52-Week Brick Grid
+        const shippedCount = sp.bricks.filter(function (b) { return b.status === 'shipped'; }).length;
+        document.getElementById('brick-count-badge').textContent = shippedCount + ' / 52 Bricks';
+        document.getElementById('brick-stat-shipped').textContent = String(shippedCount);
+        document.getElementById('brick-stat-hours').textContent = (shippedCount * 5) + 'h';
+
+        let stageLabel = 'Seed';
+        if (shippedCount >= 40) stageLabel = 'Moat';
+        else if (shippedCount >= 26) stageLabel = 'Flywheel';
+        else if (shippedCount >= 13) stageLabel = 'Inflection';
+        else if (shippedCount >= 1) stageLabel = 'Valley';
+        document.getElementById('brick-stat-phase').textContent = stageLabel;
+
+        const gridEl = document.getElementById('brick-grid');
+        gridEl.innerHTML = sp.bricks.map(function (b) {
+          let cls = 'brick-cell';
+          if (b.status === 'progress') cls += ' state-progress';
+          if (b.status === 'shipped') cls += ' state-shipped';
+          if (b.week === sp.selectedWeek) cls += ' selected-week';
+          const label = 'W' + String(b.week).padStart(2, '0');
+          return (
+            '<button type="button" class="' + cls + '" data-brick-week="' + b.week + '" title="' + escapeHtml(label + ' (' + b.status + ')' + (b.title ? ': ' + b.title : '')) + '">' +
+              label +
+            '</button>'
+          );
+        }).join('');
+
+        const activeBrick = sp.bricks[sp.selectedWeek - 1];
+        document.getElementById('inspector-week-heading').textContent =
+          'Week ' + wkStr + ' • Status: ' + activeBrick.status.toUpperCase();
+        document.getElementById('inspector-week-note').textContent =
+          activeBrick.title
+            ? 'Asset Logged: "' + activeBrick.title + '"'
+            : 'No shipped asset logged for Week ' + wkStr + ' yet. Seal your weekly sprint or click "Cycle Status".';
+      }
+
+      /* =========================================================
+         TOOL 4: ASYMMETRIC DECISION & 80/20 MATRIX
+         ========================================================= */
+      function computeAsymmetricScore(bet) {
+        const upside = Number(bet.upside) || 5;
+        const effort = Number(bet.effort) || 5;
+        const regret = Number(bet.regret) || 5;
+        const doorBonus = bet.door === 'type2' ? 8 : -6;
+        const raw = upside * 4.2 + (11 - effort) * 2.8 + regret * 2.2 + doorBonus;
+        return Math.max(0, Math.min(100, Math.round(raw)));
+      }
+
+      function getVerdictMeta(score) {
+        if (score >= 80) {
+          return { text: '4% POWER BET — SHIP IN 48H', badgeClass: 'badge-gold' };
+        }
+        if (score >= 62) {
+          return { text: 'HIGH LEVERAGE — SCHEDULE', badgeClass: 'badge-cyan' };
+        }
+        if (score >= 45) {
+          return { text: 'SIMPLIFY SCOPE FIRST', badgeClass: 'badge-slate' };
+        }
+        return { text: '96% NOISE — ELIMINATE', badgeClass: 'badge-rose' };
+      }
+
+      function updateDecisionDraftPreview() {
+        const upside = Number(document.getElementById('bet-upside').value);
+        const effort = Number(document.getElementById('bet-effort').value);
+        const regret = Number(document.getElementById('bet-regret').value);
+
+        document.getElementById('lbl-bet-upside').textContent = upside + ' / 10';
+        document.getElementById('lbl-bet-effort').textContent = effort + ' / 10';
+        document.getElementById('lbl-bet-regret').textContent = regret + ' / 10';
+
+        const score = computeAsymmetricScore({
+          upside: upside,
+          effort: effort,
+          regret: regret,
+          door: state.matrix.draftDoor
+        });
+        const verdict = getVerdictMeta(score);
+
+        document.getElementById('preview-bet-score').textContent = score + ' / 100';
+        const badgeEl = document.getElementById('preview-bet-verdict');
+        badgeEl.textContent = verdict.text;
+        badgeEl.className = 'badge ' + verdict.badgeClass;
+
+        document.getElementById('btn-door-type2').className =
+          'door-option' + (state.matrix.draftDoor === 'type2' ? ' selected-type2' : '');
+        document.getElementById('btn-door-type1').className =
+          'door-option' + (state.matrix.draftDoor === 'type1' ? ' selected-type1' : '');
+      }
+
+      function renderMatrix() {
+        updateDecisionDraftPreview();
+
+        const enriched = state.matrix.decisions.map(function (d) {
+          const score = computeAsymmetricScore(d);
+          return Object.assign({}, d, { score: score, verdict: getVerdictMeta(score) });
+        }).sort(function (a, b) {
+          return b.score - a.score;
+        });
+
+        document.getElementById('matrix-count-badge').textContent = enriched.length + ' Bets Scored';
+
+        const listEl = document.getElementById('decision-list');
+        if (enriched.length === 0) {
+          listEl.innerHTML = '<div class="decision-item" style="color: var(--text-muted); justify-content:center;">Add an idea or decision on the left to rank your 4% asymmetric bets.</div>';
+        } else {
+          listEl.innerHTML = enriched.map(function (item, idx) {
+            const rankNum = idx + 1;
+            const doorBadge = item.door === 'type2'
+              ? '<span class="badge badge-cyan">Type-2 Fast Door</span>'
+              : '<span class="badge badge-slate">Type-1 One-Way</span>';
+            return (
+              '<div class="decision-item ' + (item.score >= 80 ? 'top-bet' : '') + '">' +
+                '<div style="flex: 1; min-width: 220px;">' +
+                  '<div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:4px;">' +
+                    '<span class="tabular" style="font-weight:700; color:var(--gold);">#' + rankNum + '</span>' +
+                    '<strong style="font-size:0.9rem;">' + escapeHtml(item.title) + '</strong>' +
+                  '</div>' +
+                  '<div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:0.75rem; color:var(--text-muted);">' +
+                    '<span>' + escapeHtml(item.category) + '</span>' +
+                    '<span>•</span>' +
+                    '<span class="tabular">Upside ' + item.upside + '/10</span>' +
+                    '<span>•</span>' +
+                    '<span class="tabular">Effort ' + item.effort + '/10</span>' +
+                    '<span>•</span>' +
+                    '<span class="tabular">Age-80 Regret ' + item.regret + '/10</span>' +
+                  '</div>' +
+                '</div>' +
+                '<div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">' +
+                  doorBadge +
+                  '<span class="badge ' + item.verdict.badgeClass + ' tabular">' + item.score + ' • ' + item.verdict.text + '</span>' +
+                  '<button type="button" class="btn-ghost btn-sm" data-send-sprint="' + escapeHtml(item.id) + '" title="Load as Sprint Asset Thesis">To Sprint</button>' +
+                  '<button type="button" class="btn-danger-subtle btn-sm" data-delete-bet="' + escapeHtml(item.id) + '" title="Remove decision">×</button>' +
+                '</div>' +
+              '</div>'
+            );
+          }).join('');
+        }
+
+        renderMatrixQuadrantSVG(enriched);
+      }
+
+      function renderMatrixQuadrantSVG(enriched) {
+        const svg = document.getElementById('matrix-quadrant-svg');
+        const W = 520;
+        const H = 290;
+        const padL = 44;
+        const padR = 20;
+        const padT = 20;
+        const padB = 34;
+        const plotW = W - padL - padR;
+        const plotH = H - padT - padB;
+        const midX = padL + plotW / 2;
+        const midY = padT + plotH / 2;
+
+        function mapX(effort) {
+          return padL + ((effort - 0.5) / 10) * plotW;
+        }
+        function mapY(upside) {
+          return padT + plotH - ((upside - 0.5) / 10) * plotH;
+        }
+
+        let nodesMarkup = '';
+        enriched.forEach(function (item, idx) {
+          const cx = mapX(item.effort).toFixed(1);
+          const cy = mapY(item.upside).toFixed(1);
+          const fill = item.score >= 80 ? '#F5B942' : (item.door === 'type2' ? '#22D3EE' : '#94A3B8');
+          const textFill = item.score >= 80 || item.door === 'type2' ? '#080C18' : '#0B1020';
+          nodesMarkup +=
+            '<g>' +
+              '<title>#' + (idx + 1) + ' ' + escapeHtml(item.title) + ' (Score: ' + item.score + ')</title>' +
+              '<circle cx="' + cx + '" cy="' + cy + '" r="11" fill="' + fill + '" stroke="#0B1020" stroke-width="2" />' +
+              '<text x="' + cx + '" y="' + (Number(cy) + 4) + '" text-anchor="middle" fill="' + textFill + '" font-size="10" font-weight="700" font-family="monospace">' + (idx + 1) + '</text>' +
+            '</g>';
+        });
+
+        svg.innerHTML =
+          '<rect x="' + padL + '" y="' + padT + '" width="' + (plotW / 2) + '" height="' + (plotH / 2) + '" fill="rgba(245, 185, 66, 0.08)" />' +
+          '<rect x="' + padL + '" y="' + padT + '" width="' + plotW + '" height="' + plotH + '" fill="none" stroke="rgba(248,250,252,0.12)" stroke-width="1" />' +
+          '<line x1="' + midX + '" y1="' + padT + '" x2="' + midX + '" y2="' + (H - padB) + '" stroke="rgba(248,250,252,0.12)" stroke-dasharray="4 4" />' +
+          '<line x1="' + padL + '" y1="' + midY + '" x2="' + (W - padR) + '" y2="' + midY + '" stroke="rgba(248,250,252,0.12)" stroke-dasharray="4 4" />' +
+          '<text x="' + (padL + 10) + '" y="' + (padT + 18) + '" fill="#F5B942" font-size="10.5" font-weight="700" font-family="sans-serif">4% ASYMMETRIC SWEET SPOT</text>' +
+          '<text x="' + (midX + 10) + '" y="' + (padT + 18) + '" fill="#22D3EE" font-size="10.5" font-weight="600" font-family="sans-serif">MAJOR STRATEGIC PROJECTS</text>' +
+          '<text x="' + (padL + 10) + '" y="' + (H - padB - 10) + '" fill="#8B9BB4" font-size="10" font-family="sans-serif">LOW-IMPACT FILLERS</text>' +
+          '<text x="' + (midX + 10) + '" y="' + (H - padB - 10) + '" fill="#FDA4AF" font-size="10" font-family="sans-serif">TIME TRAPS (ELIMINATE)</text>' +
+          '<text x="' + (padL + plotW / 2) + '" y="' + (H - 8) + '" text-anchor="middle" fill="#8B9BB4" font-size="11" font-family="monospace">Execution Effort (1 Low → 10 High)</text>' +
+          '<text x="15" y="' + (padT + plotH / 2) + '" text-anchor="middle" fill="#8B9BB4" font-size="11" font-family="monospace" transform="rotate(-90 15 ' + (padT + plotH / 2) + ')">Upside (1 → 10)</text>' +
+          nodesMarkup;
+      }
+
+      /* =========================================================
+         GLOBAL KPI TELEMETRY BAR
+         ========================================================= */
+      function updateGlobalTelemetry() {
+        // 1. Timer Streak & Hours
+        const streak = calculateDayStreak(state.timer.completedSessions);
+        const focusSessions = state.timer.completedSessions.filter(function (s) { return s.mode === 'focus'; });
+        const deepMinutes = focusSessions.reduce(function (acc, s) { return acc + (s.minutes || 90); }, 0);
+        document.getElementById('kpi-streak').textContent = streak + (streak === 1 ? ' Day' : ' Days');
+        document.getElementById('kpi-deep-hours').textContent = (deepMinutes / 60).toFixed(1) + ' hrs deep work logged';
+
+        // 2. Calculator 10-Yr Margin
+        const calc = computeCompoundingSeries();
+        document.getElementById('kpi-10y-margin').textContent = formatCurrency(calc.series[10].assetValue);
+        document.getElementById('kpi-monthly-invested').textContent = formatCurrency(calc.monthlyInvested) + '/mo auto-compounding';
+
+        // 3. Sprint & Bricks
+        const sprintMins = state.sprint.tasks.reduce(function (sum, t) { return sum + (t.done ? t.minutes : 0); }, 0);
+        const shippedBricks = state.sprint.bricks.filter(function (b) { return b.status === 'shipped'; }).length;
+        document.getElementById('kpi-sprint-mins').textContent = sprintMins + ' / 300 min';
+        document.getElementById('kpi-bricks-laid').textContent = shippedBricks + ' / 52 digital bricks laid';
+
+        // 4. Top Asymmetric Bet
+        if (state.matrix.decisions.length > 0) {
+          const sorted = state.matrix.decisions.map(function (d) {
+            return { title: d.title, score: computeAsymmetricScore(d) };
+          }).sort(function (a, b) { return b.score - a.score; });
+          document.getElementById('kpi-top-bet').textContent = sorted[0].title;
+          document.getElementById('kpi-top-bet-score').textContent = 'Leverage Score: ' + sorted[0].score + ' / 100';
+        } else {
+          document.getElementById('kpi-top-bet').textContent = 'No bets queued';
+          document.getElementById('kpi-top-bet-score').textContent = 'Score: — / 100';
+        }
+      }
+
+      /* =========================================================
+         JSON EXPORT / IMPORT / RESET
+         ========================================================= */
+      function exportBackupJson() {
+        saveState(true);
+        const payload = JSON.stringify(state, null, 2);
+        const blob = new Blob([payload], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const dateKey = toLocalDateKey(new Date());
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'mind-margin-5hr-os-backup-' + dateKey + '.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('Backup exported (.json)');
+      }
+
+      function importBackupJson(file) {
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function (ev) {
+          try {
+            const parsed = JSON.parse(String(ev.target.result));
+            if (!parsed || typeof parsed !== 'object') throw new Error('Invalid JSON structure');
+            state = mergeWithDefaults(parsed);
+            saveState(false);
+            renderAll();
+            showToast('Backup restored successfully!');
+          } catch (err) {
+            showToast('Invalid JSON backup file.');
+          }
+        };
+        reader.readAsText(file);
+      }
+
+      /* =========================================================
+         EVENT LISTENERS & INITIALIZATION
+         ========================================================= */
+      function bindEvents() {
+        // Tabs + Arrow Key Navigation
+        const tabButtons = Array.from(document.querySelectorAll('.tab-trigger'));
+        tabButtons.forEach(function (btn, idx) {
+          btn.addEventListener('click', function () {
+            switchTab(btn.getAttribute('data-tab'));
+          });
+          btn.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const nextIdx = e.key === 'ArrowRight'
+                ? (idx + 1) % tabButtons.length
+                : (idx - 1 + tabButtons.length) % tabButtons.length;
+              tabButtons[nextIdx].focus();
+              switchTab(tabButtons[nextIdx].getAttribute('data-tab'));
+            }
+          });
+        });
+
+        // Backup & Reset
+        document.getElementById('btn-export-json').addEventListener('click', exportBackupJson);
+        document.getElementById('btn-import-json').addEventListener('click', function () {
+          document.getElementById('input-import-json').click();
+        });
+        document.getElementById('input-import-json').addEventListener('change', function (e) {
+          if (e.target.files && e.target.files[0]) {
+            importBackupJson(e.target.files[0]);
+            e.target.value = '';
+          }
+        });
+        document.getElementById('btn-reset-os').addEventListener('click', function () {
+          if (window.confirm('Reset The 5-Hour Asset Builder OS back to clean starter defaults? (Export a JSON backup first if you want to save your current data.)')) {
+            state = createDefaultState();
+            saveState(false);
+            renderAll();
+            showToast('OS reset to factory defaults.');
+          }
+        });
+
+        // Tool 1: Timer Events
+        document.getElementById('btn-mode-focus').addEventListener('click', function () { setTimerMode('focus'); });
+        document.getElementById('btn-mode-reset').addEventListener('click', function () { setTimerMode('reset'); });
+        document.getElementById('btn-timer-toggle').addEventListener('click', toggleTimer);
+        document.getElementById('btn-timer-reset').addEventListener('click', function () {
+          state.timer.isRunning = false;
+          state.timer.targetEndMs = null;
+          state.timer.remainingSec = getModeDuration(state.timer.mode);
+          saveState(false);
+          renderTimer();
+        });
+        document.getElementById('btn-timer-complete').addEventListener('click', function () {
+          finishTimerBlock(true);
+        });
+        document.getElementById('btn-timer-chime').addEventListener('click', function () {
+          playHarmonicChime();
+          showToast('Playing Ultradian harmonic chime...');
+        });
+        document.getElementById('timer-intention-input').addEventListener('input', function (e) {
+          state.timer.intention = e.target.value;
+          saveState(true);
+        });
+        document.getElementById('btn-clear-sessions').addEventListener('click', function () {
+          if (state.timer.completedSessions.length === 0) return;
+          if (window.confirm('Clear logged deep work session history?')) {
+            state.timer.completedSessions = [];
+            saveState(false);
+            renderTimer();
+          }
+        });
+
+        // Tool 2: Calculator Events
+        document.getElementById('calc-monthly-income').addEventListener('input', function (e) {
+          state.calculator.monthlyIncome = Math.max(0, numOr(e.target.value, 0));
+          saveState(false);
+          renderCalculator();
+        });
+        document.getElementById('slider-monthly-income').addEventListener('input', function (e) {
+          state.calculator.monthlyIncome = numOr(e.target.value, 800);
+          saveState(false);
+          renderCalculator();
+        });
+        document.getElementById('slider-split-pct').addEventListener('input', function (e) {
+          state.calculator.splitPct = numOr(e.target.value, 50);
+          saveState(false);
+          renderCalculator();
+        });
+        document.querySelectorAll('.calc-preset-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            state.calculator.splitPct = Number(btn.getAttribute('data-split'));
+            saveState(false);
+            renderCalculator();
+          });
+        });
+        document.getElementById('calc-return-rate').addEventListener('input', function (e) {
+          state.calculator.annualReturn = numOr(e.target.value, 9);
+          saveState(false);
+          renderCalculator();
+        });
+        document.getElementById('calc-seed-capital').addEventListener('input', function (e) {
+          state.calculator.seedCapital = Math.max(0, numOr(e.target.value, 0));
+          saveState(false);
+          renderCalculator();
+        });
+        document.getElementById('diderot-list').addEventListener('change', function (e) {
+          const idx = e.target.getAttribute('data-diderot-idx');
+          if (idx !== null) {
+            state.calculator.diderotTraps[Number(idx)].reclaimed = e.target.checked;
+            saveState(false);
+            renderCalculator();
+          }
+        });
+        document.getElementById('year-inspect-slider').addEventListener('input', function (e) {
+          state.calculator.inspectYear = Number(e.target.value);
+          saveState(true);
+          renderCalculator();
+        });
+        document.getElementById('compounding-svg').addEventListener('click', function (e) {
+          const yrAttr = e.target.getAttribute('data-yr-node');
+          if (yrAttr !== null) {
+            state.calculator.inspectYear = Number(yrAttr);
+            saveState(true);
+            renderCalculator();
+          }
+        });
+
+        // Tool 3: Sprint & 52-Week Brick Events
+        document.getElementById('sprint-asset-title').addEventListener('input', function (e) {
+          state.sprint.currentAssetTitle = e.target.value;
+          const activeBrick = state.sprint.bricks[state.sprint.selectedWeek - 1];
+          if (activeBrick) activeBrick.title = e.target.value;
+          saveState(true);
+          document.getElementById('inspector-week-note').textContent =
+            e.target.value ? 'Asset Logged: "' + e.target.value + '"' : 'No shipped asset logged yet.';
+        });
+
+        document.getElementById('sprint-task-list').addEventListener('change', function (e) {
+          const checkIdx = e.target.getAttribute('data-sprint-check');
+          if (checkIdx !== null) {
+            state.sprint.tasks[Number(checkIdx)].done = e.target.checked;
+            saveState(false);
+            renderSprintBoard();
+          }
+        });
+
+        document.getElementById('sprint-task-list').addEventListener('input', function (e) {
+          const noteIdx = e.target.getAttribute('data-sprint-note');
+          if (noteIdx !== null) {
+            state.sprint.tasks[Number(noteIdx)].note = e.target.value;
+            saveState(true);
+          }
+        });
+
+        document.getElementById('sprint-task-list').addEventListener('click', function (e) {
+          const loadIdx = e.target.getAttribute('data-load-timer');
+          if (loadIdx !== null) {
+            const task = state.sprint.tasks[Number(loadIdx)];
+            state.timer.intention = '[W' + String(state.sprint.selectedWeek).padStart(2, '0') + '] ' + task.title;
+            state.timer.mode = 'focus';
+            if (!state.timer.isRunning) {
+              state.timer.remainingSec = 5400;
+            }
+            saveState(false);
+            renderTimer();
+            switchTab('timer');
+            showToast('Loaded "' + task.title + '" into 90m Focus Timer');
+          }
+        });
+
+        document.getElementById('btn-reset-sprint-checks').addEventListener('click', function () {
+          state.sprint.tasks.forEach(function (t) { t.done = false; });
+          saveState(false);
+          renderSprintBoard();
+        });
+
+        document.getElementById('btn-seal-brick').addEventListener('click', function () {
+          const wk = state.sprint.selectedWeek;
+          const brick = state.sprint.bricks[wk - 1];
+          brick.status = 'shipped';
+          brick.title = state.sprint.currentAssetTitle || ('Shipped Asset — Week ' + String(wk).padStart(2, '0'));
+
+          // Advance to next non-shipped week if available
+          const nextWeekObj = state.sprint.bricks.find(function (b) { return b.week > wk && b.status !== 'shipped'; }) ||
+                              state.sprint.bricks.find(function (b) { return b.status !== 'shipped'; });
+
+          state.sprint.tasks.forEach(function (t) { t.done = false; t.note = ''; });
+
+          if (nextWeekObj) {
+            state.sprint.selectedWeek = nextWeekObj.week;
+            if (nextWeekObj.status === 'empty') nextWeekObj.status = 'progress';
+            state.sprint.currentAssetTitle = nextWeekObj.title || ('Video #' + String(nextWeekObj.week).padStart(2, '0') + ' — ');
+          }
+
+          saveState(false);
+          renderSprintBoard();
+          playHarmonicChime();
+          showToast('Brick W' + String(wk).padStart(2, '0') + ' laid onto your 52-Week Grid!');
+        });
+
+        document.getElementById('brick-grid').addEventListener('click', function (e) {
+          const btn = e.target.closest('[data-brick-week]');
+          if (!btn) return;
+          const wk = Number(btn.getAttribute('data-brick-week'));
+          if (state.sprint.selectedWeek === wk) {
+            // Clicking already selected week cycles status cleanly
+            cycleWeekStatus(wk);
+          } else {
+            state.sprint.selectedWeek = wk;
+            const b = state.sprint.bricks[wk - 1];
+            state.sprint.currentAssetTitle = b.title || '';
+            saveState(false);
+            renderSprintBoard();
+          }
+        });
+
+        document.getElementById('btn-cycle-week-state').addEventListener('click', function () {
+          cycleWeekStatus(state.sprint.selectedWeek);
+        });
+
+        function cycleWeekStatus(wk) {
+          const b = state.sprint.bricks[wk - 1];
+          const order = ['empty', 'progress', 'shipped'];
+          b.status = order[(order.indexOf(b.status) + 1) % order.length];
+          if (b.status === 'shipped' && !b.title) {
+            b.title = state.sprint.currentAssetTitle || ('Asset W' + String(wk).padStart(2, '0'));
+          }
+          saveState(false);
+          renderSprintBoard();
+        }
+
+        // Tool 4: Matrix Events
+        document.getElementById('btn-door-type2').addEventListener('click', function () {
+          state.matrix.draftDoor = 'type2';
+          updateDecisionDraftPreview();
+        });
+        document.getElementById('btn-door-type1').addEventListener('click', function () {
+          state.matrix.draftDoor = 'type1';
+          updateDecisionDraftPreview();
+        });
+        ['bet-upside', 'bet-effort', 'bet-regret'].forEach(function (id) {
+          document.getElementById(id).addEventListener('input', updateDecisionDraftPreview);
+        });
+
+        document.getElementById('decision-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          const titleInput = document.getElementById('bet-title');
+          const title = titleInput.value.trim();
+          if (!title) return;
+
+          state.matrix.decisions.push({
+            id: 'bet-' + Date.now(),
+            title: title,
+            category: document.getElementById('bet-category').value,
+            door: state.matrix.draftDoor,
+            upside: Number(document.getElementById('bet-upside').value),
+            effort: Number(document.getElementById('bet-effort').value),
+            regret: Number(document.getElementById('bet-regret').value)
+          });
+
+          titleInput.value = '';
+          saveState(false);
+          renderMatrix();
+          showToast('Added bet & ranked in 80/20 Matrix!');
+        });
+
+        document.getElementById('decision-list').addEventListener('click', function (e) {
+          const delId = e.target.getAttribute('data-delete-bet');
+          if (delId) {
+            state.matrix.decisions = state.matrix.decisions.filter(function (d) { return d.id !== delId; });
+            saveState(false);
+            renderMatrix();
+            return;
+          }
+          const sprintId = e.target.getAttribute('data-send-sprint');
+          if (sprintId) {
+            const item = state.matrix.decisions.find(function (d) { return d.id === sprintId; });
+            if (item) {
+              state.sprint.currentAssetTitle = item.title;
+              state.sprint.bricks[state.sprint.selectedWeek - 1].title = item.title;
+              saveState(false);
+              renderSprintBoard();
+              switchTab('sprint');
+              showToast('Loaded top bet into Weekly Sprint!');
+            }
+          }
+        });
+      }
+
+      function renderAll() {
+        switchTab(state.activeTab);
+        renderTimer();
+        renderCalculator();
+        renderSprintBoard();
+        renderMatrix();
+        updateGlobalTelemetry();
+        if (state.timer.isRunning) {
+          startTimerLoop();
+        }
+      }
+
+      bindEvents();
+      renderAll();
+    })();
+  </script>
+</body>
+</html>

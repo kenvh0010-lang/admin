@@ -1,0 +1,112 @@
+{
+  "title": "7 Mental Models From 'The Almanack of Naval' Explained Visually",
+  "alt_title_1": "How to Build Wealth Without Getting Lucky (Naval's 7 Laws)",
+  "alt_title_2": "The 7 Asymmetric Equations Behind One-Person Wealth",
+  "format": "long",
+  "voice": "en_authoritative",
+  "description_hook": "In 2018, angel investor and AngelList founder Naval Ravikant shared a framework for building wealth without relying on blind luck - later compiled by Eric Jorgenson into 'The Almanack of Naval Ravikant'. Here are all 7 core mental models broken down visually with real-world case studies.",
+  "tags": [
+    "almanack of naval ravikant summary",
+    "naval ravikant",
+    "how to get rich without getting lucky",
+    "specific knowledge",
+    "permissionless leverage",
+    "mental models",
+    "wealth psychology",
+    "one person business"
+  ],
+  "thumbnail": {
+    "hook_text": "NAVAL'S 7 LAWS",
+    "badge": "BOOK BREAKDOWN",
+    "stat": "1000X"
+  },
+  "affiliate_cta": {
+    "offer_name": "Solo-Creator Leverage Notion Bundle + Free Naval Almanack Resources",
+    "url_placeholder": "https://yourlink.com/naval-leverage-kit",
+    "pinned_comment": "Which of Naval's 7 Mental Models are you putting into practice this quarter - Specific Knowledge, Code/Media Leverage, or the $500/hr Filter? Grab the Solo-Creator Leverage Notion OS + Naval's reading list here: https://yourlink.com/naval-leverage-kit"
+  },
+  "scenes": [
+    {
+      "tag": "MODEL 1 - SPECIFIC KNOWLEDGE",
+      "headline": "Escape Competition Through Uncopyable Skill Stacks",
+      "visual_type": "stat_callout",
+      "stat_value": "1 of 1",
+      "stat_label": "IF SOCIETY CAN TRAIN YOU, IT CAN REPLACE YOU",
+      "bullets": [
+        "Specific knowledge looks like play to you, but work to others",
+        "Stack 3 top-25% skills into a category of one (Scott Adams rule)",
+        "Found at the intersection of childhood curiosity and technical craft"
+      ],
+      "highlight_words": ["train", "replace", "stack", "play"],
+      "narration": "In 2018, investor and AngelList founder Naval Ravikant published a blueprint that Eric Jorgenson later curated into The Almanack of Naval Ravikant. Its first pillar is Specific Knowledge: the skills you cannot be taught in a standardized classroom. Naval warns that if society can train you by following a checklist, society can eventually replace you with cheaper labor or software. Cartoonist Scott Adams proved how normal people build specific knowledge: he was never the top one percent illustrator, comedian, or corporate executive. Instead, he stacked top twenty-five percent skill in all three to create Dilbert, a global monopoly nobody else could imitate. Ask yourself what felt like effortless curiosity to you ten years ago that still feels like tedious work to people around you today."
+    },
+    {
+      "tag": "MODEL 2 - PERMISSIONLESS LEVERAGE",
+      "headline": "Why Code & Media Beat Labor & Capital for Beginners",
+      "visual_type": "comparison_split",
+      "left_title": "PERMISSIONED LEVERAGE",
+      "left_body": "Labor & Capital: Requires hiring teams, managing egos, or begging investors to say yes",
+      "right_title": "PERMISSIONLESS LEVERAGE",
+      "right_body": "Code & Media: Zero gatekeepers, zero marginal cost per extra user or viewer",
+      "highlight_words": ["permission", "gatekeepers", "marginal", "code"],
+      "narration": "Once you identify your specific knowledge, Model Two asks how far a single hour of your judgment can travel. Archimedes famously said, give me a lever long enough and a place to stand, and I will move the earth. For centuries, business relied on two forms of permissioned leverage: labor, meaning people working for you, and capital, meaning millions of dollars under management. Both require someone else's permission. Over the last thirty years, a third category emerged: products with zero marginal cost of replication, specifically code and media. You do not need a venture capitalist's signature to write a Python script, publish an educational video essay, or ship a digital template. Recording a video for ten thousand viewers costs the exact same energy as recording it for ten."
+    },
+    {
+      "tag": "MODEL 3 - EQUITY OVER WAGES",
+      "headline": "Renting Out Hours Will Never Make You Independent",
+      "visual_type": "compounding_curve",
+      "stat_label": "HOURLY INCOME CAPS OUT - ASSET EQUITY COMPOUNDS",
+      "stat_subtext": "Convert active paycheck surplus into businesses, IP, and index ownership",
+      "highlight_words": ["renting", "equity", "sleeping", "ownership"],
+      "narration": "Model Three is one of the sharpest wake-up calls in modern personal finance: you are not going to gain true financial freedom renting out your time alone. Even high-status salaried professions, like surgeons, corporate attorneys, and senior consultants, face a strict biological cap. When you sleep, take a vacation, or burn out, metered income stops. Real wealth requires owning equity: a piece of a business, intellectual property, software, a media catalog, or diversified productive assets that earn while you are offline. Keep your salary as a launchpad to pay your bills without stress, then systematically channel your surplus hours and savings into assets you actually own."
+    },
+    {
+      "tag": "MODEL 4 - LEVERAGED JUDGMENT",
+      "headline": "In the Age of Leverage, Direction Beats Speed",
+      "visual_type": "stat_callout",
+      "stat_value": "85% -> 95%",
+      "stat_label": "10% BETTER DECISIONS EARN 10X MORE UNDER LEVERAGE",
+      "bullets": [
+        "Warren Buffett reads 5+ hours/day to make 3 great calls a year",
+        "Sprinting fast in the wrong direction multiplies wasted years",
+        "Protect an unscheduled calendar so your mind stays clear"
+      ],
+      "highlight_words": ["judgment", "direction", "buffett", "sprint"],
+      "narration": "Model Four flips hustle culture upside down. Without leverage, working eighty hours a week produces roughly twice as much as working forty. Under massive leverage, working frantic, exhausted hours actually destroys value because tired brains make sloppy strategic calls. Imagine steering a supertanker: a captain who chooses the right course ninety-five percent of the time is worth vastly more than one who is right eighty-five percent of the time, even if the second captain rows twice as hard. That is why Warren Buffett spends over eighty percent of his workday reading quietly behind a closed door rather than packing his calendar with back-to-back status meetings. Treat your calendar like a fortress so your judgment stays sharp."
+    },
+    {
+      "tag": "MODEL 5 - LONG-TERM GAMES",
+      "headline": "Play Iterative Games With High-Trust People",
+      "visual_type": "compounding_curve",
+      "stat_label": "99% OF RETURNS ARRIVE IN THE LATE COMPOUNDING TAIL",
+      "stat_subtext": "Switching niches or burning trust resets the exponent back to zero",
+      "highlight_words": ["compound", "trust", "tail", "accountability"],
+      "narration": "Model Five explains why impatience ruins smart builders. Every meaningful reward in life, whether capital, skill mastery, audience trust, or partnerships, comes from compound interest. Yet human beings constantly reset the exponent back to day one by jumping to shiny new trends every ninety days or cutting ethical corners for quick wins. When you work with high-integrity collaborators over a decade, you stop wasting energy on legal friction and office politics. Put accountability behind your work, deliver exactly what you promise, and stay in one compounding lane long enough for the curve to bend upward."
+    },
+    {
+      "tag": "MODEL 6 - FOUNDATIONAL CLARITY",
+      "headline": "Master First Principles Instead of Memorizing Buzzwords",
+      "visual_type": "comparison_split",
+      "left_title": "IMITATION THINKING",
+      "left_body": "Repeating complex jargon and trendy tactics you cannot explain to a 12-year-old",
+      "right_title": "FOUNDATIONAL MASTERY",
+      "right_body": "Arithmetic, microeconomics, persuasion, and clear writing from first principles",
+      "highlight_words": ["jargon", "feynman", "foundations", "writing"],
+      "narration": "How do you actually sharpen judgment? Model Six echoes Nobel physicist Richard Feynman: real thinkers never hide behind complicated jargon. Naval argues it is far better to understand foundational microeconomics, basic probability, human psychology, and clear persuasive writing at a rock-solid level than to memorize advanced buzzwords on shaky ground. Read timeless primary books rather than daily outrage feeds. If you cannot explain why a business model or habit system works on the back of a napkin in plain English, you do not understand it deeply enough to bet your time on it."
+    },
+    {
+      "tag": "MODEL 7 - ASPIRATIONAL HOURLY RATE",
+      "headline": "Guard Your Time Like It Is Already Worth $500 an Hour",
+      "visual_type": "stat_callout",
+      "stat_value": "$500/hr",
+      "stat_label": "RUTHLESS FILTER FOR DELEGATING & DELETING TRIVIA",
+      "bullets": [
+        "Never spend 3 hours fixing a $40 problem to feel thrifty",
+        "Step 1: Audit your Specific Knowledge stack this Sunday",
+        "Step 2: Ship 1 piece of Code or Media every week for 52 weeks"
+      ],
+      "highlight_words": ["five", "hundred", "hourly", "sunday"],
+      "narration": "Finally, Model Seven turns philosophy into daily behavior. Long before Naval had wealth, he set an aspirational personal hourly rate of five hundred dollars. If an errand, a broken appliance return, or a tedious admin task cost less than that rate to outsource, automate, or simply ignore, he refused to burn prime creative hours doing it himself. You can start at fifty or one hundred dollars an hour today. This Sunday, run a three-step audit: write down the three skills you combine naturally, eliminate one low-value weekly chore, and invest five protected hours shipping one piece of permissionless media or software."
+    }
+  ]
+}

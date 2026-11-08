@@ -1,0 +1,88 @@
+{
+  "title": "Morgan Housel's #1 Rule: Being Rich vs Being Wealthy",
+  "alt_title_1": "Why Driving a $100,000 Car Proves Just One Thing",
+  "alt_title_2": "How a Vermont Janitor Quietly Built $8 Million",
+  "format": "short",
+  "voice": "en_authoritative",
+  "description_hook": "Author Morgan Housel explains why most people fail at building wealth because they copy visible 'rich' spending instead of invisible assets. Here is the Ronald Read janitor case study and the calendar rule of real wealth.",
+  "tags": [
+    "rich vs wealthy",
+    "morgan housel",
+    "psychology of money",
+    "stealth wealth",
+    "personal finance",
+    "financial freedom",
+    "wealth psychology"
+  ],
+  "thumbnail": {
+    "hook_text": "RICH VS WEALTHY",
+    "badge": "BOOK BREAKDOWN",
+    "stat": "$8M"
+  },
+  "affiliate_cta": {
+    "offer_name": "Listen to 'The Psychology of Money' & 'Same as Ever' Free on Audible",
+    "url_placeholder": "https://yourlink.com/audible-morgan-housel",
+    "pinned_comment": "Would you rather look rich to strangers or own 100% of your Tuesday mornings? Grab Morgan Housel's 'The Psychology of Money' free audiobook trial + our Quiet Wealth Margin Tracker here: https://yourlink.com/audible-morgan-housel"
+  },
+  "scenes": [
+    {
+      "tag": "HOOK",
+      "headline": "The $100,000 Driveway Illusion",
+      "visual_type": "stat_callout",
+      "stat_value": "-$100K",
+      "stat_label": "THE ONLY FACT A LUXURY CAR PROVES",
+      "bullets": [
+        "Visible spending only shows money that already left",
+        "You never see someone's brokerage account or debt"
+      ],
+      "highlight_words": ["hundred", "thousand", "less", "illusion"],
+      "narration": "When you see someone driving a hundred-thousand-dollar car, the only fact you know for sure is that they have a hundred thousand dollars less than they used to."
+    },
+    {
+      "tag": "THE RULE",
+      "headline": "Rich Is Loud. Wealth Is Invisible.",
+      "visual_type": "comparison_split",
+      "left_title": "BEING RICH",
+      "left_body": "High current spending -> leased status -> fragile monthly bills",
+      "right_title": "BEING WEALTHY",
+      "right_body": "Income not spent -> quiet assets -> full calendar freedom",
+      "highlight_words": ["rich", "spending", "wealth", "hidden"],
+      "narration": "In The Psychology of Money, Morgan Housel draws a sharp line: being rich is current income spent loudly, while real wealth is income you intentionally chose not to spend."
+    },
+    {
+      "tag": "CASE STUDY",
+      "headline": "Ronald Read: The $8 Million Janitor (2014)",
+      "visual_type": "stat_callout",
+      "stat_value": "$8M",
+      "stat_label": "BUILT ON A GAS STATION & JANITOR PAYCHECK",
+      "bullets": [
+        "Vermont janitor Ronald Read compounded quietly until age 92",
+        "Meanwhile, over-leveraged executives went bankrupt in mansions"
+      ],
+      "highlight_words": ["janitor", "eight", "million", "bankrupt"],
+      "narration": "That is how Vermont janitor Ronald Read passed away in 2014 with an eight-million-dollar portfolio, the same decade Harvard-trained finance executives went bankrupt maintaining giant mansions."
+    },
+    {
+      "tag": "THE DIVIDEND",
+      "headline": "Money's Highest Return Is Time Control",
+      "visual_type": "compounding_curve",
+      "stat_label": "UNSPENT MARGIN -> AUTONOMY OVER YOUR CALENDAR",
+      "stat_subtext": "Every saved dollar buys back future mornings on your terms",
+      "highlight_words": ["highest", "dividend", "control", "time"],
+      "narration": "Money pays its highest dividend when it buys control over your time, waking up every morning able to choose what you do and who you do it with."
+    },
+    {
+      "tag": "LOOP",
+      "headline": "Stop Copying What You Can See",
+      "visual_type": "stat_callout",
+      "stat_value": "0 Flex",
+      "stat_label": "WEALTH IS THE UPGRADE YOU DECLINED",
+      "bullets": [
+        "Hard to copy what is hidden inside an index account",
+        "Measure net freedom, never driveway applause"
+      ],
+      "highlight_words": ["invisible", "options", "declined", "remember"],
+      "narration": "Wealth is invisible: it is the options you kept and the flashy upgrades you declined. So remember that..."
+    }
+  ]
+}
