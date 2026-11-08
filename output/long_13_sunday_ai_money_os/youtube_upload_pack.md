@@ -1,8 +1,8 @@
 # YouTube Upload Pack — The 30-Minute Sunday Money & Time Audit (Privacy-Safe AI)
 
 - **Format**: `LONG`
-- **Estimated Runtime**: `164.7s`
-- **Voice Engine Used**: `edge`
+- **Estimated Runtime**: `154.1s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -23,11 +23,11 @@ Thirty-seven percent of U.S. adults cannot cover a $400 emergency with cash alon
 
 ⏱️ Timestamps:
 00:00 - Why Money and Hours Leak Between Paychecks
-00:32 - Why Spreadsheets Quit and Bank Bots Risk Data
-00:57 - The 3-Bucket AI Statement Sort
-01:24 - Paul Graham's Maker vs Manager Calendar Audit
-01:52 - Automate Payday Routing Before Willpower Fades
-02:20 - Twenty-Six Calm Hours Reshape an Entire Year
+00:31 - Why Spreadsheets Quit and Bank Bots Risk Data
+00:56 - The 3-Bucket AI Statement Sort
+01:21 - Paul Graham's Maker vs Manager Calendar Audit
+01:46 - Automate Payday Routing Before Willpower Fades
+02:12 - Twenty-Six Calm Hours Reshape an Entire Year
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.

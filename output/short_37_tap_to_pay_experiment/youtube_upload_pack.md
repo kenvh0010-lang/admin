@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Why Paying by Card Doubles What You Spend (MIT Study)
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `52.9s`
-- **Voice Engine Used**: `edge`
+- **Estimated Runtime**: `49.8s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -25,8 +25,8 @@ In 2001, MIT professors Drazen Prelec and Duncan Simester auctioned real sold-ou
 00:00 - The MIT Sold-Out NBA Ticket Experiment
 00:09 - Cash Within 24 Hours vs Credit Card
 00:20 - Why Tap-to-Pay Numbs the Pain Center
-00:32 - Convert Price Tags Into Net Work Hours
-00:43 - Put Friction Back Before You Tap
+00:31 - Convert Price Tags Into Net Work Hours
+00:42 - Put Friction Back Before You Tap
 
 📚 About Mind & Margin:
 We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
