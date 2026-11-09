@@ -389,5 +389,28 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertTrue(ag_copy.is_file(), "Antigravity copy of the brand skill is missing")
         self.assertEqual(ag_copy.read_text(encoding="utf-8"), skill, "Run: cp .claude/skills/mind-margin-brand/SKILL.md .agents/skills/mind-margin-brand/SKILL.md")
 
+    def test_skill_router_hook_names_matching_skill(self) -> None:
+        import subprocess
+        import sys
+
+        hook = PROJECT_ROOT / ".claude" / "hooks" / "skill_router.py"
+        settings = json.loads((PROJECT_ROOT / ".claude" / "settings.json").read_text(encoding="utf-8"))
+        cmd = settings["hooks"]["UserPromptSubmit"][0]["hooks"][0]["command"]
+        self.assertIn("skill_router.py", cmd)
+
+        def run(prompt: str) -> str:
+            res = subprocess.run([sys.executable, str(hook)], input=json.dumps({"prompt": prompt, "cwd": str(PROJECT_ROOT)}),
+                                 capture_output=True, text=True, timeout=20, env={**os.environ, "CLAUDE_PROJECT_DIR": str(PROJECT_ROOT)})
+            self.assertEqual(res.returncode, 0)
+            return json.loads(res.stdout)["hookSpecificOutput"]["additionalContext"] if res.stdout.strip() else ""
+
+        self.assertIn("This prompt matches: mind-margin-brand", run("làm thumbnail mới cho kênh"))
+        self.assertNotIn("This prompt matches", run("git status"))
+        bad = subprocess.run([sys.executable, str(hook)], input="not json", capture_output=True, text=True, timeout=20)
+        self.assertEqual((bad.returncode, bad.stdout), (0, ""))
+        rule = (PROJECT_ROOT / ".agents" / "rules" / "use-skills.md").read_text(encoding="utf-8")
+        for sk in (PROJECT_ROOT / ".claude" / "skills").glob("*/SKILL.md"):
+            self.assertIn(sk.parent.name, rule, f"{sk.parent.name} missing from Antigravity use-skills rule")
+
 if __name__ == "__main__":
     unittest.main()

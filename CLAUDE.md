@@ -51,3 +51,5 @@ This file defines the unified engineering, editorial, and QA workflow for **Clau
 ## 4. Shared Agent Skills (Claude Code + Antigravity)
 - Brand skill `mind-margin-brand`: `.claude/skills/mind-margin-brand/SKILL.md` (Claude Code) and `.agents/skills/mind-margin-brand/SKILL.md` (Antigravity).
 - Edit the `.claude` copy, then copy it over the `.agents` copy. The test suite fails if the two differ or if the palette drifts from `yt_studio/config.py`.
+- **Auto-use skills**: before answering any message or running any command, check `.claude/skills/` and invoke the skill whose description matches the request. The `UserPromptSubmit` hook in `.claude/settings.json` (`.claude/hooks/skill_router.py`) names the matching skill on every prompt. Antigravity gets the same rule from `.agents/rules/use-skills.md`.
+- When adding a skill, put it in both `.claude/skills/<name>/` and `.agents/skills/<name>/`, and list it in `.agents/rules/use-skills.md`.
