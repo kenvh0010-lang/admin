@@ -125,7 +125,10 @@ def build_context(prompt: str, skills_dir: Path, home: Path = None) -> str:
             hits.insert(0, sk["name"])
         if named or len(hits) >= sk["min_hits"]:
             # project skills first, then skills named outright, then by keyword overlap
-            rank = (1 if sk["source"] == "project" else 0, 1 if named else 0, len(hits))
+            # a project skill jumps the queue only on a solid match (named, or 2+ keywords),
+            # so one stray word cannot bury a better fit among hundreds of personal skills
+            strong_project = sk["source"] == "project" and (named or len(hits) >= 2)
+            rank = (1 if strong_project else 0, 1 if named else 0, len(hits))
             scored.append((rank, sk, hits))
     scored.sort(key=lambda t: t[0], reverse=True)
 

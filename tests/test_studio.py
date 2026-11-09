@@ -433,5 +433,36 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
             self.assertIn("This prompt matches: mind-margin-brand", brand)
             self.assertNotIn("brand-guidelines", brand)
 
+    def test_sync_skills_tool_copies_validates_and_is_idempotent(self) -> None:
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location("sync_skills", PROJECT_ROOT / "tools" / "sync_skills.py")
+        tool = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(tool)
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / "ag" / "pack" / "alpha").mkdir(parents=True)
+            (root / "ag" / "pack" / "alpha" / "SKILL.md").write_text("---\nname: alpha\ndescription: A.\n---\n", encoding="utf-8")
+            (root / "ag" / "beta" / "scripts").mkdir(parents=True)
+            (root / "ag" / "beta" / "SKILL.md").write_text("---\nname: Beta Tool\ndescription: >\n  B.\n---\n", encoding="utf-8")
+            (root / "ag" / "beta" / "scripts" / "run.py").write_text("print(1)\n", encoding="utf-8")
+            (root / "ag" / "bad").mkdir()
+            (root / "ag" / "bad" / "SKILL.md").write_text("# no frontmatter\n", encoding="utf-8")
+            (root / "ag2" / "alpha").mkdir(parents=True)
+            (root / "ag2" / "alpha" / "SKILL.md").write_text("---\nname: alpha\ndescription: Other.\n---\n", encoding="utf-8")
+            dest = root / "dest"
+
+            dry = tool.sync([root / "ag", root / "ag2"], dest, apply=False, overwrite=False)
+            self.assertEqual(sorted(dry["copied"]), ["alpha", "beta-tool"])
+            self.assertFalse(dest.exists(), "dry run must not write")
+            self.assertEqual(len(dry["invalid"]), 1)
+            self.assertEqual(len(dry["conflicts"]), 1)
+
+            tool.sync([root / "ag"], dest, apply=True, overwrite=False)
+            self.assertIn("name: beta-tool", (dest / "beta-tool" / "SKILL.md").read_text(encoding="utf-8"))
+            self.assertTrue((dest / "beta-tool" / "scripts" / "run.py").is_file())
+            again = tool.sync([root / "ag"], dest, apply=True, overwrite=False)
+            self.assertEqual((again["copied"], sorted(again["unchanged"])), ([], ["alpha", "beta-tool"]))
+
 if __name__ == "__main__":
     unittest.main()
