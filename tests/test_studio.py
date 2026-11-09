@@ -367,5 +367,23 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         self.assertIn("-cq", args)
         self.assertIn("yuv420p", args)
 
+    def test_brand_skill_stays_in_sync_with_code(self) -> None:
+        """The project brand skill must list the exact hex values used by video and site."""
+        import re
+        from yt_studio.config import DEFAULT_THEME
+
+        skill = (PROJECT_ROOT / ".claude" / "skills" / "mind-margin-brand" / "SKILL.md").read_text(encoding="utf-8")
+        self.assertTrue(skill.startswith("---\nname: mind-margin-brand\n"))
+        skill_hex = {h.upper() for h in re.findall(r"#[0-9A-Fa-f]{6}", skill)}
+        for field_name in ("bg_primary", "bg_card", "grid_line", "accent_gold", "accent_cyan",
+                           "accent_crimson", "text_primary", "text_muted"):
+            rgb = getattr(DEFAULT_THEME, field_name)
+            self.assertIn("#%02X%02X%02X" % rgb, skill_hex, f"{field_name} missing from brand skill")
+        site_src = (PROJECT_ROOT / "yt_studio" / "site_builder.py").read_text(encoding="utf-8")
+        for var, hx in re.findall(r"--(bg|card|border|gold|cyan|muted|text):(#[0-9A-Fa-f]{6})", site_src):
+            self.assertIn(hx.upper(), skill_hex, f"site --{var} missing from brand skill")
+        self.assertIn("mindandmarg06-20", skill)
+        self.assertIn("As an Amazon Associate I earn from qualifying purchases.", skill)
+
 if __name__ == "__main__":
     unittest.main()
