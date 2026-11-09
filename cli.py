@@ -16,7 +16,7 @@ from yt_studio.visual_composer import render_thumbnail
 
 
 def _render_worker(args_tuple):
-    sb_str, out_str, tts_provider, voice, skip_existing = args_tuple
+    sb_str, out_str, tts_provider, voice, skip_existing, encoder = args_tuple
     sb = Path(sb_str)
     outputs = render_project(
         storyboard_path=sb,
@@ -24,8 +24,17 @@ def _render_worker(args_tuple):
         tts_provider=tts_provider,
         voice=voice,
         skip_existing=skip_existing,
+        encoder=encoder,
     )
-    return sb.name, str(outputs["video"])
+    return sb.name, str(outputs["video"]), _render_note(outputs)
+
+
+def _render_note(outputs) -> str:
+    tts = str(outputs.get("tts_used", ""))
+    note = f"voice={tts} | encoder={outputs.get('encoder', '?')}"
+    if tts.startswith("offline-preview"):
+        note += "  <-- SILENT: no voiceover (install edge-tts)"
+    return note
 
 
 def cmd_render(args: argparse.Namespace) -> int:
@@ -38,8 +47,9 @@ def cmd_render(args: argparse.Namespace) -> int:
         tts_provider=args.tts,
         voice=args.voice,
         skip_existing=bool(getattr(args, "skip_existing", False)),
+        encoder=args.encoder,
     )
-    print("✅ Production complete!")
+    print(f"✅ Production complete! ({_render_note(outputs)})")
     for key, path in outputs.items():
         print(f"   • {key:10s}: {path}")
     return 0
@@ -64,17 +74,18 @@ def cmd_batch(args: argparse.Namespace) -> int:
                 tts_provider=args.tts,
                 voice=args.voice,
                 skip_existing=skip_existing,
+                encoder=args.encoder,
             )
-            print(f"   ✓ Video: {outputs['video']}")
+            print(f"   ✓ Video: {outputs['video']} ({_render_note(outputs)})")
     else:
-        tasks = [(str(sb), str(out_dir), args.tts, args.voice, skip_existing) for sb in files]
+        tasks = [(str(sb), str(out_dir), args.tts, args.voice, skip_existing, args.encoder) for sb in files]
         with ProcessPoolExecutor(max_workers=workers) as pool:
             futs = {pool.submit(_render_worker, t): t[0] for t in tasks}
             done_count = 0
             for fut in as_completed(futs):
-                sb_name, vid_path = fut.result()
+                sb_name, vid_path, note = fut.result()
                 done_count += 1
-                print(f"   [{done_count:02d}/{len(files):02d}] ✓ {sb_name} -> {vid_path}")
+                print(f"   [{done_count:02d}/{len(files):02d}] ✓ {sb_name} -> {vid_path} ({note})")
     print("\n🎉 Batch production finished!")
     return 0
 
@@ -145,6 +156,7 @@ def main() -> int:
     p_render.add_argument("--tts", default="auto", choices=["auto", "edge", "openai", "elevenlabs", "offline"], help="TTS provider")
     p_render.add_argument("--voice", default="en_authoritative", help="Voice preset or Edge-TTS voice ID")
     p_render.add_argument("--skip-existing", action="store_true", help="Skip re-encoding when cached MP4 matches storyboard signature")
+    p_render.add_argument("--encoder", default="auto", choices=["auto", "libx264", "h264_nvenc"], help="Video encoder: auto picks h264_nvenc on a working NVIDIA RTX GPU, else libx264")
     p_render.set_defaults(func=cmd_render)
 
     p_batch = sub.add_parser("batch", help="Batch render all storyboard .json files in a directory")
@@ -154,6 +166,7 @@ def main() -> int:
     p_batch.add_argument("--voice", default="en_authoritative")
     p_batch.add_argument("--workers", type=int, default=4, help="Parallel worker processes (default: 4)")
     p_batch.add_argument("--skip-existing", action="store_true", help="Skip re-encoding unchanged storyboards")
+    p_batch.add_argument("--encoder", default="auto", choices=["auto", "libx264", "h264_nvenc"], help="Video encoder: auto picks h264_nvenc on a working NVIDIA RTX GPU, else libx264")
     p_batch.set_defaults(func=cmd_batch)
 
     p_script = sub.add_parser("script", help="Generate a storyboard JSON from a topic (or export a $0 LLM prompt)")

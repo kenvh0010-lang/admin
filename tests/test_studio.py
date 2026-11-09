@@ -300,5 +300,72 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
                 self.assertEqual(picked, sb3)
 
 
+    def test_edge_tts_missing_fails_loudly_instead_of_silent_video(self) -> None:
+        """--tts edge must raise when edge-tts is absent; auto mode warns before going silent."""
+        import io
+        from contextlib import redirect_stderr
+        from unittest.mock import patch
+        from yt_studio import tts_engine
+
+        with tempfile.TemporaryDirectory() as td, patch.object(tts_engine, "resolve_edge_tts_command", return_value=None):
+            with self.assertRaises(RuntimeError) as ctx:
+                tts_engine.synthesize_voice("Hello there.", Path(td) / "v", provider="edge")
+            self.assertIn("pip install edge-tts", str(ctx.exception))
+            err = io.StringIO()
+            with patch.dict(os.environ, {"OPENAI_API_KEY": "", "ELEVENLABS_API_KEY": ""}), redirect_stderr(err):
+                _, _, label = tts_engine.synthesize_voice("Hello there.", Path(td) / "v2", provider="auto")
+            self.assertTrue(label.startswith("offline-preview"))
+            self.assertIn("SILENT", err.getvalue())
+
+    def test_skip_existing_never_reuses_silent_offline_render(self) -> None:
+        from unittest.mock import patch
+        from yt_studio import video_renderer
+
+        sb_src = sorted(CONTENT_DIR.glob("short_*.json"))[0]
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td)
+            proj = out / sb_src.stem
+            proj.mkdir()
+            for name in (f"{sb_src.stem}.mp4", f"{sb_src.stem}.srt", f"{sb_src.stem}_thumbnail.png", "youtube_upload_pack.md"):
+                (proj / name).write_bytes(b"x")
+            sig = compute_storyboard_signature(sb_src, tts_provider="auto")
+            manifest = proj / ".render_manifest.json"
+
+            class _Stop(Exception):
+                pass
+
+            def _boom(*a, **k):
+                raise _Stop()
+
+            manifest.write_text(json.dumps({"signature": sig, "tts_used": "offline-preview (x)"}), encoding="utf-8")
+            with patch.object(video_renderer, "select_video_encoder", side_effect=_boom):
+                with self.assertRaises(_Stop):
+                    video_renderer.render_project(sb_src, out, tts_provider="auto", skip_existing=True)
+
+            manifest.write_text(json.dumps({"signature": sig, "tts_used": "edge-tts (en-US-ChristopherNeural)"}), encoding="utf-8")
+            with patch.object(video_renderer, "select_video_encoder", side_effect=_boom):
+                res = video_renderer.render_project(sb_src, out, tts_provider="auto", skip_existing=True)
+            self.assertEqual(res["video"], proj / f"{sb_src.stem}.mp4")
+
+    def test_video_encoder_selection_falls_back_to_libx264(self) -> None:
+        from unittest.mock import patch
+        from yt_studio import video_renderer
+
+        video_renderer._ENCODER_CACHE.clear()
+        with patch.object(video_renderer, "_ffmpeg_lists_encoder", return_value=True), patch.object(
+            video_renderer, "_nvenc_probe_ok", return_value=False
+        ):
+            self.assertEqual(video_renderer.select_video_encoder("auto"), "libx264")
+        video_renderer._ENCODER_CACHE.clear()
+        with patch.object(video_renderer, "_ffmpeg_lists_encoder", return_value=True), patch.object(
+            video_renderer, "_nvenc_probe_ok", return_value=True
+        ):
+            self.assertEqual(video_renderer.select_video_encoder("auto"), "h264_nvenc")
+            self.assertEqual(video_renderer.select_video_encoder("libx264"), "libx264")
+        video_renderer._ENCODER_CACHE.clear()
+        args = video_renderer._encoder_args("h264_nvenc")
+        self.assertIn("-cq", args)
+        self.assertIn("yuv420p", args)
+
 if __name__ == "__main__":
     unittest.main()
