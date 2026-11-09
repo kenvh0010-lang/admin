@@ -412,5 +412,26 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         for sk in (PROJECT_ROOT / ".claude" / "skills").glob("*/SKILL.md"):
             self.assertIn(sk.parent.name, rule, f"{sk.parent.name} missing from Antigravity use-skills rule")
 
+    def test_skill_router_covers_account_skills_and_exclusions(self) -> None:
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location("skill_router", PROJECT_ROOT / ".claude" / "hooks" / "skill_router.py")
+        router = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(router)
+        with tempfile.TemporaryDirectory() as td:
+            home = Path(td)
+            synced = home / ".claude" / "skills" / "synced" / "org_x"
+            for name, desc in (("pdf", "Use this skill whenever the user wants to do anything with PDF files."),
+                               ("brand-guidelines", "Applies official brand colors and typography fonts."),
+                               ("pptx", "Use for slide decks and presentations as PowerPoint pptx files.")):
+                (synced / name).mkdir(parents=True)
+                (synced / name / "SKILL.md").write_text(f"---\nname: {name}\ndescription: {desc}\n---\n", encoding="utf-8")
+            skills_dir = PROJECT_ROOT / ".claude" / "skills"
+            self.assertIn("anthropic-skills:pdf", router.build_context("đọc file pdf đơn kiện này", skills_dir, home))
+            self.assertIn("anthropic-skills:pptx", router.build_context("tạo slide trình chiếu", skills_dir, home))
+            brand = router.build_context("đổi màu và font thương hiệu", skills_dir, home)
+            self.assertIn("This prompt matches: mind-margin-brand", brand)
+            self.assertNotIn("brand-guidelines", brand)
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,4 @@
+{
+  "exclude": ["brand-guidelines"],
+  "_why": "brand-guidelines applies Anthropic's own colors and fonts. Mind & Margin uses its own palette from the mind-margin-brand skill."
+}
