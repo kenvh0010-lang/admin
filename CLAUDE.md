@@ -45,3 +45,9 @@ This file defines the unified engineering, editorial, and QA workflow for **Clau
    ```bash
    python3 -m unittest discover -s tests -v
    ```
+
+---
+
+## 4. Shared Agent Skills (Claude Code + Antigravity)
+- Brand skill `mind-margin-brand`: `.claude/skills/mind-margin-brand/SKILL.md` (Claude Code) and `.agents/skills/mind-margin-brand/SKILL.md` (Antigravity).
+- Edit the `.claude` copy, then copy it over the `.agents` copy. The test suite fails if the two differ or if the palette drifts from `yt_studio/config.py`.

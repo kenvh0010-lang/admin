@@ -384,6 +384,10 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
             self.assertIn(hx.upper(), skill_hex, f"site --{var} missing from brand skill")
         self.assertIn("mindandmarg06-20", skill)
         self.assertIn("As an Amazon Associate I earn from qualifying purchases.", skill)
+        # Claude Code reads .claude/skills, Antigravity reads .agents/skills: both copies must match.
+        ag_copy = PROJECT_ROOT / ".agents" / "skills" / "mind-margin-brand" / "SKILL.md"
+        self.assertTrue(ag_copy.is_file(), "Antigravity copy of the brand skill is missing")
+        self.assertEqual(ag_copy.read_text(encoding="utf-8"), skill, "Run: cp .claude/skills/mind-margin-brand/SKILL.md .agents/skills/mind-margin-brand/SKILL.md")
 
 if __name__ == "__main__":
     unittest.main()
