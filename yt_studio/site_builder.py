@@ -169,18 +169,28 @@ def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
     audible_url = f"https://www.audible.com/ep/freetrial{tag_query}"
     amazon_books_url = f"https://www.amazon.com/b?node=283155{'&tag=' + effective_tag if effective_tag else ''}"
 
-    # Sync products and evidence screenshots into docs/
+    # Sync products into docs/ and copy ONLY active referenced evidence screenshots
     for sub_src, sub_dst in [
         (PROJECT_ROOT / "products/bio_funnel_page", docs / "bio"),
         (PROJECT_ROOT / "products/5_hour_asset_builder_os", docs / "5_hour_asset_builder_os"),
         (PROJECT_ROOT / "products/free_lead_magnet", docs / "free_lead_magnet"),
-        (ASSETS_DIR / "evidence", docs / "assets" / "evidence"),
     ]:
         if sub_src.exists():
             if sub_dst.exists():
                 shutil.rmtree(sub_dst)
             sub_dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.copytree(sub_src, sub_dst)
+
+    docs_ev = docs / "assets" / "evidence"
+    if docs_ev.exists():
+        shutil.rmtree(docs_ev)
+    from .deduper import collect_active_referenced_evidence
+    for rel_ev in sorted(collect_active_referenced_evidence(CONTENT_DIR)):
+        src_ev = PROJECT_ROOT / rel_ev
+        if src_ev.is_file():
+            dst_ev = docs / rel_ev
+            dst_ev.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src_ev, dst_ev)
 
     if effective_tag:
         for bio_file in [PROJECT_ROOT / "products/bio_funnel_page/index.html", docs / "bio/index.html"]:

@@ -321,11 +321,24 @@ def save_ledger(ledger: Dict[str, Any]) -> None:
 
 
 def pick_next_unpublished_storyboard() -> Optional[Path]:
-    """Follow natural calendar order across all queued Shorts and Long-form storyboards."""
+    """Follow natural calendar order and skip any storyboard matching a published slug, title, or case URL."""
     from .config import discover_storyboards
+    from .deduper import normalize_source_url, normalize_title
 
     ledger = load_ledger()
     published = ledger.get("published", {})
+    published_titles = {
+        normalize_title(str(entry.get("title", "")))
+        for entry in published.values()
+        if isinstance(entry, dict) and entry.get("title")
+    }
+    published_urls = {
+        normalize_source_url(str(u))
+        for entry in published.values()
+        if isinstance(entry, dict)
+        for u in (entry.get("source_urls") or [])
+        if u
+    }
 
     all_storyboards = discover_storyboards(CONTENT_DIR)
     shorts = [p for p in all_storyboards if p.stem.startswith("short_")]
@@ -341,8 +354,23 @@ def pick_next_unpublished_storyboard() -> Optional[Path]:
     ordered.extend(others)
 
     for sb in ordered:
-        if sb.stem not in published:
-            return sb
+        if sb.stem in published:
+            continue
+        try:
+            data = json.loads(sb.read_text(encoding="utf-8"))
+        except Exception:
+            data = {}
+        norm_t = normalize_title(str(data.get("title", "")))
+        if norm_t and norm_t in published_titles:
+            continue
+        sb_urls = {
+            normalize_source_url(str(s.get("url", "")))
+            for s in (data.get("sources") or [])
+            if isinstance(s, dict) and s.get("url")
+        }
+        if sb_urls and (sb_urls & published_urls):
+            continue
+        return sb
     return None
 
 
@@ -422,6 +450,7 @@ def publish_next_in_queue(privacy_status: str = "public") -> Optional[Dict[str, 
         "title": storyboard["title"],
         "privacy_status": privacy_status,
         "published_at": datetime.now(timezone.utc).isoformat(),
+        "source_urls": [str(s["url"]) for s in (storyboard.get("sources") or []) if isinstance(s, dict) and s.get("url")],
     }
     save_ledger(ledger)
     print(f"✅ Auto-published to YouTube ({privacy_status}): https://youtu.be/{video_id}")

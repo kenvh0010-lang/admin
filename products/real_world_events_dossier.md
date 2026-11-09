@@ -2,11 +2,11 @@
 
 > **Kênh**: **Mind & Margin (`@MindAndMargin`)**  
 > **Mục đích**: Ngân hàng tra cứu chuẩn xác 100% các sự kiện lịch sử, thảm họa tài chính doanh nghiệp, sai số kỹ thuật hàng không vũ trụ, thử nghiệm y khoa và điển tình tích sản đời thực — **mọi con số đều đi kèm hồ sơ lưu trữ gốc** (`U.S. SEC`, `U.S. Senate PSI`, `Federal Reserve`, `SDNY / 2d Cir.`, `Bank of England`, `NTSB`, `NASA`, `ESA`, `Royal Society`, `NEJM`).  
-> **Ứng dụng trực tiếp**: Đã chuyển thể thành **32 kịch bản lưu trữ gốc Weeks 25–32** (`short_73`..`short_96` & `long_25`..`long_32`), nâng tổng kho nội dung tự động của kênh lên **128 kịch bản (32 tuần / tròn 8 tháng — 224 ngày)** với tổng cộng **48 sự kiện & nghiên cứu thực chứng**.
+> **Ứng dụng trực tiếp**: Ngân hàng tư liệu nền tảng phục vụ tra cứu chéo và mở rộng kịch bản hồ sơ gốc cho kênh **Mind & Margin** (hiện đang vận hành các hồ sơ liên bang trực tiếp tại `content/short_00..short_10`).
 
 ---
 
-## Phần I. 34 Hồ Sơ Sự Kiện Thực Tế & Điều Tra Lưu Trữ Gốc (Weeks 25–32)
+## Phần I. 34 Hồ Sơ Sự Kiện Thực Tế & Điều Tra Lưu Trữ Gốc
 
 ### 1. Thảm Họa Phần Mềm 45 Phút Đốt Bay `$440 Triệu` Của Knight Capital (01/08/2012)
 - **Thời gian & Địa điểm**: Sáng ngày `01/08/2012`, Jersey City / Sở Giao dịch Chứng khoán New York (NYSE).
@@ -14,7 +14,7 @@
 - **Dẫn chứng lưu trữ gốc (Primary Citation)**:
   - `U.S. Securities and Exchange Commission (SEC), Order Instituting Administrative and Cease-and-Desist Proceedings, Release No. 34-70694, In the Matter of Knight Capital Americas LLC (Oct 16, 2013)`.
 - **Bài học Mind & Margin**: Tốc độ tự động hóa khi thiếu danh sách kiểm tra trước giờ bay (*pre-flight checklist*) và công tắc ngắt mạch tự động (*kill-switch*) sẽ nhân bản lỗi nhỏ thành thảm họa phá sản.
-- **Kịch bản đã sản xuất**: `short_73_knight_capital_glitch.json`, `long_28_knight_nasa_checklist_systems.json`.
+- **Kịch bản đang hoạt động**: `short_04_knight_capital_440m_sec_order.json`.
 
 ---
 
@@ -187,7 +187,7 @@
 - **Dẫn chứng lưu trữ gốc (Primary Citation)**:
   - `In re Citibank August 11, 2020 Wire Transfers, 520 F. Supp. 3d 390 (S.D.N.Y. Feb 16, 2021); rev'd and vacated, 2d Cir. No. 21-487 (Sept 8, 2022)`.
 - **Bài học Mind & Margin**: Giao diện mặc định tồi sẽ đánh bại cả 3 lớp con người ký duyệt; mọi giao dịch chuyển vốn lớn phải có trần khóa cứng độc lập với màn hình nhập liệu.
-- **Kịch bản đã sản xuất**: `short_86_citibank_900m_checkbox.json`, `long_29_spreadsheet_blunders_audit.json`.
+- **Kịch bản đang hoạt động**: `short_03_citibank_900m_wire_blunder.json`.
 
 ---
 

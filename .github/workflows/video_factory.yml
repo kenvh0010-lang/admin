@@ -70,11 +70,12 @@ jobs:
         run: |
           python3 cli.py verify-youtube
 
-      - name: Rebuild Public SEO Website & Sync Affiliate Tag (mindandmarg06-20)
+      - name: Audit Project Uniqueness & Rebuild Public SEO Website (mindandmarg06-20)
         if: ${{ inputs.mode != 'verify_youtube_only' }}
         env:
           INPUT_TAG: ${{ inputs.amazon_associate_tag || vars.AMAZON_ASSOC_TAG || 'mindandmarg06-20' }}
         run: |
+          python3 cli.py dedupe --apply
           python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
 
       - name: Cache Rendered Video Vault (Incremental SHA-256 Manifests)
@@ -86,7 +87,7 @@ jobs:
           restore-keys: |
             video-vault-v23-
 
-      - name: Parallel Batch Render Evidence-Based Videos & Bundle Release Zips
+      - name: Parallel Batch Render Evidence-Based Videos & Bundle Deduplicated Vault Zip
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         run: |
           python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4 --skip-existing
@@ -112,16 +113,7 @@ jobs:
               ["zip", "-r", vault_zip] + [str(d) for d in rendered_dirs] + ["-x", "*/.render_manifest.json"],
               check=True,
           )
-          print(f"Packed {vault_zip} ({len(rendered_dirs)} videos)")
-
-          for b_idx in range(0, len(rendered_dirs), 5):
-              chunk = rendered_dirs[b_idx : b_idx + 5]
-              pack_zip = f"release_bundles/evidence_pack_{(b_idx // 5) + 1:02d}_videos.zip"
-              subprocess.run(
-                  ["zip", "-r", pack_zip] + [str(d) for d in chunk] + ["-x", "*/.render_manifest.json"],
-                  check=True,
-              )
-              print(f"Packed {pack_zip} ({len(chunk)} videos)")
+          print(f"Packed deduplicated {vault_zip} ({len(rendered_dirs)} active videos)")
           PY
 
       - name: Publish Neural-Voiced Evidence Video Packs to GitHub Releases

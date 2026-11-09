@@ -188,6 +188,11 @@ def main() -> int:
     p_ver = sub.add_parser("verify-youtube", help="Verify YouTube OAuth2 secrets and print connected channel info")
     p_ver.set_defaults(func=cmd_verify_youtube)
 
+    p_ded = sub.add_parser("dedupe", help="Audit all projects for duplicate titles/URLs/crops & prune orphaned outputs/assets")
+    p_ded.add_argument("--apply", action="store_true", help="Remove orphaned output/ dirs and unreferenced evidence PNGs")
+    p_ded.add_argument("--json", action="store_true", help="Print JSON report")
+    p_ded.set_defaults(func=cmd_dedupe)
+
     args = parser.parse_args()
     return args.func(args)
 
@@ -209,6 +214,34 @@ def cmd_verify_youtube(args: argparse.Namespace) -> int:
     from yt_studio.youtube_uploader import verify_youtube_channel
     info = verify_youtube_channel()
     return 0 if info else 1
+
+
+def cmd_dedupe(args: argparse.Namespace) -> int:
+    from yt_studio.deduper import audit_and_dedupe_projects
+    report = audit_and_dedupe_projects(apply_cleanup=bool(args.apply))
+    if args.json:
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+    else:
+        status = "✅ CLEAN" if report["is_clean"] else "⚠️ ISSUES FOUND"
+        print(
+            f"{status} — Active Projects: {report['active_projects']} | "
+            f"Referenced Exhibits: {report['referenced_evidence_files']}"
+        )
+        for key in (
+            "duplicate_stems",
+            "duplicate_titles",
+            "duplicate_source_urls",
+            "duplicate_scene_crops",
+            "high_similarity_pairs",
+            "orphaned_outputs",
+            "unreferenced_evidence",
+            "duplicate_asset_binaries",
+            "removed_outputs",
+            "removed_evidence",
+        ):
+            if report[key]:
+                print(f"  • {key}: {report[key]}")
+    return 0 if report["is_clean"] else 1
 
 
 if __name__ == "__main__":

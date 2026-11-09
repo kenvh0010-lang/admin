@@ -5,7 +5,14 @@
       "url": "https://youtu.be/75cTEO_NKdo",
       "title": "Eminem and Elvis vs. the $5.4 Billion AI Song App",
       "privacy_status": "public",
-      "published_at": "2026-11-08T19:41:20.809741+00:00"
+      "published_at": "2026-11-08T19:41:20.809741+00:00",
+      "source_urls": [
+        "https://www.freep.com/story/entertainment/music/brian-mccollum/2026/11/07/eminem-publisher-suno-ai-lawsuit/92659897007/",
+        "https://variety.com/2026/music/news/elvis-eminem-sue-suno-ai-music-generator-1236941798/",
+        "https://www.cbsnews.com/detroit/news/suno-eminem-eight-mile-music-copyright-lawsuit/",
+        "https://suno.com/blog/series-d-announcement",
+        "https://www.reuters.com/legal/transactional/ai-music-startup-suno-raises-funding-54-billion-valuation-2026-06-03/"
+      ]
     }
   }
 }

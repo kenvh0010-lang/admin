@@ -43,7 +43,7 @@
       "tag": "CHAPTER 1 • HOOK",
       "headline": "Why Money and Hours Leak Between Paychecks",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/sunday_os/fed_shed_fig21_400.png",
+      "evidence_image": "archive/batch_02_ai_earn/evidence/sunday_os/fed_shed_fig21_400.png",
       "evidence_crop": [165, 505, 1110, 1235],
       "bullets": [
         "Federal Reserve survey: 37% would borrow, sell, or come up short",
@@ -98,7 +98,7 @@
       "tag": "CHAPTER 4 • MINUTE 10-20",
       "headline": "Paul Graham's Maker vs Manager Calendar Audit",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/sunday_os/paulgraham_makers.png",
+      "evidence_image": "archive/batch_02_ai_earn/evidence/sunday_os/paulgraham_makers.png",
       "evidence_crop": [80, 55, 570, 505],
       "bullets": [
         "One mid-afternoon meeting splits 4 open hours into shallow halves",
@@ -117,7 +117,7 @@
       "tag": "CHAPTER 5 • MINUTE 20-30",
       "headline": "Automate Payday Routing Before Willpower Fades",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/sunday_os/fed_shed_table16_400.png",
+      "evidence_image": "archive/batch_02_ai_earn/evidence/sunday_os/fed_shed_table16_400.png",
       "evidence_crop": [165, 175, 1110, 620],
       "bullets": [
         "Schedule automatic transfers for the day after payday",

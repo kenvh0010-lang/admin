@@ -42,7 +42,7 @@
       "tag": "HOOK",
       "headline": "The MIT Sold-Out NBA Ticket Experiment",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/mit_card/mit_ocw_celtics_setup.png",
+      "evidence_image": "archive/batch_02_ai_earn/evidence/mit_card/mit_ocw_celtics_setup.png",
       "evidence_crop": [160, 150, 1460, 930],
       "bullets": [
         "Real sealed-bid auction for sold-out Celtics tickets",
@@ -61,7 +61,7 @@
       "tag": "THE AUCTION",
       "headline": "Cash Within 24 Hours vs Credit Card",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/mit_card/mit_ocw_celtics_results.png",
+      "evidence_image": "archive/batch_02_ai_earn/evidence/mit_card/mit_ocw_celtics_results.png",
       "evidence_crop": [160, 170, 1460, 1060],
       "bullets": [
         "Cash bidders averaged $28.51 paid within 24 hours",
@@ -80,7 +80,7 @@
       "tag": "THE MECHANISM",
       "headline": "Why Tap-to-Pay Numbs the Pain Center",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/mit_card/stlouisfed_pain_of_paying.png",
+      "evidence_image": "archive/batch_02_ai_earn/evidence/mit_card/stlouisfed_pain_of_paying.png",
       "evidence_crop": [115, 55, 1160, 600],
       "bullets": [
         "Handing over bills triggers immediate loss awareness",
@@ -114,7 +114,7 @@
       "tag": "LOOP",
       "headline": "Put Friction Back Before You Tap",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/mit_card/springer_prelec_2001.png",
+      "evidence_image": "archive/batch_02_ai_earn/evidence/mit_card/springer_prelec_2001.png",
       "evidence_crop": [0, 140, 810, 955],
       "bullets": [
         "Wait 24 hours whenever an item costs over 2 work hours",

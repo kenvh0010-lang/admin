@@ -268,6 +268,37 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
                 title = row["Video Title (English - High RPM)"]
                 self.assertIn(title, sb_titles, f"Unmatched calendar title {title!r} in {csv_path.name}")
 
+    def test_project_deduplication_and_upload_guard(self) -> None:
+        from unittest.mock import patch
+        from yt_studio.deduper import audit_and_dedupe_projects
+
+        report = audit_and_dedupe_projects(apply_cleanup=False)
+        self.assertTrue(report["is_clean"], f"Deduplication audit found issues: {report}")
+        self.assertEqual(report["active_projects"], 11)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            sb1 = root / "short_01_alpha.json"
+            sb2 = root / "short_02_renamed_dup.json"
+            sb3 = root / "short_03_fresh.json"
+            sb1.write_text(json.dumps({"title": "Case Alpha", "sources": [{"url": "https://sec.gov/a"}]}), encoding="utf-8")
+            sb2.write_text(json.dumps({"title": "Different Title", "sources": [{"url": "https://sec.gov/a/"}]}), encoding="utf-8")
+            sb3.write_text(json.dumps({"title": "Case Gamma", "sources": [{"url": "https://ftc.gov/c"}]}), encoding="utf-8")
+            fake_ledger = {
+                "published": {
+                    "short_01_old_slug": {
+                        "video_id": "abc",
+                        "title": "Case Alpha #Shorts",
+                        "source_urls": ["https://sec.gov/a"],
+                    }
+                }
+            }
+            with patch("yt_studio.youtube_uploader.CONTENT_DIR", root), patch(
+                "yt_studio.youtube_uploader.load_ledger", return_value=fake_ledger
+            ):
+                picked = pick_next_unpublished_storyboard()
+                self.assertEqual(picked, sb3)
+
 
 if __name__ == "__main__":
     unittest.main()
