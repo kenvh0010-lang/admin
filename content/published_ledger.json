@@ -26,6 +26,19 @@
         "https://www.ftc.gov/system/files/ftc_gov/pdf/Cleo-COMPLAINT.pdf",
         "https://ginsburglawgroup.com/2026/10/ftc-cleo-ai-cash-advance-app-refunds-paypal/"
       ]
+    },
+    "short_02_anthropic_1_5b_book_settlement": {
+      "video_id": "lKDVAS6FmF4",
+      "url": "https://youtu.be/lKDVAS6FmF4",
+      "title": "Why Anthropic Is Paying Book Authors $1.5 Billion This Month",
+      "privacy_status": "public",
+      "published_at": "2026-11-10T14:11:55.175582+00:00",
+      "source_urls": [
+        "https://authorsguild.org/advocacy/artificial-intelligence/what-authors-need-to-know-about-the-anthropic-settlement/",
+        "https://www.authorsalliance.org/resources/generative-ai/bartz-v-anthropic-settlement-faq/",
+        "https://virconlegal.com/bartz-v-anthropic-1-5-billion-copyright-settlement-turkish-law/",
+        "https://aitraining.jobs/research/ai-training-data-lawsuits"
+      ]
     }
   }
 }
