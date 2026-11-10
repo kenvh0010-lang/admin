@@ -45,3 +45,10 @@ This file defines the unified engineering, editorial, and QA workflow for **Clau
    ```bash
    python3 -m unittest discover -s tests -v
    ```
+
+---
+
+## 4. Remote Work on the RTX Machine (`vao-rtx` skill)
+- When the user says "vao rtx" or needs anything that only exists on the RTX PC, follow `.claude/skills/vao-rtx/SKILL.md`.
+- Short version: a cloud session cannot attach RTX folders directly. Send the task with `send_message` to the Claude Code session already running on the RTX machine (`bridge` environment, `remote-control-sdk` tag, title contains "RTX"), then read the answer back with `list_events`.
+- Read-only by default. Ask before any delete, overwrite, deploy, or paid action on the RTX machine or the VPS.
