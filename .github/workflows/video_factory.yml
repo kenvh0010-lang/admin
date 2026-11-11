@@ -59,47 +59,30 @@ jobs:
         timeout-minutes: 8
         run: |
           if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
-            need_apt=0
-            command -v ffmpeg >/dev/null 2>&1 || need_apt=1
-            command -v zip >/dev/null 2>&1 || need_apt=1
-            if ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
-              need_apt=1
+            if ! command -v ffmpeg >/dev/null 2>&1; then
+              # Ubuntu apt mirrors are unreachable from GitHub-hosted runners right now:
+              # azure.archive.ubuntu.com answers Ign, and archive.ubuntu.com fails DNS
+              # ("Temporary failure resolving"). github.com is reachable, so use a static
+              # GPL build (libx264, aac, zoompan) instead of apt-get.
+              tmp=$(mktemp -d)
+              url="https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz"
+              curl -fL --retry 3 --retry-delay 2 -o "$tmp/ffmpeg.tar.xz" "$url"
+              tar -xJf "$tmp/ffmpeg.tar.xz" -C "$tmp"
+              bin=$(find "$tmp" -type f -name ffmpeg | head -1)
+              if [ -z "$bin" ]; then
+                echo "ffmpeg binary not found in static archive" >&2
+                exit 1
+              fi
+              sudo install -m 0755 "$bin" /usr/local/bin/ffmpeg
+              rm -rf "$tmp"
             fi
-            if [ "$need_apt" = 1 ]; then
-              # ubuntu-24.04 lists http://azure.archive.ubuntu.com at priority 1,
-              # then https://archive.ubuntu.com. Replacing only the hostname leaves
-              # http://archive.ubuntu.com at priority 1. That endpoint answers Ign
-              # for every suite (~20s each) and a 120s cap exits 124 before apt
-              # reaches the HTTPS mirror, which does respond (runner-images#14594).
-              if [ -f /etc/apt/apt-mirrors.txt ]; then
-                printf 'https://archive.ubuntu.com/ubuntu/\tpriority:1\nhttps://security.ubuntu.com/ubuntu/\tpriority:2\n' \
-                  | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
-              fi
-              if [ -d /etc/apt ]; then
-                sudo find /etc/apt -maxdepth 2 -type f \( -name 'sources.list' -o -name '*.list' -o -name '*.sources' \) \
-                  -exec sed -i \
-                    -e 's|http://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                    -e 's|https://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                    -e 's|http://archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                    {} +
-              fi
-              APT_OPTS=(-o Acquire::Retries=0 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 -o DPkg::Lock::Timeout=60)
-              timeout 90s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update
-              pkgs=()
-              command -v ffmpeg >/dev/null 2>&1 || pkgs+=(ffmpeg)
-              command -v zip >/dev/null 2>&1 || pkgs+=(zip)
-              if ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
-                pkgs+=(fonts-dejavu-core)
-              fi
-              if [ "${#pkgs[@]}" -gt 0 ]; then
-                timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" install -y --no-install-recommends "${pkgs[@]}"
-              fi
-            else
-              echo "FFmpeg, zip, and bundled RobotoCondensed fonts ready — skipping apt-get."
+            if ! command -v zip >/dev/null 2>&1; then
+              echo "zip is not on this runner" >&2
+              exit 1
             fi
-            command -v ffmpeg >/dev/null 2>&1
-            command -v zip >/dev/null 2>&1
+            python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)"
             ffmpeg -hide_banner -version
+            ffmpeg -hide_banner -encoders | grep -q libx264
             ffmpeg -hide_banner -loglevel error -f lavfi -i color=c=black:s=64x64:d=0.1 -frames:v 2 -c:v libx264 -f null -
           fi
           pip install --upgrade pip
