@@ -42,7 +42,7 @@ concurrency:
 
 jobs:
   produce-and-publish:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 90
     steps:
       - name: Checkout repository
@@ -66,22 +66,39 @@ jobs:
               echo "FFmpeg, zip, and TrueType fonts already available — skipping apt-get."
             else
               echo "Need apt packages: ${pkgs[*]}"
-              # ubuntu-latest lists azure.archive.ubuntu.com first. When that host
-              # never answers, apt prints Ign for every suite and a 120s timeout
-              # exits 124 before failover to archive.ubuntu.com. Drop Azure first.
+              # HTTP to azure.archive.ubuntu.com and to archive.ubuntu.com both
+              # return Ign on GitHub-hosted runners until timeout exits 124.
+              # Keep HTTPS mirrors only and force IPv4 so apt does not sit on a
+              # dead v6 path. Fall back to mirrors.edge.kernel.org if Canonical hangs.
               if [ -f /etc/apt/apt-mirrors.txt ]; then
-                sudo sed -i '/azure\.archive\.ubuntu\.com/d' /etc/apt/apt-mirrors.txt
-                if ! grep -q 'archive.ubuntu.com' /etc/apt/apt-mirrors.txt; then
+                sudo sed -i \
+                  -e '/azure\.archive\.ubuntu\.com/d' \
+                  -e 's|http://archive.ubuntu.com|https://archive.ubuntu.com|g' \
+                  -e 's|http://security.ubuntu.com|https://security.ubuntu.com|g' \
+                  /etc/apt/apt-mirrors.txt
+                if ! grep -q 'https://archive.ubuntu.com' /etc/apt/apt-mirrors.txt; then
                   printf 'https://archive.ubuntu.com/ubuntu/\tpriority:1\n' | sudo tee -a /etc/apt/apt-mirrors.txt >/dev/null
                 fi
+                echo "apt mirrors:"
+                cat /etc/apt/apt-mirrors.txt
               fi
               sudo find /etc/apt -maxdepth 2 -type f \( -name 'sources.list' -o -name '*.list' -o -name '*.sources' \) \
-                -exec sed -i 's|azure\.archive\.ubuntu\.com|archive.ubuntu.com|g' {} +
-              APT_OPTS=(-o DPkg::Lock::Timeout=60 -o Acquire::Retries=2 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20)
-              if ! timeout 90s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update -y; then
-                echo "apt-get update failed; retrying against archive.ubuntu.com only."
-                printf 'https://archive.ubuntu.com/ubuntu/\tpriority:1\n' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
-                timeout 90s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update -y
+                -exec sed -i \
+                  -e 's|http://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
+                  -e 's|https://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
+                  -e 's|http://archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
+                  {} +
+              APT_OPTS=(
+                -o Acquire::ForceIPv4=true
+                -o Acquire::Retries=1
+                -o Acquire::http::Timeout=12
+                -o Acquire::https::Timeout=12
+                -o DPkg::Lock::Timeout=60
+              )
+              if ! timeout 80s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update -y; then
+                echo "apt-get update failed; switching to mirrors.edge.kernel.org."
+                printf 'https://mirrors.edge.kernel.org/ubuntu/\tpriority:1\nhttps://archive.ubuntu.com/ubuntu/\tpriority:2\n' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+                timeout 80s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update -y
               fi
               timeout 180s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" install -y --no-install-recommends "${pkgs[@]}"
             fi
@@ -108,7 +125,7 @@ jobs:
           python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
 
       - name: Cache Rendered Video Vault (Incremental SHA-256 Manifests)
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         uses: actions/cache@v4
         with:
           path: output
@@ -117,7 +134,7 @@ jobs:
             video-vault-v23-
 
       - name: Parallel Batch Render Evidence-Based Videos & Bundle Deduplicated Vault Zip
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         run: |
           python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4 --skip-existing
           mkdir -p release_bundles
