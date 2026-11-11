@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"${CLAUDE_PROJECT_DIR:-.}\" && { python3 .claude/hooks/skill_router.py 2>/dev/null || python .claude/hooks/skill_router.py 2>/dev/null; } || true",
+            "timeout": 10,
+            "statusMessage": "Matching project skills..."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -846,7 +846,8 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
 
             rel_paths: Dict[str, str] = {}
             for k, out_p in outputs.items():
-                rel_paths[k] = "/" + out_p.resolve().relative_to(PROJECT_ROOT.resolve()).as_posix()
+                if isinstance(out_p, Path):
+                    rel_paths[k] = "/" + out_p.resolve().relative_to(PROJECT_ROOT.resolve()).as_posix()
 
             self._send_json(
                 {
@@ -855,6 +856,8 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
                     "slug": slug,
                     "elapsed_sec": elapsed_sec,
                     "paths": rel_paths,
+                    "tts_used": str(outputs.get("tts_used", "")),
+                    "encoder": str(outputs.get("encoder", "")),
                     "storyboard": updated_sb,
                 },
                 status=HTTPStatus.OK,

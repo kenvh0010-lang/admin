@@ -300,5 +300,169 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
                 self.assertEqual(picked, sb3)
 
 
+    def test_edge_tts_missing_fails_loudly_instead_of_silent_video(self) -> None:
+        """--tts edge must raise when edge-tts is absent; auto mode warns before going silent."""
+        import io
+        from contextlib import redirect_stderr
+        from unittest.mock import patch
+        from yt_studio import tts_engine
+
+        with tempfile.TemporaryDirectory() as td, patch.object(tts_engine, "resolve_edge_tts_command", return_value=None):
+            with self.assertRaises(RuntimeError) as ctx:
+                tts_engine.synthesize_voice("Hello there.", Path(td) / "v", provider="edge")
+            self.assertIn("pip install edge-tts", str(ctx.exception))
+            err = io.StringIO()
+            with patch.dict(os.environ, {"OPENAI_API_KEY": "", "ELEVENLABS_API_KEY": ""}), redirect_stderr(err):
+                _, _, label = tts_engine.synthesize_voice("Hello there.", Path(td) / "v2", provider="auto")
+            self.assertTrue(label.startswith("offline-preview"))
+            self.assertIn("SILENT", err.getvalue())
+
+    def test_skip_existing_never_reuses_silent_offline_render(self) -> None:
+        from unittest.mock import patch
+        from yt_studio import video_renderer
+
+        sb_src = sorted(CONTENT_DIR.glob("short_*.json"))[0]
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td)
+            proj = out / sb_src.stem
+            proj.mkdir()
+            for name in (f"{sb_src.stem}.mp4", f"{sb_src.stem}.srt", f"{sb_src.stem}_thumbnail.png", "youtube_upload_pack.md"):
+                (proj / name).write_bytes(b"x")
+            sig = compute_storyboard_signature(sb_src, tts_provider="auto")
+            manifest = proj / ".render_manifest.json"
+
+            class _Stop(Exception):
+                pass
+
+            def _boom(*a, **k):
+                raise _Stop()
+
+            manifest.write_text(json.dumps({"signature": sig, "tts_used": "offline-preview (x)"}), encoding="utf-8")
+            with patch.object(video_renderer, "select_video_encoder", side_effect=_boom):
+                with self.assertRaises(_Stop):
+                    video_renderer.render_project(sb_src, out, tts_provider="auto", skip_existing=True)
+
+            manifest.write_text(json.dumps({"signature": sig, "tts_used": "edge-tts (en-US-ChristopherNeural)"}), encoding="utf-8")
+            with patch.object(video_renderer, "select_video_encoder", side_effect=_boom):
+                res = video_renderer.render_project(sb_src, out, tts_provider="auto", skip_existing=True)
+            self.assertEqual(res["video"], proj / f"{sb_src.stem}.mp4")
+
+    def test_video_encoder_selection_falls_back_to_libx264(self) -> None:
+        from unittest.mock import patch
+        from yt_studio import video_renderer
+
+        video_renderer._ENCODER_CACHE.clear()
+        with patch.object(video_renderer, "_ffmpeg_lists_encoder", return_value=True), patch.object(
+            video_renderer, "_nvenc_probe_ok", return_value=False
+        ):
+            self.assertEqual(video_renderer.select_video_encoder("auto"), "libx264")
+        video_renderer._ENCODER_CACHE.clear()
+        with patch.object(video_renderer, "_ffmpeg_lists_encoder", return_value=True), patch.object(
+            video_renderer, "_nvenc_probe_ok", return_value=True
+        ):
+            self.assertEqual(video_renderer.select_video_encoder("auto"), "h264_nvenc")
+            self.assertEqual(video_renderer.select_video_encoder("libx264"), "libx264")
+        video_renderer._ENCODER_CACHE.clear()
+        args = video_renderer._encoder_args("h264_nvenc")
+        self.assertIn("-cq", args)
+        self.assertIn("yuv420p", args)
+
+    def test_brand_skill_stays_in_sync_with_code(self) -> None:
+        """The project brand skill must list the exact hex values used by video and site."""
+        import re
+        from yt_studio.config import DEFAULT_THEME
+
+        skill = (PROJECT_ROOT / ".claude" / "skills" / "mind-margin-brand" / "SKILL.md").read_text(encoding="utf-8")
+        self.assertTrue(skill.startswith("---\nname: mind-margin-brand\n"))
+        skill_hex = {h.upper() for h in re.findall(r"#[0-9A-Fa-f]{6}", skill)}
+        for field_name in ("bg_primary", "bg_card", "grid_line", "accent_gold", "accent_cyan",
+                           "accent_crimson", "text_primary", "text_muted"):
+            rgb = getattr(DEFAULT_THEME, field_name)
+            self.assertIn("#%02X%02X%02X" % rgb, skill_hex, f"{field_name} missing from brand skill")
+        site_src = (PROJECT_ROOT / "yt_studio" / "site_builder.py").read_text(encoding="utf-8")
+        for var, hx in re.findall(r"--(bg|card|border|gold|cyan|muted|text):(#[0-9A-Fa-f]{6})", site_src):
+            self.assertIn(hx.upper(), skill_hex, f"site --{var} missing from brand skill")
+        self.assertIn("mindandmarg06-20", skill)
+        self.assertIn("As an Amazon Associate I earn from qualifying purchases.", skill)
+        # Claude Code reads .claude/skills, Antigravity reads .agents/skills: both copies must match.
+        ag_copy = PROJECT_ROOT / ".agents" / "skills" / "mind-margin-brand" / "SKILL.md"
+        self.assertTrue(ag_copy.is_file(), "Antigravity copy of the brand skill is missing")
+        self.assertEqual(ag_copy.read_text(encoding="utf-8"), skill, "Run: cp .claude/skills/mind-margin-brand/SKILL.md .agents/skills/mind-margin-brand/SKILL.md")
+
+    def test_skill_router_hook_names_matching_skill(self) -> None:
+        import subprocess
+        import sys
+
+        hook = PROJECT_ROOT / ".claude" / "hooks" / "skill_router.py"
+        settings = json.loads((PROJECT_ROOT / ".claude" / "settings.json").read_text(encoding="utf-8"))
+        cmd = settings["hooks"]["UserPromptSubmit"][0]["hooks"][0]["command"]
+        self.assertIn("skill_router.py", cmd)
+
+        def run(prompt: str) -> str:
+            res = subprocess.run([sys.executable, str(hook)], input=json.dumps({"prompt": prompt, "cwd": str(PROJECT_ROOT)}),
+                                 capture_output=True, text=True, timeout=20, env={**os.environ, "CLAUDE_PROJECT_DIR": str(PROJECT_ROOT)})
+            self.assertEqual(res.returncode, 0)
+            return json.loads(res.stdout)["hookSpecificOutput"]["additionalContext"] if res.stdout.strip() else ""
+
+        self.assertIn("This prompt matches: mind-margin-brand", run("làm thumbnail mới cho kênh"))
+        self.assertNotIn("This prompt matches", run("git status"))
+        bad = subprocess.run([sys.executable, str(hook)], input="not json", capture_output=True, text=True, timeout=20)
+        self.assertEqual((bad.returncode, bad.stdout), (0, ""))
+        rule = (PROJECT_ROOT / ".agents" / "rules" / "use-skills.md").read_text(encoding="utf-8")
+        for sk in (PROJECT_ROOT / ".claude" / "skills").glob("*/SKILL.md"):
+            self.assertIn(sk.parent.name, rule, f"{sk.parent.name} missing from Antigravity use-skills rule")
+
+    def test_skill_router_covers_account_skills_and_exclusions(self) -> None:
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location("skill_router", PROJECT_ROOT / ".claude" / "hooks" / "skill_router.py")
+        router = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(router)
+        with tempfile.TemporaryDirectory() as td:
+            home = Path(td)
+            synced = home / ".claude" / "skills" / "synced" / "org_x"
+            for name, desc in (("pdf", "Use this skill whenever the user wants to do anything with PDF files."),
+                               ("brand-guidelines", "Applies official brand colors and typography fonts."),
+                               ("pptx", "Use for slide decks and presentations as PowerPoint pptx files.")):
+                (synced / name).mkdir(parents=True)
+                (synced / name / "SKILL.md").write_text(f"---\nname: {name}\ndescription: {desc}\n---\n", encoding="utf-8")
+            skills_dir = PROJECT_ROOT / ".claude" / "skills"
+            self.assertIn("anthropic-skills:pdf", router.build_context("đọc file pdf đơn kiện này", skills_dir, home))
+            self.assertIn("anthropic-skills:pptx", router.build_context("tạo slide trình chiếu", skills_dir, home))
+            brand = router.build_context("đổi màu và font thương hiệu", skills_dir, home)
+            self.assertIn("This prompt matches: mind-margin-brand", brand)
+            self.assertNotIn("brand-guidelines", brand)
+
+    def test_sync_skills_tool_copies_validates_and_is_idempotent(self) -> None:
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location("sync_skills", PROJECT_ROOT / "tools" / "sync_skills.py")
+        tool = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(tool)
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / "ag" / "pack" / "alpha").mkdir(parents=True)
+            (root / "ag" / "pack" / "alpha" / "SKILL.md").write_text("---\nname: alpha\ndescription: A.\n---\n", encoding="utf-8")
+            (root / "ag" / "beta" / "scripts").mkdir(parents=True)
+            (root / "ag" / "beta" / "SKILL.md").write_text("---\nname: Beta Tool\ndescription: >\n  B.\n---\n", encoding="utf-8")
+            (root / "ag" / "beta" / "scripts" / "run.py").write_text("print(1)\n", encoding="utf-8")
+            (root / "ag" / "bad").mkdir()
+            (root / "ag" / "bad" / "SKILL.md").write_text("# no frontmatter\n", encoding="utf-8")
+            (root / "ag2" / "alpha").mkdir(parents=True)
+            (root / "ag2" / "alpha" / "SKILL.md").write_text("---\nname: alpha\ndescription: Other.\n---\n", encoding="utf-8")
+            dest = root / "dest"
+
+            dry = tool.sync([root / "ag", root / "ag2"], dest, apply=False, overwrite=False)
+            self.assertEqual(sorted(dry["copied"]), ["alpha", "beta-tool"])
+            self.assertFalse(dest.exists(), "dry run must not write")
+            self.assertEqual(len(dry["invalid"]), 1)
+            self.assertEqual(len(dry["conflicts"]), 1)
+
+            tool.sync([root / "ag"], dest, apply=True, overwrite=False)
+            self.assertIn("name: beta-tool", (dest / "beta-tool" / "SKILL.md").read_text(encoding="utf-8"))
+            self.assertTrue((dest / "beta-tool" / "scripts" / "run.py").is_file())
+            again = tool.sync([root / "ag"], dest, apply=True, overwrite=False)
+            self.assertEqual((again["copied"], sorted(again["unchanged"])), ([], ["alpha", "beta-tool"]))
+
 if __name__ == "__main__":
     unittest.main()

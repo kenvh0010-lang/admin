@@ -3,13 +3,15 @@
 import json
 import math
 import os
+import importlib.util
 import shutil
 import struct
 import subprocess
+import sys
 import urllib.request
 import wave
 from pathlib import Path
-from typing import Tuple
+from typing import List, Optional, Tuple
 
 from .config import VOICE_PRESETS
 
@@ -32,6 +34,27 @@ def estimate_speech_duration(text: str, wpm: int = 155) -> float:
     words = len(text.split())
     pauses = text.count(",") * 0.18 + (text.count(".") + text.count("?") + text.count("!")) * 0.32
     return max(2.2, round((words / (wpm / 60.0)) + pauses, 2))
+
+
+def resolve_edge_tts_command() -> Optional[List[str]]:
+    """Locate edge-tts: the console script on PATH, or the module through this interpreter.
+
+    On Windows (typical RTX workstation) `pip install edge-tts` drops `edge-tts.exe` into a
+    Scripts/ folder that is often not on PATH, so `shutil.which` alone misses it and the
+    renderer used to fall back to a silent preview track without saying so.
+    """
+    exe = shutil.which("edge-tts")
+    if exe:
+        return [exe]
+    if importlib.util.find_spec("edge_tts") is not None:
+        return [sys.executable, "-m", "edge_tts"]
+    return None
+
+
+EDGE_TTS_INSTALL_HINT = (
+    "edge-tts is not installed for this Python interpreter. Run "
+    f"'{Path(sys.executable).name} -m pip install edge-tts' and re-render."
+)
 
 
 def synthesize_voice(
@@ -70,13 +93,16 @@ def synthesize_voice(
             if provider == "elevenlabs":
                 raise RuntimeError(f"ElevenLabs TTS failed: {exc}") from exc
 
-    if provider in ("auto", "edge") and shutil.which("edge-tts"):
+    edge_cmd = resolve_edge_tts_command() if provider in ("auto", "edge") else None
+    if provider == "edge" and edge_cmd is None:
+        raise RuntimeError(EDGE_TTS_INSTALL_HINT)
+    if edge_cmd is not None:
         mp3_path = output_path.with_suffix(".mp3")
         last_exc = None
         for attempt in range(3):
             try:
                 subprocess.run(
-                    ["edge-tts", "--voice", resolved_voice, "--rate=+4%", "--text", text, "--write-media", str(mp3_path)],
+                    edge_cmd + ["--voice", resolved_voice, "--rate=+4%", "--text", text, "--write-media", str(mp3_path)],
                     check=True,
                     capture_output=True,
                     text=True,
@@ -88,10 +114,16 @@ def synthesize_voice(
                 last_exc = exc
                 import time
                 time.sleep(0.8 * (attempt + 1))
-        if provider == "edge" and last_exc is not None:
+        if provider == "edge":
             raise RuntimeError(f"edge-tts failed after 3 attempts: {last_exc}") from last_exc
 
     # Offline fallback: silent narration timing track (ambient music will carry audio during preview)
+    if provider != "offline":
+        print(
+            "WARNING: no TTS provider available -> rendering a SILENT offline preview "
+            f"(no voiceover). {EDGE_TTS_INSTALL_HINT}",
+            file=sys.stderr,
+        )
     wav_path = output_path.with_suffix(".wav")
     duration = estimate_speech_duration(text)
     _write_transition_chime_track(wav_path, duration)

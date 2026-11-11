@@ -2,11 +2,13 @@
 
 import hashlib
 import json
+import os
 import shutil
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from .config import DEFAULT_THEME, FORMATS, PROJECT_ROOT, RENDERER_VERSION
 from .subtitle_maker import CaptionBeat, build_scene_beats, export_srt
@@ -37,19 +39,80 @@ def compute_storyboard_signature(
     return h.hexdigest()
 
 
+# ---------------------------------------------------------------------------
+# Video encoder selection (CPU libx264 by default, NVIDIA NVENC on RTX machines)
+# ---------------------------------------------------------------------------
+NVENC_ENCODER = "h264_nvenc"
+CPU_ENCODER = "libx264"
+_ENCODER_CACHE: Dict[str, str] = {}
+
+
+def _ffmpeg_lists_encoder(name: str) -> bool:
+    try:
+        res = subprocess.run(["ffmpeg", "-hide_banner", "-encoders"], capture_output=True, text=True, timeout=20)
+    except Exception:
+        return False
+    return any(line.split()[1:2] == [name] for line in res.stdout.splitlines() if line.strip())
+
+
+def _nvenc_probe_ok() -> bool:
+    """A build can list h264_nvenc without a usable GPU/driver; encode 2 tiny frames to be sure."""
+    try:
+        res = subprocess.run(
+            [
+                "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+                "-f", "lavfi", "-i", "color=c=black:s=256x256:r=30:d=0.1",
+                "-frames:v", "2", "-c:v", NVENC_ENCODER, "-f", "null", "-",
+            ],
+            capture_output=True, text=True, timeout=30,
+        )
+        return res.returncode == 0
+    except Exception:
+        return False
+
+
+def select_video_encoder(requested: str = "auto") -> str:
+    """Resolve 'auto' | 'libx264' | 'h264_nvenc' (or env YT_STUDIO_ENCODER) to a working encoder."""
+    req = (requested or os.environ.get("YT_STUDIO_ENCODER", "auto") or "auto").lower()
+    if req == "auto" and os.environ.get("YT_STUDIO_ENCODER"):
+        req = os.environ["YT_STUDIO_ENCODER"].lower()
+    if req in _ENCODER_CACHE:
+        return _ENCODER_CACHE[req]
+    if req in ("nvenc", NVENC_ENCODER):
+        chosen = NVENC_ENCODER if (_ffmpeg_lists_encoder(NVENC_ENCODER) and _nvenc_probe_ok()) else CPU_ENCODER
+        if chosen != NVENC_ENCODER:
+            print("WARNING: h264_nvenc requested but not usable on this machine; falling back to libx264.", file=sys.stderr)
+    elif req == "auto":
+        chosen = NVENC_ENCODER if (_ffmpeg_lists_encoder(NVENC_ENCODER) and _nvenc_probe_ok()) else CPU_ENCODER
+    else:
+        chosen = CPU_ENCODER
+    _ENCODER_CACHE[req] = chosen
+    return chosen
+
+
+def _encoder_args(encoder: str) -> List[str]:
+    if encoder == NVENC_ENCODER:
+        # p4 = balanced preset, constant-quality VBR roughly matching libx264 crf 20
+        return ["-c:v", NVENC_ENCODER, "-preset", "p4", "-rc", "vbr", "-cq", "20", "-b:v", "0",
+                "-profile:v", "high", "-pix_fmt", "yuv420p"]
+    return ["-c:v", CPU_ENCODER, "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p"]
+
+
 def render_project(
     storyboard_path: Path,
     output_dir: Path,
     tts_provider: str = "auto",
     voice: str = "en_authoritative",
     skip_existing: bool = False,
-) -> Dict[str, Path]:
+    encoder: str = "auto",
+) -> Dict[str, Any]:
     """
     Compile a JSON storyboard into:
       1. video.mp4 (H.264 + AAC, Shorts 9:16 or Long-form 16:9)
       2. captions.srt (synced subtitles for YouTube SEO)
       3. thumbnail.png (1280x720 high-CTR thumbnail)
       4. youtube_upload_pack.md (Titles, SEO Description, Timestamps, Affiliate Links, Tags)
+    Also returns "tts_used" / "encoder" strings so callers can see a silent fallback at a glance.
     """
     data = json.loads(storyboard_path.read_text(encoding="utf-8"))
     project_slug = storyboard_path.stem
@@ -68,15 +131,23 @@ def render_project(
     ):
         try:
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-            if manifest.get("signature") == sig:
+            cached_tts = str(manifest.get("tts_used", ""))
+            # Never reuse a silent offline-preview render when a real voice was requested:
+            # that is how "empty" videos survived on machines where edge-tts was missing.
+            silent_cache = cached_tts.startswith("offline-preview") or cached_tts == ""
+            if manifest.get("signature") == sig and not (silent_cache and tts_provider != "offline"):
                 return {
                     "video": cached_mp4,
                     "srt": cached_srt,
                     "thumbnail": cached_thumb,
                     "seo_pack": cached_seo,
+                    "tts_used": cached_tts or "cached",
+                    "encoder": manifest.get("video_encoder", "cached"),
                 }
         except Exception:
             pass
+
+    video_encoder = select_video_encoder(encoder)
 
     fmt_key = data.get("format", "short").lower()
     fmt = FORMATS.get(fmt_key, FORMATS["short"])
@@ -185,12 +256,13 @@ def render_project(
             n_frames = max(1, round(elapsed * fmt.fps) - frames_done)
             frames_done += n_frames
             clip = work_dir / f"clip_{i:04d}.mp4"
-            _render_motion_clip(
+            video_encoder = _render_motion_clip(
                 frame_png, clip, n_frames / fmt.fps,
                 t_offset=beat.start_sec - scene_starts[beat.scene_index],
                 scene_dur=scene_durations[beat.scene_index],
                 first_in_scene=(beat.beat_index == 0),
                 fmt=fmt,
+                encoder=video_encoder,
             )
             clip_paths.append(clip)
         clips_list = work_dir / "clips_list.txt"
@@ -224,7 +296,15 @@ def render_project(
         )
         output_seo = _write_seo_upload_pack(data, scenes, scene_durations, tts_used, proj_out / "youtube_upload_pack.md")
         manifest_path.write_text(
-            json.dumps({"signature": sig, "renderer_version": RENDERER_VERSION}, indent=2) + "\n",
+            json.dumps(
+                {
+                    "signature": sig,
+                    "renderer_version": RENDERER_VERSION,
+                    "tts_used": tts_used,
+                    "video_encoder": video_encoder,
+                },
+                indent=2,
+            ) + "\n",
             encoding="utf-8",
         )
 
@@ -233,6 +313,8 @@ def render_project(
             "srt": output_srt,
             "thumbnail": output_thumb,
             "seo_pack": output_seo,
+            "tts_used": tts_used,
+            "encoder": video_encoder,
         }
     finally:
         shutil.rmtree(work_dir, ignore_errors=True)
@@ -247,9 +329,11 @@ def _render_motion_clip(
     first_in_scene: bool,
     fmt,
     zoom_max: float = 0.05,
-) -> None:
+    encoder: str = CPU_ENCODER,
+) -> str:
     """Turn one still frame into a clip with a slow push-in; zoom is tied to time in the
-    scene so consecutive beats of the same scene continue the move without a jump."""
+    scene so consecutive beats of the same scene continue the move without a jump.
+    Returns the encoder actually used (NVENC falls back to libx264 on a mid-render failure)."""
     fps = fmt.fps
     w, h = fmt.width, fmt.height
     n = max(1, round(duration * fps))
@@ -261,16 +345,28 @@ def _render_motion_clip(
     )
     if first_in_scene:
         vf += ",fade=t=in:st=0:d=0.3"
-    subprocess.run(
-        [
-            "ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-i", str(frame_png),
-            "-vf", vf, "-frames:v", str(n),
-            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
-            "-r", str(fps), str(out_mp4),
-        ],
-        check=True,
-        capture_output=True,
-    )
+
+    def _run(enc: str) -> subprocess.CompletedProcess:
+        return subprocess.run(
+            [
+                "ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-i", str(frame_png),
+                "-vf", vf, "-frames:v", str(n),
+                *_encoder_args(enc),
+                "-r", str(fps), str(out_mp4),
+            ],
+            capture_output=True,
+        )
+
+    res = _run(encoder)
+    if res.returncode != 0 and encoder != CPU_ENCODER:
+        print(f"WARNING: {encoder} failed mid-render; retrying this and later clips with {CPU_ENCODER}.", file=sys.stderr)
+        encoder = CPU_ENCODER
+        res = _run(encoder)
+    if res.returncode != 0:
+        raise subprocess.CalledProcessError(res.returncode, res.args, output=res.stdout, stderr=res.stderr)
+    if not out_mp4.is_file() or out_mp4.stat().st_size == 0:
+        raise RuntimeError(f"ffmpeg produced an empty clip: {out_mp4}")
+    return encoder
 
 
 def _format_chapter_ts(seconds: float) -> str:
