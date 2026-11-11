@@ -37,8 +37,10 @@ permissions:
   contents: write
 
 concurrency:
-  group: mind-and-margin-video-factory-${{ github.event_name }}
-  cancel-in-progress: ${{ github.event_name == 'push' }}
+  # Include the ref so a branch push does not cancel an in-progress run on main
+  # (or on another branch). Same-ref pushes still cancel their own previous run.
+  group: mind-and-margin-video-factory-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   produce-and-publish:
@@ -54,15 +56,51 @@ jobs:
           python-version: '3.12'
 
       - name: Install FFmpeg & Free Microsoft Neural TTS (edge-tts)
+        timeout-minutes: 8
         run: |
           if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
-            if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v zip >/dev/null 2>&1 || ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
-              sudo sed -i 's|azure\.archive\.ubuntu\.com|archive.ubuntu.com|g' /etc/apt/apt-mirrors.txt /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null || true
-              timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=30 -o Acquire::Retries=2 -o Acquire::http::Timeout="15" -o Acquire::https::Timeout="15" update -y
-              timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=30 install -y --no-install-recommends ffmpeg zip
+            need_apt=0
+            command -v ffmpeg >/dev/null 2>&1 || need_apt=1
+            command -v zip >/dev/null 2>&1 || need_apt=1
+            if ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
+              need_apt=1
+            fi
+            if [ "$need_apt" = 1 ]; then
+              # ubuntu-24.04 lists http://azure.archive.ubuntu.com at priority 1,
+              # then https://archive.ubuntu.com. Replacing only the hostname leaves
+              # http://archive.ubuntu.com at priority 1. That endpoint answers Ign
+              # for every suite (~20s each) and a 120s cap exits 124 before apt
+              # reaches the HTTPS mirror, which does respond (runner-images#14594).
+              if [ -f /etc/apt/apt-mirrors.txt ]; then
+                printf 'https://archive.ubuntu.com/ubuntu/\tpriority:1\nhttps://security.ubuntu.com/ubuntu/\tpriority:2\n' \
+                  | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+              fi
+              if [ -d /etc/apt ]; then
+                sudo find /etc/apt -maxdepth 2 -type f \( -name 'sources.list' -o -name '*.list' -o -name '*.sources' \) \
+                  -exec sed -i \
+                    -e 's|http://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
+                    -e 's|https://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
+                    -e 's|http://archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
+                    {} +
+              fi
+              APT_OPTS=(-o Acquire::Retries=0 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 -o DPkg::Lock::Timeout=60)
+              timeout 90s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update
+              pkgs=()
+              command -v ffmpeg >/dev/null 2>&1 || pkgs+=(ffmpeg)
+              command -v zip >/dev/null 2>&1 || pkgs+=(zip)
+              if ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
+                pkgs+=(fonts-dejavu-core)
+              fi
+              if [ "${#pkgs[@]}" -gt 0 ]; then
+                timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" install -y --no-install-recommends "${pkgs[@]}"
+              fi
             else
               echo "FFmpeg, zip, and bundled RobotoCondensed fonts ready — skipping apt-get."
             fi
+            command -v ffmpeg >/dev/null 2>&1
+            command -v zip >/dev/null 2>&1
+            ffmpeg -hide_banner -version
+            ffmpeg -hide_banner -loglevel error -f lavfi -i color=c=black:s=64x64:d=0.1 -frames:v 2 -c:v libx264 -f null -
           fi
           pip install --upgrade pip
           pip install -r requirements.txt
@@ -86,7 +124,7 @@ jobs:
           python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
 
       - name: Cache Rendered Video Vault (Incremental SHA-256 Manifests)
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         uses: actions/cache@v4
         with:
           path: output
@@ -95,7 +133,7 @@ jobs:
             video-vault-v23-
 
       - name: Parallel Batch Render Evidence-Based Videos & Bundle Deduplicated Vault Zip
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         run: |
           python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4 --skip-existing
           mkdir -p release_bundles
@@ -124,7 +162,7 @@ jobs:
           PY
 
       - name: Publish Neural-Voiced Evidence Video Packs to GitHub Releases
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: evidence-shorts-vault
@@ -151,7 +189,7 @@ jobs:
           python3 cli.py publish-next --privacy "$PRIVACY"
 
       - name: Commit Updated Site, SEO Packs & Publish Ledger
-        if: ${{ inputs.mode != 'verify_youtube_only' }}
+        if: ${{ github.ref == 'refs/heads/main' && inputs.mode != 'verify_youtube_only' }}
         run: |
           git config user.name "Mind & Margin Autopilot"
           git config user.email "actions@github.com"
