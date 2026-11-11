@@ -37,7 +37,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: mind-and-margin-video-factory-${{ github.event_name }}
+  # Include the ref so a branch push does not cancel main or another branch.
+  group: mind-and-margin-video-factory-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
   cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
@@ -54,54 +55,34 @@ jobs:
           python-version: '3.12'
 
       - name: Install FFmpeg & Free Microsoft Neural TTS (edge-tts)
+        timeout-minutes: 8
         run: |
           if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
-            pkgs=()
-            command -v ffmpeg >/dev/null 2>&1 || pkgs+=(ffmpeg)
-            command -v zip >/dev/null 2>&1 || pkgs+=(zip)
-            if ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
-              pkgs+=(fonts-dejavu-core)
-            fi
-            if [ "${#pkgs[@]}" -eq 0 ]; then
-              echo "FFmpeg, zip, and TrueType fonts already available — skipping apt-get."
-            else
-              echo "Need apt packages: ${pkgs[*]}"
-              # HTTP to azure.archive.ubuntu.com and to archive.ubuntu.com both
-              # return Ign on GitHub-hosted runners until timeout exits 124.
-              # Keep HTTPS mirrors only and force IPv4 so apt does not sit on a
-              # dead v6 path. Fall back to mirrors.edge.kernel.org if Canonical hangs.
-              if [ -f /etc/apt/apt-mirrors.txt ]; then
-                sudo sed -i \
-                  -e '/azure\.archive\.ubuntu\.com/d' \
-                  -e 's|http://archive.ubuntu.com|https://archive.ubuntu.com|g' \
-                  -e 's|http://security.ubuntu.com|https://security.ubuntu.com|g' \
-                  /etc/apt/apt-mirrors.txt
-                if ! grep -q 'https://archive.ubuntu.com' /etc/apt/apt-mirrors.txt; then
-                  printf 'https://archive.ubuntu.com/ubuntu/\tpriority:1\n' | sudo tee -a /etc/apt/apt-mirrors.txt >/dev/null
-                fi
-                echo "apt mirrors:"
-                cat /etc/apt/apt-mirrors.txt
+            if ! command -v ffmpeg >/dev/null 2>&1; then
+              # Ubuntu apt mirrors are unreachable from GitHub-hosted runners:
+              # azure.archive.ubuntu.com answers Ign, and archive.ubuntu.com fails
+              # DNS ("Temporary failure resolving"). github.com still resolves, so
+              # install a static GPL build (libx264, aac) instead of apt-get.
+              tmp=$(mktemp -d)
+              url="https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz"
+              curl -fL --retry 3 --retry-delay 2 -o "$tmp/ffmpeg.tar.xz" "$url"
+              tar -xJf "$tmp/ffmpeg.tar.xz" -C "$tmp"
+              bin=$(find "$tmp" -type f -name ffmpeg | head -1)
+              if [ -z "$bin" ]; then
+                echo "ffmpeg binary not found in static archive" >&2
+                exit 1
               fi
-              sudo find /etc/apt -maxdepth 2 -type f \( -name 'sources.list' -o -name '*.list' -o -name '*.sources' \) \
-                -exec sed -i \
-                  -e 's|http://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                  -e 's|https://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                  -e 's|http://archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                  {} +
-              APT_OPTS=(
-                -o Acquire::ForceIPv4=true
-                -o Acquire::Retries=1
-                -o Acquire::http::Timeout=12
-                -o Acquire::https::Timeout=12
-                -o DPkg::Lock::Timeout=60
-              )
-              if ! timeout 80s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update -y; then
-                echo "apt-get update failed; switching to mirrors.edge.kernel.org."
-                printf 'https://mirrors.edge.kernel.org/ubuntu/\tpriority:1\nhttps://archive.ubuntu.com/ubuntu/\tpriority:2\n' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
-                timeout 80s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update -y
-              fi
-              timeout 180s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" install -y --no-install-recommends "${pkgs[@]}"
+              sudo install -m 0755 "$bin" /usr/local/bin/ffmpeg
+              rm -rf "$tmp"
             fi
+            if ! command -v zip >/dev/null 2>&1; then
+              echo "zip is not on this runner" >&2
+              exit 1
+            fi
+            python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)"
+            ffmpeg -hide_banner -version
+            ffmpeg -hide_banner -encoders | grep -q libx264
+            ffmpeg -hide_banner -loglevel error -f lavfi -i color=c=black:s=64x64:d=0.1 -frames:v 2 -c:v libx264 -f null -
           fi
           pip install --upgrade pip
           pip install -r requirements.txt
