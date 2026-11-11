@@ -148,7 +148,9 @@ jobs:
         run: |
           git config user.name "Mind & Margin Autopilot"
           git config user.email "actions@github.com"
-          git add docs/ products/bio_funnel_page/ output/
+          # The render cache can restore output/ dirs of retired scripts; prune them before staging.
+          python3 cli.py dedupe --apply
+          git add -A docs/ products/bio_funnel_page/ output/
           if [ -f content/published_ledger.json ]; then git add content/published_ledger.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "chore(autopilot): sync SEO site, upload packs & YouTube ledger [skip ci]"
