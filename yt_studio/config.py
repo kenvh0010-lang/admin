@@ -78,6 +78,7 @@ VOICE_PRESETS = {
 
 BOLD_FONT_CANDIDATES = [
     str(ASSETS_DIR / "fonts" / "Inter-Bold.ttf"),
+    str(ASSETS_DIR / "fonts" / "RobotoCondensed-Bold.ttf"),
     "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
@@ -88,6 +89,7 @@ BOLD_FONT_CANDIDATES = [
 
 REGULAR_FONT_CANDIDATES = [
     str(ASSETS_DIR / "fonts" / "Inter-Regular.ttf"),
+    str(ASSETS_DIR / "fonts" / "RobotoCondensed-Medium.ttf"),
     "/usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Medium.ttf",
     "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
