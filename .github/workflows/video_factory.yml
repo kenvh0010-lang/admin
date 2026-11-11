@@ -59,48 +59,32 @@ jobs:
         timeout-minutes: 8
         run: |
           if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
-            need_apt=0
-            command -v ffmpeg >/dev/null 2>&1 || need_apt=1
-            command -v zip >/dev/null 2>&1 || need_apt=1
-            if ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
-              need_apt=1
-            fi
-            if [ "$need_apt" = 1 ]; then
-              # ubuntu-24.04 lists http://azure.archive.ubuntu.com at priority 1,
-              # then https://archive.ubuntu.com. Replacing only the hostname leaves
-              # http://archive.ubuntu.com at priority 1. That endpoint answers Ign
-              # for every suite (~20s each) and a 120s cap exits 124 before apt
-              # reaches the HTTPS mirror, which does respond (runner-images#14594).
-              if [ -f /etc/apt/apt-mirrors.txt ]; then
-                printf 'https://archive.ubuntu.com/ubuntu/\tpriority:1\nhttps://security.ubuntu.com/ubuntu/\tpriority:2\n' \
-                  | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
-              fi
-              if [ -d /etc/apt ]; then
-                sudo find /etc/apt -maxdepth 2 -type f \( -name 'sources.list' -o -name '*.list' -o -name '*.sources' \) \
-                  -exec sed -i \
-                    -e 's|http://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                    -e 's|https://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                    -e 's|http://archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' \
-                    {} +
-              fi
-              APT_OPTS=(-o Acquire::Retries=0 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 -o DPkg::Lock::Timeout=60)
-              timeout 90s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" update
-              pkgs=()
-              command -v ffmpeg >/dev/null 2>&1 || pkgs+=(ffmpeg)
-              command -v zip >/dev/null 2>&1 || pkgs+=(zip)
-              if ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
-                pkgs+=(fonts-dejavu-core)
-              fi
-              if [ "${#pkgs[@]}" -gt 0 ]; then
-                timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" install -y --no-install-recommends "${pkgs[@]}"
-              fi
-            else
-              echo "FFmpeg, zip, and bundled RobotoCondensed fonts ready — skipping apt-get."
+            # ubuntu-24.04 apt is not usable here. azure.archive.ubuntu.com stalls,
+            # and both http and https archive.ubuntu.com answer Ign or
+            # "Temporary failure resolving" until timeout 124 (runner-images#14594,
+            # run 43045973175). zip is already on the image and RobotoCondensed is
+            # vendored, so the only missing piece is ffmpeg/ffprobe.
+            if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v ffprobe >/dev/null 2>&1; then
+              FF_URL="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz"
+              tmp="$(mktemp -d)"
+              curl -fsSL --retry 5 --retry-all-errors --retry-delay 2 -o "$tmp/ffmpeg.tar.xz" "$FF_URL"
+              tar -xJf "$tmp/ffmpeg.tar.xz" -C "$tmp"
+              ff_bin="$(find "$tmp" -type f -name ffmpeg -print -quit)"
+              probe_bin="$(find "$tmp" -type f -name ffprobe -print -quit)"
+              test -n "$ff_bin"
+              test -n "$probe_bin"
+              sudo install -m 0755 "$ff_bin" /usr/local/bin/ffmpeg
+              sudo install -m 0755 "$probe_bin" /usr/local/bin/ffprobe
+              rm -rf "$tmp"
             fi
             command -v ffmpeg >/dev/null 2>&1
+            command -v ffprobe >/dev/null 2>&1
             command -v zip >/dev/null 2>&1
+            python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)"
             ffmpeg -hide_banner -version
+            ffprobe -hide_banner -version
             ffmpeg -hide_banner -loglevel error -f lavfi -i color=c=black:s=64x64:d=0.1 -frames:v 2 -c:v libx264 -f null -
+            ffmpeg -hide_banner -loglevel error -f lavfi -i sine=frequency=440:duration=0.1 -c:a aac -f null -
           fi
           pip install --upgrade pip
           pip install -r requirements.txt
