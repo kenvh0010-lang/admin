@@ -54,3 +54,10 @@ This file defines the unified engineering, editorial, and QA workflow for **Clau
 - **Auto-use skills**: before answering any message or running any command, check `.claude/skills/` and invoke the skill whose description matches the request. The `UserPromptSubmit` hook in `.claude/settings.json` (`.claude/hooks/skill_router.py`) names the matching skill on every prompt. It also covers the account skills synced from claude.ai (`anthropic-skills:pdf`, `docx`, `pptx`, `xlsx`, `deep-research`, ...); project skills win on the same topic, and `.claude/skill_router.json` excludes `brand-guidelines` so Anthropic's palette never lands on the channel. Antigravity gets the same rule from `.agents/rules/use-skills.md`.
 - When adding a skill, put it in both `.claude/skills/<name>/` and `.agents/skills/<name>/`, and list it in `.agents/rules/use-skills.md`.
 - **Bulk import (Antigravity -> Claude Code)**: `python tools/sync_skills.py` is a dry run; add `--apply` to copy every skill from `~/.gemini/config/skills` and `~/.gemini/antigravity/skills` into `~/.claude/skills`. It validates frontmatter, normalizes names, reports conflicts and never overwrites without `--overwrite`.
+
+---
+
+## 5. Remote Work on the RTX Machine (`vao-rtx` skill)
+- When the user says "vao rtx" or needs anything that only exists on the RTX PC, follow `.claude/skills/vao-rtx/SKILL.md` (mirrored at `.agents/skills/vao-rtx/SKILL.md`).
+- Short version: a cloud session cannot attach RTX folders directly. Send the task with `send_message` to the Claude Code session already running on the RTX machine (`bridge` environment, `remote-control-sdk` tag, title contains "RTX"), then read the answer back with `list_events`.
+- Read-only by default. Ask before any delete, overwrite, deploy, or paid action on the RTX machine or the VPS.

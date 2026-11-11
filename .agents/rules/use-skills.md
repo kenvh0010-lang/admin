@@ -13,4 +13,6 @@ Before answering any chat message or running any command in this workspace:
 Current skills:
 - `mind-margin-brand`: colors, fonts, frame layout, voice and editorial rules for the Mind & Margin channel. Use it for storyboards in `content/`, thumbnails, visuals, site styling and any channel-facing copy.
 
+- `vao-rtx`: work on the user's Windows RTX workstation from a cloud session via remote-control bridge.
+
 Claude Code uses the same skills from `.claude/skills/`. Keep both copies identical.
