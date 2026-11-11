@@ -56,11 +56,36 @@ jobs:
       - name: Install FFmpeg & Free Microsoft Neural TTS (edge-tts)
         run: |
           if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
-            if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v zip >/dev/null 2>&1 || ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
-              timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=30 -o Acquire::Retries=2 -o Acquire::http::Timeout="15" -o Acquire::https::Timeout="15" update -y
-              timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=30 install -y --no-install-recommends ffmpeg fonts-roboto fonts-dejavu-core zip
+            need_ffmpeg=0
+            need_zip=0
+            need_fonts=0
+            if ! command -v ffmpeg >/dev/null 2>&1; then need_ffmpeg=1; fi
+            if ! command -v zip >/dev/null 2>&1; then need_zip=1; fi
+            if ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then need_fonts=1; fi
+            if [ "$need_ffmpeg" = 1 ] || [ "$need_zip" = 1 ] || [ "$need_fonts" = 1 ]; then
+              echo "Installing missing packages (ffmpeg=$need_ffmpeg zip=$need_zip fonts=$need_fonts)."
+              # azure.archive.ubuntu.com answers with Ign and apt retries it
+              # before archive.ubuntu.com. A 120s cap then kills the step
+              # during failover (actions/runner-images#14594, #14823).
+              if [ -f /etc/apt/apt-mirrors.txt ]; then
+                sudo sed -i '/azure\.archive\.ubuntu\.com/d' /etc/apt/apt-mirrors.txt
+                echo "apt mirrors after dropping Azure:"
+                cat /etc/apt/apt-mirrors.txt
+              fi
+              if [ -f /etc/apt/sources.list.d/ubuntu.sources ]; then
+                sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/sources.list.d/ubuntu.sources
+              fi
+              if [ -f /etc/apt/sources.list ]; then
+                sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/sources.list
+              fi
+              pkgs=""
+              if [ "$need_ffmpeg" = 1 ]; then pkgs="$pkgs ffmpeg"; fi
+              if [ "$need_zip" = 1 ]; then pkgs="$pkgs zip"; fi
+              if [ "$need_fonts" = 1 ]; then pkgs="$pkgs fonts-roboto fonts-dejavu-core"; fi
+              sudo DEBIAN_FRONTEND=noninteractive apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 update -y
+              sudo DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=60 -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends $pkgs
             else
-              echo "FFmpeg, zip, and system TrueType fonts already pre-installed — skipping apt-get."
+              echo "FFmpeg, zip, and vendored TrueType fonts already present — skipping apt-get."
             fi
           fi
           pip install --upgrade pip
@@ -85,7 +110,7 @@ jobs:
           python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
 
       - name: Cache Rendered Video Vault (Incremental SHA-256 Manifests)
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         uses: actions/cache@v4
         with:
           path: output
@@ -94,7 +119,7 @@ jobs:
             video-vault-v23-
 
       - name: Parallel Batch Render Evidence-Based Videos & Bundle Deduplicated Vault Zip
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         run: |
           python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4 --skip-existing
           mkdir -p release_bundles
@@ -123,7 +148,7 @@ jobs:
           PY
 
       - name: Publish Neural-Voiced Evidence Video Packs to GitHub Releases
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: evidence-shorts-vault
@@ -150,7 +175,7 @@ jobs:
           python3 cli.py publish-next --privacy "$PRIVACY"
 
       - name: Commit Updated Site, SEO Packs & Publish Ledger
-        if: ${{ inputs.mode != 'verify_youtube_only' }}
+        if: ${{ inputs.mode != 'verify_youtube_only' && (github.event_name != 'push' || github.ref == 'refs/heads/main') }}
         run: |
           git config user.name "Mind & Margin Autopilot"
           git config user.email "actions@github.com"
