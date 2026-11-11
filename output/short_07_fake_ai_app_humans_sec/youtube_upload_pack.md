@@ -1,4 +1,4 @@
-# YouTube Upload Pack — This $42M 'AI' Shopping App Was Secretly Hundreds of Humans
+# YouTube Upload Pack — This $42M 'AI' Shopping App Actually Used Hundreds of Humans
 
 - **Format**: `SHORT`
 - **Estimated Runtime**: `46.3s`
@@ -6,7 +6,7 @@
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
-1. **This $42M 'AI' Shopping App Was Secretly Hundreds of Humans**
+1. **This $42M 'AI' Shopping App Actually Used Hundreds of Humans**
 2. DOJ & SEC: 'Autonomous AI' Checkout App Used Call Centers
 3. Inside the Federal Indictment of AI Shopping Startup Nate
 

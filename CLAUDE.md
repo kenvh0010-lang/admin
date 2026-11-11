@@ -61,3 +61,13 @@ This file defines the unified engineering, editorial, and QA workflow for **Clau
 - When the user says "vao rtx" or needs anything that only exists on the RTX PC, follow `.claude/skills/vao-rtx/SKILL.md` (mirrored at `.agents/skills/vao-rtx/SKILL.md`).
 - Short version: a cloud session cannot attach RTX folders directly. Send the task with `send_message` to the Claude Code session already running on the RTX machine (`bridge` environment, `remote-control-sdk` tag, title contains "RTX"), then read the answer back with `list_events`.
 - Read-only by default. Ask before any delete, overwrite, deploy, or paid action on the RTX machine or the VPS.
+
+---
+
+## 6. Quarantine-First Storyboard Processing Pipeline (`storyboard-pipeline` skill)
+- Never drop raw or unvalidated scripts directly into `content/short_*.json` (the daily 20:00 VN Autopilot automatically publishes from `content/`).
+- Follow `.claude/skills/storyboard-pipeline/SKILL.md` (mirrored at `.agents/skills/storyboard-pipeline/SKILL.md`):
+  1. **Capture & inspect primary exhibits** in `assets/evidence/<topic>/*.png`.
+  2. **Scaffold quarantined draft** in `content/drafts/`: `python3 cli.py draft-case --slug <slug> --topic "<topic>" --evidence-dir assets/evidence/<topic>`.
+  3. **Run 7-gate validator** (`yt_studio/storyboard_validator.py`): `python3 cli.py validate content/drafts/<slug>.json`.
+  4. **Promote atomically to active queue**: `python3 cli.py promote content/drafts/<slug>.json` (assigns next `short_NN_`, builds SRT/Thumbnail/SEO pack, prunes orphans, and rebuilds `docs/`).

@@ -405,12 +405,21 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
             return json.loads(res.stdout)["hookSpecificOutput"]["additionalContext"] if res.stdout.strip() else ""
 
         self.assertIn("This prompt matches: mind-margin-brand", run("làm thumbnail mới cho kênh"))
+        self.assertIn("storyboard-pipeline", run("kiểm tra luồng xử lý kịch bản mới"))
+        self.assertIn("vao-rtx", run("vao rtx kiểm tra gpu"))
         self.assertNotIn("This prompt matches", run("git status"))
         bad = subprocess.run([sys.executable, str(hook)], input="not json", capture_output=True, text=True, timeout=20)
         self.assertEqual((bad.returncode, bad.stdout), (0, ""))
         rule = (PROJECT_ROOT / ".agents" / "rules" / "use-skills.md").read_text(encoding="utf-8")
         for sk in (PROJECT_ROOT / ".claude" / "skills").glob("*/SKILL.md"):
             self.assertIn(sk.parent.name, rule, f"{sk.parent.name} missing from Antigravity use-skills rule")
+            ag_mirror = PROJECT_ROOT / ".agents" / "skills" / sk.parent.name / "SKILL.md"
+            self.assertTrue(ag_mirror.is_file(), f"Missing .agents mirror for skill {sk.parent.name}")
+            self.assertEqual(
+                ag_mirror.read_text(encoding="utf-8"),
+                sk.read_text(encoding="utf-8"),
+                f"Skill {sk.parent.name} differs between .claude/skills and .agents/skills",
+            )
 
     def test_skill_router_covers_account_skills_and_exclusions(self) -> None:
         import importlib.util
@@ -463,6 +472,122 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
             self.assertTrue((dest / "beta-tool" / "scripts" / "run.py").is_file())
             again = tool.sync([root / "ag"], dest, apply=True, overwrite=False)
             self.assertEqual((again["copied"], sorted(again["unchanged"])), ([], ["alpha", "beta-tool"]))
+
+    def test_all_active_storyboards_pass_7_gate_validator(self) -> None:
+        from yt_studio.storyboard_validator import validate_storyboard
+
+        storyboards = discover_storyboards(CONTENT_DIR)
+        self.assertEqual(len(storyboards), 11)
+        for sb in storyboards:
+            report = validate_storyboard(sb)
+            self.assertTrue(report["ok"], f"{sb.name} failed 7-gate validator: {report['errors']}")
+
+    def test_storyboard_pipeline_draft_quarantine_validate_and_promote(self) -> None:
+        from unittest.mock import patch
+        from yt_studio.script_generator import resolve_draft_destination, scaffold_case_draft
+        from yt_studio.storyboard_validator import promote_draft_to_queue, validate_storyboard
+
+        with tempfile.TemporaryDirectory() as td:
+            proj = Path(td)
+            cdir = proj / "content"
+            odir = proj / "output"
+            ev_dir = proj / "assets" / "evidence" / "cfpb_zelle"
+            cdir.mkdir(parents=True)
+            ev_dir.mkdir(parents=True)
+
+            # Quarantine guard redirects content/foo.json -> content/drafts/foo.json
+            quarantined = resolve_draft_destination(cdir / "short_99_raw.json", content_dir=cdir, allow_active=False)
+            self.assertEqual(quarantined, (cdir / "drafts" / "short_99_raw.json").resolve())
+
+            # Seed one existing active storyboard (short_04) to verify auto-numbering -> short_05_... and dedupe
+            existing = cdir / "short_04_existing_case.json"
+            existing.write_text(
+                json.dumps(
+                    {
+                        "title": "How a Broker Triggered a $12M SEC Penalty",
+                        "sources": [{"label": "SEC Order", "url": "https://www.sec.gov/litigation/admin/2025/34-99999.pdf"}],
+                        "scenes": [],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            # Create 4 real primary exhibit PNGs on disk
+            for i in range(1, 5):
+                im = Image.new("RGB", (1200, 1400), color=(245, 247, 250))
+                im.save(ev_dir / f"exhibit_{i:02d}.png")
+
+            draft_json, prompt_txt = scaffold_case_draft(
+                slug="cfpb_zelle_inquiry",
+                topic="Why Federal Regulators Investigated $870M in Disputed Bank Transfers",
+                evidence_dir=ev_dir,
+                sources=[
+                    ("Senate PSI Majority Staff Report PDF", "https://www.hsgac.senate.gov/wp-content/uploads/zelle-report.pdf"),
+                    ("CFPB Enforcement Docket Filing", "https://www.consumerfinance.gov/enforcement/actions/zelle-2025/"),
+                ],
+                content_dir=cdir,
+                project_root=proj,
+            )
+            self.assertTrue(draft_json.is_file())
+            self.assertTrue(prompt_txt.is_file())
+            self.assertEqual(draft_json.parent, (cdir / "drafts").resolve())
+            self.assertEqual([p.name for p in discover_storyboards(cdir)], ["short_04_existing_case.json"])
+
+            # Injecting a banned buzzword ("secretly") or duplicate source URL must block promotion
+            bad_payload = json.loads(draft_json.read_text(encoding="utf-8"))
+            bad_payload["title"] = "Banks Secretly Ignored $870M in App Transfers"
+            bad_payload["sources"][0]["url"] = "https://www.sec.gov/litigation/admin/2025/34-99999.pdf"
+            draft_json.write_text(json.dumps(bad_payload, indent=2), encoding="utf-8")
+
+            with patch("yt_studio.storyboard_validator.load_ledger", return_value={"published": {}}):
+                bad_rep = validate_storyboard(draft_json, content_dir=cdir, project_root=proj)
+                self.assertFalse(bad_rep["ok"])
+                joined_errs = " | ".join(bad_rep["errors"])
+                self.assertIn("secretly", joined_errs)
+                self.assertIn("Gate 7: Dedupe", joined_errs)
+                with self.assertRaises(ValueError):
+                    promote_draft_to_queue(
+                        draft_json, content_dir=cdir, output_dir=odir, project_root=proj, rebuild_site=False
+                    )
+
+                # Fix copy & citations to documentary standard -> passes all 7 gates & promotes to short_05_...
+                clean_payload = json.loads(draft_json.read_text(encoding="utf-8"))
+                clean_payload["title"] = "Senate Report: $870M in Disputed Instant Bank App Transfers"
+                clean_payload["sources"][0]["url"] = "https://www.hsgac.senate.gov/wp-content/uploads/zelle-report.pdf"
+                narrations = [
+                    "A Senate subcommittee report found three giant US banks reimbursed just fractionally on 870 million dollars in disputed instant transfers.",
+                    "Investigators documented that customers tricked into authorizing instant bank transfers received refunds in under twelve percent of reported scam claims.",
+                    "Internal bank tables in the Senate report showed hundreds of millions in disputed peer-to-peer transfers went unreturned between 2021 and 2023.",
+                    "Federal regulators subsequently sued to examine how network operators handled fraud alerts across linked checking accounts.",
+                    "Treat instant bank transfers like handing over physical cash: use credit cards with statutory chargeback rights whenever paying strangers.",
+                ]
+                headlines = [
+                    "$870M in Disputed Transfers",
+                    "Under 12% Refunded in Scams",
+                    "Senate Subcommittee Tables",
+                    "Federal Oversight Action",
+                    "Use Chargeback Rails",
+                ]
+                for idx, sc in enumerate(clean_payload["scenes"]):
+                    sc["headline"] = headlines[idx]
+                    sc["narration"] = narrations[idx]
+                    sc["source"] = f"U.S. Senate PSI Staff Report, p. {idx + 4} (2024)"
+                draft_json.write_text(json.dumps(clean_payload, indent=2), encoding="utf-8")
+
+                ok_rep = validate_storyboard(draft_json, content_dir=cdir, project_root=proj)
+                self.assertTrue(ok_rep["ok"], f"Expected clean validation, got: {ok_rep['errors']}")
+
+                promoted = promote_draft_to_queue(
+                    draft_json, content_dir=cdir, output_dir=odir, project_root=proj, rebuild_site=False
+                )
+                self.assertEqual(promoted["slug"], "short_05_cfpb_zelle_inquiry")
+                self.assertFalse(draft_json.exists())
+                self.assertFalse(prompt_txt.exists())
+                self.assertTrue((cdir / "short_05_cfpb_zelle_inquiry.json").is_file())
+                self.assertTrue((odir / "short_05_cfpb_zelle_inquiry" / "short_05_cfpb_zelle_inquiry.srt").is_file())
+                self.assertTrue((odir / "short_05_cfpb_zelle_inquiry" / "short_05_cfpb_zelle_inquiry_thumbnail.png").is_file())
+                self.assertTrue((odir / "short_05_cfpb_zelle_inquiry" / "youtube_upload_pack.md").is_file())
+
 
 if __name__ == "__main__":
     unittest.main()

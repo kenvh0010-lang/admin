@@ -14,21 +14,26 @@ Hệ thống sản xuất, kiểm định chống trùng lặp và tự động 
 
 ---
 
-## 🛠️ Lệnh Vận Hành Nhanh (`cli.py`)
+## 🛠️ Lệnh Vận Hành & Luồng Xử Lý Kịch Bản Mới (`cli.py`)
 
 ```bash
-# 1. Kiểm tra & dọn sạch toàn bộ dự án/output/evidence trùng hoặc mồ côi
-python3 cli.py dedupe --apply
+# 1. Tạo bản nháp kịch bản cách ly an toàn trong content/drafts/ (kèm tự đo khung ảnh bằng chứng)
+python3 cli.py draft-case --slug ftc_case_moi --topic "How an App Triggered a $50M FTC Order" --evidence-dir assets/evidence/ftc_case_moi
 
-# 2. Đồng bộ Website công khai + Sitemap + Amazon Associate Tag
+# 2. Kiểm duyệt 7 cổng tự động (Schema, Bằng chứng, Trích dẫn https, Brand/Glyph, Nhịp đọc, Amazon, Chống trùng)
+python3 cli.py validate content/drafts/ftc_case_moi.json
+python3 cli.py validate content/
+
+# 3. Thăng cấp bản nháp đạt chuẩn vào hàng đợi Autopilot (tự gán short_NN_, tạo SRT + Thumbnail + Upload Pack + Web)
+python3 cli.py promote content/drafts/ftc_case_moi.json
+
+# 4. Kiểm tra lọc trùng & đồng bộ Website công khai + Sitemap + Amazon Tag
+python3 cli.py dedupe --apply
 python3 cli.py build-site --amazon-tag mindandmarg06-20
 
-# 3. Render hàng loạt với giọng đọc Neural tiếng Anh Mỹ (bỏ qua video không đổi qua SHA-256)
-python3 cli.py batch content/ --tts edge --voice en_authoritative --workers 4 --skip-existing
+# 5. Render hàng loạt với giọng đọc Neural tiếng Anh Mỹ & tự nhận GPU NVIDIA RTX (h264_nvenc)
+python3 cli.py batch content/ --tts edge --voice en_authoritative --encoder auto --workers 4 --skip-existing
 
-# 4. Tự động đăng video kế tiếp chưa phát sóng lên YouTube
-python3 cli.py publish-next --privacy public
-
-# 5. Chạy trọn bộ kiểm thử tự động End-to-End
+# 6. Chạy trọn bộ kiểm thử tự động End-to-End
 python3 -m unittest discover -s tests -v
 ```

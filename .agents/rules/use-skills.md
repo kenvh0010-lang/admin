@@ -12,7 +12,7 @@ Before answering any chat message or running any command in this workspace:
 
 Current skills:
 - `mind-margin-brand`: colors, fonts, frame layout, voice and editorial rules for the Mind & Margin channel. Use it for storyboards in `content/`, thumbnails, visuals, site styling and any channel-facing copy.
-
+- `storyboard-pipeline`: quarantine-first 5-stage storyboard processing pipeline (`draft-case` -> 7-gate `validate` -> `promote`) for new case scripts, validation, and deduplication gates.
 - `vao-rtx`: work on the user's Windows RTX workstation from a cloud session via remote-control bridge.
 
 Claude Code uses the same skills from `.claude/skills/`. Keep both copies identical.

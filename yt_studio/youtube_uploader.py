@@ -376,13 +376,15 @@ def pick_next_unpublished_storyboard() -> Optional[Path]:
 
 def _select_live_tts_provider() -> str:
     """Guarantee live YouTube uploads always use real neural speech rather than silent offline fallback."""
+    from .tts_engine import EDGE_TTS_INSTALL_HINT, resolve_edge_tts_command
+
     if os.environ.get("OPENAI_API_KEY"):
         return "openai"
     if os.environ.get("ELEVENLABS_API_KEY"):
         return "elevenlabs"
-    if shutil.which("edge-tts"):
+    if resolve_edge_tts_command() is not None:
         return "edge"
-    return "auto"
+    raise RuntimeError(f"Refusing live YouTube upload without neural voiceover. {EDGE_TTS_INSTALL_HINT}")
 
 
 def publish_next_in_queue(privacy_status: str = "public") -> Optional[Dict[str, str]]:

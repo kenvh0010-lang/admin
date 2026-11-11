@@ -56,7 +56,12 @@ jobs:
       - name: Install FFmpeg & Free Microsoft Neural TTS (edge-tts)
         run: |
           if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
-            sudo apt-get update -y && sudo apt-get install -y ffmpeg fonts-roboto fonts-dejavu-core zip
+            if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v zip >/dev/null 2>&1 || [ ! -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf ]; then
+              sudo DEBIAN_FRONTEND=noninteractive apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout="15" -o Acquire::https::Timeout="15" update -y
+              sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg fonts-roboto fonts-dejavu-core zip
+            else
+              echo "FFmpeg, zip, and DejaVu fonts already pre-installed on runner — skipping apt-get."
+            fi
           fi
           pip install --upgrade pip
           pip install -r requirements.txt
@@ -70,12 +75,13 @@ jobs:
         run: |
           python3 cli.py verify-youtube
 
-      - name: Audit Project Uniqueness & Rebuild Public SEO Website (mindandmarg06-20)
+      - name: Audit Project Uniqueness, 7-Gate Validation & Rebuild Public SEO Website (mindandmarg06-20)
         if: ${{ inputs.mode != 'verify_youtube_only' }}
         env:
           INPUT_TAG: ${{ inputs.amazon_associate_tag || vars.AMAZON_ASSOC_TAG || 'mindandmarg06-20' }}
         run: |
           python3 cli.py dedupe --apply
+          python3 cli.py validate content/
           python3 cli.py build-site ${INPUT_TAG:+--amazon-tag "$INPUT_TAG"}
 
       - name: Cache Rendered Video Vault (Incremental SHA-256 Manifests)

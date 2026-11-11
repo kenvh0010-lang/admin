@@ -8,8 +8,9 @@ from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import json
 
-from yt_studio.config import OUTPUT_DIR, PROJECT_ROOT, discover_storyboards
-from yt_studio.script_generator import generate_storyboard_json
+from yt_studio.config import CONTENT_DIR, OUTPUT_DIR, PROJECT_ROOT, discover_storyboards
+from yt_studio.script_generator import DRAFTS_DIR, generate_storyboard_json, scaffold_case_draft
+from yt_studio.storyboard_validator import promote_draft_to_queue, validate_storyboard
 from yt_studio.trend_radar import build_trend_intelligence_report, export_trend_report_markdown
 from yt_studio.video_renderer import render_project
 from yt_studio.visual_composer import render_thumbnail
@@ -35,6 +36,17 @@ def _render_note(outputs) -> str:
     if tts.startswith("offline-preview"):
         note += "  <-- SILENT: no voiceover (install edge-tts)"
     return note
+
+
+def _parse_source_pairs(raw_sources) -> list[tuple[str, str]]:
+    pairs: list[tuple[str, str]] = []
+    for item in raw_sources or []:
+        if "|" in item:
+            lbl, url = item.split("|", 1)
+            pairs.append((lbl.strip(), url.strip()))
+        else:
+            pairs.append(("Primary Source Filing", item.strip()))
+    return pairs
 
 
 def cmd_render(args: argparse.Namespace) -> int:
@@ -92,18 +104,95 @@ def cmd_batch(args: argparse.Namespace) -> int:
 
 def cmd_script(args: argparse.Namespace) -> int:
     out_json = Path(args.out).resolve()
+    ev_dir = Path(args.evidence_dir).resolve() if getattr(args, "evidence_dir", None) else None
+    src_pairs = _parse_source_pairs(getattr(args, "source", None))
     try:
         saved = generate_storyboard_json(
             topic=args.topic,
             output_json=out_json,
             fmt=args.format,
             affiliate_offer=args.affiliate,
+            evidence_dir=ev_dir,
+            sources=src_pairs or None,
+            allow_active=bool(getattr(args, "allow_active", False)),
         )
-        print(f"✅ AI Storyboard saved to: {saved}")
+        print(f"✅ Quarantined Storyboard Draft saved to: {saved}")
+        print(f"   Next: python3 cli.py validate {saved} && python3 cli.py promote {saved}")
         return 0
     except EnvironmentError as exc:
         print(f"ℹ️  {exc}")
         return 0
+
+
+def cmd_draft_case(args: argparse.Namespace) -> int:
+    ev_dir = Path(args.evidence_dir).resolve() if args.evidence_dir else None
+    out_json = Path(args.out).resolve() if args.out else None
+    src_pairs = _parse_source_pairs(args.source)
+    draft_path, prompt_path = scaffold_case_draft(
+        slug=args.slug,
+        topic=args.topic,
+        evidence_dir=ev_dir,
+        sources=src_pairs or None,
+        output_json=out_json,
+    )
+    print(f"📝 Quarantined case draft scaffolded in: {draft_path}")
+    print(f"📋 LLM Evidence Prompt exported to:      {prompt_path}")
+    print("   Next steps: fill verified scene copy/crops -> `python3 cli.py validate` -> `python3 cli.py promote`")
+    return 0
+
+
+def cmd_validate(args: argparse.Namespace) -> int:
+    target = Path(args.target).resolve()
+    files: list[Path] = []
+    if target.is_file():
+        files = [target]
+    elif target.is_dir():
+        if target == DRAFTS_DIR.resolve():
+            files = sorted(target.glob("*.json"))
+        else:
+            files = discover_storyboards(target)
+            if args.include_drafts and DRAFTS_DIR.is_dir():
+                files.extend(sorted(DRAFTS_DIR.glob("*.json")))
+    if not files:
+        print(f"No storyboard JSON files found at {target}", file=sys.stderr)
+        return 1
+
+    reports = [validate_storyboard(sb) for sb in files]
+    all_ok = all(r["ok"] for r in reports)
+    if args.json:
+        print(json.dumps({"ok": all_ok, "count": len(reports), "reports": reports}, indent=2, ensure_ascii=False))
+    else:
+        for r in reports:
+            badge = "✅ PASS" if r["ok"] else "❌ FAIL"
+            print(f"{badge} {Path(r['path']).name} ({r['word_count']} words, ~{r['estimated_duration_sec']}s)")
+            for err in r["errors"]:
+                print(f"   ✖ {err}")
+            for warn in r["warnings"]:
+                print(f"   ⚠ {warn}")
+        summary = "✅ ALL STORYBOARDS PASSED 7-GATE VALIDATION" if all_ok else "❌ VALIDATION FAILED"
+        print(f"\n{summary} ({sum(1 for r in reports if r['ok'])}/{len(reports)} passed)")
+    return 0 if all_ok else 1
+
+
+def cmd_promote(args: argparse.Namespace) -> int:
+    draft = Path(args.draft).resolve()
+    try:
+        res = promote_draft_to_queue(
+            draft_path=draft,
+            target_slug=args.slug,
+            render_video=bool(args.render),
+            tts_provider=args.tts,
+            encoder=args.encoder,
+            rebuild_site=True,
+        )
+    except (ValueError, FileExistsError, RuntimeError) as exc:
+        print(f"❌ Promotion blocked:\n{exc}", file=sys.stderr)
+        return 1
+    print(f"🚀 Promoted to active YouTube Autopilot queue: {res['promoted_storyboard']}")
+    print(f"   • Output pack: {res['output_dir']}")
+    if res["video"]:
+        print(f"   • Rendered MP4: {res['video']}")
+    return 0
 
 
 def cmd_thumbnail(args: argparse.Namespace) -> int:
@@ -169,12 +258,37 @@ def main() -> int:
     p_batch.add_argument("--encoder", default="auto", choices=["auto", "libx264", "h264_nvenc"], help="Video encoder: auto picks h264_nvenc on a working NVIDIA RTX GPU, else libx264")
     p_batch.set_defaults(func=cmd_batch)
 
-    p_script = sub.add_parser("script", help="Generate a storyboard JSON from a topic (or export a $0 LLM prompt)")
-    p_script.add_argument("--topic", required=True, help="Video topic or hook idea")
-    p_script.add_argument("--format", default="short", choices=["short", "long"], help="Video format (9:16 short or 16:9 long)")
-    p_script.add_argument("--affiliate", default="Audible Free Audiobook Trial + Notion Wealth System", help="Affiliate offer")
-    p_script.add_argument("--out", required=True, help="Output storyboard .json path")
+    p_script = sub.add_parser("script", help="Generate a quarantined Evidence-Short draft in content/drafts/ (or export LLM prompt)")
+    p_script.add_argument("--topic", required=True, help="Video topic or case hook idea")
+    p_script.add_argument("--format", default="short", choices=["short", "long"], help="Video format (default: short)")
+    p_script.add_argument("--affiliate", default="Free 5-Hour Asset Builder OS + reading list", help="Affiliate offer")
+    p_script.add_argument("--evidence-dir", default=None, help="Optional directory containing primary PNG screenshots")
+    p_script.add_argument("--source", action="append", default=None, help="Repeatable 'Label|https://...' primary source entry")
+    p_script.add_argument("--allow-active", action="store_true", help="Write directly to target path instead of quarantining in content/drafts/")
+    p_script.add_argument("--out", required=True, help="Output draft .json path (auto-quarantined in content/drafts/)")
     p_script.set_defaults(func=cmd_script)
+
+    p_draft = sub.add_parser("draft-case", help="Scaffold a quarantined 5-scene News-Short draft + prompt in content/drafts/")
+    p_draft.add_argument("--slug", required=True, help="Draft slug (e.g. ftc_venmo_freeze or short_11_ftc_venmo)")
+    p_draft.add_argument("--topic", required=True, help="Real lawsuit / federal enforcement topic")
+    p_draft.add_argument("--evidence-dir", default=None, help="Folder of primary screenshots (defaults to assets/evidence/<slug>)")
+    p_draft.add_argument("--source", action="append", default=None, help="Repeatable 'Label|https://...' primary source entry")
+    p_draft.add_argument("--out", default=None, help="Optional output path inside content/drafts/")
+    p_draft.set_defaults(func=cmd_draft_case)
+
+    p_val = sub.add_parser("validate", help="Run the 7-Gate Brand, Exhibit, Citation & Deduplication Validator on storyboards")
+    p_val.add_argument("target", nargs="?", default=str(CONTENT_DIR), help="Storyboard .json file or folder (default: content/)")
+    p_val.add_argument("--include-drafts", action="store_true", help="Also validate quarantined files in content/drafts/")
+    p_val.add_argument("--json", action="store_true", help="Output structured JSON validation report")
+    p_val.set_defaults(func=cmd_validate)
+
+    p_prom = sub.add_parser("promote", help="Validate a draft in content/drafts/ and atomically promote it to content/short_NN_*.json")
+    p_prom.add_argument("draft", help="Path to draft .json in content/drafts/")
+    p_prom.add_argument("--slug", default=None, help="Optional explicit target slug (auto-assigns next short_NN_ if omitted)")
+    p_prom.add_argument("--render", action="store_true", help="Immediately render neural-voiced MP4 upon promotion")
+    p_prom.add_argument("--tts", default="edge", choices=["edge", "auto", "openai", "elevenlabs"], help="TTS provider when --render is used")
+    p_prom.add_argument("--encoder", default="auto", choices=["auto", "libx264", "h264_nvenc"], help="Video encoder when --render is used")
+    p_prom.set_defaults(func=cmd_promote)
 
     p_thumb = sub.add_parser("thumbnail", help="Generate a 1280x720 high-CTR YouTube thumbnail")
     p_thumb.add_argument("--hook", required=True, help="3-5 word giant hook text")
