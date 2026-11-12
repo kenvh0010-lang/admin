@@ -39,6 +39,18 @@
         "https://virconlegal.com/bartz-v-anthropic-1-5-billion-copyright-settlement-turkish-law/",
         "https://aitraining.jobs/research/ai-training-data-lawsuits"
       ]
+    },
+    "short_03_citibank_900m_wire_blunder": {
+      "video_id": "tkQ_qEfx1P8",
+      "url": "https://youtu.be/tkQ_qEfx1P8",
+      "title": "Two Unchecked Boxes Made Citibank Wire $900 Million by Mistake",
+      "privacy_status": "public",
+      "published_at": "2026-11-12T14:12:05.224660+00:00",
+      "source_urls": [
+        "https://www.nysd.uscourts.gov/sites/default/files/2021-02/20cv6539%20Citibank%20Opinion.pdf",
+        "https://law.justia.com/cases/federal/appellate-courts/ca2/21-487/21-487-2022-09-08.html",
+        "https://legal.thomsonreuters.com/blog/erroneous-payment-clauses/"
+      ]
     }
   }
 }
