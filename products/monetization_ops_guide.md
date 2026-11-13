@@ -1,7 +1,7 @@
 # Cẩm Nang Vận Hành Kiếm Tiền Từ Video #1 (Day-1 Monetization Ops Manual)
-### Kênh YouTube Faceless Tiếng Anh: **Mind & Margin (`@MindAndMargin`)**
+### Kênh YouTube Faceless Tiếng Anh: **Mind & Margin (`@MindMargin-t4k`)**
 
-> **Mục tiêu cốt lõi:** Giúp kênh `@MindAndMargin` tạo dòng tiền USD ngay từ **Video #1 (khi còn 0 subscriber và chưa bật kiếm tiền YouTube Partner Program)** thông qua hệ sinh thái 3 tầng: **Free Lead Magnet (Thu Phễu Email) → High-Commission Affiliate Stack (Hoa Hồng Đối Tác) → Sản Phẩm Số $19 (Biên Lợi Nhuận ~90%+)**.
+> **Mục tiêu cốt lõi:** Giúp kênh `@MindMargin-t4k` tạo dòng tiền USD ngay từ **Video #1 (khi còn 0 subscriber và chưa bật kiếm tiền YouTube Partner Program)** thông qua hệ sinh thái 3 tầng: **Free Lead Magnet (Thu Phễu Email) → High-Commission Affiliate Stack (Hoa Hồng Đối Tác) → Sản Phẩm Số $19 (Biên Lợi Nhuận ~90%+)**.
 
 ---
 
@@ -54,10 +54,10 @@ Hầu hết các mạng lưới Affiliate quốc tế (Amazon Associates Mỹ, P
 
 1. **Tạo đường link Website chính thức trước khi nộp đơn:**
    - Upload thư mục `products/` lên **GitHub Pages** hoặc **Cloudflare Pages** (hướng dẫn ở Phần 3 bên dưới) để có URL thật (ví dụ: `https://mindandmargin.pages.dev/bio_funnel_page/`).
-   - Kết hợp thêm URL kênh YouTube `https://www.youtube.com/@MindAndMargin` (nên có sẵn tối thiểu Video #1 trước khi bấm Submit).
+   - Kết hợp thêm URL kênh YouTube `https://www.youtube.com/@MindMargin-t4k` (nên có sẵn tối thiểu Video #1 trước khi bấm Submit).
 2. **Đăng ký tại:** `https://affiliate-program.amazon.com/` (chọn thị trường Hoa Kỳ `.com` vì tệp xem kênh tiếng Anh lớn nhất ở Mỹ).
 3. **Khai thông tin Website & Profile:**
-   - Điền cả URL kênh YouTube `@MindAndMargin` và URL trang Bio Funnel.
+   - Điền cả URL kênh YouTube `@MindMargin-t4k` và URL trang Bio Funnel.
    - Phần mô tả: *"Educational YouTube channel and digital resource hub covering wealth psychology, behavioral economics books, mental models, and personal productivity systems."*
 4. **Điền biểu mẫu thuế W-8BEN (Rất quan trọng để không bị giữ 30% thuế oan):**
    - Vào **Account Settings → Change your Tax Information**.
@@ -76,7 +76,7 @@ Hầu hết các mạng lưới Affiliate quốc tế (Amazon Associates Mỹ, P
 ### 2. Đăng ký **Notion Affiliate Program** (Hoa hồng tới 50% Recurring)
 1. Truy cập chương trình đối tác Notion tại `https://www.notion.so/affiliates` (vận hành qua nền tảng **PartnerStack**).
 2. Khi điền đơn xét duyệt, hãy dẫn link trang **Bio Funnel** + trang demo **The 5-Hour Asset Builder OS** của bạn và mô tả ngắn gọn:
-   > *"I run Mind & Margin (@MindAndMargin), an English YouTube channel & productivity publication teaching mental models, deep work workflows, and second-brain research systems for knowledge workers."*
+   > *"I run Mind & Margin (@MindMargin-t4k), an English YouTube channel & productivity publication teaching mental models, deep work workflows, and second-brain research systems for knowledge workers."*
 3. Sau khi được duyệt trên **PartnerStack**:
    - Bạn nhận được link dạng `https://affiliate.notion.so/tên-của-bạn`.
    - **Cơ chế hoa hồng:** Nhận **50% doanh thu trong 12 tháng đầu** cho mọi khách hàng nâng cấp lên gói **Notion Plus, Business hoặc Notion AI Add-on** (không giới hạn trần thu nhập).
@@ -164,7 +164,7 @@ They suffer from **The Collector's Fallacy** and **Fragmented Execution**:
 
 **Willpower fatigues by 3:00 PM. Architecture compounds while you sleep.**
 
-We built **The 5-Hour Asset Builder OS** at **Mind & Margin (`@MindAndMargin`)** as a fast, distraction-free, **100% offline-capable personal operating system**—engineered to help busy professionals build permanent digital and financial margin in **5 focused hours a week**.
+We built **The 5-Hour Asset Builder OS** at **Mind & Margin (`@MindMargin-t4k`)** as a fast, distraction-free, **100% offline-capable personal operating system**—engineered to help busy professionals build permanent digital and financial margin in **5 focused hours a week**.
 
 ---
 
@@ -260,7 +260,7 @@ In 48 hours, I'll send you a short note on **why 94% of smart readers still stay
 
 Stay asymmetric,
 
-**Mind & Margin (`@MindAndMargin`)**  
+**Mind & Margin (`@MindMargin-t4k`)**  
 *Wealth Psychology • Mental Models • AI Leverage*  
 *P.S. Disclosure: Some links above are partner links that support the channel at zero cost to you.*
 
@@ -298,7 +298,7 @@ Until then: **7-Day Bookmark Freeze.** Ship one real artifact from what you alre
 
 Stay asymmetric,
 
-**Mind & Margin (`@MindAndMargin`)**
+**Mind & Margin (`@MindMargin-t4k`)**
 
 ---
 
@@ -337,7 +337,7 @@ If arresting **one single impulse purchase** or shipping **one extra compounding
 
 Here's to laying Brick #01 this week,
 
-**Mind & Margin (`@MindAndMargin`)**
+**Mind & Margin (`@MindMargin-t4k`)**
 
 ---
 

@@ -1,7 +1,7 @@
 # The Asymmetric Playbook
 ### 10 Mental Models to Reclaim Your Time & Compound Digital Margin
 
-**Published by Mind & Margin (`@MindAndMargin`)**  
+**Published by Mind & Margin (`@MindMargin-t4k`)**  
 *Wealth Psychology • Mental Models • AI Leverage*  
 *Edition 1.0 — Tactical Field Guide*
 
@@ -316,5 +316,5 @@ If you want to turn the exact models in this playbook into a daily browser-based
 
 ---
 
-*© Mind & Margin (`@MindAndMargin`). Built for thinkers who value quiet compounding over loud status.*  
+*© Mind & Margin (`@MindMargin-t4k`). Built for thinkers who value quiet compounding over loud status.*  
 *For Educational & Informational Purposes Only — Not Individualized Financial or Legal Advice.*

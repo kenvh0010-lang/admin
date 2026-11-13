@@ -35,7 +35,7 @@ Hệ thống đám mây **GitHub Actions** tại `.github/workflows/video_factor
    `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl`
    *(Quyền `youtube.force-ssl` giúp hệ thống tự động tải lên cả phụ đề tiếng Anh `.srt` và đăng sẵn bình luận tiếp thị Bio/Amazon dưới video cho bạn!)*
 4. Bấm nút xanh **Authorize APIs**:
-   - Chọn tài khoản Google → chọn đúng kênh phụ/kênh thương hiệu **Mind & Margin** (`@MindAndMargin`).
+   - Chọn tài khoản Google → chọn đúng kênh phụ/kênh thương hiệu **Mind & Margin** (`@MindMargin-t4k`).
    - Nếu hiện cảnh báo *"Google hasn't verified this app"*, bấm **Advanced (Nâng cao)** → **Go to MindAndMargin Autopilot (unsafe)** → **Continue**.
 5. Tự động chuyển sang **Step 2** → bấm nút **Exchange authorization code for tokens** → Copy dòng **`Refresh token`** (bắt đầu bằng `1//0...`).
 

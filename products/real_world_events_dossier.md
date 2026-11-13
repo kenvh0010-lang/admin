@@ -1,6 +1,6 @@
 # 📚 Hồ Sơ Sự Kiện Thực Tế Có Dẫn Chứng Lưu Trữ Gốc (Real-World Documented Events Dossier)
 
-> **Kênh**: **Mind & Margin (`@MindAndMargin`)**  
+> **Kênh**: **Mind & Margin (`@MindMargin-t4k`)**  
 > **Mục đích**: Ngân hàng tra cứu chuẩn xác 100% các sự kiện lịch sử, thảm họa tài chính doanh nghiệp, sai số kỹ thuật hàng không vũ trụ, thử nghiệm y khoa và điển tình tích sản đời thực — **mọi con số đều đi kèm hồ sơ lưu trữ gốc** (`U.S. SEC`, `U.S. Senate PSI`, `Federal Reserve`, `SDNY / 2d Cir.`, `Bank of England`, `NTSB`, `NASA`, `ESA`, `Royal Society`, `NEJM`).  
 > **Ứng dụng trực tiếp**: Ngân hàng tư liệu nền tảng phục vụ tra cứu chéo và mở rộng kịch bản hồ sơ gốc cho kênh **Mind & Margin** (hiện đang vận hành các hồ sơ liên bang trực tiếp tại `content/short_00..short_10`).
 

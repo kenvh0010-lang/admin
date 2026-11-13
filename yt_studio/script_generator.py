@@ -17,7 +17,7 @@ from .site_builder import SITE_BASE_URL
 DRAFTS_DIR = CONTENT_DIR / "drafts"
 BIO_URL = f"{SITE_BASE_URL}/bio/"
 
-EVIDENCE_SYSTEM_PROMPT = f"""You are the executive documentary producer for 'Mind & Margin' (@MindAndMargin), an English investigative finance & regulatory YouTube Shorts channel.
+EVIDENCE_SYSTEM_PROMPT = f"""You are the executive documentary producer for 'Mind & Margin' (@MindMargin-t4k), an English investigative finance & regulatory YouTube Shorts channel.
 
 STRICT EDITORIAL & BRAND RULES (mind-margin-brand):
 1. Format purity: Output ONLY a 5-scene vertical News-Short ("format": "short", "voice": "en_authoritative").
