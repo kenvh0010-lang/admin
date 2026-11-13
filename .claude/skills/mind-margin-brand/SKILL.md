@@ -1,6 +1,6 @@
 ---
 name: mind-margin-brand
-description: Mind & Margin (@MindAndMargin) channel brand - colors, fonts, frame layout, voice and editorial rules for evidence-based Shorts, thumbnails, the docs/ site and bio page. Use whenever creating or editing a storyboard in content/, a thumbnail, a visual in yt_studio/visual_composer.py, site styling in yt_studio/site_builder.py, or any channel-facing copy.
+description: Mind & Margin (@MindMargin-t4k) channel brand - colors, fonts, frame layout, voice and editorial rules for evidence-based Shorts, thumbnails, the docs/ site and bio page. Use whenever creating or editing a storyboard in content/, a thumbnail, a visual in yt_studio/visual_composer.py, site styling in yt_studio/site_builder.py, or any channel-facing copy.
 ---
 
 # Mind & Margin Brand
@@ -47,7 +47,7 @@ Rules:
 ## Short frame layout (1080x1920)
 
 Top to bottom:
-1. Tag pill with chapter tag, plus `@MindAndMargin  •  NN/NN` on the right.
+1. Tag pill with chapter tag, plus `@MindMargin-t4k  •  NN/NN` on the right.
 2. Headline, at most 3 lines, white.
 3. Evidence card on Slate Card with a gold frame around the cropped exhibit.
 4. `Source: ...` line in Muted Slate under the card.

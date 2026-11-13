@@ -35,6 +35,24 @@ BANNED_AI_PHRASES: Tuple[str, ...] = (
     "secretly",
     "ruthlessly",
     "studies show",
+    "testament",
+    "underscore",
+    "underscores",
+    "pivotal",
+    "beacon",
+    "symphony",
+    "realm",
+    "multifaceted",
+    "intricate",
+    "meticulous",
+    "meticulously",
+    "seamless",
+    "seamlessly",
+    "groundbreaking",
+    "unleash",
+    "supercharge",
+    "in conclusion",
+    "dive into",
 )
 PLACEHOLDER_DOMAINS: Tuple[str, ...] = (
     "example.com",
@@ -161,6 +179,10 @@ def validate_storyboard(
                         elif (x2 - x1) < 180 or (y2 - y1) < 70:
                             errors.append(
                                 f"[Gate 2: Scene {idx + 1}] Crop {[x1, y1, x2, y2]} too tiny ({x2 - x1}x{y2 - y1}px) to read cleanly"
+                            )
+                        elif (y2 - y1) > (x2 - x1) * 1.25:
+                            warnings.append(
+                                f"[Gate 2: Scene {idx + 1}] Crop {[x1, y1, x2, y2]} is tall ({x2 - x1}x{y2 - y1}px); verify text remains crisp when scaled to card height"
                             )
                         cand_crops.add((Path(ev_rel).as_posix(), (x1, y1, x2, y2)))
         elif vtype == "comparison_split":

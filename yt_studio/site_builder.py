@@ -67,14 +67,11 @@ def _render_markdown_inline(text: str) -> str:
     return escaped
 
 
-def _build_dossier_page(docs: Path) -> bool:
-    dossier_md = PROJECT_ROOT / "products" / "real_world_events_dossier.md"
-    if not dossier_md.is_file():
-        return False
-
+def _markdown_to_html_parts(md_path: Path) -> list[str]:
+    """Convert simple Markdown headings, bullets, blockquotes, and paragraphs to HTML."""
     body_parts = []
     in_list = False
-    for raw_line in dossier_md.read_text(encoding="utf-8").splitlines():
+    for raw_line in md_path.read_text(encoding="utf-8").splitlines():
         line = raw_line.strip()
         if not line or line == "---":
             if in_list:
@@ -113,14 +110,27 @@ def _build_dossier_page(docs: Path) -> bool:
             body_parts.append(f"<p>{_render_markdown_inline(line)}</p>")
     if in_list:
         body_parts.append("</ul>")
+    return body_parts
 
-    dossier_html = f"""<!DOCTYPE html>
+
+def _render_editorial_md_page(
+    docs: Path,
+    src_md: Path,
+    out_name: str,
+    title: str,
+    meta_desc: str,
+    badge: str,
+) -> bool:
+    if not src_md.is_file():
+        return False
+    body_parts = _markdown_to_html_parts(src_md)
+    page_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Primary archival dossier of 48 documented legal, regulatory, financial, and AI copyright case studies for Mind & Margin." />
-  <title>Primary Source Dossier (48 Documented Events) — Mind &amp; Margin</title>
+  <meta name="description" content="{html.escape(meta_desc)}" />
+  <title>{html.escape(title)} — Mind &amp; Margin</title>
   <style>{CSS}</style>
 </head>
 <body>
@@ -131,6 +141,7 @@ def _build_dossier_page(docs: Path) -> bool:
       <nav class="nav-links">
         <a href="index.html">Evidence Breakdowns</a>
         <a href="dossier.html">48-Event Source Dossier</a>
+        <a href="playbook.html">Playbook</a>
         <a href="bio/index.html">Resources Hub</a>
         <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
@@ -139,7 +150,7 @@ def _build_dossier_page(docs: Path) -> bool:
   </header>
   <main class="wrap">
     <article>
-      <span class="badge">Editorial Research Vault • Primary Filings &amp; Regulators</span>
+      <span class="badge">{html.escape(badge)}</span>
       {"".join(body_parts)}
     </article>
   </main>
@@ -151,8 +162,43 @@ def _build_dossier_page(docs: Path) -> bool:
   </footer>
 </body>
 </html>"""
-    (docs / "dossier.html").write_text(dossier_html, encoding="utf-8")
+    (docs / out_name).write_text(page_html, encoding="utf-8")
     return True
+
+
+def _build_dossier_page(docs: Path) -> bool:
+    return _render_editorial_md_page(
+        docs=docs,
+        src_md=PROJECT_ROOT / "products" / "real_world_events_dossier.md",
+        out_name="dossier.html",
+        title="Primary Source Dossier (48 Documented Events)",
+        meta_desc="Primary archival dossier of 48 documented legal, regulatory, financial, and AI copyright case studies for Mind & Margin.",
+        badge="Editorial Research Vault • Primary Filings & Regulators",
+    )
+
+
+def _build_playbook_page(docs: Path) -> bool:
+    return _render_editorial_md_page(
+        docs=docs,
+        src_md=PROJECT_ROOT / "products" / "free_lead_magnet" / "Wealth_and_Leverage_Playbook.md",
+        out_name="playbook.html",
+        title="The Asymmetric Playbook — Field Guide",
+        meta_desc="Mind & Margin field guide covering asymmetric margin systems, focus architecture, and compounding mental models.",
+        badge="Free Field Guide • Mind & Margin Edition",
+    )
+
+
+def _amazon_topic_url(tags_and_title: str, effective_tag: str) -> str:
+    """Route article book CTAs to topic-matched Amazon Books queries with the Associate tag."""
+    low = tags_and_title.lower()
+    tag_q = f"&tag={effective_tag}" if effective_tag else ""
+    if any(k in low for k in ("sec", "citibank", "knight", "wire", "bank", "trading")):
+        return f"https://www.amazon.com/s?k=financial+market+disasters+risk+management+books&i=stripbooks{tag_q}"
+    if any(k in low for k in ("ftc", "cfpb", "cancel", "refund", "cash app", "bnpl", "uber", "adobe")):
+        return f"https://www.amazon.com/s?k=behavioral+economics+consumer+protection+books&i=stripbooks{tag_q}"
+    if any(k in low for k in ("ai", "copyright", "suno", "anthropic", "siri", "apple")):
+        return f"https://www.amazon.com/s?k=artificial+intelligence+law+business+books&i=stripbooks{tag_q}"
+    return f"https://www.amazon.com/b?node=283155{tag_q}"
 
 
 def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
@@ -209,6 +255,7 @@ def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
             seo_md.write_text(mtxt, encoding="utf-8")
 
     has_dossier = _build_dossier_page(docs)
+    has_playbook = _build_playbook_page(docs)
 
     storyboards = discover_storyboards(CONTENT_DIR)
     cards_html = []
@@ -222,6 +269,8 @@ def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
     ]
     if has_dossier:
         sitemap_urls.append(f"{SITE_BASE_URL}/dossier.html")
+    if has_playbook:
+        sitemap_urls.append(f"{SITE_BASE_URL}/playbook.html")
 
     for idx, sb in enumerate(storyboards, start=1):
         d = json.loads(sb.read_text(encoding="utf-8"))
@@ -276,6 +325,7 @@ def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
             )
 
         aff_name = html.escape(d.get("affiliate_cta", {}).get("offer_name", "Recommended Reading on Amazon & Audible"))
+        topic_amazon_url = _amazon_topic_url(f"{d.get('title', '')} {' '.join(d.get('tags', []))}", effective_tag)
         art_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -309,7 +359,7 @@ def build_public_site(amazon_tag: Optional[str] = DEFAULT_AMAZON_TAG) -> Path:
       <div class="book-box">
         <strong>Recommended Reading &amp; Companion Resource:</strong>
         <p style="margin:8px 0 14px;color:var(--muted);">{aff_name}. Check current edition availability directly on Amazon or explore Audible audiobook options.</p>
-        <a class="btn" href="{amazon_books_url}" rel="nofollow sponsored" target="_blank">Check Availability on Amazon</a>
+        <a class="btn" href="{html.escape(topic_amazon_url)}" rel="nofollow sponsored" target="_blank">Explore Related Books on Amazon</a>
         <a class="btn" style="margin-left:10px;background:var(--cyan);" href="{audible_url}" rel="nofollow sponsored" target="_blank">Listen Free on Audible</a>
       </div>
       <p style="font-size:0.85rem;color:var(--muted);">Topics: {tags_str}</p>

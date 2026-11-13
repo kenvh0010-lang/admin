@@ -37,7 +37,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: mind-and-margin-video-factory-${{ github.event_name }}
+  group: mind-and-margin-video-factory-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
   cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
@@ -54,14 +54,20 @@ jobs:
           python-version: '3.12'
 
       - name: Install FFmpeg & Free Microsoft Neural TTS (edge-tts)
+        timeout-minutes: 8
         run: |
           if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
-            if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v zip >/dev/null 2>&1 || ! python3 -c "from yt_studio.config import resolve_font_path; resolve_font_path(True); resolve_font_path(False)" >/dev/null 2>&1; then
-              sudo sed -i 's|azure\.archive\.ubuntu\.com|archive.ubuntu.com|g' /etc/apt/apt-mirrors.txt /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null || true
-              timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=30 -o Acquire::Retries=2 -o Acquire::http::Timeout="15" -o Acquire::https::Timeout="15" update -y
-              timeout 120s sudo DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=30 install -y --no-install-recommends ffmpeg zip
+            if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v ffprobe >/dev/null 2>&1; then
+              tmp="$(mktemp -d)"
+              url="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz"
+              curl -fsSL --retry 3 --retry-delay 2 -o "$tmp/ffmpeg.tar.xz" "$url" || \
+                curl -fsSL --retry 3 --retry-delay 2 -o "$tmp/ffmpeg.tar.xz" "https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz"
+              tar -xJf "$tmp/ffmpeg.tar.xz" -C "$tmp"
+              bin_dir="$(dirname "$(find "$tmp" -type f -name ffmpeg | head -1)")"
+              sudo install -m 0755 "$bin_dir/ffmpeg" "$bin_dir/ffprobe" /usr/local/bin/
+              rm -rf "$tmp"
             else
-              echo "FFmpeg, zip, and bundled RobotoCondensed fonts ready — skipping apt-get."
+              echo "FFmpeg and ffprobe already pre-installed on runner — skipping download."
             fi
           fi
           pip install --upgrade pip
@@ -90,9 +96,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: output
-          key: video-vault-v23-${{ hashFiles('yt_studio/**', 'content/**/*.json', 'assets/evidence/**') }}
+          key: video-vault-v24-${{ hashFiles('yt_studio/**', 'content/**/*.json', 'assets/evidence/**') }}
           restore-keys: |
-            video-vault-v23-
+            video-vault-v24-
 
       - name: Parallel Batch Render Evidence-Based Videos & Bundle Deduplicated Vault Zip
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}

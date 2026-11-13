@@ -10,7 +10,7 @@ CONTENT_DIR = PROJECT_ROOT / "content"
 ASSETS_DIR = PROJECT_ROOT / "assets"
 OUTPUT_DIR = PROJECT_ROOT / "output"
 
-RENDERER_VERSION = "2.3"
+RENDERER_VERSION = "2.4"
 
 
 def natural_sort_key(path_or_str: Any) -> List[Any]:
@@ -42,8 +42,8 @@ def discover_storyboards(root: Path = CONTENT_DIR) -> List[Path]:
 @dataclass(frozen=True)
 class BrandTheme:
     channel_name: str = "Mind & Margin"
-    channel_handle: str = "@MindAndMargin"
-    tagline: str = "Wealth Psychology • Mental Models • AI Leverage"
+    channel_handle: str = "@MindMargin-t4k"
+    tagline: str = "Federal Filings • Financial Forensics • Regulatory Breakdowns"
     bg_primary: Tuple[int, int, int] = (11, 16, 32)       # Deep Obsidian Navy (#0B1020)
     bg_card: Tuple[int, int, int] = (19, 28, 52)          # Elevated Slate Card (#131C34)
     accent_gold: Tuple[int, int, int] = (245, 185, 66)    # Compounding Gold (#F5B942)

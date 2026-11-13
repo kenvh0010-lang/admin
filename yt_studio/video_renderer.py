@@ -231,7 +231,7 @@ def render_project(
                 "-i", str(combined_voice_wav),
                 "-i", str(ambient_wav),
                 "-filter_complex",
-                "[0:a]volume=1.0[v];[1:a]volume=0.22[bg];[v][bg]amix=inputs=2:duration=first:dropout_transition=2[aout]",
+                "[0:a]volume=1.0[v];[1:a]volume=0.14[bg];[v][bg]amix=inputs=2:duration=first:dropout_transition=2:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[aout]",
                 "-map", "[aout]",
                 "-c:a", "aac", "-b:a", "192k",
                 str(mixed_audio_m4a),
@@ -290,7 +290,7 @@ def render_project(
         thumb_meta = data.get("thumbnail", {})
         output_thumb = render_thumbnail(
             hook_text=thumb_meta.get("hook_text", data.get("title", "THE LEVERAGE SHIFT")[:24]),
-            sub_badge=thumb_meta.get("badge", "WEALTH PSYCHOLOGY"),
+            sub_badge=thumb_meta.get("badge", "FEDERAL FILING"),
             stat_highlight=thumb_meta.get("stat", "10X"),
             output_png=proj_out / f"{project_slug}_thumbnail.png",
         )
@@ -388,7 +388,7 @@ def _write_seo_upload_pack(
         chapters.append(f"{_format_chapter_ts(acc)} - {sc.get('headline', sc.get('tag', 'Part'))}")
         acc += dur
 
-    tags_csv = ", ".join(data.get("tags", ["wealth psychology", "mental models", "ai productivity", "personal finance"]))
+    tags_csv = ", ".join(data.get("tags", ["federal lawsuit", "sec enforcement", "ftc refund", "consumer protection"]))
     aff = data.get("affiliate_cta", {})
     aff_block = (
         f"🔗 **{aff.get('offer_name', 'Free Leverage System Notion Template')}**: {aff.get('url_placeholder', 'https://yourlink.com/resource')}"
@@ -423,7 +423,7 @@ def _write_seo_upload_pack(
 {chr(10).join(chapters)}
 
 📚 About {DEFAULT_THEME.channel_name}:
-We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
+We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.
 
 ⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```

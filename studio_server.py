@@ -165,8 +165,8 @@ def _build_fallback_seo_description(data: Dict[str, Any], scenes: List[Dict[str,
         f"{aff_line}\n"
         f"⏱️ Timestamps:\n{chapters_block}\n\n"
         f"📚 About {DEFAULT_THEME.channel_name}:\n"
-        f"We break down wealth psychology, timeless book frameworks, and modern AI leverage "
-        f"in visual essays designed for asymmetric thinkers.\n\n"
+        f"We break down federal lawsuits, SEC and FTC enforcement orders, and costly "
+        f"corporate blunders using primary court filings.\n\n"
         f"⚠️ Disclaimer: Educational content & case studies only — not personalized financial "
         f"or legal advice. As an Amazon Associate I earn from qualifying purchases."
     ).strip()

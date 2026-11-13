@@ -1,11 +1,11 @@
-# CLAUDE.md — Mind & Margin (`@MindAndMargin`) Automated YouTube Studio SOP
+# CLAUDE.md — Mind & Margin (`@MindMargin-t4k`) Automated YouTube Studio SOP
 
 This file defines the unified engineering, editorial, and QA workflow for **Claude Code** and **Antigravity** working together on the **Mind & Margin** high-RPM faceless YouTube ecosystem.
 
 ---
 
 ## 1. Project Overview & Live Architecture (Evidence-Based Shorts Pivot — Nov 2026)
-- **Channel**: `Mind & Margin` (`@MindAndMargin`) — Documentary-style English Shorts (`1080x1920`) breaking down real lawsuits, federal regulatory actions, corporate blunders, and AI copyright collisions with **real primary screenshots & court exhibits** (`$15–$48` CPM).
+- **Channel**: `Mind & Margin` (`@MindMargin-t4k`) — Documentary-style English Shorts (`1080x1920`) breaking down real lawsuits, federal regulatory actions, corporate blunders, and AI copyright collisions with **real primary screenshots & court exhibits** (`$15–$48` CPM).
 - **Content Vault (`content/`)**: Active evidence-based news & case-study Shorts (`short_00_suno_ai_lawsuit.json`, `short_01_ftc_cleo_ai_refunds.json`, `short_02_anthropic_1_5b_book_settlement.json`, `short_03_citibank_900m_wire_blunder.json`, `short_04_knight_capital_440m_sec_order.json`, ...) backed by primary screenshots in `assets/evidence/<topic>/*.png` and the **48-Event Primary Research Dossier** in `products/real_world_events_dossier.md`.
   - *Note*: The legacy 112 generic-card library and fixed CSV calendars were retired in commit `bbf6416` (`08/11/2026`). Do **not** restore generic stat-only scripts without real primary exhibits.
 - **Official Amazon Associates Tag**: **`mindandmarg06-20`** (`DEFAULT_AMAZON_TAG` in `yt_studio/site_builder.py`).

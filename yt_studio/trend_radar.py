@@ -483,7 +483,7 @@ def build_trend_intelligence_report(live_query: Optional[str] = None) -> Dict[st
 
     total_mapped = sum(len(c["mapped_scripts"]) for c in TREND_CLUSTERS_2026)
     return {
-        "channel": "Mind & Margin (@MindAndMargin)",
+        "channel": "Mind & Margin (@MindMargin-t4k)",
         "updated_for": "2026–2027 High-RPM Faceless YouTube (Weeks 1–28: 196 Days / 112 Scripts)",
         "cluster_count": len(TREND_CLUSTERS_2026),
         "total_mapped_scripts": total_mapped,
@@ -500,7 +500,7 @@ def export_trend_report_markdown(output_md: Path) -> Path:
     lines = [
         "# 🔥 Báo Cáo Xu Hướng YouTube RPM Cao 2026–2027 & Ngân Hàng 112 Kịch Bản (Tuần 1–28 / 196 Ngày)",
         "",
-        "> **Kênh**: Mind & Margin (`@MindAndMargin`) — Hệ thống nghiên cứu 8 cụm xu hướng ngách CPM `$15–$48` kết hợp kiếm tiền Ngày 1 qua Amazon Associates (`mindandmarg06-20`), SaaS Affiliate & Sản phẩm số `\\$19`.",
+        "> **Kênh**: Mind & Margin (`@MindMargin-t4k`) — Hệ thống nghiên cứu 8 cụm xu hướng ngách CPM `$15–$48` kết hợp kiếm tiền Ngày 1 qua Amazon Associates (`mindandmarg06-20`), SaaS Affiliate & Sản phẩm số `\\$19`.",
         "",
         f"## 1. {report['cluster_count']} Cụm Xu Hướng (Trend Clusters) Trọng Điểm Tuần 1–28 ({report['total_mapped_scripts']} Kịch Bản)",
         "",

@@ -1,7 +1,7 @@
 # YouTube Upload Pack — Why Anthropic Is Paying Book Authors $1.5 Billion This Month
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `46.1s`
+- **Estimated Runtime**: `43.1s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -26,11 +26,11 @@ In Bartz v. Anthropic, a federal court approved a $1.5 billion class settlement 
 00:00 - Authors Start Getting $1.5 Billion
 00:07 - Training Passed. Piracy Failed.
 00:17 - 482,460 Registered Books Covered
-00:29 - Largest AI Copyright Deal So Far
-00:37 - How You Source Data Matters
+00:26 - Largest AI Copyright Deal So Far
+00:35 - How You Source Data Matters
 
 📚 About Mind & Margin:
-We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
+We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.
 
 ⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```

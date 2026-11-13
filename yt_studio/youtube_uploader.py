@@ -83,12 +83,24 @@ def get_access_token(client_id: str, client_secret: str, refresh_token: str) -> 
         raise RuntimeError(diag) from None
 
 
+def _api_get_json(url: str, access_token: str) -> Dict[str, Any]:
+    req = urllib.request.Request(
+        url,
+        headers={"Authorization": f"Bearer {access_token}"},
+        method="GET",
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
 def verify_youtube_channel(
     client_id: Optional[str] = None,
     client_secret: Optional[str] = None,
     refresh_token: Optional[str] = None,
 ) -> Optional[Dict[str, Any]]:
-    """Verify OAuth2 credentials and return connected YouTube channel metadata."""
+    """Verify OAuth2 credentials, audit internal channel/video/analytics stats, and sync empty channel bio."""
+    import urllib.error
+
     cid = _normalize_oauth_secret(client_id or os.environ.get("YOUTUBE_CLIENT_ID", ""), "client_id")
     csec = _normalize_oauth_secret(client_secret or os.environ.get("YOUTUBE_CLIENT_SECRET", ""), "client_secret")
     rtok = _normalize_oauth_secret(refresh_token or os.environ.get("YOUTUBE_REFRESH_TOKEN", ""), "refresh_token")
@@ -98,30 +110,132 @@ def verify_youtube_channel(
         return None
 
     token = get_access_token(cid, csec, rtok)
-    req = urllib.request.Request(
-        "https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&mine=true",
-        headers={"Authorization": f"Bearer {token}"},
-        method="GET",
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
 
+    scopes = "unknown"
+    try:
+        ti_url = f"https://oauth2.googleapis.com/tokeninfo?access_token={urllib.parse.quote(token)}"
+        with urllib.request.urlopen(urllib.request.Request(ti_url, method="GET"), timeout=15) as resp:
+            ti = json.loads(resp.read().decode("utf-8"))
+        scopes = str(ti.get("scope", "none"))
+    except Exception as exc:
+        scopes = f"tokeninfo-unavailable ({type(exc).__name__})"
+    print(f"🔑 OAuth Scopes: {scopes}")
+
+    data = _api_get_json(
+        "https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics,status,brandingSettings&mine=true",
+        token,
+    )
     items = data.get("items", [])
     if not items:
         raise RuntimeError("OAuth succeeded, but no YouTube channel was found on this Google account.")
 
     ch = items[0]
+    stats = ch.get("statistics", {})
+    ch_status = ch.get("status", {})
+    branding_ch = dict((ch.get("brandingSettings") or {}).get("channel") or {})
+    desc = str(branding_ch.get("description") or "").strip()
+
     info = {
         "channel_id": ch["id"],
         "title": ch["snippet"].get("title", ""),
         "custom_url": ch["snippet"].get("customUrl", ""),
-        "subscribers": ch.get("statistics", {}).get("subscriberCount", "0"),
-        "video_count": ch.get("statistics", {}).get("videoCount", "0"),
+        "subscribers": stats.get("subscriberCount", "0"),
+        "total_views": stats.get("viewCount", "0"),
+        "video_count": stats.get("videoCount", "0"),
+        "long_uploads_status": ch_status.get("longUploadsStatus", "unknown"),
+        "is_linked": ch_status.get("isLinked"),
+        "description_len": len(desc),
+        "bio_link_in_channel_desc": "kenvh0010-lang.github.io" in desc,
     }
     print(
         f"✅ Connected to YouTube Channel: {info['title']} ({info['custom_url'] or info['channel_id']}) "
-        f"| Videos: {info['video_count']} | Subscribers: {info['subscribers']}"
+        f"| Videos: {info['video_count']} | Views: {info['total_views']} | Subscribers: {info['subscribers']}"
     )
+    print(
+        f"📋 Channel Status: longUploadsStatus={info['long_uploads_status']} | isLinked={info['is_linked']} "
+        f"| madeForKids={ch_status.get('madeForKids')} | desc_len={info['description_len']} "
+        f"| bio_link_in_desc={info['bio_link_in_channel_desc']}"
+    )
+
+    if not desc:
+        default_desc = (
+            "Documentary Shorts breaking down federal lawsuits, SEC/FTC/CFPB enforcement orders, "
+            "and costly corporate blunders using primary court filings.\n\n"
+            f"Primary Case Dossier & Resources: {SITE_BIO_URL}\n"
+            f"Full Written Exhibits: {SITE_HOME_URL}\n\n"
+            "Educational analysis only — not financial or legal advice. "
+            "As an Amazon Associate I earn from qualifying purchases."
+        )
+        update_payload = json.dumps({
+            "id": ch["id"],
+            "brandingSettings": {
+                "channel": {
+                    "description": default_desc,
+                    "keywords": '"federal lawsuits" "SEC enforcement" "FTC refunds" "CFPB orders" "financial forensics"',
+                    "country": branding_ch.get("country") or "US",
+                }
+            },
+        }).encode("utf-8")
+        try:
+            put_req = urllib.request.Request(
+                "https://www.googleapis.com/youtube/v3/channels?part=brandingSettings",
+                data=update_payload,
+                headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json; charset=UTF-8"},
+                method="PUT",
+            )
+            with urllib.request.urlopen(put_req, timeout=30):
+                print("✏️ Updated empty YouTube channel description & keywords via brandingSettings.")
+        except urllib.error.HTTPError as exc:
+            print(f"ℹ️ Skipped channel description sync (HTTP {exc.code}).")
+        except Exception as exc:
+            print(f"ℹ️ Skipped channel description sync ({type(exc).__name__}).")
+
+    ledger_pub = load_ledger().get("published", {})
+    vid_ids = [str(e.get("video_id", "")).strip() for e in ledger_pub.values() if isinstance(e, dict) and e.get("video_id")]
+    if vid_ids:
+        v_url = (
+            "https://www.googleapis.com/youtube/v3/videos"
+            f"?part=snippet,statistics,status,contentDetails&id={urllib.parse.quote(','.join(vid_ids))}"
+        )
+        try:
+            v_data = _api_get_json(v_url, token)
+            print("🎬 Published Video Internal Status:")
+            for item in v_data.get("items", []):
+                vs = item.get("statistics", {})
+                vst = item.get("status", {})
+                vcd = item.get("contentDetails", {})
+                vsn = item.get("snippet", {})
+                print(
+                    f"  - {item['id']} | {vsn.get('publishedAt', '?')} | {vcd.get('duration', '?')} "
+                    f"| views={vs.get('viewCount', '0')} likes={vs.get('likeCount', '0')} comments={vs.get('commentCount', '0')} "
+                    f"| privacy={vst.get('privacyStatus')} upload={vst.get('uploadStatus')} "
+                    f"madeForKids={vst.get('madeForKids')} synthetic={vst.get('containsSyntheticMedia')} "
+                    f"licensed={vcd.get('licensedContent')}"
+                )
+        except Exception as exc:
+            print(f"ℹ️ Could not fetch videos.list details ({type(exc).__name__}).")
+
+    today_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    ana_url = (
+        "https://youtubeanalytics.googleapis.com/v2/reports"
+        f"?ids=channel%3D%3DMINE&startDate=2026-11-01&endDate={today_utc}"
+        "&metrics=views,engagedViews,likes,comments,shares,subscribersGained,estimatedMinutesWatched,averageViewDuration,averageViewPercentage"
+        "&dimensions=video&sort=-views"
+    )
+    try:
+        ana = _api_get_json(ana_url, token)
+        headers = [h.get("name") for h in ana.get("columnHeaders", [])]
+        print(f"📊 YouTube Analytics ({len(ana.get('rows') or [])} rows): {headers}")
+        for row in ana.get("rows") or []:
+            print(f"  {row}")
+    except urllib.error.HTTPError as exc:
+        if exc.code == 403:
+            print("ℹ️ YouTube Analytics API: token lacks yt-analytics.readonly scope (HTTP 403) — check Studio UI for swipe/retention.")
+        else:
+            print(f"ℹ️ YouTube Analytics API unavailable (HTTP {exc.code}).")
+    except Exception as exc:
+        print(f"ℹ️ YouTube Analytics API unavailable ({type(exc).__name__}).")
+
     return info
 
 
@@ -140,7 +254,7 @@ def build_youtube_description(storyboard: Dict[str, Any], slug: str = "") -> str
     sources_block = f"📰 Sources:\n{src_lines}\n\n" if src_lines else ""
 
     is_short = storyboard.get("format", "short") == "short"
-    short_hashtags = "\n\n#shorts #wealthpsychology #mentalmodels #productivity" if is_short else ""
+    short_hashtags = "\n\n#shorts #lawsuit #financenews #consumerprotection" if is_short else ""
 
     return (
         f"{hook}\n\n"
@@ -176,7 +290,7 @@ def upload_video_resumable(
         "snippet": {
             "title": title,
             "description": build_youtube_description(storyboard, slug=slug),
-            "tags": storyboard.get("tags", ["wealth psychology", "mental models", "self improvement"]),
+            "tags": storyboard.get("tags", ["federal lawsuit", "sec enforcement", "consumer protection"]),
             "categoryId": "27",  # Education (high-CPM advertiser safe)
             "defaultLanguage": "en",
             "defaultAudioLanguage": "en",
@@ -439,11 +553,14 @@ def publish_next_in_queue(privacy_status: str = "public") -> Optional[Dict[str, 
         print(f"⚠️ SRT caption upload skipped (optional youtube.force-ssl scope): {exc}")
 
     if privacy_status == "public":
-        try:
-            post_top_affiliate_comment(access_token, video_id, storyboard)
-            print("   ✓ Posted Day-1 Affiliate CTA comment.")
-        except Exception as exc:
-            print(f"⚠️ Top comment skipped (enable youtube.force-ssl scope if desired): {exc}")
+        if os.environ.get("YT_ENABLE_AUTO_COMMENT", "").strip() == "1":
+            try:
+                post_top_affiliate_comment(access_token, video_id, storyboard)
+                print("   ✓ Posted Day-1 Affiliate CTA comment.")
+            except Exception as exc:
+                print(f"⚠️ Top comment skipped (enable youtube.force-ssl scope if desired): {exc}")
+        else:
+            print("ℹ️ Skipping auto-comment on Shorts (set YT_ENABLE_AUTO_COMMENT=1 to re-enable).")
 
     ledger = load_ledger()
     ledger.setdefault("published", {})[sb_path.stem] = {

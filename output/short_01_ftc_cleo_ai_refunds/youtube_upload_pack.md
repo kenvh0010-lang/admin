@@ -1,7 +1,7 @@
 # YouTube Upload Pack — 2.1 Million Cleo AI Users Are Getting FTC Refunds via PayPal
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `44.7s`
+- **Estimated Runtime**: `46.1s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -24,13 +24,13 @@ Starting October 27, 2026, the Federal Trade Commission began sending 2,124,796 
 
 ⏱️ Timestamps:
 00:00 - 2.1 Million PayPal Refunds Went Out
-00:10 - Promised Up to $250 Today
-00:18 - Almost Nobody Got $250
-00:28 - Blocked From Canceling
+00:09 - Promised Up to $250 Today
+00:17 - Almost Nobody Got $250
+00:27 - Blocked From Canceling
 00:37 - Count Fees Like Interest
 
 📚 About Mind & Margin:
-We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
+We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.
 
 ⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```

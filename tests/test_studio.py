@@ -588,6 +588,33 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
                 self.assertTrue((odir / "short_05_cfpb_zelle_inquiry" / "short_05_cfpb_zelle_inquiry_thumbnail.png").is_file())
                 self.assertTrue((odir / "short_05_cfpb_zelle_inquiry" / "youtube_upload_pack.md").is_file())
 
+    def test_tall_evidence_exhibit_never_clips_bottom_and_handle_matches_live_channel(self) -> None:
+        from yt_studio.config import DEFAULT_THEME
+        from yt_studio.visual_composer import _paste_evidence
+
+        self.assertEqual(DEFAULT_THEME.channel_handle, "@MindMargin-t4k")
+        bio_html = (PROJECT_ROOT / "products" / "bio_funnel_page" / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("mindandmargin.gumroad.com/l/5-hour-asset-os", bio_html)
+
+        with tempfile.TemporaryDirectory() as td:
+            exhibit_path = Path(td) / "tall_exhibit.png"
+            src = Image.new("RGB", (1000, 1200), color=(255, 255, 255))
+            for y in range(1185, 1200):
+                for x in range(100, 900):
+                    src.putpixel((x, y), (255, 0, 0))
+            src.save(exhibit_path)
+
+            canvas = Image.new("RGB", (1080, 1920), color=DEFAULT_THEME.bg_primary)
+            draw = ImageDraw.Draw(canvas)
+            _paste_evidence(canvas, draw, exhibit_path, [0, 0, 1000, 1200], (105, 408, 975, 1204), DEFAULT_THEME)
+
+            has_bottom_red = any(
+                canvas.getpixel((px, py))[0] > 200 and canvas.getpixel((px, py))[1] < 80
+                for py in range(1180, 1205)
+                for px in range(450, 630, 10)
+            )
+            self.assertTrue(has_bottom_red, "Tall exhibit bottom stripe was clipped instead of scaled to fit card height")
+
 
 if __name__ == "__main__":
     unittest.main()

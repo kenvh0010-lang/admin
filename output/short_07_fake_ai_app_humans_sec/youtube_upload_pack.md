@@ -1,7 +1,7 @@
 # YouTube Upload Pack — This $42M 'AI' Shopping App Actually Used Hundreds of Humans
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `46.3s`
+- **Estimated Runtime**: `45.9s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -25,11 +25,11 @@ In April 2025, the U.S. Attorney for the Southern District of New York and the S
 00:00 - Raised $42M for 'AI' Checkout
 00:09 - Claimed 93% to 97% AI Success
 00:17 - Humans Typed Orders Overseas
-00:27 - Scripts, Not Autonomous AI
-00:37 - Audit Live Inputs, Not Demos
+00:26 - Scripts, Not Autonomous AI
+00:36 - Audit Live Inputs, Not Demos
 
 📚 About Mind & Margin:
-We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
+We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.
 
 ⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```

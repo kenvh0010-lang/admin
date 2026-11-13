@@ -1,7 +1,7 @@
 # YouTube Upload Pack — FTC Lawsuit Shows Uber One's 23-Screen Cancellation Maze
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `42.0s`
+- **Estimated Runtime**: `46.7s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -22,13 +22,13 @@ In an amended federal complaint filed in December 2025, the Federal Trade Commis
 
 ⏱️ Timestamps:
 00:00 - FTC & 21 States Sued Uber
-00:08 - One Tap Enrolled Users
-00:17 - Exhibit 20: Circular Cancel Loop
-00:26 - Up to 23 Screens, 32 Actions
-00:35 - Test the Exit Before Free Trials
+00:09 - One Tap Enrolled Users
+00:19 - Exhibit 20: Circular Cancel Loop
+00:29 - Up to 23 Screens, 32 Actions
+00:38 - Test the Exit Before Free Trials
 
 📚 About Mind & Margin:
-We break down wealth psychology, timeless book frameworks, and modern AI leverage in visual essays designed for asymmetric thinkers.
+We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.
 
 ⚠️ Disclaimer: Educational content & case studies only — not personalized financial or legal advice. As an Amazon Associate I earn from qualifying purchases.
 ```
