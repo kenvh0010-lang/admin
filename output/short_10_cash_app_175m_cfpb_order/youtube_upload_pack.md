@@ -1,7 +1,7 @@
 # YouTube Upload Pack — CFPB Ordered Cash App Parent Block to Pay Up to $175 Million
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `48.1s`
+- **Estimated Runtime**: `45.7s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -22,10 +22,10 @@ In Consent Order 2025-CFPB-0001, the Consumer Financial Protection Bureau ordere
 
 ⏱️ Timestamps:
 00:00 - Up to $175M CFPB Order on Block
-00:09 - Card Number Played a Recording
-00:19 - Fought 75% of Bank Chargebacks
-00:28 - Up to $120M Back to Users
-00:39 - Apps Are Wallets, Not Vaults
+00:08 - Card Number Played a Recording
+00:17 - Fought 75% of Bank Chargebacks
+00:27 - Up to $120M Back to Users
+00:37 - Apps Are Wallets, Not Vaults
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

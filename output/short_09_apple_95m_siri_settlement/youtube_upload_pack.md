@@ -1,7 +1,7 @@
 # YouTube Upload Pack — Apple's $95 Million Siri Settlement Equals 9 Hours of Profit
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `41.7s`
+- **Estimated Runtime**: `42.3s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -25,7 +25,7 @@ In Lopez v. Apple Inc., a federal judge granted final approval to a $95 million 
 00:00 - Final Approval on $95M Siri Deal
 00:07 - Triggered Without Saying 'Hey Siri'
 00:15 - Roughly Nine Hours of Profit
-00:24 - Capped at $20 Per Siri Device
+00:25 - Capped at $20 Per Siri Device
 00:33 - Lock Settings, Don't Wait on Court
 
 📚 About Mind & Margin:
