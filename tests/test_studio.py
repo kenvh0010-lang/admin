@@ -615,6 +615,32 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
             )
             self.assertTrue(has_bottom_red, "Tall exhibit bottom stripe was clipped instead of scaled to fit card height")
 
+    def test_legacy_video_pruner_protects_ledger_and_targets_only_productivity_videos(self) -> None:
+        from yt_studio.youtube_uploader import (
+            LEGACY_PRODUCTIVITY_VIDEO_IDS,
+            select_legacy_videos_to_delete,
+        )
+
+        protected = {"75cTEO_NKdo", "GeEbilkyHxE", "lKDVAS6FmF4", "tkQ_qEfx1P8"}
+        candidates = [
+            {"id": "gPdWuLKZNY8", "title": "You're Only Productive 2h 53m a Day. Try 90-Minute Blocks"},
+            {"id": "Tf9gtJWLvQ0", "title": "The Time Trap: Why Hard Work Stopped Building Wealth (And What Does)"},
+            {"id": "XlS3gq6vGas", "title": "Why Hard Work Has a Ceiling (And Leverage Doesn't) #Shorts"},
+            {"id": "9adaLgt-ZTQ", "title": "Why Earning More Still Keeps You Broke (The Diderot Trap) #Shorts"},
+            {"id": "draft_diderot_99", "title": "Why Earning More Still Keeps You Broke (The Diderot Trap)"},
+            {"id": "75cTEO_NKdo", "title": "Eminem and Elvis vs. the $5.4 Billion AI Song App #Shorts"},
+            {"id": "GeEbilkyHxE", "title": "2.1 Million Cleo AI Users Are Getting FTC Refunds via PayPal #Shorts"},
+            {"id": "lKDVAS6FmF4", "title": "Why Anthropic Is Paying Book Authors $1.5 Billion This Month #Shorts"},
+            {"id": "tkQ_qEfx1P8", "title": "Why Earning More Still Keeps You Broke (The Diderot Trap)"},
+            {"id": "new_lawsuit_01", "title": "FTC Sues Uber Over 23-Screen Cancel Maze"},
+        ]
+        selected = select_legacy_videos_to_delete(candidates, protected)
+        selected_ids = [item["id"] for item in selected]
+        self.assertEqual(selected_ids, [*LEGACY_PRODUCTIVITY_VIDEO_IDS, "draft_diderot_99"])
+        for pid in protected:
+            self.assertNotIn(pid, selected_ids)
+        self.assertNotIn("new_lawsuit_01", selected_ids)
+
 
 if __name__ == "__main__":
     unittest.main()

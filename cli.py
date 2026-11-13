@@ -315,6 +315,12 @@ def main() -> int:
     p_ver = sub.add_parser("verify-youtube", help="Verify YouTube OAuth2 secrets and print connected channel info")
     p_ver.set_defaults(func=cmd_verify_youtube)
 
+    p_prune = sub.add_parser(
+        "prune-youtube-legacy",
+        help="Delete legacy off-niche productivity videos from YouTube while protecting ledger videos",
+    )
+    p_prune.set_defaults(func=cmd_prune_youtube_legacy)
+
     p_ded = sub.add_parser("dedupe", help="Audit all projects for duplicate titles/URLs/crops & prune orphaned outputs/assets")
     p_ded.add_argument("--apply", action="store_true", help="Remove orphaned output/ dirs and unreferenced evidence PNGs")
     p_ded.add_argument("--json", action="store_true", help="Print JSON report")
@@ -339,6 +345,13 @@ def cmd_publish_next(args: argparse.Namespace) -> int:
 
 def cmd_verify_youtube(args: argparse.Namespace) -> int:
     from yt_studio.youtube_uploader import verify_youtube_channel
+    info = verify_youtube_channel()
+    return 0 if info else 1
+
+
+def cmd_prune_youtube_legacy(args: argparse.Namespace) -> int:
+    from yt_studio.youtube_uploader import prune_legacy_youtube_videos, verify_youtube_channel
+    prune_legacy_youtube_videos()
     info = verify_youtube_channel()
     return 0 if info else 1
 

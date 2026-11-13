@@ -18,6 +18,7 @@ on:
         options:
           - auto_publish_next
           - verify_youtube_only
+          - prune_legacy_videos
           - rebuild_full_vault
         default: auto_publish_next
       privacy_status:
@@ -56,7 +57,7 @@ jobs:
       - name: Install FFmpeg & Free Microsoft Neural TTS (edge-tts)
         timeout-minutes: 8
         run: |
-          if [ "${{ inputs.mode }}" != "verify_youtube_only" ]; then
+          if [ "${{ inputs.mode }}" != "verify_youtube_only" ] && [ "${{ inputs.mode }}" != "prune_legacy_videos" ]; then
             if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v ffprobe >/dev/null 2>&1; then
               tmp="$(mktemp -d)"
               url="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.1-latest-linux64-gpl-8.1.tar.xz"
@@ -82,8 +83,17 @@ jobs:
         run: |
           python3 cli.py verify-youtube
 
+      - name: Prune Legacy Productivity Videos & Verify Pure Lawsuit Channel
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'prune_legacy_videos' }}
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          python3 cli.py prune-youtube-legacy
+
       - name: Audit Project Uniqueness, 7-Gate Validation & Rebuild Public SEO Website (mindandmarg06-20)
-        if: ${{ inputs.mode != 'verify_youtube_only' }}
+        if: ${{ inputs.mode != 'verify_youtube_only' && inputs.mode != 'prune_legacy_videos' }}
         env:
           INPUT_TAG: ${{ inputs.amazon_associate_tag || vars.AMAZON_ASSOC_TAG || 'mindandmarg06-20' }}
         run: |
@@ -157,7 +167,7 @@ jobs:
           python3 cli.py publish-next --privacy "$PRIVACY"
 
       - name: Commit Updated Site, SEO Packs & Publish Ledger
-        if: ${{ inputs.mode != 'verify_youtube_only' }}
+        if: ${{ inputs.mode != 'verify_youtube_only' && inputs.mode != 'prune_legacy_videos' }}
         run: |
           git config user.name "Mind & Margin Autopilot"
           git config user.email "actions@github.com"

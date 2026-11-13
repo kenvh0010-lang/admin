@@ -18,6 +18,20 @@ LEDGER_PATH = CONTENT_DIR / "published_ledger.json"
 SITE_BIO_URL = "https://kenvh0010-lang.github.io/admin/bio/"
 SITE_HOME_URL = "https://kenvh0010-lang.github.io/admin/"
 
+LEGACY_PRODUCTIVITY_VIDEO_IDS = (
+    "gPdWuLKZNY8",  # Scheduled Short: You're Only Productive 2h 53m a Day. Try 90-Minute Blocks
+    "Tf9gtJWLvQ0",  # Scheduled Long: The Time Trap: Why Hard Work Stopped Building Wealth (And What Does)
+    "XlS3gq6vGas",  # Public Short: Why Hard Work Has a Ceiling (And Leverage Doesn't)
+    "9adaLgt-ZTQ",  # Public Short: Why Earning More Still Keeps You Broke (The Diderot Trap)
+)
+LEGACY_PRODUCTIVITY_TITLE_MARKERS = (
+    "productive 2h 53m",
+    "the time trap: why hard work",
+    "why hard work has a ceiling",
+    "the diderot trap",
+    "why earning more still keeps you broke",
+)
+
 
 def _normalize_oauth_secret(raw: str, field_name: str) -> str:
     """Strip accidental quotes/whitespace or extract field from pasted Google OAuth JSON."""
@@ -236,7 +250,208 @@ def verify_youtube_channel(
     except Exception as exc:
         print(f"ℹ️ YouTube Analytics API unavailable ({type(exc).__name__}).")
 
+    try:
+        ct_url = (
+            "https://www.googleapis.com/youtube/v3/commentThreads"
+            f"?part=snippet&allThreadsRelatedToChannelId={urllib.parse.quote(ch['id'])}&maxResults=20"
+        )
+        ct_data = _api_get_json(ct_url, token)
+        ct_items = ct_data.get("items") or []
+        print(f"💬 Channel Comment Threads: {len(ct_items)}")
+        for citem in ct_items[:10]:
+            top = ((citem.get("snippet") or {}).get("topLevelComment") or {}).get("snippet") or {}
+            print(
+                f"  - video={top.get('videoId', '?')} | author={top.get('authorDisplayName', '?')} "
+                f"| text={str(top.get('textDisplay', ''))[:120]!r}"
+            )
+    except Exception as exc:
+        print(f"ℹ️ Comment threads check skipped ({type(exc).__name__}).")
+
     return info
+
+
+def select_legacy_videos_to_delete(
+    candidates: List[Dict[str, str]],
+    protected_ledger_ids: set,
+) -> List[Dict[str, str]]:
+    """Select only off-niche productivity videos for deletion while strictly protecting ledger videos."""
+    selected: List[Dict[str, str]] = []
+    seen_ids: set = set()
+    for item in candidates:
+        vid = str(item.get("id", "")).strip()
+        if not vid or vid in seen_ids or vid in protected_ledger_ids:
+            continue
+        seen_ids.add(vid)
+        title = str(item.get("title", "")).strip()
+        lower_title = title.lower()
+        if vid in LEGACY_PRODUCTIVITY_VIDEO_IDS or any(
+            marker in lower_title for marker in LEGACY_PRODUCTIVITY_TITLE_MARKERS
+        ):
+            selected.append({"id": vid, "title": title})
+    return selected
+
+
+def prune_legacy_youtube_videos(
+    client_id: Optional[str] = None,
+    client_secret: Optional[str] = None,
+    refresh_token: Optional[str] = None,
+) -> Dict[str, Any]:
+    """Discover channel videos, delete legacy off-niche productivity videos, and protect ledger Shorts."""
+    import urllib.error
+
+    cid = _normalize_oauth_secret(client_id or os.environ.get("YOUTUBE_CLIENT_ID", ""), "client_id")
+    csec = _normalize_oauth_secret(client_secret or os.environ.get("YOUTUBE_CLIENT_SECRET", ""), "client_secret")
+    rtok = _normalize_oauth_secret(refresh_token or os.environ.get("YOUTUBE_REFRESH_TOKEN", ""), "refresh_token")
+
+    if not (cid and csec and rtok):
+        raise RuntimeError("Missing YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET / YOUTUBE_REFRESH_TOKEN.")
+
+    token = get_access_token(cid, csec, rtok)
+    ledger_pub = load_ledger().get("published", {})
+    protected_ids = {
+        str(e.get("video_id", "")).strip()
+        for e in ledger_pub.values()
+        if isinstance(e, dict) and e.get("video_id")
+    }
+
+    by_id: Dict[str, Dict[str, str]] = {}
+
+    def _remember(vid: str, title: str = "", privacy: str = "?", publish_at: str = "", upload_status: str = "?") -> None:
+        v = vid.strip()
+        if not v:
+            return
+        cur = by_id.setdefault(
+            v,
+            {"id": v, "title": "", "privacy": "?", "publish_at": "", "upload_status": "?"},
+        )
+        if title and not cur["title"]:
+            cur["title"] = title
+        if privacy != "?":
+            cur["privacy"] = privacy
+        if publish_at:
+            cur["publish_at"] = publish_at
+        if upload_status != "?":
+            cur["upload_status"] = upload_status
+
+    try:
+        search_data = _api_get_json(
+            "https://www.googleapis.com/youtube/v3/search?part=snippet&forMine=true&type=video&maxResults=50",
+            token,
+        )
+        for item in search_data.get("items") or []:
+            vid = str(((item.get("id") or {}).get("videoId")) or "").strip()
+            title = str(((item.get("snippet") or {}).get("title")) or "").strip()
+            _remember(vid, title=title)
+    except Exception as exc:
+        print(f"ℹ️ search.list(forMine=true) skipped ({type(exc).__name__}).")
+
+    try:
+        ch_data = _api_get_json(
+            "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true",
+            token,
+        )
+        uploads_pl = (
+            ((ch_data.get("items") or [{}])[0].get("contentDetails") or {})
+            .get("relatedPlaylists", {})
+            .get("uploads", "")
+        )
+        if uploads_pl:
+            pl_data = _api_get_json(
+                "https://www.googleapis.com/youtube/v3/playlistItems"
+                f"?part=snippet,contentDetails&playlistId={urllib.parse.quote(uploads_pl)}&maxResults=50",
+                token,
+            )
+            for item in pl_data.get("items") or []:
+                snip = item.get("snippet") or {}
+                cdet = item.get("contentDetails") or {}
+                vid = str(cdet.get("videoId") or (snip.get("resourceId") or {}).get("videoId") or "").strip()
+                title = str(snip.get("title") or "").strip()
+                _remember(vid, title=title)
+    except Exception as exc:
+        print(f"ℹ️ uploads playlist discovery skipped ({type(exc).__name__}).")
+
+    for legacy_id in LEGACY_PRODUCTIVITY_VIDEO_IDS:
+        if legacy_id not in protected_ids:
+            _remember(legacy_id)
+
+    all_ids = list(by_id.keys())
+    for i in range(0, len(all_ids), 50):
+        batch = all_ids[i : i + 50]
+        try:
+            v_data = _api_get_json(
+                "https://www.googleapis.com/youtube/v3/videos"
+                f"?part=snippet,status&id={urllib.parse.quote(','.join(batch))}",
+                token,
+            )
+            for item in v_data.get("items") or []:
+                vid = str(item.get("id", "")).strip()
+                vsn = item.get("snippet") or {}
+                vst = item.get("status") or {}
+                if vid:
+                    by_id[vid] = {
+                        "id": vid,
+                        "title": str(vsn.get("title") or by_id.get(vid, {}).get("title") or ""),
+                        "privacy": str(vst.get("privacyStatus") or "?"),
+                        "publish_at": str(vst.get("publishAt") or ""),
+                        "upload_status": str(vst.get("uploadStatus") or "?"),
+                    }
+        except Exception as exc:
+            print(f"ℹ️ videos.list enrichment skipped ({type(exc).__name__}).")
+
+    print(f"📋 Discovered Channel Videos ({len(by_id)} | protected ledger={len(protected_ids)}):")
+    for info in by_id.values():
+        sched = f" publishAt={info['publish_at']}" if info["publish_at"] else ""
+        prot = " [PROTECTED]" if info["id"] in protected_ids else ""
+        print(
+            f"  - {info['id']} | privacy={info['privacy']}{sched} upload={info['upload_status']}{prot} "
+            f"| {info['title'] or '<unavailable>'}"
+        )
+
+    targets = select_legacy_videos_to_delete(list(by_id.values()), protected_ids)
+    deleted: List[Dict[str, str]] = []
+    already_absent: List[Dict[str, str]] = []
+    errors: List[str] = []
+
+    for t in targets:
+        vid = t["id"]
+        del_url = f"https://www.googleapis.com/youtube/v3/videos?id={urllib.parse.quote(vid)}"
+        req = urllib.request.Request(
+            del_url,
+            headers={"Authorization": f"Bearer {token}"},
+            method="DELETE",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                code = resp.status
+            if code in (200, 204):
+                deleted.append(t)
+                print(f"🗑️ Deleted legacy video (HTTP {code}): {vid} | {t['title']}")
+            else:
+                msg = f"{vid}: unexpected HTTP {code}"
+                errors.append(msg)
+                print(f"❌ Delete failed: {msg}")
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404:
+                already_absent.append(t)
+                print(f"ℹ️ Video already absent (HTTP 404): {vid} | {t['title']}")
+            else:
+                reason = ""
+                try:
+                    reason = exc.read().decode("utf-8", errors="replace")[:300]
+                except Exception:
+                    pass
+                msg = f"{vid}: HTTP {exc.code} {reason}"
+                errors.append(msg)
+                print(f"❌ Delete failed: {msg}")
+
+    if errors:
+        raise RuntimeError("Legacy video deletion failed: " + "; ".join(errors))
+
+    return {
+        "deleted": deleted,
+        "already_absent": already_absent,
+        "protected_count": len(protected_ids),
+    }
 
 
 def build_youtube_description(storyboard: Dict[str, Any], slug: str = "") -> str:
