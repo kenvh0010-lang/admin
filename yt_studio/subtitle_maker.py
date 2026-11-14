@@ -1,6 +1,7 @@
 """High-retention caption chunker and SRT subtitle exporter."""
 
 from dataclasses import dataclass
+import math
 from pathlib import Path
 import re
 from typing import List
@@ -19,19 +20,25 @@ class CaptionBeat:
         return max(0.4, round(self.end_sec - self.start_sec, 3))
 
 
-def split_into_beats(narration: str, max_words: int = 6) -> List[str]:
-    """Split a scene narration into punchy 4-7 word phrases at natural punctuation boundaries."""
+def split_into_beats(narration: str, max_words: int = 3) -> List[str]:
+    """Split a scene narration into punchy, balanced phrases at natural punctuation boundaries."""
     clauses = [c.strip() for c in re.split(r"(?<=[.!?;:—–,])\s+", narration.strip()) if c.strip()]
     beats: List[str] = []
+    limit = max(1, int(max_words))
     for clause in clauses:
         words = clause.split()
-        if len(words) <= max_words + 1:
+        if len(words) <= limit:
             beats.append(clause)
         else:
-            for idx in range(0, len(words), max_words):
-                chunk = " ".join(words[idx : idx + max_words])
+            n_chunks = math.ceil(len(words) / limit)
+            base, rem = divmod(len(words), n_chunks)
+            idx = 0
+            for c_i in range(n_chunks):
+                step = base + (1 if c_i < rem else 0)
+                chunk = " ".join(words[idx : idx + step])
                 if chunk:
                     beats.append(chunk)
+                idx += step
     return beats or [narration.strip()]
 
 
@@ -40,7 +47,7 @@ def build_scene_beats(
     narration: str,
     scene_start_sec: float,
     scene_duration_sec: float,
-    max_words: int = 6,
+    max_words: int = 3,
 ) -> List[CaptionBeat]:
     """Allocate exact timestamps across beats weighted by character length."""
     phrases = split_into_beats(narration, max_words=max_words)

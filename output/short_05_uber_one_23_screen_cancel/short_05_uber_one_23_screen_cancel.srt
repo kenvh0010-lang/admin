@@ -1,99 +1,115 @@
 1
-00:00:00,000 --> 00:00:00,678
-The FTC,
+00:00:00,000 --> 00:00:00,604
+How did a
 
 2
-00:00:00,678 --> 00:00:01,525
-21 states,
+00:00:00,604 --> 00:00:01,679
+9.99 dollar Uber
 
 3
-00:00:01,525 --> 00:00:02,203
-and D.C.
+00:00:01,679 --> 00:00:02,888
+One plan allegedly
 
 4
-00:00:02,203 --> 00:00:04,829
-sued Uber in federal court over
+00:00:02,888 --> 00:00:03,560
+require 23
 
 5
-00:00:04,829 --> 00:00:07,201
-its 9.99 dollar a month Uber
+00:00:03,560 --> 00:00:04,970
+cancellation screens?
 
 6
-00:00:07,201 --> 00:00:08,472
-One membership.
+00:00:04,970 --> 00:00:06,308
+Regulators allege one
 
 7
-00:00:08,472 --> 00:00:10,734
-Exhibit 4 shows the signup popup:
+00:00:06,308 --> 00:00:06,946
+tap on Try
 
 8
-00:00:10,734 --> 00:00:12,311
-one tap on Try for free
+00:00:06,946 --> 00:00:07,902
+for free signed
 
 9
-00:00:12,311 --> 00:00:13,133
-enrolls you,
+00:00:07,902 --> 00:00:08,922
+riders up before
 
 10
-00:00:13,133 --> 00:00:15,669
-and regulators allege some users were
+00:00:08,922 --> 00:00:09,750
+some realized
 
 11
-00:00:15,669 --> 00:00:17,520
-billed before trials ended.
+00:00:09,750 --> 00:00:10,770
+they subscribed.
 
 12
-00:00:17,520 --> 00:00:19,975
-Exhibit 20 maps an alleged cancellation
+00:00:10,770 --> 00:00:11,721
+Exhibit 20 maps
 
 13
-00:00:19,975 --> 00:00:21,234
-loop inside the app:
+00:00:11,721 --> 00:00:12,292
+a loop of
 
 14
-00:00:21,234 --> 00:00:23,312
-four screens of pause and savings
+00:00:12,292 --> 00:00:13,623
+retention offers that
 
 15
-00:00:23,312 --> 00:00:25,390
-offers that send users right back
+00:00:13,623 --> 00:00:14,891
+allegedly sent users
 
 16
-00:00:25,390 --> 00:00:26,208
-to the start.
+00:00:14,891 --> 00:00:15,906
+straight back to
 
 17
-00:00:26,208 --> 00:00:29,204
-The complaint alleges canceling can take
+00:00:15,906 --> 00:00:16,920
+billing screens.
 
 18
-00:00:29,204 --> 00:00:30,927
-up to 23 screens and 32
+00:00:16,920 --> 00:00:17,628
+The FTC and
 
 19
-00:00:30,927 --> 00:00:31,526
-actions.
+00:00:17,628 --> 00:00:18,529
+21 states sued
 
 20
-00:00:31,526 --> 00:00:33,249
-Uber denies the claims,
+00:00:18,529 --> 00:00:19,623
+over those flows,
 
 21
-00:00:33,249 --> 00:00:35,496
-and the case is still pending.
+00:00:19,623 --> 00:00:20,781
+though Uber denies
 
 22
-00:00:35,496 --> 00:00:37,333
-Before tapping any free trial,
+00:00:20,781 --> 00:00:21,617
+wrongdoing in
 
 23
-00:00:37,333 --> 00:00:39,476
-check where the cancel button lives
+00:00:21,617 --> 00:00:22,840
+pending litigation.
 
 24
-00:00:39,476 --> 00:00:41,129
-and set an alert three days
+00:00:22,840 --> 00:00:23,686
+Check how a
 
 25
-00:00:41,129 --> 00:00:42,048
-before billing.
+00:00:23,686 --> 00:00:25,070
+free trial cancels
+
+26
+00:00:25,070 --> 00:00:25,915
+on day one,
+
+27
+00:00:25,915 --> 00:00:26,838
+and set your
+
+28
+00:00:26,838 --> 00:00:27,914
+reminder three
+
+29
+00:00:27,914 --> 00:00:28,760
+days early.

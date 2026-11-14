@@ -458,7 +458,7 @@ def build_youtube_description(storyboard: Dict[str, Any], slug: str = "") -> str
     """Build a compliant, high-converting YouTube description with Bio & verbatim Amazon disclosure."""
     hook = storyboard.get("description_hook", storyboard.get("title", ""))
     aff = storyboard.get("affiliate_cta", {})
-    offer_name = aff.get("offer_name", "Free Asymmetric Playbook & 5-Hour Asset Builder OS")
+    offer_name = aff.get("offer_name", "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List")
     article_url = f"{SITE_HOME_URL}articles/{slug}.html" if slug else SITE_HOME_URL
 
     chapters: List[str] = []
@@ -611,7 +611,7 @@ def post_top_affiliate_comment(access_token: str, video_id: str, storyboard: Dic
     raw_comment = aff.get("pinned_comment", "").strip()
     if not raw_comment:
         raw_comment = (
-            f"📚 Grab the free Asymmetric Playbook, book list & 5-Hour Asset Builder OS here: {SITE_BIO_URL}"
+            f"Browse our Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List here: {SITE_BIO_URL}"
         )
     if "Amazon Associate" not in raw_comment:
         raw_comment = f"{raw_comment}\n\n(Disclosure: As an Amazon Associate I earn from qualifying purchases.)"

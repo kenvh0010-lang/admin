@@ -261,7 +261,7 @@ def main() -> int:
     p_script = sub.add_parser("script", help="Generate a quarantined Evidence-Short draft in content/drafts/ (or export LLM prompt)")
     p_script.add_argument("--topic", required=True, help="Video topic or case hook idea")
     p_script.add_argument("--format", default="short", choices=["short", "long"], help="Video format (default: short)")
-    p_script.add_argument("--affiliate", default="Free 5-Hour Asset Builder OS + reading list", help="Affiliate offer")
+    p_script.add_argument("--affiliate", default="Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List", help="Affiliate offer")
     p_script.add_argument("--evidence-dir", default=None, help="Optional directory containing primary PNG screenshots")
     p_script.add_argument("--source", action="append", default=None, help="Repeatable 'Label|https://...' primary source entry")
     p_script.add_argument("--allow-active", action="store_true", help="Write directly to target path instead of quarantining in content/drafts/")

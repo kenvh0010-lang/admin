@@ -1,8 +1,8 @@
 # YouTube Upload Pack — FTC Lawsuit Shows Uber One's 23-Screen Cancellation Maze
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `42.0s`
-- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
+- **Estimated Runtime**: `28.8s`
+- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -18,14 +18,14 @@ In an amended federal complaint filed in December 2025, the Federal Trade Commis
 • First Amended Complaint: FTC & 21 States v. Uber Technologies, No. 4:25-cv-03477 (N.D. Cal.): https://illinoisattorneygeneral.gov/News-Room/Current-News/Uber%20Amended%20Complaint%20-%20FILED%20REDACTED.pdf
 • FTC Press Release: 21 States and D.C. Join FTC Lawsuit Against Uber (Dec 15, 2025): https://www.ftc.gov/news-events/news/press-releases/2025/12/21-states-dc-join-ftc-alleging-uber-deceptively-billed-consumers-uber-one-made-it-hard-cancel
 
-🔗 **Free 5-Hour Asset Builder OS + reading list**: https://kenvh0010-lang.github.io/admin/bio/
+🔗 **Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
-00:00 - FTC & 21 States Sued Uber
-00:08 - One Tap Enrolled Users
-00:17 - Exhibit 20: Circular Cancel Loop
-00:26 - Up to 23 Screens, 32 Actions
-00:35 - Test the Exit Before Free Trials
+00:00 - Up to 23 Screens, 32 Actions
+00:04 - One Tap Enrolled Riders
+00:10 - Exhibit 20: Circular Cancel Loop
+00:16 - FTC & 21 States Sued Uber
+00:22 - Test the Exit Before Free Trials
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

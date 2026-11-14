@@ -47,7 +47,7 @@ Rules:
 ## Short frame layout (1080x1920)
 
 Top to bottom:
-1. Tag pill with chapter tag, plus `@MindMargin-t4k  •  NN/NN` on the right.
+1. Tag pill with chapter tag, plus `@MindMargin-t4k` on the right.
 2. Headline, at most 3 lines, white.
 3. Evidence card on Slate Card with a gold frame around the cropped exhibit.
 4. `Source: ...` line in Muted Slate under the card.

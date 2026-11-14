@@ -1,5 +1,6 @@
 """Multi-provider Text-to-Speech + 100% Copyright-Free Ambient Music Synthesizer."""
 
+import array
 import json
 import math
 import os
@@ -29,11 +30,73 @@ def probe_audio_duration(audio_path: Path) -> float:
     return max(0.5, float(res.stdout.strip()))
 
 
-def estimate_speech_duration(text: str, wpm: int = 155) -> float:
+def estimate_speech_duration(text: str, wpm: int = 172) -> float:
     """Estimate natural narration duration in seconds from word count and punctuation."""
     words = len(text.split())
-    pauses = text.count(",") * 0.18 + (text.count(".") + text.count("?") + text.count("!")) * 0.32
-    return max(2.2, round((words / (wpm / 60.0)) + pauses, 2))
+    pauses = text.count(",") * 0.12 + (text.count(".") + text.count("?") + text.count("!")) * 0.22
+    return max(1.8, round((words / (wpm / 60.0)) + pauses, 2))
+
+
+def _trim_speech_silence(
+    audio_path: Path,
+    out_wav: Path,
+    tail_pad_sec: float = 0.10,
+    sample_rate: int = 24000,
+) -> Tuple[Path, float]:
+    """Decode audio to PCM, trim leading/trailing digital dead air, and append a tight tail pause."""
+    if not shutil.which("ffmpeg"):
+        return audio_path, probe_audio_duration(audio_path)
+
+    out_wav.parent.mkdir(parents=True, exist_ok=True)
+    res = subprocess.run(
+        [
+            "ffmpeg", "-y", "-i", str(audio_path),
+            "-ar", str(sample_rate), "-ac", "1", "-c:a", "pcm_s16le",
+            str(out_wav),
+        ],
+        capture_output=True,
+    )
+    if res.returncode != 0 or not out_wav.is_file() or out_wav.stat().st_size < 128:
+        return audio_path, probe_audio_duration(audio_path)
+
+    with wave.open(str(out_wav), "rb") as wf:
+        frames = wf.readframes(wf.getnframes())
+    samples = array.array("h")
+    samples.frombytes(frames)
+    if sys.byteorder != "little":
+        samples.byteswap()
+
+    thresh = 180  # ~ -45 dBFS
+    first_idx: Optional[int] = None
+    last_idx: Optional[int] = None
+    for idx, val in enumerate(samples):
+        if abs(val) > thresh:
+            if first_idx is None:
+                first_idx = idx
+            last_idx = idx
+
+    if first_idx is None or last_idx is None:
+        return out_wav, probe_audio_duration(out_wav)
+
+    lead_samples = int(0.022 * sample_rate)
+    trail_samples = int(0.025 * sample_rate)
+    pad_samples = int(max(0.0, tail_pad_sec) * sample_rate)
+    start_i = max(0, first_idx - lead_samples)
+    end_i = min(len(samples), last_idx + trail_samples)
+    trimmed = samples[start_i:end_i] + array.array("h", [0]) * pad_samples
+
+    if len(trimmed) < int(0.35 * sample_rate):
+        return out_wav, probe_audio_duration(out_wav)
+
+    out_samples = array.array("h", trimmed)
+    if sys.byteorder != "little":
+        out_samples.byteswap()
+    with wave.open(str(out_wav), "wb") as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(sample_rate)
+        wf.writeframes(out_samples.tobytes())
+    return out_wav, round(len(trimmed) / sample_rate, 3)
 
 
 def resolve_edge_tts_command() -> Optional[List[str]]:
@@ -62,6 +125,7 @@ def synthesize_voice(
     output_path: Path,
     provider: str = "auto",
     voice: str = "en_authoritative",
+    is_last_scene: bool = False,
 ) -> Tuple[Path, float, str]:
     """
     Generate voiceover audio for a scene.
@@ -74,12 +138,16 @@ def synthesize_voice(
     """
     output_path.parent.mkdir(parents=True, exist_ok=True)
     resolved_voice = VOICE_PRESETS.get(voice, voice)
+    tail_pad = 0.04 if is_last_scene else 0.10
 
     if provider in ("auto", "openai") and os.environ.get("OPENAI_API_KEY"):
         try:
             mp3_path = output_path.with_suffix(".mp3")
             _synthesize_openai(text, mp3_path)
-            return mp3_path, probe_audio_duration(mp3_path), "openai"
+            trimmed_wav, dur = _trim_speech_silence(
+                mp3_path, output_path.with_suffix(".trimmed.wav"), tail_pad_sec=tail_pad
+            )
+            return trimmed_wav, dur, "openai"
         except Exception as exc:
             if provider == "openai":
                 raise RuntimeError(f"OpenAI TTS failed: {exc}") from exc
@@ -88,7 +156,10 @@ def synthesize_voice(
         try:
             mp3_path = output_path.with_suffix(".mp3")
             _synthesize_elevenlabs(text, mp3_path)
-            return mp3_path, probe_audio_duration(mp3_path), "elevenlabs"
+            trimmed_wav, dur = _trim_speech_silence(
+                mp3_path, output_path.with_suffix(".trimmed.wav"), tail_pad_sec=tail_pad
+            )
+            return trimmed_wav, dur, "elevenlabs"
         except Exception as exc:
             if provider == "elevenlabs":
                 raise RuntimeError(f"ElevenLabs TTS failed: {exc}") from exc
@@ -102,14 +173,17 @@ def synthesize_voice(
         for attempt in range(3):
             try:
                 subprocess.run(
-                    edge_cmd + ["--voice", resolved_voice, "--rate=+4%", "--text", text, "--write-media", str(mp3_path)],
+                    edge_cmd + ["--voice", resolved_voice, "--rate=+11%", "--text", text, "--write-media", str(mp3_path)],
                     check=True,
                     capture_output=True,
                     text=True,
                     timeout=35,
                 )
                 if mp3_path.is_file() and mp3_path.stat().st_size > 512:
-                    return mp3_path, probe_audio_duration(mp3_path), f"edge-tts ({resolved_voice})"
+                    trimmed_wav, dur = _trim_speech_silence(
+                        mp3_path, output_path.with_suffix(".trimmed.wav"), tail_pad_sec=tail_pad
+                    )
+                    return trimmed_wav, dur, f"edge-tts ({resolved_voice})"
             except Exception as exc:
                 last_exc = exc
                 import time
@@ -246,4 +320,51 @@ def generate_ambient_bed(output_wav: Path, duration_sec: float, sample_rate: int
         wf.setsampwidth(2)
         wf.setframerate(sample_rate)
         wf.writeframes(bytes(buf))
+    return output_wav
+
+
+def generate_scene_sfx_track(
+    output_wav: Path,
+    scene_starts: List[float],
+    duration_sec: float,
+    sample_rate: int = 24000,
+) -> Path:
+    """Synthesize subtle Content-ID-safe documentary hook pulses and exhibit switch cues."""
+    output_wav.parent.mkdir(parents=True, exist_ok=True)
+    total_samples = max(1, int(round(max(0.5, duration_sec) * sample_rate)))
+    samples = array.array("h", [0]) * total_samples
+    two_pi = 2.0 * math.pi
+
+    for s_idx, start_t in enumerate(scene_starts):
+        base_i = max(0, int(round(start_t * sample_rate)))
+        if base_i >= total_samples:
+            continue
+        cue_len = int((0.065 if s_idx == 0 else 0.045) * sample_rate)
+        for k in range(cue_len):
+            pos = base_i + k
+            if pos >= total_samples:
+                break
+            t = k / sample_rate
+            if s_idx == 0:
+                env = math.exp(-t * 42.0)
+                val = (
+                    0.42 * env * math.sin(two_pi * (96.0 - 38.0 * min(1.0, t * 15.0)) * t)
+                    + 0.16 * math.exp(-t * 160.0) * math.sin(two_pi * 1750.0 * t)
+                )
+            else:
+                env = math.exp(-t * 58.0)
+                val = (
+                    0.28 * env * math.sin(two_pi * 135.0 * t)
+                    + 0.14 * math.exp(-t * 210.0) * math.sin(two_pi * 2150.0 * t)
+                )
+            mixed = samples[pos] + int(val * 32767)
+            samples[pos] = max(-32767, min(32767, mixed))
+
+    if sys.byteorder != "little":
+        samples.byteswap()
+    with wave.open(str(output_wav), "wb") as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(sample_rate)
+        wf.writeframes(samples.tobytes())
     return output_wav

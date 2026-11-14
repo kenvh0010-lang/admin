@@ -20,29 +20,35 @@
     "stat": "$42M"
   },
   "affiliate_cta": {
-    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "offer_name": "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
-    "pinned_comment": "How many '100% AI' startups today are quietly running on manual labor behind the curtain? Full SDNY indictment PDF is in the description."
+    "pinned_comment": "How many '100% AI' startups today are actually running on manual labor behind the curtain? Full SDNY indictment PDF is in the description."
   },
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "Raised $42M for 'AI' Checkout",
+      "headline": "Humans Typed Orders Overseas",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/nate_ai/doj_sdny_press_release.png",
+      "evidence_image": "assets/evidence/nate_ai/sdny_indictment_p1_contractors.png",
       "evidence_crop": [
-        155,
-        395,
-        1105,
-        895
+        115,
+        980,
+        1150,
+        1470
+      ],
+      "evidence_highlight": [
+        125,
+        1225,
+        1135,
+        1345
       ],
       "highlight_words": [
         "42",
-        "million",
-        "charged"
+        "overseas",
+        "orders"
       ],
-      "narration": "Federal prosecutors and the SEC charged the former CEO of shopping app Nate after raising over 42 million dollars on claims of autonomous AI.",
-      "source": "U.S. Attorney's Office S.D.N.Y. & SEC LR-26282 (Apr 2025)"
+      "narration": "Prosecutors charged a 42 million dollar AI shopping startup, alleging overseas workers typed its orders.",
+      "source": "U.S. v. Saniger Indictment Count One, p. 1 (S.D.N.Y.)"
     },
     {
       "tag": "THE PITCH",
@@ -51,40 +57,26 @@
       "evidence_image": "assets/evidence/nate_ai/sdny_indictment_p3_97pct_claim.png",
       "evidence_crop": [
         115,
-        220,
+        680,
         1150,
-        1290
+        1310
+      ],
+      "evidence_highlight": [
+        125,
+        1140,
+        1135,
+        1245
       ],
       "highlight_words": [
-        "93%",
-        "97%",
-        "seconds"
+        "93",
+        "97"
       ],
-      "narration": "The indictment alleges investors were told proprietary neural networks finished checkouts in seconds with 93 to 97 percent accuracy.",
+      "narration": "Investors were allegedly pitched autonomous AI finishing universal checkouts at 93 to 97 percent accuracy.",
       "source": "U.S. v. Albert Saniger Indictment Para. 5, p. 3 (S.D.N.Y.)"
     },
     {
       "tag": "THE REALITY",
-      "headline": "Humans Typed Orders Overseas",
-      "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/nate_ai/sdny_indictment_p1_contractors.png",
-      "evidence_crop": [
-        115,
-        620,
-        1150,
-        1475
-      ],
-      "highlight_words": [
-        "Philippines",
-        "Romania",
-        "zero"
-      ],
-      "narration": "Prosecutors allege the app's actual AI automation rate was effectively zero, and hundreds of contractors in the Philippines and Romania placed orders manually.",
-      "source": "U.S. v. Saniger Indictment Count One, p. 1 (S.D.N.Y.)"
-    },
-    {
-      "tag": "THE BOTS",
-      "headline": "Scripts, Not Autonomous AI",
+      "headline": "Did Not Use AI to Buy",
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/nate_ai/sdny_indictment_p4_40m_raised.png",
       "evidence_crop": [
@@ -93,13 +85,42 @@
         1150,
         1480
       ],
+      "evidence_highlight": [
+        125,
+        1175,
+        1135,
+        1320
+      ],
       "highlight_words": [
-        "bots",
-        "allegations",
+        "manual",
+        "staff"
+      ],
+      "narration": "The indictment alleges Nate did not use AI to complete purchases, relying instead on manual staff.",
+      "source": "U.S. v. Saniger Indictment Para. 7-8, p. 4 (S.D.N.Y.)"
+    },
+    {
+      "tag": "THE CASE",
+      "headline": "SDNY & SEC Filed Charges",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/nate_ai/doj_sdny_press_release.png",
+      "evidence_crop": [
+        145,
+        420,
+        1125,
+        910
+      ],
+      "evidence_highlight": [
+        155,
+        470,
+        960,
+        610
+      ],
+      "highlight_words": [
+        "indicted",
         "innocent"
       ],
-      "narration": "Even its limited bots allegedly used site-specific scripts, not AI. These are indictment charges, and the defendant is presumed innocent unless proven guilty.",
-      "source": "U.S. v. Saniger Indictment Para. 7-8, p. 4 (S.D.N.Y.)"
+      "narration": "The Southern District and SEC indicted its former CEO, who remains presumed innocent pending court trial.",
+      "source": "U.S. Attorney's Office S.D.N.Y. & SEC LR-26282 (Apr 2025)"
     },
     {
       "tag": "THE RULE",
@@ -110,10 +131,10 @@
       "right_title": "REAL TEST",
       "right_body": "Unseen live edge-case inputs",
       "highlight_words": [
-        "demo",
-        "live"
+        "live",
+        "inputs"
       ],
-      "narration": "Never trust a rehearsed AI demo when money is on the line. Test the product live with your own messy, unscripted inputs.",
+      "narration": "Staged startup demos never prove real automation. Always test software live with messy unscripted inputs.",
       "source": "SEC Litigation Release No. 26282 (Apr 10, 2025)"
     }
   ],

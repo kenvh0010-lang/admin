@@ -3,7 +3,7 @@
 import math
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 from .config import BrandTheme, DEFAULT_THEME, PROJECT_ROOT, VideoFormat, resolve_font_path
 
@@ -29,6 +29,102 @@ def _wrap_text(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFon
     return lines
 
 
+def _compute_layout_metrics(
+    draw: ImageDraw.ImageDraw,
+    scene: Dict[str, Any],
+    fmt: VideoFormat,
+) -> Dict[str, Any]:
+    """Compute consistent header, headline, and card bounds for frame and inner exhibit layers."""
+    w, h = fmt.width, fmt.height
+    is_vert = fmt.is_vertical
+    pad_x = int(w * 0.075)
+    top_y = int(h * (0.065 if is_vert else 0.08))
+
+    tag_font = _load_font(28 if is_vert else 24, bold=True)
+    chapter_tag = str(scene.get("tag", "INSIGHT")).upper()
+    tag_bbox = draw.textbbox((0, 0), chapter_tag, font=tag_font)
+    pill_w = (tag_bbox[2] - tag_bbox[0]) + 36
+    pill_h = (tag_bbox[3] - tag_bbox[1]) + 20
+
+    headline = scene.get("headline", "")
+    head_font = _load_font(56 if is_vert else 52, bold=True)
+    head_start_y = top_y + pill_h + (42 if is_vert else 28)
+    head_lines = _wrap_text(draw, headline, head_font, w - 2 * pad_x)[:3]
+    line_step = 68 if is_vert else 62
+    card_top = head_start_y + len(head_lines) * line_step + (34 if is_vert else 24)
+    card_bottom = int(h * (0.64 if is_vert else 0.70))
+
+    return {
+        "pad_x": pad_x,
+        "top_y": top_y,
+        "tag_font": tag_font,
+        "chapter_tag": chapter_tag,
+        "pill_w": pill_w,
+        "pill_h": pill_h,
+        "head_font": head_font,
+        "head_start_y": head_start_y,
+        "head_lines": head_lines,
+        "line_step": line_step,
+        "card_top": card_top,
+        "card_bottom": card_bottom,
+    }
+
+
+def compute_card_inner_box(scene: Dict[str, Any], fmt: VideoFormat) -> Optional[Tuple[int, int, int, int]]:
+    """Return the stationary interior rectangle (with even dimensions) inside the rounded card border."""
+    scratch_draw = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    m = _compute_layout_metrics(scratch_draw, scene, fmt)
+    if m["card_bottom"] - m["card_top"] <= 180:
+        return None
+    ix1 = m["pad_x"] + 16
+    iy1 = m["card_top"] + 16
+    ix2 = fmt.width - m["pad_x"] - 16
+    iy2 = m["card_bottom"] - 16
+    if (ix2 - ix1) % 2:
+        ix2 -= 1
+    if (iy2 - iy1) % 2:
+        iy2 -= 1
+    if ix2 - ix1 < 64 or iy2 - iy1 < 64:
+        return None
+    return (ix1, iy1, ix2, iy2)
+
+
+def render_scene_exhibit_canvas(
+    scene: Dict[str, Any],
+    card_box: Tuple[int, int, int, int],
+    output_png: Path,
+    scale_mult: int = 2,
+    theme: BrandTheme = DEFAULT_THEME,
+) -> Optional[Path]:
+    """Render a 2x-supersampled evidence card interior for smooth inner-card zoom."""
+    if scene.get("visual_type") != "evidence_image":
+        return None
+    ev_path = scene.get("evidence_image")
+    if not ev_path:
+        return None
+    ev_file = Path(ev_path) if Path(ev_path).is_absolute() else (PROJECT_ROOT / ev_path)
+    if not ev_file.is_file():
+        return None
+
+    output_png.parent.mkdir(parents=True, exist_ok=True)
+    cw = (card_box[2] - card_box[0]) * scale_mult
+    ch = (card_box[3] - card_box[1]) * scale_mult
+    canvas = Image.new("RGB", (cw, ch), theme.bg_card)
+    cdraw = ImageDraw.Draw(canvas)
+    pad = 8 * scale_mult
+    _paste_evidence(
+        canvas,
+        cdraw,
+        ev_file,
+        scene.get("evidence_crop"),
+        (pad, pad, cw - pad, ch - pad),
+        theme,
+        highlight_crop=scene.get("evidence_highlight"),
+    )
+    canvas.save(output_png, format="PNG", compress_level=1)
+    return output_png
+
+
 def render_scene_beat_frame(
     scene: Dict[str, Any],
     caption_text: str,
@@ -42,7 +138,7 @@ def render_scene_beat_frame(
     """
     Render a crisp visual-essay frame with:
       - Custom background image (if provided) OR architectural grid + glow backdrop
-      - Dynamic infographic diagram (`stat_callout`, `comparison_split`, `compounding_curve`, `flywheel`)
+      - Dynamic infographic diagram (`evidence_image`, `comparison_split`, `compounding_curve`, `stat_callout`)
       - Active kinetic subtitle card with keyword gold highlighting
       - Progress bar & brand watermark
     """
@@ -66,17 +162,16 @@ def render_scene_beat_frame(
     for gy in range(0, h, grid_step):
         draw.line([(0, gy), (w, gy)], fill=theme.grid_line, width=1)
 
-    pad_x = int(w * 0.075)
-    top_y = int(h * (0.065 if is_vert else 0.08))
+    layout = _compute_layout_metrics(draw, scene, fmt)
+    pad_x = layout["pad_x"]
+    top_y = layout["top_y"]
+    tag_font = layout["tag_font"]
+    chapter_tag = layout["chapter_tag"]
+    pill_w = layout["pill_w"]
+    pill_h = layout["pill_h"]
 
     # 2. Top Brand & Chapter Header
-    tag_font = _load_font(28 if is_vert else 24, bold=True)
     meta_font = _load_font(26 if is_vert else 22, bold=False)
-    chapter_tag = str(scene.get("tag", "INSIGHT")).upper()
-
-    tag_bbox = draw.textbbox((0, 0), chapter_tag, font=tag_font)
-    pill_w = (tag_bbox[2] - tag_bbox[0]) + 36
-    pill_h = (tag_bbox[3] - tag_bbox[1]) + 20
     tag_color = theme.accent_crimson if chapter_tag == "THE TRAP" or chapter_tag == "HOOK" else theme.accent_gold
 
     draw.rounded_rectangle(
@@ -88,22 +183,20 @@ def render_scene_beat_frame(
     )
     draw.text((pad_x + 18, top_y + 8), chapter_tag, font=tag_font, fill=tag_color)
 
-    step_label = f"{theme.channel_handle}  •  {scene_idx + 1:02d}/{total_scenes:02d}"
+    step_label = theme.channel_handle
     sb = draw.textbbox((0, 0), step_label, font=meta_font)
     draw.text((w - pad_x - (sb[2] - sb[0]), top_y + 10), step_label, font=meta_font, fill=theme.text_muted)
 
     # 3. Scene Headline
-    headline = scene.get("headline", "")
-    head_font = _load_font(56 if is_vert else 52, bold=True)
-    head_y = top_y + pill_h + (42 if is_vert else 28)
-    head_lines = _wrap_text(draw, headline, head_font, w - 2 * pad_x)
-    for line in head_lines[:3]:
+    head_font = layout["head_font"]
+    head_y = layout["head_start_y"]
+    for line in layout["head_lines"]:
         draw.text((pad_x, head_y), line, font=head_font, fill=theme.text_primary)
-        head_y += int((68 if is_vert else 62))
+        head_y += layout["line_step"]
 
     # 4. Dynamic Visual Infographic Card (avoids generic template spam!)
-    card_top = head_y + (34 if is_vert else 24)
-    card_bottom = int(h * (0.64 if is_vert else 0.70))
+    card_top = layout["card_top"]
+    card_bottom = layout["card_bottom"]
     if card_bottom - card_top > 180:
         draw.rounded_rectangle(
             [pad_x, card_top, w - pad_x, card_bottom],
@@ -118,8 +211,15 @@ def render_scene_beat_frame(
             if ev_path else None
         )
         if scene.get("visual_type") == "evidence_image" and ev_file and ev_file.is_file():
-            _paste_evidence(img, draw, ev_file, scene.get("evidence_crop"),
-                            (pad_x + 24, card_top + 24, w - pad_x - 24, card_bottom - 24), theme)
+            _paste_evidence(
+                img,
+                draw,
+                ev_file,
+                scene.get("evidence_crop"),
+                (pad_x + 24, card_top + 24, w - pad_x - 24, card_bottom - 24),
+                theme,
+                highlight_crop=scene.get("evidence_highlight"),
+            )
         else:
             _draw_visual_card_content(
                 draw=draw,
@@ -204,19 +304,39 @@ def _paste_evidence(
     crop: Optional[List[int]],
     box: Tuple[int, int, int, int],
     theme: BrandTheme,
+    highlight_crop: Optional[List[int]] = None,
 ) -> None:
     """Dán ảnh chụp bài báo/tài liệu gốc vào thẻ: cắt theo evidence_crop [x1,y1,x2,y2] nếu có,
-    giữ nguyên tỷ lệ để vừa khít khung thẻ mà không xén mất phần đáy văn bản."""
+    phủ dải highlighter vàng lên dòng then chốt (evidence_highlight), và giữ tỷ lệ không xén đáy."""
     x1, y1, x2, y2 = box
     src = Image.open(path).convert("RGB")
+    cx1, cy1 = 0, 0
     if crop and len(crop) == 4:
-        src = src.crop(tuple(int(v) for v in crop))
+        cx1, cy1, cx2, cy2 = [int(v) for v in crop]
+        src = src.crop((cx1, cy1, cx2, cy2))
     bw, bh = x2 - x1, y2 - y1
     scale = min(bw / src.width, bh / src.height)
     shot = src.resize(
         (max(1, min(bw, round(src.width * scale))), max(1, min(bh, round(src.height * scale)))),
         Image.Resampling.LANCZOS,
     )
+    if highlight_crop and len(highlight_crop) == 4:
+        hx1, hy1, hx2, hy2 = [int(v) for v in highlight_crop]
+        sx = shot.width / max(1, src.width)
+        sy = shot.height / max(1, src.height)
+        rx1 = max(0, min(shot.width, round((hx1 - cx1) * sx)))
+        ry1 = max(0, min(shot.height, round((hy1 - cy1) * sy)))
+        rx2 = max(0, min(shot.width, round((hx2 - cx1) * sx)))
+        ry2 = max(0, min(shot.height, round((hy2 - cy1) * sy)))
+        if rx2 - rx1 >= 8 and ry2 - ry1 >= 6:
+            tint = Image.new("RGB", (rx2 - rx1, ry2 - ry1), (255, 224, 102))
+            highlighted = ImageChops.multiply(shot.crop((rx1, ry1, rx2, ry2)), tint)
+            shot.paste(highlighted, (rx1, ry1))
+            shot_draw = ImageDraw.Draw(shot)
+            bar_x1 = max(0, rx1 - 6)
+            bar_x2 = min(shot.width - 1, max(bar_x1 + 3, rx1 - 1))
+            shot_draw.rectangle([bar_x1, ry1, bar_x2, ry2], fill=theme.accent_gold)
+
     ox, oy = x1 + (bw - shot.width) // 2, y1 + (bh - shot.height) // 2
     img.paste(shot, (ox, oy))
     draw.rectangle([ox - 3, oy - 3, ox + shot.width + 2, oy + shot.height + 2], outline=theme.accent_gold, width=3)

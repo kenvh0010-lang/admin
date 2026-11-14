@@ -1,91 +1,111 @@
 1
-00:00:00,000 --> 00:00:02,686
-Federal prosecutors and the SEC charged
+00:00:00,000 --> 00:00:01,170
+Prosecutors charged a
 
 2
-00:00:02,686 --> 00:00:04,752
-the former CEO of shopping app
+00:00:01,170 --> 00:00:02,117
+42 million dollar
 
 3
-00:00:04,752 --> 00:00:07,094
-Nate after raising over 42 million
+00:00:02,117 --> 00:00:03,231
+AI shopping startup,
 
 4
-00:00:07,094 --> 00:00:09,504
-dollars on claims of autonomous AI.
+00:00:03,231 --> 00:00:04,623
+alleging overseas workers
 
 5
-00:00:09,504 --> 00:00:12,255
-The indictment alleges investors were told
+00:00:04,623 --> 00:00:05,570
+typed its orders.
 
 6
-00:00:12,255 --> 00:00:15,463
-proprietary neural networks finished checkouts in
+00:00:05,570 --> 00:00:06,852
+Investors were allegedly
 
 7
-00:00:15,463 --> 00:00:17,363
-seconds with 93 to 97 percent
+00:00:06,852 --> 00:00:07,974
+pitched autonomous AI
 
 8
-00:00:17,363 --> 00:00:17,952
-accuracy.
+00:00:07,974 --> 00:00:09,524
+finishing universal checkouts
 
 9
-00:00:17,952 --> 00:00:20,261
-Prosecutors allege the app's actual AI
+00:00:09,524 --> 00:00:09,951
+at 93 to
 
 10
-00:00:20,261 --> 00:00:22,510
-automation rate was effectively zero,
+00:00:09,951 --> 00:00:11,020
+97 percent accuracy.
 
 11
-00:00:22,510 --> 00:00:24,576
-and hundreds of contractors in the
+00:00:11,020 --> 00:00:12,420
+The indictment alleges
 
 12
-00:00:24,576 --> 00:00:27,432
-Philippines and Romania placed orders manually.
+00:00:12,420 --> 00:00:13,184
+Nate did not
 
 13
-00:00:27,432 --> 00:00:29,900
-Even its limited bots allegedly used
+00:00:13,184 --> 00:00:13,757
+use AI to
 
 14
-00:00:29,900 --> 00:00:31,408
-site-specific scripts,
+00:00:13,757 --> 00:00:14,967
+complete purchases,
 
 15
-00:00:31,408 --> 00:00:31,888
-not AI.
+00:00:14,967 --> 00:00:16,112
+relying instead on
 
 16
-00:00:31,888 --> 00:00:33,876
-These are indictment charges,
+00:00:16,112 --> 00:00:16,940
+manual staff.
 
 17
-00:00:33,876 --> 00:00:36,480
-and the defendant is presumed innocent
+00:00:16,940 --> 00:00:18,183
+The Southern District
 
 18
-00:00:36,480 --> 00:00:37,920
-unless proven guilty.
+00:00:18,183 --> 00:00:19,130
+and SEC indicted
 
 19
-00:00:37,920 --> 00:00:40,171
-Never trust a rehearsed AI demo
+00:00:19,130 --> 00:00:20,018
+its former CEO,
 
 20
-00:00:40,171 --> 00:00:42,059
-when money is on the line.
+00:00:20,018 --> 00:00:21,202
+who remains presumed
 
 21
-00:00:42,059 --> 00:00:44,311
-Test the product live with your
+00:00:21,202 --> 00:00:22,150
+innocent pending
 
 22
-00:00:44,311 --> 00:00:45,037
-own messy,
+00:00:22,150 --> 00:00:22,860
+court trial.
 
 23
-00:00:45,037 --> 00:00:46,344
+00:00:22,860 --> 00:00:23,994
+Staged startup demos
+
+24
+00:00:23,994 --> 00:00:24,618
+never prove
+
+25
+00:00:24,618 --> 00:00:25,525
+real automation.
+
+26
+00:00:25,525 --> 00:00:26,659
+Always test software
+
+27
+00:00:26,659 --> 00:00:27,509
+live with messy
+
+28
+00:00:27,509 --> 00:00:28,530
 unscripted inputs.

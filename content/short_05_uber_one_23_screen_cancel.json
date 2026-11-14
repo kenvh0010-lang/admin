@@ -20,46 +20,58 @@
     "stat": "32 CLICKS"
   },
   "affiliate_cta": {
-    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "offer_name": "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "Have you ever tried canceling Uber One inside the app? Exhibit 20 and the full amended complaint PDF are linked in the description."
   },
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "FTC & 21 States Sued Uber",
+      "headline": "Up to 23 Screens, 32 Actions",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/uber_one/complaint_p1_caption.png",
+      "evidence_image": "assets/evidence/uber_one/complaint_p36_23_screens.png",
       "evidence_crop": [
-        200,
-        480,
-        1185,
-        1490
+        195,
+        115,
+        1205,
+        465
+      ],
+      "evidence_highlight": [
+        210,
+        135,
+        1190,
+        245
       ],
       "highlight_words": [
-        "21",
-        "states",
-        "Uber"
+        "9.99",
+        "23",
+        "screens"
       ],
-      "narration": "The FTC, 21 states, and D.C. sued Uber in federal court over its 9.99 dollar a month Uber One membership.",
-      "source": "FTC & 21 States v. Uber, First Amended Complaint p. 1 (N.D. Cal. Dec 2025)"
+      "narration": "How did a 9.99 dollar Uber One plan allegedly require 23 cancellation screens?",
+      "source": "First Amended Complaint Para. 75, p. 36 (N.D. Cal. Dec 2025)"
     },
     {
       "tag": "THE SIGNUP",
-      "headline": "One Tap Enrolled Users",
+      "headline": "One Tap Enrolled Riders",
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/uber_one/complaint_p11_try_free.png",
       "evidence_crop": [
-        220,
-        185,
+        205,
+        195,
         1185,
-        1085
+        1055
+      ],
+      "evidence_highlight": [
+        215,
+        895,
+        1175,
+        1020
       ],
       "highlight_words": [
         "free",
-        "before"
+        "subscribed"
       ],
-      "narration": "Exhibit 4 shows the signup popup: one tap on Try for free enrolls you, and regulators allege some users were billed before trials ended.",
+      "narration": "Regulators allege one tap on Try for free signed riders up before some realized they subscribed.",
       "source": "First Amended Complaint Exhibit 4, p. 11 (No. 4:25-cv-03477)"
     },
     {
@@ -68,36 +80,47 @@
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/uber_one/complaint_p27_cancel_loop.png",
       "evidence_crop": [
-        225,
+        205,
         385,
         1185,
-        1085
+        1245
+      ],
+      "evidence_highlight": [
+        220,
+        1080,
+        1175,
+        1190
       ],
       "highlight_words": [
         "loop",
-        "four"
+        "billing"
       ],
-      "narration": "Exhibit 20 maps an alleged cancellation loop inside the app: four screens of pause and savings offers that send users right back to the start.",
+      "narration": "Exhibit 20 maps a loop of retention offers that allegedly sent users straight back to billing screens.",
       "source": "First Amended Complaint Exhibit 20, p. 27 (N.D. Cal.)"
     },
     {
-      "tag": "THE COUNT",
-      "headline": "Up to 23 Screens, 32 Actions",
+      "tag": "THE CASE",
+      "headline": "FTC & 21 States Sued Uber",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/uber_one/complaint_p36_23_screens.png",
+      "evidence_image": "assets/evidence/uber_one/complaint_p1_caption.png",
       "evidence_crop": [
-        210,
-        115,
-        1200,
-        560
+        200,
+        710,
+        1185,
+        1495
+      ],
+      "evidence_highlight": [
+        715,
+        740,
+        1175,
+        920
       ],
       "highlight_words": [
-        "23",
-        "32",
+        "21",
         "denies"
       ],
-      "narration": "The complaint alleges canceling can take up to 23 screens and 32 actions. Uber denies the claims, and the case is still pending.",
-      "source": "First Amended Complaint Para. 75, p. 36 (N.D. Cal.)"
+      "narration": "The FTC and 21 states sued over those flows, though Uber denies wrongdoing in pending litigation.",
+      "source": "FTC & 21 States v. Uber, Complaint p. 1 (N.D. Cal.)"
     },
     {
       "tag": "THE RULE",
@@ -108,10 +131,10 @@
       "right_title": "ALLEGED EXIT",
       "right_body": "Up to 23 screens and 32 actions",
       "highlight_words": [
-        "calendar",
-        "cancel"
+        "cancels",
+        "reminder"
       ],
-      "narration": "Before tapping any free trial, check where the cancel button lives and set an alert three days before billing.",
+      "narration": "Check how a free trial cancels on day one, and set your reminder three days early.",
       "source": "FTC & 21 States v. Uber, No. 4:25-cv-03477 (N.D. Cal.)"
     }
   ],

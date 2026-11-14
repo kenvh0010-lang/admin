@@ -20,47 +20,59 @@
     "stat": "53.6M"
   },
   "affiliate_cta": {
-    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "offer_name": "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "Do you treat 'Pay in 4' like cash or like credit? Both 2025 CFPB reports and data tables are linked in the description."
   },
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "53.6 Million Pay-in-4 Borrowers",
-      "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/cfpb_bnpl/cfpb_dec2025_table2_53m.png",
-      "evidence_crop": [
-        130,
-        140,
-        1130,
-        560
-      ],
-      "highlight_words": [
-        "53.6",
-        "million",
-        "6.3"
-      ],
-      "narration": "Across six major Buy Now, Pay Later firms tracked by the CFPB, 53.6 million borrowers took an average of 6.3 loans in a single year.",
-      "source": "CFPB BNPL Market Report Table 2 (Dec 2025)"
-    },
-    {
-      "tag": "THE STACKING",
       "headline": "62.7% Held Overlapping Loans",
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/cfpb_bnpl/cfpb_jan2025_table4_stacking.png",
       "evidence_crop": [
         130,
-        240,
+        225,
         1140,
-        620
+        560
+      ],
+      "evidence_highlight": [
+        145,
+        320,
+        1115,
+        365
       ],
       "highlight_words": [
-        "62.7%",
-        "32.6%"
+        "63",
+        "percent",
+        "overlapping"
       ],
-      "narration": "In CFPB credit-panel data, 62.7 percent of users held multiple BNPL loans at once, and 32.6 percent stacked loans across different apps.",
+      "narration": "Why do 63 percent of Buy Now, Pay Later borrowers hold overlapping loans at once?",
       "source": "CFPB Consumer Use of BNPL Report Table 4 (Jan 2025)"
+    },
+    {
+      "tag": "THE SCALE",
+      "headline": "53.6 Million Pay-in-4 Borrowers",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/cfpb_bnpl/cfpb_dec2025_table2_53m.png",
+      "evidence_crop": [
+        130,
+        175,
+        1130,
+        520
+      ],
+      "evidence_highlight": [
+        145,
+        305,
+        1105,
+        425
+      ],
+      "highlight_words": [
+        "53.6",
+        "6.3"
+      ],
+      "narration": "Across six major lenders tracked by the CFPB, 53.6 million borrowers averaged 6.3 loans per year.",
+      "source": "CFPB BNPL Market Report Table 2 (Dec 2025)"
     },
     {
       "tag": "THE SPIKE",
@@ -73,11 +85,17 @@
         1060,
         740
       ],
+      "evidence_highlight": [
+        680,
+        195,
+        995,
+        420
+      ],
       "highlight_words": [
         "holiday",
-        "four"
+        "drafts"
       ],
-      "narration": "Figure 5 shows active Pay-in-4 loans spiking every holiday season as separate biweekly debits pile onto the same checking account.",
+      "narration": "Federal data shows active split plans spiking every holiday week, creating overlapping biweekly bank drafts.",
       "source": "CFPB BNPL Report Figure 5 (Jan 2025)"
     },
     {
@@ -87,15 +105,21 @@
       "evidence_image": "assets/evidence/cfpb_bnpl/cfpb_jan2025_fig6_debt_burden.png",
       "evidence_crop": [
         130,
-        130,
+        165,
         1140,
         860
       ],
+      "evidence_highlight": [
+        680,
+        240,
+        1020,
+        775
+      ],
       "highlight_words": [
-        "credit",
+        "debt",
         "correlation"
       ],
-      "narration": "BNPL borrowers also carried higher credit card, retail, and personal loan balances, though the CFPB notes that pattern is correlation, not causation.",
+      "narration": "BNPL users also carried heavier card and personal debt, though the CFPB stresses correlation is not causation.",
       "source": "CFPB BNPL Report Figure 6 (Jan 2025)"
     },
     {
@@ -110,7 +134,7 @@
         "zero",
         "debt"
       ],
-      "narration": "Zero interest is still real debt. Never open a second Pay-in-4 plan until your current balance hits zero.",
+      "narration": "Zero interest is still real debt. Pay one Pay-in-4 plan to zero before opening another.",
       "source": "CFPB BNPL Market & Consumer Reports (2025)"
     }
   ],

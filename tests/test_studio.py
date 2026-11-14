@@ -4,10 +4,13 @@ import csv
 import json
 import os
 from pathlib import Path
+import shutil
+import subprocess
 import tempfile
 import unittest
+import wave
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageStat
 
 from yt_studio.config import (
     CONTENT_DIR,
@@ -18,10 +21,18 @@ from yt_studio.config import (
     resolve_font_path,
 )
 from yt_studio.site_builder import DEFAULT_AMAZON_TAG, build_public_site
-from yt_studio.subtitle_maker import build_scene_beats, export_srt
-from yt_studio.tts_engine import estimate_speech_duration, generate_ambient_bed
-from yt_studio.video_renderer import compute_storyboard_signature
-from yt_studio.visual_composer import _load_font, _wrap_text, render_scene_beat_frame, render_thumbnail
+from yt_studio.storyboard_validator import validate_storyboard
+from yt_studio.subtitle_maker import build_scene_beats, export_srt, split_into_beats
+from yt_studio.tts_engine import estimate_speech_duration, generate_ambient_bed, generate_scene_sfx_track
+from yt_studio.video_renderer import _render_motion_clip, compute_storyboard_signature
+from yt_studio.visual_composer import (
+    _load_font,
+    _wrap_text,
+    compute_card_inner_box,
+    render_scene_beat_frame,
+    render_scene_exhibit_canvas,
+    render_thumbnail,
+)
 from yt_studio.youtube_uploader import build_youtube_description, pick_next_unpublished_storyboard
 
 
@@ -640,6 +651,109 @@ class TestYouTubeStudioEcosystem(unittest.TestCase):
         for pid in protected:
             self.assertNotIn(pid, selected_ids)
         self.assertNotIn("new_lawsuit_01", selected_ids)
+
+    def test_short_beats_balanced_two_to_three_words_without_orphan(self) -> None:
+        self.assertEqual(split_into_beats("One two three four", max_words=3), ["One two", "three four"])
+        seven = split_into_beats("Alpha beta gamma delta epsilon zeta eta", max_words=3)
+        self.assertGreaterEqual(min(len(b.split()) for b in seven), 2)
+        self.assertLessEqual(max(len(b.split()) for b in seven), 3)
+
+        beats = build_scene_beats(0, "One two three four. Five six seven eight.", 0.0, 4.0, max_words=3)
+        self.assertEqual(len(beats), 4)
+        self.assertTrue(all(len(b.text.split()) == 2 for b in beats))
+        self.assertAlmostEqual(beats[0].start_sec, 0.0, places=3)
+        self.assertAlmostEqual(beats[-1].end_sec, 4.0, places=3)
+
+    def test_evidence_highlight_renders_gold_band_and_validates_bounds(self) -> None:
+        sb_path = CONTENT_DIR / "short_04_knight_capital_440m_sec_order.json"
+        rep = validate_storyboard(sb_path, check_dedupe=True)
+        self.assertTrue(rep["ok"], f"Unexpected validation errors: {rep['errors']}")
+        self.assertEqual(rep["warnings"], [], f"Unexpected validation warnings: {rep['warnings']}")
+
+        data = json.loads(sb_path.read_text(encoding="utf-8"))
+        scene = dict(data["scenes"][0])
+        scene_plain = {k: v for k, v in scene.items() if k != "evidence_highlight"}
+
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            p_hl = render_scene_beat_frame(
+                scene=scene,
+                caption_text="Over 460 million",
+                scene_idx=0,
+                total_scenes=len(data["scenes"]),
+                progress_ratio=0.2,
+                fmt=FORMATS["short"],
+                output_png=tmp_path / "hl.png",
+            )
+            p_plain = render_scene_beat_frame(
+                scene=scene_plain,
+                caption_text="Over 460 million",
+                scene_idx=0,
+                total_scenes=len(data["scenes"]),
+                progress_ratio=0.2,
+                fmt=FORMATS["short"],
+                output_png=tmp_path / "plain.png",
+            )
+            with Image.open(p_hl) as im_hl, Image.open(p_plain) as im_plain:
+                self.assertNotEqual(im_hl.tobytes(), im_plain.tobytes())
+
+            bad = json.loads(json.dumps(data))
+            bad["scenes"][0]["evidence_highlight"] = [0, 0, 500, 40]
+            bad_path = tmp_path / "bad_hl.json"
+            bad_path.write_text(json.dumps(bad), encoding="utf-8")
+            bad_rep = validate_storyboard(bad_path, check_dedupe=False)
+            self.assertFalse(bad_rep["ok"])
+            self.assertTrue(any("evidence_highlight" in e for e in bad_rep["errors"]))
+
+    def test_motion_clip_first_frame_not_black_and_sfx_track_generated(self) -> None:
+        data = json.loads((CONTENT_DIR / "short_04_knight_capital_440m_sec_order.json").read_text(encoding="utf-8"))
+        scene = data["scenes"][0]
+        fmt = FORMATS["short"]
+
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            sfx_wav = generate_scene_sfx_track(tmp_path / "sfx.wav", [0.0, 4.0, 8.0], 10.0)
+            with wave.open(str(sfx_wav), "rb") as wf:
+                self.assertEqual(wf.getnchannels(), 1)
+                self.assertEqual(wf.getframerate(), 24000)
+                self.assertGreater(wf.getnframes(), 200_000)
+                raw = wf.readframes(wf.getnframes())
+                self.assertTrue(any(b != 0 for b in raw))
+
+            if shutil.which("ffmpeg"):
+                frame_png = render_scene_beat_frame(
+                    scene=scene,
+                    caption_text="Over 460 million",
+                    scene_idx=0,
+                    total_scenes=len(data["scenes"]),
+                    progress_ratio=0.2,
+                    fmt=fmt,
+                    output_png=tmp_path / "frame.png",
+                )
+                card_box = compute_card_inner_box(scene, fmt)
+                self.assertIsNotNone(card_box)
+                ex_png = render_scene_exhibit_canvas(scene, card_box, tmp_path / "ex.png")
+                self.assertIsNotNone(ex_png)
+                clip_mp4 = tmp_path / "clip.mp4"
+                _render_motion_clip(
+                    frame_png=frame_png,
+                    out_mp4=clip_mp4,
+                    duration=0.25,
+                    t_offset=0.0,
+                    scene_dur=4.0,
+                    first_in_scene=True,
+                    fmt=fmt,
+                    exhibit_png=ex_png,
+                    card_box=card_box,
+                )
+                f0_png = tmp_path / "f0.png"
+                subprocess.run(
+                    ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(clip_mp4), "-vframes", "1", str(f0_png)],
+                    check=True,
+                )
+                with Image.open(f0_png) as im0:
+                    mean_luma = ImageStat.Stat(im0.convert("L")).mean[0]
+                    self.assertGreater(mean_luma, 10.0)
 
 
 if __name__ == "__main__":

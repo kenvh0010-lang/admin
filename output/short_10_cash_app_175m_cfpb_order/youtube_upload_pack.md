@@ -1,8 +1,8 @@
 # YouTube Upload Pack — CFPB Ordered Cash App Parent Block to Pay Up to $175 Million
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `45.7s`
-- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
+- **Estimated Runtime**: `29.2s`
+- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -18,14 +18,14 @@ In Consent Order 2025-CFPB-0001, the Consumer Financial Protection Bureau ordere
 • CFPB Consent Order: In the Matter of Block, Inc., 2025-CFPB-0001 (Jan 16, 2025): https://files.consumerfinance.gov/f/documents/cfpb_block-inc-consent-order_2025-01.pdf
 • CFPB Stipulation and Consent to the Issuance of a Consent Order (Jan 2025): https://files.consumerfinance.gov/f/documents/cfpb_block-inc-stipulation_2025-01.pdf
 
-🔗 **Free 5-Hour Asset Builder OS + reading list**: https://kenvh0010-lang.github.io/admin/bio/
+🔗 **Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
-00:00 - Up to $175M CFPB Order on Block
-00:08 - Card Number Played a Recording
-00:17 - Fought 75% of Bank Chargebacks
-00:27 - Up to $120M Back to Users
-00:37 - Apps Are Wallets, Not Vaults
+00:00 - Card Line Played a Recording
+00:05 - Challenged 75% of Chargebacks
+00:11 - Up to $120M Back to Users
+00:17 - $175M CFPB Order on Block
+00:23 - Apps Are Wallets, Not Vaults
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

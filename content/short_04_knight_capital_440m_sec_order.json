@@ -20,29 +20,35 @@
     "stat": "-$460M"
   },
   "affiliate_cta": {
-    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "offer_name": "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "97 warning emails sat unread before the market even opened. Link to the full SEC Order PDF is in the description."
   },
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "$460 Million Gone in 45 Minutes",
+      "headline": "$460 Million Lost in 45 Minutes",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/knight/sec_order_p1.png",
+      "evidence_image": "assets/evidence/knight/sec_order_p2.png",
       "evidence_crop": [
-        110,
+        120,
+        135,
+        1155,
+        525
+      ],
+      "evidence_highlight": [
         140,
-        1175,
-        730
+        392,
+        680,
+        434
       ],
       "highlight_words": [
         "460",
-        "million",
-        "45"
+        "45",
+        "server"
       ],
-      "narration": "One missed server update cost a Wall Street trading giant over 460 million dollars in 45 minutes.",
-      "source": "SEC Release No. 34-70694, In the Matter of Knight Capital (Oct 16, 2013)"
+      "narration": "Over 460 million dollars vanished in 45 minutes after one server missed a manual update.",
+      "source": "SEC Release No. 34-70694, para. 1, p. 2 (Oct 16, 2013)"
     },
     {
       "tag": "THE 8TH SERVER",
@@ -50,56 +56,74 @@
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/knight/sec_order_p6.png",
       "evidence_crop": [
-        130,
+        125,
         140,
         1150,
-        700
+        680
+      ],
+      "evidence_highlight": [
+        140,
+        195,
+        1135,
+        315
       ],
       "highlight_words": [
-        "eight",
-        "Power",
-        "Peg"
+        "seven",
+        "eighth",
+        "2003"
       ],
-      "narration": "A technician manually copied new code to seven servers, missed the eighth, and accidentally woke up dead 2003 code called Power Peg.",
+      "narration": "A technician deployed new routing software to seven machines, missed the eighth, and revived dead 2003 code.",
       "source": "SEC Order paras. 15-16, p. 6"
     },
     {
-      "tag": "THE FLOOD",
-      "headline": "4 Million Trades in 154 Stocks",
+      "tag": "THE ALERTS",
+      "headline": "97 Ignored Warning Emails",
       "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/knight/sec_order_p2.png",
+      "evidence_image": "assets/evidence/knight/sec_order_p6.png",
       "evidence_crop": [
-        130,
-        140,
+        125,
+        1085,
         1150,
-        560
+        1435
+      ],
+      "evidence_highlight": [
+        140,
+        1285,
+        1135,
+        1390
       ],
       "highlight_words": [
-        "4",
-        "million",
-        "397"
+        "97",
+        "Power",
+        "Peg"
       ],
-      "narration": "At market open, that server fired millions of orders, racking up 4 million executions across 397 million shares before engineers pulled the plug.",
-      "source": "SEC Order para. 1, p. 2"
+      "narration": "Before the bell, internal scripts emailed 97 Power Peg warnings that nobody flagged as critical alerts.",
+      "source": "SEC Order para. 19, p. 6"
     },
     {
       "tag": "THE PENALTY",
-      "headline": "97 Unread Alerts & $12M Fine",
+      "headline": "Capital Wiped Out & $12M Fine",
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/knight/sec_order_p18.png",
       "evidence_crop": [
-        130,
+        125,
         290,
         1150,
         630
       ],
-      "highlight_words": [
-        "97",
-        "12",
-        "million"
+      "evidence_highlight": [
+        140,
+        345,
+        760,
+        405
       ],
-      "narration": "An internal system had sent 97 Power Peg emails before the open, but nobody treated them as alerts. Knight later paid a 12 million dollar SEC fine.",
-      "source": "SEC Order para. 19, p. 6 & Section IV.C, p. 18"
+      "highlight_words": [
+        "12",
+        "million",
+        "SEC"
+      ],
+      "narration": "That unflagged deployment destroyed Knight's capital, ending in a 12 million dollar SEC penalty.",
+      "source": "SEC Order Section IV.C, p. 18"
     },
     {
       "tag": "THE RULE",
@@ -110,10 +134,10 @@
       "right_title": "SAFE DEPLOY",
       "right_body": "Automated deploy + automatic circuit breaker",
       "highlight_words": [
-        "automated",
-        "breaker"
+        "Automate",
+        "breakers"
       ],
-      "narration": "Any automated machine moving real money needs two guardrails: zero manual server deploys, and an automatic kill switch.",
+      "narration": "Never deploy money code by hand. Automate rollouts, delete dead flags, and wire hard circuit breakers.",
       "source": "SEC Market Access Rule 15c3-5 Findings"
     }
   ],

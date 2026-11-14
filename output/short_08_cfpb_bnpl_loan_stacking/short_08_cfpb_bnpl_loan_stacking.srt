@@ -1,91 +1,115 @@
 1
-00:00:00,000 --> 00:00:02,034
-Across six major Buy Now,
+00:00:00,000 --> 00:00:00,660
+Why do 63
 
 2
-00:00:02,034 --> 00:00:04,964
-Pay Later firms tracked by the CFPB,
+00:00:00,660 --> 00:00:01,393
+percent of
 
 3
-00:00:04,964 --> 00:00:08,056
-53.6 million borrowers took an average
+00:00:01,393 --> 00:00:01,979
+Buy Now,
 
 4
-00:00:08,056 --> 00:00:10,009
-of 6.3 loans in a single
+00:00:01,979 --> 00:00:03,371
+Pay Later borrowers
 
 5
-00:00:10,009 --> 00:00:10,416
-year.
+00:00:03,371 --> 00:00:04,984
+hold overlapping loans
 
 6
-00:00:10,416 --> 00:00:12,600
-In CFPB credit-panel data,
+00:00:04,984 --> 00:00:05,570
+at once?
 
 7
-00:00:12,600 --> 00:00:15,540
-62.7 percent of users held multiple
+00:00:05,570 --> 00:00:06,676
+Across six major
 
 8
-00:00:15,540 --> 00:00:17,136
-BNPL loans at once,
+00:00:06,676 --> 00:00:07,920
+lenders tracked by
 
 9
-00:00:17,136 --> 00:00:20,244
-and 32.6 percent stacked loans across
+00:00:07,920 --> 00:00:08,543
+the CFPB,
 
 10
-00:00:20,244 --> 00:00:21,504
-different apps.
+00:00:08,543 --> 00:00:10,063
+53.6 million borrowers
 
 11
-00:00:21,504 --> 00:00:23,946
-Figure 5 shows active Pay-in-4 loans
+00:00:10,063 --> 00:00:11,308
+averaged 6.3 loans
 
 12
-00:00:23,946 --> 00:00:26,660
-spiking every holiday season as separate
+00:00:11,308 --> 00:00:11,930
+per year.
 
 13
-00:00:26,660 --> 00:00:28,967
-biweekly debits pile onto the same
+00:00:11,930 --> 00:00:12,903
+Federal data shows
 
 14
-00:00:28,967 --> 00:00:30,120
-checking account.
+00:00:12,903 --> 00:00:13,877
+active split plans
 
 15
-00:00:30,120 --> 00:00:33,527
-BNPL borrowers also carried higher credit card,
+00:00:13,877 --> 00:00:14,580
+spiking every
 
 16
-00:00:33,527 --> 00:00:34,035
-retail,
+00:00:14,580 --> 00:00:15,283
+holiday week,
 
 17
-00:00:34,035 --> 00:00:35,992
-and personal loan balances,
+00:00:15,283 --> 00:00:16,851
+creating overlapping biweekly
 
 18
-00:00:35,992 --> 00:00:38,457
-though the CFPB notes that pattern
+00:00:16,851 --> 00:00:17,500
+bank drafts.
 
 19
-00:00:38,457 --> 00:00:39,545
-is correlation,
+00:00:17,500 --> 00:00:18,396
+BNPL users also
 
 20
-00:00:39,545 --> 00:00:40,560
-not causation.
+00:00:18,396 --> 00:00:19,590
+carried heavier card
 
 21
-00:00:40,560 --> 00:00:43,128
-Zero interest is still real debt.
+00:00:19,590 --> 00:00:20,665
+and personal debt,
 
 22
-00:00:43,128 --> 00:00:45,696
-Never open a second Pay-in-4 plan
+00:00:20,665 --> 00:00:21,561
+though the CFPB
 
 23
-00:00:45,696 --> 00:00:48,576
-until your current balance hits zero.
+00:00:21,561 --> 00:00:22,934
+stresses correlation is
+
+24
+00:00:22,934 --> 00:00:23,770
+not causation.
+
+25
+00:00:23,770 --> 00:00:24,863
+Zero interest is
+
+26
+00:00:24,863 --> 00:00:25,956
+still real debt.
+
+27
+00:00:25,956 --> 00:00:27,049
+Pay one Pay-in-4
+
+28
+00:00:27,049 --> 00:00:27,869
+plan to zero
+
+29
+00:00:27,869 --> 00:00:29,440
+before opening another.

@@ -53,7 +53,7 @@ Return ONLY valid JSON matching this exact structure:
     "stat": "$100M"
   }},
   "affiliate_cta": {{
-    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "offer_name": "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
     "url_placeholder": "{BIO_URL}",
     "pinned_comment": "One-sentence personal wallet question? Every filing and source is linked in the description."
   }},
@@ -138,7 +138,7 @@ def inspect_evidence_folder(
 def build_prompt_for_topic(
     topic: str,
     fmt: str = "short",
-    affiliate_offer: str = "Free 5-Hour Asset Builder OS + reading list",
+    affiliate_offer: str = "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
     exhibits: Optional[List[Dict[str, Any]]] = None,
     sources: Optional[List[Tuple[str, str]]] = None,
 ) -> str:
@@ -250,7 +250,7 @@ def scaffold_case_draft(
             "stat": "$0M",
         },
         "affiliate_cta": {
-            "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+            "offer_name": "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
             "url_placeholder": BIO_URL,
             "pinned_comment": "Have you encountered this fee or app flow yourself? Primary filings are linked in the description.",
         },
@@ -271,7 +271,7 @@ def generate_storyboard_json(
     topic: str,
     output_json: Path,
     fmt: str = "short",
-    affiliate_offer: str = "Free 5-Hour Asset Builder OS + reading list",
+    affiliate_offer: str = "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
     evidence_dir: Optional[Path] = None,
     sources: Optional[List[Tuple[str, str]]] = None,
     allow_active: bool = False,

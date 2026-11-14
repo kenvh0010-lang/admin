@@ -1,95 +1,119 @@
 1
-00:00:00,000 --> 00:00:03,281
-The CFPB ordered Cash App's parent company,
-
-2
-00:00:03,281 --> 00:00:03,739
-Block,
-
-3
-00:00:03,739 --> 00:00:05,570
-to pay up to 175 million
-
-4
-00:00:05,570 --> 00:00:08,089
-dollars over how it handled fraud
-
-5
-00:00:08,089 --> 00:00:08,928
-on the app.
-
-6
-00:00:08,928 --> 00:00:09,655
+00:00:00,000 --> 00:00:00,681
 Until 2021,
 
+2
+00:00:00,681 --> 00:00:01,609
+Cash App's card
+
+3
+00:00:01,609 --> 00:00:02,785
+support line played
+
+4
+00:00:02,785 --> 00:00:03,961
+a recording instead
+
+5
+00:00:03,961 --> 00:00:04,704
+of answering
+
+6
+00:00:04,704 --> 00:00:05,570
+fraud victims.
+
 7
-00:00:09,655 --> 00:00:11,309
-the number on the back of
+00:00:05,570 --> 00:00:06,566
+When victims asked
 
 8
-00:00:11,309 --> 00:00:13,557
-Cash Cards played a recording with
+00:00:06,566 --> 00:00:07,451
+banks to reverse
 
 9
-00:00:13,557 --> 00:00:14,483
-no live agent,
+00:00:07,451 --> 00:00:08,724
+unauthorized transfers,
 
 10
-00:00:14,483 --> 00:00:17,856
-pushing victims toward fake support numbers online.
+00:00:08,724 --> 00:00:09,775
+Block challenged at
 
 11
-00:00:17,856 --> 00:00:19,875
-When users asked their banks to
+00:00:09,775 --> 00:00:10,660
+least 75 percent
 
 12
-00:00:19,875 --> 00:00:22,742
-reverse unauthorized peer-to-peer transfers,
+00:00:10,660 --> 00:00:11,490
+of chargebacks.
 
 13
-00:00:22,742 --> 00:00:24,957
-the CFPB found Block challenged at
+00:00:11,490 --> 00:00:12,650
+The CFPB ordered
 
 14
-00:00:24,957 --> 00:00:27,432
-least 75 percent of those chargebacks.
+00:00:12,650 --> 00:00:13,303
+up to 120
 
 15
-00:00:27,432 --> 00:00:30,421
-Without admitting or denying the findings,
+00:00:13,303 --> 00:00:14,607
+million dollars in
 
 16
-00:00:30,421 --> 00:00:32,200
-Block agreed to up to 120
+00:00:14,607 --> 00:00:15,840
+user refunds plus
 
 17
-00:00:32,200 --> 00:00:34,477
-million dollars in user redress,
+00:00:15,840 --> 00:00:16,130
+a 55
 
 18
-00:00:34,477 --> 00:00:35,971
-a 55 million penalty,
+00:00:16,130 --> 00:00:17,290
+million penalty.
 
 19
-00:00:35,971 --> 00:00:37,608
-and live phone support.
+00:00:17,290 --> 00:00:18,474
+Without admitting or
 
 20
-00:00:37,608 --> 00:00:39,678
-Use payment apps like cash in
+00:00:18,474 --> 00:00:19,717
+denying the findings,
 
 21
-00:00:39,678 --> 00:00:40,534
-your pocket,
+00:00:19,717 --> 00:00:20,605
+Cash App parent
 
 22
-00:00:40,534 --> 00:00:41,390
-not a vault.
+00:00:20,605 --> 00:00:21,671
+Block consented to
 
 23
-00:00:41,390 --> 00:00:43,959
-Sweep idle balances straight back to
+00:00:21,671 --> 00:00:22,381
+provide live
 
 24
-00:00:43,959 --> 00:00:45,672
-an insured bank account.
+00:00:22,381 --> 00:00:23,210
+phone support.
+
+25
+00:00:23,210 --> 00:00:24,470
+Treat payment apps
+
+26
+00:00:24,470 --> 00:00:24,890
+like a
+
+27
+00:00:24,890 --> 00:00:25,870
+pocket wallet.
+
+28
+00:00:25,870 --> 00:00:26,990
+Sweep spare cash
+
+29
+00:00:26,990 --> 00:00:28,110
+straight back to
+
+30
+00:00:28,110 --> 00:00:29,230
+an insured bank.

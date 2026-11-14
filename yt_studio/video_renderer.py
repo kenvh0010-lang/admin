@@ -8,12 +8,17 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from .config import DEFAULT_THEME, FORMATS, PROJECT_ROOT, RENDERER_VERSION
 from .subtitle_maker import CaptionBeat, build_scene_beats, export_srt
-from .tts_engine import generate_ambient_bed, synthesize_voice
-from .visual_composer import render_scene_beat_frame, render_thumbnail
+from .tts_engine import generate_ambient_bed, generate_scene_sfx_track, synthesize_voice
+from .visual_composer import (
+    compute_card_inner_box,
+    render_scene_beat_frame,
+    render_scene_exhibit_canvas,
+    render_thumbnail,
+)
 
 
 def compute_storyboard_signature(
@@ -171,22 +176,36 @@ def render_project(
                 output_path=work_dir / f"voice_{idx:03d}",
                 provider=tts_provider,
                 voice=data.get("voice", voice),
+                is_last_scene=(idx == len(scenes) - 1),
             )
             tts_used = provider_label
             scene_audio_files.append(audio_file)
             scene_durations.append(dur)
 
         total_duration = sum(scene_durations)
+        scene_starts: List[float] = []
+        acc = 0.0
+        for d in scene_durations:
+            scene_starts.append(acc)
+            acc += d
 
-        # Step 2: Build beats & render visual frames
+        # Step 2: Build beats & render stationary UI frames + supersampled inner exhibit cards
         frame_counter = 0
+        scene_exhibits: Dict[int, Tuple[Optional[Path], Optional[Tuple[int, int, int, int]]]] = {}
         for idx, (scene, dur) in enumerate(zip(scenes, scene_durations)):
+            card_box = compute_card_inner_box(scene, fmt)
+            ex_png = (
+                render_scene_exhibit_canvas(scene, card_box, work_dir / f"exhibit_{idx:03d}.png")
+                if card_box is not None else None
+            )
+            scene_exhibits[idx] = (ex_png, card_box if ex_png is not None else None)
+
             beats = build_scene_beats(
                 scene_index=idx,
                 narration=scene["narration"],
                 scene_start_sec=timeline_cursor,
                 scene_duration_sec=dur,
-                max_words=6 if fmt.is_vertical else 9,
+                max_words=3 if fmt.is_vertical else 8,
             )
             for b in beats:
                 progress = b.end_sec / max(0.1, total_duration)
@@ -205,7 +224,7 @@ def render_project(
                 frame_counter += 1
             timeline_cursor += dur
 
-        # Step 3: Concatenate scene voiceovers & mix with 100% original ambient soundtrack
+        # Step 3: Concatenate scene voiceovers & mix with ambient bed + subtle documentary exhibit SFX
         voice_concat_list = work_dir / "voice_list.txt"
         voice_concat_list.write_text(
             "\n".join(f"file '{p.as_posix()}'" for p in scene_audio_files) + "\n",
@@ -224,14 +243,18 @@ def render_project(
         )
 
         ambient_wav = generate_ambient_bed(work_dir / "ambient.wav", total_duration)
+        sfx_wav = generate_scene_sfx_track(work_dir / "sfx.wav", scene_starts, total_duration)
         mixed_audio_m4a = work_dir / "master_audio.m4a"
         subprocess.run(
             [
                 "ffmpeg", "-y",
                 "-i", str(combined_voice_wav),
                 "-i", str(ambient_wav),
+                "-i", str(sfx_wav),
                 "-filter_complex",
-                "[0:a]volume=1.0[v];[1:a]volume=0.14[bg];[v][bg]amix=inputs=2:duration=first:dropout_transition=2:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[aout]",
+                "[0:a]volume=1.0[v];[1:a]volume=0.13[bg];[2:a]volume=0.28[sfx];"
+                "[v][bg][sfx]amix=inputs=3:duration=first:dropout_transition=2:normalize=0,"
+                "loudnorm=I=-14:TP=-1.5:LRA=11[aout]",
                 "-map", "[aout]",
                 "-c:a", "aac", "-b:a", "192k",
                 str(mixed_audio_m4a),
@@ -240,13 +263,8 @@ def render_project(
             capture_output=True,
         )
 
-        # Step 4: Each beat becomes a moving clip (slow push-in that continues across a
-        # scene, fade-in on scene changes), then clips are joined losslessly.
-        scene_starts: List[float] = []
-        acc = 0.0
-        for d in scene_durations:
-            scene_starts.append(acc)
-            acc += d
+        # Step 4: Each beat becomes a clip (slow push-in inside evidence card while UI stays sharp),
+        # then clips are joined losslessly.
         clip_paths: List[Path] = []
         elapsed = 0.0
         frames_done = 0
@@ -256,6 +274,7 @@ def render_project(
             n_frames = max(1, round(elapsed * fmt.fps) - frames_done)
             frames_done += n_frames
             clip = work_dir / f"clip_{i:04d}.mp4"
+            ex_png, card_box = scene_exhibits.get(beat.scene_index, (None, None))
             video_encoder = _render_motion_clip(
                 frame_png, clip, n_frames / fmt.fps,
                 t_offset=beat.start_sec - scene_starts[beat.scene_index],
@@ -263,6 +282,8 @@ def render_project(
                 first_in_scene=(beat.beat_index == 0),
                 fmt=fmt,
                 encoder=video_encoder,
+                exhibit_png=ex_png,
+                card_box=card_box,
             )
             clip_paths.append(clip)
         clips_list = work_dir / "clips_list.txt"
@@ -328,34 +349,49 @@ def _render_motion_clip(
     scene_dur: float,
     first_in_scene: bool,
     fmt,
-    zoom_max: float = 0.05,
+    zoom_max: float = 0.065,
     encoder: str = CPU_ENCODER,
+    exhibit_png: Optional[Path] = None,
+    card_box: Optional[Tuple[int, int, int, int]] = None,
 ) -> str:
-    """Turn one still frame into a clip with a slow push-in; zoom is tied to time in the
-    scene so consecutive beats of the same scene continue the move without a jump.
+    """Turn one beat frame into a clip: zooms only the inner exhibit card at 30fps while
+    keeping UI chrome sharp and bright from frame 0 (no black fade-in flashes).
     Returns the encoder actually used (NVENC falls back to libx264 on a mid-render failure)."""
+    del first_in_scene  # cuts are instant documentary switches without black fade flashes
     fps = fmt.fps
     w, h = fmt.width, fmt.height
     n = max(1, round(duration * fps))
     sd = max(0.1, scene_dur)
-    zoom = f"1+{zoom_max}*({t_offset:.4f}+on/{fps})/{sd:.4f}"
-    vf = (
-        f"scale={w * 2}:{h * 2},"
-        f"zoompan=z='{zoom}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={w}x{h}:fps={fps}"
-    )
-    if first_in_scene:
-        vf += ",fade=t=in:st=0:d=0.3"
 
     def _run(enc: str) -> subprocess.CompletedProcess:
-        return subprocess.run(
-            [
-                "ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-i", str(frame_png),
-                "-vf", vf, "-frames:v", str(n),
+        if exhibit_png is not None and card_box is not None:
+            cx1, cy1, cx2, cy2 = card_box
+            cw, ch = cx2 - cx1, cy2 - cy1
+            zoom = f"1+{zoom_max}*({t_offset:.4f}+on/{fps})/{sd:.4f}"
+            fc = (
+                f"[1:v]zoompan=z='{zoom}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+                f"d=1:s={cw}x{ch}:fps={fps}[ex];"
+                f"[0:v][ex]overlay={cx1}:{cy1}:format=auto[vout]"
+            )
+            cmd = [
+                "ffmpeg", "-y",
+                "-loop", "1", "-framerate", str(fps), "-i", str(frame_png),
+                "-loop", "1", "-framerate", str(fps), "-i", str(exhibit_png),
+                "-filter_complex", fc,
+                "-map", "[vout]",
+                "-frames:v", str(n),
                 *_encoder_args(enc),
                 "-r", str(fps), str(out_mp4),
-            ],
-            capture_output=True,
-        )
+            ]
+        else:
+            cmd = [
+                "ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-i", str(frame_png),
+                "-vf", f"scale={w}:{h}",
+                "-frames:v", str(n),
+                *_encoder_args(enc),
+                "-r", str(fps), str(out_mp4),
+            ]
+        return subprocess.run(cmd, capture_output=True)
 
     res = _run(encoder)
     if res.returncode != 0 and encoder != CPU_ENCODER:
@@ -391,7 +427,7 @@ def _write_seo_upload_pack(
     tags_csv = ", ".join(data.get("tags", ["federal lawsuit", "sec enforcement", "ftc refund", "consumer protection"]))
     aff = data.get("affiliate_cta", {})
     aff_block = (
-        f"🔗 **{aff.get('offer_name', 'Free Leverage System Notion Template')}**: {aff.get('url_placeholder', 'https://yourlink.com/resource')}"
+        f"🔗 **{aff.get('offer_name', 'Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List')}**: {aff.get('url_placeholder', 'https://kenvh0010-lang.github.io/admin/bio/')}"
         if aff else ""
     )
 

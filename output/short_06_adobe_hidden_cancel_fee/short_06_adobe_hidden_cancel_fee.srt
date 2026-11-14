@@ -1,87 +1,111 @@
 1
-00:00:00,000 --> 00:00:00,992
-In March 2026,
+00:00:00,000 --> 00:00:01,224
+That monthly Adobe
 
 2
-00:00:00,992 --> 00:00:04,183
-the Justice Department announced Adobe agreed
+00:00:01,224 --> 00:00:01,972
+price hid a
 
 3
-00:00:04,183 --> 00:00:06,168
-to a 150 million dollar deal
+00:00:01,972 --> 00:00:03,536
+50 percent cancellation
 
 4
-00:00:06,168 --> 00:00:09,216
-over hidden subscription cancellation fees.
+00:00:03,536 --> 00:00:04,488
+bill until the
 
 5
-00:00:09,216 --> 00:00:11,148
-Look at Example 1 from the
+00:00:04,488 --> 00:00:05,100
+DOJ sued.
 
 6
-00:00:11,148 --> 00:00:12,189
-DOJ complaint:
+00:00:05,100 --> 00:00:06,106
+The DOJ complaint
 
 7
-00:00:12,189 --> 00:00:14,121
-Adobe pre-selected Annual,
+00:00:06,106 --> 00:00:07,586
+showed checkout defaulted
 
 8
-00:00:14,121 --> 00:00:15,087
-paid monthly,
+00:00:07,586 --> 00:00:08,178
+to Annual,
 
 9
-00:00:15,087 --> 00:00:17,317
-tucking the fee terms inside a
+00:00:08,178 --> 00:00:09,244
+paid monthly while
 
 10
-00:00:17,317 --> 00:00:18,432
-tiny info icon.
+00:00:09,244 --> 00:00:10,428
+tucking terms behind
 
 11
-00:00:18,432 --> 00:00:21,258
-Prosecutors alleged many subscribers only learned
+00:00:10,428 --> 00:00:11,020
+a tooltip.
 
 12
-00:00:21,258 --> 00:00:22,931
-they owed 50 percent of their
+00:00:11,020 --> 00:00:11,858
+In March 2026,
 
 13
-00:00:22,931 --> 00:00:25,295
-remaining annual contract when they tried
+00:00:11,858 --> 00:00:12,757
+Adobe agreed to
 
 14
-00:00:25,295 --> 00:00:25,872
-to cancel.
+00:00:12,757 --> 00:00:13,535
+a 150 million
 
 15
-00:00:25,872 --> 00:00:27,970
-Without admitting liability,
+00:00:13,535 --> 00:00:15,033
+dollar settlement without
 
 16
-00:00:27,970 --> 00:00:29,768
-Adobe agreed to pay a 75
+00:00:15,033 --> 00:00:16,590
+admitting legal liability.
 
 17
-00:00:29,768 --> 00:00:31,940
-million dollar civil penalty,
+00:00:16,590 --> 00:00:17,815
+That deal includes
 
 18
-00:00:31,940 --> 00:00:34,637
-provide 75 million in free services,
+00:00:17,815 --> 00:00:18,632
+a 75 million
 
 19
-00:00:34,637 --> 00:00:36,360
-and simplify canceling.
+00:00:18,632 --> 00:00:20,062
+dollar civil penalty,
 
 20
-00:00:36,360 --> 00:00:39,339
-Never read paid monthly as cancel anytime.
+00:00:20,062 --> 00:00:20,947
+75 million in
 
 21
-00:00:39,339 --> 00:00:41,609
-Open every tooltip and check the
+00:00:20,947 --> 00:00:21,832
+user credits,
 
 22
-00:00:41,609 --> 00:00:44,376
-contract length before entering a card.
+00:00:21,832 --> 00:00:22,581
+and clearer
+
+23
+00:00:22,581 --> 00:00:23,330
+exit flows.
+
+24
+00:00:23,330 --> 00:00:24,488
+Paid monthly rarely
+
+25
+00:00:24,488 --> 00:00:25,769
+means cancel anytime.
+
+26
+00:00:25,769 --> 00:00:26,866
+Open every billing
+
+27
+00:00:26,866 --> 00:00:28,146
+tooltip before saving
+
+28
+00:00:28,146 --> 00:00:29,000
+a card online.

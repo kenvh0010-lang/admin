@@ -106,9 +106,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: output
-          key: video-vault-v24-${{ hashFiles('yt_studio/**', 'content/**/*.json', 'assets/evidence/**') }}
+          key: video-vault-v25-${{ hashFiles('yt_studio/**', 'content/**/*.json', 'assets/evidence/**') }}
           restore-keys: |
-            video-vault-v24-
+            video-vault-v25-
 
       - name: Parallel Batch Render Evidence-Based Videos & Bundle Deduplicated Vault Zip
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'rebuild_full_vault') }}

@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Apple's $95 Million Siri Settlement Equals 9 Hours of Profit
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `42.3s`
-- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
+- **Estimated Runtime**: `28.5s`
+- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -19,14 +19,14 @@ In Lopez v. Apple Inc., a federal judge granted final approval to a $95 million 
 • CBS MoneyWatch: Apple Paying $95M in Siri Eavesdropping Settlement: https://www.cbsnews.com/news/apple-siri-settlement-95-million-lopez-how-to-file-claim/
 • The Guardian: Apple $95M Siri Settlement Represents Nine Hours of Profit: https://www.theguardian.com/technology/2025/jan/03/apple-siri-class-action-lawsuit-settlement
 
-🔗 **Free 5-Hour Asset Builder OS + reading list**: https://kenvh0010-lang.github.io/admin/bio/
+🔗 **Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
-00:00 - Final Approval on $95M Siri Deal
-00:07 - Triggered Without Saying 'Hey Siri'
-00:15 - Roughly Nine Hours of Profit
-00:25 - Capped at $20 Per Siri Device
-00:33 - Lock Settings, Don't Wait on Court
+00:00 - Equals Nine Hours of Profit
+00:05 - Triggered Without 'Hey Siri'
+00:11 - Capped at $20 Per Siri Device
+00:17 - Final Approval on $95M Deal
+00:22 - Lock Settings, Don't Wait on Court
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

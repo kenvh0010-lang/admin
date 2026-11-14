@@ -20,64 +20,58 @@
     "stat": "$120M"
   },
   "affiliate_cta": {
-    "offer_name": "Free 5-Hour Asset Builder OS + reading list",
+    "offer_name": "Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List",
     "url_placeholder": "https://kenvh0010-lang.github.io/admin/bio/",
     "pinned_comment": "Do you keep a cash balance sitting inside peer-to-peer payment apps? Full CFPB Consent Order PDF is linked in the description."
   },
   "scenes": [
     {
       "tag": "HOOK",
-      "headline": "Up to $175M CFPB Order on Block",
-      "visual_type": "evidence_image",
-      "evidence_image": "assets/evidence/cash_app/cfpb_order_p1_caption.png",
-      "evidence_crop": [
-        130,
-        160,
-        1140,
-        1100
-      ],
-      "highlight_words": [
-        "175",
-        "million",
-        "Cash"
-      ],
-      "narration": "The CFPB ordered Cash App's parent company, Block, to pay up to 175 million dollars over how it handled fraud on the app.",
-      "source": "In the Matter of Block, Inc., 2025-CFPB-0001, p. 1 (Jan 16, 2025)"
-    },
-    {
-      "tag": "THE PHONE LOOP",
-      "headline": "Card Number Played a Recording",
+      "headline": "Card Line Played a Recording",
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/cash_app/cfpb_order_p12_phone_loop.png",
       "evidence_crop": [
-        130,
-        620,
-        1150,
-        1520
+        145,
+        815,
+        1145,
+        1365
+      ],
+      "evidence_highlight": [
+        215,
+        1055,
+        1135,
+        1215
       ],
       "highlight_words": [
         "recording",
-        "scammers"
+        "fraud",
+        "victims"
       ],
-      "narration": "Until 2021, the number on the back of Cash Cards played a recording with no live agent, pushing victims toward fake support numbers online.",
+      "narration": "Until 2021, Cash App's card support line played a recording instead of answering fraud victims.",
       "source": "CFPB Consent Order Para. 7-9, p. 12 (2025-CFPB-0001)"
     },
     {
       "tag": "THE DISPUTES",
-      "headline": "Fought 75% of Bank Chargebacks",
+      "headline": "Challenged 75% of Chargebacks",
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/cash_app/cfpb_order_p24_chargebacks.png",
       "evidence_crop": [
-        130,
-        520,
-        1150,
-        1380
+        140,
+        540,
+        1145,
+        1160
+      ],
+      "evidence_highlight": [
+        148,
+        560,
+        1135,
+        720
       ],
       "highlight_words": [
-        "75%",
+        "75",
         "chargebacks"
       ],
-      "narration": "When users asked their banks to reverse unauthorized peer-to-peer transfers, the CFPB found Block challenged at least 75 percent of those chargebacks.",
+      "narration": "When victims asked banks to reverse unauthorized transfers, Block challenged at least 75 percent of chargebacks.",
       "source": "CFPB Consent Order Para. 44-45, p. 24 (2025-CFPB-0001)"
     },
     {
@@ -86,18 +80,47 @@
       "visual_type": "evidence_image",
       "evidence_image": "assets/evidence/cash_app/cfpb_order_p56_120m_redress.png",
       "evidence_crop": [
-        130,
-        380,
-        1150,
-        1020
+        140,
+        560,
+        1145,
+        960
+      ],
+      "evidence_highlight": [
+        150,
+        860,
+        845,
+        922
       ],
       "highlight_words": [
         "120",
-        "55",
-        "million"
+        "55"
       ],
-      "narration": "Without admitting or denying the findings, Block agreed to up to 120 million dollars in user redress, a 55 million penalty, and live phone support.",
+      "narration": "The CFPB ordered up to 120 million dollars in user refunds plus a 55 million penalty.",
       "source": "CFPB Consent Order Para. 117 & 126, pp. 56, 61"
+    },
+    {
+      "tag": "THE ORDER",
+      "headline": "$175M CFPB Order on Block",
+      "visual_type": "evidence_image",
+      "evidence_image": "assets/evidence/cash_app/cfpb_order_p1_caption.png",
+      "evidence_crop": [
+        135,
+        360,
+        1135,
+        880
+      ],
+      "evidence_highlight": [
+        170,
+        515,
+        960,
+        625
+      ],
+      "highlight_words": [
+        "live",
+        "support"
+      ],
+      "narration": "Without admitting or denying the findings, Cash App parent Block consented to provide live phone support.",
+      "source": "In the Matter of Block, Inc., 2025-CFPB-0001, p. 1 (Jan 16, 2025)"
     },
     {
       "tag": "THE RULE",
@@ -111,7 +134,7 @@
         "wallet",
         "bank"
       ],
-      "narration": "Use payment apps like cash in your pocket, not a vault. Sweep idle balances straight back to an insured bank account.",
+      "narration": "Treat payment apps like a pocket wallet. Sweep spare cash straight back to an insured bank.",
       "source": "CFPB Consent Order 2025-CFPB-0001"
     }
   ],

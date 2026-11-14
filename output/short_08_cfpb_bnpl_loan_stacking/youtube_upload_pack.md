@@ -1,8 +1,8 @@
 # YouTube Upload Pack — CFPB Data: 63% of 'Pay in 4' Users Stack Multiple Loans
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `48.6s`
-- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
+- **Estimated Runtime**: `29.4s`
+- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -18,14 +18,14 @@ Federal reports from the Consumer Financial Protection Bureau tracking six major
 • CFPB Report: Consumer Use of Buy Now, Pay Later and Other Unsecured Debt (Jan 2025): https://files.consumerfinance.gov/f/documents/cfpb_BNPL_Report_2025_01.pdf
 • CFPB Report: Buy Now, Pay Later Market Trends and Consumer Impacts (Dec 2025): https://files.consumerfinance.gov/f/documents/cfpb_buy-now-pay-later-market-trends-consumer-impacts_2025-12.pdf
 
-🔗 **Free 5-Hour Asset Builder OS + reading list**: https://kenvh0010-lang.github.io/admin/bio/
+🔗 **Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
-00:00 - 53.6 Million Pay-in-4 Borrowers
-00:10 - 62.7% Held Overlapping Loans
-00:21 - Holiday Auto-Debits Collide
-00:30 - Higher Unsecured Debt Loads
-00:40 - One Split Loan at a Time
+00:00 - 62.7% Held Overlapping Loans
+00:05 - 53.6 Million Pay-in-4 Borrowers
+00:11 - Holiday Auto-Debits Collide
+00:17 - Higher Unsecured Debt Loads
+00:23 - One Split Loan at a Time
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

@@ -1,79 +1,111 @@
 1
-00:00:00,000 --> 00:00:02,480
-A federal judge granted final approval
+00:00:00,000 --> 00:00:01,141
+Apple's 95 million
 
 2
-00:00:02,480 --> 00:00:04,698
-to Apple's 95 million dollar class
+00:00:01,141 --> 00:00:02,345
+dollar Siri privacy
 
 3
-00:00:04,698 --> 00:00:07,896
-settlement over unintended Siri voice recordings.
+00:00:02,345 --> 00:00:03,485
+payout equals just
 
 4
-00:00:07,896 --> 00:00:09,813
-The lawsuit alleged Siri woke up
+00:00:03,485 --> 00:00:04,309
+nine hours of
 
 5
-00:00:09,813 --> 00:00:12,449
-accidentally during private talks and shared
+00:00:04,309 --> 00:00:05,450
+its annual profit.
 
 6
-00:00:12,449 --> 00:00:14,426
-snippets that led to targeted ads
+00:00:05,450 --> 00:00:06,761
+Users alleged accidental
 
 7
-00:00:14,426 --> 00:00:15,744
-and contractor review.
+00:00:06,761 --> 00:00:07,962
+Siri triggers recorded
 
 8
-00:00:15,744 --> 00:00:18,849
-Against Apple's 93.74 billion dollars in
+00:00:07,962 --> 00:00:08,726
+private talks,
 
 9
-00:00:18,849 --> 00:00:20,246
-annual net income,
+00:00:08,726 --> 00:00:09,655
+sending audio for
 
 10
-00:00:20,246 --> 00:00:22,886
-that entire 95 million dollar fund
+00:00:09,655 --> 00:00:10,583
+contractor review
 
 11
-00:00:22,886 --> 00:00:25,680
-equals roughly nine hours of profit.
+00:00:10,583 --> 00:00:11,020
+and ads.
 
 12
-00:00:25,680 --> 00:00:28,142
-Apple denied all wrongdoing and settled
+00:00:11,020 --> 00:00:12,023
+Apple denied all
 
 13
-00:00:28,142 --> 00:00:29,658
-without admitting fault,
+00:00:12,023 --> 00:00:13,465
+wrongdoing in settling,
 
 14
-00:00:29,658 --> 00:00:31,489
-capping user payouts at up to
+00:00:13,465 --> 00:00:14,594
+capping payouts up
 
 15
-00:00:31,489 --> 00:00:33,383
-20 dollars per device for five
+00:00:14,594 --> 00:00:15,409
+to 20 dollars
 
 16
-00:00:33,383 --> 00:00:33,888
-devices.
+00:00:15,409 --> 00:00:16,475
+per device across
 
 17
-00:00:33,888 --> 00:00:36,107
-Class actions price a decade of
+00:00:16,475 --> 00:00:17,290
+five devices.
 
 18
-00:00:36,107 --> 00:00:37,682
-privacy at 20 dollars.
+00:00:17,290 --> 00:00:18,208
+A federal judge
 
 19
-00:00:37,682 --> 00:00:40,546
-Audit your microphone and Siri analytics
+00:00:18,208 --> 00:00:19,555
+granted final approval
 
 20
-00:00:40,546 --> 00:00:42,264
-settings yourself today.
+00:00:19,555 --> 00:00:20,534
+in October 2025,
+
+21
+00:00:20,534 --> 00:00:21,513
+ending six years
+
+22
+00:00:21,513 --> 00:00:22,860
+of privacy litigation.
+
+23
+00:00:22,860 --> 00:00:24,140
+Lawsuits settle years
+
+24
+00:00:24,140 --> 00:00:24,628
+late for
+
+25
+00:00:24,628 --> 00:00:25,421
+twenty bucks.
+
+26
+00:00:25,421 --> 00:00:26,274
+Lock down your
+
+27
+00:00:26,274 --> 00:00:27,676
+voice assistant privacy
+
+28
+00:00:27,676 --> 00:00:28,530
+toggles today.

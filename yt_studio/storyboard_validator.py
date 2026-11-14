@@ -184,6 +184,20 @@ def validate_storyboard(
                             warnings.append(
                                 f"[Gate 2: Scene {idx + 1}] Crop {[x1, y1, x2, y2]} is tall ({x2 - x1}x{y2 - y1}px); verify text remains crisp when scaled to card height"
                             )
+                        hl = sc.get("evidence_highlight")
+                        if hl is not None:
+                            if not (isinstance(hl, list) and len(hl) == 4 and all(isinstance(v, (int, float)) for v in hl)):
+                                errors.append(f"[Gate 2: Scene {idx + 1}] 'evidence_highlight' must be [hx1, hy1, hx2, hy2]")
+                            else:
+                                hx1, hy1, hx2, hy2 = [int(v) for v in hl]
+                                if not (x1 <= hx1 < hx2 <= x2 and y1 <= hy1 < hy2 <= y2):
+                                    errors.append(
+                                        f"[Gate 2: Scene {idx + 1}] evidence_highlight {[hx1, hy1, hx2, hy2]} must stay inside evidence_crop {[x1, y1, x2, y2]}"
+                                    )
+                                elif (hx2 - hx1) < 40 or (hy2 - hy1) < 12:
+                                    errors.append(
+                                        f"[Gate 2: Scene {idx + 1}] evidence_highlight {[hx1, hy1, hx2, hy2]} too narrow/thin"
+                                    )
                         cand_crops.add((Path(ev_rel).as_posix(), (x1, y1, x2, y2)))
         elif vtype == "comparison_split":
             for req_split in ("left_title", "left_body", "right_title", "right_body"):
@@ -456,7 +470,7 @@ def promote_draft_to_queue(
         beats = []
         cursor = 0.0
         for s_idx, (sc, dur) in enumerate(zip(scenes, durs)):
-            beats.extend(build_scene_beats(s_idx, sc["narration"], cursor, dur, max_words=6))
+            beats.extend(build_scene_beats(s_idx, sc["narration"], cursor, dur, max_words=3))
             cursor += dur
         export_srt(beats, proj_out / f"{raw_slug}.srt")
         tm = data["thumbnail"]

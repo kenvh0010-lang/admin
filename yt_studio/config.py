@@ -10,7 +10,7 @@ CONTENT_DIR = PROJECT_ROOT / "content"
 ASSETS_DIR = PROJECT_ROOT / "assets"
 OUTPUT_DIR = PROJECT_ROOT / "output"
 
-RENDERER_VERSION = "2.4"
+RENDERER_VERSION = "2.5"
 
 
 def natural_sort_key(path_or_str: Any) -> List[Any]:
