@@ -1,8 +1,8 @@
 # YouTube Upload Pack — How One Unupdated Server Cost $460 Million in 45 Minutes
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `29.2s`
-- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
+- **Estimated Runtime**: `29.3s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)

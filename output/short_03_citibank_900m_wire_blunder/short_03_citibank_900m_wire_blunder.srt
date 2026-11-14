@@ -1,95 +1,167 @@
 1
-00:00:00,000 --> 00:00:02,649
-Citibank meant to wire 7.8 million
+00:00:00,000 --> 00:00:01,165
+Citibank meant to
 
 2
-00:00:02,649 --> 00:00:05,064
-dollars in interest for Revlon.
+00:00:01,165 --> 00:00:02,261
+wire 7.8 million
 
 3
-00:00:05,064 --> 00:00:05,687
-Instead,
+00:00:02,261 --> 00:00:03,563
+dollars in interest
 
 4
-00:00:05,687 --> 00:00:08,804
-it accidentally wired almost 900 million
+00:00:03,563 --> 00:00:04,316
+for Revlon.
 
 5
-00:00:08,804 --> 00:00:10,128
-of its own money.
+00:00:04,316 --> 00:00:04,865
+Instead,
 
 6
-00:00:10,128 --> 00:00:11,764
-Here is Figure 1 from the
+00:00:04,865 --> 00:00:06,303
+it accidentally wired
 
 7
-00:00:11,764 --> 00:00:12,681
-court opinion.
+00:00:06,303 --> 00:00:07,537
+almost 900 million
 
 8
-00:00:12,681 --> 00:00:15,233
-Staff ticked PRINCIPAL and three people
+00:00:07,537 --> 00:00:07,948
+of its
 
 9
-00:00:15,233 --> 00:00:16,019
-approved it,
+00:00:07,948 --> 00:00:08,633
+own money.
 
 10
-00:00:16,019 --> 00:00:17,983
-but FRONT and FUND also needed
+00:00:08,633 --> 00:00:09,431
+Here is Figure
 
 11
-00:00:17,983 --> 00:00:19,488
-ticks to stop the wire.
+00:00:09,431 --> 00:00:10,002
+1 from the
 
 12
-00:00:19,488 --> 00:00:21,945
-Ten firms refused to return over
+00:00:10,002 --> 00:00:10,800
+court opinion.
 
 13
-00:00:21,945 --> 00:00:23,480
-500 million dollars.
+00:00:10,800 --> 00:00:12,055
+Staff ticked PRINCIPAL
 
 14
-00:00:23,480 --> 00:00:25,553
-A trial judge let them keep
+00:00:12,055 --> 00:00:12,967
+and three people
 
 15
-00:00:25,553 --> 00:00:27,702
-it in 2021 before an appeals
+00:00:12,967 --> 00:00:13,652
+approved it,
 
 16
-00:00:27,702 --> 00:00:30,312
-court reversed the ruling in 2022.
+00:00:13,652 --> 00:00:14,393
+but FRONT and
 
 17
-00:00:30,312 --> 00:00:32,200
-Wall Street never forgot.
+00:00:14,393 --> 00:00:15,305
+FUND also needed
 
 18
-00:00:32,200 --> 00:00:33,559
-By September 2026,
+00:00:15,305 --> 00:00:16,047
+ticks to stop
 
 19
-00:00:33,559 --> 00:00:36,957
-erroneous payment clawback clauses sit inside
+00:00:16,047 --> 00:00:16,560
+the wire.
 
 20
-00:00:36,957 --> 00:00:40,128
-88 percent of corporate credit agreements.
+00:00:16,560 --> 00:00:17,716
+Ten firms refused
 
 21
-00:00:40,128 --> 00:00:42,678
-Three human reviewers still missed a
+00:00:17,716 --> 00:00:18,668
+to return over
 
 22
-00:00:42,678 --> 00:00:44,166
-bad software default.
+00:00:18,668 --> 00:00:20,027
+500 million dollars.
 
 23
-00:00:44,166 --> 00:00:47,070
-High-stakes systems need clearer screens,
+00:00:20,027 --> 00:00:20,911
+A trial judge
 
 24
-00:00:47,070 --> 00:00:48,912
-not just extra signatures.
+00:00:20,911 --> 00:00:21,795
+let them keep
+
+25
+00:00:21,795 --> 00:00:22,475
+it in 2021
+
+26
+00:00:22,475 --> 00:00:23,630
+before an appeals
+
+27
+00:00:23,630 --> 00:00:24,854
+court reversed the
+
+28
+00:00:24,854 --> 00:00:25,874
+ruling in 2022.
+
+29
+00:00:25,874 --> 00:00:26,602
+Wall Street
+
+30
+00:00:26,602 --> 00:00:27,463
+never forgot.
+
+31
+00:00:27,463 --> 00:00:28,655
+By September 2026,
+
+32
+00:00:28,655 --> 00:00:30,376
+erroneous payment clawback
+
+33
+00:00:30,376 --> 00:00:31,568
+clauses sit inside
+
+34
+00:00:31,568 --> 00:00:32,428
+88 percent of
+
+35
+00:00:32,428 --> 00:00:34,282
+corporate credit agreements.
+
+36
+00:00:34,282 --> 00:00:35,562
+Three human reviewers
+
+37
+00:00:35,562 --> 00:00:36,416
+still missed a
+
+38
+00:00:36,416 --> 00:00:37,697
+bad software default.
+
+39
+00:00:37,697 --> 00:00:39,160
+High-stakes systems need
+
+40
+00:00:39,160 --> 00:00:40,136
+clearer screens,
+
+41
+00:00:40,136 --> 00:00:40,623
+not just
+
+42
+00:00:40,623 --> 00:00:41,660
+extra signatures.

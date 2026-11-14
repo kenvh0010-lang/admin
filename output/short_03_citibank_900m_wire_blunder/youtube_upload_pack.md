@@ -1,7 +1,7 @@
 # YouTube Upload Pack — Two Unchecked Boxes Made Citibank Wire $900 Million by Mistake
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `48.9s`
+- **Estimated Runtime**: `41.7s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -19,14 +19,14 @@ On August 11, 2020, Citibank intended to wire $7.8 million in Revlon interest bu
 • Second Circuit Opinion Reversing & Vacating Judgment (Sep 8, 2022): https://law.justia.com/cases/federal/appellate-courts/ca2/21-487/21-487-2022-09-08.html
 • Thomson Reuters Legal: Erroneous Payment Clauses in 88% of Deals (Sep 2, 2026): https://legal.thomsonreuters.com/blog/erroneous-payment-clauses/
 
-🔗 **Free 5-Hour Asset Builder OS + reading list**: https://kenvh0010-lang.github.io/admin/bio/
+🔗 **Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
 00:00 - Meant $7.8M. Wired $900M.
-00:10 - The Actual Flexcube Screen
-00:19 - Lenders Kept $500 Million
-00:30 - Rewrote 88% of Loan Contracts
-00:40 - Fix Defaults, Not Just People
+00:08 - The Actual Flexcube Screen
+00:16 - Lenders Kept $500 Million
+00:25 - Rewrote 88% of Loan Contracts
+00:34 - Fix Defaults, Not Just People
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

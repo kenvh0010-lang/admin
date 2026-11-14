@@ -1,7 +1,7 @@
 # YouTube Upload Pack — 2.1 Million Cleo AI Users Are Getting FTC Refunds via PayPal
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `44.7s`
+- **Estimated Runtime**: `37.7s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -20,14 +20,14 @@ Starting October 27, 2026, the Federal Trade Commission began sending 2,124,796 
 • FTC v. Cleo AI Complaint, No. 1:25-cv-02594 (S.D.N.Y.): https://www.ftc.gov/system/files/ftc_gov/pdf/Cleo-COMPLAINT.pdf
 • Ginsburg Law Group Summary of FTC PayPal Refunds (Oct 8, 2026): https://ginsburglawgroup.com/2026/10/ftc-cleo-ai-cash-advance-app-refunds-paypal/
 
-🔗 **Free 5-Hour Asset Builder OS + reading list**: https://kenvh0010-lang.github.io/admin/bio/
+🔗 **Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
 00:00 - 2.1 Million PayPal Refunds Went Out
-00:10 - Promised Up to $250 Today
-00:18 - Almost Nobody Got $250
-00:28 - Blocked From Canceling
-00:37 - Count Fees Like Interest
+00:08 - Promised Up to $250 Today
+00:15 - Almost Nobody Got $250
+00:23 - Blocked From Canceling
+00:31 - Count Fees Like Interest
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

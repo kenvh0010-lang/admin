@@ -1,95 +1,151 @@
 1
-00:00:00,000 --> 00:00:00,964
+00:00:00,000 --> 00:00:00,807
 This November,
 
 2
-00:00:00,964 --> 00:00:03,443
-book authors start collecting from a
+00:00:00,807 --> 00:00:01,845
+book authors start
 
 3
-00:00:03,443 --> 00:00:06,335
-1.5 billion dollar AI copyright settlement
+00:00:01,845 --> 00:00:02,826
+collecting from a
 
 4
-00:00:06,335 --> 00:00:07,368
-with Anthropic.
+00:00:02,826 --> 00:00:03,864
+1.5 billion dollar
 
 5
-00:00:07,368 --> 00:00:08,342
-In June 2025,
+00:00:03,864 --> 00:00:05,190
+AI copyright settlement
 
 6
-00:00:08,342 --> 00:00:10,440
-the judge drew a sharp line:
+00:00:05,190 --> 00:00:06,055
+with Anthropic.
 
 7
-00:00:10,440 --> 00:00:12,763
-training AI on bought books was
+00:00:06,055 --> 00:00:06,909
+In June 2025,
 
 8
-00:00:12,763 --> 00:00:13,437
-fair use,
+00:00:06,909 --> 00:00:07,829
+the judge drew
 
 9
-00:00:13,437 --> 00:00:16,585
-but downloading millions of pirated copies
+00:00:07,829 --> 00:00:08,683
+a sharp line:
 
 10
-00:00:16,585 --> 00:00:17,184
-was not.
+00:00:08,683 --> 00:00:09,603
+training AI on
 
 11
-00:00:17,184 --> 00:00:18,176
-Before trial,
+00:00:09,603 --> 00:00:10,654
+bought books was
 
 12
-00:00:18,176 --> 00:00:21,688
-Anthropic settled without admitting liability,
+00:00:10,654 --> 00:00:11,245
+fair use,
 
 13
-00:00:21,688 --> 00:00:25,123
-covering 482,460 registered books from LibGen
+00:00:11,245 --> 00:00:12,822
+but downloading millions
 
 14
-00:00:25,123 --> 00:00:27,795
-and PiLiMi at roughly 3,000 dollars
+00:00:12,822 --> 00:00:13,938
+of pirated copies
 
 15
-00:00:27,795 --> 00:00:29,016
-gross per title.
+00:00:13,938 --> 00:00:14,464
+was not.
 
 16
-00:00:29,016 --> 00:00:31,418
-Out of 77 AI training-data cases
+00:00:14,464 --> 00:00:15,339
+Before trial,
 
 17
-00:00:31,418 --> 00:00:33,145
-one tracker has logged,
+00:00:15,339 --> 00:00:17,022
+Anthropic settled without
 
 18
-00:00:33,145 --> 00:00:35,923
-this 1.5 billion dollar settlement is
+00:00:17,022 --> 00:00:18,368
+admitting liability,
 
 19
-00:00:35,923 --> 00:00:37,800
-still the largest payout.
+00:00:18,368 --> 00:00:20,185
+covering 482,460 registered
 
 20
-00:00:37,800 --> 00:00:38,802
-For builders,
+00:00:20,185 --> 00:00:21,330
+books from LibGen
 
 21
-00:00:38,802 --> 00:00:40,422
-pay for clean inputs.
+00:00:21,330 --> 00:00:22,205
+and PiLiMi at
 
 22
-00:00:40,422 --> 00:00:41,424
-For creators,
+00:00:22,205 --> 00:00:23,618
+roughly 3,000 dollars
 
 23
-00:00:41,424 --> 00:00:44,817
-timely copyright registration was the ticket
+00:00:23,618 --> 00:00:24,695
+gross per title.
 
 24
-00:00:44,817 --> 00:00:46,128
+00:00:24,695 --> 00:00:25,289
+Out of 77
+
+25
+00:00:25,289 --> 00:00:26,739
+AI training-data cases
+
+26
+00:00:26,739 --> 00:00:27,465
+one tracker
+
+27
+00:00:27,465 --> 00:00:28,190
+has logged,
+
+28
+00:00:28,190 --> 00:00:29,245
+this 1.5 billion
+
+29
+00:00:29,245 --> 00:00:30,564
+dollar settlement is
+
+30
+00:00:30,564 --> 00:00:31,158
+still the
+
+31
+00:00:31,158 --> 00:00:32,147
+largest payout.
+
+32
+00:00:32,147 --> 00:00:32,998
+For builders,
+
+33
+00:00:32,998 --> 00:00:33,457
+pay for
+
+34
+00:00:33,457 --> 00:00:34,308
+clean inputs.
+
+35
+00:00:34,308 --> 00:00:35,159
+For creators,
+
+36
+00:00:35,159 --> 00:00:37,058
+timely copyright registration
+
+37
+00:00:37,058 --> 00:00:37,975
+was the ticket
+
+38
+00:00:37,975 --> 00:00:39,088
 into this payout.

@@ -1,87 +1,163 @@
 1
-00:00:00,000 --> 00:00:02,848
-Over 2.1 million people are getting
+00:00:00,000 --> 00:00:01,145
+Over 2.1 million
 
 2
-00:00:02,848 --> 00:00:05,452
-PayPal refunds after using an AI
+00:00:01,145 --> 00:00:02,433
+people are getting
 
 3
-00:00:05,452 --> 00:00:06,836
-cash-advance app.
+00:00:02,433 --> 00:00:03,865
+PayPal refunds after
 
 4
-00:00:06,836 --> 00:00:07,893
-Total payout:
+00:00:03,865 --> 00:00:04,652
+using an AI
 
 5
-00:00:07,893 --> 00:00:10,416
-more than 15.8 million dollars.
+00:00:04,652 --> 00:00:05,869
+cash-advance app.
 
 6
-00:00:10,416 --> 00:00:12,988
-The FTC says Cleo's ads promised
+00:00:05,869 --> 00:00:06,799
+Total payout:
 
 7
-00:00:12,988 --> 00:00:14,918
-up to 250 or 500 dollars
+00:00:06,799 --> 00:00:07,801
+more than 15.8
 
 8
-00:00:14,918 --> 00:00:15,400
-today,
+00:00:07,801 --> 00:00:08,946
+million dollars.
 
 9
-00:00:15,400 --> 00:00:18,696
-if users paid for a monthly subscription.
+00:00:08,946 --> 00:00:09,784
+The FTC says
 
 10
-00:00:18,696 --> 00:00:21,006
-The FTC alleged only 0.3 percent
+00:00:09,784 --> 00:00:11,112
+Cleo's ads promised
 
 11
-00:00:21,006 --> 00:00:23,171
-of Plus borrowers got the full
+00:00:11,112 --> 00:00:11,741
+up to 250
 
 12
-00:00:23,171 --> 00:00:24,037
-250 dollars,
+00:00:11,741 --> 00:00:12,160
+or 500
 
 13
-00:00:24,037 --> 00:00:26,780
-and paid express transfers could still
+00:00:12,160 --> 00:00:13,138
+dollars today,
 
 14
-00:00:26,780 --> 00:00:28,224
-arrive the next day.
+00:00:13,138 --> 00:00:14,046
+if users paid
 
 15
-00:00:28,224 --> 00:00:30,328
-It also alleged users with an
+00:00:14,046 --> 00:00:14,396
+for a
 
 16
-00:00:30,328 --> 00:00:32,650
-unpaid advance could not cancel.
+00:00:14,396 --> 00:00:15,863
+monthly subscription.
 
 17
-00:00:32,650 --> 00:00:35,262
-Cleo settled for 17 million dollars,
+00:00:15,863 --> 00:00:16,809
+The FTC alleged
 
 18
-00:00:35,262 --> 00:00:37,656
-and no court ruled on the claims.
+00:00:16,809 --> 00:00:17,818
+only 0.3 percent
 
 19
-00:00:37,656 --> 00:00:39,670
-When a small advance requires a
+00:00:17,818 --> 00:00:18,890
+of Plus borrowers
 
 20
-00:00:39,670 --> 00:00:41,553
-subscription plus a rush fee,
+00:00:18,890 --> 00:00:19,647
+got the full
 
 21
-00:00:41,553 --> 00:00:43,762
-treat both fees as interest before
+00:00:19,647 --> 00:00:20,404
+250 dollars,
 
 22
-00:00:43,762 --> 00:00:44,736
+00:00:20,404 --> 00:00:21,413
+and paid express
+
+23
+00:00:21,413 --> 00:00:22,737
+transfers could still
+
+24
+00:00:22,737 --> 00:00:23,367
+arrive the
+
+25
+00:00:23,367 --> 00:00:23,935
+next day.
+
+26
+00:00:23,935 --> 00:00:24,896
+It also alleged
+
+27
+00:00:24,896 --> 00:00:25,729
+users with an
+
+28
+00:00:25,729 --> 00:00:27,011
+unpaid advance could
+
+29
+00:00:27,011 --> 00:00:27,716
+not cancel.
+
+30
+00:00:27,716 --> 00:00:28,742
+Cleo settled for
+
+31
+00:00:28,742 --> 00:00:29,959
+17 million dollars,
+
+32
+00:00:29,959 --> 00:00:30,728
+and no court
+
+33
+00:00:30,728 --> 00:00:31,241
+ruled on
+
+34
+00:00:31,241 --> 00:00:31,946
+the claims.
+
+35
+00:00:31,946 --> 00:00:32,596
+When a small
+
+36
+00:00:32,596 --> 00:00:33,571
+advance requires a
+
+37
+00:00:33,571 --> 00:00:34,600
+subscription plus a
+
+38
+00:00:34,600 --> 00:00:35,088
+rush fee,
+
+39
+00:00:35,088 --> 00:00:35,900
+treat both fees
+
+40
+00:00:35,900 --> 00:00:36,875
+as interest before
+
+41
+00:00:36,875 --> 00:00:37,688
 you tap accept.

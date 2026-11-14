@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Apple's $95 Million Siri Settlement Equals 9 Hours of Profit
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `28.5s`
-- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
+- **Estimated Runtime**: `28.6s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)

@@ -1,8 +1,8 @@
 # YouTube Upload Pack — CFPB Data: 63% of 'Pay in 4' Users Stack Multiple Loans
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `29.4s`
-- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
+- **Estimated Runtime**: `30.4s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -22,10 +22,10 @@ Federal reports from the Consumer Financial Protection Bureau tracking six major
 
 ⏱️ Timestamps:
 00:00 - 62.7% Held Overlapping Loans
-00:05 - 53.6 Million Pay-in-4 Borrowers
+00:04 - 53.6 Million Pay-in-4 Borrowers
 00:11 - Holiday Auto-Debits Collide
 00:17 - Higher Unsecured Debt Loads
-00:23 - One Split Loan at a Time
+00:24 - One Split Loan at a Time
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

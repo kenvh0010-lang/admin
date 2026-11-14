@@ -1,63 +1,115 @@
 1
-00:00:00,000 --> 00:00:03,327
-Eminem's publisher wants 41 million dollars
+00:00:00,000 --> 00:00:01,457
+Eminem's publisher wants
 
 2
-00:00:03,327 --> 00:00:04,488
-from an AI app.
+00:00:01,457 --> 00:00:02,550
+41 million dollars
 
 3
-00:00:04,488 --> 00:00:05,660
-The same night,
+00:00:02,550 --> 00:00:02,975
+from an
 
 4
-00:00:05,660 --> 00:00:08,784
-Elvis Presley's catalog owners sued too.
+00:00:02,975 --> 00:00:03,400
+AI app.
 
 5
-00:00:08,784 --> 00:00:11,115
-The lawsuit quotes Suno's own words:
+00:00:03,400 --> 00:00:04,282
+The same night,
 
 6
-00:00:11,115 --> 00:00:13,381
-its AI learned from essentially all
+00:00:04,282 --> 00:00:05,635
+Elvis Presley's catalog
 
 7
-00:00:13,381 --> 00:00:15,582
-music of reasonable quality on the
+00:00:05,635 --> 00:00:06,576
+owners sued too.
 
 8
-00:00:15,582 --> 00:00:16,488
-open internet.
+00:00:06,576 --> 00:00:07,568
+The lawsuit quotes
 
 9
-00:00:16,488 --> 00:00:18,894
-That music helped build a 5.4
+00:00:07,568 --> 00:00:08,506
+Suno's own words:
 
 10
-00:00:18,894 --> 00:00:20,803
-billion dollar company.
+00:00:08,506 --> 00:00:09,277
+its AI learned
 
 11
-00:00:20,803 --> 00:00:23,126
-The songwriters got nothing,
+00:00:09,277 --> 00:00:10,380
+from essentially all
 
 12
-00:00:23,126 --> 00:00:24,288
-the suit says.
+00:00:10,380 --> 00:00:11,427
+music of reasonable
 
 13
-00:00:24,288 --> 00:00:25,972
-No court has ruled yet.
+00:00:11,427 --> 00:00:12,199
+quality on the
 
 14
-00:00:25,972 --> 00:00:27,436
-But the rule is old:
+00:00:12,199 --> 00:00:12,971
+open internet.
 
 15
-00:00:27,436 --> 00:00:30,218
-whoever owns the asset sets the price,
+00:00:12,971 --> 00:00:14,167
+That music helped
 
 16
-00:00:30,218 --> 00:00:33,000
-even against a billion dollar machine.
+00:00:14,167 --> 00:00:14,940
+build a 5.4
+
+17
+00:00:14,940 --> 00:00:16,558
+billion dollar company.
+
+18
+00:00:16,558 --> 00:00:17,613
+The songwriters
+
+19
+00:00:17,613 --> 00:00:18,456
+got nothing,
+
+20
+00:00:18,456 --> 00:00:19,441
+the suit says.
+
+21
+00:00:19,441 --> 00:00:20,210
+No court has
+
+22
+00:00:20,210 --> 00:00:20,850
+ruled yet.
+
+23
+00:00:20,850 --> 00:00:21,618
+But the rule
+
+24
+00:00:21,618 --> 00:00:22,067
+is old:
+
+25
+00:00:22,067 --> 00:00:23,091
+whoever owns the
+
+26
+00:00:23,091 --> 00:00:23,732
+asset sets
+
+27
+00:00:23,732 --> 00:00:24,372
+the price,
+
+28
+00:00:24,372 --> 00:00:25,269
+even against a
+
+29
+00:00:25,269 --> 00:00:26,742
+billion dollar machine.

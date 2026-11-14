@@ -1,7 +1,7 @@
 # YouTube Upload Pack — Why Anthropic Is Paying Book Authors $1.5 Billion This Month
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `46.1s`
+- **Estimated Runtime**: `39.1s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -20,14 +20,14 @@ In Bartz v. Anthropic, a federal court approved a $1.5 billion class settlement 
 • Vircon Legal Breakdown of Jul 20, 2026 Final Approval (Oct 28, 2026): https://virconlegal.com/bartz-v-anthropic-1-5-billion-copyright-settlement-turkish-law/
 • AITraining.jobs AI Data Lawsuits & Settlements Tracker (Oct 29, 2026): https://aitraining.jobs/research/ai-training-data-lawsuits
 
-🔗 **Free 5-Hour Asset Builder OS + reading list**: https://kenvh0010-lang.github.io/admin/bio/
+🔗 **Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
 00:00 - Authors Start Getting $1.5 Billion
-00:07 - Training Passed. Piracy Failed.
-00:17 - 482,460 Registered Books Covered
-00:29 - Largest AI Copyright Deal So Far
-00:37 - How You Source Data Matters
+00:06 - Training Passed. Piracy Failed.
+00:14 - 482,460 Registered Books Covered
+00:24 - Largest AI Copyright Deal So Far
+00:32 - How You Source Data Matters
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

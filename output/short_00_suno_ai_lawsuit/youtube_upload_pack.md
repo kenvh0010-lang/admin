@@ -1,7 +1,7 @@
 # YouTube Upload Pack — Eminem and Elvis vs. the $5.4 Billion AI Song App
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `33.0s`
+- **Estimated Runtime**: `26.7s`
 - **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
@@ -21,14 +21,14 @@ On November 6, 2026, Eminem's publisher Eight Mile Style and the owners of Elvis
 • Suno Series D announcement (Jun 3, 2026): https://suno.com/blog/series-d-announcement
 • Reuters (Jun 3, 2026): https://www.reuters.com/legal/transactional/ai-music-startup-suno-raises-funding-54-billion-valuation-2026-06-03/
 
-🔗 **Free 5-Hour Asset Builder OS + reading list**: https://kenvh0010-lang.github.io/admin/bio/
+🔗 **Free 48-Case Lawsuit & Refund Dossier + Forensics Reading List**: https://kenvh0010-lang.github.io/admin/bio/
 
 ⏱️ Timestamps:
 00:00 - Eminem's Publisher Wants $41 Million
-00:04 - Then Elvis Sued Too
-00:08 - Trained on Almost Every Song Online
-00:16 - A $5.4 Billion Company
-00:24 - Owners Set the Price
+00:03 - Then Elvis Sued Too
+00:06 - Trained on Almost Every Song Online
+00:12 - A $5.4 Billion Company
+00:19 - Owners Set the Price
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.

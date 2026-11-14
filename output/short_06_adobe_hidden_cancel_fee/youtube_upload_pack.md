@@ -1,8 +1,8 @@
 # YouTube Upload Pack — Why Adobe Agreed to a $150 Million Cancellation Fee Deal
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `29.0s`
-- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
+- **Estimated Runtime**: `29.1s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -22,8 +22,8 @@ On March 13, 2026, the U.S. Department of Justice announced that Adobe agreed to
 
 ⏱️ Timestamps:
 00:00 - 50% Fee of Months Remaining
-00:05 - Pre-Selected Annual Lock-In
-00:11 - Adobe's $150M DOJ Deal
+00:04 - Pre-Selected Annual Lock-In
+00:09 - Adobe's $150M DOJ Deal
 00:16 - $75M Penalty + $75M Credits
 00:23 - Paid Monthly Isn't Cancel Anytime
 

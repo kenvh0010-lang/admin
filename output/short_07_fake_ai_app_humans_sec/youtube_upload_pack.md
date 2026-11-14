@@ -1,8 +1,8 @@
 # YouTube Upload Pack — This $42M 'AI' Shopping App Actually Used Hundreds of Humans
 
 - **Format**: `SHORT`
-- **Estimated Runtime**: `28.5s`
-- **Voice Engine Used**: `edge-tts:en-US-ChristopherNeural (pending cloud render)`
+- **Estimated Runtime**: `30.3s`
+- **Voice Engine Used**: `edge-tts (en-US-ChristopherNeural)`
 - **YouTube Studio 'Altered or Synthetic Content' Toggle**: No (stylized motion-graphics & educational frameworks only — toggle 'Yes' in YouTube Studio ONLY if you add photorealistic AI scenes/people).
 
 ## 1. Title Options (Pick 1 or A/B Test in YouTube Studio)
@@ -23,10 +23,10 @@ In April 2025, the U.S. Attorney for the Southern District of New York and the S
 
 ⏱️ Timestamps:
 00:00 - Humans Typed Orders Overseas
-00:05 - Claimed 93% to 97% AI Success
-00:11 - Did Not Use AI to Buy
-00:16 - SDNY & SEC Filed Charges
-00:22 - Audit Live Inputs, Not Demos
+00:06 - Claimed 93% to 97% AI Success
+00:12 - Did Not Use AI to Buy
+00:17 - SDNY & SEC Filed Charges
+00:23 - Audit Live Inputs, Not Demos
 
 📚 About Mind & Margin:
 We break down federal lawsuits, SEC and FTC enforcement orders, and costly corporate blunders using primary court filings.
